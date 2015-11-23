@@ -16,13 +16,21 @@ for deg in degrees:
     degree_counts[deg] += 1
 del(degree_counts[0])
 log10C = np.mean(np.array([power_law.alpha * np.log10(deg) + np.log10(count) for (deg, count) in degree_counts.items()]))
-power_law_df = pd.DataFrame(columns = ['degree', 'fittedCount'])
-power_law_df['degree'] = 10 ** (np.arange(0, np.log10(max(degrees) * 1.2), 0.1))
-power_law_df['fittedCount'] = power_law_df['degree'].map(lambda x : 10 ** (log10C - power_law.alpha * np.log10(x)))
-power_law_df = power_law_df[power_law_df['fittedCount'] >= 0.1]
-degree_df = pd.DataFrame(list(degree_dict.values()), columns = ['degree'])
-degree_plot = ggplot(aes(x = 'degree'), data = degree_df) + geom_histogram(binwidth = 20., fill = 'royalblue', color = 'black') + scale_x_log10() + scale_y_log10() + ggtitle("Degree distribution\nPower law alpha = %.3f, log10(intercept) = %.3f" % (power_law.alpha, log10C)) + xlab("node degree") + ylab("")
-degree_plot += geom_line(aes(x = 'degree', y = 'fittedCount'), data = power_law_df, size = 3, color = 'red') + xlim(low = 0.5, high = max(degrees) * 1.1) + ylim(low = 0.5, high = max(power_law_df['fittedCount'] * 1.1))
+power_law_df = pd.DataFrame(columns = ['log10Degree', 'log10FittedCount'])
+power_law_df['log10Degree'] = np.arange(0.0, np.log10(max(degrees) * 1.2), 0.1)
+power_law_df['log10FittedCount'] = power_law_df['log10Degree'].map(lambda x : log10C - power_law.alpha * x)
+power_law_df = power_law_df[power_law_df['log10FittedCount'] >= 0]
+degree_df = pd.DataFrame([np.log10(count) for count in degree_dict.values() if (count > 0)], columns = ['log10Degree'])
+bins = np.linspace(0.0, np.log10(max(degrees) * 1.2), 30)[1:]
+bin_labels = np.digitize(degree_df['log10Degree'], bins)
+bin_counts = [0 for i in range(len(bins))]
+for i in bin_labels:
+    bin_counts[i] += 1
+bin_df = pd.DataFrame(columns = ['log10Degree', 'log10Count'])
+bin_df['log10Degree'] = bins
+bin_df['log10Count'] = list(map(np.log10, bin_counts))
+degree_plot = ggplot(aes(x = 'log10Degree', y = 'log10Count', width = 0.175), data = bin_df) + geom_bar(stat = 'identity', fill = 'royalblue', color = 'black') + ggtitle("Degree distribution\nPower law alpha = %.3f, log10(intercept) = %.3f" % (power_law.alpha, log10C)) + xlab("log10(degree)") + ylab("log10(count)")
+degree_plot += geom_line(aes(x = 'log10Degree', y = 'log10FittedCount'), data = power_law_df, size = 3, color = 'red') + xlim(low = -1, high = np.log10(max(degrees) * 1.1)) + ylim(low = -1, high = np.log(max(power_law_df['log10FittedCount'] * 1.1)))
 
 # component size rank plot
 comp_size_df = pd.read_csv(folder + '/data/comp_sizes.csv').sort_values(by = 'componentSize', ascending = False)

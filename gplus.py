@@ -45,7 +45,7 @@ def autoreadwrite(obj_names, extensions):
                         print("\nLoading %s from '%s'..." % (obj_name, filename))
                         start_time = time.time()
                         if (extension == 'csv'):
-                            self.__dict__[obj_name] = timeit(pd.read_csv)(filename, index = False)
+                            self.__dict__[obj_name] = timeit(pd.read_csv)(filename)
                             did_load = True
                         elif (extension == 'pickle'):
                             self.__dict__[obj_name] = timeit(pickle.load)(open(filename, 'rb'))
@@ -99,11 +99,11 @@ class Gplus(ig.Graph):
     @classmethod 
     def from_data(cls, folder = 'gplus0/data', directed = False):
         """Reads the graph from edge list."""
-        filename = folder + '/directed_edges.dat'
+        filename = folder + '/%sdirected_edges.dat' % ('' if directed else 'un')
         print("Loading data from '%s'..." % filename)
-        g = timeit(cls.Read_Edgelist)(filename)
+        g = timeit(cls.Read_Edgelist)(filename, directed = directed)
         print("Successfully loaded data.")
-        if (not directed):
+        if directed:
             print("Removing directions from edges...")
             timeit(Gplus.to_undirected)(g)
         g.folder = folder

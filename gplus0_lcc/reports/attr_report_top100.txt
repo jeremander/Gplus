@@ -1,9 +1,16 @@
+Attributes in LCC of Google+ graph
+
+Total nodes in LCC:           4690159
+Nodes in LCC with attributes:  909314 (19.4%)
+
         Type  #Values  #Occurrences
 -----------------------------------
        major   110100        626862
       school   246973        928097
     employer   422307        757893
 places_lived   211886       1330148
+-----------------------------------
+       total   991266       3643000
 
 
 #########

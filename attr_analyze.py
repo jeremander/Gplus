@@ -1,4 +1,5 @@
 import pandas as pd
+import subprocess
 from collections import defaultdict
 from ggplot import *
 
@@ -32,8 +33,8 @@ def attr_freq_df(rank_thresh = 1000):
 afdf100 = attr_freq_df(100)
 afdf1000 = attr_freq_df(1000)
 
-rank_plot100 = ggplot(aes(x = 'rank', y = 'freq', color = 'type'), data = afdf100) + geom_line(size = 3) + ggtitle("Most frequent attributes by type") + xlab("rank") + xlim(low = -1, high = 101) + ylab("") + scale_y_log10()
-rank_plot1000 = ggplot(aes(x = 'rank', y = 'freq', color = 'type'), data = afdf1000) + geom_line(size = 3) + ggtitle("Most frequent attributes by type") + xlab("rank") + xlim(low = -1, high = 1001) + ylab("") + scale_y_log10()
+rank_plot100 = ggplot(aes(x = 'rank', y = 'freq', color = 'type'), data = afdf100) + geom_line(size = 3) + ggtitle("Most frequent attributes by type") + xlab("rank") + xlim(low = -1, high = 101) + ylab("") + scale_y_log10() + scale_x_continuous(breaks = range(0, 105, 20))
+rank_plot1000 = ggplot(aes(x = 'rank', y = 'freq', color = 'type'), data = afdf1000) + geom_line(size = 3) + ggtitle("Most frequent attributes by type") + xlab("rank") + xlim(low = -1, high = 1001) + ylab("") + scale_y_log10() + scale_x_continuous(breaks = range(0, 1050, 200))
 
 cumulative_rank_plot100 = ggplot(aes(x = 'rank', y = 'percentage', color = 'type'), data = afdf100) + geom_line(size = 3) + ggtitle("Cumulative percentage of most frequent attributes") + xlim(low = -1, high = 101) + ylab("%") + scale_y_continuous(labels = range(0, 120, 20), limits = (0, 100)) + scale_x_continuous(breaks = range(0, 105, 20))
 cumulative_rank_plot1000 = ggplot(aes(x = 'rank', y = 'percentage', color = 'type'), data = afdf1000) + geom_line(size = 3) + ggtitle("Cumulative percentage of most frequent attributes") + xlim(low = -1, high = 1001) + ylab("%") + scale_y_continuous(labels = range(0, 120, 20), limits = (0, 100)) + scale_x_continuous(breaks = range(0, 1050, 200))
@@ -45,9 +46,18 @@ ggsave("gplus0_lcc/plots/top100_attrs_cumulative", cumulative_rank_plot100)
 ggsave("gplus0_lcc/plots/top1000_attrs_cumulative", cumulative_rank_plot1000)
 
 def generate_report(rank_thresh = None):
-    report = "        Type  #Values  #Occurrences\n-----------------------------------\n"
+    report = "Attributes in LCC of Google+ graph\n\n"
+    report += "Total nodes in LCC:           4690159\n"
+    report += "Nodes in LCC with attributes:  909314 (19.4%)\n\n"
+    report += "        Type  #Values  #Occurrences\n-----------------------------------\n"
+    total_attrs = 0
+    total_instances = 0
     for t in attr_types:
         report += "%12s  %7d  %12d\n" % (t, num_unique_attrs_by_type[t], num_attr_instances_by_type[t])
+        total_attrs += num_unique_attrs_by_type[t]
+        total_instances += num_attr_instances_by_type[t]
+    report += ('-' * 35) + '\n'
+    report += "%12s  %7d  %12d\n" % ("total", total_attrs, total_instances)
     report += "\n\n"
     for t in attr_types:
         val_lengths = [len(pair[0]) for pair in sorted_attr_freqs_by_type[t]]
@@ -65,6 +75,14 @@ open("gplus0_lcc/reports/attr_report_all.txt", 'w').write(generate_report(None))
 open("gplus0_lcc/reports/attr_report_top1000.txt", 'w').write(generate_report(1000))
 open("gplus0_lcc/reports/attr_report_top100.txt", 'w').write(generate_report(100))
 
+
+def format_location_for_lookup(location):
+    """Takes a location string and normalizes it via Shane Bergsma's Perl script."""
+    p = subprocess.Popen('echo "%s" | ./string_proc/formatLocationsForLookup.pl' % location, stdout = subprocess.PIPE, stderr = subprocess.PIPE, shell = True)
+    output, err = p.communicate()
+    if err:
+        raise OSError(err)
+    return output.decode('utf-8').strip()
 
 
 

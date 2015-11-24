@@ -97,7 +97,7 @@ class Gplus(ig.Graph):
     def __len__(self):
         return len(self.vs)
     @classmethod 
-    def from_data(cls, folder = 'gplus0/data', directed = False):
+    def from_data(cls, folder = 'gplus0_lcc/data', directed = False):
         """Reads the graph from edge list."""
         filename = folder + '/%sdirected_edges.dat' % ('' if directed else 'un')
         print("Loading data from '%s'..." % filename)
@@ -108,3 +108,6 @@ class Gplus(ig.Graph):
             timeit(Gplus.to_undirected)(g)
         g.folder = folder
         return g
+
+
+

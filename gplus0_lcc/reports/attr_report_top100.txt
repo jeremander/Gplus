@@ -1,0 +1,432 @@
+        Type  #Values  #Occurrences
+-----------------------------------
+       major   110100        626862
+      school   246973        928097
+    employer   422307        757893
+places_lived   211886       1330148
+
+
+#########
+# major #
+#########
+
+                   computer science   32615
+                                mba   7628
+               computer engineering   6995
+             mechanical engineering   6931
+                         psychology   6559
+             electrical engineering   6221
+                          economics   5685
+                        high school   5547
+                            english   5334
+                  political science   4988
+                          marketing   4950
+             information technology   4275
+                                law   4170
+                            biology   4111
+                     graphic design   3861
+                            science   3767
+                            history   3663
+                            finance   3614
+            business administration   3472
+                           business   3419
+                            physics   3348
+                        mathematics   3341
+                         journalism   3212
+                         accounting   2701
+               software engineering   2654
+                        engineering   2598
+                  civil engineering   2588
+                     communications   2489
+               chemical engineering   2482
+                                 it   2357
+                       architecture   2287
+                          chemistry   2174
+                           medicine   2031
+                         philosophy   1916
+                             b.tech   1915
+                          sociology   1876
+                      communication   1660
+                business management   1572
+                       ensino médio   1533
+                        informatica   1505
+                information systems   1471
+                            general   1467
+       computer information systems   1444
+   computer science and engineering   1442
+                            nursing   1395
+                           commerce   1386
+                                mca   1372
+             biomedical engineering   1368
+                        advertising   1340
+                          education   1307
+                              music   1305
+              ciência da computação   1283
+                         management   1248
+                                ece   1224
+                       informatique   1198
+              aerospace engineering   1189
+                                cse   1145
+                       biochemistry   1136
+     management information systems   1092
+                    general studies   1089
+             industrial engineering   1084
+                       anthropology   1078
+             sistemas de informação   1049
+                        photography   976
+            international relations   970
+                                ssc   956
+                   criminal justice   953
+                   public relations   902
+                                mis   892
+             international business   891
+                        electronics   891
+                       liberal arts   855
+                 english literature   855
+                             school   805
+           publicidade e propaganda   783
+electrical and computer engineering   762
+                                 cs   756
+               elementary education   745
+                    music education   742
+                                art   732
+                               film   727
+                           pharmacy   721
+                                 be   718
+      electronics and communication   717
+                         mechanical   709
+                  industrial design   702
+                high school diploma   694
+                  general education   677
+                               10th   676
+                      biotechnology   669
+     computer science & engineering   668
+                               math   666
+                       intermediate   658
+                          schooling   654
+                             design   652
+                         informatik   651
+                       neuroscience   631
+                                bca   628
+                        linguistics   624
+                            direito   624
+
+
+##########
+# school #
+##########
+
+       university of california, berkeley   4279
+            university of texas at austin   3657
+                   university of michigan   3483
+                      stanford university   2897
+university of illinois at urbana-champaign   2841
+                 university of washington   2773
+        university of southern california   2751
+          georgia institute of technology   2691
+    university of california, los angeles   2616
+               carnegie mellon university   2583
+                      new york university   2371
+            pennsylvania state university   2317
+    massachusetts institute of technology   2252
+     university of maryland, college park   2134
+      university of california, san diego   2130
+                      columbia university   1982
+                       cornell university   1954
+                     texas a&m university   1944
+                        boston university   1929
+               university of pennsylvania   1912
+        rochester institute of technology   1883
+                    ohio state university   1841
+                michigan state university   1823
+                  northwestern university   1742
+         university of california, irvine   1674
+                 brigham young university   1645
+                       rutgers university   1590
+virginia polytechnic institute and state university   1530
+university of north carolina at chapel hill   1469
+                 florida state university   1461
+          university of wisconsin-madison   1456
+                    university of georgia   1437
+                  northeastern university   1422
+          north carolina state university   1418
+                          duke university   1415
+                                     none   1405
+                   university of virginia   1392
+                    university of toronto   1374
+                  university of minnesota   1363
+  university of california, santa barbara   1289
+                    university of arizona   1271
+                      syracuse university   1253
+                    university of chicago   1246
+  california polytechnic state university   1206
+                    university of phoenix   1203
+                 university of pittsburgh   1174
+           university of british columbia   1168
+                        drexel university   1139
+        university of colorado at boulder   1130
+                          yale university   1117
+                         brown university   1114
+                 johns hopkins university   1107
+             george washington university   1099
+                     university of kansas   1092
+                     university of oregon   1076
+       washington university in st. louis   1059
+                     full sail university   1055
+                  george mason university   1048
+                    university of houston   1046
+                san josé state university   1036
+                     university of mumbai   1019
+          university of missouri–columbia   1015
+                university of north texas   1009
+                       university of utah   981
+                       indiana university   979
+           indiana university bloomington   979
+           san francisco state university   978
+     university of california, santa cruz   968
+                     princeton university   960
+                    iowa state university   935
+               national taiwan university   924
+                         devry university   916
+                    georgetown university   894
+      university of massachusetts amherst   878
+                        mcgill university   866
+                        depaul university   855
+                  oregon state university   852
+               san diego state university   843
+                   university of oklahoma   842
+               louisiana state university   830
+                university of connecticut   826
+                          ohio university   824
+                      american university   803
+         virginia commonwealth university   799
+                        temple university   789
+                 university of cincinnati   784
+                 georgia state university   778
+                  itt technical institute   776
+                 james madison university   772
+                        auburn university   769
+                         emory university   760
+                           boston college   752
+                         tufts university   741
+                          anna university   737
+                   stony brook university   734
+                          rice university   733
+                     universidad de chile   733
+             university of south carolina   729
+                portland state university   728
+                    university of alabama   726
+
+
+############
+# employer #
+############
+
+                         google   6381
+                            ibm   3359
+          university of florida   2676
+                      microsoft   2480
+                      accenture   2216
+                        infosys   2033
+       arizona state university   1986
+         university of waterloo   1981
+              purdue university   1949
+  university of central florida   1820
+             harvard university   1789
+                     apple inc.   1786
+      tata consultancy services   1720
+university of california, davis   1627
+                hewlett-packard   1617
+                       best buy   1569
+                      freelance   1406
+                  self employed   1209
+rensselaer polytechnic institute   1119
+ cognizant technology solutions   1004
+            cisco systems, inc.   986
+                      starbucks   976
+                        student   905
+    university of south florida   879
+                           self   879
+             wipro technologies   874
+                           dell   832
+             oracle corporation   832
+              intel corporation   813
+             university of iowa   800
+       deloitte touche tohmatsu   796
+                     amazon.com   791
+national university of singapore   760
+                       wal-mart   734
+                  self-employed   710
+             target corporation   696
+                         yahoo!   684
+                           at&t   666
+         pricewaterhousecoopers   648
+          vanderbilt university   643
+                       gamestop   632
+        university of rochester   577
+                      capgemini   556
+                electronic arts   551
+                  ernst & young   531
+                     freelancer   523
+               hcl technologies   513
+               general electric   504
+                 ithaca college   490
+                            tcs   479
+        the walt disney company   460
+              lehigh university   457
+           concordia university   453
+        united states air force   450
+                     mcdonald's   448
+           jpmorgan chase & co.   444
+                           kpmg   444
+               verizon wireless   444
+                       ericsson   444
+  southern methodist university   425
+                        us army   424
+                       motorola   423
+                bank of america   406
+  computer sciences corporation   405
+        university of melbourne   401
+                    wells fargo   398
+                  adobe systems   393
+                lockheed martin   391
+                     geek squad   387
+                          nokia   378
+                       facebook   369
+               procter & gamble   351
+            harvey mudd college   348
+               sun microsystems   342
+                      ibm india   338
+                            aol   336
+            samsung electronics   334
+                        us navy   330
+                       qualcomm   329
+university of north carolina at charlotte   329
+                      citigroup   325
+                     unemployed   321
+                 alcatel-lucent   318
+             united states navy   316
+                         subway   305
+                         amdocs   305
+                           nasa   303
+                        comcast   302
+                     home depot   301
+             research in motion   300
+                         sap ag   296
+                         oracle   293
+                         boeing   292
+                 hunter college   292
+                   t-mobile usa   292
+                 morgan stanley   291
+         nokia siemens networks   289
+     united states marine corps   280
+                      mcdonalds   273
+                emc corporation   272
+
+
+################
+# places_lived #
+################
+
+        bangalore   9197
+           london   8111
+           mumbai   7618
+          chennai   6663
+        hyderabad   6643
+            paris   5895
+         new york   5287
+     new york, ny   4842
+      chicago, il   4809
+        hong kong   4471
+san francisco, ca   4382
+      los angeles   4296
+  los angeles, ca   4282
+             pune   4215
+        new delhi   4125
+       boston, ma   4034
+        singapore   3996
+            delhi   3863
+    san francisco   3808
+          chicago   3592
+   washington, dc   3569
+           taipei   3490
+      seattle, wa   3294
+        são paulo   3199
+      atlanta, ga   3011
+          toronto   2995
+    san diego, ca   2968
+       austin, tx   2941
+         istanbul   2912
+           madrid   2652
+           boston   2554
+           sydney   2514
+ philadelphia, pa   2463
+      houston, tx   2462
+           berlin   2452
+            tokyo   2393
+          bangkok   2360
+          kolkata   2330
+        barcelona   2251
+     brooklyn, ny   2234
+          beijing   2227
+          seattle   2218
+    new york city   2201
+         shanghai   2193
+   pittsburgh, pa   2182
+     portland, or   2118
+     buenos aires   2104
+      orlando, fl   2061
+            india   2059
+           tehran   2040
+        san diego   2020
+   rio de janeiro   2003
+       london, uk   1997
+       dallas, tx   1956
+        vancouver   1929
+     san jose, ca   1883
+        melbourne   1883
+        ahmedabad   1870
+          jakarta   1720
+            dubai   1719
+         santiago   1650
+    paris, france   1637
+       denver, co   1516
+          atlanta   1514
+         montreal   1499
+      phoenix, az   1498
+     philadelphia   1485
+    cambridge, ma   1465
+           dublin   1454
+    rochester, ny   1450
+          houston   1406
+  minneapolis, mn   1402
+       coimbatore   1400
+     berkeley, ca   1395
+       chandigarh   1359
+    ann arbor, mi   1348
+          hamburg   1334
+  san antonio, tx   1331
+        amsterdam   1313
+    baltimore, md   1298
+      raleigh, nc   1274
+           taiwan   1270
+           moscow   1258
+        miami, fl   1255
+           jaipur   1253
+    nashville, tn   1251
+     columbus, oh   1248
+               台北   1243
+          lucknow   1240
+            miami   1235
+    st. louis, mo   1233
+               北京   1231
+             roma   1217
+        stockholm   1204
+  london, england   1203
+           milano   1202
+    washington dc   1174
+       california   1169
+            noida   1144
+           austin   1128
+
+

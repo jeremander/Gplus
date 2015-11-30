@@ -8,7 +8,7 @@ def time_format(seconds):
     if (seconds >= 3600):
         s += "%dh," % (seconds // 3600)
     if (seconds >= 60):
-        s += "%dm," % (seconds // 60)
+        s += "%dm," % ((seconds % 3600) // 60)
     s += "%.3fs" % (seconds % 60)
     return s
 

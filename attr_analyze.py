@@ -1,16 +1,25 @@
 import pandas as pd
+import numpy as np
 import subprocess
+import string
+import pickle
 from collections import defaultdict
+from unidecode import unidecode
 from ggplot import *
 
-def unescape(val):
-    return str(val).encode().decode('unicode-escape')
+def unescape(val, tabs = False):
+    """Represent a string in unescaped form. If tabs = False, replaces tabs with spaces."""
+    s = str(val).encode().decode('unicode-escape')
+    if (not tabs):
+        s = s.replace('\t', ' ')
+    return s
 
 node_attr_filename = 'gplus0_lcc/data/node_attributes.csv'
 attr_df = pd.read_csv(node_attr_filename, sep = ';')
 
 attr_types = set(attr_df['attributeType'])
 attr_vals = set([unescape(val) for val in attr_df['attributeVal']])
+attr_vals = set([str(val) for val in attr_df['attributeVal']])
 attr_freqs_by_type = dict((t, defaultdict(int)) for t in attr_types)
 for (t, val) in zip(attr_df['attributeType'], attr_df['attributeVal']):
     attr_freqs_by_type[t][unescape(val)] += 1
@@ -78,11 +87,66 @@ open("gplus0_lcc/reports/attr_report_top100.txt", 'w').write(generate_report(100
 
 def format_location_for_lookup(location):
     """Takes a location string and normalizes it via Shane Bergsma's Perl script."""
-    p = subprocess.Popen('echo "%s" | ./string_proc/formatLocationsForLookup.pl' % location, stdout = subprocess.PIPE, stderr = subprocess.PIPE, shell = True)
+    p = subprocess.Popen('printf "%s" | ./string_proc/formatLocationsForLookup.pl' % location, stdout = subprocess.PIPE, stderr = subprocess.PIPE, shell = True)
     output, err = p.communicate()
     if err:
         raise OSError(err)
     return output.decode('utf-8').strip()
 
+def format_locations_for_lookup(locations, chunksize = 10000):
+    """Takes a list of location strings and normalizes them all."""
+    result = []
+    for i in range(int(np.ceil(len(locations) / chunksize))):
+        locs = locations[i * chunksize : (i + 1) * chunksize]
+        s = '\n'.join(locs)
+        result += format_location_for_lookup(s).split('\n')
+    return result
+
+def decode_and_strip(c):
+    """Decodes a Unicode character and strips whitespace."""
+    c2 = unidecode(c)
+    if (len(c2) > 1):
+        c2 = c2.strip()
+    return c2
+
+def remove_symbols_numbers_punc(s, decode = True):
+    """Reformats string to accord to Shane Bergsma's scheme as closely as possible."""
+    bad_chars = "`~12@3#4$5%6^7&8*9(0)=+[{]}\\|\"<>"
+    replace_chars = string.whitespace[1:] + "-_',.!?:;/"
+    if decode:
+        s2 = ''.join([decode_and_strip(c).lower() for c in s if (c not in bad_chars)])
+    else:
+        s2 = ''.join([c.lower() for c in s if (c not in bad_chars)])
+    for c in replace_chars:
+        s2 = s2.replace(c, ' ')
+    s2 = ' '.join(s2.split())
+    return s2
 
 
+# Search for location string matches in the Twitter data using hash table lookup
+locations = [pair[0] for pair in sorted_attr_freqs_by_type['places_lived']]
+locations_normalized = []
+for (i, loc) in enumerate(locations):  # include both decoded and non-decoded versions
+    pair = list(set([remove_symbols_numbers_punc(loc, True), remove_symbols_numbers_punc(loc, False)]))
+    locations_normalized += [(i, loc2) for loc2 in pair]
+with open('string_proc/locations.dat', 'r') as f:
+    all_locations = []
+    for line in f:
+        all_locations.append(line.strip())
+loc_hash_table = defaultdict(list)  # make a hash table keyed by length and the first and last characters
+for (i, loc) in enumerate(all_locations):
+    length = len(loc)
+    key = (length, loc[0] if (length > 0) else '', loc[-1] if (length > 0) else '')
+    loc_hash_table[key].append((i, loc))
+matches = dict()
+for (i, loc) in locations_normalized:
+    length = len(loc)
+    for (i2, loc2) in loc_hash_table[(length, loc[0] if (length > 0) else '', loc[-1] if (length > 0) else '')]:
+        if (loc == loc2):
+            matches[(i, locations[i])] = (i2, loc2)
+            break
+non_matches = [(i, loc) for (i, loc) in enumerate(locations) if (i, locations[i]) not in matches.keys()]
+pickle.dump(matches, open('gplus0_lcc/data/location_matches.pickle', 'wb'))
+
+
+# RECORD: 134804 / 211886 (63.6%) matches

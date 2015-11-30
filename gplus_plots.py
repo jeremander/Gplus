@@ -4,7 +4,8 @@ import numpy as np
 from collections import defaultdict
 from ggplot import *
 
-folder = "gplus0"
+#folder = "gplus0"
+folder = "gplus0_lcc"
 #folder = "gplus0_sample1M"
 
 # degree histogram and power law fit
@@ -36,5 +37,15 @@ degree_plot += geom_line(aes(x = 'log10Degree', y = 'log10FittedCount'), data = 
 comp_size_df = pd.read_csv(folder + '/data/comp_sizes.csv').sort_values(by = 'componentSize', ascending = False)
 comp_size_plot = ggplot(aes(x = list(range(len(comp_size_df))), y = comp_size_df['componentSize']), data = comp_size_df) + geom_point(size = 20, color = 'maroon') + scale_y_log10() + ggtitle("Component sizes") + scale_x_continuous(breaks = list(np.arange(0, 1200, 100))) + xlim(low = -25, high = 1175) + xlab("rank") + ylim(low = 0.5, high = 10**7) + ylab("comp size")
 
+# Louvain community size rank plot
+louvain_membership_df = pd.read_csv(folder + '/data/louvain_memberships.csv')
+comm_sizes = np.zeros(max(louvain_membership_df['louvainMembership']) + 1, dtype = int)
+for label in louvain_membership_df['louvainMembership']:
+    comm_sizes[label] += 1
+louvain_comm_size_df = pd.DataFrame(comm_sizes, columns = ['commSize']).sort_values(by = 'commSize', ascending = False)
+louvain_comm_size_plot = ggplot(aes(x = list(range(len(louvain_comm_size_df))), y = louvain_comm_size_df['commSize']), data = louvain_comm_size_df) + geom_point(size = 20, color = 'green') + ggtitle("Louvain community sizes") + xlab("rank") + ylab("community size") + scale_y_log10() + xlim(low = -5, high = 950) + scale_x_continuous(breaks = list(np.arange(0, 950, 100)))
+
+
 ggsave(folder + '/plots/degree_plot', degree_plot)
 ggsave(folder + '/plots/component_size_plot', comp_size_plot)
+ggsave(folder + '/plots/louvain_community_size_plot', louvain_comm_size_plot)

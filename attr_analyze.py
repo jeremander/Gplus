@@ -14,6 +14,17 @@ def unescape(val, tabs = False):
         s = s.replace('\t', ' ')
     return s
 
+def read_dict(filename):
+    """Reads a string dictionary from a file with the following format: on each line, the key comes first, then a tab followed by a list of values. The keys & values may be delimited by double quotes in case spaces are present."""
+    d = dict()
+    with open(filename, 'r', encoding = 'utf-8') as f:
+        for line in f:
+            tokens = [token.strip('"') for token in line.strip().split('\t')]
+            key = tokens[0]
+            val = tokens[1:]
+            d[key] = val
+    return d
+
 node_attr_filename = 'gplus0_lcc/data/node_attributes.csv'
 attr_df = pd.read_csv(node_attr_filename, sep = ';')
 
@@ -121,7 +132,6 @@ def remove_symbols_numbers_punc(s, decode = True):
         s2 = s2.replace(c, ' ')
     s2 = ' '.join(s2.split())
     return s2
-
 
 # Search for location string matches in the Twitter data using hash table lookup
 locations = [pair[0] for pair in sorted_attr_freqs_by_type['places_lived']]

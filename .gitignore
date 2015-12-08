@@ -7,3 +7,4 @@ attributes/
 *.csv
 *.pickle
 *.gexf
+*.coo

@@ -1,8 +1,10 @@
 import pandas as pd
+import numpy as np
 import time
 import pickle
 import igraph as ig
 import networkx as nx
+from scipy.sparse import coo_matrix
 
 def time_format(seconds):
     """Formats a time into a convenient string."""
@@ -25,22 +27,39 @@ def timeit(func):
     return timed
 
 def load_object(folder, obj_name, extension):
+    """Load object with the given name from a file with the naming convention folder/obj_name.extension."""
     filename = folder + '/' + obj_name + '.' + extension
     did_load = False
     try:
         print("\nLoading %s from '%s'..." % (obj_name, filename))
         if (extension == 'csv'):
-            obj = timeit(pd.read_csv)(filename)
+            obj = pd.read_csv(filename)
             did_load = True
         elif (extension == 'pickle'):
-            obj = timeit(pickle.load)(open(filename, 'rb'))
+            obj = pickle.load(open(filename, 'rb'))
             did_load = True
         elif (extension == 'ig.edges'):
-            obj = timeit(ig.Graph.Read_Edgelist)(filename, directed = False)
+            obj = ig.Graph.Read_Edgelist(filename, directed = False)
             did_load = True
         elif (extension == 'nx.edges'):
-            obj = timeit(nx.read_edgelist)(filename)
+            obj = nx.read_edgelist(filename)
             did_load = True
+        elif (extension == 'coo'):
+            with open(filename, 'r') as f:
+                first_line = f.readline()
+                tokens = first_line.split()
+                if (len(tokens) == 1):
+                    shape = (int(tokens[0]), int(tokens[0]))
+                else:
+                    shape = (int(tokens[0]), int(tokens[1]))
+                rows, cols, data = [], [], []
+                for line in f:
+                    tokens = line.split()
+                    rows.append(int(tokens[0]))
+                    cols.append(int(tokens[1]))
+                    data.append(float(tokens[2]))
+                obj = coo_matrix((data, (rows, cols)), shape = shape)
+                did_load = True
         if did_load:
             print("Successfully loaded %s." % obj_name)
             return obj
@@ -50,21 +69,31 @@ def load_object(folder, obj_name, extension):
         raise IOError("Could not load %s from file." % obj_name)
 
 def save_object(obj, folder, obj_name, extension):
+    """Saves object to a file with naming convention folder/obj_name.extension. File format depends on the extension."""
     filename = folder + '/' + obj_name + '.' + extension
     did_save = False
     try:
         print("\nSaving %s to '%s'..." % (obj_name, filename))
         if (extension == 'csv'):
-            timeit(pd.DataFrame.to_csv)(obj, filename, index = False)
+            pd.DataFrame.to_csv(obj, filename, index = False)
             did_save = True
         elif (extension == 'pickle'):
-            timeit(pickle.dump)(obj, open(filename, 'wb'))
+            pickle.dump(obj, open(filename, 'wb'))
             did_save = True
         elif (extension == 'ig.edges'):
-            timeit(ig.Graph.write_edgelist)(obj, filename)
+            ig.Graph.write_edgelist(obj, filename)
             did_save = True
         elif (extension == 'nx.edges'):
-            timeit(nx.write_edgelist)(obj, filename, data = False)
+            nx.write_edgelist(obj, filename, data = False)
+            did_save = True
+        elif (extension == 'coo'):
+            with open(filename, 'w') as f:
+                f.write("%d " % obj.shape[0])
+                if (obj.shape[1] != obj.shape[0]):
+                    f.write("%d " % obj.shape[1])
+                f.write('\n')
+                for (row, col, val) in zip(obj.row, obj.col, obj.data):
+                    f.write("%d %d %s\n" % (row, col, repr(val)))
             did_save = True
         if did_save:
             print("Successfully saved %s." % obj_name)
@@ -87,15 +116,16 @@ def autoreadwrite(obj_names, extensions):
                 save = False
             did_load_flags = []
             for obj_name, extension in zip(obj_names, extensions):
+                obj_name = obj_name.lstrip('_')  # remove any leading underscores
                 try:
-                    self.__dict__[obj_name] = load_object(self.folder, obj_name, extension)
+                    self.__dict__['_' + obj_name] = timeit(load_object)(self.folder, obj_name, extension)
                 except:
                     print("Could not load %s from file.\n\nConstructing from scratch..." % obj_name)
                     timeit(func)(*args, **kwargs)
                     break
             if save:
                 for obj_name, extension in zip(obj_names, extensions):
-                    save_object(self.__dict__[obj_name], self.folder, obj_name, extension)
+                    timeit(save_object)(self.__dict__['_' + obj_name], self.folder, obj_name, extension)
         return autoreadwrite_wrapped_function
     return autoreadwrite_decorator
 
@@ -108,17 +138,14 @@ class ObjectWithReadwriteProperties(object):
         def make_property(property_name):
             hidden_property_name = '_' + property_name
             def property_load():
-                print("In property_load")
                 if (property_name not in self.__class__.readwrite_properties):
                     raise AttributeError("'%s' object has no attribute '%s'" % (self.__class__.__name__, property_name))
                 if (not hasattr(self, hidden_property_name)):
                     self.__dict__[hidden_property_name] = load_object(self.folder, property_name, self.__class__.readwrite_properties[property_name])
             def property_get():
-                print("In property_get")
                 property_load()
                 return self.__dict__[hidden_property_name]
             def property_save():
-                print("In property_save")
                 if (not hasattr(self, hidden_property_name)):
                     raise AttributeError("'%s' object has no attribute '%s'" % (self.__class__.__name__, property_name))
                 save_object(self.__dict__[hidden_property_name], self.folder, property_name, self.__class__.readwrite_properties[property_name])
@@ -129,7 +156,6 @@ class ObjectWithReadwriteProperties(object):
             self.__dict__['get_' + property_name] = getter
             self.__dict__['save_' + property_name] = saver
     def __getattr__(self, attr):
-        print("In getattribute")
         if (attr in self.__class__.readwrite_properties):
             return self.__dict__['get_' + attr]()
         return self.__getattribute__(attr)

@@ -8,3 +8,6 @@ attributes/
 *.pickle
 *.gexf
 *.coo
+*.aux
+*.log
+*.gz

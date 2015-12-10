@@ -157,7 +157,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
 
 class PairwiseFreqAnalyzer(object):
     """Manages statistics related to unordered pairwise frequencies, such as pointwise mutual information."""
-    def __init__(self, vocab, pairwise_freqs, ignore_unknown = True):
+    def __init__(self, vocab, pairwise_freqs, ignore_unknown = False):
         """Takes list of vocabulary and a dictionary mapping vocab pairs to counts. The order of the pairs is ignored, and any pairs with an element not in the vocab list are also ignored. If ignore_unknown = True, then the special token *???* will be dropped from the vocab list; otherwise, it will be included."""
         self.ignore_unknown = ignore_unknown
         self.vocab_set = set(vocab)  # for fast set membership querying
@@ -166,9 +166,9 @@ class PairwiseFreqAnalyzer(object):
         self.vocab = sorted([v for v in self.vocab_set]) # the canonical sorted vocab list (corresponds to indices of matrix)
         self.vocab_indices = dict((v, i) for (i, v) in enumerate(self.vocab))  # maps vocab items to canonical indices
         self.num_vocab = len(self.vocab)
+        self.num_possible_pairs = (self.num_vocab * (self.num_vocab + 1)) // 2
         self.vocab_freqs = dict((v, 0) for v in self.vocab)
         self.pairwise_freqs = dict()
-        self.num_missing_edges_by_vocab = dict((v, self.num_vocab) for v in self.vocab)
         for (pair, freq) in pairwise_freqs.items():
             if ((pair[0] in self.vocab_set) and (pair[1] in self.vocab_set) and (freq > 0)):
                 sorted_pair = tuple(sorted(pair))
@@ -179,20 +179,14 @@ class PairwiseFreqAnalyzer(object):
                     self.pairwise_freqs[sorted_pair] += freq
                 else:
                     self.pairwise_freqs[sorted_pair] = freq
-                    self.num_missing_edges_by_vocab[sorted_pair[0]] -= 1
-                    if (sorted_pair[1] != sorted_pair[0]):
-                        self.num_missing_edges_by_vocab[sorted_pair[1]] -= 1
         self.total_edges = sum(self.pairwise_freqs.values())
-        self.num_missing_edges = self.num_vocab * (self.num_vocab + 1) // 2 - len(self.pairwise_freqs)
     def empirical_freq(self, *items, delta = 0):
         """Returns edge count of item. If two arguments are given, returns the observed count of the pair, disregarding order. If one argument is given, returns the observed count of the singleton. If delta > 0, adds delta to the counts."""
         assert(len(items) in [1, 2])
         if any([x not in self.vocab_set for x in items]):
             raise ValueError("Entries must be in the vocabulary.")
         if (len(items) == 1):
-            freq = self.vocab_freqs[items[0]]
-            if (delta > 0):
-                freq += delta * self.num_missing_edges_by_vocab[items[0]]
+            freq = self.vocab_freqs[items[0]] + delta * self.num_vocab
             return freq
         key = tuple(sorted(items))
         try:
@@ -202,41 +196,43 @@ class PairwiseFreqAnalyzer(object):
         return (freq + delta)
     def empirical_prob(self, *items, delta = 0):
         """Returns empirical probability of item. If two arguments are given, this is the smoothed number of occurrences of the pair divided by the smoothed number of edges, under add-delta smoothing. If one argument is given, this is the smoothed number of occurrences of the item in any pair divided by the smoothed number of edges."""
-        denominator = self.total_edges
-        if (delta > 0):
-            denominator += delta * self.num_missing_edges
+        denominator = self.total_edges + delta * self.num_possible_pairs
         return self.empirical_freq(*items, delta = delta) / denominator
     def conditional_prob(self, item1, item2, delta = 0):
         return safe_divide(self.empirical_freq(item1, item2, delta = delta), self.empirical_freq(item2, delta = delta))
-    def PMI(self, item1, item2, delta = 0):
+    def PMIs(self, item1, item2, delta = 0):
         """Pointwise mutual information of two items. Ranges from -inf to -log p(x,y) at most, with 0 for independence"""
         return np.log(self.empirical_prob(item1, item2, delta = delta)) - np.log(self.empirical_prob(item1, delta = delta)) - np.log(self.empirical_prob(item2, delta = delta))
-    def NPMI(self, item1, item2, delta = 0):
-        """PMI normalized so that it ranges from -1 to 1, with 0 for independence."""
-        return (-1.0 + safe_divide(np.log(self.empirical_prob(item1, delta = delta)) + np.log(self.empirical_prob(item2, delta = delta)), np.log(self.empirical_prob(item1, item2, delta = delta))))
-    def NPMI2(self, item1, item2, delta = 0):
-        """PMI transformed so that it ranges from 0 to inf, with 1 for independence."""
-        return (1.0 - np.log(1.0 - self.NPMI(item1, item2, delta = delta)) / np.log(2.0))
-    def sparse_similarities(self, sim = 'pmi'):
-        """Returns a sparse similarity matrix of the vocabulary items that co-occur. Options for similarity are 'pmi', 'npmi', and 'npmi2', which have different ranges. No smoothing is done as of now, since that would ruin the sparsity."""
+    def PMId(self, item1, item2, delta = 0):
+        """Negative pointwise mutual information of two items. Ranges from log p(x,y) to inf, with 0 for independence."""
+        return -self.PMIs(item1, item2, delta = delta)
+    def NPMI1s(self, item1, item2, delta = 0):
+        """PMI normalized so that it is a similarity score ranging from 0 to 1, with 1/2 for independence."""
+        return safe_divide(np.log(self.empirical_prob(item1, delta = delta)) + np.log(self.empirical_prob(item2, delta = delta)), 2.0 * np.log(self.empirical_prob(item1, item2, delta = delta)))
+    def NPMI1d(self, item1, item2, delta = 0):
+        """PMI normalized so that it is a dissimilarity score ranging from 0 to 1, with 1/2 for independence."""
+        return 1.0 - self.NPMI1s(item1, item2, delta = delta)
+    def NPMI2s(self, item1, item2, delta = 0):
+        """PMI transformed so that it is a similarity score ranging from 0 to inf, with 1 for independence."""
+        return -np.log(1.0 - self.NPMI1s(item1, item2, delta = delta)) / np.log(2.0)
+    def NPMI2d(self, item1, item2, delta = 0):
+        """PMI transformed so that it is a dissimilarity score ranging from 0 to inf, with 1 for independence."""
+        return -np.log(self.NPMI1s(item1, item2, delta = delta)) / np.log(2.0)
+    def to_sparse_matrix(self, sim = 'PMIs'):
+        """Returns a sparse similarity/dissimilarity matrix of the vocabulary items that co-occur. Options are 'PMIs', 'PMId', 'NPMI1s', 'NPMI1d', 'NPMI2s', 'NPMI2d', which have different ranges. No smoothing is done as of now, since that would ruin the sparsity."""
         n = len(self.pairwise_freqs)
-        if (sim == 'npmi'):
-            sim_func = self.NPMI
-        elif (sim == 'npmi2'):
-            sim_func = self.NPMI2
-        else:  # PMI
-            sim_func = self.PMI
+        sim_func = self.__class__.__dict__[sim]
         rows, cols, data = np.zeros(n, dtype = int), np.zeros(n, dtype = int), np.zeros(n, dtype = float)
         for (i, (v1, v2)) in enumerate(self.pairwise_freqs):
             rows[i], cols[i] = self.vocab_indices[v1], self.vocab_indices[v2]
-            data[i] = sim_func(v1, v2)
+            data[i] = sim_func(self, v1, v2)
         return coo_matrix((data, (rows, cols)), shape = (self.num_vocab, self.num_vocab))
-
-
-def affinity_propagate(sparse_sim):
-    """Takes a sparse similarity matrix and conducts affinity propagation to cluster. Uses the 'https://github.com/nojima/affinity-propagation-sparse' C++ package."""
-
-
+    def to_weighted_graph(self, sim = 'NPMI1s'):
+        """Returns a weighted graph of the vocabulary items, where edge weights are similarities. The sparsity of the similarity score matrix implies this graph will be sparse."""
+        assert (sim in ['NPMI1s', 'NPMI2s'])
+        g = ig.Graph()
+        mat = self.to_sparse_matrix(sim)
+        g.add_vertices(self.num_vocab)
 
 
 

@@ -11,6 +11,8 @@
 \usepackage{mathrsfs}
 \usepackage{mathtools}
 \usepackage{enumerate}
+\usepackage{fancyhdr}
+\pagestyle{fancy}
 
 \theoremstyle{plain} 
 \newtheorem{theorem}{Theorem} 
@@ -21,10 +23,11 @@
 \newcommand{\reals}{\mathbb{R}}
 \renewcommand{\arraystretch}{1.5}
 
-
+\lhead{Jeremy Silver}
+\rhead{Dec.\ 10, 2015}
 %\title{}
 %\author{Jeremy Silver}
-%\date{Tues. 10/27/14}							% Activate to display a given date or no date
+%\date{Dec.\ 10, 2015}						% Activate to display a given date or no date
 
 \begin{document}
 %\maketitle
@@ -32,7 +35,7 @@
 Suppose we have an undirected graph $G = (V, E)$ a set $A$ of attributes, and an attribute assignment function $\phi \st V \rightarrow A$ mapping vertices to their attributes.  For simplicity, we may assume that $A$ contains a ``missing'' attribute token to cover the case when the attribute of a vertex is unknown or missing.  We wish to compute a similarity score between pairs of attributes that measures their propensity to occur together in edges in the graph.  In other words, we seek a similarity function $s \st A \times A \rightarrow \reals$ for which greater values of $s(a, b)$ indicate greater likelihood of co-occurrence of $a$ and $b$.  Furthermore, $s$ should be symmetric, due to the undirected nature of the graph.
 
 Following \cite{nameLocClustering}, we use \textit{pointwise mutual information} (PMI) as a similarity score.  PMI is defined as:
-$$ PMI(a, b) = \log \frac{P(a, b)}{P(a) P(b)}. $$
+$$ \text{PMI}(a, b) = \log \frac{P(a, b)}{P(a) P(b)}. $$
 This measures the relative co-occurrence likelihood of $a$ and $b$ with respect to the assumption of independence.  If $a$ and $b$ occur independently of each other, then the PMI will be 0.  The PMI will be positive (negative) if $a$ and $b$ occur more (less) frequently together than if they had been chosen independently.
 
 $P(a, b)$ is defined as the probability that an edge in $E$ will have attributes $\{a, b\}$.  In the graph context, it is tempting to think of $P(a)$ as the probability that a vertex in $V$ has attribute $a$, but this is incorrect.  $P(a)$ is in fact the marginal probability that $a$ occurs as one of the attributes of an edge $(u, v) \in E$:
@@ -40,7 +43,7 @@ $$ P(a) = P \displaystyle \left ( \bigcup_{b \in A} (\phi(u), \phi(v)) = (a, b) 
 
 \section{Normalization of PMI}
 Assuming that $P(a) > 0$ for all $a \in A$, the range of values for PMI$(a, b)$ is
-$$(-\infty, \, \min(-\log P(a), -\log P(b))]. $$
+$$[-\infty, \, \min(-\log P(a), -\log P(b))]. $$
 This is because PMI can also be written as $\log \frac{P(a \given b)}{P(a)}$ or $\log \frac{P(b \given a)}{P(b)}$, which are respectively maximized when $P(a \given b) = 1$ or $P(b \given a) = 1$, yielding $\min(-\log P(a), -\log P(b))$ as an upper bound.  In the event that $a$ and $b$ only occur with each other, $P(a, b) = P(a) = P(b)$, and the upper bound reduces to $-\log P(a, b)$.  Noting that this upper bound varies with $a$ and $b$, we propose two alternative normalizations of PMI in the following table.
 
 \begin{center}
@@ -66,15 +69,15 @@ $$ \hat{P}(a, b) = \frac{f_{a,b} + \delta}{|E| + \delta \binom{|A| + 1}{2}}, \qu
 We see that $\hat{P}(a, b)$ has the appropriate normalization because the set of attribute pairs is of size $\binom{|A| + 1}{2}$, since there are $\binom{|A|}{2}$ pairs of distinct attributes and $|A|$ pairs of identical attributes.  Having $\delta > 0$ guarantees that all probabilities are positive, and increasing $\delta$ distorts the distribution closer to the uniform distribution on attribute pairs.
 
 \section{Sparse representation of Empirical PMI}
-Suppose we want to represent the empirical PMI matrix in a sparse way.  Without smoothing, we could compute the empirical PMI for only the attribute pairs $\{a, b\}$ for which $f_{a,b} > 0$, so that we have $O(|E|)$ computations instead of $O(|A|^2)$.  We also only have to store this many values instead of the full $|A| \times |A|$ matrix.  In practice, it may be best to use NPMI1 or NPMI2 so that all un-represented attribute pairs have similarity 0 instead of $-\infty$.
+Suppose we want to represent the empirical PMI matrix in a sparse way.  Without smoothing, we could compute the empirical PMI for only the attribute pairs $\{a, b\}$ for which $f_{a,b} > 0$, so that the required time and memory is only $O(|E|)$ instead of $O(|A|^2)$.  In practice, it may be best to use NPMI1 or NPMI2 so that all unrepresented attribute pairs have similarity 0 instead of $-\infty$.
 
 If we want to use the $\delta$-smoothing, things get a little more complicated.  The empirical PMI matrix is not just a sum of a sparse matrix and a constant matrix (as would be the case for the counts alone) due to the $\hat{P}(a) \hat{P}(b)$ in the denominator.  However, we can represent the matrix in the following way.
 
-Let $F$ be the matrix $F_{i,j} = \log(f_{a_i,a_j} + \delta) - \log(\delta)$, where $a_1, a_2, \ldots, a_{|A|}$ is some canonical ordering of the attributes.  Note that $F_{i,j} = 0$ whenever $f_{a_i,a_j} = 0$, meaning we can represent $F$ sparsely when the pairwise counts are sparse.  Now let $\textbf{v}$ be the vector for which $v_i = \log(f_{a_i} + \delta |A|)$, let $\Delta = \log(\delta) + \log(|E| + \delta \binom{|A| + 1}{2})$.  Denoting by $E$ the matrix of empirical PMIs, we have
-$$ E = F + \Delta \mathbf{1} \mathbf{1}^T - \mathbf{v} \mathbf{1}^T - \mathbf{1} \mathbf{v}^T, $$
-where $\mathbf{1}$ is the vector of all 1's.  So $E$ can be represented as a sum of a sparse matrix and three rank-one matrices.  
+Let $F$ be the matrix $F_{i,j} = \log(f_{a_i,a_j} + \delta) - \log(\delta)$, where $a_1, a_2, \ldots, a_{|A|}$ is some canonical ordering of the attributes.  Note that $F_{i,j} = 0$ whenever $f_{a_i,a_j} = 0$, meaning we can represent $F$ sparsely when the pairwise counts are sparse.  Now let $\textbf{v}$ be the vector for which $v_i = \log(f_{a_i} + \delta |A|)$, and let $\Delta = \log(\delta) + \log(|E| + \delta \binom{|A| + 1}{2})$.  Denoting by $M$ the matrix of empirical PMIs, we have
+$$ M = F + \Delta \mathbf{1} \mathbf{1}^T - \mathbf{v} \mathbf{1}^T - \mathbf{1} \mathbf{v}^T, $$
+where $\mathbf{1}$ is the vector of all 1's.  So $M$ can be represented as a sum of a sparse matrix and three rank-one matrices.  The memory requirement is $O(|E| + |A|)$, and the sparse representation will enable fast computation of various embedding/clustering algorithms.
 
-The sum representation of the empirical PMI is licensed by the linearity of PMI with respect to the log-probabilities.  Such linearity does not exist for the normalized versions of PMI, so a different kind of smoothing would be preferable in which normalized PMIs are computed for all nonzero-frequency attribute pairs, and then a small constant is added to all the values after normalization.
+The sparse sum representation of the empirical PMI is licensed by the linearity of PMI with respect to the log-probabilities.  Such linearity does not exist for the normalized versions of PMI, so a different kind of smoothing would be required in which normalized PMIs are computed for all nonzero-frequency attribute pairs, and then a small constant is added to all the values \textit{after} normalization.
 
 
 \begin{thebibliography}{1}

@@ -108,17 +108,26 @@ def autoreadwrite(obj_names, extensions):
         def autoreadwrite_wrapped_function(*args, **kwargs):
             self = args[0]
             argnames = list(func.__code__.co_varnames)
+            if ('load' in argnames[:len(args)]):
+                load = args[argnames.index('load')]
+            elif ('load' in kwargs):
+                load = kwargs['load']
+            else:
+                load = True
             if ('save' in argnames[:len(args)]):
                 save = args[argnames.index('save')]
             elif ('save' in kwargs):
                 save = kwargs['save']
             else:
                 save = False
-            did_load_flags = []
             for obj_name, extension in zip(obj_names, extensions):
                 obj_name = obj_name.lstrip('_')  # remove any leading underscores
                 try:
-                    self.__dict__['_' + obj_name] = timeit(load_object)(self.folder, obj_name, extension)
+                    if load:
+                        self.__dict__['_' + obj_name] = timeit(load_object)(self.folder, obj_name, extension)
+                    else:
+                        print("Constructing from scratch...")
+                        timeit(func)(*args, **kwargs)
                 except:
                     print("Could not load %s from file.\n\nConstructing from scratch..." % obj_name)
                     timeit(func)(*args, **kwargs)
@@ -141,14 +150,14 @@ class ObjectWithReadwriteProperties(object):
                 if (property_name not in self.__class__.readwrite_properties):
                     raise AttributeError("'%s' object has no attribute '%s'" % (self.__class__.__name__, property_name))
                 if (not hasattr(self, hidden_property_name)):
-                    self.__dict__[hidden_property_name] = load_object(self.folder, property_name, self.__class__.readwrite_properties[property_name])
+                    self.__dict__[hidden_property_name] = timeit(load_object)(self.folder, property_name, self.__class__.readwrite_properties[property_name])
             def property_get():
                 property_load()
                 return self.__dict__[hidden_property_name]
             def property_save():
                 if (not hasattr(self, hidden_property_name)):
                     raise AttributeError("'%s' object has no attribute '%s'" % (self.__class__.__name__, property_name))
-                save_object(self.__dict__[hidden_property_name], self.folder, property_name, self.__class__.readwrite_properties[property_name])
+                timeit(save_object)(self.__dict__[hidden_property_name], self.folder, property_name, self.__class__.readwrite_properties[property_name])
             return (property_load, property_get, property_save)
         for property_name in self.__class__.readwrite_properties:
             (loader, getter, saver) = make_property(property_name)
@@ -164,3 +173,7 @@ class ObjectWithReadwriteProperties(object):
             super().__delattr__('_' + attr)
         else:
             super().__delattr__(attr)
+    def __dir__(self):
+        res = dir(type(self)) + list(self.__dict__.keys())
+        res.extend(self.__class__.readwrite_properties.keys())
+        return res

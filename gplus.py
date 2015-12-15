@@ -5,7 +5,7 @@ import louvain
 import tempfile
 from importlib import reload
 from collections import defaultdict
-from scipy.sparse import coo_matrix, diags
+from scipy.sparse import coo_matrix, dok_matrix, diags
 from scipy.sparse.linalg import LinearOperator
 from autoreadwrite import *
 from ggplot import *
@@ -27,6 +27,7 @@ def safe_divide(num, den):
 
 class Gplus(ig.Graph, ObjectWithReadwriteProperties):
     """Graph of Google+ data."""
+    num_vertices = {'gplus0_lcc' : 4690159}  # number of vertices in data set
     readwrite_properties = {'degree_dict' : 'pickle', 'degree_power_law' : 'pickle', 'comp_sizes' : 'csv', 'louvain_memberships' : 'csv'}
     @autoreadwrite(['_degree_dict', '_degree_power_law'], ['pickle', 'pickle'])
     def degrees(self, load = True, save = False):
@@ -97,46 +98,38 @@ class PMILinearOperator(LinearOperator):
 
 
 class PairwiseFreqAnalyzer(object):
-    """Manages statistics related to unordered pairwise frequencies, such as pointwise mutual information."""
-    def __init__(self, vocab, pairwise_freqs, unknown_style = 2):
-        """Takes list of vocabulary and a dictionary mapping vocab pairs to counts. The order of the pairs is ignored, and any pairs with an element not in the vocab list are also ignored. unknown_style is an integer indicating one of three ways of handling unknown attributes:
-            0: Unknown attributes will not be considered (nor will attributes paired with them).
-            1: The special token *???* will represent all unknown attributes.
-            2: The special token *???*_i will represent the i'th occurrence of an unknown attribute."""
-        self.unknown_style = unknown_style
-        self.vocab_set = set(vocab)  # for fast set membership querying
-        if (not self.ignore_unknown):
-            self.vocab_set.add('*???*')
-        self.vocab = sorted([v for v in self.vocab_set]) # the canonical sorted vocab list (corresponds to indices of matrix)
+    """Manages statistics related to unordered pairwise frequencies, such as pointwise mutual information. Represents the pairwise frequencies as a sparse matrix of counts of each pair using the DOK (dictionary of keys) format, then converts it to CSR (compressed sparse row) format."""
+    def __init__(self, vocab):
+        """Constructs PairwiseFreqAnalyzer object with a list of vocab. Creates a mapping from vocab to indices for the sparse matrix representation.""" 
+        self.vocab = vocab  # the canonical vocab list (in order of matrix indices)
         self.vocab_indices = dict((v, i) for (i, v) in enumerate(self.vocab))  # maps vocab items to canonical indices
+        self.vocab_freqs = dict((v, 0) for v in self.vocab)  # counts number of edges seen with each vocab word in it
+        #self.vocab_set = set(vocab)  # for fast set membership querying
         self.num_vocab = len(self.vocab)
         self.num_possible_pairs = (self.num_vocab * (self.num_vocab + 1)) // 2
-        self.vocab_freqs = dict((v, 0) for v in self.vocab)  # counts number of edges seen with each vocab word in it
-        self.pairwise_freqs = dict()
-        for (pair, freq) in pairwise_freqs.items():
-            if ((pair[0] in self.vocab_set) and (pair[1] in self.vocab_set) and (freq > 0)):
-                sorted_pair = tuple(sorted(pair))
-                self.vocab_freqs[sorted_pair[0]] += freq
-                if (sorted_pair[1] != sorted_pair[0]):
-                    self.vocab_freqs[sorted_pair[1]] += freq
-                if (sorted_pair in self.pairwise_freqs):
-                    self.pairwise_freqs[sorted_pair] += freq
-                else:
-                    self.pairwise_freqs[sorted_pair] = freq
-        self.total_edges = sum(self.pairwise_freqs.values())
+        self.freq_mat = dok_matrix((self.num_vocab, self.num_vocab), dtype = np.int64)
+    def add_pair(self, pair):
+        """Given a pair of objects, adds one to the count of the object pair. If an item in the pair is not in the vocab list, raises a KeyError."""
+        v1, v2 = pair
+        [i, j] = sorted([self.vocab_indices[v1], self.vocab_indices[v2]])
+        self.freq_mat[i, j] += 1
+    def finalize_construction(self):
+        """Once all pairs are added, performs some computations and converts the sparse matrix from dok to csr format."""
+        self.total_edges = sum(self.freq_mat.values())
+        self.freq_mat = self.freq_mat.tocsr()
+        sym_freq_mat = self.freq_mat + self.freq_mat.transpose().tocsr() - diags(self.freq_mat.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
+        for (i, v) in enumerate(self.vocab):
+            self.vocab_freqs[v] = sym_freq_mat[i,:].data.sum()
     def empirical_freq(self, *items, delta = 0):
         """Returns edge count of item. If two arguments are given, returns the observed count of the pair, disregarding order. If one argument is given, returns the observed count of the singleton. If delta > 0, adds delta to the counts."""
         assert(len(items) in [1, 2])
-        if any([x not in self.vocab_set for x in items]):
+        if any([x not in self.vocab_freqs for x in items]):
             raise ValueError("Entries must be in the vocabulary.")
         if (len(items) == 1):
             freq = self.vocab_freqs[items[0]] + delta * self.num_vocab
             return freq
-        key = tuple(sorted(items))
-        try:
-            freq = self.pairwise_freqs[key]
-        except KeyError:
-            freq = 0
+        i, j = sorted([self.vocab_indices[items[0]], self.vocab_indices[items[1]]])
+        freq = self.freq_mat[i, j]
         return (freq + delta)
     def empirical_prob(self, *items, delta = 0):
         """Returns empirical probability of item. If two arguments are given, this is the smoothed number of occurrences of the pair divided by the smoothed number of edges, under add-delta smoothing. If one argument is given, this is the smoothed number of occurrences of the item in any pair divided by the smoothed number of edges."""
@@ -163,42 +156,48 @@ class PairwiseFreqAnalyzer(object):
         """PMI transformed so that it is a dissimilarity score ranging from 0 to inf, with 1 for independence."""
         return -np.log(self.NPMI1s(item1, item2, delta = delta)) / np.log(2.0)
     @timeit
-    def to_sparse_matrix(self, sim = 'PMIs'):
-        """Returns a sparse similarity/dissimilarity matrix of the vocabulary items that co-occur. Options are 'PMIs', 'PMId', 'NPMI1s', 'NPMI1d', 'NPMI2s', 'NPMI2d', which have different ranges. No smoothing is done as of now, since that would ruin the sparsity."""
-        n = len(self.pairwise_freqs)
+    def to_sparse_PMI_matrix(self, sim = 'PMIs', symmetric = True):
+        """Returns a sparse similarity/dissimilarity matrix of the PMIs of vocabulary items that co-occur. Options are 'PMIs', 'PMId', 'NPMI1s', 'NPMI1d', 'NPMI2s', 'NPMI2d', which have different ranges. No smoothing is done yet, since that would ruin the sparsity."""
+        n = len(self.freq_mat.data)
         sim_func = self.__class__.__dict__[sim]
-        rows, cols, data = np.zeros(n, dtype = int), np.zeros(n, dtype = int), np.zeros(n, dtype = float)
-        for (i, (v1, v2)) in enumerate(self.pairwise_freqs):
-            rows[i], cols[i] = self.vocab_indices[v1], self.vocab_indices[v2]
-            data[i] = sim_func(self, v1, v2)
-        mat = coo_matrix((data, (rows, cols)), shape = (self.num_vocab, self.num_vocab)).tocsr()
-        mat = mat + mat.transpose().tocsr() - diags(mat.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
+        log_single_freqs = np.log(np.array([self.empirical_freq(self.vocab[i]) for i in range(self.num_vocab)]))
+        log_total_edges = np.log(self.total_edges)
+        data = np.zeros(n, dtype = float)
+        coo = self.freq_mat.tocoo()  # convert to coo_matrix
+        coo.data = np.log(coo.data)  # store the log-frequencies
+        # efficiently compute the score
+        for (k, (i, j, log_freq)) in enumerate(zip(coo.row, coo.col, coo.data)):
+            if (sim == 'PMIs'):
+                data[k] = log_freq - log_single_freqs[i] - log_single_freqs[j] + log_total_edges
+            elif (sim == 'NPMI1s'):
+                data[k] = (log_single_freqs[i] + log_single_freqs[j] - 2 * log_total_edges) / (2 * (log_freq - log_total_edges))
+            else:
+                data[k] = sim_func(self, self.vocab[i], self.vocab[j])
+        mat = coo_matrix((data, (coo.row, coo.col)), shape = (self.num_vocab, self.num_vocab)).tocsr()
+        if symmetric:  # symmetrize the matrix
+            mat = mat + mat.transpose().tocsr() - diags(mat.diagonal(), offsets = 0).tocsr()
         return mat
     @timeit
-    def to_sparse_operator(self, sim = 'PMIs', delta = 0):
+    def to_sparse_PMI_operator(self, sim = 'PMIs', delta = 0):
         """Returns a LinearOperator object encoding the sparse + low-rank representation of the PMI similarity matrix. This can be used in place of an actual matrix in various computations. If sim != 'PMIs', can use an alternative formulation of PMI, but only if delta = 0."""
         assert (((sim == 'PMIs') or (delta == 0)) and (sim in ['PMIs', 'NPMI1s', 'NPMI2s']))
         if ((sim != 'PMIs') or (delta == 0)):  # just use the sparse PMI matrix with no smoothing
             csr_mat = self.to_sparse_matrix(sim)
             return SymmetricSparseLinearOperator(csr_mat)
-        n = len(self.pairwise_freqs)
+        n = len(self.freq_mat.data)
         log_delta = np.log(delta)
-        rows, cols, data = np.zeros(n, dtype = int), np.zeros(n, dtype = int), np.zeros(n, dtype = float)
-        for (i, (v1, v2)) in enumerate(self.pairwise_freqs):
-            rows[i], cols[i] = self.vocab_indices[v1], self.vocab_indices[v2]
-            data[i] = np.log(self.empirical_freq(v1, v2, delta = delta)) - log_delta
-        F = coo_matrix((data, (rows, cols)), shape = (self.num_vocab, self.num_vocab)).tocsr()
+        coo = self.freq_mat.tocoo()
+        data = np.log(coo.data + delta) - log_delta
+        F = coo_matrix((data, (coo.row, coo.col)), shape = (self.num_vocab, self.num_vocab)).tocsr()
         F = F + F.transpose().tocsr() - diags(F.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
-        u = np.zeros(self.num_vocab, dtype = float)
-        for (i, v) in enumerate(self.vocab):
-            u[i] = np.log(self.empirical_freq(v, delta = delta))
+        u = np.log(np.array([self.empirical_freq(self.vocab[i], delta = delta) for i in range(self.num_vocab)]))
         Delta = log_delta + np.log(self.total_edges + delta * self.num_possible_pairs)
         return PMILinearOperator(F, Delta, u)
     @timeit
-    def to_weighted_graph(self, sim = 'NPMI1s'):
+    def to_PMI_weighted_graph(self, sim = 'NPMI1s'):
         """Returns a weighted graph of the vocabulary items, where edge weights are similarities. The sparsity of the similarity score matrix implies this graph will be sparse."""
         assert (sim in ['NPMI1s', 'NPMI2s'])
-        mat = self.to_sparse_matrix(sim)
+        mat = self.to_sparse_PMI_matrix(sim, symmetric = False).tocoo()  # graph will be undirected, so don't need symmetry
         with tempfile.TemporaryFile(mode = 'w+') as f:
             for (i, j) in zip(mat.row, mat.col):
                 f.write("%d %d\n" % (i, j))
@@ -210,10 +209,12 @@ class PairwiseFreqAnalyzer(object):
 
 class AttributeAnalyzer(ObjectWithReadwriteProperties):
     """Class for analyzing node attributes from each of the four types (school, major, employer, places_lived)."""
-    readwrite_properties = {'attr_pair_freqs' : 'pickle', 'pairwise_freq_analyzers' : 'pickle', 'attr_operators' : 'pickle'}
+    readwrite_properties = {'pairwise_freq_analyzers' : 'pickle', 'attr_operators' : 'pickle'}
     @timeit
-    def __init__(self, folder = 'gplus0_lcc/data'):
+    def __init__(self, dataset = 'gplus0_lcc'):
+        folder = dataset + '/data'
         super().__init__(folder)
+        self.num_vertices = Gplus.num_vertices[dataset]  # need to know how many vertices are in the dataset
         def read_dict(filename):
             """Reads a string dictionary from a file with the following format: on each line, the key comes first, then a tab followed by a values. The keys & values may be delimited by double quotes in case spaces are present. Only lines with both key and value will be present."""
             d = dict()
@@ -263,50 +264,62 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         """Returns plot showing the cumulative proportions covered by the attributes sorted by rank."""
         afdf = self.attr_freq_df(rank_thresh)
         return ggplot(aes(x = 'rank', y = 'percentage', color = 'type', linetype = 'annotated'), data = afdf) + geom_line(size = 3) + ggtitle("Cumulative percentage of most frequent attributes") + xlim(low = -1, high = rank_thresh + 1) + ylab("%") + scale_y_continuous(labels = range(0, 120, 20), limits = (0, 100)) + scale_x_continuous(breaks = range(0, int(1.05 * rank_thresh), rank_thresh // 5))
-    @autoreadwrite(['attr_pair_freqs'], ['pickle'])
-    def make_attr_pair_freqs(self, load = True, save = False):
-        """Makes dictionary of edge counts for each pair of (non-annotated) attributes, for each attribute type."""
+    @autoreadwrite(['pairwise_freq_analyzers'], ['pickle'])
+    def make_pairwise_freq_analyzers(self, load = True, save = False, unknown_style = 2):
+        """Makes PairwiseFreqAnalyzer objects for each attribute type. These objects can be used to perform statistics on pairwise attribute counts and to compute pairwise similarity matrices between attributes. unknown_style is an integer indicating one of three ways of handling unknown attributes:
+            0: Unknown attributes will not be considered (nor will attributes paired with them).
+            1: The special token *???* will represent all unknown attributes.
+            2: The special token *???*_i will represent the occurrence of an unknown attribute for node i.
+            attr_types can optionally specify the attribute types for which to construct PairwiseFreqAnalyzers."""
         if (not hasattr(self, 'attrs_by_node_by_type')):
             self.attrs_by_node_by_type = dict((attr_type, defaultdict(set)) for attr_type in self.attr_types)
             for (i, node, attr_type, attr_val) in self.attr_df.itertuples():
                 self.attrs_by_node_by_type[attr_type][node].add(attr_val)
+        self.unknown_style = unknown_style
+        self._pairwise_freq_analyzers = dict()
+        for attr_type in self.attr_types:
+            attrs_by_node = self.attrs_by_node_by_type[attr_type]
+            vocab = set()
+            for i in range(self.num_vertices):
+                if (i in attrs_by_node):
+                    vocab.update(attrs_by_node[i])
+                elif (self.unknown_style == 2):  # include unique unknown token for each unattributed node
+                    vocab.add('*???*_%d' % i)
+            if (self.unknown_style == 1):  # include a single unknown token to cover all unattributed nodes
+                vocab.add('*???*')
+            vocab = sorted(list(vocab)) # sort alphabetically
+            self._pairwise_freq_analyzers[attr_type] = PairwiseFreqAnalyzer(vocab)
         with open(self.folder + '/undirected_edges.dat', 'r') as f:
-            self.nodes = set()
-            self._attr_pair_freqs = dict((attr_type, defaultdict(int)) for attr_type in self.attr_types)
             for (i, line) in enumerate(f):
+                if (i % 100000 == 0):
+                    print(i)
                 v1, v2 = [int(token) for token in line.split()[:2]]
-                self.nodes.add(v1)
-                self.nodes.add(v2)
                 for attr_type in self.attr_types:
                     attrs_by_node = self.attrs_by_node_by_type[attr_type]
-                    pair_freqs = self._attr_pair_freqs[attr_type]
                     if (v1 in attrs_by_node):
                         if (v2 in attrs_by_node):
                             for val1 in attrs_by_node[v1]:
                                 for val2 in attrs_by_node[v2]:
-                                    pair_freqs[tuple(sorted([val1, val2]))] += 1
+                                    self._pairwise_freq_analyzers[attr_type].add_pair((val1, val2))
                         else:
                             for val1 in attrs_by_node[v1]:
-                                pair_freqs[tuple(sorted([val1, '*???*_%d' % v2]))] += 1  # unknown attribute marker
+                                self._pairwise_freq_analyzers[attr_type].add_pair((val1, ('*???*_%d' % v2) if (self.unknown_style == 2) else '*???*'))
                     else:
                         if (v2 in attrs_by_node):
                             for val2 in attrs_by_node[v2]:
-                                pair_freqs[tuple(sorted(['*???*_%d' % v1, val2]))] += 1
+                                self._pairwise_freq_analyzers[attr_type].add_pair((('*???*_%d' % v1) if (self.unknown_style == 2) else '*???*', val2))
                         else:
-                            pair_freqs[('*???*_%d' % v1, '*???*_%d' % v2)] += 1
-    @autoreadwrite(['pairwise_freq_analyzers'], ['pickle'])
-    def make_pairwise_freq_analyzers(self, ignore_unknown = False, load = True, save = False):
-        """Makes PairwiseFreqAnalyzer objects for each attribute type. These objects can be used to perform statistics on pairwise attribute counts and to compute pairwise similarity matrices between attributes. If ignore_unknown = True, ignores edges where one attribute is unknown."""
-        assert hasattr(self, '_attr_pair_freqs')
-        self._pairwise_freq_analyzers = dict((attr_type, PairwiseFreqAnalyzer(list(self.attr_freqs_by_type[attr_type].keys()), self._attr_pair_freqs[attr_type], ignore_unknown = ignore_unknown)) for attr_type in self.attr_types)
+                            self._pairwise_freq_analyzers[attr_type].add_pair((('*???*_%d' % v1) if (self.unknown_style == 2) else '*???*', ('*???*_%d' % v2) if (self.unknown_style == 2) else '*???*'))
+        for attr_type in self.attr_types:
+           self._pairwise_freq_analyzers[attr_type].finalize_construction()
     @autoreadwrite(['attr_operators'], ['pickle'])
     def make_attr_operators(self, sim = 'PMIs', delta = 0, load = True, save = False):
         """Makes LinearOperator objects for each attribute type, where each one represents a sparse + low-rank matrix of similarities or dissimilarities between attributes."""
         assert hasattr(self, '_pairwise_freq_analyzers')
-        self._attr_operators = dict((attr_type, self._pairwise_freq_analyzers[attr_type].to_sparse_operator(sim, delta)) for attr_type in self.attr_types)
+        self._attr_operators = dict((attr_type, self._pairwise_freq_analyzers[attr_type].to_sparse_PMI_operator(sim, delta)) for attr_type in self.attr_types)
     @classmethod
-    def from_data(cls, folder = 'gplus0_lcc/data'):
+    def from_data(cls, dataset = 'gplus0_lcc'):
         """Loads in files listing the node attributes for each type. The first 500 are hand-annotated. Represents each attribute type as a dictionary mapping original attributes to annotated attributes (or None if not annotated)."""
-        return cls(folder)
+        return cls(dataset)
 
 

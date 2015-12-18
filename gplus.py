@@ -175,7 +175,7 @@ class PairwiseFreqAnalyzer(object):
 
 class AttributeAnalyzer(ObjectWithReadwriteProperties):
     """Class for analyzing node attributes from each of the four types (school, major, employer, places_lived)."""
-    readwrite_properties = {'pairwise_freq_analyzers' : 'pickle', 'attr_operators' : 'pickle'}
+    readwrite_properties = {'pairwise_freq_analyzers' : 'pickle', 'attr_operators' : 'pickle', 'attrs_by_node_by_type' : 'pickle'}
     @timeit
     def __init__(self, dataset = 'gplus0_lcc'):
         folder = dataset + '/data'
@@ -230,6 +230,21 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         """Returns plot showing the cumulative proportions covered by the attributes sorted by rank."""
         afdf = self.attr_freq_df(rank_thresh)
         return ggplot(aes(x = 'rank', y = 'percentage', color = 'type', linetype = 'annotated'), data = afdf) + geom_line(size = 3) + ggtitle("Cumulative percentage of most frequent attributes") + xlim(low = -1, high = rank_thresh + 1) + ylab("%") + scale_y_continuous(labels = range(0, 120, 20), limits = (0, 100)) + scale_x_continuous(breaks = range(0, int(1.05 * rank_thresh), rank_thresh // 5))
+    def load_pairwise_freq_analyzer(self, attr_type):
+        """Loads a PairwiseFreqAnalyzer if not already owned by the object."""
+        if (not hasattr(self, '_pairwise_freq_analyzers')):
+            self._pairwise_freq_analyzers = dict()
+        if (attr_type not in self._pairwise_freq_analyzers):
+            self._pairwise_freq_analyzers[attr_type] = load_object(self.folder, 'pairwise_freq_analyzer_%s' % attr_type, 'pickle')
+    def load_pairwise_freq_analyzers(self):
+        """Loads all PairwiseFreqAnalyzers."""
+        for attr_type in self.attr_types:
+            self.load_pairwise_freq_analyzer(attr_type)
+    @autoreadwrite(['attrs_by_node_by_type'], ['pickle'])
+    def make_attrs_by_node_by_type(self, load = True, save = False):
+        self._attrs_by_node_by_type = dict((attr_type, defaultdict(set)) for attr_type in self.attr_types)
+        for (i, node, attr_type, attr_val) in self.attr_df.itertuples():
+                self._attrs_by_node_by_type[attr_type][node].add(attr_val)
     @autoreadwrite(['pairwise_freq_analyzers'], ['pickle'])
     def make_pairwise_freq_analyzers(self, load = True, save = False, unknown_style = 2):
         """Makes PairwiseFreqAnalyzer objects for each attribute type. These objects can be used to perform statistics on pairwise attribute counts and to compute pairwise similarity matrices between attributes. unknown_style is an integer indicating one of three ways of handling unknown attributes:
@@ -237,14 +252,12 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
             1: The special token *???* will represent all unknown attributes.
             2: The special token *???*_i will represent the occurrence of an unknown attribute for node i.
             attr_types can optionally specify the attribute types for which to construct PairwiseFreqAnalyzers."""
-        if (not hasattr(self, 'attrs_by_node_by_type')):
-            self.attrs_by_node_by_type = dict((attr_type, defaultdict(set)) for attr_type in self.attr_types)
-            for (i, node, attr_type, attr_val) in self.attr_df.itertuples():
-                self.attrs_by_node_by_type[attr_type][node].add(attr_val)
+        if (not hasattr(self, '_attrs_by_node_by_type')):
+            self.make_attrs_by_node_by_type()
         self.unknown_style = unknown_style
         self._pairwise_freq_analyzers = dict()
         for attr_type in self.attr_types:
-            attrs_by_node = self.attrs_by_node_by_type[attr_type]
+            attrs_by_node = self._attrs_by_node_by_type[attr_type]
             vocab = set()
             for i in range(self.num_vertices):
                 if (i in attrs_by_node):

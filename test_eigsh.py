@@ -33,11 +33,12 @@ def main():
     p.add_option('-n', type = int, help = 'dimension of matrix')
     p.add_option('-p', type = float, help = 'probability nonzero')
     p.add_option('-k', type = int, help = 'number of eigenvalues')
+    p.add_option('-t', type = float, default = 0, help = 'tolerance')
     opts, args = p.parse_args()
     mat = random_sparse_sym_matrix(opts.n, opts.p)
     print(repr(mat))
     start_time = time.time()
-    result = eigsh(mat, k = opts.k)
+    result = eigsh(mat, k = opts.k, tol = opts.t)
     elapsed_time = time.time() - start_time
     print("Time = %.3f seconds" % elapsed_time)
 

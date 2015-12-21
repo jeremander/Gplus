@@ -144,13 +144,13 @@ class PairwiseFreqAnalyzer(object):
             mat = mat + mat.transpose().tocsr() - diags(mat.diagonal(), offsets = 0).tocsr()
         return mat
     @timeit
-    def to_sparse_PMI_operator(self, sim = 'PMIs', delta = 0):
+    def to_sparse_PMI_operator(self, sim = 'NPMI1s', delta = 0):
         """Returns a LinearOperator object encoding the sparse + low-rank representation of the PMI similarity matrix. This can be used in place of an actual matrix in various computations. If sim != 'PMIs', can use an alternative formulation of PMI, but only if delta = 0."""
-        assert (((sim == 'PMIs') or (delta == 0)) and (sim in ['PMIs', 'NPMI1s', 'NPMI2s']))
-        if ((sim != 'PMIs') or (delta == 0)):  # just use the sparse PMI matrix with no smoothing
-            csr_mat = self.to_sparse_matrix(sim)
+        assert (sim in ['PMIs', 'NPMI1s', 'NPMI2s'])
+        assert ((delta > 0) if (sim == 'PMIs') else (delta == 0))
+        if (sim != 'PMIs'):  # just use the sparse NPMI matrix with no smoothing
+            csr_mat = self.to_sparse_PMI_matrix(sim)
             return SymmetricSparseLinearOperator(csr_mat)
-        n = len(self.freq_mat.data)
         log_delta = np.log(delta)
         coo = self.freq_mat.tocoo()
         data = np.log(coo.data + delta) - log_delta
@@ -230,12 +230,14 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         """Returns plot showing the cumulative proportions covered by the attributes sorted by rank."""
         afdf = self.attr_freq_df(rank_thresh)
         return ggplot(aes(x = 'rank', y = 'percentage', color = 'type', linetype = 'annotated'), data = afdf) + geom_line(size = 3) + ggtitle("Cumulative percentage of most frequent attributes") + xlim(low = -1, high = rank_thresh + 1) + ylab("%") + scale_y_continuous(labels = range(0, 120, 20), limits = (0, 100)) + scale_x_continuous(breaks = range(0, int(1.05 * rank_thresh), rank_thresh // 5))
+    @timeit
     def load_pairwise_freq_analyzer(self, attr_type):
         """Loads a PairwiseFreqAnalyzer if not already owned by the object."""
         if (not hasattr(self, '_pairwise_freq_analyzers')):
             self._pairwise_freq_analyzers = dict()
         if (attr_type not in self._pairwise_freq_analyzers):
             self._pairwise_freq_analyzers[attr_type] = load_object(self.folder, 'pairwise_freq_analyzer_%s' % attr_type, 'pickle')
+    @timeit
     def load_pairwise_freq_analyzers(self):
         """Loads all PairwiseFreqAnalyzers."""
         for attr_type in self.attr_types:

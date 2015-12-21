@@ -1,3 +1,4 @@
+import numpy as np
 from scipy.sparse.linalg import LinearOperator
 
 class SparseLinearOperator(LinearOperator):
@@ -5,6 +6,12 @@ class SparseLinearOperator(LinearOperator):
     def __init__(self, F):
         self.F = F
         super().__init__(dtype = float, shape = F.shape)
+    def get(self, i, j):
+        """Gets element i,j from the matrix representation of the SparseLinearOperator."""
+        vi, vj = np.zeros(self.shape[0], dtype = int), np.zeros(self.shape[1], dtype = int)
+        vi[i] = 1
+        vj[j] = 1
+        return np.dot(vi, self * vj)
     def _matvec(self, x):
         return self.F * x
     def __getnewargs__(self):  # for pickling
@@ -17,7 +24,7 @@ class SymmetricSparseLinearOperator(SparseLinearOperator):
         return self
 
 
-class PMILinearOperator(LinearOperator):
+class PMILinearOperator(SymmetricSparseLinearOperator):
     """Subclass of LinearOperator for handling the sparse + low-rank PMI matrix. In particular, it represents the matrix F + Delta * 1 * 1^T - u * 1^T - 1 * u^T."""
     def __init__(self, F, Delta, u):
         n = F.shape[0]
@@ -25,10 +32,8 @@ class PMILinearOperator(LinearOperator):
         self.F, self.Delta, self.u = F, Delta, u
         self.u_prime = self.Delta - self.u
         self.ones = np.ones(n, dtype = float)
-        super().__init__(dtype = float, shape = self.F.shape)
+        LinearOperator.__init__(self, dtype = float, shape = self.F.shape)
     def _matvec(self, x):
         return self.F * x + self.u_prime * np.sum(x) - self.ones * np.dot(self.u, x)
-    def _adjoint(self):
-        return self
     def __getnewargs__(self):  # for pickling
         return (self.F, self.Delta, self.u)

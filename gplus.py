@@ -3,9 +3,11 @@ import numpy as np
 import igraph as ig
 import louvain
 import tempfile
+import string
 from importlib import reload
 from collections import defaultdict
-from scipy.sparse import coo_matrix, dok_matrix, diags
+from sklearn.feature_extraction.text import CountVectorizer
+from scipy.sparse import *
 from autoreadwrite import *
 from ggplot import *
 from linop import *
@@ -24,6 +26,7 @@ def safe_divide(num, den):
     if (den == 0.0):
         return np.sign(num) * float('inf')
     return (num / den)
+
 
 class Gplus(ig.Graph, ObjectWithReadwriteProperties):
     """Graph of Google+ data."""
@@ -61,6 +64,28 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
             timeit(Gplus.to_undirected)(g)
         g.folder = folder
         return g
+    @staticmethod
+    def sparse_adjacency_operator(folder = 'gplus0_lcc/data', load = True, save = False):
+        """Reads the graph from edge list, and returns it as a SymmetricSparseLinearOperator object."""
+        did_load = False
+        if load:
+            try:
+                A = load_object(folder, 'sparse_adjacency_operator', 'pickle')
+                did_load = True
+            except OSError:
+                pass
+        if (not did_load):
+            print("Failed to load.")
+            filename = folder + '/undirected_edges.dat'
+            print("\nLoading data from '%s'..." % filename)
+            edges = pd.read_table(filename, header = None, sep = ' ')
+            n = max(max(edges[0]) + 1, max(edges[1]) + 1)
+            A = coo_matrix((np.ones(len(edges)), (edges[0], edges[1])), shape = (n, n)).tocsr()
+            A = A + A.transpose().tocsr() - diags(A.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
+            A = SymmetricSparseLinearOperator(A)
+        if save:
+            save_object(A, folder, 'sparse_adjacency_operator', 'pickle')
+        return A
 
 
 class PairwiseFreqAnalyzer(object):
@@ -175,7 +200,7 @@ class PairwiseFreqAnalyzer(object):
 
 class AttributeAnalyzer(ObjectWithReadwriteProperties):
     """Class for analyzing node attributes from each of the four types (school, major, employer, places_lived)."""
-    readwrite_properties = {'pairwise_freq_analyzers' : 'pickle', 'attr_operators' : 'pickle', 'attrs_by_node_by_type' : 'pickle'}
+    readwrite_properties = {'pairwise_freq_analyzers' : 'pickle', 'attrs_by_node_by_type' : 'pickle'}
     @timeit
     def __init__(self, dataset = 'gplus0_lcc'):
         folder = dataset + '/data'
@@ -194,7 +219,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         node_attr_filename = folder + '/node_attributes.csv'
         self.attr_df = pd.read_csv(node_attr_filename, sep = ';')
         self.attr_df['attributeVal'] = self.attr_df['attributeVal'].astype(str)
-        self.attr_types = ['school', 'major', 'employer', 'places_lived']
+        self.attr_types = ['employer', 'major', 'places_lived', 'school']
         self.attr_dicts = dict((attr_type, read_dict(folder + '/' + attr_type + '_map.dat')) for attr_type in self.attr_types)
         self.attr_map = dict((attr_type, lambda attr, attr_type = attr_type : self.attr_dicts[attr_type][attr] if (attr in self.attr_dicts[attr_type]) else attr) for attr_type in self.attr_types)
         self.attr_freqs_by_type = dict((t, defaultdict(int)) for t in self.attr_types)
@@ -237,8 +262,8 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
             self._pairwise_freq_analyzers = dict()
         if (attr_type not in self._pairwise_freq_analyzers):
             self._pairwise_freq_analyzers[attr_type] = load_object(self.folder, 'pairwise_freq_analyzer_%s' % attr_type, 'pickle')
-    @timeit
-    def load_pairwise_freq_analyzers(self):
+    @autoreadwrite(['pairwise_freq_analyzers'], ['pickle'])
+    def load_all_pairwise_freq_analyzers(self):
         """Loads all PairwiseFreqAnalyzers."""
         for attr_type in self.attr_types:
             self.load_pairwise_freq_analyzer(attr_type)
@@ -293,11 +318,117 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                             self._pairwise_freq_analyzers[attr_type].add_pair((('*???*_%d' % v1) if (self.unknown_style == 2) else '*???*', ('*???*_%d' % v2) if (self.unknown_style == 2) else '*???*'))
         for attr_type in self.attr_types:
            self._pairwise_freq_analyzers[attr_type].finalize_construction()
-    @autoreadwrite(['attr_operators'], ['pickle'])
-    def make_attr_operators(self, sim = 'PMIs', delta = 0, load = True, save = False):
-        """Makes LinearOperator objects for each attribute type, where each one represents a sparse + low-rank matrix of similarities or dissimilarities between attributes."""
-        assert hasattr(self, '_pairwise_freq_analyzers')
-        self._attr_operators = dict((attr_type, self._pairwise_freq_analyzers[attr_type].to_sparse_PMI_operator(sim, delta)) for attr_type in self.attr_types)
+    @timeit
+    def make_count_vectorizers(self, max_count_features = 500, load = True, save = False):
+        """Makes CountVectorizer objects for each of the attribute types. These can be used to give sparse vector representations of each attribute. Makes two separate CountVectorizers for each type, one for words and one for characters. max_features is the maximum number of features to include for each CountVectorizer."""
+        obj_name = "count_vectorizers%d" % max_count_features
+        did_load = False
+        if load:
+            try:
+                (self.word_cvs, self.char_cvs) = timeit(load_object)(self.folder, obj_name, 'pickle')
+                did_load = True
+            except:
+                print("Could not load %s from file.\n" % obj_name)
+        if (not did_load):
+            print("Constructing from scratch...")
+            def make_vectorizers():
+                self.max_count_features = max_count_features
+                self.word_cvs, self.char_cvs = dict(), dict()
+                self.word_features, self.char_features = dict(), dict()
+                self.indices_by_attr_by_type = dict()  # save off canonical mapping from attributes to indices
+                for attr_type in self.attr_types:
+                    # word vectorizer: remove accents & punctuation, split by whitespace, include single-character words
+                    self.word_cvs[attr_type] = CountVectorizer('content', strip_accents = 'unicode', analyzer = 'word', token_pattern = r'\b\w+\b', max_features = self.max_count_features)
+                    attrs = [pair[0] for pair in self.sorted_attr_freqs_by_type[attr_type]]
+                    self.indices_by_attr_by_type[attr_type] = dict((attr, i) for (i, attr) in enumerate(attrs))
+                    self.word_features[attr_type] = csr_matrix(self.word_cvs[attr_type].fit_transform(attrs), dtype = float)
+                    # char vectorizer: include all characters, including whitespace, punctuation, accents, and unicode
+                    self.char_cvs[attr_type] = CountVectorizer('content', analyzer = 'char', max_features = self.max_count_features)
+                    self.char_features[attr_type] = csr_matrix(self.char_cvs[attr_type].fit_transform(attrs), dtype = float)
+            timeit(make_vectorizers)()
+        if save:
+            timeit(save_object)((self.word_cvs, self.char_cvs), self.folder, obj_name, 'pickle')
+    def node_to_attr_vec(self, index, attr_type):
+        """Given a node index and an attribute type, returns the vector (as csr_matrix) obtained from the word/char counts for all attributes of that type. If the node possesses no attributes, this is the zero vector. If it possesses more than one attribute, returns the mean of the attribute vectors."""
+        if (index in self.attrs_by_node_by_type[attr_type]):
+            attrs = self.attrs_by_node_by_type[attr_type][index]
+            if (len(attrs) == 0):
+                return csr_matrix((1, 2 * self.max_count_features))
+            else:
+                indices_by_attr = self.indices_by_attr_by_type[attr_type]
+                word_features_mat, char_features_mat = self.word_features[attr_type], self.char_features[attr_type]
+                word_features_vec, char_features_vec = csr_matrix((1, self.max_count_features)), csr_matrix((1, self.max_count_features))
+                for attr in attrs:
+                    attr_index = indices_by_attr[attr]
+                    word_features_vec += word_features_mat[attr_index]
+                    char_features_vec += char_features_mat[attr_index]
+                vec = hstack([word_features_vec, char_features_vec])
+                return (vec / len(attrs))
+        else:
+            return csr_matrix((1, 2 * self.max_count_features))
+    def get_attribute_indicator(self, attr, attr_type):
+        """Given an attribute and its type, returns a Series of indicators for the graph vertices. 0 indicates the presence of the attribute, 1 indicates the presence of other attributes but not the given attribute, and nan indicates the lack of any attributes in that type."""
+        attrs_by_node = self.attrs_by_node_by_type[attr_type]
+        ind = np.zeros(self.num_vertices, dtype = float)
+        for i in range(self.num_vertices):
+            if (i in attrs_by_node):
+                attrs = attrs_by_node[i]
+                if (len(attrs) == 0):
+                    ind[i] = np.nan
+                elif (attr in attrs):
+                    ind[i] = 1.0
+            else:
+                ind[i] = np.nan
+        return pd.Series(ind)
+    def get_features_for_nodes(self, indices, attr_types):
+        """Returns count feature matrix for the given graph nodes. Only the attribute types in attr_types are included."""
+        return vstack([hstack([self.node_to_attr_vec(i, attr_type) for attr_type in attr_types]) for i in indices])
+    def make_complete_feature_matrix(self, max_count_features = 500, load = True, save = False):
+        """Makes sparse matrix of features for each node (all attribute types) based on the CountVectorizer objects."""
+        # ensure we have count vectorizers of the right dimensions
+        if ((not hasattr(self, 'word_cvs')) or (self.word_cvs['employer'].max_features != max_count_features)):
+            self.make_count_vectorizers(max_count_features)
+        obj_name = 'complete_feature_matrix%d' % max_count_features
+        did_load = False
+        if load:
+            try:
+                self.complete_feature_matrix = timeit(load_object)(self.folder, obj_name, 'pickle')
+                did_load = True
+            except:
+                print("Could not load %s from file.\n" % obj_name)
+        if (not did_load):
+            print("Constructing from scratch...")
+            def make_mat():
+                self.complete_feature_matrix = self.get_features_for_nodes(range(self.num_vertices), self.attr_types).tocsr()
+            timeit(make_mat)()
+        if save:
+            timeit(save_object)(self.complete_feature_matrix, self.folder, obj_name, 'pickle')
+    def make_complete_embedding_matrix(self, k = 50, sim = 'NPMI1s', embedding = 'eig', delta = 0.0):
+        pass
+    def get_attribute_sample(self, attr, attr_type, n):
+        """Selects a random n nodes with the given attribute, and a random n nodes without it. Returns a triple of index lists: first the n with the attribute, then the n without it, then the remaining unselected nodes whose attribute status is known."""
+        ind = self.get_attribute_indicator(attr, attr_type)
+        known_true = list(ind[ind==1].index)
+        known_false = list(ind[ind==0].index)
+        if (n > min(len(known_true), len(known_false))):
+            raise ValueError("Sample size is too large.")
+        training_true = sorted(list(np.random.permutation(known_true)[:n]))
+        training_false = sorted(list(np.random.permutation(known_false)[:n]))
+        test = sorted(list(set(known_true + known_false).difference(training_true).difference(training_false)))
+        return (training_true, training_false, test)
+    @timeit
+    def get_training_and_test(self, attr, attr_type, n):
+        """Selects an (n, n) training sample of nodes with/without the attribute, and a test set of the remainder. Returns a pair (features, outputs) for the both the training and test sets."""
+        assert hasattr(self, 'complete_feature_matrix')
+        (training_true, training_false, test) = self.get_attribute_sample(attr, attr_type, n)
+        training = sorted(training_true + training_false)
+        attr_indicator = self.get_attribute_indicator(attr, attr_type)
+        # get the column indices for the desired features
+        max_count_features = self.complete_feature_matrix.shape[1] // 8
+        attr_type_index = self.attr_types.index(attr_type)
+        attr_cols = range(2 * max_count_features * attr_type_index, 2 * max_count_features * (attr_type_index + 1))
+        good_cols = sorted(list(set(range(self.complete_feature_matrix.shape[1])).difference(attr_cols)))
+        return ((self.complete_feature_matrix[training][:, good_cols], attr_indicator[training]), (self.complete_feature_matrix[test][:, good_cols], attr_indicator[test]))
     @classmethod
     def from_data(cls, dataset = 'gplus0_lcc'):
         """Loads in files listing the node attributes for each type. The first 500 are hand-annotated. Represents each attribute type as a dictionary mapping original attributes to annotated attributes (or None if not annotated)."""

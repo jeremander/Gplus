@@ -1,4 +1,4 @@
-"""Computes eigenvalues and eigenvectors of the NPMI1 sparse matrices for a given attribute type."""
+"""Computes eigenvalues and eigenvectors of the PMI similarity matrices for a given attribute type. Saves the results of this along with kMeans clustering of the attributes, and the assignment of graph nodes to clusters."""
 
 import pickle
 import time
@@ -9,7 +9,6 @@ import matplotlib.pyplot as plt
 from scipy.sparse import coo_matrix, diags
 from scipy.sparse.linalg import eigsh
 from sklearn.cluster import KMeans
-from sklearn.metrics.pairwise import cosine_similarity
 from gplus import *
 
 
@@ -79,6 +78,7 @@ def main():
     p = optparse.OptionParser()
     p.add_option('--attr_type', '-a', type = str, help = 'attribute type')
     p.add_option('-p', type = str, help = 'PMI type (PMIs, NPMI1s, or NPMI2s)')
+    p.add_option('-e', type = str, help = 'embedding (eig, lap, normlap)')
     p.add_option('-d', type = float, help = 'smoothing parameter')
     p.add_option('-k', type = int, help = 'number of eigenvalues')
     p.add_option('-c', type = int, help = 'number of kmeans clusters')
@@ -87,24 +87,23 @@ def main():
 
     attr_type = opts.attr_type
     sim = opts.p
+    embedding = opts.e
     delta = opts.d
     k = opts.k
     nclusts = opts.c
     tol = opts.t
-    folder = 'gplus0_lcc/reports'
     topN = 50  # for the report
-    num_nodes = 4690159  # total number of nodes in the LCC
     assert (((sim == 'PMIs') or (delta == 0)) and (sim in ['PMIs', 'NPMI1s', 'NPMI2s']))
 
-    data_folder = 'gplus0_lcc/data/'
-    report_folder = 'gplus0_lcc/reports/'
-    file_prefix1 = ('%s_%s_delta' % (attr_type, sim)) + str(delta) + ('_k%d' % k)
-    file_prefix2 = ('%s_%s_delta' % (attr_type, sim)) + str(delta) + ('_k%d_c%d' % (k, nclusts))
+    data_folder = 'gplus0_lcc/data/PMI'
+    report_folder = 'gplus0_lcc/reports/PMI'
+    file_prefix1 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d' % k)
+    file_prefix2 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d_c%d' % (k, nclusts))
 
     print("\nLoading AttributeAnalyzer...")
     a = AttributeAnalyzer()
     a.load_pairwise_freq_analyzer(attr_type)
-    a.load_attrs_by_node_by_type()
+    a.make_attrs_by_node_by_type()
     attrs_by_node = a.attrs_by_node_by_type[attr_type]
     pfa = a.pairwise_freq_analyzers[attr_type]
     n = pfa.num_vocab
@@ -128,7 +127,9 @@ def main():
             print("\nComputing similarity matrix (%s)..." % sim)
             sim_op = pfa.to_sparse_PMI_operator(sim, delta)
             print("\nComputing eigenvectors (k = %d)..." % k)
-            (eigvals, features) = timeit(eigsh)(sim_op, k = k, tol = tol)
+            if (embedding == 'eig'):
+                (eigvals, features) = timeit(eigsh)(sim_op, k = k, tol = tol)
+                features = np.sqrt(abs_eigvals) * features  # scale the feature columns by the sqrt of the eigenvalues
             features = features[attr_indices, :]  # free up memory
             abs_eigvals = np.abs(eigvals)
             ranked_abs_eigvals = np.array(sorted(abs_eigvals, reverse = True))
@@ -140,7 +141,7 @@ def main():
             ax.set_ylim(ymin = 0)
             plt.savefig('%s%s_screeplot.png' % (report_folder, file_prefix1))  # save the scree plot
             #plt.show(block = False)
-            features = np.sqrt(abs_eigvals) * features  # scale the feature columns by the sqrt of the eigenvalues
+            np.savetxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), eigvals, delimiter = ',')
             np.savetxt('%s%s_features.csv' % (data_folder, file_prefix1), features, delimiter = ',')
         for i in range(len(attr_indices)):  # normalize the features to have unit norm (better for kMeans)
             features[i] = normalize(features[i])
@@ -182,7 +183,7 @@ def main():
                 return max_index
 
     # save file with the list of cluster labels for each node
-    clusters_by_node = [assign_cluster(i) for i in range(num_nodes)]
+    clusters_by_node = [assign_cluster(i) for i in range(a.num_vertices)]
     np.savetxt('%s%s_node_labels.csv' % (data_folder, file_prefix2), np.array(clusters_by_node, dtype = int), delimiter = ',', fmt = '%d')
     print("\nDone!")
 

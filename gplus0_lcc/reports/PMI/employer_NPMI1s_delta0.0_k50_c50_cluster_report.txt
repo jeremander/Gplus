@@ -1,0 +1,3000 @@
+##############
+# CLUSTER 22 #
+##############
+
+attribute prevalence  =  26285 / 422307 = 0.062241
+occurrence prevalence =  39640 / 757893 = 0.052303
+
+                                     attribute  frequency  prevalence
+                                    forever 21         37    0.000049
+                        mount royal university         34    0.000045
+                 fairfax county public schools         33    0.000044
+                           bj's wholesale club         31    0.000041
+                    tennessee state university         30    0.000040
+               texas a&m health science center         27    0.000036
+ case western reserve university school of law         25    0.000033
+                               in-n-out burger         24    0.000032
+                                          psav         23    0.000030
+                        navistar international         22    0.000029
+                                           scc         22    0.000029
+                   the capital group companies         22    0.000029
+                          anheuser-busch inbev         20    0.000026
+        blue cross and blue shield association         20    0.000026
+                                       my home         20    0.000026
+                                        seavus         20    0.000026
+                                       teavana         20    0.000026
+                                       zaxby's         20    0.000026
+                        cineplex entertainment         19    0.000025
+                nationwide children's hospital         19    0.000025
+                      air products & chemicals         18    0.000024
+                                         big w         18    0.000024
+                          cpm braxis capgemini         18    0.000024
+                     first presbyterian church         18    0.000024
+                                       primark         18    0.000024
+  the university of virginia's college at wise         18    0.000024
+                           turner construction         18    0.000024
+                                        currys         17    0.000022
+              education management corporation         17    0.000022
+                                           fda         17    0.000022
+                           four seasons hotels         17    0.000022
+                              mcalister's deli         17    0.000022
+                                        sebrae         17    0.000022
+                   university of arizona press         17    0.000022
+                       duck creek technologies         16    0.000021
+                                    marketstar         16    0.000021
+                                          ulta         16    0.000021
+                                          aldi         15    0.000020
+          beth israel deaconess medical center         15    0.000020
+                                   biogen idec         15    0.000020
+              california western school of law         15    0.000020
+                             carlow university         15    0.000020
+                                          epik         15    0.000020
+             faculty of electrical engineering         15    0.000020
+                           fundação dom cabral         15    0.000020
+                                         jenin         15    0.000020
+                           parsons corporation         15    0.000020
+                              randstad holding         15    0.000020
+                                           vrt         15    0.000020
+                                      admotion         14    0.000018
+
+
+##############
+# CLUSTER 33 #
+##############
+
+attribute prevalence  =  17236 / 422307 = 0.040814
+occurrence prevalence =  37226 / 757893 = 0.049118
+
+                               attribute  frequency  prevalence
+                                     ibm       3359    0.004432
+                   university of florida       2676    0.003531
+                arizona state university       1986    0.002620
+                       purdue university       1949    0.002572
+                      harvard university       1789    0.002360
+                              apple inc.       1786    0.002357
+                                best buy       1569    0.002070
+                       intel corporation        813    0.001073
+                              amazon.com        791    0.001044
+                           self-employed        710    0.000937
+                         electronic arts        551    0.000727
+                 the walt disney company        460    0.000607
+                         bank of america        406    0.000536
+                      aurora health care         10    0.000013
+                         city of houston          8    0.000011
+                                  syscom          8    0.000011
+                      deaconess hospital          7    0.000009
+                           funemployment          7    0.000009
+                           professor oak          7    0.000009
+                          festival foods          6    0.000008
+                                flying j          6    0.000008
+                           intrust group          6    0.000008
+                                katy isd          6    0.000008
+                            ritz-carlton          6    0.000008
+                    california psychcare          5    0.000007
+                 carlson wagonlit travel          5    0.000007
+                      data-tronics corp.          5    0.000007
+                      grant thornton llp          5    0.000007
+                        grow interactive          5    0.000007
+                      guideone insurance          5    0.000007
+                             itelligence          5    0.000007
+                           john l. scott          5    0.000007
+                 joseph-beth booksellers          5    0.000007
+                                    jysk          5    0.000007
+                               legend 3d          5    0.000007
+                      nextgen healthcare          5    0.000007
+                                    nypd          5    0.000007
+                         privateer press          5    0.000007
+                    securus technologies          5    0.000007
+                   sentinel technologies          5    0.000007
+                              telechoice          5    0.000007
+                                     vda          5    0.000007
+                       vinson and elkins          5    0.000007
+ adrian smith + gordon gill architecture          4    0.000005
+                               alphawest          4    0.000005
+                                    amti          4    0.000005
+                         app informatica          4    0.000005
+                    arizona diamondbacks          4    0.000005
+                              barkleyrei          4    0.000005
+                     bsquare corporation          4    0.000005
+
+
+##############
+# CLUSTER 10 #
+##############
+
+attribute prevalence  =  16948 / 422307 = 0.040132
+occurrence prevalence =  33476 / 757893 = 0.044170
+
+                    attribute  frequency  prevalence
+         national instruments        186    0.000245
+            johnson & johnson        169    0.000223
+       advanced micro devices        161    0.000212
+                    logicacmg        151    0.000199
+            robert bosch gmbh        151    0.000199
+                credit suisse        148    0.000195
+                          csc        142    0.000187
+              mahindra satyam        137    0.000181
+                       ubs ag        135    0.000178
+    automatic data processing        131    0.000173
+                  syntel inc.        111    0.000146
+                        wipro        107    0.000141
+             rockwell collins        106    0.000140
+                      virtusa         97    0.000128
+                    cognizant         90    0.000119
+                      directi         89    0.000117
+              lehman brothers         89    0.000117
+      standard chartered bank         88    0.000116
+                        avaya         86    0.000113
+                     broadcom         86    0.000113
+              mentor graphics         86    0.000113
+                      ca inc.         85    0.000112
+      freescale semiconductor         74    0.000098
+      reliance communications         74    0.000098
+                      genpact         71    0.000094
+   sutherland global services         71    0.000094
+                   capital iq         69    0.000091
+                      cummins         67    0.000088
+     larsen & toubro infotech         67    0.000088
+       cadence design systems         66    0.000087
+    kelley school of business         65    0.000086
+           stmicroelectronics         63    0.000083
+                      samsung         62    0.000082
+                          its         61    0.000080
+                  exxon mobil         60    0.000079
+       indian oil corporation         60    0.000079
+ infosys technologies limited         59    0.000078
+                    aon corp.         58    0.000077
+                  halliburton         57    0.000075
+               sabre holdings         57    0.000075
+                   ust global         57    0.000075
+             johnson controls         56    0.000074
+                bharti airtel         55    0.000073
+            hewitt associates         55    0.000073
+                        qwest         55    0.000073
+     emerson electric company         53    0.000070
+                          hcl         53    0.000070
+                   tata elxsi         53    0.000070
+                 l&t infotech         52    0.000069
+          zensar technologies         52    0.000069
+
+
+##############
+# CLUSTER 19 #
+##############
+
+attribute prevalence  =  11374 / 422307 = 0.026933
+occurrence prevalence =  33063 / 757893 = 0.043625
+
+                        attribute  frequency  prevalence
+                        accenture       2216    0.002924
+                          infosys       2033    0.002682
+        tata consultancy services       1720    0.002269
+                  hewlett-packard       1617    0.002134
+   cognizant technology solutions       1004    0.001325
+              cisco systems, inc.        986    0.001301
+                          student        905    0.001194
+               wipro technologies        874    0.001153
+               oracle corporation        832    0.001098
+         deloitte touche tohmatsu        796    0.001050
+                    ernst & young        531    0.000701
+                 hcl technologies        513    0.000677
+                              tcs        479    0.000632
+    computer sciences corporation        405    0.000534
+                    adobe systems        393    0.000519
+                 procter & gamble        351    0.000463
+                        ibm india        338    0.000446
+              samsung electronics        334    0.000441
+                         qualcomm        329    0.000434
+                           oracle        293    0.000387
+           nokia siemens networks        289    0.000381
+                        honeywell        270    0.000356
+              ibm global services        251    0.000331
+                           vmware        249    0.000329
+                texas instruments        212    0.000280
+                           nvidia        206    0.000272
+                           netapp        198    0.000261
+                     schlumberger        191    0.000252
+                         deloitte        183    0.000241
+                  larsen & toubro        174    0.000230
+                          aricent        173    0.000228
+                          mphasis        152    0.000201
+                     thoughtworks        146    0.000193
+                         mindtree        137    0.000181
+                 barclays capital        129    0.000170
+           patni computer systems        122    0.000161
+                 juniper networks        118    0.000156
+                    zs associates        115    0.000152
+              reliance industries         94    0.000124
+                      tata motors         88    0.000116
+                         itc ltd.         70    0.000092
+                    iim ahmedabad         57    0.000075
+        infosys technologies ltd.         56    0.000074
+        tata technologies limited         27    0.000036
+                            keane         15    0.000020
+                              gcs         12    0.000016
+              union bank of india         12    0.000016
+                  cox enterprises         11    0.000015
+ fujitsu consulting india limited         10    0.000013
+         microsoft research india         10    0.000013
+
+
+#############
+# CLUSTER 8 #
+#############
+
+attribute prevalence  =  15546 / 422307 = 0.036812
+occurrence prevalence =  30160 / 757893 = 0.039795
+
+                                 attribute  frequency  prevalence
+             university of central florida       1820    0.002401
+                                 starbucks        976    0.001288
+                                      at&t        666    0.000879
+                   university of rochester        577    0.000761
+                   united states air force        450    0.000594
+                          verizon wireless        444    0.000586
+                           lockheed martin        391    0.000516
+ university of north carolina at charlotte        329    0.000434
+                                    subway        305    0.000402
+                united states marine corps        280    0.000369
+                             sprint nextel        268    0.000354
+                       booz allen hamilton        267    0.000352
+                             staples, inc.        258    0.000340
+                              circuit city        241    0.000318
+                               blockbuster        238    0.000314
+                                 u.s. navy        155    0.000205
+                  cvs caremark corporation        146    0.000193
+               sony computer entertainment        144    0.000190
+                                    kohl's        123    0.000162
+                             borders group        119    0.000157
+                           best buy mobile        110    0.000145
+                 regal entertainment group        108    0.000143
+                         pearson education         97    0.000128
+                                   wendy's         96    0.000127
+                          general dynamics         95    0.000125
+                         lesley university         85    0.000112
+                 sony online entertainment         76    0.000100
+                             at&t mobility         75    0.000099
+                                   bioware         71    0.000094
+                    nielsen media research         65    0.000086
+                                    arby's         60    0.000079
+                                       ign         60    0.000079
+                         wilkes university         52    0.000069
+                                 lucasarts         51    0.000067
+                         bed bath & beyond         50    0.000066
+                               apple, inc.         49    0.000065
+                                      sega         48    0.000063
+                               cablevision         47    0.000062
+                         bath & body works         45    0.000059
+                            hallmark cards         44    0.000058
+                              securitas ab         39    0.000051
+                              u.s. bancorp         39    0.000051
+                            school of rock         36    0.000048
+                             steak n shake         35    0.000046
+                                  arenanet         34    0.000045
+                                 h&r block         31    0.000041
+                           insomniac games         28    0.000037
+             international game technology         27    0.000036
+                                       rbs         27    0.000036
+                             turbine, inc.         27    0.000036
+
+
+##############
+# CLUSTER 17 #
+##############
+
+attribute prevalence  =  12634 / 422307 = 0.029917
+occurrence prevalence =  28813 / 757893 = 0.038017
+
+                         attribute  frequency  prevalence
+        johnson & wales university        193    0.000255
+                 kaiser permanente        174    0.000230
+                            macy's        173    0.000228
+                      panera bread        148    0.000195
+                             telus        139    0.000183
+                       chick-fil-a        137    0.000181
+           electronic data systems        136    0.000179
+                   cvs corporation        121    0.000160
+                         officemax        120    0.000158
+                     hollister co.        119    0.000157
+                        lexisnexis        101    0.000133
+             enterprise rent-a-car        100    0.000132
+                        applebee's         91    0.000120
+                           directv         86    0.000113
+             moody bible institute         86    0.000113
+          charles sturt university         83    0.000110
+                loyola high school         82    0.000108
+                           walmart         80    0.000106
+              wegmans food markets         75    0.000099
+                 sykes enterprises         73    0.000096
+                 stonehill college         72    0.000095
+                   banana republic         70    0.000092
+                      dish network         68    0.000090
+                          mediacom         68    0.000090
+                           staples         64    0.000084
+                        teksystems         64    0.000084
+                      demand media         63    0.000083
+                 micron technology         63    0.000083
+                   ursinus college         63    0.000083
+                         urs corp.         62    0.000082
+                       jamba juice         61    0.000080
+ harrisburg area community college         60    0.000079
+               shaw communications         60    0.000079
+                        winn-dixie         60    0.000079
+              the princeton review         59    0.000078
+                          tu delft         58    0.000077
+           philadelphia university         57    0.000075
+                        albertsons         55    0.000073
+ des moines area community college         55    0.000073
+                          eb games         55    0.000073
+            pnc financial services         54    0.000071
+                      ruby tuesday         54    0.000071
+       sony pictures entertainment         54    0.000071
+            charter communications         52    0.000069
+                           menards         51    0.000067
+                       centurylink         50    0.000066
+             dick's sporting goods         48    0.000063
+                       many places         48    0.000063
+                          shoprite         48    0.000063
+                            chacha         47    0.000062
+
+
+#############
+# CLUSTER 3 #
+#############
+
+attribute prevalence  =  11446 / 422307 = 0.027104
+occurrence prevalence =  27145 / 757893 = 0.035816
+
+                              attribute  frequency  prevalence
+                                    ips        105    0.000139
+                      victoria's secret         99    0.000131
+                      disneyland resort         98    0.000129
+                        ncr corporation         81    0.000107
+                long beach city college         78    0.000103
+                universitas gadjah mada         77    0.000102
+                                 altran         73    0.000096
+                                    cdw         72    0.000095
+                  joliet junior college         64    0.000084
+                           thales group         63    0.000083
+                                 adecco         61    0.000080
+                 de la salle university         59    0.000078
+                                   atos         57    0.000075
+                                the man         57    0.000075
+         university of southern denmark         55    0.000073
+                          berea college         54    0.000071
+                     ef education first         52    0.000069
+                        pacific sunwear         51    0.000067
+                      kuwait university         50    0.000066
+                                bechtel         49    0.000065
+                              city year         49    0.000065
+            boeing commercial airplanes         48    0.000063
+                  maastricht university         45    0.000059
+                        itt corporation         44    0.000058
+                   dow chemical company         43    0.000057
+                                 dupont         43    0.000057
+                    perceptive software         43    0.000057
+                        cardinal health         42    0.000055
+                       cleveland clinic         42    0.000055
+               jacobs engineering group         40    0.000053
+                                 neoris         40    0.000053
+       trinity international university         40    0.000053
+                              air force         39    0.000051
+                          at&t wireless         39    0.000051
+                                  kumon         39    0.000051
+                          towers watson         39    0.000051
+                    dow jones & company         38    0.000050
+                 the carphone warehouse         38    0.000050
+ fidelity national information services         37    0.000049
+                        global crossing         37    0.000049
+                    hamilton sundstrand         37    0.000049
+                macquarie group limited         37    0.000049
+                        pratt & whitney         37    0.000049
+                       universal mccann         37    0.000049
+                  huntington university         36    0.000048
+                      slalom consulting         36    0.000048
+                        system engineer         36    0.000048
+                       virgin media plc         36    0.000048
+                       volkswagen group         36    0.000048
+                      aarhus university         35    0.000046
+
+
+##############
+# CLUSTER 12 #
+##############
+
+attribute prevalence  =  18130 / 422307 = 0.042931
+occurrence prevalence =  26105 / 757893 = 0.034444
+
+                          attribute  frequency  prevalence
+                             telkom         35    0.000046
+                      price chopper         29    0.000038
+                                sii         27    0.000036
+                          forsvaret         26    0.000034
+ universidad tecnológica de pereira         26    0.000034
+                            conalep         24    0.000032
+                               sita         24    0.000032
+ american museum of natural history         23    0.000030
+                           etisalat         23    0.000030
+                  hoffmann-la roche         23    0.000030
+                ross dress for less         23    0.000030
+                        danske bank         22    0.000029
+              baptist bible college         21    0.000028
+                                ime         21    0.000028
+                           assurant         20    0.000026
+              beckman coulter, inc.         20    0.000026
+                 peter kiewit sons'         20    0.000026
+           real canadian superstore         20    0.000026
+                           uw-stout         20    0.000026
+              carnival cruise lines         19    0.000025
+                        harte-hanks         19    0.000025
+                        us cellular         19    0.000025
+                    center partners         18    0.000024
+         missionary training center         18    0.000024
+                             sheetz         18    0.000024
+                   abercrombie kids         17    0.000022
+         black & veatch corporation         17    0.000022
+              build-a-bear workshop         17    0.000022
+                      dordt college         17    0.000022
+                      globe telecom         17    0.000022
+                                ima         16    0.000021
+                  noodles & company         16    0.000021
+              universidad del norte         16    0.000021
+          electric boat corporation         15    0.000020
+                           lg group         15    0.000020
+                            mitrais         15    0.000020
+                          sams club         15    0.000020
+                             sarcom         15    0.000020
+                     bonefish grill         14    0.000018
+             burlington high school         14    0.000018
+                           cableone         14    0.000018
+                      computershare         14    0.000018
+              cumberland university         14    0.000018
+              milton keynes college         14    0.000018
+                         stein mart         14    0.000018
+                                udo         14    0.000018
+ universidad tecnológica de bolívar         14    0.000018
+              yankee candle company         14    0.000018
+    busch entertainment corporation         13    0.000017
+                            cegedim         13    0.000017
+
+
+#############
+# CLUSTER 6 #
+#############
+
+attribute prevalence  =   9792 / 422307 = 0.023187
+occurrence prevalence =  23359 / 757893 = 0.030821
+
+                               attribute  frequency  prevalence
+                     harvey mudd college        348    0.000459
+                                   zynga        271    0.000358
+                               cgi group        155    0.000205
+                     deloitte consulting        146    0.000193
+                epic systems corporation        142    0.000187
+                                    ikea        130    0.000172
+                           cisco systems        122    0.000161
+                    dreamworks animation        102    0.000135
+                                     sap         99    0.000131
+                           ge healthcare         98    0.000129
+                             capital one         97    0.000128
+                factset research systems         93    0.000123
+                               genentech         93    0.000123
+                     akamai technologies         78    0.000103
+                                    cern         77    0.000102
+                                 telstra         73    0.000096
+                                   mitre         68    0.000090
+         georgia tech research institute         62    0.000082
+                                   pixar         62    0.000082
+                                  j.crew         59    0.000078
+                                 playdom         59    0.000078
+            cork institute of technology         58    0.000077
+                                   amgen         56    0.000074
+            brigham and women's hospital         56    0.000074
+                       eaton corporation         55    0.000073
+ university of pittsburgh medical center         55    0.000073
+                             doubleclick         54    0.000071
+                                   inria         54    0.000071
+                  trinity college dublin         54    0.000071
+                              zappos.com         54    0.000071
+                                   webmd         53    0.000070
+                          canonical ltd.         52    0.000069
+               corporate executive board         51    0.000067
+       parametric technology corporation         51    0.000067
+                            pitney bowes         51    0.000067
+                            ita software         48    0.000063
+                   microsoft corporation         48    0.000063
+               jet propulsion laboratory         47    0.000062
+                  microsoft game studios         47    0.000062
+          university of washington press         47    0.000062
+                        phillips academy         46    0.000061
+                          booz & company         45    0.000059
+                              lionbridge         45    0.000059
+                       motorola mobility         45    0.000059
+                                   petco         45    0.000059
+     university of georgia school of law         45    0.000059
+                 rhythm and hues studios         44    0.000058
+                               tektronix         44    0.000058
+                    kelly services, inc.         42    0.000055
+                                     pwc         42    0.000055
+
+
+#############
+# CLUSTER 9 #
+#############
+
+attribute prevalence  =  16089 / 422307 = 0.038098
+occurrence prevalence =  23061 / 757893 = 0.030428
+
+                                     attribute  frequency  prevalence
+                                           uba        210    0.000277
+                                       duoc uc        183    0.000241
+      universidad técnica federico santa maría        163    0.000215
+                                        unitec        150    0.000198
+        universidad de san carlos de guatemala        123    0.000162
+                                       globant        122    0.000161
+                                       groupon        115    0.000152
+                                         indra        101    0.000133
+ pontificia universidad católica de valparaíso         91    0.000120
+                                          bbdo         87    0.000115
+                  universidad austral de chile         87    0.000115
+                                       softtek         82    0.000108
+                                    tribal ddb         82    0.000108
+                        r/greenberg associates         78    0.000103
+                                        uniacc         68    0.000090
+                                    periodista         65    0.000086
+                         universidad de colima         65    0.000086
+                                          pucp         59    0.000078
+                                         tbwa\         54    0.000071
+                                 independiente         47    0.000062
+                            vodafone group plc         47    0.000062
+                                   springfield         46    0.000061
+                                      movistar         42    0.000055
+           albert einstein college of medicine         41    0.000054
+                                  gsi commerce         41    0.000054
+                                         cemex         39    0.000051
+                                  lan airlines         39    0.000051
+                      universidad de barcelona         38    0.000050
+                                         vostu         37    0.000049
+                         universitat de girona         36    0.000048
+                                  despegar.com         35    0.000046
+                               el corte inglés         33    0.000044
+                                       mi casa         33    0.000044
+                      los angeles city college         32    0.000042
+        universidad autónoma de aguascalientes         32    0.000042
+                           universidad del mar         30    0.000040
+                                         entel         29    0.000038
+                                 avon products         28    0.000037
+                                        tuenti         28    0.000037
+                              cable & wireless         26    0.000034
+                                    en mi casa         25    0.000033
+                                     digitaria         24    0.000032
+                          universidade de vigo         24    0.000032
+                                           ceo         23    0.000030
+                                          udla         22    0.000029
+                           universidad anáhuac         22    0.000029
+                      universidad finis terrae         22    0.000029
+                        universidade da coruña         22    0.000029
+                                      la calle         21    0.000028
+                                     telepizza         21    0.000028
+
+
+#############
+# CLUSTER 7 #
+#############
+
+attribute prevalence  =   9514 / 422307 = 0.022529
+occurrence prevalence =  21603 / 757893 = 0.028504
+
+                                      attribute  frequency  prevalence
+                                            h&m         71    0.000094
+             universidad nacional de ingeniería         49    0.000065
+                                    aéropostale         45    0.000059
+                             levi strauss & co.         45    0.000059
+                                       waitrose         44    0.000058
+                                       autozone         41    0.000054
+                                t.g.i. friday's         40    0.000053
+      international islamic university malaysia         39    0.000051
+                                    holiday inn         37    0.000049
+                                       no where         34    0.000045
+                                   tu darmstadt         34    0.000045
+                                    groupe bull         33    0.000044
+                              polo ralph lauren         33    0.000044
+                                           sahm         32    0.000042
+                                  tjx companies         32    0.000042
+                                  compass group         31    0.000041
+ faculdade de ciências da universidade do porto         31    0.000041
+                     marsh & mclennan companies         31    0.000041
+             university of asia and the pacific         31    0.000041
+              western state college of colorado         31    0.000041
+                              group 4 securicor         30    0.000040
+                                  omnicom group         30    0.000040
+                                       mobilink         29    0.000038
+                                     realdolmen         29    0.000038
+                                      supervalu         29    0.000038
+                                              3         28    0.000037
+                       british american tobacco         28    0.000037
+                                   grameenphone         28    0.000037
+                                   ingram micro         28    0.000037
+                                          uspto         28    0.000037
+                      windstream communications         28    0.000037
+                               constant contact         27    0.000036
+                                         crytek         27    0.000036
+                                              i         27    0.000036
+                                         itworx         27    0.000036
+                                         publix         27    0.000036
+                                        td bank         27    0.000036
+                    universidad centroamericana         27    0.000036
+              universidad tecnológica de panamá         27    0.000036
+                                             s1         26    0.000034
+                                sylvan learning         26    0.000034
+                                            uat         26    0.000034
+                                              ?         25    0.000033
+                   dana-farber cancer institute         25    0.000033
+                                         mobily         25    0.000033
+         new york university school of medicine         25    0.000033
+                                texas roadhouse         25    0.000033
+                                   the universe         25    0.000033
+                                           tsmc         25    0.000033
+         united states house of representatives         25    0.000033
+
+
+##############
+# CLUSTER 21 #
+##############
+
+attribute prevalence  =  14204 / 422307 = 0.033634
+occurrence prevalence =  20541 / 757893 = 0.027103
+
+                               attribute  frequency  prevalence
+                   mount holyoke college        138    0.000182
+                          liberty mutual        102    0.000135
+                            kaplan, inc.         86    0.000113
+                     liberty high school         76    0.000100
+              turner broadcasting system         69    0.000091
+                          dunkin' donuts         68    0.000090
+     university of maryland college park         66    0.000087
+                                 express         60    0.000079
+                            trader joe's         56    0.000074
+                      lingnan university         47    0.000062
+                              americorps         46    0.000061
+                             live nation         44    0.000058
+                          tbwa\chiat\day         43    0.000057
+                        american apparel         42    0.000055
+                discovery communications         39    0.000051
+                     hannaford bros. co.         39    0.000051
+                                  africa         38    0.000050
+                                  vitrue         34    0.000045
+                                  ccp hf         33    0.000044
+       intervarsity christian fellowship         32    0.000042
+      oxford college of emory university         32    0.000042
+                                michaels         31    0.000041
+            caribou coffee company, inc.         30    0.000040
+                             tripadvisor         30    0.000040
+                  harmonix music systems         29    0.000038
+ university of illinois urbana-champaign         28    0.000037
+                             big y foods         27    0.000036
+          brookhaven national laboratory         24    0.000032
+                u.s. department of state         24    0.000032
+                        us census bureau         24    0.000032
+                       finish line, inc.         23    0.000030
+                            fossil, inc.         22    0.000029
+             the university of tennessee         22    0.000029
+                                    aldo         21    0.000028
+          maxim integrated products inc.         21    0.000028
+                                  newton         21    0.000028
+                               bellsouth         20    0.000026
+                       deloitte & touche         20    0.000026
+                           hill holliday         20    0.000026
+                national weather service         20    0.000026
+                          bj's brewhouse         19    0.000025
+                            cvs/pharmacy         19    0.000025
+                   einstein bros. bagels         19    0.000025
+ massachusetts college of art and design         17    0.000022
+                           red bull gmbh         17    0.000022
+                                  irdeto         16    0.000021
+     los rios community college district         16    0.000021
+                              mathnasium         16    0.000021
+                       rackspace hosting         16    0.000021
+                            henry schein         15    0.000020
+
+
+##############
+# CLUSTER 46 #
+##############
+
+attribute prevalence  =  12546 / 422307 = 0.029708
+occurrence prevalence =  20464 / 757893 = 0.027001
+
+                             attribute  frequency  prevalence
+                     lehigh university        457    0.000603
+                        hunter college        292    0.000385
+                university of missouri        224    0.000296
+                         merrill lynch        218    0.000288
+                 quinnipiac university        176    0.000232
+                               edelman        163    0.000215
+                  state farm insurance        119    0.000157
+                           peace corps        118    0.000156
+                    the new york times        110    0.000145
+                                   cnn         99    0.000131
+                       gannett company         70    0.000092
+                             cbs radio         64    0.000084
+                   the washington post         64    0.000084
+                                   nbc         57    0.000075
+                      associated press         55    0.000073
+          university of north carolina         52    0.000069
+                        little caesars         51    0.000067
+                          examiner.com         48    0.000063
+                    hearst corporation         48    0.000063
+           cornish college of the arts         47    0.000062
+                            consultant         46    0.000061
+                   the huffington post         46    0.000061
+                                   unc         46    0.000061
+                             patch.com         43    0.000057
+         american broadcasting company         42    0.000055
+          center for american progress         41    0.000054
+                     los angeles times         41    0.000054
+                       tribune company         41    0.000054
+                       chicago tribune         40    0.000053
+                   the nielsen company         39    0.000051
+                      freelance writer         37    0.000049
+               the university of texas         37    0.000049
+                 national public radio         35    0.000046
+                          random house         34    0.000045
+     stetson university college of law         33    0.000044
+                      the boston globe         33    0.000044
+                     burson-marsteller         32    0.000042
+         democratic national committee         31    0.000041
+                             usa today         31    0.000041
+              fox broadcasting company         30    0.000040
+               the dallas morning news         30    0.000040
+                 chestnut hill college         29    0.000038
+                united states congress         29    0.000038
+               oxford university press         28    0.000037
+              middlesex county college         26    0.000034
+                        rockstar games         26    0.000034
+                           square enix         26    0.000034
+                       the white house         26    0.000034
+ new york city department of education         25    0.000033
+            the new york times company         25    0.000033
+
+
+##############
+# CLUSTER 35 #
+##############
+
+attribute prevalence  =   4811 / 422307 = 0.011392
+occurrence prevalence =  20172 / 757893 = 0.026616
+
+               attribute  frequency  prevalence
+  pricewaterhousecoopers        648    0.000855
+          ithaca college        490    0.000647
+              mcdonald's        448    0.000591
+                    kpmg        444    0.000586
+              geek squad        387    0.000511
+      united states navy        316    0.000417
+                  sap ag        296    0.000391
+                  boeing        292    0.000385
+         emc corporation        272    0.000359
+    symantec corporation        247    0.000326
+       teach for america        247    0.000326
+               pizza hut        195    0.000257
+ university of san diego        193    0.000255
+        american express        180    0.000238
+                   intel        178    0.000235
+                   xerox        175    0.000231
+          general motors        168    0.000222
+            bard college        162    0.000214
+                      hp        160    0.000211
+          salesforce.com        160    0.000211
+                 digitas        150    0.000198
+                 fujitsu        146    0.000193
+                t-mobile        138    0.000182
+                  ogilvy        137    0.000181
+          bain & company        132    0.000174
+                  novell        121    0.000160
+                 compusa        119    0.000157
+            amc theatres        102    0.000135
+      cox communications        101    0.000133
+       saatchi & saatchi        101    0.000133
+         glaxosmithkline         96    0.000127
+       reuters group plc         95    0.000125
+                 avanade         94    0.000124
+  marriott international         90    0.000119
+                    unam         89    0.000117
+ boston consulting group         88    0.000116
+                     eds         88    0.000116
+                teradata         86    0.000113
+                draftfcb         80    0.000106
+                    many         80    0.000106
+                symantec         80    0.000106
+                  fiserv         78    0.000103
+          here and there         74    0.000098
+          wieden+kennedy         73    0.000096
+                  sybase         63    0.000083
+               the world         63    0.000083
+                    usaa         63    0.000083
+            blast radius         61    0.000080
+                  hy-vee         61    0.000080
+                     lbi         61    0.000080
+
+
+##############
+# CLUSTER 31 #
+##############
+
+attribute prevalence  =  10134 / 422307 = 0.023997
+occurrence prevalence =  18488 / 757893 = 0.024394
+
+                        attribute  frequency  prevalence
+                             self        879    0.001160
+               university of iowa        800    0.001056
+             concordia university        453    0.000598
+                        citigroup        325    0.000429
+             fidelity investments        168    0.000222
+      eastern illinois university        160    0.000211
+                           logica        147    0.000194
+ the george washington university        145    0.000191
+                     office depot        126    0.000166
+            leo burnett worldwide         95    0.000125
+                          pepsico         95    0.000125
+                    umass amherst         95    0.000125
+              abbott laboratories         93    0.000123
+                           pfizer         93    0.000123
+               yeshiva university         87    0.000115
+                  delta air lines         84    0.000111
+                    heald college         76    0.000100
+              millikin university         74    0.000098
+                      kraft foods         71    0.000094
+                         rite aid         68    0.000090
+               american red cross         67    0.000088
+                        earthlink         67    0.000088
+                              emc         60    0.000079
+                    critical mass         59    0.000078
+                  coldwell banker         56    0.000074
+                   united nations         56    0.000074
+                        blackbaud         55    0.000073
+                          hubspot         49    0.000065
+                   kimberly-clark         48    0.000063
+                           humana         47    0.000062
+                         mary kay         46    0.000061
+                          rosetta         44    0.000058
+                network solutions         43    0.000057
+             ameriprise financial         42    0.000055
+          american cancer society         40    0.000053
+                    citrix online         39    0.000051
+             nationwide insurance         39    0.000051
+                         monsanto         38    0.000050
+                 arnold worldwide         36    0.000048
+                    careerbuilder         34    0.000045
+                         mckinney         34    0.000045
+                         cbs news         33    0.000044
+                           mullen         32    0.000042
+                         comscore         31    0.000041
+                 fifth third bank         30    0.000040
+                            ipsos         30    0.000040
+                      time warner         30    0.000040
+                 dun & bradstreet         28    0.000037
+                   queens college         26    0.000034
+            waste management, inc         25    0.000033
+
+
+##############
+# CLUSTER 13 #
+##############
+
+attribute prevalence  =  17310 / 422307 = 0.040989
+occurrence prevalence =  18428 / 757893 = 0.024315
+
+                          attribute  frequency  prevalence
+                     magyar telekom         16    0.000021
+                   telekom malaysia          8    0.000011
+                              bello          7    0.000009
+                      mise en place          6    0.000008
+                      studio legale          6    0.000008
+                             wis-tv          6    0.000008
+                            überall          6    0.000008
+                daum communications          5    0.000007
+                  edb ergogroup asa          5    0.000007
+     gordon biersch brewing company          5    0.000007
+                                mod          5    0.000007
+                  pt. pln (persero)          5    0.000007
+                       rogers media          5    0.000007
+                                 tc          5    0.000007
+                   vodafone ireland          5    0.000007
+                         zeros+ones          5    0.000007
+                      1 simple idea          4    0.000005
+                             acosta          4    0.000005
+               acquire asia pacific          4    0.000005
+                           balicamp          4    0.000005
+                      balsam brands          4    0.000005
+                           bernards          4    0.000005
+                              calle          4    0.000005
+                             cegeka          4    0.000005
+          cestička web technologies          4    0.000005
+               classy llama studios          4    0.000005
+ fakultet tehničkih nauka, novi sad          4    0.000005
+                    full time mommy          4    0.000005
+                       gfi portugal          4    0.000005
+                  hall cross school          4    0.000005
+                              icare          4    0.000005
+                ies montserrat roig          4    0.000005
+                           madebypi          4    0.000005
+      ohio house of representatives          4    0.000005
+                  pgs software s.a.          4    0.000005
+                            pluxbox          4    0.000005
+              smith's food and drug          4    0.000005
+                      the collegian          4    0.000005
+                      tüv rheinland          4    0.000005
+                                ums          4    0.000005
+                   virgin australia          4    0.000005
+                            webtown          4    0.000005
+                              -----          3    0.000004
+                         allan gray          3    0.000004
+               amtote international          3    0.000004
+                               apae          3    0.000004
+                            arnotts          3    0.000004
+                        ascribe plc          3    0.000004
+                astra international          3    0.000004
+                balabit it security          3    0.000004
+
+
+##############
+# CLUSTER 44 #
+##############
+
+attribute prevalence  =  10900 / 422307 = 0.025811
+occurrence prevalence =  17496 / 757893 = 0.023085
+
+                                      attribute  frequency  prevalence
+                                      wunderman        144    0.000190
+                                          pucrs        110    0.000145
+                          the coca-cola company        107    0.000141
+                                     sam's club        106    0.000140
+                                           ci&t         83    0.000110
+                                      petrobras         76    0.000100
+                                      globo.com         73    0.000096
+                                          claro         71    0.000094
+                                         serpro         70    0.000092
+                                            uol         68    0.000090
+                                      iprospect         65    0.000086
+                                          totvs         60    0.000079
+                         hp enterprise services         57    0.000075
+                                          terra         55    0.000073
+                                            ...         54    0.000071
+                                           ufsm         52    0.000069
+                        caixa econômica federal         50    0.000066
+                         stefanini it solutions         48    0.000063
+                                             oi         47    0.000062
+                                        politec         46    0.000061
+                universidade federal de alagoas         46    0.000061
+             universidade federal de uberlândia         45    0.000059
+                                  editora abril         44    0.000058
+                                       novabase         42    0.000055
+                                     rede globo         40    0.000053
+                                     banco itaú         38    0.000050
+                                           vivo         38    0.000050
+                                     cpm braxis         36    0.000048
+                                       dataprev         36    0.000048
+                                          ufpel         31    0.000041
+                                           citi         30    0.000040
+                                        datacom         30    0.000040
+                                        locaweb         30    0.000040
+                                      grupo rbs         29    0.000038
+                                             ig         29    0.000038
+                                    rede record         28    0.000037
+                                         infnet         27    0.000036
+                                        buscapé         26    0.000034
+                                    grupo abril         26    0.000034
+                                       unijorge         26    0.000034
+                                universo online         26    0.000034
+                                      herbalife         25    0.000033
+                                      stefanini         25    0.000033
+                             centro paula souza         24    0.000032
+                                           cpqd         24    0.000032
+ recife center for advanced studies and systems         24    0.000032
+                                         dm9ddb         23    0.000030
+                                           iesp         23    0.000030
+                                      microcamp         23    0.000030
+                                        sociesc         23    0.000030
+
+
+##############
+# CLUSTER 27 #
+##############
+
+attribute prevalence  =  10450 / 422307 = 0.024745
+occurrence prevalence =  17219 / 757893 = 0.022720
+
+                            attribute  frequency  prevalence
+                               google       6381    0.008419
+                                 huh?          8    0.000011
+                          red rooster          5    0.000007
+ anglia regional co-operative society          4    0.000005
+                           byte orbit          4    0.000005
+                       english school          4    0.000005
+                           graphisoft          4    0.000005
+                        mesh planning          4    0.000005
+                          multichoice          4    0.000005
+                      village cinemas          4    0.000005
+               administrador de redes          3    0.000004
+                         advantage iq          3    0.000004
+                             blstream          3    0.000004
+                   cunningham lindsey          3    0.000004
+               digi telecommunication          3    0.000004
+                               eestec          3    0.000004
+                                faith          3    0.000004
+                            fmc corp.          3    0.000004
+                            gawab.com          3    0.000004
+                           gcu lahore          3    0.000004
+      gul ahmed textile mills limited          3    0.000004
+                           ipsos-reid          3    0.000004
+        mcmillan integrated marketing          3    0.000004
+      montreal neurological institute          3    0.000004
+               national bank of egypt          3    0.000004
+                              nimsoft          3    0.000004
+                               nordex          3    0.000004
+             olson zaltman associates          3    0.000004
+                             pantheon          3    0.000004
+                   rand merchant bank          3    0.000004
+                    realestate.com.au          3    0.000004
+                strata marketing, inc          3    0.000004
+          technical building services          3    0.000004
+                               telbit          3    0.000004
+                    the regence group          3    0.000004
+                                ty ku          3    0.000004
+                       ubisoft québec          3    0.000004
+                 vornado realty trust          3    0.000004
+                      2t info service          2    0.000003
+                  acme bpo consulting          2    0.000003
+                action contre la faim          2    0.000003
+                           ad council          2    0.000003
+                                 aemo          2    0.000003
+               aioi bangkok insurance          2    0.000003
+                                alfac          2    0.000003
+                       alma midwifery          2    0.000003
+             american photo marketing          2    0.000003
+           anton collins mitchell llp          2    0.000003
+                    apex systems, inc          2    0.000003
+                            apple one          2    0.000003
+
+
+##############
+# CLUSTER 34 #
+##############
+
+attribute prevalence  =   6461 / 422307 = 0.015299
+occurrence prevalence =  16301 / 757893 = 0.021508
+
+                           attribute  frequency  prevalence
+                    northrop grumman        244    0.000322
+                            raytheon        169    0.000223
+                              everis        139    0.000183
+                     hewlett packard        138    0.000182
+           american eagle outfitters        117    0.000154
+         thomson-reuters corporation        117    0.000154
+                                 cbs        112    0.000148
+      grand rapids community college        108    0.000143
+                            petsmart        107    0.000141
+                            autodesk        106    0.000140
+                     nortel networks        106    0.000140
+                              mcafee        104    0.000137
+                     kean university        101    0.000133
+                         bae systems        100    0.000132
+                                  ge        100    0.000132
+                        jimmy john's         98    0.000129
+                              meijer         97    0.000128
+                                 nhs         87    0.000115
+                           keane inc         84    0.000111
+                            synopsys         84    0.000111
+                                ucsf         83    0.000110
+                        saudi aramco         82    0.000108
+                agilent technologies         79    0.000104
+          university of south dakota         74    0.000098
+                        bearingpoint         73    0.000096
+               rogers communications         71    0.000094
+ nationwide mutual insurance company         69    0.000091
+               eli lilly and company         65    0.000086
+                                r/ga         63    0.000083
+                      u.s. air force         62    0.000082
+                   british petroleum         57    0.000075
+     university of missouri-columbia         56    0.000074
+            british sky broadcasting         54    0.000071
+                               ciber         54    0.000071
+                         independent         53    0.000070
+                                 thq         53    0.000070
+                      grant thornton         51    0.000067
+      goodby, silverstein & partners         50    0.000066
+        lebanese american university         50    0.000066
+              royal bank of scotland         49    0.000065
+                     brac university         48    0.000063
+                        ticketmaster         48    0.000063
+                   the martin agency         46    0.000061
+                                 ubs         46    0.000061
+                   applied materials         45    0.000059
+                      bethel college         45    0.000059
+                              compaq         45    0.000059
+                                yelp         45    0.000059
+                          reachlocal         44    0.000058
+       walt disney parks and resorts         44    0.000058
+
+
+##############
+# CLUSTER 11 #
+##############
+
+attribute prevalence  =   8699 / 422307 = 0.020599
+occurrence prevalence =  15499 / 757893 = 0.020450
+
+                                    attribute  frequency  prevalence
+                                  atos origin        243    0.000321
+                     université de sherbrooke        162    0.000214
+                                      ubisoft        145    0.000191
+                              publicis groupe        125    0.000165
+                                  bnp paribas        108    0.000143
+                                    orange sa         98    0.000129
+                                       sogeti         84    0.000111
+                                       steria         82    0.000108
+                                     bt group         79    0.000104
+                                  sopra group         70    0.000092
+                                      l'oréal         66    0.000087
+                                         sqli         64    0.000084
+                                    carrefour         63    0.000083
+                                ddb worldwide         61    0.000080
+                             société générale         61    0.000080
+                                        nurun         59    0.000078
+                               france télécom         58    0.000077
+                                      renault         55    0.000073
+                                          sfr         53    0.000070
+                                mrm worldwide         52    0.000069
+                                      monster         51    0.000067
+                                       heaven         48    0.000063
+                                         fnac         47    0.000062
+                                         sncf         46    0.000061
+ centre national de la recherche scientifique         42    0.000055
+                              crédit agricole         42    0.000055
+                                      fullsix         42    0.000055
+                                       auchan         39    0.000051
+                   domino's pizza enterprises         39    0.000051
+                          education nationale         38    0.000050
+                          psa peugeot citroën         37    0.000049
+                                          cna         36    0.000048
+                            dassault systemes         36    0.000048
+                        électricité de france         36    0.000048
+                              hill & knowlton         34    0.000045
+                                          uic         34    0.000045
+                         université de nantes         34    0.000045
+                                        alten         33    0.000044
+                             bouygues télécom         32    0.000042
+                    université paris dauphine         32    0.000042
+                                        areva         30    0.000040
+                     orange business services         30    0.000040
+                                we are social         30    0.000040
+                                          axa         29    0.000038
+                               sanofi-aventis         29    0.000038
+                                        smile         29    0.000038
+                              decathlon group         28    0.000037
+                                       isobar         28    0.000037
+                                  dailymotion         26    0.000034
+                          ecole polytechnique         26    0.000034
+
+
+##############
+# CLUSTER 40 #
+##############
+
+attribute prevalence  =   9389 / 422307 = 0.022233
+occurrence prevalence =  15218 / 757893 = 0.020079
+
+                        attribute  frequency  prevalence
+                             hsbc        211    0.000278
+                           myself        197    0.000260
+                           huawei        196    0.000259
+                  teleperformance        160    0.000211
+               ford motor company        156    0.000206
+                                -        153    0.000202
+               schneider electric        147    0.000194
+                             sony        137    0.000181
+                         internet        116    0.000153
+                             hell        109    0.000144
+                            baidu         99    0.000131
+                           yandex         96    0.000127
+                            sitel         95    0.000125
+                             hust         89    0.000117
+                               无锡         75    0.000099
+        the mcgraw-hill companies         72    0.000095
+                             mars         71    0.000094
+                      novartis ag         67    0.000088
+                          tencent         66    0.000087
+                      alibaba.com         64    0.000084
+          condé nast publications         60    0.000079
+                             rmit         56    0.000074
+                             清华大学         53    0.000070
+                 tencent holdings         52    0.000069
+                              cms         51    0.000067
+                             ifrn         51    0.000067
+                 20th century fox         46    0.000061
+ mercer human resource consulting         42    0.000055
+                          netease         41    0.000054
+          microsoft research asia         40    0.000053
+                         pc world         37    0.000049
+                               网易         37    0.000049
+                     lenovo group         36    0.000048
+               seagate technology         36    0.000048
+                               腾讯         36    0.000048
+                             ibge         35    0.000046
+                   media contacts         35    0.000046
+                          red hat         35    0.000046
+                         turkcell         35    0.000046
+                           atento         34    0.000045
+                               百度         33    0.000044
+                               地球         32    0.000042
+         a.p. moller-maersk group         29    0.000038
+                       taobao.com         28    0.000037
+                              csi         26    0.000034
+                          diebold         26    0.000034
+                             ifce         26    0.000034
+                               no         26    0.000034
+                             sohu         25    0.000033
+                             阿里巴巴         25    0.000033
+
+
+##############
+# CLUSTER 42 #
+##############
+
+attribute prevalence  =   7346 / 422307 = 0.017395
+occurrence prevalence =  15161 / 757893 = 0.020004
+
+                attribute  frequency  prevalence
+                   yahoo!        684    0.000903
+    vanderbilt university        643    0.000848
+                    nokia        378    0.000499
+                      aol        336    0.000443
+       mckinsey & company        270    0.000356
+          ogilvy & mather        254    0.000335
+                  sapient        238    0.000314
+                      jwt        190    0.000251
+             mtv networks        153    0.000202
+    pasadena city college        132    0.000174
+                  twitter        130    0.000172
+                     espn        124    0.000164
+                     akqa        105    0.000139
+                    yahoo        104    0.000137
+          young & rubicam         92    0.000121
+                      bbc         88    0.000116
+ crispin porter + bogusky         86    0.000113
+                  various         86    0.000113
+        obama for america         75    0.000099
+            sas institute         75    0.000099
+      stanford law school         73    0.000096
+      mozilla corporation         72    0.000095
+            mills college         69    0.000091
+                  netflix         69    0.000091
+              tim hortons         62    0.000082
+           sonic drive-in         61    0.000080
+                      hbo         56    0.000074
+     united states senate         53    0.000070
+               activision         47    0.000062
+            jive software         44    0.000058
+                     huge         39    0.000051
+             sapientnitro         39    0.000051
+              gilt groupe         36    0.000048
+   norsk rikskringkasting         35    0.000046
+               perficient         33    0.000044
+           lucasfilm ltd.         32    0.000042
+     bartle bogle hegarty         31    0.000041
+     gerson lehrman group         26    0.000034
+                   odopod         26    0.000034
+                   tumblr         26    0.000034
+     wikimedia foundation         26    0.000034
+                   unicef         25    0.000033
+                ascentium         24    0.000032
+                   netcom         24    0.000032
+               agency.com         23    0.000030
+                  calarts         22    0.000029
+                schematic         20    0.000026
+            bbc worldwide         19    0.000025
+               interbrand         19    0.000025
+                  barkley         18    0.000024
+
+
+##############
+# CLUSTER 37 #
+##############
+
+attribute prevalence  =   3699 / 422307 = 0.008759
+occurrence prevalence =  14943 / 757893 = 0.019717
+
+                              attribute  frequency  prevalence
+        university of california, davis       1627    0.002147
+       rensselaer polytechnic institute       1119    0.001476
+            university of south florida        879    0.001160
+                               wal-mart        734    0.000968
+                     target corporation        696    0.000918
+                   jpmorgan chase & co.        444    0.000586
+                            wells fargo        398    0.000525
+                              u.s. army        242    0.000319
+              university of new orleans        213    0.000281
+                   publix super markets        194    0.000256
+                 blizzard entertainment        186    0.000245
+        east tennessee state university        170    0.000224
+           affiliated computer services        166    0.000219
+                           us air force        158    0.000208
+                                  tesco        155    0.000205
+                                  fedex        135    0.000178
+                            toys "r" us        135    0.000178
+                                  kmart        129    0.000170
+                                 cinema        124    0.000164
+                                nowhere        123    0.000162
+                         domino's pizza        120    0.000158
+                                 sprint        115    0.000152
+                              taco bell        108    0.000143
+             sears, roebuck and company        107    0.000141
+                              nordstrom        105    0.000139
+                               allstate         95    0.000125
+                               mckesson         88    0.000116
+                    nanyang polytechnic         87    0.000115
+                           olive garden         85    0.000112
+           united states postal service         81    0.000107
+          green river community college         79    0.000104
+                            merck & co.         73    0.000096
+                                    wpi         71    0.000094
+                         koç university         66    0.000087
+                             fred meyer         61    0.000080
+                                  sears         60    0.000079
+                          hilton hotels         52    0.000069
+                 lebanon valley college         51    0.000067
+                    activision blizzard         47    0.000062
+                          fedex kinko's         46    0.000061
+                           ace hardware         45    0.000059
+ memorial sloan-kettering cancer center         43    0.000057
+                          perot systems         42    0.000055
+          st. francis xavier university         41    0.000054
+         r. r. donnelley & sons company         38    0.000050
+                 staples business depot         37    0.000049
+                                   nope         34    0.000045
+                            godaddy.com         33    0.000044
+                   umbrella corporation         30    0.000040
+                      mcdonald's canada         29    0.000038
+
+
+##############
+# CLUSTER 25 #
+##############
+
+attribute prevalence  =   5550 / 422307 = 0.013142
+occurrence prevalence =  13234 / 757893 = 0.017462
+
+                                      attribute  frequency  prevalence
+                                       gamestop        632    0.000834
+                                        us army        424    0.000559
+                                     unemployed        321    0.000424
+                                 alcatel-lucent        318    0.000420
+                                           nasa        303    0.000400
+                             research in motion        300    0.000396
+                          united parcel service        266    0.000351
+                                             me        258    0.000340
+                                        retired        251    0.000331
+                                  goldman sachs        244    0.000322
+                                         kroger        229    0.000302
+                      university of puget sound        217    0.000286
+                                         target        189    0.000249
+                         verizon communications        174    0.000230
+                             whole foods market        168    0.000222
+                                    burger king        155    0.000205
+                     university of west georgia        152    0.000201
+                                       old navy        151    0.000199
+                                         costco        139    0.000183
+ science applications international corporation        135    0.000178
+                     sears holdings corporation        114    0.000150
+                      oklahoma state university        106    0.000140
+                                        chili's         91    0.000120
+                                      medtronic         70    0.000092
+                 university of alaska fairbanks         70    0.000092
+                               urban outfitters         70    0.000092
+                                       vodafone         66    0.000087
+                       sony pictures imageworks         57    0.000075
+                                blackboard inc.         56    0.000074
+                              cinemark theatres         55    0.000073
+                        angelo state university         53    0.000070
+                                      red robin         51    0.000067
+                                  guitar center         50    0.000066
+                             state street corp.         42    0.000055
+                                 digital domain         35    0.000046
+                              shell oil company         34    0.000045
+                                td canada trust         33    0.000044
+                                canadian forces         32    0.000042
+                          daytona state college         32    0.000042
+                                    technicolor         32    0.000042
+                                           visa         32    0.000042
+                                           ihop         30    0.000040
+                               bellevue college         28    0.000037
+                                    air liquide         26    0.000034
+                                   lenscrafters         26    0.000034
+                             irobot corporation         24    0.000032
+                                    cgi federal         22    0.000029
+                                     brightcove         20    0.000026
+                                    eci telecom         20    0.000026
+                           habitat for humanity         20    0.000026
+
+
+##############
+# CLUSTER 39 #
+##############
+
+attribute prevalence  =   7663 / 422307 = 0.018146
+occurrence prevalence =  12848 / 757893 = 0.016952
+
+                      attribute  frequency  prevalence
+                        us navy        330    0.000435
+                   t-mobile usa        292    0.000385
+                 barnes & noble        270    0.000356
+                           usaf        264    0.000348
+    university of south alabama        185    0.000244
+                 the new school        164    0.000216
+                         lowe's        163    0.000215
+            abercrombie & fitch        134    0.000177
+                             3m        110    0.000145
+                   safeway inc.        104    0.000137
+               caterpillar inc.         96    0.000127
+                    j.c. penney         96    0.000127
+                            yes         88    0.000116
+                       nintendo         82    0.000108
+             hamline university         77    0.000102
+                    j sainsbury         74    0.000098
+              fry's electronics         69    0.000091
+  national institutes of health         69    0.000091
+            lipscomb university         68    0.000090
+                    flextronics         64    0.000084
+                        cargill         54    0.000071
+            rockwell automation         54    0.000071
+                    giant eagle         45    0.000059
+                      food lion         43    0.000057
+                  u.s. cellular         43    0.000057
+             advance auto parts         39    0.000051
+                law enforcement         38    0.000050
+                          aflac         36    0.000048
+                   barclays plc         33    0.000044
+                          jewel         29    0.000038
+ department of veterans affairs         28    0.000037
+   primerica financial services         26    0.000034
+                           lidl         25    0.000033
+                        denny's         24    0.000032
+                      frito-lay         23    0.000030
+         mit lincoln laboratory         23    0.000030
+                       my house         23    0.000030
+                northgatearinso         22    0.000029
+              telefónica o2 u.k         22    0.000029
+       palm beach state college         21    0.000028
+               drs technologies         20    0.000026
+     emerson process management         18    0.000024
+        farmers insurance group         18    0.000024
+                mellow mushroom         18    0.000024
+                   bbva compass         17    0.000022
+                 dunder-mifflin         17    0.000022
+          heidelberg university         17    0.000022
+   san ramon valley high school         16    0.000021
+                          bi-lo         15    0.000020
+              frontier airlines         15    0.000020
+
+
+##############
+# CLUSTER 24 #
+##############
+
+attribute prevalence  =   7188 / 422307 = 0.017021
+occurrence prevalence =  12023 / 757893 = 0.015864
+
+                       attribute  frequency  prevalence
+                   self employed       1209    0.001595
+                   tech mahindra        231    0.000305
+   satyam computer services ltd.        156    0.000206
+                         sungard        114    0.000150
+                      icici bank        111    0.000146
+              persistent systems        109    0.000144
+                  lg electronics        102    0.000135
+                         not yet         96    0.000127
+                vector marketing         76    0.000100
+                             ups         72    0.000095
+                         verizon         69    0.000091
+                       hsbc bank         67    0.000088
+                         jobless         63    0.000083
+                     metlife inc         62    0.000082
+                             ics         56    0.000074
+                           odesk         56    0.000074
+                  wipro infotech         43    0.000057
+               grey global group         42    0.000055
+    polaris software lab limited         40    0.000053
+                            zoho         40    0.000053
+                 the times group         35    0.000046
+                  sap labs india         33    0.000044
+        google affiliate network         29    0.000038
+               bdo international         24    0.000032
+                       orange uk         24    0.000032
+                            sify         24    0.000032
+                     gotham city         19    0.000025
+                       techlogix         18    0.000024
+              the times of india         18    0.000024
+              landmark education         17    0.000022
+           robosoft technologies         17    0.000022
+                       xchanging         17    0.000022
+          freelance photographer         16    0.000021
+                  indian express         16    0.000021
+                    july systems         16    0.000021
+                          aircel         15    0.000020
+                        dhiraagu         15    0.000020
+               niit technologies         15    0.000020
+ united international university         15    0.000020
+                     3i infotech         14    0.000018
+            leapfrog enterprises         14    0.000018
+                      network 18         14    0.000018
+                      rediff.com         14    0.000018
+                           ufone         14    0.000018
+                vanilla networks         14    0.000018
+                       zoho corp         14    0.000018
+                gameview studios         12    0.000016
+                         hungama         12    0.000016
+              skyworks solutions         12    0.000016
+               social wavelength         12    0.000016
+
+
+##############
+# CLUSTER 36 #
+##############
+
+attribute prevalence  =  10158 / 422307 = 0.024054
+occurrence prevalence =  11935 / 757893 = 0.015748
+
+                        attribute  frequency  prevalence
+                          comcast        302    0.000398
+         austin community college        238    0.000314
+                  cbs interactive         72    0.000095
+                             cnet         56    0.000074
+               greenville college         56    0.000074
+                             digg         30    0.000040
+                       ziff davis         23    0.000030
+                 half price books         22    0.000029
+                        sb nation         22    0.000029
+                     gawker media         19    0.000025
+                         engadget         16    0.000021
+            revision3 corporation         12    0.000016
+                          twit.tv         12    0.000016
+                           techtv         11    0.000015
+                          matalan          8    0.000011
+                        revision3          7    0.000009
+                   betsey johnson          6    0.000008
+               homenet automotive          6    0.000008
+                             mama          6    0.000008
+                             milk          6    0.000008
+                     sps commerce          6    0.000008
+                         acn inc.          5    0.000007
+                         advocare          5    0.000007
+                             ccsd          5    0.000007
+                        kunstmaan          5    0.000007
+                 landesk software          5    0.000007
+                       lia sophia          5    0.000007
+                           mahalo          5    0.000007
+ primedia business magazine media          5    0.000007
+                    schlitterbahn          5    0.000007
+                         tnt post          5    0.000007
+ university of alabama huntsville          5    0.000007
+                         3fifteen          4    0.000005
+       bio-rad laboratories, inc.          4    0.000005
+            cheddar's casual cafe          4    0.000005
+             cnet/cbs interactive          4    0.000005
+                         costaatt          4    0.000005
+                         del taco          4    0.000005
+                              eaa          4    0.000005
+                   empire cinemas          4    0.000005
+                      expert labs          4    0.000005
+              ingram book company          4    0.000005
+                       invivodata          4    0.000005
+                           iprofs          4    0.000005
+            iss facility services          4    0.000005
+                   kimberly clark          4    0.000005
+                            limbo          4    0.000005
+                midwest petroleum          4    0.000005
+             ministry health care          4    0.000005
+                         net@work          4    0.000005
+
+
+##############
+# CLUSTER 41 #
+##############
+
+attribute prevalence  =   7871 / 422307 = 0.018638
+occurrence prevalence =  11776 / 757893 = 0.015538
+
+                     attribute  frequency  prevalence
+                         earth        259    0.000342
+           griffith university        225    0.000297
+                   google inc.        149    0.000197
+ leeds metropolitan university        110    0.000145
+                citrix systems        108    0.000143
+             papa john's pizza        104    0.000137
+                  albert heijn         74    0.000098
+                         geico         71    0.000094
+                      meditech         48    0.000063
+                 hiram college         46    0.000061
+                      experian         45    0.000059
+                      mci inc.         44    0.000058
+                  realnetworks         42    0.000055
+                           rei         42    0.000055
+                           omd         41    0.000054
+                     about.com         40    0.000053
+                  popcap games         39    0.000051
+                           kpn         38    0.000050
+        universiteit antwerpen         32    0.000042
+                    performics         28    0.000037
+                        groupm         25    0.000033
+              at&t interactive         24    0.000032
+        the co-operative group         24    0.000032
+                       seo.com         22    0.000029
+                        diageo         21    0.000028
+             intouch solutions         21    0.000028
+                  cvs pharmacy         20    0.000026
+                    orangesoda         20    0.000026
+                        ordina         20    0.000026
+               zenithoptimedia         20    0.000026
+                      cybercom         19    0.000025
+                      homeaway         19    0.000025
+        the nature conservancy         19    0.000025
+              resolution media         18    0.000024
+                          zagg         18    0.000024
+              zeta interactive         17    0.000022
+       american electric power         16    0.000021
+              advance internet         15    0.000020
+                      omniture         15    0.000020
+                    windesheim         15    0.000020
+              u.s. peace corps         14    0.000018
+                      mirabeau         13    0.000017
+         tech data corporation         13    0.000017
+                     clockwork         12    0.000016
+                       covario         12    0.000016
+                       findlaw         12    0.000016
+           ignite social media         12    0.000016
+                    mediamonks         12    0.000016
+                 super de boer         12    0.000016
+                 us auto parts         12    0.000016
+
+
+##############
+# CLUSTER 47 #
+##############
+
+attribute prevalence  =   8032 / 422307 = 0.019019
+occurrence prevalence =  11514 / 757893 = 0.015192
+
+                            attribute  frequency  prevalence
+                            microsoft       2480    0.003272
+            san jose state university        205    0.000270
+                            rackspace        174    0.000230
+                                  nec         43    0.000057
+         universidad central del este         11    0.000015
+         department of human services          9    0.000012
+                                  ddc          6    0.000008
+                      ducks unlimited          5    0.000007
+                         info support          5    0.000007
+ institute of international education          5    0.000007
+                    mansueto ventures          5    0.000007
+               amyris biotechnologies          4    0.000005
+                                  cpp          4    0.000005
+                                dexia          4    0.000005
+                 education affiliates          4    0.000005
+          global science & technology          4    0.000005
+                                itron          4    0.000005
+                     school specialty          4    0.000005
+                                 seat          4    0.000005
+                              sencore          4    0.000005
+                    shands healthcare          4    0.000005
+                              tessera          4    0.000005
+                                titan          4    0.000005
+                                  ab1          3    0.000004
+                             abelcine          3    0.000004
+                       act government          3    0.000004
+                        adira finance          3    0.000004
+                                  agr          3    0.000004
+       american reprographics company          3    0.000004
+                          amis d.o.o.          3    0.000004
+                       amn healthcare          3    0.000004
+                           ariba inc.          3    0.000004
+      australian bureau of statistics          3    0.000004
+                          bermanbraun          3    0.000004
+                              bigrock          3    0.000004
+                               cinram          3    0.000004
+                   corestaff services          3    0.000004
+                              easyway          3    0.000004
+                       element church          3    0.000004
+    emergency medicine scribe systems          3    0.000004
+                  evtron incorporated          3    0.000004
+              gentiva health services          3    0.000004
+           granite telecommunications          3    0.000004
+              hawaiian airlines, inc.          3    0.000004
+                                ibahn          3    0.000004
+                          ic intracom          3    0.000004
+                          idea studio          3    0.000004
+                                ineos          3    0.000004
+                                  jcs          3    0.000004
+                                jtekt          3    0.000004
+
+
+##############
+# CLUSTER 30 #
+##############
+
+attribute prevalence  =   4772 / 422307 = 0.011300
+occurrence prevalence =  11499 / 757893 = 0.015172
+
+                              attribute  frequency  prevalence
+       national university of singapore        760    0.001003
+                       general electric        504    0.000665
+                university of melbourne        401    0.000529
+                              mcdonalds        273    0.000360
+                     united states army        259    0.000342
+                              walgreens        240    0.000317
+                             radioshack        230    0.000303
+                                 cerner        202    0.000267
+                            intuit inc.        187    0.000247
+                         bloomberg l.p.        176    0.000232
+                               gap inc.        170    0.000224
+                           nbcuniversal        151    0.000199
+               walt disney world resort        141    0.000186
+                               citibank        117    0.000154
+                            dairy queen        102    0.000135
+                 keller williams realty         99    0.000131
+                     outback steakhouse         89    0.000117
+                    cold stone creamery         88    0.000116
+                                    kfc         88    0.000116
+                               teletech         83    0.000110
+                               compucom         75    0.000099
+                     harris corporation         75    0.000099
+                             woolworths         66    0.000087
+                           the internet         62    0.000082
+                                 sodexo         58    0.000077
+                            future shop         55    0.000073
+                            stop & shop         53    0.000070
+                              compuware         49    0.000065
+                        roanoke college         49    0.000065
+                                   kent         48    0.000063
+                 chipotle mexican grill         47    0.000062
+                  boy scouts of america         44    0.000058
+                            mayo clinic         44    0.000058
+                     university of oulu         43    0.000057
+   medical university of south carolina         41    0.000054
+                       cengage learning         40    0.000053
+               thermo fisher scientific         40    0.000053
+                                 adtran         37    0.000049
+            universidade de passo fundo         34    0.000045
+                                  lausd         29    0.000038
+                  national park service         28    0.000037
+ university of rochester medical center         26    0.000034
+                                    hmv         24    0.000032
+                  kumon learning center         24    0.000032
+                national australia bank         24    0.000032
+                            serco group         24    0.000032
+                bell canada enterprises         23    0.000030
+                                 navair         20    0.000026
+               the pepsi bottling group         20    0.000026
+                 insight communications         19    0.000025
+
+
+##############
+# CLUSTER 23 #
+##############
+
+attribute prevalence  =   6845 / 422307 = 0.016209
+occurrence prevalence =  11326 / 757893 = 0.014944
+
+                   attribute  frequency  prevalence
+                   freelance       1406    0.001855
+                     philips        159    0.000210
+                 apple store        135    0.000178
+             mccann erickson        134    0.000177
+                     abb ltd        103    0.000136
+                   euro rscg         90    0.000119
+                   mindshare         89    0.000117
+                      nestlé         88    0.000116
+ city university of new york         69    0.000091
+          l-3 communications         67    0.000088
+                    7-eleven         54    0.000071
+                        army         48    0.000063
+          chrysler group llc         47    0.000062
+      hacettepe üniversitesi         33    0.000044
+                        ctis         29    0.000038
+    toyota motor corporation         28    0.000037
+       panasonic corporation         25    0.000033
+              millward brown         20    0.000026
+           atilim university         19    0.000025
+                    synovate         16    0.000021
+                      fortis         15    0.000020
+                euro rscg 4d         14    0.000018
+                       regus         13    0.000017
+            turkish airlines         13    0.000017
+                   hay group         12    0.000016
+                         itü         12    0.000016
+                         ncc         12    0.000016
+                     ydreams         12    0.000016
+                         itv         11    0.000015
+              pure new media         11    0.000015
+                türk telekom         11    0.000015
+ universiti malaysia sarawak         11    0.000015
+                       barco         10    0.000013
+      milli eğitim bakanlığı         10    0.000013
+         ogilvyone worldwide         10    0.000013
+                   promoqube         10    0.000013
+                     tübitak         10    0.000013
+                      uniqlo         10    0.000013
+                    veripark         10    0.000013
+             vodafone turkey         10    0.000013
+                     aselsan          9    0.000012
+           dialog axiata plc          9    0.000012
+                    hürriyet          9    0.000012
+           liberal democrats          9    0.000012
+                     alchemy          8    0.000011
+                 all of them          8    0.000011
+     bahçeşehir üniversitesi          8    0.000011
+               commerce guys          8    0.000011
+            curves for women          8    0.000011
+               erwin-penland          8    0.000011
+
+
+#############
+# CLUSTER 0 #
+#############
+
+attribute prevalence  =   7953 / 422307 = 0.018832
+occurrence prevalence =  11323 / 757893 = 0.014940
+
+                              attribute  frequency  prevalence
+                       stay at home mom         48    0.000063
+                         baskin-robbins         34    0.000045
+                    the open university         29    0.000038
+      siemens enterprise communications         27    0.000036
+         commonwealth bank of australia         23    0.000030
+                                sunrise         22    0.000029
+                           covidien inc         20    0.000026
+                                   some         20    0.000026
+                   swinburne university         20    0.000026
+                                    ids         19    0.000025
+             iron mountain incorporated         19    0.000025
+                          sage software         18    0.000024
+                         aker solutions         17    0.000022
+                               claire's         17    0.000022
+               delaware north companies         17    0.000022
+                        radisson hotels         17    0.000022
+                                    wsi         17    0.000022
+ federal home loan mortgage corporation         16    0.000021
+                    major league gaming         16    0.000021
+                             quiksilver         16    0.000021
+      universidad autónoma de chihuahua         16    0.000021
+          burns & mcdonnell engineering         15    0.000020
+                      carlson companies         15    0.000020
+             companhia vale do rio doce         15    0.000020
+        instituto tecnológico de sonora         15    0.000020
+                    wachovia securities         15    0.000020
+                       mars hill church         14    0.000018
+                                  modea         14    0.000018
+                                 unimed         14    0.000018
+                      bauer media group         13    0.000017
+                                hooters         13    0.000017
+                                   mbna         13    0.000017
+                                 diesel         12    0.000016
+                           marathon oil         12    0.000016
+  university of nebraska medical center         12    0.000016
+                      arrow electronics         11    0.000015
+                       don't panic labs         11    0.000015
+          universidad nacional de lujan         11    0.000015
+              american power conversion         10    0.000013
+                                    ctg         10    0.000013
+                   first baptist church         10    0.000013
+             popeyes chicken & biscuits         10    0.000013
+                                  psyop         10    0.000013
+                          regal cinemas         10    0.000013
+                     the salvation army         10    0.000013
+                                    tps         10    0.000013
+                                    btc          9    0.000012
+                             powerlogic          9    0.000012
+                                rentrak          9    0.000012
+                        rolls-royce plc          9    0.000012
+
+
+##############
+# CLUSTER 48 #
+##############
+
+attribute prevalence  =   5924 / 422307 = 0.014028
+occurrence prevalence =  10596 / 757893 = 0.013981
+
+                                       attribute  frequency  prevalence
+                                            dell        832    0.001098
+                                sun microsystems        342    0.000451
+                                      home depot        301    0.000397
+                                  morgan stanley        291    0.000384
+                                            ebay        262    0.000346
+                                         youtube        251    0.000331
+                                       razorfish        175    0.000231
+                                        linkedin        152    0.000201
+                                red hat software        136    0.000179
+                                          paypal        128    0.000169
+                                         myspace        102    0.000135
+                                    google, inc.         80    0.000106
+                                            saic         68    0.000090
+ the church of jesus christ of latter-day saints         68    0.000090
+                              unitedhealth group         61    0.000080
+                                            ideo         60    0.000079
+                                       time inc.         58    0.000077
+                              microsoft research         51    0.000067
+                                        go daddy         46    0.000061
+                               john wiley & sons         43    0.000057
+                                       six apart         43    0.000057
+                                        netscape         35    0.000046
+                                           wired         35    0.000046
+                              cisco systems inc.         30    0.000040
+                                 backcountry.com         27    0.000036
+                                   media general         27    0.000036
+                                  o'reilly media         27    0.000036
+                              namco bandai games         26    0.000034
+                                  apple computer         24    0.000032
+                                        mashable         21    0.000028
+                                    the next web         18    0.000024
+                                        newsweek         16    0.000021
+                                      techcrunch         14    0.000018
+                                          flickr         13    0.000017
+                                    readwriteweb         12    0.000016
+                                           plaxo         11    0.000015
+                                   general magic         10    0.000013
+                                scientific games         10    0.000013
+                                     alinma bank          9    0.000012
+                                extreme networks          9    0.000012
+                                           lotus          9    0.000012
+                                        mint.com          9    0.000012
+                                       open text          9    0.000012
+                                            path          9    0.000012
+                   shangri-la hotels and resorts          9    0.000012
+                                     venturebeat          9    0.000012
+                                         insight          8    0.000011
+                                  the collective          8    0.000011
+                                           webex          8    0.000011
+                                        argon st          7    0.000009
+
+
+##############
+# CLUSTER 15 #
+##############
+
+attribute prevalence  =   7779 / 422307 = 0.018420
+occurrence prevalence =  10411 / 757893 = 0.013737
+
+                                 attribute  frequency  prevalence
+                    university of waterloo       1981    0.002614
+                          carino's italian          7    0.000009
+           children's hospital los angeles          6    0.000008
+                      covad communications          6    0.000008
+ los angeles department of water and power          6    0.000008
+                            aaron brothers          5    0.000007
+                                ball corp.          5    0.000007
+                              cronos group          5    0.000007
+                             dr. d studios          5    0.000007
+         european bioinformatics institute          5    0.000007
+                        langan engineering          5    0.000007
+                                   looking          5    0.000007
+                                      opis          5    0.000007
+                     ten thousand villages          5    0.000007
+                                       tfl          5    0.000007
+                                the corner          5    0.000007
+                                       wme          5    0.000007
+                                       aba          4    0.000005
+                                 americinn          4    0.000005
+                               areva solar          4    0.000005
+                        bren events center          4    0.000005
+                                 bryan isd          4    0.000005
+                                bundesheer          4    0.000005
+                                       cbt          4    0.000005
+                                   charlex          4    0.000005
+                                  devereux          4    0.000005
+                                       gsa          4    0.000005
+                hospital for sick children          4    0.000005
+                            hub city media          4    0.000005
+                                    intrax          4    0.000005
+                    kinetic concepts, inc.          4    0.000005
+                                      linx          4    0.000005
+                          media city sound          4    0.000005
+                                nrg energy          4    0.000005
+                        sensis corporation          4    0.000005
+                         state of maryland          4    0.000005
+                          the revere group          4    0.000005
+                                    volcom          4    0.000005
+                                  3degrees          3    0.000004
+                          906 technologies          3    0.000004
+                                       abs          3    0.000004
+               academy of natural sciences          3    0.000004
+                                      adas          3    0.000004
+                                   alaress          3    0.000004
+                           alexander group          3    0.000004
+       alliance for a healthier generation          3    0.000004
+                        arcadia publishing          3    0.000004
+                            archway school          3    0.000004
+                                       atr          3    0.000004
+                        bayshore solutions          3    0.000004
+
+
+#############
+# CLUSTER 5 #
+#############
+
+attribute prevalence  =   4550 / 422307 = 0.010774
+occurrence prevalence =   9129 / 757893 = 0.012045
+
+                       attribute  frequency  prevalence
+                       convergys        213    0.000281
+          stream global services        105    0.000139
+         progressive corporation         79    0.000104
+                       hot topic         67    0.000088
+         bank of new york mellon         62    0.000082
+ federal aviation administration         61    0.000080
+                          norman         58    0.000077
+                   siena college         53    0.000070
+                mcdaniel college         47    0.000062
+              southwest airlines         46    0.000061
+                  cracker barrel         45    0.000059
+                       morrisons         45    0.000059
+                            asda         43    0.000057
+               boston scientific         42    0.000055
+           bright house networks         42    0.000055
+               wawa food markets         41    0.000054
+                 carmike cinemas         40    0.000053
+               life time fitness         40    0.000053
+              coles supermarkets         38    0.000050
+                 jetblue airways         38    0.000050
+                   fedex express         37    0.000049
+        sherwin-williams company         37    0.000049
+                      first data         33    0.000044
+                            lego         32    0.000042
+       united states coast guard         32    0.000042
+                       ea sports         31    0.000041
+                   harris teeter         31    0.000041
+                        seaworld         31    0.000041
+                            vans         31    0.000041
+               farmers insurance         30    0.000040
+                           h-e-b         30    0.000040
+                           hyatt         28    0.000037
+      sunglass hut international         28    0.000037
+                    oakley, inc.         27    0.000036
+                virginia college         27    0.000036
+                  big fish games         26    0.000034
+                      game crazy         26    0.000034
+                      royal mail         26    0.000034
+                  avery dennison         25    0.000033
+                     duke energy         25    0.000033
+                        logitech         25    0.000033
+                         sid lee         25    0.000033
+                          sobeys         25    0.000033
+                         telvent         25    0.000033
+            university of bolton         25    0.000033
+                           vizrt         25    0.000033
+            bombardier aerospace         24    0.000032
+                    fedex office         24    0.000032
+        national football league         24    0.000032
+                 24-hour fitness         23    0.000030
+
+
+##############
+# CLUSTER 20 #
+##############
+
+attribute prevalence  =   5097 / 422307 = 0.012069
+occurrence prevalence =   8453 / 757893 = 0.011153
+
+                     attribute  frequency  prevalence
+                    siemens ag        222    0.000293
+                 deutsche bank        178    0.000235
+              deutsche telekom         96    0.000127
+                    bundeswehr         83    0.000110
+                     t-systems         81    0.000107
+         universal music group         71    0.000094
+     weber shandwick worldwide         70    0.000092
+                 selbstständig         65    0.000086
+                    daimler ag         62    0.000082
+                           bmw         55    0.000073
+                 eastman kodak         50    0.000066
+         universität stuttgart         48    0.000063
+                       allianz         45    0.000059
+                   selbständig         42    0.000055
+ technische universität berlin         42    0.000055
+                        henkel         33    0.000044
+                          xing         33    0.000044
+               tu braunschweig         29    0.000038
+                      swisscom         25    0.000033
+                 bigmouthmedia         24    0.000032
+               1&1 internet ag         22    0.000029
+              universität bonn         22    0.000029
+                        dessau         21    0.000028
+           deutsche telekom ag         21    0.000028
+                   wwu münster         21    0.000028
+          experian cheetahmail         20    0.000026
+                     gameforge         20    0.000026
+              axel springer ag         19    0.000025
+                    air france         18    0.000024
+                 deutsche bahn         18    0.000024
+                sinnerschrader         18    0.000024
+                      text 100         18    0.000024
+              vodafone germany         18    0.000024
+     neue digitale / razorfish         17    0.000022
+                          audi         16    0.000021
+                   booking.com         16    0.000021
+                    compuserve         16    0.000021
+                 deutsche post         16    0.000021
+                          e.on         16    0.000021
+         ikon office solutions         16    0.000021
+                       last.fm         16    0.000021
+                       napster         16    0.000021
+                   bertelsmann         15    0.000020
+                  ketchum inc.         15    0.000020
+                           kit         15    0.000020
+                      mysql ab         15    0.000020
+                     namics ag         15    0.000020
+          universität würzburg         15    0.000020
+                grey worldwide         14    0.000018
+                        unesco         14    0.000018
+
+
+##############
+# CLUSTER 14 #
+##############
+
+attribute prevalence  =   4520 / 422307 = 0.010703
+occurrence prevalence =   7763 / 757893 = 0.010243
+
+                          attribute  frequency  prevalence
+      southern methodist university        425    0.000561
+             utah valley university        232    0.000306
+                             unisys        174    0.000230
+                               usmc        151    0.000199
+                  time warner cable        141    0.000186
+       clear channel communications        120    0.000158
+ eindhoven university of technology         94    0.000124
+                             amazon         65    0.000086
+                     quest software         65    0.000086
+                             alstom         60    0.000079
+                   amadeus it group         58    0.000077
+                             acxiom         56    0.000074
+     university of nebraska-lincoln         55    0.000073
+      digital equipment corporation         50    0.000066
+                             ncsoft         45    0.000059
+                       entrepreneur         41    0.000054
+                      web developer         39    0.000051
+          holyoke community college         38    0.000050
+                  walt disney world         38    0.000050
+            entercom communications         35    0.000046
+               royal bank of canada         35    0.000046
+                 hitachi consulting         34    0.000045
+                       photographer         31    0.000041
+                international paper         27    0.000036
+             national oilwell varco         27    0.000036
+                            gensler         25    0.000033
+                           2k games         23    0.000030
+    hospital corporation of america         23    0.000030
+                      level studios         23    0.000030
+               dominion enterprises         21    0.000028
+           raytheon missile systems         21    0.000028
+                        eddie bauer         20    0.000026
+                     autotrader.com         19    0.000025
+                         brookstone         19    0.000025
+                        pearson plc         19    0.000025
+            american film institute         18    0.000024
+                               tsys         18    0.000024
+        u.s. department of commerce         18    0.000024
+          bombardier transportation         16    0.000021
+           the university of sydney         16    0.000021
+              bob evans restaurants         15    0.000020
+                          lynda.com         15    0.000020
+                                icl         14    0.000018
+                      real networks         14    0.000018
+                           hallmark         13    0.000017
+               mythic entertainment         12    0.000016
+                  things remembered         12    0.000016
+                      nerds on call         11    0.000015
+            red storm entertainment         10    0.000013
+           reel fx creative studios         10    0.000013
+
+
+#############
+# CLUSTER 2 #
+#############
+
+attribute prevalence  =   5377 / 422307 = 0.012732
+occurrence prevalence =   7722 / 757893 = 0.010189
+
+                           attribute  frequency  prevalence
+                          freelancer        523    0.000690
+                              aiesec        228    0.000301
+                            gameloft        196    0.000259
+                                 mtv         83    0.000110
+                                 dhl         71    0.000094
+                           ing group         56    0.000074
+                           ogilvyone         31    0.000041
+          disney interactive studios         23    0.000030
+                               axway         21    0.000028
+                                 rtv         21    0.000028
+                   critical software         17    0.000022
+ technical university of cluj-napoca         17    0.000022
+               google summer of code         15    0.000020
+                               h1.cz         15    0.000020
+                         bitdefender         14    0.000018
+                                 1&1         13    0.000017
+   siemens it solutions and services         13    0.000017
+                  coca-cola hellenic         11    0.000015
+                                open         11    0.000015
+                    centrum holdings         10    0.000013
+                              endava         10    0.000013
+             hewlett-packard company         10    0.000013
+                             nimbuzz         10    0.000013
+ politehnica university of bucharest         10    0.000013
+                                 ama          9    0.000012
+                             hostway          9    0.000012
+                                ixia          9    0.000012
+                         k2 internet          9    0.000012
+                              solvay          9    0.000012
+                              toluna          9    0.000012
+                      česká televize          9    0.000012
+                                 dmi          8    0.000011
+                    vodafone romania          8    0.000011
+            embarcadero technologies          7    0.000009
+                          lunarpages          7    0.000009
+                     migrate company          7    0.000009
+                          softvision          7    0.000009
+                            synopsis          7    0.000009
+               the listening company          7    0.000009
+                              anyone          6    0.000008
+         faculty of computer science          6    0.000008
+                          grapefruit          6    0.000008
+                      nasza-klasa.pl          6    0.000008
+                              nestle          6    0.000008
+                           propeople          6    0.000008
+                             softwin          6    0.000008
+     univerzita palackého v olomouci          6    0.000008
+                                 upt          6    0.000008
+                            antena 3          5    0.000007
+                               ataxo          5    0.000007
+
+
+##############
+# CLUSTER 28 #
+##############
+
+attribute prevalence  =   5556 / 422307 = 0.013156
+occurrence prevalence =   7593 / 757893 = 0.010019
+
+                                attribute  frequency  prevalence
+                                   garmin         79    0.000104
+                          htc corporation         79    0.000104
+                              trend micro         79    0.000104
+               chinese culture university         77    0.000102
+                                     asus         69    0.000091
+                                      nhn         55    0.000073
+                                    canon         47    0.000062
+                                    corel         42    0.000055
+                       soochow university         40    0.000053
+                          cyberlink corp.         38    0.000050
+                                     acer         37    0.000049
+                                 mediatek         34    0.000045
+                          academia sinica         33    0.000044
+                                      ncu         31    0.000041
+                                     benq         30    0.000040
+               hon hai precision industry         29    0.000038
+                            digital river         22    0.000029
+                      aletheia university         20    0.000026
+                         quanta computers         20    0.000026
+             kaohsiung medical university         19    0.000025
+                                     中華電信         19    0.000025
+                                     itri         17    0.000022
+                                     南山人壽         17    0.000022
+                  chunghwa telecom co ltd         15    0.000020
+                       compal electronics         15    0.000020
+                                   d-link         15    0.000020
+                                  gamania         15    0.000020
+                           wincor nixdorf         14    0.000018
+                                 inventec         13    0.000017
+                                    中央研究院         13    0.000017
+                                      cpc         12    0.000016
+  national taipei university of education         12    0.000016
+                                  wistron         12    0.000016
+                                  工業技術研究院         12    0.000016
+                                      麥當勞         12    0.000016
+                    hong kong jockey club         11    0.000015
+                                   建國科技大學         11    0.000015
+                                 國軍online         10    0.000013
+                                     趨勢科技         10    0.000013
+                              emi records          9    0.000012
+                      gigabyte technology          9    0.000012
+                     global voices online          9    0.000012
+ taipei municipal university of education          9    0.000012
+                                      you          9    0.000012
+ industrial technology research institute          8    0.000011
+                 national ilan university          8    0.000011
+        ogilvy public relations worldwide          8    0.000011
+                                    qisda          8    0.000011
+                                     宜蘭大學          8    0.000011
+                                      資策會          8    0.000011
+
+
+##############
+# CLUSTER 18 #
+##############
+
+attribute prevalence  =   3873 / 422307 = 0.009171
+occurrence prevalence =   7250 / 757893 = 0.009566
+
+                     attribute  frequency  prevalence
+                     capgemini        556    0.000734
+                      ericsson        444    0.000586
+                      motorola        423    0.000558
+                       telenor        127    0.000168
+                 manpower inc.         60    0.000079
+                           mec         49    0.000065
+                    ge capital         47    0.000062
+                   leo burnett         46    0.000061
+                   media markt         45    0.000059
+                   teliasonera         39    0.000051
+                       spotify         38    0.000050
+        linköpings universitet         36    0.000048
+                         tieto         34    0.000045
+                   tietoenator         33    0.000044
+                       valtech         32    0.000042
+               meltwater group         27    0.000036
+                           ifs         24    0.000032
+                         metro         21    0.000028
+                        creuna         18    0.000024
+                        posten         17    0.000022
+           sveriges television         17    0.000022
+                           tdc         17    0.000022
+          capgemini consulting         16    0.000021
+                    valueclick         16    0.000021
+                    copywriter         15    0.000020
+                successfactors         15    0.000020
+                 hmv group plc         14    0.000018
+                  lyon college         13    0.000017
+                   great works         12    0.000016
+                       qbranch         12    0.000016
+ skandinaviska enskilda banken         12    0.000016
+                           tva         12    0.000016
+                   ericsson ab         11    0.000015
+                      learning         11    0.000015
+                      volvo it         11    0.000015
+                     looksmart         10    0.000013
+                      ottoboni         10    0.000013
+                  reading room         10    0.000013
+                sveriges radio         10    0.000013
+                      tele2 ab         10    0.000013
+                elvagruppen ab          9    0.000012
+                      exait ab          9    0.000012
+                försvarsmakten          9    0.000012
+                       galileo          9    0.000012
+                 icon medialab          9    0.000012
+                        klarna          9    0.000012
+                      netlight          9    0.000012
+                      swedbank          9    0.000012
+                           tv3          9    0.000012
+                      asos.com          8    0.000011
+
+
+#############
+# CLUSTER 4 #
+#############
+
+attribute prevalence  =   4734 / 422307 = 0.011210
+occurrence prevalence =   7188 / 757893 = 0.009484
+
+                          attribute  frequency  prevalence
+     massachusetts general hospital         57    0.000075
+       aecom technology corporation         40    0.000053
+               goodrich corporation         34    0.000045
+                     digitas health         27    0.000036
+                             isilon         27    0.000036
+                       midway games         27    0.000036
+                          beachbody         24    0.000032
+                                msi         24    0.000032
+                  arm holdings, plc         23    0.000030
+                wireless generation         23    0.000030
+                    city of toronto         17    0.000022
+                               imvu         17    0.000022
+                               hntb         16    0.000021
+                       agfa-gevaert         15    0.000020
+                    florida college         15    0.000020
+                               3com         14    0.000018
+       southwest research institute         14    0.000018
+                             lab126         13    0.000017
+                                wds         13    0.000017
+                   acumen solutions         12    0.000016
+                        atlas copco         12    0.000016
+                                ctc         12    0.000016
+                           sugarcrm         12    0.000016
+                               suse         12    0.000016
+    ucla office of residential life         12    0.000016
+        allied integrated marketing         11    0.000015
+             indigo books and music         11    0.000015
+                        lane bryant         11    0.000015
+                               maps         11    0.000015
+                 coldstone creamery         10    0.000013
+                            dillons         10    0.000013
+                   ebsco publishing         10    0.000013
+                edible arrangements         10    0.000013
+                      mindtree ltd.         10    0.000013
+                 renaissance hotels         10    0.000013
+                           stardock         10    0.000013
+                          teleflora         10    0.000013
+ the australian national university         10    0.000013
+     american civil liberties union          9    0.000012
+                environment america          9    0.000012
+                                eti          9    0.000012
+                      famous dave's          9    0.000012
+                      federal-mogul          9    0.000012
+                              jesus          9    0.000012
+                     kohler company          9    0.000012
+    northgate information solutions          9    0.000012
+                          sabmiller          9    0.000012
+                    sony imageworks          9    0.000012
+                     the world bank          9    0.000012
+                          uncle sam          9    0.000012
+
+
+##############
+# CLUSTER 16 #
+##############
+
+attribute prevalence  =   4631 / 422307 = 0.010966
+occurrence prevalence =   7172 / 757893 = 0.009463
+
+                attribute  frequency  prevalence
+               nike, inc.        108    0.000143
+             epam systems        105    0.000139
+              globallogic         97    0.000128
+           opera software         74    0.000098
+            sony ericsson         63    0.000083
+                      msu         55    0.000073
+              itransition         48    0.000063
+          grupo santander         44    0.000058
+                   luxoft         44    0.000058
+                   ciklum         38    0.000050
+                   яндекс         35    0.000046
+                  mail.ru         34    0.000045
+                  фриланс         31    0.000041
+ marvell technology group         28    0.000037
+                   forbes         24    0.000032
+        valve corporation         24    0.000032
+            bigpoint gmbh         22    0.000029
+                      abb         20    0.000026
+                   artist         20    0.000026
+            kaspersky lab         20    0.000026
+               netcracker         20    0.000026
+                  box.net         19    0.000025
+      comverse technology         19    0.000025
+                softserve         18    0.000024
+                  beeline         17    0.000022
+     boehringer-ingelheim         17    0.000022
+                jetbrains         17    0.000022
+                       dj         16    0.000021
+          exigen services         16    0.000021
+                 softline         16    0.000021
+                  acronis         15    0.000020
+                     asem         14    0.000018
+                  dataart         14    0.000018
+          parallels, inc.         14    0.000018
+          actis wunderman         13    0.000017
+                cogniance         13    0.000017
+                   i-free         13    0.000017
+                    nival         13    0.000017
+              риа новости         13    0.000017
+                фрилансер         13    0.000017
+                cupid plc         12    0.000016
+                herocraft         12    0.000016
+                 agora sa         11    0.000015
+      art. lebedev studio         11    0.000015
+                      cqg         11    0.000015
+            free-lance.ru         11    0.000015
+             oberon media         11    0.000015
+                    tele2         11    0.000015
+                dtdigital         10    0.000013
+                    gen-i         10    0.000013
+
+
+#############
+# CLUSTER 1 #
+#############
+
+attribute prevalence  =   4042 / 422307 = 0.009571
+occurrence prevalence =   5571 / 757893 = 0.007351
+
+                            attribute  frequency  prevalence
+                            me stesso         86    0.000113
+                    universal studios         75    0.000099
+      università degli studi di parma         46    0.000061
+                     aperture science         45    0.000059
+                        microstrategy         43    0.000057
+                                  vml         41    0.000054
+                           current tv         30    0.000040
+                  university of udine         30    0.000040
+                       telecom italia         29    0.000038
+                libero professionista         25    0.000033
+            reed business information         25    0.000033
+                                reply         25    0.000033
+ università di modena e reggio emilia         22    0.000029
+                                   io         18    0.000024
+                           value team         18    0.000024
+                       vodafone italy         18    0.000024
+                                 wind         18    0.000024
+                            me stessa         16    0.000021
+                       poste italiane         16    0.000021
+   università della svizzera italiana         16    0.000021
+                           buongiorno         14    0.000018
+                                  cic         14    0.000018
+                              nessuno         13    0.000017
+                              pirelli         13    0.000017
+                         tradedoubler         13    0.000017
+                università di salerno         13    0.000017
+                              fastweb         12    0.000016
+                               nascar         12    0.000016
+                   seat pagine gialle         12    0.000016
+                                  isd         11    0.000015
+                        rolling stone         11    0.000015
+                    sdl international         11    0.000015
+                              cefriel         10    0.000013
+                           ciaopeople         10    0.000013
+                               cineca         10    0.000013
+ università commerciale luigi bocconi         10    0.000013
+            arnoldo mondadori editore          9    0.000012
+                                 dada          9    0.000012
+                          enel s.p.a.          9    0.000012
+                                 yoox          9    0.000012
+                              bitmama          8    0.000011
+                           blogosfere          8    0.000011
+                           cnh global          8    0.000011
+                                  h3g          8    0.000011
+                             hagakure          8    0.000011
+                      magneti-marelli          8    0.000011
+                  metro international          8    0.000011
+                      ninja marketing          8    0.000011
+                             studente          8    0.000011
+                           swiss army          8    0.000011
+
+
+##############
+# CLUSTER 32 #
+##############
+
+attribute prevalence  =   3894 / 422307 = 0.009221
+occurrence prevalence =   5255 / 757893 = 0.006934
+
+                      attribute  frequency  prevalence
+                       facebook        369    0.000487
+                        siemens        143    0.000189
+                        aramark        115    0.000152
+           hochschule darmstadt         67    0.000088
+                  mercedes-benz         57    0.000075
+                           basf         41    0.000054
+ accenture technology solutions         24    0.000032
+                     electrolux         23    0.000030
+               universität wien         18    0.000024
+                    istockphoto         17    0.000022
+                  freiberuflich         12    0.000016
+                            isa         11    0.000015
+                  jung von matt         11    0.000015
+               scholz & friends          9    0.000012
+                          edeka          8    0.000011
+                       kaufland          8    0.000011
+                        liip ag          8    0.000011
+                 sevenload gmbh          8    0.000011
+       telekom deutschland gmbh          8    0.000011
+                           eads          7    0.000009
+               freistaat bayern          7    0.000009
+                            orf          7    0.000009
+   beuth hochschule für technik          6    0.000008
+                           enbw          6    0.000008
+                 medienhaus.com          6    0.000008
+             peek & cloppenburg          6    0.000008
+                          pixum          6    0.000008
+                      strato ag          6    0.000008
+     trg - the reach group gmbh          6    0.000008
+             universität erfurt          6    0.000008
+                   antwerpes ag          5    0.000007
+         hmmh multimediahaus ag          5    0.000007
+                      innogames          5    0.000007
+                   materna gmbh          5    0.000007
+                    upc austria          5    0.000007
+                 webdevelopment          5    0.000007
+             agentur für arbeit          4    0.000005
+                         franke          4    0.000005
+                    hapag-lloyd          4    0.000005
+            ibis prof. thome ag          4    0.000005
+                  interone gmbh          4    0.000005
+               ip exchange gmbh          4    0.000005
+                      m-systems          4    0.000005
+                      nbsp gmbh          4    0.000005
+                   netways gmbh          4    0.000005
+         prosiebensat.1 digital          4    0.000005
+                    rotes kreuz          4    0.000005
+             rwe deutschland ag          4    0.000005
+             sbw neue medien ag          4    0.000005
+  schweizer radio und fernsehen          4    0.000005
+
+
+##############
+# CLUSTER 38 #
+##############
+
+attribute prevalence  =   3005 / 422307 = 0.007116
+occurrence prevalence =   5241 / 757893 = 0.006915
+
+                           attribute  frequency  prevalence
+                              amdocs        305    0.000402
+                               cisco        139    0.000183
+                              orange        123    0.000162
+                            unilever        103    0.000136
+                                 idf         89    0.000117
+                   ness technologies         57    0.000075
+                        bmc software         54    0.000071
+                        getty images         37    0.000049
+               the hertz corporation         35    0.000046
+                         check point         34    0.000045
+                         freelancing         29    0.000038
+               ministry of education         27    0.000036
+                        nice systems         27    0.000036
+                          liveperson         26    0.000034
+                                צה"ל         23    0.000030
+                              vonage         22    0.000029
+                               bezeq         21    0.000028
+                       groupe danone         20    0.000026
+                           pelephone         19    0.000025
+                            comverse         18    0.000024
+                                 msn         18    0.000024
+                             conduit         17    0.000022
+                               walla         17    0.000022
+                          greenpeace         16    0.000021
+                              verint         16    0.000021
+                           acnielsen         14    0.000018
+                       elbit systems         14    0.000018
+                                 hot         14    0.000018
+                           mediamind         14    0.000018
+                              nana10         14    0.000018
+                             parsons         14    0.000018
+                       harvey norman         13    0.000017
+                             synthes         13    0.000017
+                           themarker         13    0.000017
+                       bank hapoalim         12    0.000016
+                cellcom israel, ltd.         12    0.000016
+                        better place         11    0.000015
+                                 icq         11    0.000015
+                                 nds         11    0.000015
+                           netvision         11    0.000015
+ partner communications company ltd.         11    0.000015
+                               el al         10    0.000013
+                        register.com         10    0.000013
+                         undisclosed         10    0.000013
+                        013netvision          9    0.000012
+                            metacafe          9    0.000012
+                            netcraft          9    0.000012
+                            playtech          9    0.000012
+                                tigo          9    0.000012
+                        william hill          9    0.000012
+
+
+##############
+# CLUSTER 29 #
+##############
+
+attribute prevalence  =   3474 / 422307 = 0.008226
+occurrence prevalence =   4449 / 757893 = 0.005870
+
+                                   attribute  frequency  prevalence
+                                  telefónica        104    0.000137
+                             banco do brasil         95    0.000125
+                                          ti         73    0.000096
+                                web designer         38    0.000050
+                                   microlins         31    0.000041
+                                      contax         26    0.000034
+                                       tivit         25    0.000033
+                                        ufsj         14    0.000018
+                                        fiat         11    0.000015
+      instituto nacional de telecomunicações         11    0.000015
+                                    procergs         11    0.000015
+               universidade federal do pampa          9    0.000012
+                                     squadra          8    0.000011
+                                     unigran          8    0.000011
+                        volkswagen do brasil          8    0.000011
+                               big automação          7    0.000009
+ empresa brasileira de correios e telégrafos          7    0.000009
+                             nunca trabalhei          7    0.000009
+                                     prosoft          7    0.000009
+                                        uffs          7    0.000009
+                                  uniseb coc          7    0.000009
+                                       fiesc          6    0.000008
+                                     funcesi          6    0.000008
+                                     neogrid          6    0.000008
+                                     plus-it          6    0.000008
+                                   cpmbraxis          5    0.000007
+                                      dormir          5    0.000007
+                             faculdades alfa          5    0.000007
+                         lanlink informática          5    0.000007
+          prepara cursos profissionalizantes          5    0.000007
+                                       seduc          5    0.000007
+                                 siemens vdo          5    0.000007
+               tribunal de justiça do paraná          5    0.000007
+        universidade metropolitana de santos          5    0.000007
+                                   uol diveo          5    0.000007
+                        banco do brasil s.a.          4    0.000005
+                                        bdmg          4    0.000005
+                            colégio nacional          4    0.000005
+                                    compasso          4    0.000005
+                           cpfl energia s.a.          4    0.000005
+                             diário da manhã          4    0.000005
+                          faculdade redentor          4    0.000005
+                                    freeddom          4    0.000005
+                             global gillette          4    0.000005
+                             governo federal          4    0.000005
+                                  gsi online          4    0.000005
+                                hugo boss ag          4    0.000005
+     ici - instituto curitiba de informática          4    0.000005
+                                     martins          4    0.000005
+                              mcp tecnologia          4    0.000005
+
+
+##############
+# CLUSTER 45 #
+##############
+
+attribute prevalence  =   2451 / 422307 = 0.005804
+occurrence prevalence =   3886 / 757893 = 0.005127
+
+                           attribute  frequency  prevalence
+                     thomson reuters        228    0.000301
+                                ymca        158    0.000208
+            sony music entertainment         65    0.000086
+              faculty of engineering         60    0.000079
+                     arthur andersen         41    0.000054
+                     western digital         41    0.000054
+       asian institute of technology         39    0.000051
+                           six flags         34    0.000045
+                            michelin         30    0.000040
+                                 psu         30    0.000040
+                             reuters         25    0.000033
+                    true corporation         22    0.000029
+                    dst systems inc.         19    0.000025
+                   newell rubbermaid         19    0.000025
+           six flags great adventure         19    0.000025
+                                 mom         18    0.000024
+                              ตัวเอง         18    0.000024
+                           dla piper         15    0.000020
+                microchip technology         15    0.000020
+                                dtac         14    0.000018
+                          gmm grammy         14    0.000018
+                                 mim         13    0.000017
+                              nectec         13    0.000017
+                        world vision         13    0.000017
+                             my self         12    0.000016
+                 nu skin enterprises         12    0.000016
+                 mitsubishi electric         11    0.000015
+                  singapore airlines         11    0.000015
+                           my family         10    0.000013
+          thai airways international         10    0.000013
+                                 act          9    0.000012
+                               agoda          9    0.000012
+ bodindecha (sing singhaseni) school          9    0.000012
+                                 แม่          9    0.000012
+                               ไม่มี          9    0.000012
+                                 sdc          8    0.000011
+                      thomsonreuters          8    0.000011
+                                 cgs          7    0.000009
+                            double a          7    0.000009
+                siam commercial bank          7    0.000009
+                       the body shop          7    0.000009
+   thomson reuters software thailand          7    0.000009
+                                 พ่อ          7    0.000009
+               advanced info service          6    0.000008
+                        bangkok bank          6    0.000008
+                cheil communications          6    0.000008
+                                egat          6    0.000008
+                   le pain quotidien          6    0.000008
+                                mfec          6    0.000008
+                    rajinibon school          6    0.000008
+
+
+##############
+# CLUSTER 49 #
+##############
+
+attribute prevalence  =   2395 / 422307 = 0.005671
+occurrence prevalence =   3653 / 757893 = 0.004820
+
+                           attribute  frequency  prevalence
+                    cb richard ellis         51    0.000067
+                           fpt group         51    0.000067
+                                 uct         42    0.000055
+                        fpt software         38    0.000050
+                                 vng         34    0.000045
+                               bayer         32    0.000042
+                                  a1         31    0.000041
+                             at home         29    0.000038
+                                free         29    0.000038
+                                 ctu         24    0.000032
+                             unknown         23    0.000030
+                              vccorp         21    0.000028
+                                avon         20    0.000026
+                                 fpt         17    0.000022
+                          fpt online         17    0.000022
+                         free lancer         17    0.000022
+           houston community college         17    0.000022
+                        unemployment         16    0.000021
+                     tp. hồ chí minh         15    0.000020
+                         thất nghiệp         14    0.000018
+                                 uib         14    0.000018
+ vtc, vietnam multimedia corporation         14    0.000018
+                            none yet         13    0.000017
+                      viettel mobile         13    0.000017
+                               fsoft         11    0.000015
+                               sales         11    0.000015
+                     vng corporation         11    0.000015
+                                  :d         10    0.000013
+                               dalat         10    0.000013
+                             vc corp         10    0.000013
+                                   g          9    0.000012
+                      microsoft corp          9    0.000012
+                                 nhà          9    0.000012
+                            oriflame          9    0.000012
+                       tma solutions          9    0.000012
+                            vinagame          9    0.000012
+                                dksh          8    0.000011
+                                 ncm          8    0.000011
+                                 vgs          8    0.000011
+                                 exo          7    0.000009
+                              family          7    0.000009
+                              istore          7    0.000009
+                                 set          7    0.000009
+                                 tma          7    0.000009
+                          vietinbank          7    0.000009
+                          vtc online          7    0.000009
+                                 vtv          7    0.000009
+                         2! magazine          6    0.000008
+                                  g1          6    0.000008
+                               kofax          6    0.000008
+
+
+##############
+# CLUSTER 26 #
+##############
+
+attribute prevalence  =   2490 / 422307 = 0.005896
+occurrence prevalence =   3583 / 757893 = 0.004728
+
+                      attribute  frequency  prevalence
+               me, myself and i        170    0.000224
+                        expedia         54    0.000071
+                        toshiba         43    0.000057
+                   yahoo! japan         31    0.000041
+                        rakuten         26    0.000034
+                        recruit         23    0.000030
+                         dentsu         20    0.000026
+                         toyota         20    0.000026
+                         フリーランス         20    0.000026
+        ntt communications corp         18    0.000024
+                      media art         14    0.000018
+                       ntt data         14    0.000018
+                        武蔵野美術大学         14    0.000018
+                            ixl         13    0.000017
+                            oit         13    0.000017
+                      anonymous         12    0.000016
+ nippon telegraph and telephone         12    0.000016
+              ntt resonant inc.         12    0.000016
+                           saga         12    0.000016
+                           dena         11    0.000015
+                   paperboy&co.         11    0.000015
+                             自宅         11    0.000015
+                     cyberagent         10    0.000013
+                            dts         10    0.000013
+                            iii         10    0.000013
+                            jet         10    0.000013
+                       softbank         10    0.000013
+                         dwango          9    0.000012
+                        kyocera          9    0.000012
+                   oracle japan          9    0.000012
+                     サイバーエージェント          9    0.000012
+                       fortinet          8    0.000011
+               hatena co., ltd.          8    0.000011
+                       livedoor          8    0.000011
+                           mixi          8    0.000011
+                     ntt docomo          8    0.000011
+                         redhat          8    0.000011
+                            はてな          8    0.000011
+                       hakuhodo          7    0.000009
+                            ntt          7    0.000009
+               sony corporation          7    0.000009
+                         楽天株式会社          7    0.000009
+       business architects inc.          6    0.000008
+                      ficc inc.          6    0.000008
+                microsoft japan          6    0.000008
+                    naver japan          6    0.000008
+      nomura research institute          6    0.000008
+                     pall corp.          6    0.000008
+                            tis          6    0.000008
+                            wow          6    0.000008
+
+
+##############
+# CLUSTER 43 #
+##############
+
+attribute prevalence  =   1540 / 422307 = 0.003647
+occurrence prevalence =   1919 / 757893 = 0.002532
+
+                    attribute  frequency  prevalence
+                          god         40    0.000053
+                      teacher         29    0.000038
+                   classified         13    0.000017
+            guilan university         13    0.000017
+                          aca         12    0.000016
+                         ....         11    0.000015
+                     hospital          9    0.000012
+                          dpi          8    0.000011
+                          tss          8    0.000011
+             voice of america          8    0.000011
+                   banglalink          7    0.000009
+ british broadcasting company          7    0.000009
+               business owner          7    0.000009
+                        fanap          7    0.000009
+                         irib          7    0.000009
+                        mapna          7    0.000009
+          chalmers university          6    0.000008
+                       shatel          6    0.000008
+       وزارة التربية والتعليم          6    0.000008
+                      bluebox          5    0.000007
+                      gfk nop          5    0.000007
+                          jam          5    0.000007
+                   lamps plus          5    0.000007
+                     chargoon          4    0.000005
+                          edu          4    0.000005
+                    goverment          4    0.000005
+                  hyperoffice          4    0.000005
+                        infox          4    0.000005
+                it department          4    0.000005
+                       maxnet          4    0.000005
+                 mtn irancell          4    0.000005
+                      netsups          4    0.000005
+              self-employment          4    0.000005
+                          tmb          4    0.000005
+           دانشگاه شهید بهشتی          4    0.000005
+                            !          3    0.000004
+            allproperty media          3    0.000004
+                      armitis          3    0.000004
+          aryan system pardaz          3    0.000004
+                        bikar          3    0.000004
+                      demotix          3    0.000004
+                freedom house          3    0.000004
+ iranian congenial mobile co.          3    0.000004
+                         itrc          3    0.000004
+                       kaspid          3    0.000004
+                     kishware          3    0.000004
+                          mbc          3    0.000004
+                    minyatoor          3    0.000004
+                   mobilicity          3    0.000004
+                         mosh          3    0.000004
+
+

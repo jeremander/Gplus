@@ -1,0 +1,3000 @@
+#############
+# CLUSTER 3 #
+#############
+
+attribute prevalence  =   6437 / 246973 = 0.026064
+occurrence prevalence =  73603 / 928097 = 0.079305
+
+                                         attribute  frequency  prevalence
+                     university of texas at austin       3657    0.003940
+        university of illinois at urbana-champaign       2841    0.003061
+                          university of washington       2773    0.002988
+                   georgia institute of technology       2691    0.002899
+                               new york university       2371    0.002555
+                     pennsylvania state university       2317    0.002497
+                                 boston university       1929    0.002078
+                             ohio state university       1841    0.001984
+                         michigan state university       1823    0.001964
+                           northwestern university       1742    0.001877
+                                rutgers university       1590    0.001713
+ virginia polytechnic institute and state unive...       1530    0.001649
+       university of north carolina at chapel hill       1469    0.001583
+                   university of wisconsin-madison       1456    0.001569
+                             university of georgia       1437    0.001548
+                           northeastern university       1422    0.001532
+                   north carolina state university       1418    0.001528
+                                   duke university       1415    0.001525
+                            university of virginia       1392    0.001500
+                           university of minnesota       1363    0.001469
+                               syracuse university       1253    0.001350
+                             university of chicago       1246    0.001343
+                          university of pittsburgh       1174    0.001265
+                                 drexel university       1139    0.001227
+                 university of colorado at boulder       1130    0.001218
+                          johns hopkins university       1107    0.001193
+                              university of kansas       1092    0.001177
+                              university of oregon       1076    0.001159
+                washington university in st. louis       1059    0.001141
+                              full sail university       1055    0.001137
+                           george mason university       1048    0.001129
+                             university of houston       1046    0.001127
+                   university of missouri–columbia       1015    0.001094
+                                university of utah        981    0.001057
+                                indiana university        979    0.001055
+                    san francisco state university        978    0.001054
+                             georgetown university        894    0.000963
+                                 depaul university        855    0.000921
+                               american university        803    0.000865
+                          georgia state university        778    0.000838
+                                  emory university        760    0.000819
+                                  tufts university        741    0.000798
+                      university of south carolina        729    0.000785
+                             texas tech university        709    0.000764
+                savannah college of art and design        679    0.000732
+                          university of notre dame        676    0.000728
+                 university of illinois at chicago        641    0.000691
+                       college of william and mary        554    0.000597
+                   case western reserve university        533    0.000574
+                          university of new mexico        412    0.000444
+
+
+##############
+# CLUSTER 16 #
+##############
+
+attribute prevalence  =   7508 / 246973 = 0.030400
+occurrence prevalence =  53705 / 928097 = 0.057866
+
+                                  attribute  frequency  prevalence
+                   florida state university       1461    0.001574
+                 louisiana state university        830    0.000894
+                  university of connecticut        826    0.000890
+                            ohio university        824    0.000888
+                   james madison university        772    0.000832
+                      university of alabama        726    0.000782
+                    university of tennessee        715    0.000770
+                      binghamton university        712    0.000767
+                         clemson university        698    0.000752
+                           miami university        668    0.000720
+              western washington university        649    0.000699
+                     university of kentucky        648    0.000698
+     california state university, fullerton        639    0.000689
+                    kansas state university        620    0.000668
+    california state university, long beach        615    0.000663
+    university of maryland baltimore county        573    0.000617
+                western michigan university        534    0.000575
+                   columbia college chicago        516    0.000556
+                      kent state university        495    0.000533
+          texas state university–san marcos        479    0.000516
+                          towson university        464    0.000500
+                central michigan university        462    0.000498
+                          tulane university        452    0.000487
+                      utah state university        448    0.000483
+                     university of arkansas        421    0.000454
+                florida atlantic university        416    0.000448
+                         chapman university        414    0.000446
+                         fordham university        388    0.000418
+                university of new hampshire        356    0.000384
+                    old dominion university        352    0.000379
+                   east carolina university        347    0.000374
+                university of san francisco        337    0.000363
+                      university of vermont        329    0.000354
+          michigan technological university        325    0.000350
+                     wake forest university        325    0.000350
+                    wright state university        324    0.000349
+                            pratt institute        321    0.000346
+                         liberty university        314    0.000338
+                      st. john's university        314    0.000338
+                      university of memphis        309    0.000333
+ university of north carolina at greensboro        308    0.000332
+                western kentucky university        305    0.000329
+         california state university, chico        294    0.000317
+                         oakland university        284    0.000306
+        university of alabama at birmingham        284    0.000306
+                     saint louis university        275    0.000296
+                             marist college        268    0.000289
+                     boise state university        267    0.000288
+                  the ohio state university        256    0.000276
+                university of north florida        255    0.000275
+
+
+##############
+# CLUSTER 28 #
+##############
+
+attribute prevalence  =  19343 / 246973 = 0.078320
+occurrence prevalence =  51390 / 928097 = 0.055371
+
+                                         attribute  frequency  prevalence
+                   vellore institute of technology        707    0.000762
+          indian institute of technology kharagpur        610    0.000657
+             indian institute of technology bombay        607    0.000654
+              indian institute of technology delhi        560    0.000603
+ birla institute of technology & science, pilan...        535    0.000576
+         birla institute of technology and science        529    0.000570
+             indian institute of technology madras        506    0.000545
+             indian institute of technology kanpur        502    0.000541
+           indian institute of technology guwahati        379    0.000408
+            indian institute of technology roorkee        356    0.000384
+                                     iit kharagpur        328    0.000353
+        national institute of technology karnataka        320    0.000345
+                               delhi public school        303    0.000326
+                                osmania university        302    0.000325
+                      delhi college of engineering        269    0.000290
+                                  gitam university        265    0.000286
+         jawaharlal nehru technological university        265    0.000286
+                                        iit bombay        261    0.000281
+                                        nit trichy        246    0.000265
+                           narayana junior college        233    0.000251
+                                         iit delhi        231    0.000249
+                                        iit kanpur        230    0.000248
+                                 dav public school        227    0.000245
+                                        iit madras        224    0.000241
+                               jadavpur university        199    0.000214
+        jaypee institute of information technology        196    0.000211
+             netaji subhas institute of technology        182    0.000196
+                                       iit roorkee        171    0.000184
+                                     sri chaitanya        170    0.000183
+ dhirubhai ambani institute of information and ...        153    0.000165
+ international institute of information technol...        150    0.000162
+          indian institute of management ahmedabad        147    0.000158
+           indian institute of management calcutta        147    0.000158
+                        punjab engineering college        144    0.000155
+                         seoul national university        142    0.000153
+                       indian institute of science        133    0.000143
+                                      nit warangal        132    0.000142
+                     panjab university, chandigarh        127    0.000137
+   birla institute of technology & science, pilani        120    0.000129
+            indian institute of management lucknow        111    0.000120
+               maharashtra institute of technology        110    0.000119
+                                      nit rourkela        102    0.000110
+     maulana azad national institute of technology         96    0.000103
+             indian institute of management indore         95    0.000102
+        national institute of technology, rourkela         94    0.000101
+                      sri chaitanya junior college         94    0.000101
+                                               dav         92    0.000099
+                                      nit durgapur         92    0.000099
+                                       bits pilani         91    0.000098
+                                 fergusson college         88    0.000095
+
+
+#############
+# CLUSTER 4 #
+#############
+
+attribute prevalence  =  15469 / 246973 = 0.062634
+occurrence prevalence =  44967 / 928097 = 0.048451
+
+                                attribute  frequency  prevalence
+                     universidad de chile        733    0.000790
+ national autonomous university of mexico        449    0.000484
+                  harvard business school        395    0.000426
+              universidad de buenos aires        386    0.000416
+                                    itesm        332    0.000358
+                universidad de costa rica        306    0.000330
+  pontifical catholic university of chile        280    0.000302
+                university of santo tomas        256    0.000276
+       universidad autónoma de nuevo león        248    0.000267
+               universidad diego portales        248    0.000267
+                 universidad de los andes        238    0.000256
+          universidad del valle de méxico        235    0.000253
+ pontificia universidad católica de chile        207    0.000223
+               universidad de guadalajara        196    0.000211
+                                   inacap        193    0.000208
+         universidad de santiago de chile        184    0.000198
+                                      utn        178    0.000192
+         universidad central de venezuela        175    0.000189
+         universidad carlos iii de madrid        171    0.000184
+        universidad complutense de madrid        171    0.000184
+                universidad de concepción        171    0.000184
+                   universidad de sevilla        169    0.000182
+                  universidad de alicante        168    0.000181
+               universidad iberoamericana        163    0.000176
+                    universidad de oviedo        158    0.000170
+         complutense university of madrid        150    0.000162
+         universidad nacional de la plata        149    0.000161
+                universidad simón bolívar        138    0.000149
+                                      upc        138    0.000149
+                   universidad de granada        136    0.000147
+        universidad politécnica de madrid        127    0.000137
+                                    iteso        125    0.000135
+                 universidad de antioquia        125    0.000135
+               universidad del desarrollo        122    0.000131
+                  universidad veracruzana        122    0.000131
+      universidad politécnica de valencia        121    0.000130
+         universidad tecnológica nacional        121    0.000130
+                  universidad de carabobo        119    0.000128
+                 universitat de barcelona        118    0.000127
+                                   duocuc        117    0.000126
+          universitat oberta de catalunya        117    0.000126
+                     universidad la salle        116    0.000125
+                                     uabc        115    0.000124
+        universitat autònoma de barcelona        115    0.000124
+     universitat politècnica de catalunya        115    0.000124
+                   universidad de palermo        113    0.000122
+                    ingenieria industrial        108    0.000116
+                                     icai        105    0.000113
+                       universidad latina        105    0.000113
+   pontifical catholic university of peru        104    0.000112
+
+
+##############
+# CLUSTER 10 #
+##############
+
+attribute prevalence  =   5491 / 246973 = 0.022233
+occurrence prevalence =  44188 / 928097 = 0.047611
+
+                                         attribute  frequency  prevalence
+                 rochester institute of technology       1883    0.002029
+                             university of toronto       1374    0.001480
+                             university of arizona       1271    0.001369
+           california polytechnic state university       1206    0.001299
+                    university of british columbia       1168    0.001258
+                      george washington university       1099    0.001184
+                         university of north texas       1009    0.001087
+                    indiana university bloomington        979    0.001055
+                             iowa state university        935    0.001007
+                           oregon state university        852    0.000918
+                                 auburn university        769    0.000829
+                                    boston college        752    0.000810
+ university at buffalo, the state university of...        704    0.000759
+                     university of texas at dallas        689    0.000742
+                       washington state university        613    0.000660
+                          west virginia university        585    0.000630
+ monterrey institute of technology and higher e...        578    0.000623
+                              university of oxford        540    0.000582
+                   worcester polytechnic institute        534    0.000575
+                         illinois state university        532    0.000573
+                         academy of art university        518    0.000558
+              oklahoma state university–stillwater        471    0.000507
+                     university of new south wales        470    0.000506
+                            university of victoria        440    0.000474
+                         kennesaw state university        419    0.000451
+                                   trinity college        417    0.000449
+                  nanyang technological university        407    0.000439
+                                   rmit university        391    0.000421
+                             school of hard knocks        374    0.000403
+                   university of nevada, las vegas        348    0.000375
+                               istanbul university        339    0.000365
+                                anadolu university        336    0.000362
+ university at albany, the state university of ...        323    0.000348
+                              university of dayton        312    0.000336
+                                   open university        302    0.000325
+                           truman state university        292    0.000315
+                        wilfrid laurier university        283    0.000305
+                               boğaziçi university        281    0.000303
+                                bradley university        279    0.000301
+                                  rowan university        273    0.000294
+                         university of southampton        265    0.000286
+                                             apple        260    0.000280
+                                  williams college        245    0.000264
+                       the evergreen state college        238    0.000256
+                                webster university        236    0.000254
+                          university of portsmouth        227    0.000245
+                                              ntnu        214    0.000231
+                               university of idaho        212    0.000228
+                       western illinois university        199    0.000214
+             california state university, east bay        197    0.000212
+
+
+##############
+# CLUSTER 19 #
+##############
+
+attribute prevalence  =   7976 / 246973 = 0.032295
+occurrence prevalence =  43031 / 928097 = 0.046365
+
+                                         attribute  frequency  prevalence
+                    university of nebraska–lincoln        498    0.000537
+                   stevens institute of technology        460    0.000496
+                         loyola university chicago        459    0.000495
+                          berklee college of music        341    0.000367
+                          university of queensland        329    0.000354
+                                seattle university        291    0.000314
+                                  carleton college        263    0.000283
+                                swarthmore college        256    0.000276
+                           university of sheffield        245    0.000264
+                                   wheaton college        229    0.000247
+ indiana university-purdue university indianapolis        214    0.000231
+                             king's college london        214    0.000231
+                                   bentley college        209    0.000225
+                                   elon university        202    0.000218
+   california state polytechnic university, pomona        196    0.000211
+ university college dublin - national universit...        195    0.000210
+                                suffolk university        191    0.000206
+                     rhode island school of design        186    0.000200
+                              university of sussex        181    0.000195
+             university of massachusetts dartmouth        179    0.000193
+                                gonzaga university        175    0.000189
+                 maryland institute college of art        175    0.000189
+               university of alabama in huntsville        171    0.000184
+                  georgetown university law center        169    0.000182
+                montana state university - bozeman        169    0.000182
+                         university of east anglia        169    0.000182
+                                 champlain college        161    0.000173
+                           murray state university        161    0.000173
+            school of the art institute of chicago        160    0.000172
+                     university of mary washington        160    0.000172
+                             university of wyoming        157    0.000169
+                        seattle pacific university        156    0.000168
+                the catholic university of america        152    0.000164
+                                 haverford college        151    0.000163
+                    university of texas at el paso        151    0.000163
+                university of massachusetts boston        148    0.000159
+                                denison university        146    0.000157
+                          indiana state university        144    0.000155
+                                occidental college        144    0.000155
+                                  st. olaf college        144    0.000155
+                     city college of san francisco        142    0.000153
+                                 furman university        141    0.000152
+                university of advancing technology        140    0.000151
+              central connecticut state university        137    0.000148
+                         saint joseph's university        136    0.000147
+                                   whitman college        136    0.000147
+                                 dickinson college        130    0.000140
+           state university of new york at geneseo        130    0.000140
+                      the art institute of seattle        129    0.000139
+                stephen f. austin state university        127    0.000137
+
+
+#############
+# CLUSTER 2 #
+#############
+
+attribute prevalence  =  14961 / 246973 = 0.060577
+occurrence prevalence =  40655 / 928097 = 0.043805
+
+                                         attribute  frequency  prevalence
+                                   anna university        737    0.000794
+                                university of pune        622    0.000670
+                   manipal institute of technology        509    0.000548
+                               university of delhi        463    0.000499
+                                  amity university        405    0.000436
+                                kendriya vidyalaya        378    0.000407
+           srm institute of science and technology        376    0.000405
+             visvesvaraya technological university        355    0.000383
+                     birla institute of technology        309    0.000333
+                         psg college of technology        298    0.000321
+          nirma university of science & technology        266    0.000287
+                                 christ university        236    0.000254
+                                               puc        232    0.000250
+                                gujarat university        231    0.000249
+                           anna university chennai        220    0.000237
+                                    vit university        220    0.000237
+         guru gobind singh indraprastha university        214    0.000231
+                              university of madras        214    0.000231
+                                 sastra university        213    0.000230
+                                             pesit        193    0.000208
+                                             icfai        188    0.000203
+                         sikkim manipal university        165    0.000178
+ narsee monjee institute of management and high...        150    0.000162
+                uttar pradesh technical university        148    0.000159
+                                 andhra university        140    0.000151
+    thapar institute of engineering and technology        135    0.000145
+                   singapore management university        130    0.000140
+     visvesvaraya national institute of technology        127    0.000137
+               manipal academy of higher education        123    0.000133
+         bharati vidyapeeth college of engineering        119    0.000128
+                                       nit calicut        115    0.000124
+                        ssn college of engineering        115    0.000124
+                                    srm university        114    0.000123
+               vishwakarma institute of technology        113    0.000122
+       karunya institute of technology, coimbatore        111    0.000120
+           maharaja sayajirao university of baroda        105    0.000113
+                      college of engineering, pune        104    0.000112
+       jaypee university of information technology        104    0.000112
+                institute of management technology        102    0.000110
+                                  mithibai college        102    0.000110
+                              annamalai university         99    0.000107
+          indian institute of management bangalore         99    0.000107
+                 bangalore institute of technology         97    0.000105
+                coimbatore institute of technology         94    0.000101
+                         indian school of business         94    0.000101
+    sathyabama institute of science and technology         90    0.000097
+                           south point high school         89    0.000096
+                               chitkara university         87    0.000094
+              west bengal university of technology         86    0.000093
+          national institute of fashion technology         85    0.000092
+
+
+##############
+# CLUSTER 12 #
+##############
+
+attribute prevalence  =   2426 / 246973 = 0.009823
+occurrence prevalence =  37289 / 928097 = 0.040178
+
+                                     attribute  frequency  prevalence
+            university of california, berkeley       4279    0.004611
+             university of southern california       2751    0.002964
+         university of california, los angeles       2616    0.002819
+                    carnegie mellon university       2583    0.002783
+         massachusetts institute of technology       2252    0.002426
+           university of california, san diego       2130    0.002295
+                           columbia university       1982    0.002136
+                            cornell university       1954    0.002105
+                    university of pennsylvania       1912    0.002060
+              university of california, irvine       1674    0.001804
+       university of california, santa barbara       1289    0.001389
+                               yale university       1117    0.001204
+                              brown university       1114    0.001200
+                     san josé state university       1036    0.001116
+          university of california, santa cruz        968    0.001043
+                          princeton university        960    0.001034
+                                          ucla        709    0.000764
+                        santa clara university        695    0.000749
+                             dartmouth college        669    0.000721
+                       university of cambridge        599    0.000645
+                                   uc berkeley        591    0.000637
+            california institute of technology        495    0.000533
+                                      stanford        348    0.000375
+        university of the philippines mindanao          7    0.000008
+                               appleby college          5    0.000005
+                         calaveras high school          5    0.000005
+                            egerton university          4    0.000004
+                            filološki fakultet          4    0.000004
+                                     kjellerup          4    0.000004
+                          matematički fakultet          4    0.000004
+ technological educational institute of athens          4    0.000004
+                                          akto          3    0.000003
+                         biotehniška fakulteta          3    0.000003
+                     fakultet političkih nauka          3    0.000003
+                               gimnazija čačak          3    0.000003
+             international school of islamabad          3    0.000003
+                             kensington school          3    0.000003
+       louisiana state university - shreveport          3    0.000003
+                   montessori lyceum amsterdam          3    0.000003
+                            neston high school          3    0.000003
+         north manchester high school for boys          3    0.000003
+                                  smk seafield          3    0.000003
+                telkom institute of management          3    0.000003
+           universidad de puerto rico mayaguez          3    0.000003
+             university of applied arts vienna          3    0.000003
+                     university of bordeaux iv          3    0.000003
+                      zsigmond király főiskola          3    0.000003
+                                 american high          2    0.000002
+                              arbroath academy          2    0.000002
+                  atlantis medisinske høgskole          2    0.000002
+
+
+##############
+# CLUSTER 46 #
+##############
+
+attribute prevalence  =  10069 / 246973 = 0.040770
+occurrence prevalence =  30750 / 928097 = 0.033132
+
+                                         attribute  frequency  prevalence
+                 universidade estadual de campinas        434    0.000468
+            universidade federal do rio de janeiro        312    0.000336
+                                               usp        289    0.000311
+                         universidade de são paulo        279    0.000301
+                                             unesp        264    0.000284
+                                              ufrj        250    0.000269
+              universidade federal de minas gerais        247    0.000266
+                        anhembi morumbi university        234    0.000252
+                             universidade do minho        227    0.000245
+                                              ufmg        219    0.000236
+                 parsons the new school for design        216    0.000233
+                 mackenzie presbyterian university        208    0.000224
+                                             ufrgs        204    0.000220
+                                              unip        199    0.000214
+                          estácio de sá university        198    0.000213
+            universidade federal de santa catarina        198    0.000213
+                                              espm        194    0.000209
+                           university of são paulo        181    0.000195
+                    universidade federal do paraná        180    0.000194
+ pontifícia universidade católica do rio de jan...        177    0.000191
+                                              ufsc        171    0.000184
+       pontifical catholic university of são paulo        170    0.000183
+                                               fgv        167    0.000180
+                          universidade de brasília        163    0.000176
+                                              ufpe        159    0.000171
+                   universidade federal fluminense        155    0.000167
+                            universidade de aveiro        154    0.000166
+                        universidade estácio de sá        153    0.000165
+                                              ufpr        134    0.000144
+                                         puc minas        124    0.000134
+                universidade federal de pernambuco        124    0.000134
+                                            ufscar        122    0.000131
+                                               unb        122    0.000131
+                                              uerj        121    0.000130
+                                          unisinos        121    0.000130
+                             universidade paulista        120    0.000129
+         escola superior de propaganda e marketing        118    0.000127
+                                   miami ad school        117    0.000126
+         universidade federal do rio grande do sul        113    0.000122
+       universidade federal do rio grande do norte        108    0.000116
+              universidade presbiteriana mackenzie        108    0.000116
+                                              faap        100    0.000108
+                                           puc-rio         98    0.000106
+          universidade do estado do rio de janeiro         98    0.000106
+                                             utfpr         96    0.000103
+                       federal university of ceará         95    0.000102
+                      universidade são judas tadeu         94    0.000101
+ pontifícia universidade católica do rio grande...         93    0.000100
+                 universidade estadual de londrina         91    0.000098
+  pontifícia universidade católica de minas gerais         89    0.000096
+
+
+#############
+# CLUSTER 1 #
+#############
+
+attribute prevalence  =   4205 / 246973 = 0.017026
+occurrence prevalence =  30180 / 928097 = 0.032518
+
+                                         attribute  frequency  prevalence
+                        instituto superior técnico        270    0.000291
+                           university of cape town        262    0.000282
+                     american university of beirut        201    0.000217
+    norwegian university of science and technology        199    0.000214
+                             university of aalborg        181    0.000195
+          lahore university of management sciences        171    0.000184
+ bangladesh university of engineering and techn...        169    0.000182
+                              hogeschool rotterdam        169    0.000182
+                              kettering university        169    0.000182
+   budapest university of technology and economics        165    0.000178
+                          hogeschool van amsterdam        164    0.000177
+                              university of aarhus        164    0.000177
+ university college cork - national university ...        160    0.000172
+                    katholieke universiteit leuven        151    0.000163
+                                hogeschool utrecht        145    0.000156
+                            university of plymouth        142    0.000153
+                           loughborough university        134    0.000144
+                             university of salford        134    0.000144
+                                  sofia university        130    0.000140
+                             university of colombo        128    0.000138
+                                  aalto university        122    0.000131
+                        hanze university groningen        121    0.000130
+                  liverpool john moores university        113    0.000122
+                            university of pretoria        112    0.000121
+                    dublin institute of technology        105    0.000113
+                                saddleback college        104    0.000112
+                              universitetet i oslo        104    0.000112
+  faculdade de engenharia da universidade do porto        103    0.000111
+                            university of scranton        103    0.000111
+                        ecpi college of technology         97    0.000105
+                  wrocław university of technology         96    0.000103
+                     university of south australia         95    0.000102
+                        santa fe community college         93    0.000100
+                           university of groningen         93    0.000100
+                           city university, london         92    0.000099
+                              university of bergen         91    0.000098
+                       radboud university nijmegen         90    0.000097
+                                             sliit         90    0.000097
+                     universiti teknologi petronas         90    0.000097
+                            university of tasmania         90    0.000097
+                                              feup         88    0.000095
+                     glasgow caledonian university         87    0.000094
+                    oregon institute of technology         87    0.000094
+              penn state erie, the behrend college         87    0.000094
+                           universidade de coimbra         85    0.000092
+                              universiteit utrecht         85    0.000092
+                   vienna university of technology         85    0.000092
+                                  ghent university         84    0.000091
+                             singapore polytechnic         84    0.000091
+                   ontario college of art & design         82    0.000088
+
+
+#############
+# CLUSTER 8 #
+#############
+
+attribute prevalence  =   3111 / 246973 = 0.012597
+occurrence prevalence =  26771 / 928097 = 0.028845
+
+                                     attribute  frequency  prevalence
+              virginia commonwealth university        799    0.000861
+                        stony brook university        734    0.000791
+                             monash university        534    0.000575
+       california state university, northridge        500    0.000539
+                      university of louisville        487    0.000525
+                           mcmaster university        469    0.000505
+        university of the philippines, diliman        458    0.000493
+                 grand valley state university        419    0.000451
+                        wayne state university        410    0.000442
+                   georgia southern university        356    0.000384
+                   loyola marymount university        304    0.000328
+                               oberlin college        293    0.000316
+ missouri university of science and technology        290    0.000312
+                              sheridan college        273    0.000294
+                                  reed college        271    0.000292
+                    texas christian university        268    0.000289
+     university of maryland university college        255    0.000275
+            university of massachusetts lowell        248    0.000267
+                     university of mississippi        239    0.000258
+              university of colorado at denver        237    0.000255
+               university of nebraska at omaha        237    0.000255
+                     university of the pacific        235    0.000253
+                      staffordshire university        224    0.000241
+            tennessee technological university        221    0.000238
+                               de anza college        208    0.000224
+                      university of st. thomas        202    0.000218
+                             durham university        200    0.000215
+               university of northern colorado        191    0.000206
+                            miami dade college        187    0.000201
+                          newcastle university        183    0.000197
+                     university of strathclyde        181    0.000195
+                delft university of technology        180    0.000194
+                        university of manitoba        180    0.000194
+                          orange coast college        177    0.000191
+                     louisiana tech university        176    0.000190
+                australian national university        170    0.000183
+                         seton hall university        169    0.000182
+                university of central oklahoma        169    0.000182
+                   university of new brunswick        168    0.000181
+              new york institute of technology        166    0.000179
+                                le cordon bleu        163    0.000176
+                    valencia community college        162    0.000175
+                      colorado school of mines        161    0.000173
+                              brock university        157    0.000169
+                           university of tulsa        150    0.000162
+               milwaukee school of engineering        148    0.000159
+                              clark university        147    0.000158
+                                          ucsb        146    0.000157
+     southern illinois university edwardsville        144    0.000155
+                christopher newport university        141    0.000152
+
+
+##############
+# CLUSTER 22 #
+##############
+
+attribute prevalence  =  11729 / 246973 = 0.047491
+occurrence prevalence =  26119 / 928097 = 0.028143
+
+                                         attribute  frequency  prevalence
+          university of the philippines, los baños        133    0.000143
+                            university of belgrade         94    0.000101
+                                              uanl         69    0.000074
+          national university of ireland, maynooth         65    0.000070
+                                              uasd         61    0.000066
+                                  binus university         60    0.000065
+   pontificia universidad catolica madre y maestra         53    0.000057
+                       universitas islam indonesia         53    0.000057
+                              east west university         52    0.000056
+                                         it telkom         52    0.000056
+                universidad nacional de costa rica         44    0.000047
+          university of national and world economy         43    0.000046
+                  islamic university of technology         42    0.000045
+                universidad del valle de guatemala         42    0.000045
+                                               uni         39    0.000042
+                                adamson university         34    0.000037
+                                            ulacit         34    0.000037
+                                  lessius mechelen         33    0.000036
+                                  san beda college         33    0.000036
+                           grafisch lyceum utrecht         32    0.000034
+                                     htwg konstanz         32    0.000034
+                        ateneo de davao university         31    0.000033
+                             diponegoro university         31    0.000033
+                            university of the east         31    0.000033
+                                               ipb         29    0.000031
+                            facultad de ingenieria         28    0.000030
+               informatics institute of technology         28    0.000030
+ mindanao state university - iligan institute o...         28    0.000030
+    national university of sciences and technology         28    0.000030
+                                university of pécs         28    0.000030
+                                               bhs         27    0.000029
+                     bogor agricultural university         27    0.000029
+                                              chse         27    0.000029
+                            university of cagliari         27    0.000029
+                                 hongik university         26    0.000028
+                                             mcast         26    0.000028
+                                               nhh         26    0.000028
+                    smk telkom sandhy putra malang         26    0.000028
+                                        up diliman         26    0.000028
+                                           enseirb         25    0.000027
+                   national university of colombia         25    0.000027
+        university of puerto rico, mayaguez campus         25    0.000027
+                                              ceti         24    0.000026
+                hogeschool voor de kunsten utrecht         24    0.000026
+                universidad autonoma de tamaulipas         24    0.000026
+                             universidade de évora         24    0.000026
+                        universiti tenaga nasional         24    0.000026
+                            uniwersytet wrocławski         24    0.000026
+                                               ims         23    0.000025
+                               politechnika śląska         23    0.000025
+
+
+##############
+# CLUSTER 45 #
+##############
+
+attribute prevalence  =   7381 / 246973 = 0.029886
+occurrence prevalence =  25657 / 928097 = 0.027645
+
+                                         attribute  frequency  prevalence
+                        universiteit van amsterdam        261    0.000281
+                                middlebury college        239    0.000258
+                                 wellesley college        239    0.000258
+                      kellogg school of management        178    0.000192
+                         claremont mckenna college        162    0.000175
+                                      cooper union        143    0.000154
+                                     ucla anderson        141    0.000152
+            national university of ireland, galway        127    0.000137
+                 university of michigan law school        116    0.000125
+       the george washington university law school        112    0.000121
+           university of california, san francisco        112    0.000121
+                 new york university school of law        111    0.000120
+                                     bates college        107    0.000115
+                            harvard medical school        105    0.000113
+                   boston university school of law         99    0.000107
+                                 bryn mawr college         98    0.000106
+                 university of maryland, baltimore         94    0.000101
+                           stellenbosch university         93    0.000100
+       fashion institute of design & merchandising         92    0.000099
+             teachers college, columbia university         92    0.000099
+                     duke university school of law         89    0.000096
+            school of oriental and african studies         89    0.000096
+                                   scripps college         89    0.000096
+                                muhlenberg college         87    0.000094
+ university of california, hastings college of ...         86    0.000093
+         cornell university college of engineering         85    0.000092
+                           ross school of business         79    0.000085
+           thunderbird school of global management         79    0.000085
+                  fordham university school of law         78    0.000084
+                                 loyola law school         78    0.000084
+            stanford university school of medicine         75    0.000081
+                                bennington college         68    0.000073
+        university of the sciences in philadelphia         64    0.000069
+                         boston college law school         63    0.000068
+             northwestern university school of law         62    0.000067
+ university of medicine and dentistry of new je...         62    0.000067
+                           universiteit maastricht         61    0.000066
+                 benjamin n. cardozo school of law         58    0.000062
+                                              uiuc         58    0.000062
+                               new york law school         57    0.000061
+                                university of vigo         57    0.000061
+                                cornell law school         56    0.000060
+                     culinary institute of america         55    0.000059
+                          harvard extension school         55    0.000059
+                                    rutgers-camden         55    0.000059
+            tufts university school of engineering         55    0.000059
+                             university of granada         55    0.000059
+                      simon's rock college of bard         53    0.000057
+   cornell university college of arts and sciences         52    0.000056
+                                    pitzer college         52    0.000056
+
+
+##############
+# CLUSTER 39 #
+##############
+
+attribute prevalence  =   2462 / 246973 = 0.009969
+occurrence prevalence =  23746 / 928097 = 0.025586
+
+                               attribute  frequency  prevalence
+                         rice university        733    0.000790
+                       baylor university        567    0.000611
+                      queen's university        484    0.000521
+              london school of economics        439    0.000473
+        illinois institute of technology        414    0.000446
+               missouri state university        391    0.000421
+               university college london        370    0.000399
+                 imperial college london        360    0.000388
+                     wesleyan university        323    0.000348
+                   university of glasgow        300    0.000323
+                          pomona college        268    0.000289
+     rose-hulman institute of technology        262    0.000282
+              university of rhode island        258    0.000278
+                   penn state university        244    0.000263
+                            georgia tech        240    0.000259
+                university of st andrews        240    0.000259
+                                     usc        237    0.000255
+                         harvard college        234    0.000252
+             belarusian state university        223    0.000240
+                  dublin city university        212    0.000228
+      indiana university of pennsylvania        210    0.000226
+    stanford graduate school of business        206    0.000222
+                      harvard law school        199    0.000214
+                  université de montréal        199    0.000214
+                         amherst college        198    0.000213
+                      colgate university        193    0.000208
+             new mexico state university        185    0.000199
+                                     byu        183    0.000197
+                   university of windsor        180    0.000194
+                     bucknell university        171    0.000184
+                        grinnell college        167    0.000180
+                  stuyvesant high school        162    0.000175
+                      utrecht university        162    0.000175
+       victoria university of wellington        160    0.000172
+                               princeton        159    0.000171
+                                     rit        159    0.000171
+                       brunel university        155    0.000167
+ franklin w. olin college of engineering        155    0.000167
+                                   kaist        151    0.000163
+        queen mary, university of london        151    0.000163
+                               uc irvine        151    0.000163
+                           union college        140    0.000151
+                    bangalore university        137    0.000148
+       karlsruhe institute of technology        137    0.000148
+                     universiteit twente        137    0.000148
+                         bowdoin college        135    0.000145
+                   lewis & clark college        129    0.000139
+          mit sloan school of management        128    0.000138
+                     universidad de lima        124    0.000134
+  boston university school of management        123    0.000133
+
+
+#############
+# CLUSTER 7 #
+#############
+
+attribute prevalence  =   4126 / 246973 = 0.016706
+occurrence prevalence =  23241 / 928097 = 0.025042
+
+                                    attribute  frequency  prevalence
+                       university of oklahoma        842    0.000907
+                       university of delaware        629    0.000678
+                          university of miami        628    0.000677
+                    colorado state university        545    0.000587
+                              york university        490    0.000528
+                        university of alberta        484    0.000521
+                 mississippi state university        457    0.000492
+                          brandeis university        453    0.000488
+                         villanova university        420    0.000453
+ new york university stern school of business        374    0.000403
+                        school of visual arts        353    0.000380
+                      rutgers – new brunswick        351    0.000378
+                        university of calgary        345    0.000372
+                       university of maryland        340    0.000366
+                         marquette university        337    0.000363
+            university of wisconsin-milwaukee        335    0.000361
+                         university of denver        315    0.000339
+                        pepperdine university        297    0.000320
+                           hofstra university        288    0.000310
+               brigham young university-idaho        276    0.000297
+                               humber college        275    0.000296
+          california state university, fresno        267    0.000288
+             university of technology, sydney        266    0.000287
+                          university of maine        262    0.000282
+                         university of guelph        251    0.000270
+                       weber state university        247    0.000266
+                               babson college        235    0.000253
+                        university of bristol        209    0.000225
+                                          nyu        201    0.000217
+                       bournemouth university        194    0.000209
+                             biola university        184    0.000198
+                    university of westminster        183    0.000197
+                       university of hartford        175    0.000189
+                      st. edward's university        164    0.000177
+           manchester metropolitan university        159    0.000171
+                              barnard college        156    0.000168
+                            howard university        156    0.000168
+                          coventry university        154    0.000166
+                  nottingham trent university        148    0.000159
+                    oxford brookes university        144    0.000155
+                       sarah lawrence college        134    0.000144
+                       university of the arts        124    0.000134
+             california institute of the arts        122    0.000131
+                       university of redlands        122    0.000131
+                   southern oregon university        119    0.000128
+                                colby college        115    0.000124
+                           notre dame college        112    0.000121
+                                          asu        108    0.000116
+                                        essec        104    0.000112
+                 york college of pennsylvania        104    0.000112
+
+
+#############
+# CLUSTER 5 #
+#############
+
+attribute prevalence  =   5829 / 246973 = 0.023602
+occurrence prevalence =  21897 / 928097 = 0.023593
+
+                                     attribute  frequency  prevalence
+                 university of the philippines        189    0.000204
+         southern polytechnic state university        180    0.000194
+                    university of saskatchewan        177    0.000191
+                              fanshawe college        168    0.000181
+                       ferris state university        163    0.000176
+                   university of hertfordshire        139    0.000150
+                university of central missouri        137    0.000148
+                             deakin university        132    0.000142
+                     santa rosa junior college        125    0.000135
+                        university of bradford        120    0.000129
+                london metropolitan university        119    0.000128
+            university of wisconsin-whitewater        119    0.000128
+                   indiana wesleyan university        116    0.000125
+              columbus state community college        115    0.000124
+                            murdoch university        111    0.000120
+                        university of aberdeen        111    0.000120
+                   pacific lutheran university        110    0.000119
+                      nassau community college        108    0.000116
+              johnson county community college        107    0.000115
+               university of wisconsin-oshkosh        107    0.000115
+                              valencia college        107    0.000115
+                     valdosta state university        105    0.000113
+                      macomb community college        103    0.000111
+                        edith cowan university        102    0.000110
+            columbus college of art and design        100    0.000108
+                university of southern indiana         99    0.000107
+                     morehead state university         95    0.000102
+                             conestoga college         93    0.000100
+              houston community college system         92    0.000099
+                      university of evansville         92    0.000099
+                  university of western sydney         91    0.000098
+                                luther college         87    0.000094
+                           franklin university         86    0.000093
+                                 baker college         85    0.000092
+                american university of sharjah         82    0.000088
+                   rijksuniversiteit groningen         77    0.000083
+                 south dakota state university         76    0.000082
+          ex'pression college for digital arts         75    0.000081
+                          university of regina         75    0.000081
+                       sacred heart university         73    0.000079
+ university of puerto rico, rio piedras campus         72    0.000078
+                               langara college         71    0.000077
+            pennsylvania college of technology         71    0.000077
+                           fresno city college         69    0.000074
+               kwantlen polytechnic university         69    0.000074
+                           temasek polytechnic         69    0.000074
+                            andrews university         68    0.000073
+               university of the witwatersrand         67    0.000072
+           armstrong atlantic state university         66    0.000071
+                       transylvania university         65    0.000070
+
+
+##############
+# CLUSTER 18 #
+##############
+
+attribute prevalence  =   8233 / 246973 = 0.033336
+occurrence prevalence =  21555 / 928097 = 0.023225
+
+                                         attribute  frequency  prevalence
+                            north south university        118    0.000127
+                                             pucmm        103    0.000111
+                          university of san carlos         72    0.000078
+                     universiti teknologi malaysia         57    0.000061
+   pontificia universidad católica madre y maestra         56    0.000060
+                              asia pacific college         55    0.000059
+                          tbilisi state university         52    0.000056
+                          new bulgarian university         51    0.000055
+                       don bosco technical college         50    0.000054
+                ozarks technical community college         49    0.000053
+               universidad industrial de santander         48    0.000052
+                             melbourne high school         42    0.000045
+                                 universidad icesi         42    0.000045
+                                               ibs         41    0.000044
+                               macon state college         40    0.000043
+                                   háskóli íslands         39    0.000042
+                          yerevan state university         39    0.000042
+                                               htx         38    0.000041
+                          universidad regiomontana         37    0.000040
+                                         ingeniero         36    0.000039
+              institute of business administration         36    0.000039
+                                             upaep         36    0.000039
+                               wayne state college         35    0.000038
+                       universidade federal do abc         34    0.000037
+                           sungkyunkwan university         33    0.000036
+                         universidad san sebastian         33    0.000036
+                                               esi         32    0.000034
+                    instituto politecnico nacional         32    0.000034
+                                        unigranrio         31    0.000033
+                             universidade lusófona         31    0.000033
+             instituto tecnológico de buenos aires         30    0.000032
+                  the new england institute of art         30    0.000032
+                           universidade do algarve         30    0.000032
+                         universiti putra malaysia         30    0.000032
+                                           fast-nu         29    0.000031
+                         sauder school of business         29    0.000031
+                 universidad catolica andres bello         29    0.000031
+    universidad distrital francisco josé de caldas         29    0.000031
+                           universidad ort uruguay         29    0.000031
+                            university of brasília         29    0.000031
+                            karachi grammar school         28    0.000030
+                                wrocław university         28    0.000030
+                                               нау         28    0.000030
+                                 aitchison college         27    0.000029
+                                               fiu         27    0.000029
+                                    goa university         27    0.000029
+                                          kuleuven         27    0.000029
+                              lds business college         27    0.000029
+                       national college of ireland         27    0.000029
+ state university of new york institute of tech...         27    0.000029
+
+
+#############
+# CLUSTER 6 #
+#############
+
+attribute prevalence  =   4800 / 246973 = 0.019435
+occurrence prevalence =  20485 / 928097 = 0.022072
+
+                                         attribute  frequency  prevalence
+                        national taiwan university        924    0.000996
+                    national chiao tung university        332    0.000358
+                     national tsing hua university        288    0.000310
+    hong kong university of science and technology        281    0.000303
+                                              淡江大學        278    0.000300
+                    national cheng kung university        248    0.000267
+                                              輔仁大學        218    0.000235
+                       national central university        195    0.000210
+                                tamkang university        190    0.000205
+                                              元智大學        189    0.000204
+                        fu jen catholic university        178    0.000192
+                                              世新大學        177    0.000191
+                                              台灣大學        172    0.000185
+                                              中原大學        158    0.000170
+                                              銘傳大學        146    0.000157
+                                              東海大學        137    0.000148
+                                              逢甲大學        130    0.000140
+                                yuan ze university        128    0.000138
+                                              交通大學        127    0.000137
+                                              東吳大學        127    0.000137
+                               university of essex        124    0.000134
+                                            中國文化大學        124    0.000134
+                                              成功大學        121    0.000130
+                   national sun yat-sen university        116    0.000125
+                 national taiwan normal university        113    0.000122
+                                               ntu        111    0.000120
+                      national chengchi university        108    0.000116
+                                              實踐大學        107    0.000115
+                      hong kong baptist university        106    0.000114
+ national taiwan university of science and tech...        105    0.000113
+                                              政治大學        100    0.000108
+                                              中央大學         99    0.000107
+                                              清華大學         98    0.000106
+                                              文化大學         96    0.000103
+                   national chung cheng university         89    0.000096
+                                            南台科技大學         88    0.000095
+                   chung yuan christian university         84    0.000091
+                                              nctu         84    0.000091
+                                              nccu         83    0.000089
+          national taipei university of technology         82    0.000088
+                                              長庚大學         81    0.000087
+                                              義守大學         80    0.000086
+                                            國立中央大學         79    0.000085
+                                            國立交通大學         79    0.000085
+                                             hkust         78    0.000084
+                                tunghai university         78    0.000084
+                                              中正大學         77    0.000083
+                                            國立政治大學         77    0.000083
+                             ming chuan university         74    0.000080
+                                              大葉大學         73    0.000079
+
+
+##############
+# CLUSTER 48 #
+##############
+
+attribute prevalence  =   3018 / 246973 = 0.012220
+occurrence prevalence =  18907 / 928097 = 0.020372
+
+                                attribute  frequency  prevalence
+               san diego state university        843    0.000908
+                 university of cincinnati        784    0.000845
+                portland state university        728    0.000784
+                                  diploma        711    0.000766
+             northern illinois university        552    0.000595
+           bowling green state university        523    0.000564
+                       ryerson university        495    0.000533
+              ateneo de manila university        494    0.000532
+              eastern michigan university        416    0.000448
+             appalachian state university        410    0.000442
+                                  epitech        386    0.000416
+       university of texas at san antonio        374    0.000403
+              northern arizona university        358    0.000386
+      queensland university of technology        319    0.000344
+                     university of toledo        315    0.000339
+                           north carolina        293    0.000316
+                 university of nottingham        292    0.000315
+               portland community college        242    0.000261
+                              hard knocks        231    0.000249
+               montclair state university        223    0.000240
+                        algonquin college        222    0.000239
+       university of southern mississippi        200    0.000215
+             nova southeastern university        193    0.000208
+ british columbia institute of technology        192    0.000207
+                        hampshire college        188    0.000203
+                         brooklyn college        183    0.000197
+                    willamette university        177    0.000191
+                     santa monica college        171    0.000184
+                humboldt state university        165    0.000178
+                       university of kent        158    0.000170
+                   university of adelaide        155    0.000167
+                   mesa community college        153    0.000165
+                                     bcit        142    0.000153
+                 university of copenhagen        138    0.000149
+                        depauw university        124    0.000134
+                          palomar college        120    0.000129
+               santa barbara city college        120    0.000129
+                       strayer university        117    0.000126
+                     university of ulster        115    0.000124
+                     ngee ann polytechnic        105    0.000113
+                        augustana college        104    0.000112
+                hawaii pacific university         95    0.000102
+                   london business school         95    0.000102
+                       st. john's college         92    0.000099
+                               homeschool         89    0.000096
+                      keene state college         89    0.000096
+                          drew university         84    0.000091
+                                 graduate         79    0.000085
+                          camosun college         78    0.000084
+                                     isep         74    0.000080
+
+
+#############
+# CLUSTER 9 #
+#############
+
+attribute prevalence  =   7286 / 246973 = 0.029501
+occurrence prevalence =  18442 / 928097 = 0.019871
+
+                                attribute  frequency  prevalence
+                        mcgill university        866    0.000933
+                                  supinfo        424    0.000457
+                         université laval        217    0.000234
+          université du québec à montréal        200    0.000215
+                                    epita        170    0.000183
+                                   insead        148    0.000159
+    institut d'etudes politiques de paris        124    0.000134
+                             hec montréal        111    0.000120
+                                hec paris        111    0.000120
+                                    efrei        108    0.000116
+                                    hetic        106    0.000114
+      instituto tecnológico de costa rica         96    0.000103
+              university of wolverhampton         88    0.000095
+   escp-eap european school of management         86    0.000093
+             grenoble ecole de management         74    0.000080
+         université catholique de louvain         72    0.000078
+                                    iscom         70    0.000075
+            université libre de bruxelles         68    0.000073
+                                  belfort         67    0.000072
+                 université de strasbourg         63    0.000068
+                    edhec business school         59    0.000064
+                                  ensimag         59    0.000064
+                     ecole centrale paris         56    0.000060
+ university of paris i: panthéon-sorbonne         56    0.000060
+             london south bank university         54    0.000058
+                                    eisti         52    0.000056
+                    skema business school         51    0.000055
+                                    essca         49    0.000053
+       dominican university of california         48    0.000052
+                             insa de lyon         48    0.000052
+                                ece paris         46    0.000050
+   université de technologie de compiègne         46    0.000050
+                                 enseeiht         45    0.000048
+                                    esiea         45    0.000048
+                                 gobelins         45    0.000048
+                        telecom paristech         45    0.000048
+                                   ensiie         44    0.000047
+                                     itin         43    0.000046
+   university of paris iv: paris-sorbonne         42    0.000045
+                                      iut         41    0.000044
+                    rouen business school         41    0.000044
+                                     cnam         39    0.000042
+                  reims management school         39    0.000042
+                  université de bourgogne         39    0.000042
+                                    celsa         38    0.000041
+                joseph fourier university         38    0.000041
+         supinfo international university         38    0.000041
+   université de provence aix-marseille i         38    0.000041
+                                     utbm         38    0.000041
+                              escp europe         36    0.000039
+
+
+##############
+# CLUSTER 37 #
+##############
+
+attribute prevalence  =   3177 / 246973 = 0.012864
+occurrence prevalence =  16966 / 928097 = 0.018280
+
+                                        attribute  frequency  prevalence
+                             texas a&m university       1944    0.002095
+                         brigham young university       1645    0.001772
+                          simon fraser university        692    0.000746
+                            ball state university        573    0.000617
+                 university of texas at arlington        542    0.000584
+                              carleton university        495    0.000533
+ wharton school of the university of pennsylvania        428    0.000461
+          california state university, sacramento        411    0.000443
+                            university of warwick        364    0.000392
+                             university of ottawa        356    0.000384
+          southern illinois university carbondale        327    0.000352
+                  chinese university of hong kong        299    0.000322
+                            university of bologna        289    0.000311
+                        the college of new jersey        286    0.000308
+                            college of charleston        262    0.000282
+                             lancaster university        232    0.000250
+                     sam houston state university        189    0.000204
+                            vancouver film school        185    0.000199
+                             middlesex university        180    0.000194
+       university of north carolina at wilmington        157    0.000169
+                                yonsei university        153    0.000165
+                             george brown college        143    0.000154
+           university of tennessee at chattanooga        142    0.000153
+                            university of reading        132    0.000142
+                                massey university        117    0.000126
+                                 foothill college        110    0.000119
+                              la trobe university        106    0.000114
+                           pima community college         99    0.000107
+                           university of portland         99    0.000107
+                the art institute of philadelphia         98    0.000106
+                   anne arundel community college         91    0.000098
+                   university of alaska anchorage         89    0.000096
+                           idaho state university         87    0.000094
+                                 trent university         84    0.000091
+                               centennial college         83    0.000089
+                         universidad de monterrey         80    0.000086
+                   university of houston–downtown         79    0.000085
+                        western oregon university         76    0.000082
+                                        insa lyon         73    0.000079
+                                      ism dhanbad         71    0.000077
+                             university of hawaii         64    0.000069
+                            university of cologne         55    0.000059
+                                   asbury college         54    0.000058
+                              las positas college         54    0.000058
+       north georgia college and state university         46    0.000050
+                             rockhurst university         44    0.000047
+                              andover high school         40    0.000043
+                     the art institute of houston         40    0.000043
+                                 loyalist college         37    0.000040
+                               edison high school         35    0.000038
+
+
+##############
+# CLUSTER 43 #
+##############
+
+attribute prevalence  =   4191 / 246973 = 0.016969
+occurrence prevalence =  15696 / 928097 = 0.016912
+
+                                         attribute  frequency  prevalence
+               minnesota state university, mankato        159    0.000171
+                                   troy university        149    0.000161
+                         university of puerto rico        147    0.000158
+                community college of the air force        130    0.000140
+                 the pennsylvania state university        111    0.000120
+                                    sierra college        106    0.000114
+                     southern adventist university        105    0.000113
+       california state university, san bernardino         99    0.000107
+ embry-riddle aeronautical university, daytona ...         99    0.000107
+                           rutgers business school         97    0.000105
+               minnesota state university moorhead         93    0.000100
+                          southern utah university         85    0.000092
+                               bellevue university         84    0.000091
+                                         texas a&m         82    0.000088
+                                  drury university         81    0.000087
+                                     berry college         77    0.000083
+                              bob jones university         77    0.000083
+                     nova scotia community college         75    0.000081
+                                 acadia university         74    0.000080
+                                   flagler college         74    0.000080
+                                    lee university         74    0.000080
+                      american military university         70    0.000075
+                            knox college, illinois         68    0.000073
+                                  linfield college         68    0.000073
+                        olivet nazarene university         68    0.000073
+                                              mtsu         67    0.000072
+                         purdue university calumet         60    0.000065
+                                         byu-idaho         59    0.000064
+                                   carroll college         59    0.000064
+                                hampton university         59    0.000064
+                                     blinn college         56    0.000060
+                       oklahoma baptist university         56    0.000060
+                          pensacola junior college         56    0.000060
+           the illinois institute of art - chicago         56    0.000060
+ university of cincinnati college-conservatory ...         56    0.000060
+                 university of tennessee at martin         56    0.000060
+                               westminster college         54    0.000058
+                         san joaquin delta college         53    0.000057
+                         tarleton state university         53    0.000057
+                 university of nebraska at kearney         53    0.000057
+                                       suny oswego         52    0.000056
+                                 gannon university         50    0.000054
+                      saint bonaventure university         50    0.000054
+                      columbia college of missouri         49    0.000053
+                            manhattanville college         49    0.000053
+                                 merrimack college         49    0.000053
+                                mesa state college         49    0.000053
+                  milwaukee area technical college         49    0.000053
+                         art institute of colorado         48    0.000052
+          california state university, bakersfield         48    0.000052
+
+
+##############
+# CLUSTER 49 #
+##############
+
+attribute prevalence  =   3546 / 246973 = 0.014358
+occurrence prevalence =  15031 / 928097 = 0.016196
+
+                                attribute  frequency  prevalence
+                    university of phoenix       1203    0.001296
+                         devry university        916    0.000987
+      university of massachusetts amherst        878    0.000946
+                  itt technical institute        776    0.000836
+      university of california, riverside        651    0.000701
+         florida international university        606    0.000653
+        middle tennessee state university        531    0.000572
+                           baruch college        278    0.000300
+       polytechnic university of new york        203    0.000219
+      northern virginia community college        188    0.000203
+    ivy tech community college of indiana        166    0.000179
+                        kaplan university        154    0.000166
+         university of montana - missoula        149    0.000161
+               st. cloud state university        133    0.000143
+                   st. petersburg college        123    0.000133
+                       providence college        121    0.000130
+        university of wisconsin - madison        116    0.000125
+                       ashford university        114    0.000123
+             abilene christian university        103    0.000111
+                           beloit college         97    0.000105
+                   lane community college         89    0.000096
+                         canisius college         86    0.000093
+                  mt. san antonio college         82    0.000088
+     john jay college of criminal justice         79    0.000085
+                edmonds community college         77    0.000083
+              brookdale community college         75    0.000081
+               seminole community college         75    0.000081
+               fort hays state university         72    0.000078
+                    university of coimbra         69    0.000074
+           bucks county community college         65    0.000070
+            northeastern state university         62    0.000067
+                      schoolcraft college         58    0.000062
+       central piedmont community college         52    0.000056
+                everett community college         49    0.000053
+             university of texas at tyler         48    0.000052
+                     republic polytechnic         44    0.000047
+                  st. george's university         44    0.000047
+                     westwood high school         44    0.000047
+                      golden west college         42    0.000045
+                       desales university         41    0.000044
+         moraine valley community college         41    0.000044
+         art institute of fort lauderdale         40    0.000043
+                                      cet         39    0.000042
+                 state college of florida         39    0.000042
+                  art institute of dallas         38    0.000041
+                   erie community college         38    0.000041
+                                 itt tech         38    0.000041
+                     tyler junior college         37    0.000040
+ purdue university college of engineering         36    0.000039
+                universiti teknologi mara         33    0.000036
+
+
+##############
+# CLUSTER 32 #
+##############
+
+attribute prevalence  =   5786 / 246973 = 0.023428
+occurrence prevalence =  14650 / 928097 = 0.015785
+
+                            attribute  frequency  prevalence
+               university of michigan       3483    0.003753
+                    temple university        789    0.000850
+                      emerson college        639    0.000689
+                       vassar college        304    0.000328
+               university of illinois        265    0.000286
+                             uc davis        227    0.000245
+                   trinity university        226    0.000244
+                                 ucsd        224    0.000241
+          university of northern iowa        217    0.000234
+               university of richmond        197    0.000212
+               university of colorado        150    0.000162
+               aberystwyth university        125    0.000135
+                    lafayette college        121    0.000130
+            mountain view high school         81    0.000087
+                          the streets         72    0.000078
+      university of california irvine         54    0.000058
+                         northwestern         41    0.000044
+         cass business school, london         34    0.000037
+                                  nhl         33    0.000036
+             university of california         32    0.000034
+                     atlantic college         31    0.000033
+ university of california at berkeley         30    0.000032
+        fakultet organizacionih nauka         29    0.000031
+            thousand oaks high school         17    0.000018
+                           montessori         16    0.000017
+                                khlim         13    0.000014
+                 prospect high school         13    0.000014
+                         apex college         12    0.000013
+                 harriton high school         12    0.000013
+                  filozofski fakultet         11    0.000012
+            karel de grote-hogeschool         11    0.000012
+          fakulteta za elektrotehniko         10    0.000011
+                         leeuwenborgh         10    0.000011
+                    otago polytechnic         10    0.000011
+                                 uksw         10    0.000011
+   uniwersytet ekonomiczny w krakowie         10    0.000011
+         katholieke hogeschool leuven          9    0.000010
+    kauno technologijos universitetas          9    0.000010
+                                  kdg          9    0.000010
+                         nova college          9    0.000010
+                  politechnika łódzka          9    0.000010
+                   stenden hogeschool          9    0.000010
+       universiti malaysia terengganu          9    0.000010
+                       aminiya school          8    0.000009
+                         city varsity          8    0.000009
+                              elte ik          8    0.000009
+                               hogent          8    0.000009
+                     kaho sint-lieven          8    0.000009
+               king edward vii school          8    0.000009
+      quezon city science high school          8    0.000009
+
+
+##############
+# CLUSTER 36 #
+##############
+
+attribute prevalence  =   2907 / 246973 = 0.011771
+occurrence prevalence =  13898 / 928097 = 0.014975
+
+                                         attribute  frequency  prevalence
+                               tsinghua university        449    0.000484
+                          university of manchester        412    0.000444
+                       the university of hong kong        361    0.000389
+                                 peking university        342    0.000368
+                     shanghai jiao tong university        328    0.000353
+                               zhejiang university        323    0.000348
+                            university of auckland        318    0.000343
+                                  fudan university        299    0.000322
+                      city university of hong kong        287    0.000309
+                  hong kong polytechnic university        180    0.000194
+                          university of canterbury        158    0.000170
+                                nanjing university        156    0.000168
+     huazhong university of science and technology        155    0.000167
+                                 tongji university        141    0.000152
+     university of science and technology of china        139    0.000150
+                                  wuhan university        138    0.000149
+                              university of surrey        137    0.000148
+ beijing university of posts and telecommunicat...        121    0.000130
+                            sun yat-sen university        114    0.000123
+                                               bit        113    0.000122
+                     mapúa institute of technology        111    0.000120
+                                swansea university        106    0.000114
+                                            华中科技大学         91    0.000098
+                    harbin institute of technology         85    0.000092
+                           phillips exeter academy         85    0.000092
+                             university of waikato         83    0.000089
+                                              浙江大学         82    0.000088
+                                            上海交通大学         78    0.000084
+                   saginaw valley state university         73    0.000079
+                              southeast university         66    0.000071
+                             james cook university         65    0.000070
+                                              武汉大学         65    0.000070
+                                              sjtu         64    0.000069
+                                              bupt         61    0.000066
+                      east china normal university         61    0.000066
+                         xi'an jiaotong university         60    0.000065
+                                 nankai university         59    0.000064
+                               shanghai university         57    0.000061
+                                              ustc         56    0.000060
+                                              nust         55    0.000059
+                                sichuan university         55    0.000059
+                                               hku         54    0.000058
+                                 xiamen university         53    0.000057
+                            university of stirling         52    0.000056
+                                              南京大学         52    0.000056
+                                              北京大学         51    0.000055
+              the hong kong polytechnic university         49    0.000053
+                                              复旦大学         48    0.000052
+ beijing university of aeronautics and astronau...         46    0.000050
+              south china university of technology         46    0.000050
+
+
+##############
+# CLUSTER 26 #
+##############
+
+attribute prevalence  =   5738 / 246973 = 0.023233
+occurrence prevalence =  13383 / 928097 = 0.014420
+
+                                         attribute  frequency  prevalence
+                              university of mumbai       1019    0.001098
+                             multimedia university        203    0.000219
+ national university of computer and emerging s...        196    0.000211
+                symbiosis international university        176    0.000190
+                  university of central lancashire        145    0.000156
+                            northumbria university        138    0.000149
+ ghulam ishaq khan institute of engineering sci...        126    0.000136
+                    lovely professional university        125    0.000135
+                             university of karachi        110    0.000119
+                       punjab technical university        107    0.000115
+                           university of rajasthan         93    0.000100
+                                             ignou         92    0.000099
+                            kurukshetra university         88    0.000095
+ shanmugha arts, science, technology & research...         88    0.000095
+                            university of calcutta         88    0.000095
+                                 mumbai university         82    0.000088
+                                             nmims         74    0.000080
+                                 bahria university         72    0.000078
+                 college of engineering trivandrum         72    0.000078
+                                  delhi university         71    0.000077
+                               university of wales         70    0.000075
+            indira gandhi national open university         69    0.000074
+                          university of the punjab         66    0.000071
+                                     nit jalandhar         59    0.000064
+                                   pune university         59    0.000064
+                        university of bedfordshire         59    0.000064
+       institute of chartered accountants of india         58    0.000062
+      ned university of engineering and technology         58    0.000062
+                hult international business school         57    0.000061
+                                             msrit         56    0.000060
+                                punjabi university         56    0.000060
+                             hillcrest high school         51    0.000055
+                netaji subhash engineering college         50    0.000054
+                     government college university         48    0.000052
+                         beaconhouse school system         46    0.000050
+                                            nmamit         46    0.000050
+                     central queensland university         45    0.000048
+                            pondicherry university         45    0.000048
+ sir syed university of engineering and technology         44    0.000047
+                      university of central punjab         44    0.000047
+                  gujarat technological university         43    0.000046
+                                               vit         43    0.000046
+               vidyalankar institute of technology         41    0.000044
+                                   the city school         39    0.000042
+                              chartered accountant         38    0.000041
+                                   sathaye college         38    0.000041
+                                    wilson college         38    0.000041
+ shaheed zulfiqar ali bhutto institute of scien...         35    0.000038
+                             lahore grammar school         32    0.000034
+                           stmik amikom yogyakarta         32    0.000034
+
+
+##############
+# CLUSTER 35 #
+##############
+
+attribute prevalence  =   6451 / 246973 = 0.026120
+occurrence prevalence =  13257 / 928097 = 0.014284
+
+                                         attribute  frequency  prevalence
+                         bina nusantara university        310    0.000334
+                        institut teknologi bandung        297    0.000320
+                           university of indonesia        249    0.000268
+                            university of moratuwa        227    0.000245
+                              king saud university        190    0.000205
+    king fahd university of petroleum and minerals        177    0.000191
+                            gadjah mada university        171    0.000184
+                        german university in cairo        160    0.000172
+                                  cairo university        154    0.000166
+                             universitas indonesia        140    0.000151
+               institut teknologi sepuluh nopember        122    0.000131
+                              ain shams university        116    0.000125
+                      american university in cairo        115    0.000124
+                              university of jordan         99    0.000107
+                          institut pertanian bogor         95    0.000102
+                                               itb         89    0.000096
+                           universitas padjadjaran         87    0.000094
+                                     royal college         85    0.000092
+                             alexandria university         80    0.000086
+                   bandung institute of technology         76    0.000082
+         university of colombo school of computing         70    0.000075
+       jordan university of science and technology         68    0.000073
+                         king abdulaziz university         61    0.000066
+                             universitas gunadarma         60    0.000065
+ arab academy for science and technology and ma...         59    0.000064
+                                    ananda college         52    0.000056
+                               mansoura university         51    0.000055
+                                 télécom paristech         44    0.000047
+                   sekolah tinggi akuntansi negara         43    0.000046
+     sri lanka institute of information technology         43    0.000046
+                                hanyang university         40    0.000043
+                         institut teknologi telkom         39    0.000042
+                               trisakti university         39    0.000042
+                                            unikom         39    0.000042
+                                             insat         35    0.000038
+                               hokkaido university         33    0.000036
+                    telkom institute of technology         33    0.000036
+                             universitas brawijaya         31    0.000033
+                            universitas budi luhur         30    0.000032
+                                               ksu         29    0.000031
+                                             한양대학교         29    0.000031
+                                              ensi         28    0.000030
+                                            esprit         27    0.000029
+                                  richmond college         26    0.000028
+                               faculty of commerce         25    0.000027
+                                yarmouk university         25    0.000027
+         imam muhammad bin saud islamic university         24    0.000026
+                                             ipeit         24    0.000026
+         princess sumaya university for technology         24    0.000026
+                              brawijaya university         23    0.000025
+
+
+##############
+# CLUSTER 17 #
+##############
+
+attribute prevalence  =   4890 / 246973 = 0.019800
+occurrence prevalence =  11726 / 928097 = 0.012634
+
+                                         attribute  frequency  prevalence
+                             irvine valley college         59    0.000064
+                          solano community college         53    0.000057
+           california state university, stanislaus         50    0.000054
+                           university of jyväskylä         47    0.000051
+                             bellarmine university         44    0.000047
+   cal poly pomona college of environmental design         42    0.000045
+                                         roseville         41    0.000044
+      california state university, channel islands         40    0.000043
+                              foothill high school         37    0.000040
+    national and kapodistrian university of athens         36    0.000039
+                        medical college of georgia         35    0.000038
+                               los medanos college         33    0.000036
+                            mcgeorge school of law         32    0.000034
+              golden gate university school of law         31    0.000033
+   california polytechnic state university, pomona         30    0.000032
+                           diamond bar high school         30    0.000032
+                         san diego miramar college         30    0.000032
+                              milpitas high school         29    0.000031
+                  alliant international university         28    0.000030
+ american university of antigua college of medi...         27    0.000029
+                                             ugent         26    0.000028
+             western university of health sciences         26    0.000028
+                             irvington high school         25    0.000027
+                              saratoga high school         25    0.000027
+                            san marcos high school         24    0.000026
+                              valencia high school         24    0.000026
+                             san jose city college         23    0.000025
+                            salem state university         22    0.000024
+                                  south university         22    0.000024
+                             jefferson high school         21    0.000023
+                            minnetonka high school         21    0.000023
+                         st. augustine high school         21    0.000023
+                                    brooks college         20    0.000022
+                             cupertino high school         20    0.000022
+                        john f. kennedy university         20    0.000022
+                           usc gould school of law         20    0.000022
+                             victor valley college         20    0.000022
+                             a.t. still university         19    0.000020
+           art institute of california - san diego         19    0.000020
+                  gonzaga university school of law         19    0.000020
+ kwame nkrumah university of science and techno...         19    0.000020
+                                     laney college         19    0.000020
+                                     platt college         19    0.000020
+                         st. ignatius college prep         19    0.000020
+                                         technical         19    0.000020
+                                  westwood college         19    0.000020
+                     capital university law school         18    0.000019
+                            gabrielino high school         18    0.000019
+                           monte vista high school         18    0.000019
+                          newbury park high school         18    0.000019
+
+
+##############
+# CLUSTER 13 #
+##############
+
+attribute prevalence  =   4259 / 246973 = 0.017245
+occurrence prevalence =  10496 / 928097 = 0.011309
+
+                            attribute  frequency  prevalence
+      polytechnic university of milan        497    0.000536
+       university of rome la sapienza        317    0.000342
+      polytechnic university of turin        274    0.000295
+                   bocconi university        176    0.000190
+                politecnico di milano        169    0.000182
+                   university of pisa        163    0.000176
+     università degli studi di padova        152    0.000164
+                  university of padua        142    0.000153
+     university of naples federico ii        132    0.000142
+                             hogwarts        121    0.000130
+                università di bologna        111    0.000120
+                   università di pisa        110    0.000119
+                  university of milan        103    0.000111
+    università degli studi di firenze         94    0.000101
+ università cattolica del sacro cuore         88    0.000095
+       university of rome tor vergata         79    0.000085
+     università degli studi di torino         72    0.000078
+                politecnico di torino         63    0.000068
+                  university of turin         61    0.000066
+    università degli studi di palermo         60    0.000065
+     università degli studi di verona         58    0.000062
+        marche polytechnic university         56    0.000060
+       università degli studi di bari         54    0.000058
+                   university of bari         52    0.000056
+    università degli studi di salerno         51    0.000055
+                university of catania         48    0.000052
+    università degli studi di catania         48    0.000052
+    università degli studi di brescia         46    0.000050
+           istituto europeo di design         44    0.000047
+               university of florence         44    0.000047
+                university of palermo         44    0.000047
+                 università di padova         44    0.000047
+                university of salerno         41    0.000044
+    università degli studi di trieste         40    0.000043
+     università degli studi di genova         39    0.000042
+                university of perugia         38    0.000041
+      università degli studi di pavia         38    0.000041
+                                 itis         37    0.000040
+             luiss university of rome         36    0.000039
+                                liceo         35    0.000038
+            università della calabria         35    0.000038
+                università di catania         34    0.000037
+                               laurea         33    0.000036
+            university iuav of venice         33    0.000036
+   università degli studi di cagliari         33    0.000036
+     università degli studi di trento         33    0.000036
+             iulm university of milan         32    0.000034
+                                  ied         30    0.000032
+    università degli studi di perugia         30    0.000032
+                 università di torino         30    0.000032
+
+
+##############
+# CLUSTER 15 #
+##############
+
+attribute prevalence  =   5248 / 246973 = 0.021249
+occurrence prevalence =   9447 / 928097 = 0.010179
+
+                                         attribute  frequency  prevalence
+                        amrita vishwa vidyapeetham        516    0.000556
+          national institute of technology calicut        228    0.000246
+       cochin university of science and technology        195    0.000210
+                                chinmaya vidyalaya        179    0.000193
+                             university of calicut        168    0.000181
+                         mahatma gandhi university        146    0.000157
+                              university of kerala        124    0.000134
+                             bharthiyar university         78    0.000084
+                         model engineering college         70    0.000075
+                college of engineering, trivandrum         69    0.000074
+                                             cusat         62    0.000067
+                          madras christian college         55    0.000059
+                        tkm college of engineering         40    0.000043
+                                 kannur university         39    0.000042
+                              university of mysore         39    0.000042
+ viswajyothi college of engineering and technology         36    0.000039
+                                             fisat         32    0.000034
+                         university of northampton         32    0.000034
+                        nss college of engineering         27    0.000029
+                               arya central school         26    0.000028
+                                    christ college         26    0.000028
+                amal jyothi college of engineering         25    0.000027
+                 college of engineering chengannur         25    0.000027
+                        mes college of engineering         24    0.000026
+           nitte meenakshi institute of technology         24    0.000026
+         scms school of engineering and technology         21    0.000023
+                                   nalanda college         19    0.000020
+                college of engineering, chengannur         18    0.000019
+                        jyothi engineering college         18    0.000019
+                               mar ivanios college         17    0.000018
+                                 amrita vidyalayam         16    0.000017
+                                              mace         16    0.000017
+                        marian college kuttikkanam         16    0.000017
+                                     mg university         16    0.000017
+                                              nitc         16    0.000017
+                      college of engineering adoor         15    0.000016
+                       engineering college bikaner         15    0.000016
+                       sree narayana public school         15    0.000016
+                                     iiser kolkata         14    0.000015
+                        lbs college of engineering         14    0.000015
+     rajagiri school of engineering and technology         14    0.000015
+                                           schools         14    0.000015
+       sree chitra thirunal college of engineering         13    0.000014
+                         st. thomas central school         13    0.000014
+                college of engineering kallooppara         12    0.000013
+                 college of engineering,trivandrum         12    0.000013
+                                      gec thrissur         12    0.000013
+                international indian school dammam         12    0.000013
+                international indian school jeddah         12    0.000013
+                                              mcet         12    0.000013
+
+
+##############
+# CLUSTER 41 #
+##############
+
+attribute prevalence  =   3878 / 246973 = 0.015702
+occurrence prevalence =   9396 / 928097 = 0.010124
+
+                          attribute  frequency  prevalence
+            university of edinburgh        530    0.000571
+      royal institute of technology        331    0.000357
+               linköping university        245    0.000264
+                 uppsala university        245    0.000264
+  chalmers university of technology        224    0.000241
+                    lund university        198    0.000213
+               macquarie university        186    0.000200
+               stockholm university        177    0.000191
+                       hyper island        139    0.000150
+                    umeå university        101    0.000109
+                                kth         85    0.000092
+  auckland university of technology         81    0.000087
+     blekinge college of technology         81    0.000087
+     luleå university of technology         77    0.000083
+                               nith         55    0.000059
+             universitetet i bergen         55    0.000059
+             københavns universitet         49    0.000053
+              mälardalen university         43    0.000046
+                         nackademin         40    0.000043
+              göteborgs universitet         39    0.000042
+               university of tromsø         39    0.000042
+      stockholm school of economics         37    0.000040
+        university college of malmö         37    0.000040
+              mid sweden university         35    0.000038
+     berghs school of communication         33    0.000036
+                karlstad university         32    0.000034
+             stockholms universitet         32    0.000034
+                uppsala universitet         28    0.000030
+                               hist         25    0.000027
+                 högskolan i skövde         25    0.000027
+                 høgskolen i bergen         25    0.000027
+                  høgskulen i volda         25    0.000027
+   blekinge institute of technology         24    0.000026
+            lunds tekniska högskola         24    0.000026
+                  örebro university         24    0.000026
+ westerdals school of communication         22    0.000024
+             universitetet i tromsø         21    0.000023
+                  högskolan dalarna         20    0.000022
+         linnaeus university, växjö         20    0.000022
+                  mittuniversitetet         19    0.000020
+         dalarna university college         18    0.000019
+               høgskolen i telemark         18    0.000019
+               høgskolen i vestfold         18    0.000019
+               mälardalens högskola         18    0.000019
+                              sigma         18    0.000019
+                   umeå universitet         18    0.000019
+                university of borås         18    0.000019
+              university of nairobi         18    0.000019
+                 örebro universitet         18    0.000019
+                høgskolen i hedmark         17    0.000018
+
+
+##############
+# CLUSTER 27 #
+##############
+
+attribute prevalence  =   3597 / 246973 = 0.014564
+occurrence prevalence =   9072 / 928097 = 0.009775
+
+                                        attribute  frequency  prevalence
+                              stanford university       2897    0.003121
+             university of maryland, college park       2134    0.002299
+                    eleanor roosevelt high school         21    0.000023
+                            semmelweis university         19    0.000020
+                    eötvös loránd tudományegyetem         15    0.000016
+                        ekonomski fakultet zagreb         10    0.000011
+                                              bkf          8    0.000009
+                                         elte btk          8    0.000009
+                                 epoka university          5    0.000005
+   faculdade de farmácia da universidade do porto          5    0.000005
+                                 htl grieskirchen          5    0.000005
+                 liberal arts and science academy          5    0.000005
+                            perczel mór gimnázium          5    0.000005
+                                             stis          5    0.000005
+                                    tartu ülikool          5    0.000005
+                           dobó katalin gimnázium          4    0.000004
+                       eszterházy károly főiskola          4    0.000004
+                                            facet          4    0.000004
+                                       green park          4    0.000004
+               instituto tecnologico de zacatepec          4    0.000004
+                            kealing middle school          4    0.000004
+                        lahden ammattikorkeakoulu          4    0.000004
+                                 markland college          4    0.000004
+                                rosborg gymnasium          4    0.000004
+                                          számalk          4    0.000004
+                                            sšeas          4    0.000004
+ universidad michoacana de san nicolas de hidalgo          4    0.000004
+        universidad panamericana campus bonaterra          4    0.000004
+                     army public school & college          3    0.000003
+                                             auca          3    0.000003
+                                              bgf          3    0.000003
+                       budapesti műszaki főiskola          3    0.000003
+                          bárdos lászló gimnázium          3    0.000003
+        christelijke scholengemeenschap walcheren          3    0.000003
+                           dózsa györgy gimnázium          3    0.000003
+                    eötvös józsef gimnázium, tata          3    0.000003
+                          facultad de veterinaria          3    0.000003
+          faculty of organization and informatics          3    0.000003
+                                          fenelon          3    0.000003
+                                     feri maribor          3    0.000003
+                    ferny grove state high school          3    0.000003
+                              forest lake college          3    0.000003
+    gróf széchenyi istván műszaki szakközépiskola          3    0.000003
+                   hottentots holland high school          3    0.000003
+                                         it sligo          3    0.000003
+                justus-liebig-universität giessen          3    0.000003
+                         kodolányi jános főiskola          3    0.000003
+         konservatorij za glasbo in balet maribor          3    0.000003
+                            lehel vezér gimnázium          3    0.000003
+                                   pannon egyetem          3    0.000003
+
+
+##############
+# CLUSTER 21 #
+##############
+
+attribute prevalence  =   2621 / 246973 = 0.010612
+occurrence prevalence =   8910 / 928097 = 0.009600
+
+                                         attribute  frequency  prevalence
+                          chulalongkorn university        583    0.000628
+                              kasetsart university        365    0.000393
+                              university of sydney        362    0.000390
+                              thammasat university        316    0.000340
+  king mongkut's university of technology thonburi        290    0.000312
+                              silpakorn university        204    0.000220
+                             chiang mai university        203    0.000219
+                          university of wollongong        202    0.000218
+                                mahidol university        173    0.000186
+                      prince of songkla university        173    0.000186
+                             assumption university        161    0.000173
+ king mongkut's institute of technology ladkrabang        149    0.000161
+                              khon kaen university        134    0.000144
+                                bangkok university        111    0.000120
+ king mongkut's university of technology north ...         86    0.000093
+                                assumption college         84    0.000091
+                                rangsit university         84    0.000091
+                                             kmitl         81    0.000087
+                           ramkhamhaeng university         81    0.000087
+                                   bond university         76    0.000082
+                                             kmutt         64    0.000069
+                               naresuan university         61    0.000066
+                          mae fah luang university         59    0.000064
+                       srinakharinwirot university         48    0.000052
+                suranaree university of technology         40    0.000043
+                                  maejo university         36    0.000039
+                                            kmutnb         35    0.000038
+               mahanakorn university of technology         35    0.000038
+                           triam udom suksa school         31    0.000033
+                              มหาวิทยาลัยเชียงใหม่         30    0.000032
+          mahidol university international college         28    0.000030
+                               sripatum university         28    0.000030
+                        the prince royal's college         28    0.000030
+                           hitotsubashi university         27    0.000029
+                           saint gabriel's college         26    0.000028
+                                               sdu         26    0.000028
+                      suankularb wittayalai school         25    0.000027
+                                burapha university         24    0.000026
+                                   debsirin school         24    0.000026
+                                   lasalle college         24    0.000026
+                      mahidol wittayanusorn school         24    0.000026
+        university of the thai chamber of commerce         24    0.000026
+                                 มหาวิทยาลัยนเรศวร         24    0.000026
+                       assumption college thonburi         22    0.000024
+                thai-nichi institute of technology         22    0.000024
+                                มหาวิทยาลัยศิลปากร         22    0.000024
+                            มหาวิทยาลัยเกษตรศาสตร์         22    0.000024
+             มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี         22    0.000024
+                         bangkok christian college         21    0.000023
+                                               ais         20    0.000022
+
+
+##############
+# CLUSTER 29 #
+##############
+
+attribute prevalence  =   3190 / 246973 = 0.012916
+occurrence prevalence =   8555 / 928097 = 0.009218
+
+                          attribute  frequency  prevalence
+      university of western ontario        491    0.000529
+      de la salle university-manila        399    0.000430
+ new jersey institute of technology        342    0.000368
+               dalhousie university        305    0.000329
+                university of leeds        304    0.000328
+ swinburne university of technology        297    0.000320
+           university of birmingham        261    0.000281
+        salt lake community college        165    0.000178
+            university of leicester        151    0.000163
+                 university of hull        150    0.000162
+     university of minnesota duluth        146    0.000157
+              university of lincoln        117    0.000126
+         university of huddersfield        112    0.000121
+                university of derby        105    0.000113
+            university of glamorgan         99    0.000107
+        it university of copenhagen         98    0.000106
+                  napier university         93    0.000100
+              shenandoah university         37    0.000040
+   university for the creative arts         36    0.000039
+                                bcc         31    0.000033
+               reykjavík university         25    0.000027
+                   medaille college         23    0.000025
+                faulkner university         19    0.000020
+  mount wachusett community college         19    0.000020
+                cégep de sherbrooke         18    0.000019
+                     gaston college         17    0.000018
+     the art institute of charlotte         17    0.000018
+      college of the north atlantic         16    0.000017
+          gateway technical college         15    0.000016
+                  halesowen college         15    0.000016
+                 saxion hogescholen         15    0.000016
+    butler county community college         14    0.000015
+                  cazenovia college         14    0.000015
+               lakeview high school         14    0.000015
+    swansea metropolitan university         14    0.000015
+               artevelde hogeschool         13    0.000014
+                 cibola high school         13    0.000014
+                   høyskolen i oslo         13    0.000014
+   information technology institute         12    0.000013
+                olympus high school         12    0.000013
+               reynolds high school         12    0.000013
+                        aarhus tech         11    0.000012
+         baptist college of florida         11    0.000012
+           broken arrow high school         11    0.000012
+                douglas high school         11    0.000012
+          hawkeye community college         11    0.000012
+                  priestley college         11    0.000012
+              sydney grammar school         11    0.000012
+            xios hogeschool limburg         11    0.000012
+                    cégep de matane         10    0.000011
+
+
+##############
+# CLUSTER 20 #
+##############
+
+attribute prevalence  =   3049 / 246973 = 0.012345
+occurrence prevalence =   8014 / 928097 = 0.008635
+
+                                         attribute  frequency  prevalence
+                        copenhagen business school        169    0.000182
+                            university of limerick        136    0.000147
+                 hogeschool van arnhem en nijmegen         97    0.000105
+            ruprecht karl university of heidelberg         81    0.000087
+                      university of abertay dundee         81    0.000087
+                     humboldt university of berlin         72    0.000078
+ friedrich-alexander-university, erlangen-nurem...         69    0.000074
+             albert ludwigs university of freiburg         63    0.000068
+                    technical university of berlin         63    0.000068
+                            university of mannheim         62    0.000067
+                    technische universität ilmenau         57    0.000061
+                                   ruhr university         55    0.000059
+                             university of hamburg         53    0.000057
+                                        htw berlin         51    0.000055
+                                               sae         50    0.000054
+                                     sae institute         50    0.000054
+                                        tu münchen         48    0.000052
+            johannes gutenberg university of mainz         47    0.000051
+                              universität augsburg         45    0.000048
+                                universität bremen         45    0.000048
+                               universität leipzig         45    0.000048
+                        hochschule bonn-rhein-sieg         44    0.000047
+                                        tu dresden         44    0.000047
+                                      fh hagenberg         43    0.000046
+                             universität paderborn         43    0.000046
+             eberhard karls university of tübingen         42    0.000045
+                                university of bonn         42    0.000045
+                                     dhbw mannheim         39    0.000042
+                             universität bielefeld         39    0.000042
+                                         tu berlin         38    0.000041
+                    philipps university of marburg         37    0.000040
+                               saarland university         37    0.000040
+                      university of duisburg-essen         37    0.000040
+                      leibniz universität hannover         35    0.000038
+         otto von guericke university of magdeburg         35    0.000038
+                    technische universität dresden         35    0.000038
+                                       tu dortmund         35    0.000038
+                             university of münster         35    0.000038
+                        universität duisburg-essen         35    0.000038
+                           university of paderborn         34    0.000037
+                            universität regensburg         34    0.000037
+                                universität siegen         33    0.000036
+                          university of st. gallen         31    0.000033
+                                universität kassel         31    0.000033
+                  dresden university of technology         30    0.000032
+                                       fh dortmund         30    0.000032
+                 universidad autónoma de barcelona         30    0.000032
+                              universität konstanz         30    0.000032
+                             university of leipzig         29    0.000031
+                              university of bremen         28    0.000030
+
+
+##############
+# CLUSTER 24 #
+##############
+
+attribute prevalence  =   3074 / 246973 = 0.012447
+occurrence prevalence =   7285 / 928097 = 0.007849
+
+                                         attribute  frequency  prevalence
+                           moscow state university        234    0.000252
+                 saint petersburg state university         87    0.000094
+        moscow institute of physics and technology         78    0.000084
+                                             бгуир         77    0.000083
+                   american university in bulgaria         62    0.000067
+                                             bsuir         59    0.000064
+                                             спбгу         58    0.000062
+                              university of latvia         53    0.000057
+ belarusian state university of informatics and...         48    0.000052
+                                               нгу         45    0.000048
+                                        спбгу итмо         43    0.000046
+                                            спбгпу         42    0.000045
+                                        нтуу "кпи"         39    0.000042
+                                             хнурэ         37    0.000040
+     state university - higher school of economics         33    0.000036
+                                             мгупи         31    0.000033
+                               linnaeus university         30    0.000032
+                                             ижгту         30    0.000032
+                                              мфти         30    0.000032
+                                               пгу         30    0.000032
+          bauman moscow state technical university         29    0.000031
+                                             школа         29    0.000031
+                                              мифи         28    0.000030
+                                              нгту         28    0.000030
+                                              бнту         27    0.000029
+                                              пгту         27    0.000029
+                      the university of manchester         26    0.000028
+                                             мирэа         26    0.000028
+                                              миэм         26    0.000028
+                                              ргсу         26    0.000028
+                                  lviv polytechnic         25    0.000027
+                                              мэси         25    0.000027
+                                  мгту им. баумана         24    0.000026
+                   technical university of moldova         23    0.000025
+                            tomsk state university         23    0.000025
+                                               кпи         23    0.000025
+                                              миэт         23    0.000025
+                                    спбгэту "лэти"         23    0.000025
+                                             юургу         23    0.000025
+        national university of kyiv-mohyla academy         22    0.000024
+                                             кубгу         22    0.000024
+                                         нияу мифи         21    0.000023
+                moscow power engineering institute         20    0.000022
+                                               mts         20    0.000022
+                                               вгу         20    0.000022
+                                              кгту         20    0.000022
+         новосибирский государственный университет         20    0.000022
+                                            доннту         19    0.000020
+                                               кгу         19    0.000020
+                                             мтуси         19    0.000020
+
+
+##############
+# CLUSTER 23 #
+##############
+
+attribute prevalence  =   3088 / 246973 = 0.012503
+occurrence prevalence =   7216 / 928097 = 0.007775
+
+                                   attribute  frequency  prevalence
+             curtin university of technology        197    0.000212
+                     university of greenwich        128    0.000138
+                         connecticut college         98    0.000106
+              hanoi university of technology         85    0.000092
+                            keele university         82    0.000088
+                                         vcu         80    0.000086
+                        university of trento         60    0.000065
+                             life university         58    0.000062
+               national economics university         57    0.000061
+        vietnam national university of hanoi         56    0.000060
+                                         neu         53    0.000057
+                          hoa sen university         50    0.000054
+    university of engineering and technology         49    0.000053
+                       university of science         46    0.000050
+                                         ueh         45    0.000048
+                                         hut         44    0.000047
+               university of gloucestershire         42    0.000045
+                                         dtu         40    0.000043
+                                         utc         40    0.000043
+                                         uit         37    0.000040
+        university of information technology         34    0.000037
+                                   fpt arena         33    0.000036
+                                       hcmus         32    0.000034
+   ho chi minh city university of technology         31    0.000033
+                    đại học kinh tế quốc dân         28    0.000030
+                                      fontys         27    0.000029
+        the art institute of fort lauderdale         26    0.000028
+    university of economics ho chi minh city         26    0.000028
+                             banking academy         24    0.000026
+                         kyunghee university         23    0.000025
+                        đại học ngoại thương         23    0.000025
+               hcmc university of technology         21    0.000023
+                           khoa học tự nhiên         21    0.000023
+                                       hcmut         20    0.000022
+                                           d         19    0.000020
+                                         mta         19    0.000020
+ pohang university of science and technology         19    0.000020
+                          đại học thương mại         19    0.000020
+              hanoi foreign trade university         18    0.000019
+                    international university         18    0.000019
+                                        hanu         17    0.000018
+                          học viện ngân hàng         17    0.000018
+                          academy of finance         16    0.000017
+                                        ussh         16    0.000017
+                            đại học xây dựng         16    0.000017
+                      le quy don high school         15    0.000016
+                                        ulsa         15    0.000016
+               diplomatic academy of vietnam         14    0.000015
+               hanoi - amsterdam high school         14    0.000015
+                   le hong phong high school         14    0.000015
+
+
+##############
+# CLUSTER 38 #
+##############
+
+attribute prevalence  =   1874 / 246973 = 0.007588
+occurrence prevalence =   7164 / 928097 = 0.007719
+
+                        attribute  frequency  prevalence
+    istanbul technical university        305    0.000329
+ middle east technical university        286    0.000308
+               bilkent university        269    0.000290
+      yıldız technical university        246    0.000265
+               marmara university        179    0.000193
+              kingston university        157    0.000169
+             hacettepe university        148    0.000159
+         columbia business school        142    0.000153
+               sakarya university        131    0.000141
+           dokuz eylül university        129    0.000139
+                ankara university        106    0.000114
+          jagiellonian university         97    0.000105
+                  gazi university         88    0.000095
+                uludağ university         74    0.000080
+      süleyman demirel university         70    0.000075
+    technical university of sofia         69    0.000074
+               sabancı university         63    0.000068
+           golden gate university         62    0.000067
+                trakya university         57    0.000061
+           galatasaray university         53    0.000057
+        university of east london         49    0.000053
+   eskişehir osmangazi university         48    0.000052
+              çukurova university         47    0.000051
+            yeditepe üniversitesi         45    0.000048
+                selçuk university         44    0.000047
+              yeditepe university         42    0.000045
+       kiev polytechnic institute         41    0.000044
+ eastern mediterranean university         40    0.000043
+     istanbul teknik üniversitesi         40    0.000043
+             kadir has university         40    0.000043
+             marmara üniversitesi         40    0.000043
+             kocaeli üniversitesi         38    0.000041
+            istanbul üniversitesi         35    0.000038
+                mersin university         35    0.000038
+    izmir university of economics         33    0.000036
+               fontys hogescholen         32    0.000034
+             pamukkale university         32    0.000034
+                  işık university         31    0.000033
+            baku state university         30    0.000032
+                gazi üniversitesi         30    0.000032
+                   robert college         29    0.000031
+    kütahya dumlupınar university         26    0.000028
+              bogazici university         25    0.000027
+               erciyes university         25    0.000027
+                 fatih university         25    0.000027
+             maltepe üniversitesi         25    0.000027
+          cumhuriyet üniversitesi         24    0.000026
+           pamukkale üniversitesi         24    0.000026
+           bornova anadolu lisesi         23    0.000025
+               sabanci university         23    0.000025
+
+
+##############
+# CLUSTER 42 #
+##############
+
+attribute prevalence  =   1882 / 246973 = 0.007620
+occurrence prevalence =   6934 / 928097 = 0.007471
+
+                                  attribute  frequency  prevalence
+           universidad nacional de colombia        240    0.000259
+                                      senac        185    0.000199
+              universidade federal de goiás        136    0.000147
+                                    unicamp        135    0.000145
+           technische universität darmstadt        113    0.000122
+                                      fatec        111    0.000120
+                                     física        101    0.000109
+                                       ufpb         91    0.000098
+                                       ufrn         91    0.000098
+          universidade católica de brasília         90    0.000097
+                                      senai         84    0.000091
+                          vignan university         78    0.000084
+        universidade metodista de são paulo         76    0.000082
+        universidade federal de santa maria         75    0.000081
+         universidade federal de são carlos         73    0.000079
+                                        fmu         69    0.000074
+                                       ufba         68    0.000073
+                                      udesc         64    0.000069
+                                    uninove         64    0.000069
+                                   cefet-mg         59    0.000064
+                                       furb         59    0.000064
+                                       jntu         57    0.000061
+ pontifical catholic university of campinas         56    0.000060
+            universidade luterana do brasil         55    0.000059
+            universidade federal da paraíba         54    0.000058
+                   centro universitário una         53    0.000057
+                                     unopar         53    0.000057
+                                       ufmt         49    0.000053
+                                   objetivo         48    0.000052
+                        universidad veritas         47    0.000051
+                                      ibmec         46    0.000050
+                                       sesi         43    0.000046
+                                        cti         42    0.000045
+                  escola politécnica da usp         41    0.000044
+                        faculdade pitágoras         41    0.000044
+        universidade federal de mato grosso         38    0.000041
+                                       ufjf         37    0.000040
+    stanford university school of education         35    0.000038
+                                      unesc         35    0.000038
+           federal university of pernambuco         33    0.000036
+                                      unesa         33    0.000036
+                                     unimep         33    0.000036
+                                   univille         33    0.000036
+          state university of montes claros         30    0.000032
+               universidade cruzeiro do sul         30    0.000032
+                                       opet         29    0.000031
+                                       ufla         29    0.000031
+                                       ufma         29    0.000031
+                                        umc         27    0.000029
+             universidade do vale do itajaí         25    0.000027
+
+
+##############
+# CLUSTER 44 #
+##############
+
+attribute prevalence  =   1887 / 246973 = 0.007641
+occurrence prevalence =   5610 / 928097 = 0.006045
+
+                                 attribute  frequency  prevalence
+                       tel aviv university        599    0.000645
+ technion - israel institute of technology        343    0.000370
+            hebrew university of jerusalem        326    0.000351
+                cleveland state university        227    0.000245
+        ben-gurion university of the negev        178    0.000192
+                                       idc        134    0.000144
+                                  technion        123    0.000133
+                       bar-ilan university        121    0.000130
+                 open university of israel        115    0.000124
+                     ben gurion university        104    0.000112
+                       university of haifa         94    0.000101
+                       bar ilan university         49    0.000053
+                        אוניברסיטת תל אביב         39    0.000042
+                                   shenkar         34    0.000037
+                     college of management         32    0.000034
+                       tel-aviv university         31    0.000033
+                                       bgu         30    0.000032
+                                john bryce         29    0.000031
+                      אוניברסיטת בן גוריון         28    0.000030
+                                      nyit         27    0.000029
+                                    טכניון         26    0.000028
+                              idc herzliya         24    0.000026
+                                       qut         21    0.000023
+                         hebrew university         19    0.000020
+             holon institute of technology         18    0.000019
+                        האוניברסיטה העברית         18    0.000019
+        ben gurion university of the negev         17    0.000018
+                             sapir college         17    0.000018
+                                     h.i.t         16    0.000017
+          jerusalem college of engineering         16    0.000017
+                        lasalle university         16    0.000017
+                        האוניברסיטה הפתוחה         16    0.000017
+                       university of basel         15    0.000016
+                              המכללה למנהל         15    0.000016
+                 manchester grammar school         14    0.000015
+                           אוניברסיטת חיפה         14    0.000015
+                  netanya academic college         13    0.000014
+                                   bezalel         12    0.000013
+                        ort braude college         12    0.000013
+                      alliance high school         11    0.000012
+                                    ruppin         11    0.000012
+                        אוניברסיטת בר אילן         11    0.000012
+                                מכללת ספיר         11    0.000012
+                                 beit berl         10    0.000011
+                     ben-gurion university         10    0.000011
+                          hadassah college         10    0.000011
+                                      iasa         10    0.000011
+ shenkar college of engineering and design         10    0.000011
+   technion israel institute of technology         10    0.000011
+                                  bar ilan          9    0.000010
+
+
+##############
+# CLUSTER 11 #
+##############
+
+attribute prevalence  =   4960 / 246973 = 0.020083
+occurrence prevalence =   5453 / 928097 = 0.005875
+
+                                         attribute  frequency  prevalence
+                                               ftn         15    0.000016
+                               ekonomska fakulteta         12    0.000013
+                             university of nicosia         11    0.000012
+                          fakultet tehničkih nauka          9    0.000010
+                                         한국기술교육대학교          7    0.000008
+                              faculty of philology          6    0.000006
+                                  ordrup gymnasium          5    0.000005
+                    poznań university of economics          5    0.000005
+                       prva kragujevacka gimnazija          5    0.000005
+               saint louis university, baguio city          5    0.000005
+                                   alejandro volta          4    0.000004
+                                 cfp des riverains          4    0.000004
+                                 drachtster lyceum          4    0.000004
+                    gimnazija jovan jovanović zmaj          4    0.000004
+                                            mbsskl          4    0.000004
+       peninsula college of medicine and dentistry          4    0.000004
+                             pinelands high school          4    0.000004
+                        porter & chester institute          4    0.000004
+                     prirodno-matematički fakultet          4    0.000004
+                                               raf          4    0.000004
+                          sande videregående skole          4    0.000004
+                     sekolah menengah sains dungun          4    0.000004
+ university of auckland, faculty of medical and...          4    0.000004
+           university of the immaculate conception          4    0.000004
+                            uniwersytet rzeszowski          4    0.000004
+                                  vanguard college          4    0.000004
+                                zemunska gimnazija          4    0.000004
+                                     automekaniker          3    0.000003
+                            ballymoney high school          3    0.000003
+                           borg videregående skole          3    0.000003
+              ecole nationale d'ingénieur de brest          3    0.000003
+                                      etf sarajevo          3    0.000003
+                                               faj          3    0.000003
+                           fakultet elektrotehnike          3    0.000003
+                                      fh-hagenberg          3    0.000003
+                                    garcia de orta          3    0.000003
+                                    gimnazija pula          3    0.000003
+                                   gonzaga college          3    0.000003
+                                 google university          3    0.000003
+                               gymnasium adolfinum          3    0.000003
+                            haute ecole de gestion          3    0.000003
+                            heung to middle school          3    0.000003
+                                              htwk          3    0.000003
+                                  ies joan brudieu          3    0.000003
+        instituto ciências biomédicas abel salazar          3    0.000003
+                             isle of wight college          3    0.000003
+                                              itpn          3    0.000003
+                                     its stuttgart          3    0.000003
+                             la salle del pedregal          3    0.000003
+                                lompoc high school          3    0.000003
+
+
+##############
+# CLUSTER 25 #
+##############
+
+attribute prevalence  =   2103 / 246973 = 0.008515
+occurrence prevalence =   5362 / 928097 = 0.005777
+
+                                    attribute  frequency  prevalence
+                         university of tehran        310    0.000334
+              sharif university of technology        282    0.000304
+                      islamic azad university        226    0.000244
+                 art center college of design        192    0.000207
+           amirkabir university of technology        152    0.000164
+                       heriot-watt university        125    0.000135
+                       university of debrecen         74    0.000080
+ limkokwing university of creative technology         71    0.000077
+                            shiraz university         70    0.000075
+                   shahid beheshti university         59    0.000064
+               emory university school of law         54    0.000058
+    iran university of science and technology         47    0.000051
+                    sunway university college         42    0.000045
+             isfahan university of technology         41    0.000044
+                                         iust         38    0.000041
+                     third university of rome         35    0.000038
+                            sharif university         30    0.000032
+                                         ucsi         30    0.000032
+                                          pnu         29    0.000031
+                                   farzanegan         28    0.000030
+                                allameh helli         26    0.000028
+                                 allame helli         24    0.000026
+                              azad university         24    0.000026
+                                 bandar abbas         24    0.000026
+                                       sampad         24    0.000026
+                        university of isfahan         24    0.000026
+                            tehran university         23    0.000025
+               ferdowsi university of mashhad         22    0.000024
+                 the university of nottingham         21    0.000023
+                         university of tabriz         21    0.000023
+        tehran university of medical sciences         20    0.000022
+                                          ism         16    0.000017
+                                         qiau         16    0.000017
+                              shahid beheshti         16    0.000017
+                       city university london         15    0.000016
+                                          tmu         15    0.000016
+                             urmia university         15    0.000016
+                           alborz high school         14    0.000015
+                                          aut         14    0.000015
+                                         bihe         14    0.000015
+                                          ipm         14    0.000015
+                allameh tabatabaii university         13    0.000014
+                                       danesh         13    0.000014
+                                       sharif         13    0.000014
+                           isfahan university         12    0.000013
+                                        mofid         12    0.000013
+                                        nodet         12    0.000013
+                                    wikipedia         12    0.000013
+           islamic azad university of mashhad         11    0.000012
+                              shahid ebrahimi         11    0.000012
+
+
+##############
+# CLUSTER 14 #
+##############
+
+attribute prevalence  =   2714 / 246973 = 0.010989
+occurrence prevalence =   5225 / 928097 = 0.005630
+
+                               attribute  frequency  prevalence
+                      masaryk university        189    0.000204
+ west chester university of pennsylvania        164    0.000177
+            charles university in prague        154    0.000166
+    czech technical university in prague        105    0.000113
+                      vrije universiteit        102    0.000110
+           brno university of technology         73    0.000079
+         university of economics, prague         54    0.000058
+                               gymnázium         43    0.000046
+         poznań university of technology         41    0.000044
+       faculty of information technology         37    0.000040
+                                     fei         35    0.000038
+                    univerzita pardubice         34    0.000037
+                                vut brno         30    0.000032
+             palacký university, olomouc         29    0.000031
+                                     vše         25    0.000027
+                                     msa         23    0.000025
+              university of west bohemia         23    0.000025
+                                    čvut         23    0.000025
+           suny downstate medical center         21    0.000023
+         vysoká škola ekonomická v praze         19    0.000020
+                     žilinská univerzita         18    0.000019
+                            spšst panská         16    0.000017
+               univerzita hradec králové         16    0.000017
+                 vysoká škola ekonomická         16    0.000017
+           vysoké učení technické v brně         15    0.000016
+                         spš a voš písek         14    0.000015
+        technická univerzita v košiciach         14    0.000015
+              city university of seattle         13    0.000014
+          technical university of kosice         13    0.000014
+         technical university of ostrava         13    0.000014
+                 university of pardubice         13    0.000014
+                                     vut         13    0.000014
+                          newton college         12    0.000013
+                              spše ječná         12    0.000013
+                                   ssšvt         12    0.000013
+            university of hradec králové         12    0.000013
+                   univerzita komenského         12    0.000013
+                                     čzu         12    0.000013
+                            fit vut brno         11    0.000012
+                       gymnázium arabská         11    0.000012
+                   masarykova univerzita         11    0.000012
+          technická univerzita v liberci         11    0.000012
+                                    tuke         11    0.000012
+                      univerzita karlova         11    0.000012
+                       obchodná akadémia         10    0.000011
+                           spšei ostrava         10    0.000011
+ univerzita sv. cyrila a metoda v trnave         10    0.000011
+                  univerzita tomáše bati         10    0.000011
+         univerzita tomáše bati ve zlíně         10    0.000011
+                       voš a spš šumperk         10    0.000011
+
+
+##############
+# CLUSTER 47 #
+##############
+
+attribute prevalence  =   2635 / 246973 = 0.010669
+occurrence prevalence =   4470 / 928097 = 0.004816
+
+                                         attribute  frequency  prevalence
+        hogwarts school of witchcraft and wizardry        178    0.000192
+                                       rwth aachen        174    0.000187
+                              university of vienna        156    0.000168
+            ludwig maximilian university of munich        145    0.000156
+                         free university of berlin        127    0.000137
+                               universität hamburg         86    0.000093
+                               universität zu köln         70    0.000075
+                  hochschule furtwangen university         58    0.000062
+                             fernuniversität hagen         48    0.000052
+ johann wolfgang goethe university of frankfurt...         47    0.000051
+              georg-august university of göttingen         46    0.000050
+                                                 .         37    0.000040
+                                       haw hamburg         36    0.000039
+                        universität des saarlandes         28    0.000030
+         westfälische wilhelms-universität münster         27    0.000029
+                       wirtschaftsuniversität wien         20    0.000022
+                              hochschule offenburg         15    0.000016
+                     universität der künste berlin         15    0.000016
+                                        baumschule         14    0.000015
+                                    fh brandenburg         12    0.000013
+                       johannes kepler universität         11    0.000012
+                                    hochschule ulm         10    0.000011
+             zurich university of applied sciences         10    0.000011
+                                         st.joseph          9    0.000010
+                                 hochschule luzern          8    0.000009
+                                 schule des lebens          8    0.000009
+                                     fh deggendorf          7    0.000008
+                              fachhochschule mainz          6    0.000006
+        hochschule für gestaltung schwäbisch gmünd          6    0.000006
+     hochschule karlsruhe - technik und wirtschaft          6    0.000006
+                        universität duisburg essen          6    0.000006
+                            universität st. gallen          6    0.000006
+     bayerische akademie für werbung und marketing          5    0.000005
+                           bergenfield high school          5    0.000005
+                                    dhbw karlsruhe          5    0.000005
+                                       fh landshut          5    0.000005
+                                gesamtschule hardt          5    0.000005
+                               gymnasium gernsheim          5    0.000005
+                                    gymnasium syke          5    0.000005
+                                hochschule kempten          5    0.000005
+                                            hs ulm          5    0.000005
+                                sae institute köln          5    0.000005
+                           theodor-heuss-gymnasium          5    0.000005
+                                       uni leipzig          5    0.000005
+                                        uni passau          5    0.000005
+                                              atiw          4    0.000004
+                                           bbbaden          4    0.000004
+                                          campus02          4    0.000004
+       duale hochschule baden-württemberg mannheim          4    0.000004
+                          fachhochschule stralsund          4    0.000004
+
+
+##############
+# CLUSTER 34 #
+##############
+
+attribute prevalence  =   1332 / 246973 = 0.005393
+occurrence prevalence =   3901 / 928097 = 0.004203
+
+                       attribute  frequency  prevalence
+      university of nevada, reno        257    0.000277
+              radford university        195    0.000210
+              university of york        194    0.000209
+             university of tokyo        147    0.000158
+             university of otago        143    0.000154
+                osaka university         62    0.000067
+                kyoto university         58    0.000062
+                          慶應義塾大学         58    0.000062
+ london college of communication         44    0.000047
+ north seattle community college         44    0.000047
+           university of tsukuba         44    0.000047
+              birzeit university         34    0.000037
+                          青山学院大学         32    0.000034
+                hosei university         30    0.000032
+                            中央大学         30    0.000032
+                            東京大学         29    0.000031
+                           立命館大学         29    0.000031
+      horace greeley high school         26    0.000028
+          ritsumeikan university         25    0.000027
+                            筑波大学         24    0.000026
+                            上智大学         23    0.000025
+                            関西大学         23    0.000025
+             doshisha university         22    0.000024
+               nagoya university         22    0.000024
+                          東京工業大学         21    0.000023
+                chiba university         20    0.000022
+               kyushu university         19    0.000020
+                            京都大学         19    0.000020
+                           北海道大学         19    0.000020
+                          東京工科大学         19    0.000020
+                            神戸大学         19    0.000020
+                          東京理科大学         18    0.000019
+                            立教大学         18    0.000019
+                            法政大学         17    0.000018
+                 kobe university         16    0.000017
+                nihon university         15    0.000016
+                         国際基督教大学         15    0.000016
+                            琉球大学         15    0.000016
+                          関西学院大学         15    0.000016
+                            千葉大学         14    0.000015
+                        日本電子専門学校         14    0.000015
+                         東京大学大学院         14    0.000015
+                            東海大学         14    0.000015
+        aoyama gakuin university         13    0.000014
+       kwansei gakuin university         13    0.000014
+    yokohama national university         13    0.000014
+                           名古屋大学         13    0.000014
+               kansai university         12    0.000013
+                meiji university         11    0.000012
+     tokyo university of science         11    0.000012
+
+
+##############
+# CLUSTER 33 #
+##############
+
+attribute prevalence  =   1108 / 246973 = 0.004486
+occurrence prevalence =   3658 / 928097 = 0.003941
+
+                                  attribute  frequency  prevalence
+                                 highschool        439    0.000473
+                                 eth zurich        210    0.000226
+                         university of oslo        210    0.000226
+                             fpt university        154    0.000166
+                   foreign trade university        109    0.000117
+                united states naval academy        107    0.000115
+                                 university         98    0.000106
+       de la salle-college of saint benilde         92    0.000099
+     rmit international university, vietnam         84    0.000091
+                                        ftu         83    0.000089
+ hanoi university of science and technology         69    0.000074
+                                       ptit         67    0.000072
+                   đại học bách khoa hà nội         60    0.000065
+                                     aptech         50    0.000054
+                                     huflit         49    0.000053
+                                         bh         35    0.000038
+                           hanoi university         35    0.000038
+    học viện công nghệ bưu chính viễn thông         34    0.000037
+                                       hubt         31    0.000033
+                                        iba         31    0.000033
+                                        hui         26    0.000028
+                      hanoi open university         24    0.000026
+                  đại học khoa học tự nhiên         24    0.000026
+                                 trường đời         21    0.000023
+                                     hutech         20    0.000022
+                                 fpt aptech         19    0.000020
+                  aptech computer education         18    0.000019
+                                       khtn         15    0.000016
+                                        uet         15    0.000016
+                        đh bách khoa hà nội         13    0.000014
+                                        cma         12    0.000013
+                                 chu văn an         11    0.000012
+                                    hoa sen         11    0.000012
+                              thpt trần phú         11    0.000012
+                            đại học cần thơ         11    0.000012
+                                        hbu         10    0.000011
+                                        hsu          9    0.000010
+                           nguyễn gia thiều          9    0.000010
+                                        sgu          9    0.000010
+                              tôn đức thắng          9    0.000010
+                            đh bách khoa hn          9    0.000010
+                 đại học giao thông vận tải          9    0.000010
+                                         bk          8    0.000009
+                       gia dinh high school          8    0.000009
+                                     hvktqs          8    0.000009
+                                đại học fpt          8    0.000009
+                        đại học luật hà nội          8    0.000009
+                                  bách khoa          7    0.000008
+                         duy tân university          6    0.000006
+               hanoi university of pharmacy          6    0.000006
+
+
+##############
+# CLUSTER 31 #
+##############
+
+attribute prevalence  =   2463 / 246973 = 0.009973
+occurrence prevalence =   3521 / 928097 = 0.003794
+
+                                         attribute  frequency  prevalence
+                                               мгу         54    0.000058
+                      novosibirsk state university         52    0.000056
+                                               маи         36    0.000039
+                                              рггу         34    0.000037
+                                            высшее         32    0.000034
+                                               ica         29    0.000031
+                      tomsk polytechnic university         21    0.000023
+                                             ргрту         16    0.000017
+                                              сгау         14    0.000015
+                                              рудн         13    0.000014
+                                           сибгути         13    0.000014
+                                            гу-вшэ         12    0.000013
+                                             мгимо         12    0.000013
+ санкт-петербургский государственный политехнич...         12    0.000013
+   kharkiv national university of radioelectronics         11    0.000012
+                moscow state linguistic university         11    0.000012
+              uniwersytet ekonomiczny we wrocławiu         10    0.000011
+                             omsk state university          9    0.000010
+                       donetsk national university          8    0.000009
+                  nizhny novgorod state university          8    0.000009
+                                               кну          8    0.000009
+                                             мгппу          8    0.000009
+                                              угту          8    0.000009
+   saint petersburg state polytechnical university          7    0.000008
+                             ural state university          7    0.000008
+           воронежский государственный университет          7    0.000008
+                                              двфу          7    0.000008
+                                              лгту          7    0.000008
+                                             мгиэм          7    0.000008
+                                          ниу итмо          7    0.000008
+                                          нтуу кпи          7    0.000008
+                                            с(а)фу          7    0.000008
+   санкт-петербургский государственный университет          7    0.000008
+ fakulteta za elektrotehniko, računalništvo in ...          6    0.000006
+                       siberian federal university          6    0.000006
+                                  wyoming seminary          6    0.000006
+                                              двгу          6    0.000006
+                                               зну          6    0.000006
+                                              игэу          6    0.000006
+                                    мгту "станкин"          6    0.000006
+                                             ргата          6    0.000006
+                                            сибгиу          6    0.000006
+                                          школа №2          6    0.000006
+          moscow state university of printing arts          5    0.000005
+                       southern federal university          5    0.000005
+                    state university of management          5    0.000005
+                                             взфэи          5    0.000005
+                                            донгуу          5    0.000005
+                                              згиа          5    0.000005
+ киевский национальный университет строительств...          5    0.000005
+
+
+#############
+# CLUSTER 0 #
+#############
+
+attribute prevalence  =   1381 / 246973 = 0.005592
+occurrence prevalence =   3325 / 928097 = 0.003583
+
+                                      attribute  frequency  prevalence
+                                           none       1405    0.001514
+              pázmány péter catholic university         14    0.000015
+                              majeediyya school         12    0.000013
+                  georgian technical university         11    0.000012
+                            računarski fakultet         11    0.000012
+                       institute of engineering         10    0.000011
+                                           sphs         10    0.000011
+ sree narayana gurukulam college of engineering         10    0.000011
+                 college of engineering poonjar          9    0.000010
+                                           utpa          9    0.000010
+     institute of chartered accountant of india          8    0.000009
+                    taylor's university college          8    0.000009
+                   mar thoma residential school          7    0.000008
+              netaji subhas engineering college          7    0.000008
+                                  oxford school          7    0.000008
+                      ashton sixth form college          6    0.000006
+                                    ayr college          6    0.000006
+                   calday grange grammar school          6    0.000006
+                             mes kishore kendra          6    0.000006
+                                          mguce          6    0.000006
+                                            o&m          6    0.000006
+                                           ppcc          6    0.000006
+                                          сумду          6    0.000006
+                                           aves          5    0.000005
+            cms college of science and commerce          5    0.000005
+                                  crsce murthal          5    0.000005
+                          frankston high school          5    0.000005
+   ivane javakhishvili tbilisi state university          5    0.000005
+                                  kerala school          5    0.000005
+                 rappahannock community college          5    0.000005
+                               sherwood academy          5    0.000005
+        universidad autonoma de san luis potosi          5    0.000005
+                      xiii beogradska gimnazija          5    0.000005
+                                        bashyam          4    0.000004
+                                   bethany high          4    0.000004
+                            colégio graham bell          4    0.000004
+                                cumnock academy          4    0.000004
+           faculdade carlos drummond de andrade          4    0.000004
+            gimnazija franca miklošiča ljutomer          4    0.000004
+                        guru nanak engg college          4    0.000004
+                               iskandhar school          4    0.000004
+                                          iupsm          4    0.000004
+                                           iuta          4    0.000004
+                jansons institute of technology          4    0.000004
+                    liceo de cagayan university          4    0.000004
+                                       lums sse          4    0.000004
+  medicaps institute of technology & management          4    0.000004
+                                mes high school          4    0.000004
+                                     mgm bhilai          4    0.000004
+               national institute of management          4    0.000004
+
+
+##############
+# CLUSTER 40 #
+##############
+
+attribute prevalence  =   1269 / 246973 = 0.005138
+occurrence prevalence =   2077 / 928097 = 0.002238
+
+                              attribute  frequency  prevalence
+                university of bucharest         61    0.000066
+    polytechnic university of bucharest         56    0.000060
+               jacobs university bremen         54    0.000058
+                                private         33    0.000036
+            central european university         23    0.000025
+                                      l         23    0.000025
+                                    upb         22    0.000024
+           west university of timişoara         20    0.000022
+                                    ase         19    0.000020
+       tallinn university of technology         19    0.000020
+           academia de studii economice         15    0.000016
+                universidad de medellin         15    0.000016
+    universitatea politehnica timisoara         15    0.000016
+                        dante alighieri         14    0.000015
+                                  snspa         14    0.000015
+                universitatea bucuresti         14    0.000015
+               fakultet tehnickih nauka         12    0.000013
+                                  liceu         12    0.000013
+             military technical academy         12    0.000013
+                 via university college         11    0.000012
+            academy of economic studies         10    0.000011
+            universitatea din bucuresti         10    0.000011
+    universitatea politehnica bucuresti         10    0.000011
+                          ase bucuresti          9    0.000010
+          faculty of technical sciences          9    0.000010
+                                   udea          9    0.000010
+         universitatea romano-americana          9    0.000010
+  bucharest academy of economic studies          8    0.000009
+                                   aubg          7    0.000008
+    polytechnic university of timisoara          7    0.000008
+                                    uvt          7    0.000008
+         alexandru ioan cuza university          6    0.000006
+       colegiul national mihai viteazul          6    0.000006
+       lucian blaga university of sibiu          6    0.000006
+               moldova state university          6    0.000006
+       politehnica university bucharest          6    0.000006
+      universitatea tehnica cluj napoca          6    0.000006
+  academy of economic studies bucharest          5    0.000005
+ academy of economic studies of moldova          5    0.000005
+    escola secundária domingos sequeira          5    0.000005
+                                   feit          5    0.000005
+                                    kss          5    0.000005
+           romanian american university          5    0.000005
+                            spiru haret          5    0.000005
+        universitatea de vest timisoara          5    0.000005
+              universitatea spiru haret          5    0.000005
+                                  isitv          4    0.000004
+             közgazdasági politechnikum          4    0.000004
+                  politehnica bucuresti          4    0.000004
+            state university of moldova          4    0.000004
+
+
+##############
+# CLUSTER 30 #
+##############
+
+attribute prevalence  =    815 / 246973 = 0.003300
+occurrence prevalence =   1821 / 928097 = 0.001962
+
+                                         attribute  frequency  prevalence
+                                   keio university        238    0.000256
+                                 waseda university        208    0.000224
+                                             早稲田大学         98    0.000106
+                     tokyo institute of technology         72    0.000078
+                           the university of tokyo         49    0.000053
+                                             同志社大学         40    0.000043
+                                              明治大学         32    0.000034
+                                 tohoku university         27    0.000029
+                                 rikkyo university         26    0.000028
+                                   chuo university         20    0.000022
+                                            慶応義塾大学         20    0.000022
+                                            電気通信大学         20    0.000022
+                                            横浜国立大学         15    0.000016
+                     tokyo metropolitan university         13    0.000014
+                    tokyo university of technology         11    0.000012
+                                              成蹊大学          8    0.000009
+                                          九州芸術工科大学          6    0.000006
+                                           大阪大学大学院          6    0.000006
+                                         電気通信大学大学院          6    0.000006
+                                          京都工芸繊維大学          5    0.000005
+                                              龍谷大学          5    0.000005
+                                             ceuma          4    0.000004
+                     chiba institute of technology          4    0.000004
+                                               low          4    0.000004
+                               shizuoka university          4    0.000004
+                                   toyo university          4    0.000004
+                                              福岡大学          4    0.000004
+                                              駒澤大学          4    0.000004
+                      eric hamber secondary school          3    0.000003
+                       osaka prefecture university          3    0.000003
+                                                中卒          3    0.000003
+                                              弘前大学          3    0.000003
+                                              桐朋高校          3    0.000003
+                                          港区立白金小学校          3    0.000003
+                                              玉川大学          3    0.000003
+                                   chapman college          2    0.000002
+                                 chukyo university          2    0.000002
+                           colegio cristiano logos          2    0.000002
+                                    doshisha univ.          2    0.000002
+ ecole nationale supérieure de physique de stra...          2    0.000002
+                    graduate school of hard knocks          2    0.000002
+                                            hal名古屋          2    0.000002
+                                hitotsubashi univ.          2    0.000002
+                                            ifapme          2    0.000002
+   international academy of media arts and science          2    0.000002
+                         japan electronics college          2    0.000002
+                     kyoto city university of arts          2    0.000002
+                           kyoto sangyo university          2    0.000002
+ nara institute of science and technology, grad...          2    0.000002
+            osaka electro-communication university          2    0.000002
+
+

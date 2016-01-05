@@ -7,6 +7,7 @@ import string
 from importlib import reload
 from collections import defaultdict
 from sklearn.feature_extraction.text import CountVectorizer
+from sklearn.decomposition import RandomizedPCA
 from scipy.sparse import *
 from autoreadwrite import *
 from ggplot import *
@@ -197,15 +198,27 @@ class PairwiseFreqAnalyzer(object):
         g.es['weight'] = mat.data
         return g
 
+def get_attr_indices(pfa):
+    """Given a PairwiseFreqAnalyzer, returns list of vocab indices that are not unknown, as well as the vocab items themselves."""
+    attr_indices, attr_vocab = [], []
+    for (i, v) in enumerate(pfa.vocab):
+        if (not v.startswith('*???*')):
+            attr_indices.append(i)
+            attr_vocab.append(v)
+    return (attr_indices, attr_vocab)
+
 
 class AttributeAnalyzer(ObjectWithReadwriteProperties):
     """Class for analyzing node attributes from each of the four types (school, major, employer, places_lived)."""
     readwrite_properties = {'pairwise_freq_analyzers' : 'pickle', 'attrs_by_node_by_type' : 'pickle'}
     @timeit
-    def __init__(self, dataset = 'gplus0_lcc'):
+    def __init__(self, dataset = 'gplus0_lcc', load_data = True):
         folder = dataset + '/data'
         super().__init__(folder)
         self.num_vertices = Gplus.num_vertices[dataset]  # need to know how many vertices are in the dataset
+        if load_data:
+            self.load_data()
+    def load_data(self):
         def read_dict(filename):
             """Reads a string dictionary from a file with the following format: on each line, the key comes first, then a tab followed by a values. The keys & values may be delimited by double quotes in case spaces are present. Only lines with both key and value will be present."""
             d = dict()
@@ -216,11 +229,12 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                         key, val = tokens[0], tokens[1]
                         d[key] = val
             return d
-        node_attr_filename = folder + '/node_attributes.csv'
+        node_attr_filename = self.folder + '/node_attributes.csv'
         self.attr_df = pd.read_csv(node_attr_filename, sep = ';')
         self.attr_df['attributeVal'] = self.attr_df['attributeVal'].astype(str)
+        self.attributed_nodes = sorted(list(set(self.attr_df['node'])))
         self.attr_types = ['employer', 'major', 'places_lived', 'school']
-        self.attr_dicts = dict((attr_type, read_dict(folder + '/' + attr_type + '_map.dat')) for attr_type in self.attr_types)
+        self.attr_dicts = dict((attr_type, read_dict(self.folder + '/' + attr_type + '_map.dat')) for attr_type in self.attr_types)
         self.attr_map = dict((attr_type, lambda attr, attr_type = attr_type : self.attr_dicts[attr_type][attr] if (attr in self.attr_dicts[attr_type]) else attr) for attr_type in self.attr_types)
         self.attr_freqs_by_type = dict((t, defaultdict(int)) for t in self.attr_types)
         self.annotated_attr_freqs_by_type = dict((t, defaultdict(int)) for t in self.attr_types)
@@ -385,9 +399,6 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         return vstack([hstack([self.node_to_attr_vec(i, attr_type) for attr_type in attr_types]) for i in indices])
     def make_complete_feature_matrix(self, max_count_features = 500, load = True, save = False):
         """Makes sparse matrix of features for each node (all attribute types) based on the CountVectorizer objects."""
-        # ensure we have count vectorizers of the right dimensions
-        if ((not hasattr(self, 'word_cvs')) or (self.word_cvs['employer'].max_features != max_count_features)):
-            self.make_count_vectorizers(max_count_features)
         obj_name = 'complete_feature_matrix%d' % max_count_features
         did_load = False
         if load:
@@ -398,13 +409,73 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                 print("Could not load %s from file.\n" % obj_name)
         if (not did_load):
             print("Constructing from scratch...")
+            # ensure we have count vectorizers of the right dimensions
+            if ((not hasattr(self, 'word_cvs')) or (self.word_cvs['employer'].max_features != max_count_features)):
+                self.make_count_vectorizers(max_count_features)
             def make_mat():
                 self.complete_feature_matrix = self.get_features_for_nodes(range(self.num_vertices), self.attr_types).tocsr()
             timeit(make_mat)()
         if save:
             timeit(save_object)(self.complete_feature_matrix, self.folder, obj_name, 'pickle')
-    def make_complete_embedding_matrix(self, k = 50, sim = 'NPMI1s', embedding = 'eig', delta = 0.0):
-        pass
+    def make_complete_embedding_matrix(self, sim = 'NPMI1s', embedding = 'eig', delta = 0.0, k = 50, load = True, save = False):
+        """Makes full matrix of feature embeddings based on PMI similarities (saved off as matrix files). Rows are nodes, columns are features, grouped into blocks for each attribute type."""
+        obj_name = '%s_%s_delta%s_k%d_complete_embedding_matrix' % (sim, embedding, str(delta), k)
+        did_load = False
+        if load:
+            try:
+                self.complete_embedding_matrix = timeit(load_object)(self.folder, obj_name, 'pickle')
+                did_load = True
+            except:
+                print("\nCould not load %s from file." % obj_name)
+        if (not did_load):
+            shape = (self.num_vertices, len(self.attr_types) * k)
+            embedding_matrix_blocks = []  # list of partial matrices by attribute type
+            for attr_type in self.attr_types:
+                feature_filename = self.folder + '/PMI/%s_%s_%s_delta%s_k%d_features.csv' % (attr_type, sim, embedding, str(delta), k)
+                print("\nLoading features from %s..." % feature_filename)
+                feature_mat = timeit(np.loadtxt)(feature_filename, delimiter = ',')
+                self.load_pairwise_freq_analyzer(attr_type)
+                pfa = self.pairwise_freq_analyzers[attr_type]
+                (attr_indices, attr_vocab) = get_attr_indices(pfa)
+                assert (len(attr_indices) == feature_mat.shape[0])  # confirm the features match
+                index_by_vocab = dict((v, i) for (i, v) in enumerate(attr_vocab))  # want matrix indices for each attribute
+                block = lil_matrix((self.num_vertices, k))
+                attrs_by_node = self.attrs_by_node_by_type[attr_type]
+                for i in range(self.num_vertices):
+                    attrs = attrs_by_node[i]
+                    if (len(attrs) > 0):
+                        row = np.zeros(k, dtype = float)  # compute average feature vector
+                        for attr in attrs:
+                            row += feature_mat[index_by_vocab[attr]]
+                        row /= len(attrs)
+                        block[i] = row
+                embedding_matrix_blocks.append(block)
+                self.complete_embedding_matrix = hstack(embedding_matrix_blocks).tocsr()
+        if save:
+            timeit(save_object)(self.complete_embedding_matrix, self.folder, obj_name, 'pickle')
+    @timeit
+    def PCA_embedding_matrix(self, attr_types, n_components, normalize = True, seed = None):
+        """Extracts submatrix of the embedding matrix corresponding to the desired attribute types, then uses PCA to reduce the number of columns to n_components."""
+        assert hasattr(self, 'complete_embedding_matrix')
+        k = self.complete_embedding_matrix.shape[1] // len(self.attr_types)
+        indices = []
+        for (i, attr_type) in enumerate(self.attr_types):
+            if (attr_type in attr_types):
+                indices += list(range(i * k, (i + 1) * k))
+        mat = self.complete_embedding_matrix[:, indices]
+        rows = sorted(list(set(mat.tocoo().row)))
+        mat = mat[rows, :].todense()
+        if normalize:  # normalize by block (only nonzero rows of each block)
+            for i in range(mat.shape[0]):
+                for j in range(mat.shape[1] // k):
+                    segment = mat[i, j * k : (j + 1) * k]
+                    norm = np.linalg.norm(segment)
+                    if (np.abs(norm) > 1e-8):
+                        mat[i, j * k : (j + 1) * k] = segment / norm
+        pca = RandomizedPCA(n_components = n_components, random_state = seed)
+        res = pca.fit_transform(mat)
+        mat2 = coo_matrix((res.reshape(res.shape[0] * res.shape[1]), (np.repeat(rows, res.shape[1]), list(range(res.shape[1])) * res.shape[0])))
+        return (mat, mat2.tocsr(), pca)
     def get_attribute_sample(self, attr, attr_type, n):
         """Selects a random n nodes with the given attribute, and a random n nodes without it. Returns a triple of index lists: first the n with the attribute, then the n without it, then the remaining unselected nodes whose attribute status is known."""
         ind = self.get_attribute_indicator(attr, attr_type)

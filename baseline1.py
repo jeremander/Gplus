@@ -30,7 +30,7 @@ def main():
 
     print("\nNominating nodes with whose '%s' attribute is '%s' (%d pos/neg seeds)..." % (attr_type, attr, num_train_each))
     print("\nLoading AttributeAnalyzer...")
-    a = AttributeAnalyzer()
+    a = AttributeAnalyzer(load_data = False)
     a.load_attrs_by_node_by_type()
 
     try:
@@ -41,6 +41,8 @@ def main():
         num_test = ind.count() - 2 * num_train_each
 
     except OSError:
+        print("\nLoading attribute data...")
+        a.load_data()
         print("\nMaking count vectorizers...")
         a.make_count_vectorizers(max_count_features, load = True, save = True)
         a.make_complete_feature_matrix(max_count_features, load = True, save = True)

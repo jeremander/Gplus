@@ -16,15 +16,6 @@ def normalize(vec):
     """Normalizes a vector to have unit norm."""
     return vec / np.linalg.norm(vec)
 
-def get_attr_indices(pfa):
-    """Given a PairwiseFreqAnalyzer, returns list of vocab indices that are not unknown, as well as the vocab items themselves."""
-    attr_indices, attr_vocab = [], []
-    for (i, v) in enumerate(pfa.vocab):
-        if (not v.startswith('*???*')):
-            attr_indices.append(i)
-            attr_vocab.append(v)
-    return (attr_indices, attr_vocab)
-
 def generate_cluster_report(attr_analyzer, attr_type, cluster_labels, topN = 30):
     """Given the AttributeAnalyzer, attr_type, and a list of cluster labels (corresponding to the attribute vocab indices only), generates a report listing the top N members of each cluster, and the frequency and prevalence (relative frequency) of each attribute in the data set. Orders the clusters by total occurrences of attributes in each cluster. If topN = None, list all the attributes in each cluster."""
     attr_freq_dict = attr_analyzer.attr_freqs_by_type[attr_type]
@@ -78,7 +69,8 @@ def main():
     p = optparse.OptionParser()
     p.add_option('--attr_type', '-a', type = str, help = 'attribute type')
     p.add_option('-p', type = str, help = 'PMI type (PMIs, NPMI1s, or NPMI2s)')
-    p.add_option('-e', type = str, help = 'embedding (eig, lap, normlap)')
+    p.add_option('-e', type = str, help = 'embedding (adj, normlap, regnormlap)')
+    p.add_option('-s', type = bool, action = 'store_true', help = 'normalize in sphere')
     p.add_option('-d', type = float, help = 'smoothing parameter')
     p.add_option('-k', type = int, help = 'number of eigenvalues')
     p.add_option('-c', type = int, help = 'number of kmeans clusters')
@@ -127,7 +119,7 @@ def main():
             print("\nComputing similarity matrix (%s)..." % sim)
             sim_op = pfa.to_sparse_PMI_operator(sim, delta)
             print("\nComputing eigenvectors (k = %d)..." % k)
-            if (embedding == 'eig'):
+            if (embedding == 'adj'):
                 (eigvals, features) = timeit(eigsh)(sim_op, k = k, tol = tol)
                 features = np.sqrt(abs_eigvals) * features  # scale the feature columns by the sqrt of the eigenvalues
             features = features[attr_indices, :]  # free up memory

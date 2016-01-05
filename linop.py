@@ -4,6 +4,7 @@ from scipy.sparse.linalg import LinearOperator
 class SparseLinearOperator(LinearOperator):
     """Subclass of LinearOperator for handling a sparse matrix."""
     def __init__(self, F):
+        """Input must be a sparse matrix."""
         self.F = F
         #super().__init__(matvec = lambda x : SparseLinearOperator._matvec(self, x), dtype = float, shape = F.shape)
         super().__init__(dtype = float, shape = F.shape)
@@ -52,17 +53,39 @@ class PMILinearOperator(SymmetricSparseLinearOperator):
 
 
 class SparseLaplacian(SymmetricSparseLinearOperator):
-    """Class for representing a sparse Laplacian. Constructs either the normalized or un-normalized version from a SymmetricSparseLinearOperator representing the adjacency matrix."""
-    def __init__(self, A, normalized = False):
+    """Class for representing a sparse Laplacian (D - A). Can also subclass the normalized version (D^(-1/2) * A * D^(-1/2)) or the regularized normalized version ((D + tau * I)^(-1/2) * A * (D + tau * I)^(-1/2)). Constructs the Laplacian from a SymmetricSparseLinearOperator representing the adjacency matrix."""
+    def __init__(self, A):
         assert isinstance(A, SymmetricSparseLinearOperator)
         self.A = A
-        self.normalized = normalized
         self.D = self.A.matvec(np.ones(self.A.shape[1], dtype = float))
-        self.D_inv_sqrt = 1.0 / np.sqrt(self.D)  # hopefully D has all positive entries
         LinearOperator.__init__(self, dtype = float, shape = A.shape)
     def _matvec(self, x):
-        if self.normalized:
-            return (x - self.D_inv_sqrt * self.A.matvec(self.D_inv_sqrt * x))
-        else:
-            return (self.D * x - self.A.matvec(x))
+        return (self.D * x - self.A.matvec(x))
+
+class SparseNormalizedLaplacian(SparseLaplacian):
+    """Class representing the normalized Laplacian (D^(-1/2) * A * D^(-1/2))."""
+    def __init__(self, A):
+        super().__init__(A)
+        self.D_inv_sqrt = 1.0 / np.sqrt(self.D)  # hopefully D has all positive entries
+    def _matvec(self, x):
+        return (x - self.D_inv_sqrt * self.A._matvec(self.D_inv_sqrt * x))
+
+class SparseRegularizedNormalizedLaplacian(SparseLaplacian):
+    """Class representing the regularized normalized Laplacian ((D + tau * I)^(-1/2) * A * (D + tau * I)^(-1/2))."""
+    def __init__(self, A):
+        super().__init__(A)
+        tau = np.mean(self.D)
+        self.D_plus_tau_I_inv_sqrt = 1.0 / np.sqrt(self.D + tau)
+    def _matvec(self, x):
+        return (x - self.D_plus_tau_I_inv_sqrt * self.A._matvec(self.D_plus_tau_I_inv_sqrt * x))
+
+
+class SparseDiagonalAddedAdjacencyOperator(SymmetricSparseLinearOperator):
+    def __init__(self, A):
+        assert isinstance(A, SymmetricSparseLinearOperator)
+        self.A = A
+        LinearOperator.__init__(self, dtype = float, shape = A.shape)
+        self.D_ratio = self.A._matvec(np.ones(self.A.shape[1], dtype = float)) / self.shape[0]
+    def _matvec(self, x):
+        return (self.A.matvec(x) + self.D_ratio * x)
 

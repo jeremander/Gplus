@@ -131,8 +131,8 @@ def main():
         cluster_centers = np.loadtxt('%s%s_cluster_centers.csv' % (data_folder, file_prefix2), delimiter = ',')
         print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
         eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
-        print("\nLoading embedded features from '%s%s_features.csv'..." % (data_folder, file_prefix1))
-        features = np.loadtxt('%s%s_features.csv' % (data_folder, file_prefix1), delimiter = ',')
+        print("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
+        features = pickle.load(open('%s%s_features.csv' % (data_folder, file_prefix1), 'rb'))
         if sphere:
             for i in range(len(attr_indices)):  
                 features[i] = normalize(features[i])
@@ -141,8 +141,8 @@ def main():
         try:
             print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
             eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
-            print("\nLoading embedded features from '%s%s_features.csv'..." % (data_folder, file_prefix1))
-            features = np.loadtxt('%s%s_features.csv' % (data_folder, file_prefix1), delimiter = ',')
+            print("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
+            features = pickle.load(open('%s%s_features.csv' % (data_folder, file_prefix1), 'rb'))
         except FileNotFoundError:
             print("Failed to load.")
             print("\nComputing similarity matrix (%s)..." % sim)
@@ -160,7 +160,7 @@ def main():
                 (eigvals, features) = timeit(eigsh)(regnormlap, k = k, tol = tol)
             features = features[attr_indices, :]  # free up memory by deleting embeddings of nodes with no attributes
             np.savetxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), eigvals, delimiter = ',')
-            np.savetxt('%s%s_features.csv' % (data_folder, file_prefix1), features, delimiter = ',')
+            pickle.dump(features, open('%s%s_features.pickle' % (data_folder, file_prefix1), 'wb'))
         if sphere:  # normalize the features to have unit norm (better for kMeans)
             for i in range(len(attr_indices)):  
                 features[i] = normalize(features[i])

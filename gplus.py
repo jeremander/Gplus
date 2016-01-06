@@ -32,7 +32,9 @@ def safe_divide(num, den):
 class Gplus(ig.Graph, ObjectWithReadwriteProperties):
     """Graph of Google+ data."""
     num_vertices = {'gplus0_lcc' : 4690159}  # number of vertices in data set
-    readwrite_properties = {'degree_dict' : 'pickle', 'degree_power_law' : 'pickle', 'comp_sizes' : 'csv', 'louvain_memberships' : 'csv'}
+    readwrite_properties = {'degree_dict' : 'pickle', 'degree_power_law' : 'pickle', 'comp_sizes' : 'csv', 'louvain_memberships' : 'csv', 'sparse_adjacency_operator' : 'pickle'}
+    def __init__(self, folder = 'gplus0_lcc/data'):
+        ObjectWithReadwriteProperties.__init__(self, folder)
     @autoreadwrite(['_degree_dict', '_degree_power_law'], ['pickle', 'pickle'])
     def degrees(self, load = True, save = False):
         """Creates dictionary of node degrees."""
@@ -51,6 +53,16 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
     def louvain(self, load = True, save = False):
         """Computes cluster memberships returned by the Louvain method (implemented in C++ via louvain-igraph package)."""
         self._louvain_memberships = pd.DataFrame(louvain.find_partition(self, method = 'Modularity').membership, columns = ['louvainMembership'])
+    @autoreadwrite(['_sparse_adjacency_operator'], ['pickle'])
+    def sparse_adjacency_operator(self, load = True, save = False):
+        """Reads the graph from edge list, and returns it as a SymmetricSparseLinearOperator object."""
+        filename = self.folder + '/undirected_edges.dat'
+        print("\nLoading data from '%s'..." % filename)
+        edges = pd.read_table(filename, header = None, sep = ' ')
+        n = max(max(edges[0]) + 1, max(edges[1]) + 1)
+        A = coo_matrix((np.ones(len(edges)), (edges[0], edges[1])), shape = (n, n)).tocsr()
+        A = A + A.transpose().tocsr() - diags(A.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
+        self._sparse_adjacency_operator = SymmetricSparseLinearOperator(A)
     def __len__(self):
         return len(self.vs)
     @classmethod 
@@ -65,28 +77,6 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
             timeit(Gplus.to_undirected)(g)
         g.folder = folder
         return g
-    @staticmethod
-    def sparse_adjacency_operator(folder = 'gplus0_lcc/data', load = True, save = False):
-        """Reads the graph from edge list, and returns it as a SymmetricSparseLinearOperator object."""
-        did_load = False
-        if load:
-            try:
-                A = load_object(folder, 'sparse_adjacency_operator', 'pickle')
-                did_load = True
-            except OSError:
-                pass
-        if (not did_load):
-            print("Failed to load.")
-            filename = folder + '/undirected_edges.dat'
-            print("\nLoading data from '%s'..." % filename)
-            edges = pd.read_table(filename, header = None, sep = ' ')
-            n = max(max(edges[0]) + 1, max(edges[1]) + 1)
-            A = coo_matrix((np.ones(len(edges)), (edges[0], edges[1])), shape = (n, n)).tocsr()
-            A = A + A.transpose().tocsr() - diags(A.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
-            A = SymmetricSparseLinearOperator(A)
-        if save:
-            save_object(A, folder, 'sparse_adjacency_operator', 'pickle')
-        return A
 
 
 class PairwiseFreqAnalyzer(object):
@@ -200,7 +190,7 @@ class PairwiseFreqAnalyzer(object):
 
 def get_attr_indices(pfa, attributed_nodes = None):
     """Given a PairwiseFreqAnalyzer, returns list of vocab indices that are not unknown, as well as the vocab items themselves. If attributed_nodes is not None, retains the unknown attributes corresponding to the given nodes that have attributes (in other attribute types)."""
-    attributed_node_set = set() if attributed_nodes is None else set(attributed_nodes)
+    attributed_node_set = set() if (attributed_nodes is None) else set(attributed_nodes)
     attributed_node_vocab_set = set(('*???*_%d' % n) for n in attributed_node_set)
     attr_indices, attr_vocab = [], []
     for (i, v) in enumerate(pfa.vocab):

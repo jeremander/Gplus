@@ -2,7 +2,7 @@ import subprocess
 
 attr_types = ['employer', 'major', 'places_lived', 'school']
 embeddings = ['adj', 'normlap', 'regnormlap']
-ks = [50, 100, 200, 400, 800]
+ks = [50, 100, 200, 400]
 cs = [50]
 
 for c in cs:

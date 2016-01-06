@@ -5,31 +5,10 @@ import time
 import numpy as np
 import pandas as pd
 import optparse
-import matplotlib.pyplot as plt
 from scipy.sparse import coo_matrix, diags
-from scipy.sparse.linalg import eigsh
 from sklearn.cluster import KMeans
 from gplus import *
 
-
-def normalize(vec):
-    """Normalizes a vector to have unit norm."""
-    return vec / np.linalg.norm(vec)
-
-def scree_plot(eigvals, show = True, filename = None):
-    """Makes a scree plot of the absolute value of a series of eigenvalues using matplotlib. If show = True, displays the plot. If filename is not None, saves the plot to this filename."""
-    abs_eigvals = np.abs(eigvals)
-    ranked_abs_eigvals = np.array(sorted(abs_eigvals, reverse = True))
-    plt.plot(ranked_abs_eigvals, linewidth = 3)
-    ax = plt.axes()
-    ax.set_title('Scree plot of eigenvalues')
-    ax.set_xlabel('rank', labelpad = 10)
-    ax.set_ylabel('abs(eigenvalue)', labelpad = 15)
-    ax.set_ylim(ymin = 0)
-    if filename:
-        plt.savefig(filename)
-    if show:
-        plt.show(block = False)
 
 def generate_cluster_report(attr_analyzer, attr_type, cluster_labels, topN = 30):
     """Given the AttributeAnalyzer, attr_type, and a list of cluster labels (corresponding to the attribute vocab indices only), generates a report listing the top N members of each cluster, and the frequency and prevalence (relative frequency) of each attribute in the data set. Orders the clusters by total occurrences of attributes in each cluster. If topN = None, list all the attributes in each cluster."""

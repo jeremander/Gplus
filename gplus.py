@@ -1,6 +1,7 @@
 import pandas as pd
 import numpy as np
 import igraph as ig
+import matplotlib.pyplot as plt
 import louvain
 import tempfile
 import string
@@ -8,6 +9,7 @@ from importlib import reload
 from collections import defaultdict
 from sklearn.feature_extraction.text import CountVectorizer
 from sklearn.decomposition import RandomizedPCA
+from scipy.sparse.linalg import eigsh
 from scipy.sparse import *
 from autoreadwrite import *
 from ggplot import *
@@ -27,6 +29,25 @@ def safe_divide(num, den):
     if (den == 0.0):
         return np.sign(num) * float('inf')
     return (num / den)
+
+def normalize(vec):
+    """Normalizes a vector to have unit norm."""
+    return vec / np.linalg.norm(vec)
+
+def scree_plot(eigvals, show = True, filename = None):
+    """Makes a scree plot of the absolute value of a series of eigenvalues using matplotlib. If show = True, displays the plot. If filename is not None, saves the plot to this filename."""
+    abs_eigvals = np.abs(eigvals)
+    ranked_abs_eigvals = np.array(sorted(abs_eigvals, reverse = True))
+    plt.plot(ranked_abs_eigvals, linewidth = 3)
+    ax = plt.axes()
+    ax.set_title('Scree plot of eigenvalues')
+    ax.set_xlabel('rank', labelpad = 10)
+    ax.set_ylabel('abs(eigenvalue)', labelpad = 15)
+    ax.set_ylim(ymin = 0)
+    if filename:
+        plt.savefig(filename)
+    if show:
+        plt.show(block = False)
 
 
 class Gplus(ig.Graph, ObjectWithReadwriteProperties):
@@ -54,7 +75,7 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
         """Computes cluster memberships returned by the Louvain method (implemented in C++ via louvain-igraph package)."""
         self._louvain_memberships = pd.DataFrame(louvain.find_partition(self, method = 'Modularity').membership, columns = ['louvainMembership'])
     @autoreadwrite(['_sparse_adjacency_operator'], ['pickle'])
-    def sparse_adjacency_operator(self, load = True, save = False):
+    def make_sparse_adjacency_operator(self, load = True, save = False):
         """Reads the graph from edge list, and returns it as a SymmetricSparseLinearOperator object."""
         filename = self.folder + '/undirected_edges.dat'
         print("\nLoading data from '%s'..." % filename)
@@ -63,6 +84,45 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
         A = coo_matrix((np.ones(len(edges)), (edges[0], edges[1])), shape = (n, n)).tocsr()
         A = A + A.transpose().tocsr() - diags(A.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
         self._sparse_adjacency_operator = SymmetricSparseLinearOperator(A)
+    def make_graph_embedding_matrix(self, embedding = 'adj', k = 50, tol = None, plot = False, load = True, save = False):
+        """Makes graph embedding matrix, keeping features of only the nodes possessing at least one attribute. embedding options are adjacency matrix (adj), diagonal-added adjacency matrix (adj+diag), normalized Laplacian (normlap), and regularized normalized Laplacian (regnormlap)."""
+        assert (embedding in ['adj', 'adj+diag', 'normlap', 'regnormlap'])
+        obj_name = '%s_k%d_graph_embedding_matrix' % (embedding, k)
+        did_load = False
+        if load:
+            try:
+                eigvals = np.loadtxt('%s/%s_k%d_graph_eigvals.csv' % (folder, embedding, k), delimiter = ',')
+                self.graph_embedding_matrix = timeit(load_object)(self.folder, obj_name, 'pickle')
+                did_load = True
+            except:
+                print("\nCould not load %s from file." % obj_name)
+        if (not did_load):
+            node_attr_filename = self.folder + '/node_attributes.csv'
+            attr_df = pd.read_csv(node_attr_filename, sep = ';')
+            self.attributed_nodes = sorted(list(set(attr_df['node'])))
+            A = self.sparse_adjacency_operator
+            n = A.shape[0]
+            tol = 1.0 / n if (tol is None) else tol
+            matrix_type = 'adjacency' if (embedding == 'adj') else ('diagional-added adjacency' if (embedding == 'diag+adj') else ('normalized Laplacian' if (embedding == 'normlap') else 'regularized normalized Laplacian'))
+            print("\nComputing k = %d eigenvectors of %d x %d %s matrix..." % (n, n, matrix_type, k))
+            if (embedding == 'adj'):
+                (eigvals, features) = timeit(eigsh)(A, k = k, tol = tol)
+                features = np.sqrt(np.abs(eigvals)) * features  # scale the feature columns by the sqrt of the eigenvalues
+            elif (embedding == 'adj+diag'):
+                adj_diag = SparseDiagonalAddedAdjacencyOperator(A)
+                (eigvals, features) = timeit(eigsh)(adj_diag, k = k, tol = tol)
+            elif (embedding == 'normlap'):
+                normlap = SparseNormalizedLaplacian(A)
+                (eigvals, features) = timeit(eigsh)(normlap, k = k, tol = tol)
+            elif (embedding == 'regnormlap'):
+                regnormlap = SparseRegularizedNormalizedLaplacian(A)
+                (eigvals, features) = timeit(eigsh)(regnormlap, k = k, tol = tol)
+            self.graph_embedding_matrix = features[self.attributed_nodes, :]
+        if save:
+            if plot:
+                scree_plot(eigvals, show = False, filename = '%s/%s_k%d_graph_screeplot' % (self.folder.replace('data', 'plots'), embedding, k))
+            np.savetxt('%s/%s_k%d_graph_eigvals.csv' % (self.folder, embedding, k), eigvals, delimiter = ',')
+            timeit(save_object)(self.graph_embedding_matrix, self.folder, obj_name, 'pickle')
     def __len__(self):
         return len(self.vs)
     @classmethod 

@@ -45,7 +45,6 @@ class PMILinearOperator(SymmetricSparseLinearOperator):
         self.F, self.Delta, self.u = F, Delta, u
         self.u_prime = self.Delta - self.u
         self.ones = np.ones(n, dtype = float)
-        #LinearOperator.__init__(self, matvec = lambda x : PMILinearOperator._matvec(self, x), dtype = float, shape = F.shape)
         LinearOperator.__init__(self, dtype = float, shape = self.F.shape)
     def _matvec(self, x):
         return self.F * x + self.u_prime * np.sum(x) - self.ones * np.dot(self.u, x)
@@ -82,6 +81,7 @@ class SparseRegularizedNormalizedLaplacian(SparseLaplacian):
 
 
 class SparseDiagonalAddedAdjacencyOperator(SymmetricSparseLinearOperator):
+    """Class representing an adjacency matrix A + D/n."""
     def __init__(self, A):
         assert isinstance(A, SymmetricSparseLinearOperator)
         self.A = A

@@ -104,7 +104,7 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
             n = A.shape[0]
             tol = 1.0 / n if (tol is None) else tol
             matrix_type = 'adjacency' if (embedding == 'adj') else ('diagional-added adjacency' if (embedding == 'diag+adj') else ('normalized Laplacian' if (embedding == 'normlap') else 'regularized normalized Laplacian'))
-            print("\nComputing k = %d eigenvectors of %d x %d %s matrix..." % (n, n, matrix_type, k))
+            print("\nComputing k = %d eigenvectors of %d x %d %s matrix..." % (k, n, n, matrix_type))
             if (embedding == 'adj'):
                 (eigvals, features) = timeit(eigsh)(A, k = k, tol = tol)
                 features = np.sqrt(np.abs(eigvals)) * features  # scale the feature columns by the sqrt of the eigenvalues

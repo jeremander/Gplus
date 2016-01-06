@@ -132,7 +132,7 @@ def main():
         print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
         eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
         print("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
-        features = pickle.load(open('%s%s_features.csv' % (data_folder, file_prefix1), 'rb'))
+        features = pickle.load(open('%s%s_features.pickle' % (data_folder, file_prefix1), 'rb'))
         if sphere:
             for i in range(len(attr_indices)):  
                 features[i] = normalize(features[i])
@@ -142,7 +142,7 @@ def main():
             print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
             eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
             print("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
-            features = pickle.load(open('%s%s_features.csv' % (data_folder, file_prefix1), 'rb'))
+            features = pickle.load(open('%s%s_features.pickle' % (data_folder, file_prefix1), 'rb'))
         except FileNotFoundError:
             print("Failed to load.")
             print("\nComputing similarity matrix (%s)..." % sim)

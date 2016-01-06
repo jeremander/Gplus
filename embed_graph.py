@@ -1,5 +1,6 @@
 # Embeds the gplus0_lcc graph into feature space
 
+import optparse
 from gplus import *
 
 
@@ -20,7 +21,7 @@ def main():
     g.make_graph_embedding_matrix(embedding = embedding, k = k, tol = tol, plot = save_plot, load = True, save = True)
 
     print("\nDone!")
-    
+
 
 if __name__ == "__main__":
     main()

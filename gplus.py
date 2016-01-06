@@ -56,12 +56,12 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
     readwrite_properties = {'degree_dict' : 'pickle', 'degree_power_law' : 'pickle', 'comp_sizes' : 'csv', 'louvain_memberships' : 'csv', 'sparse_adjacency_operator' : 'pickle'}
     def __init__(self, folder = 'gplus0_lcc/data'):
         ObjectWithReadwriteProperties.__init__(self, folder)
-    @autoreadwrite(['_degree_dict', '_degree_power_law'], ['pickle', 'pickle'])
+    @autoreadwrite(['degree_dict', 'degree_power_law'], ['pickle', 'pickle'])
     def degrees(self, load = True, save = False):
         """Creates dictionary of node degrees."""
         self._degree_dict = dict((v.index, v.degree()) for v in self.vs)
         self._degree_power_law = ig.power_law_fit(list(self.degree_dict.values()))
-    @autoreadwrite(['_comp_sizes'], ['csv'])
+    @autoreadwrite(['comp_sizes'], ['csv'])
     def component_sizes(self, load = True, save = False):
         """Computes connected component sizes."""
         components = self.components()
@@ -70,11 +70,11 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
     # def fastgreedy_communities(self, save = False):
     #     """Computes communities obtained by iGraph's fastgreedy algorithm (approximately linear time)."""
     #     self._fastgreedy_comms = self.community_fastgreedy()
-    @autoreadwrite(['_louvain_memberships'], ['csv'])
+    @autoreadwrite(['louvain_memberships'], ['csv'])
     def louvain(self, load = True, save = False):
         """Computes cluster memberships returned by the Louvain method (implemented in C++ via louvain-igraph package)."""
         self._louvain_memberships = pd.DataFrame(louvain.find_partition(self, method = 'Modularity').membership, columns = ['louvainMembership'])
-    @autoreadwrite(['_sparse_adjacency_operator'], ['pickle'])
+    @autoreadwrite(['sparse_adjacency_operator'], ['pickle'])
     def make_sparse_adjacency_operator(self, load = True, save = False):
         """Reads the graph from edge list, and returns it as a SymmetricSparseLinearOperator object."""
         filename = self.folder + '/undirected_edges.dat'

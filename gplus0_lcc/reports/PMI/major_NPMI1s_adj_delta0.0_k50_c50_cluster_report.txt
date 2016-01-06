@@ -1,0 +1,2186 @@
+#############
+# CLUSTER 0 #
+#############
+
+attribute prevalence  =  71961 / 555819 = 0.129468
+occurrence prevalence = 101735 / 626862 = 0.162292
+
+                                   attribute  frequency  prevalence
+                             educação física         48    0.000077
+                                      bts ig         43    0.000069
+                        medicina veterinaria         41    0.000065
+                            lic. informatica         35    0.000056
+                                  secondaire         34    0.000054
+                               artes visuais         33    0.000053
+                              medical doctor         32    0.000051
+                           historia del arte         29    0.000046
+                 ciencias de la comunicacion         28    0.000045
+                                    taxation         28    0.000045
+                             ingeniero civil         27    0.000043
+                                 batxillerat         26    0.000041
+                          educación primaria         26    0.000041
+                 licenciatura en informatica         26    0.000041
+                             medico cirujano         26    0.000041
+                 programtervező informatikus         26    0.000041
+                           tecnología médica         26    0.000041
+                            bedrijfseconomie         25    0.000040
+                   diseño de imagen y sonido         25    0.000040
+                                     lehramt         25    0.000040
+                                   pedagogía         25    0.000040
+                                     工業工程與管理         25    0.000040
+                          gestão empresarial         24    0.000038
+                 traducción e interpretación         24    0.000038
+                                      視覺傳達設計         24    0.000038
+                                   bouwkunde         23    0.000037
+                             bs architecture         23    0.000037
+            ingenieria en telecomunicaciones         23    0.000037
+                                        應用數學         23    0.000037
+                                          機械         23    0.000037
+                          contaduria publica         22    0.000035
+                 electronic media production         22    0.000035
+                         ing. en informatica         22    0.000035
+                        ingenieria electrica         22    0.000035
+                       ingeniero electrónico         22    0.000035
+                          química y farmacia         22    0.000035
+                                         電子系         22    0.000035
+                              artes gráficas         21    0.000034
+                                       b.b.a         21    0.000034
+                              cinematic arts         21    0.000034
+                              ing. comercial         21    0.000034
+ licenciatura en ciencias de la comunicación         21    0.000034
+                                       mcitp         21    0.000034
+                             médico cirujano         21    0.000034
+                                        國際貿易         21    0.000034
+                                       e.s.o         20    0.000032
+                         history and english         20    0.000032
+                            ing. mecatrónica         20    0.000032
+                     ingegneria aerospaziale         20    0.000032
+                          lic. en psicología         20    0.000032
+
+
+##############
+# CLUSTER 24 #
+##############
+
+attribute prevalence  =  22446 / 555819 = 0.040384
+occurrence prevalence =  59800 / 626862 = 0.095396
+
+                            attribute  frequency  prevalence
+                         theater arts         74    0.000118
+                    child development         72    0.000115
+                             farmacia         72    0.000115
+                     ing. informatica         71    0.000113
+                    publicidad y rrpp         68    0.000108
+                          computacion         66    0.000105
+                           enfermagem         66    0.000105
+                    classical studies         58    0.000093
+ communication sciences and disorders         58    0.000093
+                    school psychology         58    0.000093
+                               電機工程學系         58    0.000093
+               media arts & animation         52    0.000083
+                    medical assisting         49    0.000078
+                                 mavo         47    0.000075
+    bacharel em ciência da computação         46    0.000073
+                 ingeniería eléctrica         46    0.000073
+                     mediatechnologie         45    0.000072
+                  teaching credential         45    0.000072
+              communication disorders         44    0.000070
+                          general ed.         44    0.000070
+            international development         44    0.000070
+                                  mph         44    0.000070
+                           fotografia         43    0.000069
+                                 企業管理         43    0.000069
+                       dental hygiene         42    0.000067
+                             farmácia         42    0.000067
+                         h.s. diploma         42    0.000067
+                  applied linguistics         41    0.000065
+                           ma english         41    0.000065
+                                 rtvf         41    0.000065
+            speech-language pathology         41    0.000065
+            economics and mathematics         40    0.000064
+                             game art         40    0.000064
+        business management economics         39    0.000062
+               middle eastern studies         39    0.000062
+                        music therapy         39    0.000062
+                     chemical biology         38    0.000061
+              masters of architecture         38    0.000061
+                                企業管理系         38    0.000061
+                architectural studies         37    0.000059
+                  banking and finance         37    0.000059
+     ecology and evolutionary biology         37    0.000059
+                                應用數學系         37    0.000059
+                   associates in arts         36    0.000057
+                   associates of arts         36    0.000057
+                     bac scientifique         36    0.000057
+                  exercise physiology         36    0.000057
+                              fashion         36    0.000057
+               técnico en informática         36    0.000057
+                     speech pathology         35    0.000056
+
+
+##############
+# CLUSTER 45 #
+##############
+
+attribute prevalence  =   6783 / 555819 = 0.012204
+occurrence prevalence =  51382 / 626862 = 0.081967
+
+                                     attribute  frequency  prevalence
+                                           ipa        359    0.000573
+                     early childhood education        232    0.000370
+                                 human biology        197    0.000314
+                                   informatyka        193    0.000308
+                       informatics engineering        173    0.000276
+                              exercise science        162    0.000258
+                           nuclear engineering        155    0.000247
+                               massage therapy        147    0.000235
+                           biomedical sciences        140    0.000223
+                        informační technologie        125    0.000199
+                                music industry        125    0.000199
+                       supply chain management        121    0.000193
+                                 art education        116    0.000185
+                                recording arts        115    0.000183
+           civil and environmental engineering        113    0.000180
+                        toegepaste informatica        113    0.000180
+                                animal science        112    0.000179
+                               juris doctorate        112    0.000179
+                           veterinary medicine        110    0.000175
+         analise e desenvolvimento de sistemas        102    0.000163
+                                 legal studies         99    0.000158
+                              video production         98    0.000156
+                             human development         95    0.000152
+                                  pre-pharmacy         95    0.000152
+                              audio production         94    0.000150
+                                  maschinenbau         94    0.000150
+                                         dance         92    0.000147
+                                    วิทย์-คณิต         92    0.000147
+                           integrative biology         89    0.000142
+                          medicina e chirurgia         88    0.000140
+                          occupational therapy         85    0.000136
+                          professional writing         85    0.000136
+                                     optometry         83    0.000132
+                     ingenieria en computacion         80    0.000128
+                                   basisschool         79    0.000126
+                                  grade school         79    0.000126
+                               health sciences         79    0.000126
+                                social studies         79    0.000126
+                             paralegal studies         78    0.000124
+                                   real estate         78    0.000124
+                          speech communication         78    0.000124
+                                global studies         76    0.000121
+                                   copywriting         75    0.000120
+                                 ilmu komputer         75    0.000120
+ ingeniería técnica en informática de sistemas         75    0.000120
+                                     všeobecné         75    0.000120
+                                           gis         74    0.000118
+                                human services         74    0.000118
+                         counseling psychology         73    0.000116
+                                        gen ed         73    0.000116
+
+
+##############
+# CLUSTER 36 #
+##############
+
+attribute prevalence  =    760 / 555819 = 0.001367
+occurrence prevalence =  40417 / 626862 = 0.064475
+
+                       attribute  frequency  prevalence
+                     photography        976    0.001557
+            elementary education        745    0.001188
+                             art        732    0.001168
+                       geography        529    0.000844
+           international studies        529    0.000844
+           communication studies        516    0.000823
+                     art history        513    0.000818
+                     social work        490    0.000782
+                  bioengineering        486    0.000775
+                           b.com        468    0.000747
+                      multimedia        460    0.000734
+              teknik informatika        450    0.000718
+             mass communications        434    0.000692
+                secondary school        425    0.000678
+                             cis        413    0.000659
+                         spanish        389    0.000621
+                    microbiology        388    0.000619
+                 interior design        351    0.000560
+                    college prep        343    0.000547
+            broadcast journalism        333    0.000531
+                   culinary arts        323    0.000515
+                        theology        320    0.000510
+           visual communications        305    0.000487
+                    juris doctor        301    0.000480
+                   public policy        299    0.000477
+                     kinesiology        290    0.000463
+           international affairs        281    0.000448
+           public administration        281    0.000448
+                          french        278    0.000443
+                entrepreneurship        272    0.000434
+                              md        267    0.000426
+                        fine art        265    0.000423
+            visual communication        256    0.000408
+                             n/a        252    0.000402
+                            havo        244    0.000389
+                        a levels        242    0.000386
+                    film studies        240    0.000383
+               computing science        237    0.000378
+ library and information science        236    0.000376
+                  business admin        235    0.000375
+                 web development        228    0.000364
+                 library science        227    0.000362
+                     criminology        226    0.000361
+                     game design        226    0.000361
+              business marketing        222    0.000354
+                        religion        222    0.000354
+                            arts        220    0.000351
+               religious studies        220    0.000351
+                            gcse        216    0.000345
+    business information systems        215    0.000343
+
+
+##############
+# CLUSTER 44 #
+##############
+
+attribute prevalence  =     13 / 555819 = 0.000023
+occurrence prevalence =  39982 / 626862 = 0.063781
+
+               attribute  frequency  prevalence
+                 biology       4111    0.006558
+          graphic design       3861    0.006159
+                 history       3663    0.005843
+                 finance       3614    0.005765
+ business administration       3472    0.005539
+                business       3419    0.005454
+                 physics       3348    0.005341
+             mathematics       3341    0.005330
+              journalism       3212    0.005124
+          communications       2489    0.003971
+              philosophy       1916    0.003056
+               sociology       1876    0.002993
+           communication       1660    0.002648
+
+
+##############
+# CLUSTER 49 #
+##############
+
+attribute prevalence  =   4147 / 555819 = 0.007461
+occurrence prevalence =  33431 / 626862 = 0.053331
+
+                                  attribute  frequency  prevalence
+                                       mbbs        396    0.000632
+          materials science and engineering        272    0.000434
+                        engineering physics        266    0.000424
+                             bioinformatics        264    0.000421
+                                       b.e.        252    0.000402
+                    bachelor of engineering        214    0.000341
+                                 graduation        209    0.000333
+                                       pcmb        205    0.000327
+                                    masters        188    0.000300
+                                      inter        180    0.000287
+                                     m.tech        174    0.000278
+                                     matric        164    0.000262
+                        electrical engineer        163    0.000260
+                              matriculation        163    0.000260
+                                       bcom        162    0.000258
+                      petroleum engineering        161    0.000257
+                 electrical and electronics        160    0.000255
+             electronics and communications        152    0.000242
+                      computer applications        146    0.000233
+                    construction management        134    0.000214
+                     structural engineering        133    0.000212
+         industrial and systems engineering        131    0.000209
+                          primary education        131    0.000209
+                            human resources        128    0.000204
+                                      civil        127    0.000203
+    electronics & communication engineering        127    0.000203
+                                    b. tech        123    0.000196
+                                       b.sc        121    0.000193
+                                   plus two        114    0.000182
+                                        xii        113    0.000180
+                                 b.tech cse        111    0.000177
+                                      m.p.c        110    0.000175
+                               3d animation        104    0.000166
+            electronics and instrumentation        103    0.000164
+                                        bbm        102    0.000163
+   information and communication technology        102    0.000163
+                           mechanical engg.        102    0.000163
+ electronics and communications engineering        100    0.000160
+                               food science        100    0.000160
+                   electrical & electronics         97    0.000155
+                          materials science         95    0.000152
+                  human resource management         94    0.000150
+                        operations research         94    0.000150
+                                    b.tech.         93    0.000148
+                                         ec         91    0.000145
+                             junior college         90    0.000144
+                     production engineering         89    0.000142
+                                  aerospace         88    0.000140
+                                  b.tech it         87    0.000139
+                     bachelor of technology         87    0.000139
+
+
+#############
+# CLUSTER 1 #
+#############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =  32615 / 626862 = 0.052029
+
+        attribute  frequency  prevalence
+ computer science      32615    0.052029
+
+
+##############
+# CLUSTER 47 #
+##############
+
+attribute prevalence  =     40 / 555819 = 0.000072
+occurrence prevalence =  24315 / 626862 = 0.038788
+
+                                 attribute  frequency  prevalence
+                               engineering       2598    0.004144
+                                  commerce       1386    0.002211
+                                       mca       1372    0.002189
+                                       ece       1224    0.001953
+                                       ssc        956    0.001525
+                               electronics        891    0.001421
+                                    school        805    0.001284
+                                        be        718    0.001145
+             electronics and communication        717    0.001144
+                                mechanical        709    0.001131
+                                      10th        676    0.001078
+                             biotechnology        669    0.001067
+            computer science & engineering        668    0.001066
+                              intermediate        658    0.001050
+                                 schooling        654    0.001043
+                                       bca        628    0.001002
+                                       hsc        617    0.000984
+                                     btech        599    0.000956
+                                 computers        540    0.000861
+                                      12th        536    0.000855
+              computer science engineering        495    0.000790
+                          higher secondary        492    0.000785
+                                       eee        470    0.000750
+                                       mpc        469    0.000748
+                                       b.e        463    0.000739
+ electronics and communication engineering        414    0.000660
+                            primary school        412    0.000657
+                                        +2        394    0.000629
+                                      sslc        343    0.000547
+               electronics & communication        323    0.000515
+                                       pcm        321    0.000512
+    electrical and electronics engineering        313    0.000499
+                                 secondary        313    0.000499
+                                electrical        251    0.000400
+                                    b tech        238    0.000380
+                                    b-tech        234    0.000373
+                                      pgdm        206    0.000329
+                                      icse        199    0.000317
+                           mechanical engg        181    0.000289
+                                      cbse        163    0.000260
+
+
+##############
+# CLUSTER 41 #
+##############
+
+attribute prevalence  =     47 / 555819 = 0.000085
+occurrence prevalence =  17495 / 626862 = 0.027909
+
+                                         attribute  frequency  prevalence
+                              software engineering       2654    0.004234
+                                      architecture       2287    0.003648
+                      computer information systems       1444    0.002304
+                                           nursing       1395    0.002225
+                                             music       1305    0.002082
+                                        management       1248    0.001991
+                             aerospace engineering       1189    0.001897
+                                      biochemistry       1136    0.001812
+                                      liberal arts        855    0.001364
+                               high school diploma        694    0.001107
+                                     digital media        542    0.000865
+                                      illustration        489    0.000780
+                                              life        437    0.000697
+                                     media studies        310    0.000495
+                                             maths        251    0.000400
+                                 molecular biology        209    0.000333
+                                 music composition        160    0.000255
+                            network administration        153    0.000244
+                                   pre-engineering        135    0.000215
+                                    health science        119    0.000190
+                          interactive media design        110    0.000175
+                                doctor of pharmacy        102    0.000163
+                               economics & finance         29    0.000046
+       bachelor of science in computer engineering         28    0.000045
+                                       elektronika         26    0.000041
+                                    ba, psychology         22    0.000035
+                           computer graphic design         21    0.000034
+                      computer network engineering         20    0.000032
+                                network management         20    0.000032
+                     electromechanical engineering         17    0.000027
+                      emergency medical technician         17    0.000027
+                                    bs, psychology         12    0.000019
+                           networking technologies         12    0.000019
+                                  matematisk linje          9    0.000014
+                    digital arts and entertainment          8    0.000013
+           computer science (software engineering)          7    0.000011
+                                        grundskole          5    0.000008
+                         management and operations          4    0.000006
+                         bs in applied mathematics          3    0.000005
+                      internet services technology          3    0.000005
+                                            10 kl.          2    0.000003
+ civil & environmental engineering with focus i...          1    0.000002
+          design, computing, business, electronics          1    0.000002
+                                 doing what i want          1    0.000002
+                    ma, professional communication          1    0.000002
+                   radiological health engineering          1    0.000002
+                    software engineering / physics          1    0.000002
+
+
+##############
+# CLUSTER 33 #
+##############
+
+attribute prevalence  =    301 / 555819 = 0.000542
+occurrence prevalence =  15887 / 626862 = 0.025344
+
+                              attribute  frequency  prevalence
+                                derecho        588    0.000938
+                               medicina        526    0.000839
+                         diseño gráfico        511    0.000815
+                            informática        508    0.000810
+                             periodismo        497    0.000793
+                 ingeniería informática        468    0.000747
+                           arquitectura        436    0.000696
+                             publicidad        348    0.000555
+                                    phd        324    0.000517
+                           bachillerato        307    0.000490
+                             secundaria        306    0.000488
+                               primaria        267    0.000426
+                             psicología        262    0.000418
+              ingeniería en informática        251    0.000400
+                    systems engineering        243    0.000388
+                 ingeniería de sistemas        238    0.000380
+                              bachiller        233    0.000372
+                 ingenieria de sistemas        215    0.000343
+                           preparatoria        209    0.000333
+                 ingenieria en sistemas        206    0.000329
+                                    isc        195    0.000311
+                         diseño grafico        187    0.000298
+                    comunicación social        186    0.000297
+                  ingeniería industrial        184    0.000294
+            ciencias de la comunicación        178    0.000284
+              ingeniería en computación        161    0.000257
+                   ingeniería comercial        156    0.000249
+ ingeniería en sistemas computacionales        149    0.000238
+                           comunicación        144    0.000230
+               comunicación audiovisual        138    0.000220
+ ingenieria en sistemas computacionales        128    0.000204
+                   analista de sistemas        127    0.000203
+                 ingeniería en sistemas        127    0.000203
+                       ingeniería civil        126    0.000201
+                      diseño industrial        125    0.000199
+           ingeniería civil informática        124    0.000198
+              ingenieria en informatica        123    0.000196
+                 ingenieria informatica        122    0.000195
+                               economía        121    0.000193
+                               sistemas        121    0.000193
+            ingeniería civil industrial        120    0.000191
+                          mercadotecnia        120    0.000191
+                                    eso        118    0.000188
+                  ingeniero de sistemas        112    0.000179
+                 ingeniería electrónica        110    0.000175
+          ing. sistemas computacionales        109    0.000174
+                             ingenieria        101    0.000161
+       ing. en sistemas computacionales        100    0.000160
+                          ing. sistemas         96    0.000153
+                  bachiller en ciencias         93    0.000148
+
+
+##############
+# CLUSTER 16 #
+##############
+
+attribute prevalence  =      6 / 555819 = 0.000011
+occurrence prevalence =  13339 / 626862 = 0.021279
+
+                        attribute  frequency  prevalence
+                          science       3767    0.006009
+                civil engineering       2588    0.004129
+             chemical engineering       2482    0.003959
+                           b.tech       1915    0.003055
+ computer science and engineering       1442    0.002300
+                              cse       1145    0.001827
+
+
+##############
+# CLUSTER 12 #
+##############
+
+attribute prevalence  =    100 / 555819 = 0.000180
+occurrence prevalence =  12393 / 626862 = 0.019770
+
+                                   attribute  frequency  prevalence
+                     international relations        970    0.001547
+                            public relations        902    0.001439
+                      international business        891    0.001421
+                          english literature        855    0.001364
+         electrical and computer engineering        762    0.001216
+                                        film        727    0.001160
+                                        math        666    0.001062
+                                 linguistics        624    0.000995
+                         bs computer science        459    0.000732
+                                  government        458    0.000731
+                                          ba        419    0.000668
+                           cognitive science        313    0.000499
+                                        eecs        309    0.000493
+                         ms computer science        255    0.000407
+                            american studies        251    0.000400
+ electrical engineering and computer science        251    0.000400
+                       b.s. computer science        225    0.000359
+                                    classics        207    0.000330
+                computer systems engineering        204    0.000325
+                                          ms        201    0.000321
+                                astrophysics        196    0.000313
+                                theatre arts        192    0.000306
+                                          ca        169    0.000270
+                 masters in computer science        152    0.000242
+                       m.s. computer science        131    0.000209
+                           interactive media        129    0.000206
+                          interaction design        110    0.000175
+                                 english lit        109    0.000174
+                               art direction        105    0.000168
+               computer science, mathematics         94    0.000150
+                              marine biology         94    0.000150
+                  human computer interaction         89    0.000142
+                                    rhetoric         63    0.000101
+                   math and computer science         61    0.000097
+              telecommunications engineering         61    0.000097
+                    b.s. in computer science         58    0.000093
+                                ba economics         57    0.000091
+                       phd, computer science         52    0.000083
+            management science & engineering         51    0.000081
+                      b.s., computer science         43    0.000069
+                                    poli sci         40    0.000064
+          management science and engineering         38    0.000061
+                       msc. computer science         32    0.000051
+                      mathematical economics         29    0.000046
+                                        mscs         26    0.000041
+                     media arts and sciences         25    0.000040
+ computer science and electrical engineering         23    0.000037
+                         computer science bs         17    0.000027
+                                     dropout         17    0.000027
+                                 msc finance         17    0.000027
+
+
+#############
+# CLUSTER 5 #
+#############
+
+attribute prevalence  =     82 / 555819 = 0.000148
+occurrence prevalence =  11985 / 626862 = 0.019119
+
+                                         attribute  frequency  prevalence
+                               business management       1572    0.002508
+                                           general       1467    0.002340
+                                   general studies       1089    0.001737
+                            industrial engineering       1084    0.001729
+                                      anthropology       1078    0.001720
+                                  criminal justice        953    0.001520
+                                      neuroscience        631    0.001007
+                                           theatre        617    0.000984
+                                         fine arts        448    0.000715
+                                 computer sciences        439    0.000700
+                                         computing        386    0.000616
+                                           primary        280    0.000447
+             análise e desenvolvimento de sistemas        202    0.000322
+                                      broadcasting        194    0.000309
+                                                aa        163    0.000260
+                                project management        157    0.000250
+                                               ged        139    0.000222
+                                            m.b.a.        126    0.000201
+                                  senior secondary        125    0.000199
+                                                hs        118    0.000188
+                                             s.s.c        104    0.000166
+                                        e-business         91    0.000145
+                                     computer engg         90    0.000144
+                                      pharmacology         87    0.000139
+     bachelor of science in information technology         65    0.000104
+                                             h.s.c         51    0.000081
+                                               bds         42    0.000067
+                               textile engineering         25    0.000040
+                       economics, computer science         18    0.000029
+                            electronics technician         18    0.000029
+                                    creative media         15    0.000024
+       master of science in information technology         14    0.000022
+                                              jazz         10    0.000016
+                       natural language processing          8    0.000013
+                                    physics, maths          7    0.000011
+                                               hbs          5    0.000008
+                               engineering systems          4    0.000006
+                     entrepreneurship & management          4    0.000006
+                                               iee          4    0.000006
+              secondary school leaving certificate          4    0.000006
+                      secondary & higher secondary          3    0.000005
+ tecnologo en analisis y desarrollo de sistemas...          3    0.000005
+                                              ecom          2    0.000003
+                           entertainment marketing          2    0.000003
+                               preventive medicine          2    0.000003
+ programmer analyst / internet solutions developer          2    0.000003
+                           russian language course          2    0.000003
+                              aa, criminal justice          1    0.000002
+                   android application development          1    0.000002
+                        art, design and filmmaking          1    0.000002
+
+
+##############
+# CLUSTER 35 #
+##############
+
+attribute prevalence  =      2 / 555819 = 0.000004
+occurrence prevalence =   9158 / 626862 = 0.014609
+
+         attribute  frequency  prevalence
+ political science       4988    0.007957
+               law       4170    0.006652
+
+
+##############
+# CLUSTER 10 #
+##############
+
+attribute prevalence  =     42 / 555819 = 0.000076
+occurrence prevalence =   8844 / 626862 = 0.014108
+
+                                         attribute  frequency  prevalence
+                                      ensino médio       1533    0.002446
+                             ciência da computação       1283    0.002047
+                            sistemas de informação       1049    0.001673
+                          publicidade e propaganda        783    0.001249
+                                           direito        624    0.000995
+                                        jornalismo        546    0.000871
+                                ensino fundamental        539    0.000860
+                                     administração        473    0.000755
+                                        web design        291    0.000464
+                            técnico em informática        278    0.000443
+                                comunicação social        256    0.000408
+                            engenharia informática        216    0.000345
+                                  engenharia civil        165    0.000263
+                        ensino fundamental e médio        138    0.000220
+              bacharelado em ciência da computação        136    0.000217
+                                      ensino medio        124    0.000198
+                                desenho industrial        123    0.000196
+                             técnico em eletrônica         71    0.000113
+                                   ensino superior         54    0.000086
+                                         geografia         50    0.000080
+                                        telemática         32    0.000051
+                                    design grafico         14    0.000022
+                             ensino médio completo         14    0.000022
+                            engenharia metalúrgica          7    0.000011
+                                     1ª a 4ª série          5    0.000008
+                             ensino medio completo          5    0.000008
+                            mba gestão de projetos          5    0.000008
+             montagem e manutenção de computadores          5    0.000008
+                                     5ª a 8ª série          4    0.000006
+                       docência do ensino superior          4    0.000006
+                                       3º colegial          3    0.000005
+                                       belo jardim          3    0.000005
+                            técnico de edificações          2    0.000003
+                                  1º e 2º colegial          1    0.000002
+                               campus nilo peçanha          1    0.000002
+                                      encino medio          1    0.000002
+ especialização em gestão de organizações públicas          1    0.000002
+                                      jardim e pré          1    0.000002
+                                        op. camera          1    0.000002
+                                  pd. ensino medio          1    0.000002
+                                       proficional          1    0.000002
+                  tecnico en segurança do trabalho          1    0.000002
+
+
+##############
+# CLUSTER 25 #
+##############
+
+attribute prevalence  =    305 / 555819 = 0.000549
+occurrence prevalence =   8825 / 626862 = 0.014078
+
+                                     attribute  frequency  prevalence
+                                design gráfico        301    0.000480
+                      engenharia de computação        273    0.000436
+                        ciências da computação        269    0.000429
+                                      economia        268    0.000428
+                           engenharia elétrica        219    0.000349
+                      engenharia da computação        206    0.000329
+                       arquitetura e urbanismo        192    0.000306
+                                        letras        167    0.000266
+               comunicação social - jornalismo        164    0.000262
+                               social sciences        160    0.000255
+                     administração de empresas        150    0.000239
+                  bachelor of computer science        148    0.000236
+ comunicação social - publicidade e propaganda        143    0.000228
+                                     graduação        129    0.000206
+                                      mestrado        129    0.000206
+                                   publicidade        126    0.000201
+                                       turismo        125    0.000199
+                        processamento de dados        123    0.000196
+                           engenharia mecânica        118    0.000188
+                                            la        116    0.000185
+                           análise de sistemas        110    0.000175
+                                           ist        104    0.000166
+                        sistemas para internet        101    0.000161
+                           ciências biológicas         99    0.000158
+                                      história         98    0.000156
+                         redes de computadores         97    0.000155
+                                      biologia         94    0.000150
+                         sistema de informação         93    0.000148
+                                       química         92    0.000147
+         bacharelado em sistemas de informação         91    0.000145
+                        engenharia de produção         91    0.000145
+                                   odontologia         90    0.000144
+                                  fisioterapia         89    0.000142
+                                      historia         87    0.000139
+                               electrical engg         86    0.000137
+                                     pedagogia         85    0.000136
+                             relações públicas         85    0.000136
+                               mba - marketing         83    0.000132
+                    master in computer science         82    0.000131
+                       relações internacionais         82    0.000131
+                                    matemática         79    0.000126
+             mestrado em ciência da computação         79    0.000126
+                                design digital         76    0.000121
+                                  licenciatura         74    0.000118
+                              ciências sociais         73    0.000116
+                            ciências contábeis         72    0.000115
+            bacharel em sistemas de informação         69    0.000110
+                                       tourism         68    0.000108
+                         ciencia da computação         67    0.000107
+                                      colegial         64    0.000102
+
+
+#############
+# CLUSTER 2 #
+#############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   7628 / 626862 = 0.012169
+
+attribute  frequency  prevalence
+      mba       7628    0.012169
+
+
+##############
+# CLUSTER 19 #
+##############
+
+attribute prevalence  =    253 / 555819 = 0.000455
+occurrence prevalence =   7114 / 626862 = 0.011349
+
+                                 attribute  frequency  prevalence
+                       information systems       1471    0.002347
+                         general education        677    0.001080
+                                       bba        581    0.000927
+                                   geology        358    0.000571
+                       computer networking        351    0.000560
+                                       ict        299    0.000477
+                        information system        273    0.000436
+                         telecommunication        205    0.000327
+                      bachelor of commerce        194    0.000309
+                              mechatronics        163    0.000260
+                         associate of arts        158    0.000252
+         electronics and telecommunication        115    0.000183
+                                      ccna        107    0.000171
+                                         x        101    0.000161
+                        general management         98    0.000156
+                   international economics         86    0.000137
+                                   economy         59    0.000094
+        electronics and telecommunications         59    0.000094
+                          japanese studies         55    0.000088
+                                programmer         53    0.000085
+                                electronic         51    0.000081
+                           natural science         50    0.000080
+                         corporate finance         44    0.000070
+                                       bis         43    0.000069
+                       finance and banking         43    0.000069
+                       international trade         43    0.000069
+                                  designer         42    0.000067
+                   mechatronic engineering         39    0.000062
+                             junior school         38    0.000061
+                                     basic         37    0.000059
+                                 languages         37    0.000059
+                        điện tử viễn thông         32    0.000051
+                                         a         31    0.000049
+                                      qtkd         31    0.000049
+                                      thpt         31    0.000049
+                            bachelor of it         27    0.000043
+                                   kế toán         27    0.000043
+                       tài chính ngân hàng         27    0.000043
+                         banking & finance         26    0.000041
+                                     cấp 3         25    0.000040
+                         finance & banking         25    0.000040
+               business information system         24    0.000038
+                        external economics         23    0.000037
+                             tv production         23    0.000037
+ information and communication engineering         22    0.000035
+                     tài chính - ngân hàng         21    0.000034
+                                      isds         20    0.000032
+                                         e         19    0.000030
+                             foreign trade         19    0.000030
+            master of software engineering         18    0.000029
+
+
+#############
+# CLUSTER 7 #
+#############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   6995 / 626862 = 0.011159
+
+            attribute  frequency  prevalence
+ computer engineering       6995    0.011159
+
+
+##############
+# CLUSTER 15 #
+##############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   6931 / 626862 = 0.011057
+
+              attribute  frequency  prevalence
+ mechanical engineering       6931    0.011057
+
+
+#############
+# CLUSTER 4 #
+#############
+
+attribute prevalence  =     54 / 555819 = 0.000097
+occurrence prevalence =   6867 / 626862 = 0.010955
+
+                                         attribute  frequency  prevalence
+                                        accounting       2701    0.004309
+                                                it       2357    0.003760
+                                            design        652    0.001040
+                                              cntt        205    0.000327
+                                           college        205    0.000327
+                               công nghệ thông tin        122    0.000195
+                                          software        112    0.000179
+                                        automation        103    0.000164
+                                               fsc         49    0.000078
+                               quản trị kinh doanh         41    0.000065
+                                internet marketing         35    0.000056
+                                             study         26    0.000041
+                                          học sinh         25    0.000040
+                             infomation technology         25    0.000040
+                               software technology         22    0.000035
+                                         kiến trúc         17    0.000027
+                            business administrator         16    0.000026
+                                         ngân hàng         16    0.000026
+                                công nghệ phần mềm         14    0.000022
+                                          chém gió         12    0.000019
+                                         phổ thông         12    0.000019
+                                           tin học         12    0.000019
+                                         sinh viên         11    0.000018
+                                           kinh tế          9    0.000014
+                                       chuyên toán          7    0.000011
+                                         financial          6    0.000010
+                                    điện - điện tử          6    0.000010
+                                      luật quốc tế          4    0.000006
+                                               tin          4    0.000006
+                                            đầu tư          4    0.000006
+                              chăn nuôi trồng trọt          3    0.000005
+                               cong nghe thong tin          3    0.000005
+                                       kinh tế học          3    0.000005
+                                              tmdt          3    0.000005
+                                              đtvt          3    0.000005
+                                              acna          2    0.000003
+                                              bsdk          2    0.000003
+                                       wind energy          2    0.000003
+                                     cn môi trường          1    0.000002
+ construction materials engineering and technology          1    0.000002
+         công nghệ phần mềm - software engineering          1    0.000002
+                                      cầu đường bộ          1    0.000002
+   electronic engineering - information technology          1    0.000002
+                 eng 4 -  bussiness administration          1    0.000002
+                                      hs trung học          1    0.000002
+                                              khmt          1    0.000002
+                             kiến trúc & quy hoạch          1    0.000002
+                                      làm lốp ô-tô          1    0.000002
+                  quản trị mạng & bảo mật hệ thống          1    0.000002
+                                quản trị tài chính          1    0.000002
+
+
+##############
+# CLUSTER 39 #
+##############
+
+attribute prevalence  =     92 / 555819 = 0.000166
+occurrence prevalence =   6801 / 626862 = 0.010849
+
+                         attribute  frequency  prevalence
+                          medicine       2031    0.003240
+                   music education        742    0.001184
+                              j.d.        481    0.000767
+                         animation        404    0.000644
+                          politics        320    0.000510
+                        studio art        317    0.000506
+                        undeclared        262    0.000418
+              bsc computer science        254    0.000405
+                        literature        246    0.000392
+                    music business        216    0.000345
+                        networking        158    0.000252
+            comparative literature        151    0.000241
+                           pre-med        134    0.000214
+                        technology         82    0.000131
+      computer information science         78    0.000124
+                        arquitecto         69    0.000110
+ civil & environmental engineering         53    0.000085
+        english - creative writing         53    0.000085
+             finance and economics         50    0.000080
+                          transfer         50    0.000080
+                      pre-medicine         44    0.000070
+                               hhx         43    0.000069
+             radio-television-film         40    0.000064
+              associate of science         37    0.000059
+                     bsc computing         36    0.000057
+                           welding         35    0.000056
+          msc software engineering         34    0.000054
+                  commercial music         30    0.000048
+                               mls         28    0.000045
+                 technical writing         25    0.000040
+                 cinema-television         21    0.000034
+      communications and new media         20    0.000032
+                  particle physics         20    0.000032
+                 theatre education         19    0.000030
+           classical civilizations         17    0.000027
+                 homeland security         17    0.000027
+                  transfer studies         17    0.000027
+                          not much         12    0.000019
+                       print media         12    0.000019
+           radio, television, film         11    0.000018
+              b.s computer science         10    0.000016
+                   semester abroad         10    0.000016
+                       video games         10    0.000016
+  interactive media and web design          9    0.000014
+                            nature          8    0.000013
+               history, psychology          7    0.000011
+     bsc in mechanical engineering          6    0.000010
+                              atec          5    0.000008
+           marketing / advertising          5    0.000008
+   archives and records management          4    0.000006
+
+
+##############
+# CLUSTER 11 #
+##############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   6559 / 626862 = 0.010463
+
+  attribute  frequency  prevalence
+ psychology       6559    0.010463
+
+
+##############
+# CLUSTER 14 #
+##############
+
+attribute prevalence  =    176 / 555819 = 0.000317
+occurrence prevalence =   6350 / 626862 = 0.010130
+
+                                     attribute  frequency  prevalence
+                           secondary education        416    0.000664
+                            mass communication        352    0.000562
+                            business economics        318    0.000507
+                                     undecided        298    0.000475
+                                 public health        297    0.000474
+                               film production        294    0.000469
+                             software engineer        224    0.000357
+                                   cosmetology        185    0.000295
+                              bachelor of arts        181    0.000289
+                             actuarial science        164    0.000262
+                                    hs diploma        152    0.000242
+                                    general ed        132    0.000211
+                molecular and cellular biology        125    0.000199
+                                        gcse's        124    0.000198
+                        accounting and finance        123    0.000196
+              computer science and mathematics        122    0.000195
+                            biomedical science        121    0.000193
+                        bs in computer science        106    0.000169
+                          accounting & finance         99    0.000158
+                        ms in computer science         95    0.000152
+                                      comp sci         94    0.000150
+                              print journalism         93    0.000148
+                                    geophysics         89    0.000142
+                                          bscs         87    0.000139
+                              network security         87    0.000139
+                                           vce         81    0.000129
+                                   pre-nursing         79    0.000126
+                                    folkeskole         76    0.000121
+                                      aviation         72    0.000115
+                              computer studies         69    0.000110
+                              graphic designer         65    0.000104
+                                   informatikk         63    0.000101
+                              media management         63    0.000101
+                            interactive design         61    0.000097
+                                cinematography         59    0.000094
+                         information assurance         58    0.000093
+                                        pharmd         57    0.000091
+                              game programming         53    0.000085
+                             film & television         44    0.000070
+                      environmental management         40    0.000064
+                                     mass comm         40    0.000064
+          mechanical and aerospace engineering         40    0.000064
+                          ba political science         38    0.000061
+                               medical physics         35    0.000056
+                  film & television production         31    0.000049
+                         computer science/math         29    0.000046
+ bs electronics and communications engineering         28    0.000045
+                                       film/tv         27    0.000043
+   computer science and information technology         26    0.000041
+                             bachelor's degree         25    0.000040
+
+
+##############
+# CLUSTER 18 #
+##############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   6221 / 626862 = 0.009924
+
+              attribute  frequency  prevalence
+ electrical engineering       6221    0.009924
+
+
+##############
+# CLUSTER 37 #
+##############
+
+attribute prevalence  =    230 / 555819 = 0.000414
+occurrence prevalence =   5779 / 626862 = 0.009219
+
+                                     attribute  frequency  prevalence
+                              creative writing        532    0.000849
+                                            jd        413    0.000659
+                          communication design        337    0.000538
+                                       theater        303    0.000483
+                            computer animation        236    0.000376
+                                    humanities        221    0.000353
+                            master of divinity        192    0.000306
+             electrical & computer engineering        185    0.000295
+            masters of business administration        177    0.000282
+                        landscape architecture        145    0.000231
+               computer engineering technology        122    0.000195
+                       bs computer engineering        120    0.000191
+                          msc computer science        120    0.000191
+                               photojournalism        118    0.000188
+                                   mba finance        108    0.000172
+            biochemistry and molecular biology         96    0.000153
+                                          mlis         94    0.000150
+                     bs electrical engineering         90    0.000144
+             electrical engineering technology         90    0.000144
+                    human-computer interaction         88    0.000140
+                          phd computer science         85    0.000136
+                              natural sciences         84    0.000134
+                                          emba         82    0.000131
+                    molecular and cell biology         70    0.000112
+                                cinema studies         69    0.000110
+                                 radio/tv/film         67    0.000107
+                                   ba, english         58    0.000093
+                          masters of education         52    0.000083
+                             biology/chemistry         51    0.000081
+                             piano performance         50    0.000080
+                                       nothing         46    0.000073
+                 english language & literature         45    0.000072
+     computer engineering and computer science         43    0.000069
+                      media and communications         36    0.000057
+                computer science and economics         35    0.000056
+           computer and electrical engineering         33    0.000053
+                              software systems         33    0.000053
+                            software developer         32    0.000051
+                             digital marketing         31    0.000049
+                          business & economics         30    0.000048
+            journalism and mass communications         30    0.000048
+                              mandarin chinese         29    0.000046
+                                        b. com         26    0.000041
+                  computer science & economics         26    0.000041
+                                      ms in cs         26    0.000041
+                         biology and chemistry         24    0.000038
+                        business and economics         24    0.000038
+        interactive telecommunications program         24    0.000038
+ political science and international relations         23    0.000037
+                                      course 6         22    0.000035
+
+
+#############
+# CLUSTER 6 #
+#############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   5685 / 626862 = 0.009069
+
+ attribute  frequency  prevalence
+ economics       5685    0.009069
+
+
+##############
+# CLUSTER 17 #
+##############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   5547 / 626862 = 0.008849
+
+   attribute  frequency  prevalence
+ high school       5547    0.008849
+
+
+##############
+# CLUSTER 42 #
+##############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   5334 / 626862 = 0.008509
+
+attribute  frequency  prevalence
+  english       5334    0.008509
+
+
+##############
+# CLUSTER 34 #
+##############
+
+attribute prevalence  =     84 / 555819 = 0.000151
+occurrence prevalence =   5251 / 626862 = 0.008377
+
+                               attribute  frequency  prevalence
+                             informatica       1505    0.002401
+                  ingegneria informatica        573    0.000914
+                       liceo scientifico        348    0.000555
+                              psicologia        341    0.000544
+                    marketing management        266    0.000424
+             international baccalaureate        176    0.000281
+        università degli studi di milano        157    0.000250
+             scienze della comunicazione        133    0.000212
+                          giurisprudenza        129    0.000206
+                               filosofia        109    0.000174
+                          liceo classico        107    0.000171
+                      perito informatico        100    0.000160
+                  ingegneria elettronica         91    0.000145
+                                  fisica         89    0.000142
+                   ingegneria gestionale         69    0.000110
+                      economia aziendale         63    0.000101
+                            architettura         62    0.000099
+           liceo scientifico tecnologico         62    0.000099
+                              ingegneria         59    0.000094
+                                geometra         56    0.000089
+      ingegneria delle telecomunicazioni         56    0.000089
+                              matematica         54    0.000086
+                       scienze politiche         53    0.000085
+                  management engineering         52    0.000083
+                    economia e commercio         49    0.000078
+                              sociologia         47    0.000075
+                             elettronica         33    0.000053
+                         lettere moderne         31    0.000049
+               scienze dell'informazione         31    0.000049
+                    maturità scientifica         30    0.000048
+          lingue e letterature straniere         28    0.000045
+                     disegno industriale         23    0.000037
+                  communication sciences         22    0.000035
+                        brand management         21    0.000034
+                      informatica abacus         21    0.000034
+                                 lettere         20    0.000032
+                               meccanica         18    0.000029
+                                    dams         16    0.000026
+                   laurea in informatica         16    0.000026
+              telecommunication engineer         15    0.000024
+    informatica e comunicazione digitale         12    0.000019
+                                  p.n.i.         12    0.000019
+                                  lingue         11    0.000018
+                 comunicazione d'impresa          8    0.000013
+             piano nazionale informatica          7    0.000011
+                    economia del turismo          6    0.000010
+                       laurea in lettere          5    0.000008
+          facoltà di lettere e filosofia          4    0.000006
+    grafica e progettazione multimediale          4    0.000006
+ comunicazione istituzionale e d'impresa          3    0.000005
+
+
+##############
+# CLUSTER 21 #
+##############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   4950 / 626862 = 0.007896
+
+ attribute  frequency  prevalence
+ marketing       4950    0.007896
+
+
+#############
+# CLUSTER 9 #
+#############
+
+attribute prevalence  =     43 / 555819 = 0.000077
+occurrence prevalence =   4659 / 626862 = 0.007432
+
+                                  attribute  frequency  prevalence
+                                  chemistry       2174    0.003468
+                                         cs        756    0.001206
+                     electronic engineering        349    0.000557
+                                   计算机科学与技术        246    0.000392
+                                       软件工程        207    0.000330
+                       information security        165    0.000263
+                    information engineering        161    0.000257
+            computer science and technology        145    0.000231
+                                        计算机        145    0.000231
+                                         高中         61    0.000097
+                                         初中         27    0.000043
+                                         大学         25    0.000040
+                                         法学         23    0.000037
+                                         法律         21    0.000034
+                                      國際貿易系         20    0.000032
+                                         物理         19    0.000030
+                                    电子科学与技术         19    0.000030
+                                         小学         15    0.000024
+                                      计算机网络         15    0.000024
+                                      汉语言文学         11    0.000018
+                                         本科         10    0.000016
+                                       应用数学          8    0.000013
+                                     人力资源管理          5    0.000008
+ optical information science and technology          3    0.000005
+                software engineering master          3    0.000005
+                                         保险          3    0.000005
+                                        英語系          3    0.000005
+                                      高分子材料          3    0.000005
+                                       初三五班          2    0.000003
+                                        计算器          2    0.000003
+                                        e.i          1    0.000002
+                                      es&et          1    0.000002
+              international economy & trade          1    0.000002
+                         math & information          1    0.000002
+                          telicommunication          1    0.000002
+                                       信息数学          1    0.000002
+                                       六年9班          1    0.000002
+                                    工业与民用建筑          1    0.000002
+                                        工民建          1    0.000002
+                                  環境科學與工程學系          1    0.000002
+                                   计算机应用和技术          1    0.000002
+                   财务管理financial management          1    0.000002
+                                         驱魔          1    0.000002
+
+
+##############
+# CLUSTER 46 #
+##############
+
+attribute prevalence  =    102 / 555819 = 0.000184
+occurrence prevalence =   4564 / 626862 = 0.007281
+
+                                    attribute  frequency  prevalence
+                                          mis        892    0.001423
+                          applied mathematics        433    0.000691
+                                        資訊管理系        303    0.000483
+                       information management        286    0.000456
+                                         資訊管理        241    0.000384
+                                         資訊工程        238    0.000380
+                                       資訊工程學系        191    0.000305
+                                        資訊工程系        184    0.000294
+                                       資訊管理學系        166    0.000265
+                                         csie        120    0.000191
+ computer science and information engineering         94    0.000150
+                                          資訊科         84    0.000134
+                                        電子工程系         84    0.000134
+                                        資訊工程所         81    0.000129
+                       educational technology         77    0.000123
+                                        資料處理科         65    0.000104
+                                           資管         61    0.000097
+                                          電機系         59    0.000094
+                                          資管系         57    0.000091
+                                          電子科         49    0.000078
+                                         電子工程         47    0.000075
+                                        資訊科學系         45    0.000072
+                                        資訊管理所         45    0.000072
+                                      資訊管理研究所         43    0.000069
+                                       企業管理學系         41    0.000065
+                                       資訊傳播學系         41    0.000065
+                                        中國文學系         39    0.000062
+                                        電機工程系         38    0.000061
+                                        資訊管理科         32    0.000051
+                                          新聞系         28    0.000045
+                                   entomology         23    0.000037
+                    information communication         22    0.000035
+                                          資工所         22    0.000035
+                                        資訊傳播系         22    0.000035
+                                         廣告設計         21    0.000034
+                                       土木工程學系         20    0.000032
+                                          企管系         19    0.000030
+                           chinese literature         17    0.000027
+       computer and communication engineering         17    0.000027
+                         radio and television         16    0.000026
+                                       大眾傳播學系         16    0.000026
+                                          高中部         14    0.000022
+                                           企管         13    0.000021
+                                         歷史學系         13    0.000021
+                                       英國語文學系         13    0.000021
+                                         廣告學系         12    0.000019
+                                          廣電系          9    0.000014
+                                          美術班          9    0.000014
+                                         政治學系          7    0.000011
+                                         應用外語          6    0.000010
+
+
+#############
+# CLUSTER 3 #
+#############
+
+attribute prevalence  =     77 / 555819 = 0.000139
+occurrence prevalence =   4417 / 626862 = 0.007046
+
+                             attribute  frequency  prevalence
+                biomedical engineering       1368    0.002182
+                             education       1307    0.002085
+                              computer        308    0.000491
+                           accountancy        207    0.000330
+                                master        148    0.000236
+                    management science        130    0.000207
+             communication engineering        100    0.000160
+         management information system         97    0.000155
+       materials science & engineering         89    0.000142
+                                  通信工程         67    0.000107
+                              chemical         59    0.000094
+                                   自动化         58    0.000093
+         computer science & technology         43    0.000069
+                                   mse         41    0.000065
+                                  电子商务         41    0.000065
+                                    is         39    0.000062
+                                    英语         28    0.000045
+                                  信息安全         27    0.000043
+                                    日语         19    0.000030
+                                    化工         15    0.000024
+                                    新闻         15    0.000024
+                                 计算机科学         15    0.000024
+                             电气工程及其自动化         14    0.000022
+                             电子信息科学与技术         11    0.000018
+                   electronic business         10    0.000016
+                       applied finance          9    0.000014
+                             materials          9    0.000014
+                                    电子          9    0.000014
+                                  citc          8    0.000013
+                                  机械工程          8    0.000013
+                               化学工程与工艺          7    0.000011
+                                  影视动画          7    0.000011
+                                数字媒体技术          7    0.000011
+                               计算机网络技术          7    0.000011
+                                   dmu          6    0.000010
+ electrical engineering and automation          5    0.000008
+                                    中学          5    0.000008
+                                   資管科          5    0.000008
+                    social engineering          4    0.000006
+                                  对外汉语          4    0.000006
+                                    通信          4    0.000006
+                               食品科学与工程          4    0.000006
+               electrical power system          3    0.000005
+      information & process management          3    0.000005
+                                telcom          3    0.000005
+                               劳动与社会保障          3    0.000005
+                                    历史          3    0.000005
+                      condensed matter          2    0.000003
+                                    信息          2    0.000003
+                                  应用电子          2    0.000003
+
+
+##############
+# CLUSTER 20 #
+##############
+
+attribute prevalence  =      1 / 555819 = 0.000002
+occurrence prevalence =   4275 / 626862 = 0.006820
+
+              attribute  frequency  prevalence
+ information technology       4275     0.00682
+
+
+##############
+# CLUSTER 38 #
+##############
+
+attribute prevalence  =    351 / 555819 = 0.000632
+occurrence prevalence =   3737 / 626862 = 0.005961
+
+                                attribute  frequency  prevalence
+        master of business administration        266    0.000424
+                         dut informatique        144    0.000230
+                                 sciences        127    0.000203
+                  informatique de gestion        121    0.000193
+                              psychologie        108    0.000172
+                            mba marketing        104    0.000166
+                                    droit         95    0.000152
+                                    bac s         93    0.000148
+                             scientifique         91    0.000145
+                       génie informatique         74    0.000118
+                                    miage         71    0.000113
+                               multimédia         69    0.000110
+                  international marketing         66    0.000105
+     services et réseaux de communication         63    0.000101
+                                  dut src         60    0.000096
+                              infographie         57    0.000091
+                                 economie         56    0.000089
+ dut services et réseaux de communication         54    0.000086
+                                 histoire         50    0.000080
+                             electronique         49    0.000078
+                  marketing communication         47    0.000075
+                                 bts iris         44    0.000070
+                                webmaster         42    0.000067
+                              journalisme         41    0.000065
+                                graphisme         39    0.000062
+                                 médecine         39    0.000062
+                     licence informatique         38    0.000061
+                                       es         35    0.000056
+                                      src         35    0.000056
+                   communication visuelle         33    0.000053
+                                   bac es         31    0.000049
+          techniques de commercialisation         31    0.000049
+                                  anglais         30    0.000048
+                         design graphique         30    0.000048
+                                    esial         30    0.000048
+                                ingénieur         30    0.000048
+                              génie civil         29    0.000046
+                               sociologie         28    0.000045
+                           msc management         25    0.000040
+                          business school         24    0.000038
+                                  général         24    0.000038
+                                      aes         23    0.000037
+                         lettres modernes         23    0.000037
+                             master miage         23    0.000037
+                               littéraire         22    0.000035
+                                      mti         22    0.000035
+                   digital communications         21    0.000034
+               développement informatique         20    0.000032
+         master of international business         20    0.000032
+                                    bac l         19    0.000030
+
+
+##############
+# CLUSTER 22 #
+##############
+
+attribute prevalence  =    345 / 555819 = 0.000621
+occurrence prevalence =   3351 / 626862 = 0.005346
+
+                                attribute  frequency  prevalence
+                       telecommunications        451    0.000719
+                                 engineer        125    0.000199
+                             applied math        124    0.000198
+                  artificial intelligence        106    0.000169
+                     business informatics         91    0.000145
+                         computer systems         76    0.000121
+                            юриспруденция         73    0.000116
+                             журналистика         67    0.000107
+                  physics and mathematics         64    0.000102
+                              информатика         63    0.000101
+                                маркетинг         62    0.000099
+                                    major         61    0.000097
+                               менеджмент         59    0.000094
+                    прикладная математика         57    0.000091
+                              программист         57    0.000091
+                                       pr         55    0.000088
+                         english language         47    0.000075
+      прикладная математика и информатика         45    0.000072
+      информационные системы и технологии         42    0.000067
+                         physics and math         38    0.000061
+                                  реклама         38    0.000061
+                                      асу         36    0.000057
+                               математика         36    0.000057
+                   прикладная информатика         35    0.000056
+                                   физика         35    0.000056
+                         mba in marketing         32    0.000051
+                         chinese language         31    0.000049
+                  связи с общественностью         31    0.000049
+                информационные технологии         30    0.000048
+                   менеджмент организации         30    0.000048
+                                       ит         28    0.000045
+              компьютерные системы и сети         28    0.000045
+                     mathematics, physics         23    0.000037
+                                 менеджер         23    0.000037
+                                экономика         23    0.000037
+ applied mathematics and computer science         22    0.000035
+                                 школьник         22    0.000035
+                                    асоиу         21    0.000034
+                             правоведение         21    0.000034
+                             радиотехника         20    0.000032
+                                  физ-мат         20    0.000032
+                                  финансы         20    0.000032
+                                филология         18    0.000029
+                   m.s., computer science         16    0.000026
+                                  история         16    0.000026
+                       бизнес-информатика         15    0.000024
+                            лечебное дело         15    0.000024
+                  master computer science         14    0.000022
+                             social media         14    0.000022
+                                      вмк         14    0.000022
+
+
+##############
+# CLUSTER 48 #
+##############
+
+attribute prevalence  =    169 / 555819 = 0.000304
+occurrence prevalence =   3205 / 626862 = 0.005113
+
+                             attribute  frequency  prevalence
+                   biological sciences        585    0.000933
+               electronics engineering        352    0.000562
+                 environmental science        304    0.000485
+                        fashion design        231    0.000369
+                  software development        205    0.000327
+                         middle school        182    0.000290
+         telecommunication engineering        121    0.000193
+                                  b.a.        108    0.000172
+                    east asian studies        102    0.000163
+ electrical and electronic engineering         86    0.000137
+                international politics         79    0.000126
+                      pure mathematics         43    0.000069
+                             architect         31    0.000049
+                      bachelor of laws         29    0.000046
+                                   hrm         28    0.000045
+                     signal processing         27    0.000043
+                                   bio         26    0.000041
+                               信息与计算科学         26    0.000041
+                         general study         22    0.000035
+                                  信息工程         21    0.000034
+                                 计算机应用         19    0.000030
+                                  软件学院         19    0.000030
+                         hr management         18    0.000029
+                                  市场营销         17    0.000027
+                                   经济学         17    0.000027
+                               国际经济与贸易         16    0.000026
+                        master of laws         15    0.000024
+                                  信息管理         15    0.000024
+                                  生物技术         15    0.000024
+              master, computer science         14    0.000022
+                         summer school         14    0.000022
+                   software enginering         13    0.000021
+                               材料科学与工程         13    0.000021
+                                   藥學系         13    0.000021
+                              français         12    0.000019
+                                    化学         12    0.000019
+                                    数学         12    0.000019
+            strategic public relations         11    0.000018
+                         china studies         10    0.000016
+                        commercial law         10    0.000016
+                                  艺术设计         10    0.000016
+                                  视觉传达         10    0.000016
+                                  财务管理         10    0.000016
+                               通信与信息系统         10    0.000016
+                                energy          9    0.000014
+                      nuclear medicine          9    0.000014
+                                    哲学          9    0.000014
+                                  生物工程          9    0.000014
+                               计算机科学技术          9    0.000014
+                        remote sensing          8    0.000013
+
+
+##############
+# CLUSTER 31 #
+##############
+
+attribute prevalence  =     33 / 555819 = 0.000059
+occurrence prevalence =   2879 / 626862 = 0.004593
+
+                                         attribute  frequency  prevalence
+                                 industrial design        702    0.001120
+                                        informatik        651    0.001039
+                             wirtschaftsinformatik        390    0.000622
+                                            abitur        307    0.000490
+                                  medieninformatik        139    0.000222
+                                               bwl        123    0.000196
+                          international management        121    0.000193
+                                          bachelor        114    0.000182
+                              rechtswissenschaften         73    0.000116
+                         wirtschaftswissenschaften         60    0.000096
+                          betriebswirtschaftslehre         52    0.000083
+                               politikwissenschaft         33    0.000053
+                                     medientechnik         32    0.000051
+                                    mittlere reife         26    0.000041
+                        kommunikationswissenschaft         19    0.000030
+       publizistik- und kommunikationswissenschaft          8    0.000013
+                       political science / history          6    0.000010
+                                           meister          3    0.000005
+     publizistik- und kommunikationswissenschaften          3    0.000005
+                         fachwirt public relations          2    0.000003
+                                  montessorischule          2    0.000003
+                           survival of the fittest          2    0.000003
+        "netzwerkklasse", humanistisches gymnasium          1    0.000002
+                 crossmedia design and development          1    0.000002
+                        diplom politikwissenschaft          1    0.000002
+               hotelbetriebswirt mit dehoga diplom          1    0.000002
+                                  it und marketing          1    0.000002
+                                       jura examen          1    0.000002
+                                           kellner          1    0.000002
+                 knetmasse, puppenecke, sandkasten          1    0.000002
+                      kultur- und medienmanagement          1    0.000002
+ politikwissenschaften / mittlere und neuere ge...          1    0.000002
+                                          vollzeit          1    0.000002
+
+
+##############
+# CLUSTER 29 #
+##############
+
+attribute prevalence  =    255 / 555819 = 0.000459
+occurrence prevalence =   2848 / 626862 = 0.004543
+
+                                     attribute  frequency  prevalence
+                     environmental engineering        281    0.000448
+                           mechanical engineer        207    0.000330
+                   visual communication design        166    0.000265
+          electrical & electronics engineering        124    0.000198
+           integrated marketing communications         87    0.000139
+                      marketing communications         78    0.000124
+                                    automotive         61    0.000097
+                                    datateknik         57    0.000091
+                           faculty of medicine         57    0.000091
+                                           web         57    0.000091
+              advertising and public relations         46    0.000073
+                        business adminstration         46    0.000073
+ electronics and telecommunication engineering         45    0.000072
+                              cultural studies         44    0.000070
+                              event management         42    0.000067
+                                    elektronik         35    0.000056
+                                faculty of law         34    0.000054
+                                          lise         34    0.000054
+                           inşaat mühendisliği         33    0.000053
+                                       sayısal         33    0.000053
+                           makine mühendisliği         32    0.000051
+                                 kamu yönetimi         31    0.000049
+                        uluslararası ilişkiler         31    0.000049
+                                       deutsch         29    0.000046
+                                         tesol         28    0.000045
+                             foreign languages         27    0.000043
+                                         hukuk         26    0.000041
+                                         fizik         25    0.000040
+                           makina mühendisliği         25    0.000040
+                                science - math         25    0.000040
+                                     sosyoloji         20    0.000032
+                         bilişim teknolojileri         19    0.000030
+                           creative technology         19    0.000030
+              elektrik-elektronik mühendisliği         19    0.000030
+                                        maliye         19    0.000030
+                                      mimarlık         19    0.000030
+              public relations and advertising         19    0.000030
+                            çevre mühendisliği         19    0.000030
+       bilgisayar teknolojileri ve programlama         18    0.000029
+                     english language teaching         17    0.000027
+                                            id         17    0.000027
+                                    istatistik         17    0.000027
+                         media & communication         17    0.000027
+                molecular biology and genetics         17    0.000027
+                               hukuk fakültesi         15    0.000024
+                                    bilgisayar         14    0.000022
+                                 computer eng.         13    0.000021
+                                   dış ticaret         13    0.000021
+                                    ilköğretim         13    0.000021
+                                      muhasebe         13    0.000021
+
+
+##############
+# CLUSTER 13 #
+##############
+
+attribute prevalence  =     34 / 555819 = 0.000061
+occurrence prevalence =   2725 / 626862 = 0.004347
+
+                                        attribute  frequency  prevalence
+                   management information systems       1092    0.001742
+                                computer engineer        329    0.000525
+                             computer programming        299    0.000477
+                          bilgisayar mühendisliği        176    0.000281
+                                          işletme        155    0.000247
+                 mathematics and computer science        148    0.000236
+                  english language and literature         92    0.000147
+                                          iktisat         68    0.000108
+                         bilgisayar programcılığı         60    0.000096
+                                        matematik         40    0.000064
+                                          öğrenci         40    0.000064
+                                    fen bilimleri         33    0.000053
+                            endüstri mühendisliği         30    0.000048
+                                            kimya         22    0.000035
+                                         biyoloji         21    0.000034
+                        ingiliz dili ve edebiyatı         14    0.000022
+                                  sosyal bilimler         13    0.000021
+                                işletme fakültesi         12    0.000019
+            bilgisayar teknolojisi ve programlama         11    0.000018
+                               iletişim fakültesi         11    0.000018
+                                      reklamcılık         10    0.000016
+ bilgisayar ve öğretim teknolojileri öğretmenliği          9    0.000014
+                                               ad          7    0.000011
+                                         elektrik          7    0.000011
+                                      iç mimarlık          7    0.000011
+                             chemical enginnering          6    0.000010
+                            faculty of management          3    0.000005
+                                  web programlama          3    0.000005
+                               iletişim sanatları          2    0.000003
+                        bilgisayar yazılım bölümü          1    0.000002
+            elektronik ve bilgisayar öğretmenliği          1    0.000002
+                                            genel          1    0.000002
+                                      gsl / resim          1    0.000002
+                                  mekatronik (iö)          1    0.000002
+
+
+##############
+# CLUSTER 43 #
+##############
+
+attribute prevalence  =     33 / 555819 = 0.000059
+occurrence prevalence =   2072 / 626862 = 0.003305
+
+                          attribute  frequency  prevalence
+                           pharmacy        721    0.001150
+                                 ee        473    0.000755
+                         statistics        419    0.000668
+                network engineering        134    0.000214
+                 tourism management         56    0.000089
+                  ocean engineering         34    0.000054
+                               工业设计         31    0.000049
+               atmospheric sciences         29    0.000046
+                               工商管理         28    0.000045
+                                金融学         17    0.000027
+                           bullshit         16    0.000026
+                            计算机应用技术         16    0.000026
+                                传播学         13    0.000021
+                                 ei         12    0.000019
+                               国际贸易         12    0.000019
+                               行政管理         11    0.000018
+                             广播电视编导          7    0.000011
+                             数字媒体艺术          7    0.000011
+                                 文科          7    0.000011
+                           电气工程与自动化          6    0.000010
+                              新闻传播学          4    0.000006
+                               商务管理          3    0.000005
+                               环境艺术          3    0.000005
+                               eist          2    0.000003
+                             phsics          2    0.000003
+                                 建筑          2    0.000003
+              computer and internet          1    0.000002
+ science and technology of computer          1    0.000002
+                               医学影像          1    0.000002
+                               数学教育          1    0.000002
+                               治療專業          1    0.000002
+                               物流机械          1    0.000002
+                                还没去          1    0.000002
+
+
+##############
+# CLUSTER 23 #
+##############
+
+attribute prevalence  =     36 / 555819 = 0.000065
+occurrence prevalence =   2023 / 626862 = 0.003227
+
+                                         attribute  frequency  prevalence
+                                       advertising       1340    0.002138
+                                           инженер         80    0.000128
+                                            ученик         74    0.000118
+                               theoretical physics         66    0.000105
+                                         экономист         52    0.000083
+                                  финансы и кредит         49    0.000078
+                прикладная информатика в экономике         37    0.000059
+                                             юрист         37    0.000059
+                               инженер-программист         35    0.000056
+ программное обеспечение вычислительной техники...         34    0.000054
+                                              сапр         33    0.000053
+                                        психология         30    0.000048
+                                           студент         24    0.000038
+              информатика и вычислительная техника         21    0.000034
+                                         журналист         18    0.000029
+                           международные отношения         17    0.000027
+   управление и информатика в технических системах         14    0.000022
+                                       политология         13    0.000021
+                                         бухгалтер          8    0.000013
+                                               ист          6    0.000010
+                                          аспирант          5    0.000008
+                                   теплоэнергетика          5    0.000008
+                                       open source          4    0.000006
+                                     преподаватель          4    0.000006
+                                                ас          3    0.000005
+                                      радиоинженер          3    0.000005
+                           математика. информатика          2    0.000003
+                                       ad designer          1    0.000002
+                                     m.sc. diploma          1    0.000002
+   the software of computers and automated systems          1    0.000002
+                         магістр прикладної фізики          1    0.000002
+                         русский язык (педагогика)          1    0.000002
+                           техник-эксплуатационник          1    0.000002
+                                       техническая          1    0.000002
+                    флорист, цветовод, озеленитель          1    0.000002
+                                            чпу :)          1    0.000002
+
+
+##############
+# CLUSTER 40 #
+##############
+
+attribute prevalence  =    193 / 555819 = 0.000347
+occurrence prevalence =   1947 / 626862 = 0.003106
+
+                                   attribute  frequency  prevalence
+                                   gymnasium        142    0.000227
+                              elektrotechnik        101    0.000161
+                                 grundschule        100    0.000160
+                       angewandte informatik         92    0.000147
+                   wirtschaftsingenieurwesen         82    0.000131
+                                  e-commerce         79    0.000126
+                                      physik         74    0.000118
+                                  realschule         73    0.000116
+                       technische informatik         62    0.000099
+                        kommunikationsdesign         59    0.000094
+                                    biologie         52    0.000083
+                                    survival         45    0.000072
+                                 architektur         44    0.000070
+                                 germanistik         44    0.000070
+                                  mathematik         44    0.000070
+                                        jura         43    0.000069
+                                      chemie         42    0.000067
+                         informationstechnik         41    0.000065
+                                 philosophie         34    0.000054
+                                  soziologie         34    0.000054
+                                mediendesign         32    0.000051
+                            medienmanagement         28    0.000045
+                            medienwirtschaft         24    0.000038
+                       communication science         23    0.000037
+                          betriebswirtschaft         20    0.000032
+                           media informatics         19    0.000030
+                                  geschichte         18    0.000029
+                          fachhochschulreife         17    0.000027
+                                  geographie         16    0.000026
+                        sozialwissenschaften         16    0.000026
+                               marketing mba         15    0.000024
+                       volkswirtschaftslehre         15    0.000024
+                                         vwl         15    0.000024
+                       wirtschaftsmathematik         15    0.000024
+                      informationsmanagement         14    0.000022
+                           public management         14    0.000022
+                          nachrichtentechnik         13    0.000021
+                                  fachabitur         11    0.000018
+                                   theologie         11    0.000018
+                        wirtschaftsingenieur         10    0.000016
+                                  e-services          9    0.000014
+ gesellschafts- und wirtschaftskommunikation          9    0.000014
+                          informationsdesign          9    0.000014
+                      social media marketing          9    0.000014
+             sociology and political science          9    0.000014
+                kommunikationswissenschaften          8    0.000013
+                                      marine          8    0.000013
+                           b.a. in economics          7    0.000011
+                           classics, history          7    0.000011
+                       politikwissenschaften          7    0.000011
+
+
+##############
+# CLUSTER 30 #
+##############
+
+attribute prevalence  =    104 / 555819 = 0.000187
+occurrence prevalence =   1848 / 626862 = 0.002948
+
+                                       attribute  frequency  prevalence
+                                       dentistry        281    0.000448
+                                             bsc        264    0.000421
+                                              bs        166    0.000265
+                             bachelor of science        163    0.000260
+                                  social science        154    0.000246
+                           materials engineering        104    0.000166
+                                  it engineering         86    0.000137
+                                           b.sc.         68    0.000108
+                           industrial management         65    0.000104
+                                     translation         56    0.000089
+                               international law         52    0.000083
+                               computer software         39    0.000062
+                                      mathematic         22    0.000035
+                                    computer eng         19    0.000030
+                             english translation         17    0.000027
+                                   software eng.         17    0.000027
+                                 electrical eng.         16    0.000026
+                                        کامپیوتر         15    0.000024
+                            mathematical science         14    0.000022
+                                            tefl         12    0.000019
+                                        دبیرستان         10    0.000016
+                                        راهنمایی         10    0.000016
+                                         graphic          9    0.000014
+                                           riazi          9    0.000014
+                                          دبستان          9    0.000014
+                              general psychology          8    0.000013
+                                           ریاضی          8    0.000013
+                                     ریاضی فیزیک          8    0.000013
+                      computer software engineer          7    0.000011
+                                        حسابداری          7    0.000011
+                                      علوم سیاسی          7    0.000011
+                                    mathemathics          6    0.000010
+                                           عمران          6    0.000010
+                       bsc. software engineering          5    0.000008
+                    clinical laboratory sciences          5    0.000008
+                             computer - hardware          4    0.000006
+                                        dabestan          4    0.000006
+                                      dabirestan          4    0.000006
+                                            حقوق          4    0.000006
+ computer and communication networks engineering          3    0.000005
+                                 school of media          3    0.000005
+                                         دانشگاه          3    0.000005
+                                    مدیریت صنعتی          3    0.000005
+                                    مهندسي صنايع          3    0.000005
+                                 مهندسی کامپیوتر          3    0.000005
+                                    پیش دانشگاهی          3    0.000005
+                                       acountant          2    0.000003
+                      communication studies (ma)          2    0.000003
+           m.s. in telecommunication engineering          2    0.000003
+                                     math-physic          2    0.000003
+
+
+##############
+# CLUSTER 32 #
+##############
+
+attribute prevalence  =    156 / 555819 = 0.000281
+occurrence prevalence =   1790 / 626862 = 0.002855
+
+                          attribute  frequency  prevalence
+                information science        451    0.000719
+                                普通科        239    0.000381
+                     product design        165    0.000263
+                  computer graphics        105    0.000168
+                         law school         67    0.000107
+                               経済学部         62    0.000099
+ information science and technology         61    0.000097
+                                法学部         41    0.000065
+                                商学部         39    0.000062
+                              情報工学科         30    0.000048
+                                工学部         28    0.000045
+                             環境情報学部         27    0.000043
+                 information design         25    0.000040
+                               経営学部         20    0.000032
+                               理工学部         17    0.000027
+                                文学部         16    0.000026
+                               情報工学         15    0.000024
+                                 普通         14    0.000022
+                            法学部法律学科         14    0.000022
+                           工学部情報工学科         12    0.000019
+                                心理学         12    0.000019
+                             総合政策学部         12    0.000019
+                    softwaretechnik         11    0.000018
+                               tech         11    0.000018
+                                社会学         11    0.000018
+                           経済学部経済学科         11    0.000018
+                              工学研究科         10    0.000016
+                               教育学部         10    0.000016
+                              電気工学科         10    0.000016
+                              情報処理科          9    0.000014
+                               芸術学部          9    0.000014
+                             情報工学専攻          8    0.000013
+                           経済学部経営学科          8    0.000013
+                                理数科          7    0.000011
+                              電子工学科          7    0.000011
+                        メディアデザイン研究科          6    0.000010
+                              機械工学科          6    0.000010
+                         bioscience          5    0.000008
+                           webデザイン科          5    0.000008
+                                 中退          5    0.000008
+                           経営学部経営学科          5    0.000008
+                    art and science          4    0.000006
+          environmental information          4    0.000006
+     graduate school of engineering          4    0.000006
+                      コンピュータサイエンス専攻          4    0.000006
+                         政策・メディア研究科          4    0.000006
+           bachelor of liberal arts          3    0.000005
+                    bba, management          3    0.000005
+                                 なし          3    0.000005
+                        コンピュータサイエンス          3    0.000005
+
+
+##############
+# CLUSTER 28 #
+##############
+
+attribute prevalence  =    138 / 555819 = 0.000248
+occurrence prevalence =   1752 / 626862 = 0.002795
+
+                                        attribute  frequency  prevalence
+                                      informatics        586    0.000935
+                                      informatika        250    0.000399
+                                multimedia design        160    0.000255
+                                         painting        102    0.000163
+                                         robotics         73    0.000116
+                                   administration         54    0.000086
+                                         economic         44    0.000070
+                                      aeronautics         36    0.000057
+                           matematica-informatica         36    0.000057
+                                      cybernetics         31    0.000049
+                                      it engineer         31    0.000049
+                                        mate-info         14    0.000022
+                                        jurnalism         13    0.000021
+                         matematica - informatica         13    0.000021
+                 international economic relations         12    0.000019
+                              strategic marketing         12    0.000019
+                                        philology         11    0.000018
+                    comunicare si relatii publice         10    0.000016
+                                         doctorat          9    0.000014
+             international business and economics          9    0.000014
+                             marketing, economics          9    0.000014
+                        mathematics - informatics          8    0.000013
+                                medicina generala          8    0.000013
+                            bachelor in marketing          7    0.000011
+                              chemistry & biology          7    0.000011
+                                  ict engineering          7    0.000011
+                       automatica si calculatoare          6    0.000010
+                                         gimnaziu          6    0.000010
+                 master of science in engineering          6    0.000010
+                           matematică-informatică          6    0.000010
+               communication and public relations          5    0.000008
+                               mezinárodní obchod          5    0.000008
+                            administratie publica          4    0.000006
+                                               b1          4    0.000006
+               bachelor of science in engineering          4    0.000006
+ cibernetica, statistica si informatica economica          4    0.000006
+                                   electrotehnica          4    0.000006
+                                             feaa          4    0.000006
+                                        filologie          4    0.000006
+                                               mf          4    0.000006
+                               pr and advertising          4    0.000006
+                                              crp          3    0.000005
+                                            drept          3    0.000005
+                          facultatea de jurnalism          3    0.000005
+                             informatica intensiv          3    0.000005
+                          informatica manageriala          3    0.000005
+                       international relationship          3    0.000005
+                       mate-info intensiv engleza          3    0.000005
+                                       psihologie          3    0.000005
+                 relatii economice internationale          3    0.000005
+
+
+##############
+# CLUSTER 26 #
+##############
+
+attribute prevalence  =     27 / 555819 = 0.000049
+occurrence prevalence =   1483 / 626862 = 0.002366
+
+                                         attribute  frequency  prevalence
+                                      informatique       1198    0.001911
+                       bts informatique de gestion         89    0.000142
+                    mathematics & computer science         46    0.000073
+                         baccalauréat scientifique         35    0.000056
+                                      comptabilité         25    0.000040
+                                  iut informatique         25    0.000040
+                                               pmp         19    0.000030
+                                 bts communication         15    0.000024
+                         chef de projet multimédia          5    0.000008
+                                               csh          3    0.000005
+                   ba (hons) english communication          2    0.000003
+                                     bts domotique          2    0.000003
+                                   design research          2    0.000003
+                                         dueti gea          2    0.000003
+                                           dut gtr          2    0.000003
+ iut gestion des entreprises et des administrat...          2    0.000003
+                 bts en micro systèmes informatisé          1    0.000002
+      computer of science & electrical engineering          1    0.000002
+                 concepteur intégrateur multimedia          1    0.000002
+                                dut génie logiciel          1    0.000002
+              embedded hardware & software systems          1    0.000002
+                              french baccalaureate          1    0.000002
+                   graphic design & digital design          1    0.000002
+                ingénieur, systèmes d'informations          1    0.000002
+                      master de chef de projet tic          1    0.000002
+                                        mpsi - psi          1    0.000002
+        systèmes informatiques logiciel et réseaux          1    0.000002
+
+
+#############
+# CLUSTER 8 #
+#############
+
+attribute prevalence  =     49 / 555819 = 0.000088
+occurrence prevalence =    849 / 626862 = 0.001354
+
+                                 attribute  frequency  prevalence
+                                  japanese        326    0.000520
+                   phd in computer science         96    0.000153
+                                        se         63    0.000101
+                                    电子信息工程         44    0.000070
+                                      网络工程         43    0.000069
+                                      土木工程         42    0.000067
+                     financial mathematics         25    0.000040
+                                    senior         24    0.000038
+                                       日本語         24    0.000038
+                                        理科         20    0.000032
+                                        金融         17    0.000027
+                                       csa         14    0.000022
+                                    junior         11    0.000018
+                                      车辆工程         10    0.000016
+                                      物流管理          9    0.000014
+                                    生物医学工程          9    0.000014
+                                       cas          7    0.000011
+                                      环境科学          7    0.000011
+                                      电气工程          7    0.000011
+                                    计算机及应用          7    0.000011
+      communication and information system          5    0.000008
+                                     mpacc          4    0.000006
+                                       统计学          4    0.000006
+               communications engineerings          3    0.000005
+     communications and information system          2    0.000003
+                                       历史系          2    0.000003
+                                      軟件工程          2    0.000003
+                                    09届10班          1    0.000002
+                                      3d建模          1    0.000002
+                    education of fine arts          1    0.000002
+ electrical engineering and its automation          1    0.000002
+    electrics engineering & its automation          1    0.000002
+    eletronics and information engineering          1    0.000002
+                        immunopharmacology          1    0.000002
+                        master, anesthesia          1    0.000002
+                         ph.d., geriatrics          1    0.000002
+                        radiation medicine          1    0.000002
+                                  senior 3          1    0.000002
+                                      害虫专业          1    0.000002
+                                       建筑系          1    0.000002
+                                        投资          1    0.000002
+                                       挖掘机          1    0.000002
+                                       敏感瓷          1    0.000002
+                                      星際航行          1    0.000002
+                                 测绘工程与地球科学          1    0.000002
+                                      生命科学          1    0.000002
+                                     自动化学院          1    0.000002
+                                   计算机软件编程          1    0.000002
+                                      通用id          1    0.000002
+
+
+##############
+# CLUSTER 27 #
+##############
+
+attribute prevalence  =     20 / 555819 = 0.000036
+occurrence prevalence =    823 / 626862 = 0.001313
+
+                                         attribute  frequency  prevalence
+                                               mit        499    0.000796
+                                  symbolic systems         66    0.000105
+                              bs, computer science         62    0.000099
+                              ms, computer science         59    0.000094
+                             math/computer science         35    0.000056
+                                     english major         28    0.000045
+                           computer science / math         16    0.000026
+                                   foreign service         14    0.000022
+                              economics & business         12    0.000019
+                                           jd, law          9    0.000014
+                               government, history          6    0.000010
+                                     baccalaureate          5    0.000008
+                                          calculus          3    0.000005
+                                         math + cs          2    0.000003
+            political science, mass communications          2    0.000003
+                ab, international affairs & french          1    0.000002
+          b.a. computer science, political science          1    0.000002
+                                   literature (ma)          1    0.000002
+ science in human culture, political science, b...          1    0.000002
+                                          tech law          1    0.000002
+
+

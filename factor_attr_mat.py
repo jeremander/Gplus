@@ -16,17 +16,34 @@ def normalize(vec):
     """Normalizes a vector to have unit norm."""
     return vec / np.linalg.norm(vec)
 
+def scree_plot(eigvals, show = True, filename = None):
+    """Makes a scree plot of the absolute value of a series of eigenvalues using matplotlib. If show = True, displays the plot. If filename is not None, saves the plot to this filename."""
+    abs_eigvals = np.abs(eigvals)
+    ranked_abs_eigvals = np.array(sorted(abs_eigvals, reverse = True))
+    plt.plot(ranked_abs_eigvals, linewidth = 3)
+    ax = plt.axes()
+    ax.set_title('Scree plot of eigenvalues')
+    ax.set_xlabel('rank', labelpad = 10)
+    ax.set_ylabel('abs(eigenvalue)', labelpad = 15)
+    ax.set_ylim(ymin = 0)
+    if filename:
+        plt.savefig(filename)
+    if show:
+        plt.show(block = False)
+
 def generate_cluster_report(attr_analyzer, attr_type, cluster_labels, topN = 30):
     """Given the AttributeAnalyzer, attr_type, and a list of cluster labels (corresponding to the attribute vocab indices only), generates a report listing the top N members of each cluster, and the frequency and prevalence (relative frequency) of each attribute in the data set. Orders the clusters by total occurrences of attributes in each cluster. If topN = None, list all the attributes in each cluster."""
     attr_freq_dict = attr_analyzer.attr_freqs_by_type[attr_type]
     total_attr_freqs = sum(attr_freq_dict.values())
     pfa = attr_analyzer.pairwise_freq_analyzers[attr_type]
-    attr_indices, attr_vocab = get_attr_indices(pfa)
+    attr_indices, attr_vocab = get_attr_indices(pfa, attr_analyzer.attributed_nodes)
     unique_cluster_labels = set(cluster_labels)
     # compute vocab lists for each cluster
     attr_vocab_by_cluster = dict((lab, []) for lab in unique_cluster_labels)
     for (i, lab) in enumerate(cluster_labels):
         v = attr_vocab[i]
+        if v.startswith('*???*'):
+            continue
         freq = attr_freq_dict[v]
         attr_vocab_by_cluster[lab].append((v, freq, freq / total_attr_freqs))
     # sort vocab lists by decreasing frequencies
@@ -70,27 +87,32 @@ def main():
     p.add_option('--attr_type', '-a', type = str, help = 'attribute type')
     p.add_option('-p', type = str, help = 'PMI type (PMIs, NPMI1s, or NPMI2s)')
     p.add_option('-e', type = str, help = 'embedding (adj, normlap, regnormlap)')
-    p.add_option('-s', type = bool, action = 'store_true', help = 'normalize in sphere')
+    p.add_option('-s', action = 'store_true', default = False, help = 'normalize in sphere')
     p.add_option('-d', type = float, help = 'smoothing parameter')
     p.add_option('-k', type = int, help = 'number of eigenvalues')
     p.add_option('-c', type = int, help = 'number of kmeans clusters')
     p.add_option('-t', type = float, default = None, help = 'tolerance for eigsh')
+    p.add_option('-v', action = 'store_true', default = False, help = 'save scree plot')
     opts, args = p.parse_args()
 
     attr_type = opts.attr_type
     sim = opts.p
     embedding = opts.e
+    assert (embedding in ['adj', 'normlap', 'regnormlap'])
+    sphere = opts.s
     delta = opts.d
     k = opts.k
     nclusts = opts.c
     tol = opts.t
+    save_plot = opts.v
     topN = 50  # for the report
     assert (((sim == 'PMIs') or (delta == 0)) and (sim in ['PMIs', 'NPMI1s', 'NPMI2s']))
 
-    data_folder = 'gplus0_lcc/data/PMI'
-    report_folder = 'gplus0_lcc/reports/PMI'
+    data_folder = 'gplus0_lcc/data/PMI/'
+    report_folder = 'gplus0_lcc/reports/PMI/'
+    plot_folder = 'gplus0_lcc/plots/PMI/'
     file_prefix1 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d' % k)
-    file_prefix2 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d_c%d' % (k, nclusts))
+    file_prefix2 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d%s_c%d' % (k, '_normalized' if sphere else '', nclusts))
 
     print("\nLoading AttributeAnalyzer...")
     a = AttributeAnalyzer()
@@ -100,43 +122,48 @@ def main():
     pfa = a.pairwise_freq_analyzers[attr_type]
     n = pfa.num_vocab
     tol = (1.0 / n) if (tol is None) else tol  # use 1/n instead of machine precision as default tolerance
-    attr_indices, attr_vocab = get_attr_indices(pfa)
+    attr_indices, attr_vocab = get_attr_indices(pfa, a.attributed_nodes)
 
     try:  
         print("\nLoading labels from '%s%s_labels.csv'..." % (data_folder, file_prefix2))
-        labels = np.loadtxt('%s%s_labels.csv' % (data_folder, file_prefix2))
+        labels = np.loadtxt('%s%s_labels.csv' % (data_folder, file_prefix2), dtype = int)
         print("\nLoading cluster centers from '%s%s_cluster_centers.csv'..." % (data_folder, file_prefix2))
         cluster_centers = np.loadtxt('%s%s_cluster_centers.csv' % (data_folder, file_prefix2), delimiter = ',')
+        print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
+        eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
         print("\nLoading embedded features from '%s%s_features.csv'..." % (data_folder, file_prefix1))
         features = np.loadtxt('%s%s_features.csv' % (data_folder, file_prefix1), delimiter = ',')
+        if sphere:
+            for i in range(len(attr_indices)):  
+                features[i] = normalize(features[i])
     except FileNotFoundError:
         print("Failed to load.")
         try:
+            print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
+            eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
             print("\nLoading embedded features from '%s%s_features.csv'..." % (data_folder, file_prefix1))
             features = np.loadtxt('%s%s_features.csv' % (data_folder, file_prefix1), delimiter = ',')
         except FileNotFoundError:
             print("Failed to load.")
             print("\nComputing similarity matrix (%s)..." % sim)
             sim_op = pfa.to_sparse_PMI_operator(sim, delta)
-            print("\nComputing eigenvectors (k = %d)..." % k)
+            matrix_type = 'adjacency' if (embedding == 'adj') else ('normalized Laplacian' if (embedding == 'normlap') else 'regularized normalized Laplacian')
+            print("\nComputing eigenvectors of %s matrix (k = %d)..." % (matrix_type, k))
             if (embedding == 'adj'):
                 (eigvals, features) = timeit(eigsh)(sim_op, k = k, tol = tol)
-                features = np.sqrt(abs_eigvals) * features  # scale the feature columns by the sqrt of the eigenvalues
-            features = features[attr_indices, :]  # free up memory
-            abs_eigvals = np.abs(eigvals)
-            ranked_abs_eigvals = np.array(sorted(abs_eigvals, reverse = True))
-            plt.plot(ranked_abs_eigvals, linewidth = 3)
-            ax = plt.axes()
-            ax.set_title('Scree plot of eigenvalues')
-            ax.set_xlabel('rank', labelpad = 10)
-            ax.set_ylabel('abs(eigenvalue)', labelpad = 15)
-            ax.set_ylim(ymin = 0)
-            plt.savefig('%s%s_screeplot.png' % (report_folder, file_prefix1))  # save the scree plot
-            #plt.show(block = False)
+                features = np.sqrt(np.abs(eigvals)) * features  # scale the feature columns by the sqrt of the eigenvalues
+            elif (embedding == 'normlap'):
+                normlap = SparseNormalizedLaplacian(sim_op)
+                (eigvals, features) = timeit(eigsh)(normlap, k = k, tol = tol)
+            elif (embedding == 'regnormlap'):
+                regnormlap = SparseRegularizedNormalizedLaplacian(sim_op)
+                (eigvals, features) = timeit(eigsh)(regnormlap, k = k, tol = tol)
+            features = features[attr_indices, :]  # free up memory by deleting embeddings of nodes with no attributes
             np.savetxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), eigvals, delimiter = ',')
             np.savetxt('%s%s_features.csv' % (data_folder, file_prefix1), features, delimiter = ',')
-        for i in range(len(attr_indices)):  # normalize the features to have unit norm (better for kMeans)
-            features[i] = normalize(features[i])
+        if sphere:  # normalize the features to have unit norm (better for kMeans)
+            for i in range(len(attr_indices)):  
+                features[i] = normalize(features[i])
         km = KMeans(nclusts)
         print("\nClustering attribute feature vectors into %d clusters using kMeans..." % nclusts)
         labels = timeit(km.fit_predict)(features)
@@ -149,11 +176,15 @@ def main():
         with open('%s%s_cluster_report.txt' % (report_folder, file_prefix2), 'w') as f:
             f.write(generate_cluster_report(a, attr_type, labels, topN))
 
+    if save_plot:
+        print("\nSaving scree plot to '%s%s_screeplot.png'..." % (plot_folder, file_prefix1))
+        scree_plot(eigvals, show = False, filename = '%s%s_screeplot.png' % (plot_folder, file_prefix1))
+
     print("\nAssigning cluster labels to each node...")
     indices_by_vocab = dict((v, i) for (i, v) in enumerate(attr_vocab))
-    normalized_centers = [normalize(center) for center in cluster_centers]
+    centers = [normalize(center) for center in cluster_centers] if sphere else cluster_centers
     def assign_cluster(node):
-        """Assigns -1 to a node with no attribute present. Otherwise, takes the cluster whose center is closest to the mean of the attribute vectors."""
+        """Assigns -1 to a node with no attribute present. Otherwise, takes the cluster whose center is closest to the mean of the attribute vectors. Uses cosine distance if sphere = True, otherwise Euclidean distance."""
         if (node not in attrs_by_node):
             return -1
         else:
@@ -165,8 +196,11 @@ def main():
                 for attr in attrs:
                     vec += features[indices_by_vocab[attr]]
                 vec /= len(attrs)
-                vec = normalize(vec)
-                sims = [np.dot(vec, center) for center in normalized_centers]
+                if sphere:
+                    vec = normalize(vec)
+                    sims = [np.dot(vec, center) for center in centers]
+                else:
+                    sims = [-np.linalg.norm(vec - center) for center in centers]
                 max_index, max_sim = -1, -float('inf')
                 for (i, sim) in enumerate(sims):
                     if (sim > max_sim):

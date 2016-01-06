@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.sparse.linalg import LinearOperator
 
+
 class SparseLinearOperator(LinearOperator):
     """Subclass of LinearOperator for handling a sparse matrix."""
     def __init__(self, F):

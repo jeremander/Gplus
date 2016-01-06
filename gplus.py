@@ -198,11 +198,13 @@ class PairwiseFreqAnalyzer(object):
         g.es['weight'] = mat.data
         return g
 
-def get_attr_indices(pfa):
-    """Given a PairwiseFreqAnalyzer, returns list of vocab indices that are not unknown, as well as the vocab items themselves."""
+def get_attr_indices(pfa, attributed_nodes = None):
+    """Given a PairwiseFreqAnalyzer, returns list of vocab indices that are not unknown, as well as the vocab items themselves. If attributed_nodes is not None, retains the unknown attributes corresponding to the given nodes that have attributes (in other attribute types)."""
+    attributed_node_set = set() if attributed_nodes is None else set(attributed_nodes)
+    attributed_node_vocab_set = set(('*???*_%d' % n) for n in attributed_node_set)
     attr_indices, attr_vocab = [], []
     for (i, v) in enumerate(pfa.vocab):
-        if (not v.startswith('*???*')):
+        if ((v in attributed_node_vocab_set) or (not v.startswith('*???*'))):
             attr_indices.append(i)
             attr_vocab.append(v)
     return (attr_indices, attr_vocab)

@@ -18,10 +18,11 @@ def main():
     p.add_option('--num_train_each', '-n', type = int, help = 'number of training samples of True and False for the attribute (for total of 2n training samples)')
     p.add_option('--max_count_features', '-m', type = int, default = 500, help = 'max number of count features')
     p.add_option('--num_samples', '-S', type = int, default = 50, help = 'number of Monte Carlo samples')
+    p.add_option('-v', action = 'store_true', default = False, help = 'save plot')
     p.add_option('--jobs', '-j', type = int, default = -1, help = 'number of jobs')
     opts, args = p.parse_args()
 
-    attr, attr_type, num_train_each, max_count_features, num_samples, jobs = opts.attr, opts.attr_type, opts.num_train_each, opts.max_count_features, opts.num_samples, opts.jobs
+    attr, attr_type, num_train_each, max_count_features, num_samples, save_plot, jobs = opts.attr, opts.attr_type, opts.num_train_each, opts.max_count_features, opts.num_samples, opts.v, opts.jobs
 
     folder = 'gplus0_lcc/baseline1/'
     agg_precision_filename = folder + '%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, num_train_each, max_count_features)
@@ -33,6 +34,7 @@ def main():
     print("\nLoading AttributeAnalyzer...")
     a = AttributeAnalyzer(load_data = False)
     a.load_attrs_by_node_by_type()
+    sqrt_samples = np.sqrt(num_samples)
 
     try:
         agg_precision_df = pd.read_csv(agg_precision_filename)
@@ -104,11 +106,11 @@ def main():
             feature_importances_df[s] = rfc.feature_importances_
 
         # compute means and standard deviations over all the samples
-        agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'std_rfc_prec', 'mean_logreg_prec', 'std_logreg_prec'])
+        agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_logreg_prec', 'stderr_logreg_prec'])
         agg_precision_df['mean_rfc_prec'] = rfc_precision_df.mean(axis = 1)
-        agg_precision_df['std_rfc_prec'] = rfc_precision_df.std(axis = 1)
+        agg_precision_df['stderr_rfc_prec'] = rfc_precision_df.std(axis = 1) / sqrt_samples
         agg_precision_df['mean_logreg_prec'] = logreg_precision_df.mean(axis = 1)
-        agg_precision_df['std_logreg_prec'] = logreg_precision_df.std(axis = 1)
+        agg_precision_df['stderr_logreg_prec'] = logreg_precision_df.std(axis = 1) / sqrt_samples
         agg_feature_importances_df = pd.DataFrame(columns = ['attributeType', 'word/char', 'mean_feature_importances', 'std_feature_importances'])
         agg_feature_importances_df['attributeType'] = feature_importances_df['attributeType']
         agg_feature_importances_df['word/char'] = feature_importances_df['word/char']
@@ -129,21 +131,23 @@ def main():
         num_test = len(test_out)
 
     # plot the nomination precision 
-    N_plot = min(len(agg_precision_df), topN_plot)
-    plt.fill_between(agg_precision_df.index, agg_precision_df['mean_rfc_prec'] - agg_precision_df['std_rfc_prec'], agg_precision_df['mean_rfc_prec'] + agg_precision_df['std_rfc_prec'], color = 'green', alpha = 0.25)
-    rfc_plot, = plt.plot(agg_precision_df.index, agg_precision_df['mean_rfc_prec'], color = 'green', linewidth = 2, label = 'Random Forest')
-    plt.fill_between(agg_precision_df.index, agg_precision_df['mean_logreg_prec'] - agg_precision_df['std_logreg_prec'], agg_precision_df['mean_logreg_prec'] + agg_precision_df['std_logreg_prec'], color = 'red', alpha = 0.25)
-    logreg_plot, = plt.plot(agg_precision_df.index, agg_precision_df['mean_logreg_prec'], color = 'red', linewidth = 2, label = 'Logistic Regression')
+    if save_plot:
+        N_plot = min(len(agg_precision_df), topN_plot)
+        plt.fill_between(agg_precision_df.index, agg_precision_df['mean_rfc_prec'] - 2 * agg_precision_df['stderr_rfc_prec'], agg_precision_df['mean_rfc_prec'] + 2 * agg_precision_df['stderr_rfc_prec'], color = 'green', alpha = 0.25)
+        rfc_plot, = plt.plot(agg_precision_df.index, agg_precision_df['mean_rfc_prec'], color = 'green', linewidth = 2, label = 'Random Forest')
+        plt.fill_between(agg_precision_df.index, agg_precision_df['mean_logreg_prec'] - 2 * agg_precision_df['stderr_logreg_prec'], agg_precision_df['mean_logreg_prec'] + 2 * agg_precision_df['stderr_logreg_prec'], color = 'red', alpha = 0.25)
+        logreg_plot, = plt.plot(agg_precision_df.index, agg_precision_df['mean_logreg_prec'], color = 'red', linewidth = 2, label = 'Logistic Regression')
 
-    guess_rate = num_true_in_test / num_test
-    guess, = plt.plot([guess_rate for i in range(N_plot)], linestyle = 'dashed', linewidth = 2, color = 'black', label = 'Guess')
-    plt.xlabel('rank')
-    plt.ylabel('precision')
-    plt.xlim((0.0, N_plot))
-    plt.ylim((0.0, 1.0))
-    plt.title('Vertex Nomination Precision')
-    plt.legend(handles = [rfc_plot, logreg_plot, guess])
-    plt.savefig(plot_filename)
+        guess_rate = num_true_in_test / num_test
+        guess, = plt.plot([guess_rate for i in range(N_plot)], linestyle = 'dashed', linewidth = 2, color = 'black', label = 'Guess')
+        plt.xlabel('rank')
+        plt.ylabel('precision')
+        plt.xlim((0.0, N_plot))
+        plt.ylim((0.0, 1.0))
+        plt.title('Vertex Nomination Precision')
+        plt.legend(handles = [rfc_plot, logreg_plot, guess])
+        plt.savefig(plot_filename)
+
     print("\nDone!")
 
 if __name__ == "__main__":

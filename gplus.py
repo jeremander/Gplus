@@ -34,6 +34,11 @@ def normalize(vec):
     """Normalizes a vector to have unit norm."""
     return vec / np.linalg.norm(vec)
 
+def normalize_mat_rows(mat):
+    """Normalizes the rows of a matrix, in-place."""
+    for i in range(mat.shape[0]):
+        mat[i] = normalize(mat[i])
+
 def scree_plot(eigvals, show = True, filename = None):
     """Makes a scree plot of the absolute value of a series of eigenvalues using matplotlib. If show = True, displays the plot. If filename is not None, saves the plot to this filename."""
     abs_eigvals = np.abs(eigvals)
@@ -87,19 +92,20 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
     def make_graph_embedding_matrix(self, embedding = 'adj', k = 50, tol = None, plot = False, load = True, save = False):
         """Makes graph embedding matrix, keeping features of only the nodes possessing at least one attribute. embedding options are adjacency matrix (adj), diagonal-added adjacency matrix (adj+diag), normalized Laplacian (normlap), and regularized normalized Laplacian (regnormlap)."""
         assert (embedding in ['adj', 'adj+diag', 'normlap', 'regnormlap'])
+        # get the list of attributed nodes
+        node_attr_filename = self.folder + '/node_attributes.csv'
+        attr_df = pd.read_csv(node_attr_filename, sep = ';')
+        self.attributed_nodes = sorted(list(set(attr_df['node'])))
         obj_name = '%s_k%d_graph_embedding_matrix' % (embedding, k)
         did_load = False
         if load:
             try:
-                eigvals = np.loadtxt('%s/%s_k%d_graph_eigvals.csv' % (folder, embedding, k), delimiter = ',')
+                eigvals = np.loadtxt('%s/%s_k%d_graph_eigvals.csv' % (self.folder, embedding, k), delimiter = ',')
                 self.graph_embedding_matrix = timeit(load_object)(self.folder, obj_name, 'pickle')
                 did_load = True
             except:
                 print("\nCould not load %s from file." % obj_name)
         if (not did_load):
-            node_attr_filename = self.folder + '/node_attributes.csv'
-            attr_df = pd.read_csv(node_attr_filename, sep = ';')
-            self.attributed_nodes = sorted(list(set(attr_df['node'])))
             A = self.sparse_adjacency_operator
             n = A.shape[0]
             tol = 1.0 / n if (tol is None) else tol
@@ -285,6 +291,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         self.attr_df = pd.read_csv(node_attr_filename, sep = ';')
         self.attr_df['attributeVal'] = self.attr_df['attributeVal'].astype(str)
         self.attributed_nodes = sorted(list(set(self.attr_df['node'])))
+        self.nodes_to_rows = dict((node, row) for (row, node) in enumerate(self.attributed_nodes))
         self.attr_types = ['employer', 'major', 'places_lived', 'school']
         self.attr_dicts = dict((attr_type, read_dict(self.folder + '/' + attr_type + '_map.dat')) for attr_type in self.attr_types)
         self.attr_map = dict((attr_type, lambda attr, attr_type = attr_type : self.attr_dicts[attr_type][attr] if (attr in self.attr_dicts[attr_type]) else attr) for attr_type in self.attr_types)
@@ -469,7 +476,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
             timeit(make_mat)()
         if save:
             timeit(save_object)(self.complete_feature_matrix, self.folder, obj_name, 'pickle')
-    def make_complete_embedding_matrix(self, sim = 'NPMI1s', embedding = 'eig', delta = 0.0, k = 50, load = True, save = False):
+    def make_complete_embedding_matrix(self, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, load = True, save = False):
         """Makes full matrix of feature embeddings based on PMI similarities (saved off as matrix files). Rows are nodes, columns are features, grouped into blocks for each attribute type."""
         obj_name = '%s_%s_delta%s_k%d_complete_embedding_matrix' % (sim, embedding, str(delta), k)
         did_load = False

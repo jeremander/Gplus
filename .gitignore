@@ -11,3 +11,4 @@ attributes/
 *.aux
 *.log
 *.gz
+*.sh

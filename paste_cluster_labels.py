@@ -11,7 +11,7 @@ def main():
     p.add_option('-d', type = float, help = 'smoothing parameter')
     p.add_option('-e', type = str, help = 'embedding (adj, adj+diag, normlap, or regnormlap)')
     p.add_option('-k', type = int, help = 'number of eigenvalues')
-    p.add_option('-s', action = 'store_true', defaule = False, help = 'normalize in sphere')
+    p.add_option('-s', action = 'store_true', default = False, help = 'normalize in sphere')
     p.add_option('-c', type = int, help = 'number of kmeans clusters')
     opts, args = p.parse_args()
 

@@ -5,6 +5,7 @@ while (not done_import):
     try:
         import optparse
         import matplotlib.pyplot as plt
+        import sys
         from gplus import *
         from sklearn.naive_bayes import GaussianNB
         from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
@@ -116,6 +117,8 @@ def main():
             logreg_precision_df[s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test_out) + 1.0)
             test_df = test_df.sort_values(by = 'probs_gnb', ascending = False)
             gnb_precision_df[s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test_out) + 1.0)
+
+            sys.stdout.flush()  # flush the output buffer
 
         # compute means and standard errors over all the samples
         agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_gnb_prec', 'stderr_gnb_prec'])

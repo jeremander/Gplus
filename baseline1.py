@@ -1,11 +1,19 @@
 # Performs vertex nomination on content (node attributes) using random forests, AdaBoost, logistic regression, and Multinomial Naive Bayes. Obscures one attribute type and does nomination on the desired attribute of that type. Averages precision-by-rank over a number of samples.
 
-import optparse
-import matplotlib.pyplot as plt
-from gplus import *
-from sklearn.naive_bayes import MultinomialNB
-from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
-from sklearn.linear_model import LogisticRegression
+done_import = False
+while (not done_import):
+    try:
+        import optparse
+        import matplotlib.pyplot as plt
+        import sys
+        from gplus import *
+        from sklearn.naive_bayes import MultinomialNB
+        from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
+        from sklearn.linear_model import LogisticRegression
+        done_import = True
+    except:
+        pass
+
 
 topN_save = 1000
 topN_plot = 500
@@ -126,6 +134,8 @@ def main():
 
             # collate the feature importance scores from the random forest
             feature_importances_df[s] = rfc.feature_importances_
+
+            sys.stdout.flush()  # flush the output buffer
 
         # compute means and standard errors over all the samples
         agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_mnb_prec', 'stderr_mnb_prec'])

@@ -43,19 +43,25 @@ def main():
     print("\nNominating nodes with whose '%s' attribute is '%s' (%d pos/neg seeds)..." % (attr_type, attr, num_train_each))
     print("\nLoading AttributeAnalyzer...")
     a = AttributeAnalyzer(load_data = False)
-    a.load_attrs_by_node_by_type()
     sqrt_samples = np.sqrt(num_samples)
 
     try:
         agg_precision_df = pd.read_csv(agg_precision_filename)
         print("\nLoaded data from '%s'." % agg_precision_filename)
-        ind = a.get_attribute_indicator(attr, attr_type)
-        num_true_in_test = len(ind[ind == 1]) - num_train_each
-        num_test = ind.count() - 2 * num_train_each
+        selected_attrs = pd.read_csv('selected_attrs.csv')
+        if (attr in list(selected_attrs['attribute'])):
+            row = selected_attrs[selected_attrs['attribute'] == attr].iloc[0]
+            num_true_in_test = row['freq'] - num_train_each
+            num_test = row['totalKnown'] - 2 * num_train_each
+        else:
+            ind = a.get_attribute_indicator(attr, attr_type)
+            num_true_in_test = len(ind[ind == 1]) - num_train_each
+            num_test = ind.count() - 2 * num_train_each
 
     except OSError:
         print("\nLoading attribute data...")
         timeit(a.load_data)()
+        a.load_attrs_by_node_by_type()
         print("\nMaking count vectorizers...")
         a.make_count_vectorizers(max_count_features, load = True, save = True)
         a.make_complete_feature_matrix(max_count_features, load = True, save = True)

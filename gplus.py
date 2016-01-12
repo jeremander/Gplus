@@ -291,7 +291,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         self.attr_df = pd.read_csv(node_attr_filename, sep = ';')
         self.attr_df['attributeVal'] = self.attr_df['attributeVal'].astype(str)
         self.attributed_nodes = sorted(list(set(self.attr_df['node'])))
-        self.nodes_to_rows = dict((node, row) for (row, node) in enumerate(self.attributed_nodes))
+        self.attributed_nodes_to_rows = dict((node, row) for (row, node) in enumerate(self.attributed_nodes))
         self.attr_types = ['employer', 'major', 'places_lived', 'school']
         self.attr_dicts = dict((attr_type, read_dict(self.folder + '/' + attr_type + '_map.dat')) for attr_type in self.attr_types)
         self.attr_map = dict((attr_type, lambda attr, attr_type = attr_type : self.attr_dicts[attr_type][attr] if (attr in self.attr_dicts[attr_type]) else attr) for attr_type in self.attr_types)
@@ -527,29 +527,6 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         """Makes matrices of feature embeddings for all attribute types. Rows correspond to only the nodes that have at least one attribute."""
         for attr_type in self.attr_types:
             self.make_attr_embedding_matrix(attr_type, sim, embedding, delta, k, sphere, load, save)
-    @timeit
-    def PCA_embedding_matrix(self, attr_types, n_components, normalize = True, seed = None):
-        """Extracts submatrix of the embedding matrix corresponding to the desired attribute types, then uses PCA to reduce the number of columns to n_components."""
-        assert hasattr(self, 'complete_embedding_matrix')
-        k = self.complete_embedding_matrix.shape[1] // len(self.attr_types)
-        indices = []
-        for (i, attr_type) in enumerate(self.attr_types):
-            if (attr_type in attr_types):
-                indices += list(range(i * k, (i + 1) * k))
-        mat = self.complete_embedding_matrix[:, indices]
-        rows = sorted(list(set(mat.tocoo().row)))
-        mat = mat[rows, :].todense()
-        if normalize:  # normalize by block (only nonzero rows of each block)
-            for i in range(mat.shape[0]):
-                for j in range(mat.shape[1] // k):
-                    segment = mat[i, j * k : (j + 1) * k]
-                    norm = np.linalg.norm(segment)
-                    if (np.abs(norm) > 1e-8):
-                        mat[i, j * k : (j + 1) * k] = segment / norm
-        pca = RandomizedPCA(n_components = n_components, random_state = seed)
-        res = pca.fit_transform(mat)
-        mat2 = coo_matrix((res.reshape(res.shape[0] * res.shape[1]), (np.repeat(rows, res.shape[1]), list(range(res.shape[1])) * res.shape[0])))
-        return (mat, mat2.tocsr(), pca)
     def get_attribute_sample(self, attr, attr_type, n):
         """Selects a random n nodes with the given attribute, and a random n nodes without it. Returns a triple of index lists: first the n with the attribute, then the n without it, then the remaining unselected nodes whose attribute status is known."""
         ind = self.get_attribute_indicator(attr, attr_type)
@@ -563,17 +540,32 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         return (training_true, training_false, test)
     @timeit
     def get_training_and_test(self, attr, attr_type, n):
-        """Selects an (n, n) training sample of nodes with/without the attribute, and a test set of the remainder. Returns a pair (features, outputs) for the both the training and test sets."""
+        """Selects an (n, n) training sample of nodes with/without the attribute, and a test set of the remainder. Returns a pair (features, outputs) for the both the training and test sets. Here the features are simply the counts of most common words & characters."""
         assert hasattr(self, 'complete_feature_matrix')
         (training_true, training_false, test) = self.get_attribute_sample(attr, attr_type, n)
         training = sorted(training_true + training_false)
         attr_indicator = self.get_attribute_indicator(attr, attr_type)
         # get the column indices for the desired features
-        max_count_features = self.complete_feature_matrix.shape[1] // 8
+        max_count_features = self.complete_feature_matrix.shape[1] // (2 * len(self.attr_types))
         attr_type_index = self.attr_types.index(attr_type)
         attr_cols = range(2 * max_count_features * attr_type_index, 2 * max_count_features * (attr_type_index + 1))
         good_cols = sorted(list(set(range(self.complete_feature_matrix.shape[1])).difference(attr_cols)))
         return ((self.complete_feature_matrix[training][:, good_cols], attr_indicator[training]), (self.complete_feature_matrix[test][:, good_cols], attr_indicator[test]))
+    @timeit
+    def get_PMI_training_and_test(self, attr, attr_type, n):
+        """Selects an (n, n) training sample of nodes with/without the attribute, and a test set of the remainder. Returns a pair (features, outputs) for the both the training and test sets. Here features are derived from the embedding of PMI matrices for each attribute type."""
+        assert (hasattr(self, 'attr_embedding_matrices') and all([attr_type in self.attr_embedding_matrices.keys() for attr_type in self.attr_types]))
+        (training_true, training_false, test) = self.get_attribute_sample(attr, attr_type, n)
+        training = sorted(training_true + training_false)
+        training_rows = [self.attributed_nodes_to_rows[node] for node in training]
+        test_rows = [self.attributed_nodes_to_rows[node] for node in test]
+        attr_indicator = self.get_attribute_indicator(attr, attr_type)
+        training_blocks, test_blocks = [], []
+        for at in self.attr_types:
+            if (at != attr_type):  # exclude the attribute type of interest
+                training_blocks.append(self.attr_embedding_matrices[at][training_rows, :])
+                test_blocks.append(self.attr_embedding_matrices[at][test_rows, :])
+        return ((np.hstack(training_blocks), attr_indicator[training]), (np.hstack(test_blocks), attr_indicator[test]))
     @classmethod
     def from_data(cls, dataset = 'gplus0_lcc'):
         """Loads in files listing the node attributes for each type. The first 500 are hand-annotated. Represents each attribute type as a dictionary mapping original attributes to annotated attributes (or None if not annotated)."""

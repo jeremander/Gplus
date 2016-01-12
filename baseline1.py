@@ -1,4 +1,4 @@
-# Performs vertex nomination on content (node attributes) using random forests, AdaBoost, logistic regression, and Gaussian Naive Bayes. Obscures one attribute type and does nomination on the desired attribute of that type. Averages precision-by-rank over a number of samples.
+# Performs vertex nomination on content (node attributes) using random forests, AdaBoost, logistic regression, and Multinomial Naive Bayes. Obscures one attribute type and does nomination on the desired attribute of that type. Averages precision-by-rank over a number of samples.
 
 import optparse
 import matplotlib.pyplot as plt
@@ -47,7 +47,7 @@ def main():
 
     except OSError:
         print("\nLoading attribute data...")
-        a.load_data()
+        timeit(a.load_data)()
         print("\nMaking count vectorizers...")
         a.make_count_vectorizers(max_count_features, load = True, save = True)
         a.make_complete_feature_matrix(max_count_features, load = True, save = True)
@@ -127,7 +127,7 @@ def main():
             # collate the feature importance scores from the random forest
             feature_importances_df[s] = rfc.feature_importances_
 
-        # compute means and standard deviations over all the samples
+        # compute means and standard errors over all the samples
         agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_mnb_prec', 'stderr_mnb_prec'])
         agg_precision_df['mean_rfc_prec'] = rfc_precision_df.mean(axis = 1)
         agg_precision_df['stderr_rfc_prec'] = rfc_precision_df.std(axis = 1) / sqrt_samples

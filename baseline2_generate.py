@@ -4,14 +4,12 @@ import pandas as pd
 selected_attrs = pd.read_csv('selected_attrs.csv')
 
 n_vals = [50, 100, 200, 400, 800, 1600]
-embedding_vals = ['adj']
-# embedding_vals = ['adj', 'adj+diag', 'normlap', 'regnormlap']
-k_vals = [100]
-# k_vals = [50, 100, 200, 400]
+embedding_vals = ['adj', 'adj+diag']
+k_vals = [50, 100, 200]
 sphere_vals = [False, True]
 
 num_samples = 50
-jobs = -1
+jobs = 4
 
 for sphere in sphere_vals:
     for k in k_vals:
@@ -21,7 +19,7 @@ for sphere in sphere_vals:
                     if (selected_attrs[(selected_attrs['attribute'] == attr) & (selected_attrs['attributeType'] == attr_type)]['freq'].iloc[0] >= 2 * n):
                         safe_attr = '_'.join(attr.split())
                         subcmd = "python3 baseline2.py -a '%s' -t '%s' -n %d -e %s -k %d %s -S %d -j %d" % (attr, attr_type, n, embedding, k, '-s' if sphere else '', num_samples, jobs)
-                        cmd = 'qsub -q all.q -l num_proc=%d,mem_free=4G,h_rt=24:00:00 -b Y -V -cwd -j yes -o . -N %s_%s_n%d_%s_k%d%s "%s"' % (jobs, safe_attr, attr_type, n, embedding, k, '_normalize' if sphere else '', subcmd)
-                        #print(cmd)
-                        #subprocess.Popen(cmd, shell = True, stdout = subprocess.PIPE)
-                        subprocess.check_call(['python3', 'baseline2.py', '-a', attr, '-t', attr_type, '-n', str(n), '-e', embedding, '-k', str(k), '-S', str(num_samples), '-j', str(jobs)] + (['-s'] if sphere else []))
+                        cmd = 'qsub -q all.q -l num_proc=%d,mem_free=4G,h_rt=24:00:00 -b Y -V -cwd -j yes -o . -N baseline2%s_%s_n%d_%s_k%d%s "%s"' % (jobs, safe_attr, attr_type, n, embedding, k, '_normalize' if sphere else '', subcmd)
+                        print(cmd)
+                        subprocess.Popen(cmd, shell = True, stdout = subprocess.PIPE)
+                        #subprocess.check_call(['python3', 'baseline2.py', '-a', attr, '-t', attr_type, '-n', str(n), '-e', embedding, '-k', str(k), '-S', str(num_samples), '-j', str(jobs)] + (['-s'] if sphere else []))

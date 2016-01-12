@@ -84,8 +84,8 @@ def main():
             (training_true, training_false, test) = a.get_attribute_sample(attr, attr_type, num_train_each)
             training = sorted(training_true + training_false)
             train_rows, test_rows = [nodes_to_rows[i] for i in training], [nodes_to_rows[i] for i in test]
-            # concatenate the context embeddings and the PMI embeddings
-            train_in, test_in = np.hstack([g.graph_embedding_matrix[train_rows], train_in]), np.hstack([g.graph_embedding_matrix[test_rows], test_in])
+            train_in, test_in = g.graph_embedding_matrix[train_rows], g.graph_embedding_matrix[test_rows]
+            train_out, test_out = attr_indicator[training], attr_indicator[test]
 
             # train and predict
             print("\nTraining %d random forest trees.." % num_rf_trees)

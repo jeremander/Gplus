@@ -137,6 +137,7 @@ def main():
 
             sys.stdout.flush()  # flush the output buffer
 
+
         # compute means and standard errors over all the samples
         agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_gnb_prec', 'stderr_gnb_prec'])
         agg_precision_df['mean_rfc_prec'] = rfc_precision_df.mean(axis = 1)

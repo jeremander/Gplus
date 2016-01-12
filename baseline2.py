@@ -3,13 +3,16 @@
 import optparse
 import matplotlib.pyplot as plt
 from gplus import *
-from sklearn.ensemble import RandomForestClassifier
+from ssvn import *
+from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
 from sklearn.linear_model import LogisticRegression
+from skrvm import RVC
 
 topN_save = 1000
 topN_plot = 500
 
-num_trees = 100  # number of trees in random forest
+num_rf_trees = 100  # number of trees in random forest
+num_boost_trees = 100  # number of trees in AdaBoost
 
 def main():
     p = optparse.OptionParser()
@@ -59,9 +62,11 @@ def main():
         attr_indicator = a.get_attribute_indicator(attr, attr_type)
 
         # prepare the classifiers
-        rfc = RandomForestClassifier(n_estimators = num_trees, n_jobs = jobs)
+        rfc = RandomForestClassifier(n_estimators = num_rf_trees, n_jobs = jobs)
+        boost = AdaBoostClassifier(n_estimators = num_boost_trees)
         logreg = LogisticRegression(n_jobs = jobs)
         rfc_precision_df = pd.DataFrame(columns = range(num_samples))
+        boost_precision_df = pd.DataFrame(columns = range(num_samples))
         logreg_precision_df = pd.DataFrame(columns = range(num_samples))
 
         for s in range(num_samples):
@@ -75,24 +80,39 @@ def main():
             train_out, test_out = attr_indicator[training], attr_indicator[test]
 
             # train and predict
-            print("\nTraining %d random forests..." % num_trees)
+            print("\nTraining %d random forest trees.." % num_rf_trees)
             timeit(rfc.fit)(train_in, train_out)
             print("\nPredicting probabilities...")
             probs_rfc = timeit(rfc.predict_proba)(test_in)[:, 1]
+
+            print("\nTraining %d AdaBoost trees..." % num_boost_trees)
+            timeit(boost.fit)(train_in, train_out)
+            print("\nPredicting probabilities...")
+            probs_boost = timeit(boost.predict_proba)(test_in)[:, 1]
 
             print("\nTraining logistic regression...")
             timeit(logreg.fit)(train_in, train_out)
             print("\nPredicting probabilities...")
             probs_logreg = timeit(logreg.predict_proba)(test_in)[:, 1]
 
-            test_df = pd.DataFrame(columns = ['test', 'probs_rfc', 'probs_logreg'])
+            # M = np.vstack([train_in, test_in])
+            # output = pd.concat([train_out, test_out])
+            # output.iloc[2 * num_train_each : ] = -1  
+            # observe = list(output)
+            # print("Performing semi-supervised kMeans...")
+            # nom = timeit(nominate_from_embedding)(M, observe, k)
+
+            test_df = pd.DataFrame(columns = ['test', 'probs_rfc', 'probs_boost', 'probs_logreg'])
             test_df['test'] = test_out
             test_df['probs_rfc'] = probs_rfc
+            test_df['probs_boost'] = probs_boost
             test_df['probs_logreg'] = probs_logreg
 
             # do vertex nomination
             test_df = test_df.sort_values(by = 'probs_rfc', ascending = False)
             rfc_precision_df[s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test_out) + 1.0)
+            test_df = test_df.sort_values(by = 'probs_boost', ascending = False)
+            boost_precision_df[s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test_out) + 1.0)
             test_df = test_df.sort_values(by = 'probs_logreg', ascending = False)
             logreg_precision_df[s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test_out) + 1.0)
 
@@ -119,6 +139,8 @@ def main():
         rfc_plot, = plt.plot(agg_precision_df.index, agg_precision_df['mean_rfc_prec'], color = 'green', linewidth = 2, label = 'Random Forest')
         plt.fill_between(agg_precision_df.index, agg_precision_df['mean_logreg_prec'] - 2 * agg_precision_df['stderr_logreg_prec'], agg_precision_df['mean_logreg_prec'] + 2 * agg_precision_df['stderr_logreg_prec'], color = 'red', alpha = 0.25)
         logreg_plot, = plt.plot(agg_precision_df.index, agg_precision_df['mean_logreg_prec'], color = 'red', linewidth = 2, label = 'Logistic Regression')
+        # plt.fill_between(agg_precision_df.index, agg_precision_df['mean_rvc_prec'] - 2 * agg_precision_df['stderr_rvc_prec'], agg_precision_df['mean_rvc_prec'] + 2 * agg_precision_df['stderr_rvc_prec'], color = 'orange', alpha = 0.25)
+        # rvc_plot, = plt.plot(agg_precision_df.index, agg_precision_df['mean_rvc_prec'], color = 'orange', linewidth = 2, label = 'Relevance Vector Machine')
 
         guess_rate = num_true_in_test / num_test
         guess, = plt.plot([guess_rate for i in range(N_plot)], linestyle = 'dashed', linewidth = 2, color = 'black', label = 'Guess')

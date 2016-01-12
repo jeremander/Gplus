@@ -18,7 +18,7 @@ def nominate_from_adjacency(A, observe, k, d = None):
     k: number of classes
     d: (optional) dimension for embedding
     """
-    observe = [val if val in range(k + 1) else -1 for val in observe ]
+    observe = [int(val) if int(val) in range(k + 1) else -1 for val in observe]
     try:
         r = np.random.randint(1 << 32)
         tmp_script = os.getcwd() + ('/tmp%d.m' % r)
@@ -47,7 +47,7 @@ def nominate_from_adjacency(A, observe, k, d = None):
 
 def nominate_from_embedding(M, observe, k):
     """Python interface to Jordan's ssVN code. Parameters are as in nominate_from_adjacency, except an (n x d) embedding matrix M is provided instead of the adjacency matrix."""
-    observe = [val if val in range(k + 1) else -1 for val in observe ]
+    observe = [int(val) if int(val) in range(k + 1) else -1 for val in observe]
     try:
         r = np.random.randint(1 << 32)
         tmp_script = os.getcwd() + ('/tmp%d.m' % r)

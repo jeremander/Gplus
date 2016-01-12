@@ -419,7 +419,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                     self.char_cvs[attr_type] = CountVectorizer('content', analyzer = 'char', max_features = self.max_count_features)
                     self.char_features[attr_type] = csr_matrix(self.char_cvs[attr_type].fit_transform(attrs), dtype = float)
             timeit(make_vectorizers)()
-        if save:
+        if (save and (not did_load)):
             timeit(save_object)((self.word_cvs, self.char_cvs), self.folder, obj_name, 'pickle')
     def node_to_attr_vec(self, index, attr_type):
         """Given a node index and an attribute type, returns the vector (as csr_matrix) obtained from the word/char counts for all attributes of that type. If the node possesses no attributes, this is the zero vector. If it possesses more than one attribute, returns the mean of the attribute vectors."""
@@ -474,44 +474,59 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
             def make_mat():
                 self.complete_feature_matrix = self.get_features_for_nodes(range(self.num_vertices), self.attr_types).tocsr()
             timeit(make_mat)()
-        if save:
+        if (save and (not did_load)):
             timeit(save_object)(self.complete_feature_matrix, self.folder, obj_name, 'pickle')
-    def make_complete_embedding_matrix(self, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, load = True, save = False):
-        """Makes full matrix of feature embeddings based on PMI similarities (saved off as matrix files). Rows are nodes, columns are features, grouped into blocks for each attribute type."""
-        obj_name = '%s_%s_delta%s_k%d_complete_embedding_matrix' % (sim, embedding, str(delta), k)
+    def make_attr_embedding_matrix(self, attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = True, load = True, save = False):
+        """Makes matrix of feature embeddings for a given attribute type based on PMI similarities (saved off as matrix files). Rows are nodes, columns are features. Rows correspond to only the nodes that have at least one attribute."""
+        obj_name = '%s_%s_%s_delta%s_k%d%s_complete_embedding_matrix' % (attr_type, sim, embedding, str(delta), k, '_normalized' if sphere else '')
         did_load = False
         if load:
             try:
-                self.complete_embedding_matrix = timeit(load_object)(self.folder, obj_name, 'pickle')
+                if (not hasattr(self, 'attr_embedding_matrices')):
+                    self.attr_embedding_matrices = dict()
+                self.attr_embedding_matrices[attr_type] = timeit(load_object)(self.folder, obj_name, 'pickle')
                 did_load = True
             except:
                 print("\nCould not load %s from file." % obj_name)
         if (not did_load):
-            shape = (self.num_vertices, len(self.attr_types) * k)
-            embedding_matrix_blocks = []  # list of partial matrices by attribute type
-            for attr_type in self.attr_types:
-                feature_filename = self.folder + '/PMI/%s_%s_%s_delta%s_k%d_features.csv' % (attr_type, sim, embedding, str(delta), k)
-                print("\nLoading features from %s..." % feature_filename)
-                feature_mat = timeit(np.loadtxt)(feature_filename, delimiter = ',')
-                self.load_pairwise_freq_analyzer(attr_type)
-                pfa = self.pairwise_freq_analyzers[attr_type]
-                (attr_indices, attr_vocab) = get_attr_indices(pfa)
-                assert (len(attr_indices) == feature_mat.shape[0])  # confirm the features match
-                index_by_vocab = dict((v, i) for (i, v) in enumerate(attr_vocab))  # want matrix indices for each attribute
-                block = lil_matrix((self.num_vertices, k))
-                attrs_by_node = self.attrs_by_node_by_type[attr_type]
-                for i in range(self.num_vertices):
-                    attrs = attrs_by_node[i]
-                    if (len(attrs) > 0):
-                        row = np.zeros(k, dtype = float)  # compute average feature vector
-                        for attr in attrs:
-                            row += feature_mat[index_by_vocab[attr]]
-                        row /= len(attrs)
-                        block[i] = row
-                embedding_matrix_blocks.append(block)
-                self.complete_embedding_matrix = hstack(embedding_matrix_blocks).tocsr()
-        if save:
-            timeit(save_object)(self.complete_embedding_matrix, self.folder, obj_name, 'pickle')
+            shape = (self.num_vertices, k)
+            feature_filename = self.folder + '/PMI/%s_%s_%s_delta%s_k%d_features.pickle' % (attr_type, sim, embedding, str(delta), k)
+            print("\nLoading features from %s..." % feature_filename)
+            feature_mat = timeit(pickle.load)(open(feature_filename, 'rb'))
+            if sphere:
+                print("\nNormalizing feature vectors...")
+                timeit(normalize_mat_rows)(feature_mat)
+            self.load_pairwise_freq_analyzer(attr_type)
+            pfa = self.pairwise_freq_analyzers[attr_type]
+            (attr_indices, attr_vocab) = get_attr_indices(pfa, self.attributed_nodes)
+            assert (len(attr_indices) == feature_mat.shape[0])  # confirm the features match
+            index_by_vocab = dict((v, i) for (i, v) in enumerate(attr_vocab))  # matrix indices for each attribute
+            mat = np.zeros((len(self.attributed_nodes), k), dtype = float)
+            attrs_by_node = self.attrs_by_node_by_type[attr_type]
+            ctr = 0
+            for i in range(self.num_vertices):
+                attrs = attrs_by_node[i]
+                if (len(attrs) > 0):
+                    row = np.zeros(k, dtype = float)  # compute average feature vector
+                    for attr in attrs:
+                        row += feature_mat[index_by_vocab[attr]]
+                    row /= len(attrs)
+                else:
+                    try:
+                        row = feature_mat[index_by_vocab['*???*_%d' % i]]
+                    except KeyError:
+                        continue
+                if sphere:
+                    row /= np.linalg.norm(row)  # normalize to sphere
+                mat[ctr] = row
+                ctr += 1
+            self.attr_embedding_matrices[attr_type] = mat
+        if (save and (not did_load)):
+            timeit(save_object)(self.attr_embedding_matrices[attr_type], self.folder, obj_name, 'pickle')
+    def make_attr_embedding_matrices(self, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = True, load = True, save = False):
+        """Makes matrices of feature embeddings for all attribute types. Rows correspond to only the nodes that have at least one attribute."""
+        for attr_type in self.attr_types:
+            self.make_attr_embedding_matrix(attr_type, sim, embedding, delta, k, sphere, load, save)
     @timeit
     def PCA_embedding_matrix(self, attr_types, n_components, normalize = True, seed = None):
         """Extracts submatrix of the embedding matrix corresponding to the desired attribute types, then uses PCA to reduce the number of columns to n_components."""

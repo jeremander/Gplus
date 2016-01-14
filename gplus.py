@@ -124,7 +124,7 @@ class Gplus(ig.Graph, ObjectWithReadwriteProperties):
                 regnormlap = SparseRegularizedNormalizedLaplacian(A)
                 (eigvals, features) = timeit(eigsh)(regnormlap, k = k, tol = tol)
             self.graph_embedding_matrix = features[self.attributed_nodes, :]
-        if save:
+        if (save and (not did_load)):
             if plot:
                 scree_plot(eigvals, show = False, filename = '%s/%s_k%d_graph_screeplot' % (self.folder.replace('data', 'plots'), embedding, k))
             np.savetxt('%s/%s_k%d_graph_eigvals.csv' % (self.folder, embedding, k), eigvals, delimiter = ',')

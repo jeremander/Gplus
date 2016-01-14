@@ -1,15 +1,16 @@
 import subprocess
+import os.path
 import pandas as pd 
 
 selected_attrs = pd.read_csv('selected_attrs.csv')
 
 n_vals = [50, 100, 200, 400, 800, 1600]
 embedding_vals = ['adj']
-k_vals = [200]
+k_vals = [50, 100, 200]
 sphere_vals = [True]
 
 num_samples = 50
-jobs = 1
+jobs = 4
 folder = 'gplus0_lcc/baseline4/'
 
 

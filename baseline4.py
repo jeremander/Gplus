@@ -65,7 +65,7 @@ def main():
 
         g = Gplus()
         print("\nLoading graph embedding...")
-        g.make_graph_embedding_matrix(embedding = embedding, k = k, tol = None, plot = False, load = True, save = False)
+        g.make_graph_embedding_matrix(embedding = embedding, k = k, tol = None, plot = False, load = True, save = True)
 
         if sphere:
             print("\nNormalizing feature vectors...")
@@ -96,11 +96,10 @@ def main():
             np.random.seed(s)
             print("\nObtaining feature vectors for random training and test sets...")
             ((train_in, train_out), (test_in, test_out)) = timeit(a.get_PMI_training_and_test)(attr, attr_type, num_train_each)
-            training = sorted(list(train_out.index) + list(test_out.index))
+            training = list(train_out.index)
             test = list(test_out.index)
             train_rows, test_rows = [nodes_to_rows[i] for i in training], [nodes_to_rows[i] for i in test]
-            train_in, test_in = g.graph_embedding_matrix[train_rows], g.graph_embedding_matrix[test_rows]
-            train_out, test_out = attr_indicator[training], attr_indicator[test]
+            train_in, test_in = np.hstack([g.graph_embedding_matrix[train_rows], train_in]), np.hstack([g.graph_embedding_matrix[test_rows], test_in])
 
             # train and predict
             print("\nTraining %d random forest trees..." % num_rf_trees)

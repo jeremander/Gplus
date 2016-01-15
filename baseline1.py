@@ -10,13 +10,18 @@ while (not done_import):
         from sklearn.naive_bayes import MultinomialNB
         from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
         from sklearn.linear_model import LogisticRegression
+        from collections import defaultdict
         done_import = True
     except:
         pass
 
+pd.options.display.max_rows = None
+pd.options.display.width = 1000
 
-topN_save = 1000
-topN_plot = 500
+topN_save = 1000    # number of precisions to save
+topN_plot = 500     # number of precisions to plot
+topN_nominees = 50  # number of nominees to include for top attribute analysis
+classifiers = ['rfc', 'boost', 'logreg', 'mnb']
 
 num_rf_trees = 100  # number of trees in random forest
 num_boost_trees = 100  # number of trees in AdaBoost
@@ -36,9 +41,10 @@ def main():
 
     folder = 'gplus0_lcc/baseline1/'
     agg_precision_filename = folder + '%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, num_train_each, max_count_features)
-    agg_feature_importances_filename = folder + '%s_%s_n%d_m%d_feature_importances.csv' % (attr_type, attr, num_train_each, max_count_features)
-    agg_word_importances_filename = folder + '%s_%s_n%d_m%d_word_importances.csv' % (attr_type, attr, num_train_each, max_count_features)
+    agg_feature_importances_filename = folder + '%s_%s_n%d_m%d_feature_importances.txt' % (attr_type, attr, num_train_each, max_count_features)
+    agg_word_importances_filename = folder + '%s_%s_n%d_m%d_word_importances.txt' % (attr_type, attr, num_train_each, max_count_features)
     plot_filename = folder + '%s_%s_n%d_m%d_precision.png' % (attr_type, attr, num_train_each, max_count_features)
+    top_attrs_filename = folder + '%s_%s_n%d_m%d_top_attrs.txt' % (attr_type, attr, num_train_each, max_count_features)
 
     print("\nNominating nodes with whose '%s' attribute is '%s' (%d pos/neg seeds)..." % (attr_type, attr, num_train_each))
     print("\nLoading AttributeAnalyzer...")
@@ -94,6 +100,9 @@ def main():
         feature_importances_df['attributeType'] = attr_type_col
         feature_importances_df['word/char'] = word_char_col
 
+        # maintain top nominee attributes dictionary
+        top_attrs = defaultdict(float)
+
         for s in range(num_samples):
             print("\nSEED = %d" % s)
             np.random.seed(s)
@@ -138,13 +147,24 @@ def main():
             test_df = test_df.sort_values(by = 'probs_mnb', ascending = False)
             mnb_precision_df[s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test_out) + 1.0)
 
+            # determine top attributes
+            best_i, best_prec = -1, -1.0
+            for (i, prec_series) in enumerate([rfc_precision_df[s], boost_precision_df[s], logreg_precision_df[s], mnb_precision_df[s]]):
+                if (prec_series[topN_nominees - 1] > best_prec):
+                    best_i, best_prec = i, prec_series[topN_nominees - 1]
+            test_df = test_df.sort_values(by = 'probs_%s' % classifiers[i], ascending = False)
+            for node in test_df.index[:topN_nominees]:
+                attrs = a.attrs_by_node_by_type[attr_type][node]
+                for at in attrs:
+                    top_attrs[at] += 1.0 / len(attrs)  # divide the vote equally among all attributes
+
             # collate the feature importance scores from the random forest
             feature_importances_df[s] = rfc.feature_importances_
 
             sys.stdout.flush()  # flush the output buffer
 
         # compute means and standard errors over all the samples
-        agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_mnb_prec', 'stderr_mnb_prec'])
+        agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_mnb_prec', 'stderr_mnb_prec', 'max_mean_prec'])
         agg_precision_df['mean_rfc_prec'] = rfc_precision_df.mean(axis = 1)
         agg_precision_df['stderr_rfc_prec'] = rfc_precision_df.std(axis = 1) / sqrt_samples
         agg_precision_df['mean_boost_prec'] = boost_precision_df.mean(axis = 1)
@@ -153,6 +173,7 @@ def main():
         agg_precision_df['stderr_logreg_prec'] = logreg_precision_df.std(axis = 1) / sqrt_samples
         agg_precision_df['mean_mnb_prec'] = mnb_precision_df.mean(axis = 1)
         agg_precision_df['stderr_mnb_prec'] = mnb_precision_df.std(axis = 1) / sqrt_samples
+        agg_precision_df['max_mean_prec'] = agg_precision_df[['mean_rfc_prec', 'mean_boost_prec', 'mean_logreg_prec', 'mean_mnb_prec']].max(axis = 1)
         agg_feature_importances_df = pd.DataFrame(columns = ['attributeType', 'word/char', 'mean_feature_importances', 'std_feature_importances'])
         agg_feature_importances_df['attributeType'] = feature_importances_df['attributeType']
         agg_feature_importances_df['word/char'] = feature_importances_df['word/char']
@@ -166,8 +187,14 @@ def main():
         agg_precision_df = agg_precision_df[:N_save]
 
         agg_precision_df.to_csv(agg_precision_filename, index = False)
-        agg_feature_importances_df.to_csv(agg_feature_importances_filename, index = True, sep = '\t')
-        agg_word_importances_df.to_csv(agg_word_importances_filename, index = True, sep = '\t')
+        open(agg_feature_importances_filename, 'w').write(str(agg_feature_importances_df))
+        open(agg_word_importances_filename, 'w').write(str(agg_word_importances_df))
+
+        top_attrs_df = pd.DataFrame(list(top_attrs.items()), columns = ['attribute', 'voteProportion'])
+        top_attrs_df = top_attrs_df.set_index('attribute')
+        top_attrs_df['voteProportion'] /= top_attrs_df['voteProportion'].sum()
+        top_attrs_df = top_attrs_df.sort_values(by = 'voteProportion', ascending = False)
+        open(top_attrs_filename, 'w').write(str(top_attrs_df))
 
         num_true_in_test = test_out.sum()
         num_test = len(test_out)

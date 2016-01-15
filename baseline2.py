@@ -10,12 +10,18 @@ while (not done_import):
         from sklearn.naive_bayes import GaussianNB
         from sklearn.ensemble import RandomForestClassifier, AdaBoostClassifier
         from sklearn.linear_model import LogisticRegression
+        from collections import defaultdict
         done_import = True
     except:
         pass
 
-topN_save = 1000
-topN_plot = 500
+pd.options.display.max_rows = None
+pd.options.display.width = 1000
+
+topN_save = 1000    # number of precisions to save
+topN_plot = 500     # number of precisions to plot
+topN_nominees = 50  # number of nominees to include for top attribute analysis
+classifiers = ['rfc', 'boost', 'logreg', 'gnb']
 
 num_rf_trees = 100  # number of trees in random forest
 num_boost_trees = 100  # number of trees in AdaBoost
@@ -38,6 +44,7 @@ def main():
     folder = 'gplus0_lcc/baseline2/'
     agg_precision_filename = folder + '%s_%s_n%d_%s_k%d%s_precision.csv' % (attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else '')
     plot_filename = folder + '%s_%s_n%d_%s_k%d%s_precision.png' % (attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else '')
+    top_attrs_filename = folder + '%s_%s_n%d_%s_k%d%s_top_attrs.txt' % (attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else '')
 
     print("\nNominating nodes with whose '%s' attribute is '%s' (%d pos/neg seeds)..." % (attr_type, attr, num_train_each))
     print("\nLoading AttributeAnalyzer...")
@@ -81,6 +88,9 @@ def main():
         boost_precision_df = pd.DataFrame(columns = range(num_samples))
         logreg_precision_df = pd.DataFrame(columns = range(num_samples))
         gnb_precision_df = pd.DataFrame(columns = range(num_samples))
+
+        # maintain top nominee attributes dictionary
+        top_attrs = defaultdict(float)
 
         for s in range(num_samples):
             print("\nSEED = %d" % s)
@@ -130,10 +140,21 @@ def main():
             test_df = test_df.sort_values(by = 'probs_gnb', ascending = False)
             gnb_precision_df[s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test_out) + 1.0)
 
+            # determine top attributes
+            best_i, best_prec = -1, -1.0
+            for (i, prec_series) in enumerate([rfc_precision_df[s], boost_precision_df[s], logreg_precision_df[s], gnb_precision_df[s]]):
+                if (prec_series[topN_nominees - 1] > best_prec):
+                    best_i, best_prec = i, prec_series[topN_nominees - 1]
+            test_df = test_df.sort_values(by = 'probs_%s' % classifiers[i], ascending = False)
+            for node in test_df.index[:topN_nominees]:
+                attrs = a.attrs_by_node_by_type[attr_type][node]
+                for at in attrs:
+                    top_attrs[at] += 1.0 / len(attrs)  # divide the vote equally among all attributes
+
             sys.stdout.flush()  # flush the output buffer
 
         # compute means and standard errors over all the samples
-        agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_gnb_prec', 'stderr_gnb_prec'])
+        agg_precision_df = pd.DataFrame(columns = ['mean_rfc_prec', 'stderr_rfc_prec', 'mean_boost_prec', 'stderr_boost_prec', 'mean_logreg_prec', 'stderr_logreg_prec', 'mean_gnb_prec', 'stderr_gnb_prec', 'max_mean_prec'])
         agg_precision_df['mean_rfc_prec'] = rfc_precision_df.mean(axis = 1)
         agg_precision_df['stderr_rfc_prec'] = rfc_precision_df.std(axis = 1) / sqrt_samples
         agg_precision_df['mean_boost_prec'] = boost_precision_df.mean(axis = 1)
@@ -142,12 +163,19 @@ def main():
         agg_precision_df['stderr_logreg_prec'] = logreg_precision_df.std(axis = 1) / sqrt_samples
         agg_precision_df['mean_gnb_prec'] = gnb_precision_df.mean(axis = 1)
         agg_precision_df['stderr_gnb_prec'] = gnb_precision_df.std(axis = 1) / sqrt_samples
+        agg_precision_df['max_mean_prec'] = agg_precision_df[['mean_rfc_prec', 'mean_boost_prec', 'mean_logreg_prec', 'mean_gnb_prec']].max(axis = 1)
 
         # save the aggregate data frames
         N_save = min(len(test_out), topN_save)
         agg_precision_df = agg_precision_df[:N_save]
 
         agg_precision_df.to_csv(agg_precision_filename, index = False)
+
+        top_attrs_df = pd.DataFrame(list(top_attrs.items()), columns = ['attribute', 'voteProportion'])
+        top_attrs_df = top_attrs_df.set_index('attribute')
+        top_attrs_df['voteProportion'] /= top_attrs_df['voteProportion'].sum()
+        top_attrs_df = top_attrs_df.sort_values(by = 'voteProportion', ascending = False)
+        open(top_attrs_filename, 'w').write(str(top_attrs_df))
 
         num_true_in_test = test_out.sum()
         num_test = len(test_out)

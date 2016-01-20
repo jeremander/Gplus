@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import louvain
 import tempfile
 import string
+import sys
 from importlib import reload
 from collections import defaultdict
 from sklearn.feature_extraction.text import CountVectorizer
@@ -14,6 +15,11 @@ from scipy.sparse import *
 from autoreadwrite import *
 from ggplot import *
 from linop import *
+
+def print_flush(s):
+    """Prints a string, then flushes the stdout buffer."""
+    print(s)
+    sys.stdout.flush()
 
 def unescape(val, tabs = False):
     """Represent a string in unescaped form. If tabs = False, replaces tabs with spaces."""

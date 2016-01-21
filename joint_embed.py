@@ -59,7 +59,8 @@ def make_block(attr_analyzer, attrs_to_nodes, attr_type1, attr_type2, sim = 'NPM
                 for v2 in connected_attrs2:
                     nodes2 = nodes_by_attr2[v2]
                     block[i, pfa2.vocab_indices[v2]] = len(nodes1.intersection(nodes2)) / float(len(nodes1.union(nodes2)))
-    return SparseLinearOperator(block.tocsr())
+        block = SparseLinearOperator(block.tocsr())
+    return block
 
 def make_joint_embedding_operator(attr_analyzer, attrs_to_nodes, included_attr_types, sim = 'NPMI1s', delta = 0.0):
     """Makes the joint embedding operator for three of the four attribute types. This has three diagonal blocks corresponding to the PMI operators for each attribute type, and off-diagonal blocks corresponding to the Jaccard similarity between the attributes of different types (where each attribute is identified with a set of nodes)."""
@@ -110,25 +111,21 @@ def main():
     plot_folder = 'gplus0_lcc/plots/PMI/joint/'
     file_prefix1 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d' % k)
 
-    print_flush("\nLoading AttributeAnalyzer...")
-    a = AttributeAnalyzer()
-    for at in other_attr_types:
-        a.load_pairwise_freq_analyzer(at)
-    a.make_attrs_by_node_by_type()
-    n = sum([a.pairwise_freq_analyzers[at].num_vocab for at in other_attr_types])
-    tol = (1.0 / n) if (tol is None) else tol  # use 1/n instead of machine precision as default tolerance
-
-    print_flush("\nLoading AttrsToNodes...")
-    atn = AttrsToNodes()
-    atn.make_nodes_by_attr_by_type(load = True, save = False)
-
     try:
         print_flush("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
         eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
-        print_flush("\nLoading embedded features from '%s%s_features_by_attr_type.pickle'..." % (data_folder, file_prefix1))
-        features_by_attr_type = pickle.load(open('%s%s_features_by_attr_type.pickle' % (data_folder, file_prefix1), 'rb'))
     except FileNotFoundError:
         print_flush("Failed to load.")
+        print_flush("\nLoading AttributeAnalyzer...")
+        a = AttributeAnalyzer()
+        for at in other_attr_types:
+            a.load_pairwise_freq_analyzer(at)
+        a.make_attrs_by_node_by_type()
+        n = sum([a.pairwise_freq_analyzers[at].num_vocab for at in other_attr_types])
+        tol = (1.0 / n) if (tol is None) else tol  # use 1/n instead of machine precision as default tolerance
+        print_flush("\nLoading AttrsToNodes...")
+        atn = AttrsToNodes()
+        atn.make_nodes_by_attr_by_type(load = True, save = False)
         print_flush("\nComputing joint similarity operator (%s)..." % sim)
         joint_op = make_joint_embedding_operator(a, atn, other_attr_types, sim = sim, delta = delta)
         matrix_type = 'adjacency' if (embedding == 'adj') else ('normalized Laplacian' if (embedding == 'normlap') else 'regularized normalized Laplacian')

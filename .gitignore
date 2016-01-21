@@ -1,6 +1,7 @@
 __pycache__/
 attributes/
 data/
+gplus0_lcc/data/
 *.py[cod]
 *$py.class
 *.so

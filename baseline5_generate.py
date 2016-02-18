@@ -6,18 +6,18 @@ selected_attrs = pd.read_csv('selected_attrs.csv')
 
 n_vals = [50, 100, 200, 400, 800, 1600]
 embedding_vals = ['adj']
-k_vals = [50, 200]
-sphere_vals = [False, True]
+k_vals = [50]
+sphere_vals = [True]
 
 num_samples = 50
 jobs = 1
 memory = 16  # number of GB
 folder = 'gplus0_lcc/baseline5/'
 
-plot = False        # convert csv to png (but only if csv exists)
+plot = True        # convert csv to png (but only if csv exists)
 write = True        # write csv's that do not exist
 overwrite = False   # rewrite csv's that already exist
-grid = True         # issue the generation commands in parallel on the grid
+grid = False        # issue the generation commands in parallel on the grid
 
 assert (not (overwrite and (not write)))
 assert (not (plot and grid))

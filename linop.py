@@ -130,8 +130,8 @@ class BlockSparseLinearOperator(SparseLinearOperator):
         return (self.block_grid,)
 
 
-test1 = SymmetricSparseLinearOperator(csr_matrix(np.array([[1.,2.],[2.,3.]])))
-test2 = SparseLinearOperator(csr_matrix(np.array([[1.,0,0,0],[0,1,0,0]])))
-zeros = SymmetricSparseLinearOperator(csr_matrix(np.zeros((4, 4), dtype = float)))
-test3 = BlockSparseLinearOperator([[test1, test2], [test2.transpose(), zeros]])
+# test1 = SymmetricSparseLinearOperator(csr_matrix(np.array([[1.,2.],[2.,3.]])))
+# test2 = SparseLinearOperator(csr_matrix(np.array([[1.,0,0,0],[0,1,0,0]])))
+# zeros = SymmetricSparseLinearOperator(csr_matrix(np.zeros((4, 4), dtype = float)))
+# test3 = BlockSparseLinearOperator([[test1, test2], [test2.transpose(), zeros]])
 

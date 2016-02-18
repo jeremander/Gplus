@@ -575,14 +575,14 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                             row = feature_mat[index_by_vocab['*???*_%d' % i]]
                         except KeyError:
                             continue
-                    if sphere:  # should we normalize here, or after stacking?
-                        row /= np.linalg.norm(row)  # normalize to sphere
+                    # if sphere:  # should we normalize here, or after stacking?
+                    #     row /= np.linalg.norm(row)  # normalize to sphere
                     mat[ctr] = row
                     ctr += 1
                 self.joint_embedding_matrix[:, j * k : (j + 1) * k] = mat
-            # if sphere:
-            #     print("\nNormalizing joint embedding...")
-            #     timeit(normalize_mat_rows)(self.joint_embedding_matrix)
+            if sphere:
+                print("\nNormalizing joint embedding...")
+                timeit(normalize_mat_rows)(self.joint_embedding_matrix)
         self.excluded_attr_type = excluded_attr_type
         if (save and (not did_load)):
             timeit(save_object)(self.joint_embedding_matrix, self.folder, obj_name, 'pickle')

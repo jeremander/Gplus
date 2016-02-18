@@ -16,7 +16,7 @@ baselines = [1, 2, 3, 4]
 assert (1 in baselines)
 
 #colors = ['#FF7E75', '#E5CD2E', '#10CA48', '#10CFD4']
-colors = ['#e41a1c', '#eecd2e', '#4daf4a', '#377eb8']
+colors = ['#e41a1c', '#eecd2e', '#4daf4a', '#377eb8', 'purple']
 
 
 def main():
@@ -37,7 +37,7 @@ def main():
     axes = [ax0, ax1, ax2, ax3]
 
     for (ctr, attr_type) in enumerate(attr_types):
-        #print(attr_type)
+        print(attr_type)
         attrs_for_type = selected_attrs[selected_attrs['attributeType'] == attr_type]
 
         results_df = pd.DataFrame()
@@ -47,7 +47,7 @@ def main():
             results_df[rank] = np.zeros(len(baselines) * len(ns), dtype = int)
 
         for (i, n) in enumerate(ns):
-            for (attr, freq) in zip(attrs_for_type['attribute'], attrs_for_type['freq']):
+            for (attr, freq) in zip(attrs_for_type['attribute'], attrs_for_tydpe['freq']):
                 if (2 * n <= freq):
                     max_mean_prec_df = pd.DataFrame(columns = [('baseline%d' % i) for i in range(1, 5)])
                     for j in baselines:
@@ -72,18 +72,17 @@ def main():
         plot = axes[ctr].bar(range(len(ranks)), results_agg_df.loc['baseline1'], width = width, color = colors[0])
         plots.append(plot)
         cumsums = deepcopy(np.asarray(results_agg_df.loc['baseline1']))
-        for j in range(2, 5):
-            if (j in baselines):
-                plot = axes[ctr].bar(range(len(ranks)), results_agg_df.loc['baseline%d' % j], width = width, bottom = cumsums, color = colors[j - 1])
-                plots.append(plot)
-                cumsums += np.asarray(results_agg_df.loc['baseline%d' % j])
+        for j in baselines[1:]:
+            plot = axes[ctr].bar(range(len(ranks)), results_agg_df.loc['baseline%d' % j], width = width, bottom = cumsums, color = colors[j - 1])
+            plots.append(plot)
+            cumsums += np.asarray(results_agg_df.loc['baseline%d' % j])
         axes[ctr].set_xlim((-0.5, len(ranks)))
         axes[ctr].set_title(attr_type.replace('_', ' '))
 
     plt.setp(axes, xticks = ind + width / 2, xticklabels = results_agg_df.columns, yticks = np.arange(0, 35, 5))
     fig.text(0.5, 0.04, 'rank', ha = 'center', fontsize = 14)
     fig.text(0.07, 0.5, 'wins', va = 'center', rotation = 'vertical', fontsize = 14)
-    plt.figlegend(plots, ['content', 'context', 'NPMI', 'NPMI+context'], 'center')
+    plt.figlegend(plots, ['content', 'context', 'NPMI', 'NPMI+context', 'joint NPMI'], 'center')
     plt.suptitle("Relative performance of baselines", fontsize = 16, fontweight = 'bold')
     plt.subplots_adjust(wspace = 0.64, hspace = 0.58)
     for ax in axes:

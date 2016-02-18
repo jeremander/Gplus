@@ -9,7 +9,9 @@ from ggplot import *
 
 
 #colors = ['#000000', '#FF7E75', '#E5CD2E', '#10CA48', '#10CFD4']
-colors = ['#000000', '#e41a1c', '#eecd2e', '#4daf4a', '#377eb8']
+colors = ['#000000', '#e41a1c', '#eecd2e', '#4daf4a', '#377eb8', 'purple']
+
+baselines = [1, 2, 3, 4, 5]
 
 def main():
     p = optparse.OptionParser()
@@ -29,7 +31,7 @@ def main():
 
     max_mean_prec_df = pd.DataFrame(columns = ['rank'] + [('baseline%d' % i) for i in range(1, 5)])
 
-    for i in range(1, 5):
+    for i in baselines:
         if (i == 1):
             df = pd.read_csv('gplus0_lcc/baseline1/%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, num_train_each, max_count_features))
         else:
@@ -50,7 +52,7 @@ def main():
     plots.append(ax.plot(max_mean_prec_df.index, max_mean_prec_df['guess'], color = colors[0], linewidth = 4, linestyle = 'dashed')[0])
     plots[-1].set_dash_capstyle('projecting')
     axes.append(plt.gca())
-    for i in range(1, 5):
+    for i in baselines:
         plots.append(ax.plot(max_mean_prec_df.index, max_mean_prec_df['baseline%d' % i], color = colors[i], linewidth = 4)[0])
         axes.append(plt.gca())
     plt.xlabel('rank', fontsize = 14, labelpad = 8)
@@ -58,7 +60,7 @@ def main():
     plt.title("Best nomination precision\n%s: %s" % (attr_type.replace('_', ' '), attr), fontsize = 16, fontweight = 'bold', y = 1.02)
     plt.setp(axes, xticks = np.arange(0, N + 1, 100))#, yticks = np.arange(0, 1.1, 0.25))
     #plt.ylim((0.0, 1.0))
-    plt.legend(plots, ['guess', 'content', 'context', 'NPMI', 'NPMI+context'], loc = (1.01, 0.5))
+    plt.legend(plots, ['guess', 'content', 'context', 'NPMI', 'NPMI+context', 'joint NPMI'], loc = (1.01, 0.5))
     for a in axes:
         rstyle(a)
 

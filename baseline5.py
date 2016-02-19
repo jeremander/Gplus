@@ -71,7 +71,7 @@ def main():
     except OSError:
         print("\nLoading attribute data...")
         timeit(a.load_data)()
-        a.make_joint_attr_embedding_matrix(attr_type, sim = sim, embedding = embedding, delta = delta, k = k, sphere = sphere, load = True, save = True)
+        a.make_joint_attr_embedding_matrix(attr_type, sim = sim, embedding = embedding, delta = delta, k = k, sphere = 2 if sphere else 0)
 
         # get attribute indicator for all the nodes
         attr_indicator = a.get_attribute_indicator(attr, attr_type)

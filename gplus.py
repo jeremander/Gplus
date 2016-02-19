@@ -546,6 +546,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         if (sphere & 1):
             print_flush("\nNormalizing joint features...")
             timeit(normalize_mat_rows)(self.joint_embedding_matrix)
+        self.excluded_attr_type = excluded_attr_type
     def get_attribute_sample(self, attr, attr_type, n):
         """Selects a random n nodes with the given attribute, and a random n nodes without it. Returns a triple of index lists: first the n with the attribute, then the n without it, then the remaining unselected nodes whose attribute status is known."""
         ind = self.get_attribute_indicator(attr, attr_type)

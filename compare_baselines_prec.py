@@ -8,10 +8,18 @@ from rstyle import *
 from ggplot import *
 
 
-#colors = ['#000000', '#FF7E75', '#E5CD2E', '#10CA48', '#10CFD4']
-colors = ['#000000', '#e41a1c', '#eecd2e', '#4daf4a', '#377eb8', 'purple']
+all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 'purple']
+all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI']
+all_linestyles = ['solid', 'solid', 'solid', 'dashed', 'solid', 'solid', 'solid']
+all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5']
 
-baselines = [1, 2, 3, 4, 5]
+baseline_indices = [0, 1, 2, 3, 4, 5]
+colors = [all_colors[i] for i in baseline_indices]
+keys = [all_keys[i] for i in baseline_indices]
+linestyles = [all_linestyles[i] for i in baseline_indices]
+baselines = [all_baselines[i] for i in baseline_indices]
+
+
 
 def main():
     p = optparse.OptionParser()
@@ -29,14 +37,20 @@ def main():
 
     attr, attr_type, num_train_each, max_count_features, embedding, k, sphere, save, N = opts.attr, opts.attr_type, opts.num_train_each, opts.max_count_features, opts.embedding, opts.k, opts.sphere, opts.v, opts.N
 
-    max_mean_prec_df = pd.DataFrame(columns = ['rank'] + [('baseline%d' % i) for i in range(1, 5)])
+    max_mean_prec_df = pd.DataFrame(columns = ['rank'] + [('baseline%s' % b) for b in baselines])
 
-    for i in baselines:
-        if (i == 1):
+    for b in baselines:
+        if (b == '1'):
             df = pd.read_csv('gplus0_lcc/baseline1/%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, num_train_each, max_count_features))
+        elif (b[:2] == '12'):
+            df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_m%d_precision.csv' % (b, attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else '', max_count_features))
         else:
-            df = pd.read_csv('gplus0_lcc/baseline%d/%s_%s_n%d_%s_k%d%s_precision.csv' % (i, attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else ''))
-        max_mean_prec_df['baseline%d' % i] = df['max_mean_prec'][:N]
+            df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_precision.csv' % (b, attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else ''))
+            filename = 'gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_precision.csv' % (b, attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else '')
+            if ('max_mean_prec' not in df.columns):
+                df['max_mean_prec'] = df[['mean_rfc_prec', 'mean_boost_prec', 'mean_logreg_prec', 'mean_gnb_prec']].max(axis = 1)
+                df.to_csv(filename, index = False)
+        max_mean_prec_df['baseline%s' % b] = df['max_mean_prec'][:N]
 
     selected_attrs = pd.read_csv('selected_attrs.csv')
     row = selected_attrs[selected_attrs['attribute'] == attr].iloc[0]
@@ -49,18 +63,20 @@ def main():
     ax = fig.add_axes([0.1, 0.1, 0.7, 0.8])
     plots = []
     axes = []
-    plots.append(ax.plot(max_mean_prec_df.index, max_mean_prec_df['guess'], color = colors[0], linewidth = 4, linestyle = 'dashed')[0])
+    plots.append(ax.plot(max_mean_prec_df.index, max_mean_prec_df['guess'], color = 'black', linewidth = 4, linestyle = 'dashed')[0])
     plots[-1].set_dash_capstyle('projecting')
     axes.append(plt.gca())
-    for i in baselines:
-        plots.append(ax.plot(max_mean_prec_df.index, max_mean_prec_df['baseline%d' % i], color = colors[i], linewidth = 4)[0])
+    for (b, c, sty) in zip(baselines, colors, linestyles):
+        plots.append(ax.plot(max_mean_prec_df.index, max_mean_prec_df['baseline%s' % b], color = c, linestyle = sty, linewidth = 4)[0])
+        if (sty == 'dashed'):
+            plots[-1].set_dash_capstyle('projecting')
         axes.append(plt.gca())
     plt.xlabel('rank', fontsize = 14, labelpad = 8)
     plt.ylabel('precision', fontsize = 14, labelpad = 12)
     plt.title("Best nomination precision\n%s: %s" % (attr_type.replace('_', ' '), attr), fontsize = 16, fontweight = 'bold', y = 1.02)
     plt.setp(axes, xticks = np.arange(0, N + 1, 100))#, yticks = np.arange(0, 1.1, 0.25))
     #plt.ylim((0.0, 1.0))
-    plt.legend(plots, ['guess', 'content', 'context', 'NPMI', 'NPMI+context', 'joint NPMI'], loc = (1.01, 0.5))
+    plt.legend(plots, ['guess'] + keys, loc = (1.01, 0.5))
     for a in axes:
         rstyle(a)
 

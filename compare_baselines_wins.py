@@ -12,11 +12,17 @@ ns = [50, 100, 200, 400, 800, 1600]
 embedding = 'adj'
 attr_types = ['employer', 'major', 'places_lived', 'school']
 ranks = [25, 50, 100, 200, 400, 800]
-baselines = [1, 2, 3, 4]
-assert (1 in baselines)
 
-#colors = ['#FF7E75', '#E5CD2E', '#10CA48', '#10CFD4']
-colors = ['#e41a1c', '#eecd2e', '#4daf4a', '#377eb8', 'purple']
+all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 'purple']
+all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI']
+all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5']
+
+baseline_indices = [0, 1, 2, 3, 4, 5]
+colors = [all_colors[i] for i in baseline_indices]
+keys = [all_keys[i] for i in baseline_indices]
+baselines = [all_baselines[i] for i in baseline_indices]
+
+assert (baselines[0] == '1')
 
 
 def main():
@@ -41,21 +47,23 @@ def main():
         attrs_for_type = selected_attrs[selected_attrs['attributeType'] == attr_type]
 
         results_df = pd.DataFrame()
-        results_df['baseline'] = [('baseline%d' % j) for j in baselines] * len(ns)
-        results_df['n'] = list(itertools.chain(*[[n for j in baselines] for n in ns]))
+        results_df['baseline'] = [('baseline%s' % b) for b in baselines] * len(ns)
+        results_df['n'] = list(itertools.chain(*[[n for b in baselines] for n in ns]))
         for rank in ranks:
             results_df[rank] = np.zeros(len(baselines) * len(ns), dtype = int)
 
         for (i, n) in enumerate(ns):
-            for (attr, freq) in zip(attrs_for_type['attribute'], attrs_for_tydpe['freq']):
+            for (attr, freq) in zip(attrs_for_type['attribute'], attrs_for_type['freq']):
                 if (2 * n <= freq):
-                    max_mean_prec_df = pd.DataFrame(columns = [('baseline%d' % i) for i in range(1, 5)])
-                    for j in baselines:
-                        if (j == 1):
+                    max_mean_prec_df = pd.DataFrame(columns = [('baseline%s' % b) for b in baselines])
+                    for b in baselines:
+                        if (b == '1'):
                             df = pd.read_csv('gplus0_lcc/baseline1/%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, n, max_count_features))
+                        elif (b[:2] == '12'):
+                            df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_m%d_precision.csv' % (b, attr_type, attr, n, embedding, k, '_normalize' if sphere else '', max_count_features))
                         else:
-                            df = pd.read_csv('gplus0_lcc/baseline%d/%s_%s_n%d_%s_k%d%s_precision.csv' % (j, attr_type, attr, n, embedding, k, '_normalize' if sphere else ''))
-                        max_mean_prec_df['baseline%d' % j] = df['max_mean_prec']
+                            df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_precision.csv' % (b, attr_type, attr, n, embedding, k, '_normalize' if sphere else ''))
+                        max_mean_prec_df['baseline%s' % b] = df['max_mean_prec']
 
                     for rank in ranks:
                         (best_index, best_prec) = max(enumerate(max_mean_prec_df.loc[rank - 1]), key = lambda pair : pair[1])
@@ -72,24 +80,24 @@ def main():
         plot = axes[ctr].bar(range(len(ranks)), results_agg_df.loc['baseline1'], width = width, color = colors[0])
         plots.append(plot)
         cumsums = deepcopy(np.asarray(results_agg_df.loc['baseline1']))
-        for j in baselines[1:]:
-            plot = axes[ctr].bar(range(len(ranks)), results_agg_df.loc['baseline%d' % j], width = width, bottom = cumsums, color = colors[j - 1])
+        for (b, c) in zip(baselines[1:], colors[1:]):
+            plot = axes[ctr].bar(range(len(ranks)), results_agg_df.loc['baseline%s' % b], width = width, bottom = cumsums, color = c)
             plots.append(plot)
-            cumsums += np.asarray(results_agg_df.loc['baseline%d' % j])
+            cumsums += np.asarray(results_agg_df.loc['baseline%s' % b])
         axes[ctr].set_xlim((-0.5, len(ranks)))
         axes[ctr].set_title(attr_type.replace('_', ' '))
 
     plt.setp(axes, xticks = ind + width / 2, xticklabels = results_agg_df.columns, yticks = np.arange(0, 35, 5))
     fig.text(0.5, 0.04, 'rank', ha = 'center', fontsize = 14)
     fig.text(0.07, 0.5, 'wins', va = 'center', rotation = 'vertical', fontsize = 14)
-    plt.figlegend(plots, ['content', 'context', 'NPMI', 'NPMI+context', 'joint NPMI'], 'center')
+    plt.figlegend(plots, keys, 'center')
     plt.suptitle("Relative performance of baselines", fontsize = 16, fontweight = 'bold')
     plt.subplots_adjust(wspace = 0.64, hspace = 0.58)
     for ax in axes:
         rstyle(ax)
 
     if save:
-        filename = 'gplus0_lcc/compare/wins/m%d_%s_k%d_thresh%.3f%s_baseline%s_wins.png' % (max_count_features, embedding, k, thresh, '_normalize' if sphere else '', ''.join([str(j) for j in baselines]))
+        filename = 'gplus0_lcc/compare/wins/m%d_%s_k%d_thresh%.3f%s_baseline%s_wins.png' % (max_count_features, embedding, k, thresh, '_normalize' if sphere else '', '_'.join(baselines))
         plt.savefig(filename)
     else:
         plt.show()

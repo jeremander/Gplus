@@ -1,6 +1,7 @@
 import numpy as np
 from scipy.sparse.linalg import LinearOperator
-from scipy.sparse import csr_matrix
+from scipy.sparse import csr_matrix, lil_matrix
+from functools import reduce
 
 
 class SparseLinearOperator(LinearOperator):
@@ -31,14 +32,12 @@ class SparseLinearOperator(LinearOperator):
     def __getnewargs__(self):  # for pickling
         return (self.F,)
 
-
 class SymmetricSparseLinearOperator(SparseLinearOperator):
     """Linear operator whose adjoint operator is the same, due to symmetry."""
     def _adjoint(self):
         return self
     def _transpose(self):
         return self
-
 
 class DiagonalLinearOperator(SymmetricSparseLinearOperator):
     """Linear operator representing a diagonal matrix."""
@@ -48,7 +47,6 @@ class DiagonalLinearOperator(SymmetricSparseLinearOperator):
         LinearOperator.__init__(self, dtype = float, shape = (len(D), len(D)))
     def _matvec(self, x):
         return self.D * x
-
 
 class PMILinearOperator(SymmetricSparseLinearOperator):
     """Subclass of LinearOperator for handling the sparse + low-rank PMI matrix. In particular, it represents the matrix F + Delta * 1 * 1^T - u * 1^T - 1 * u^T."""
@@ -63,7 +61,6 @@ class PMILinearOperator(SymmetricSparseLinearOperator):
         return self.F * x + self.u_prime * np.sum(x) - self.ones * np.dot(self.u, x)
     def __getnewargs__(self):  # for pickling
         return (self.F, self.Delta, self.u)
-
 
 class SparseLaplacian(SymmetricSparseLinearOperator):
     """Class for representing a sparse Laplacian (D - A). Can also subclass the normalized version (D^(-1/2) * A * D^(-1/2)) or the regularized normalized version ((D + tau * I)^(-1/2) * A * (D + tau * I)^(-1/2)). Constructs the Laplacian from a SymmetricSparseLinearOperator representing the adjacency matrix."""
@@ -129,9 +126,40 @@ class BlockSparseLinearOperator(SparseLinearOperator):
     def __getnewargs__(self):  # for pickling
         return (self.block_grid,)
 
+class CollapseOperator(SparseLinearOperator):
+    """Given a mapping from [0 ... (n - 1)] to Pow([0 ... (m - 1)]), with m <= n, represents the m x n linear operator that sums together vector entries belonging to the same equivalence class under this mapping."""
+    def __init__(self, mapping, m):
+        """mapping is an n-long array of sets of integers in [0 ... (m - 1)]."""
+        n = len(mapping)
+        assert (m <= n)
+        assert (m > max((reduce(max, s, -1) for s in mapping)))
+        assert (min(map(len, mapping)) > 0)
+        mat = lil_matrix((m, n), dtype = float)
+        for (i, img) in enumerate(mapping):
+            for j in img:
+                mat[j, i] = 1.0 / len(img)
+        SparseLinearOperator.__init__(self, mat.tocsr())
+
+class JointSymmetricBlockOperator(SymmetricSparseLinearOperator):
+    """Given a list of SymmetricSparseLinearOperators of the same dimension, constructs a joint operator where the diagonal blocks are the input operators, and the off-diagonal blocks are the means of these operators."""
+    def __init__(self, diag_blocks):
+        self.num_blocks = len(diag_blocks)
+        assert (isinstance(diag_blocks, list) and len(diag_blocks) > 0)
+        assert all([isinstance(block, SymmetricSparseLinearOperator) for block in diag_blocks]), "Blocks must be symmetric."
+        assert all([block.shape == diag_blocks[0].shape for block in diag_blocks]), "Blocks must have the same shape."
+        self.n = diag_blocks[0].shape[0]
+        diag_block_mean = (1.0 / self.num_blocks) * np.array(diag_blocks).sum()
+        joint_block_operator = BlockSparseLinearOperator([[(diag_blocks[i] if (i == j) else diag_block_mean) for j in range(self.num_blocks)] for i in range(self.num_blocks)])
+        SymmetricSparseLinearOperator.__init__(self, joint_block_operator)
+
+
 
 # test1 = SymmetricSparseLinearOperator(csr_matrix(np.array([[1.,2.],[2.,3.]])))
 # test2 = SparseLinearOperator(csr_matrix(np.array([[1.,0,0,0],[0,1,0,0]])))
 # zeros = SymmetricSparseLinearOperator(csr_matrix(np.zeros((4, 4), dtype = float)))
 # test3 = BlockSparseLinearOperator([[test1, test2], [test2.transpose(), zeros]])
+mapping1 = np.array([{0}, {1}, {1}, {2}, {2}, {2}])
+mapping2 = np.array([{0}, {0, 1}, {1}, {1, 2}, {2}, {2}])
+x = np.array([-5., 3., 2., 1., 1., 5.])
+A = SymmetricSparseLinearOperator(csr_matrix(np.array([[1.0, 0.3, 0.7], [0.3, 1.0, 0.1], [0.7, 0.1, 1.0]])))
 

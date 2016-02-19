@@ -532,60 +532,20 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         """Makes matrices of feature embeddings for all attribute types. Rows correspond to only the nodes that have at least one attribute."""
         for attr_type in self.attr_types:
             self.make_attr_embedding_matrix(attr_type, sim, embedding, delta, k, sphere, load, save)
-    def make_joint_attr_embedding_matrix(self, excluded_attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = True, load = True, save = False):
-        """Makes matrix of joint attribute embeddings for a given attribute type based on PMI similarities for each attribute (saved off as a dictionary of matrices). Rows are nodes, columns are features. Rows correspond to only the nodes that have at least one attribute."""
-        obj_name = '%s_%s_%s_delta%s_k%d%s_joint_embedding_matrix' % (excluded_attr_type, sim, embedding, str(delta), k, '_normalized' if sphere else '')
-        did_load = False
-        if load:
-            try:
-                self.joint_embedding_matrix = timeit(load_object)(self.folder, obj_name, 'pickle')
-                did_load = True
-            except:
-                print("\nCould not load %s from file." % obj_name)
-        if (not did_load):
-            other_attr_types = [at for at in self.attr_types if (at != excluded_attr_type)]
-            feature_filename = self.folder + '/PMI/joint/%s_%s_%s_delta%s_k%d_features_by_attr_type.pickle' % (excluded_attr_type, sim, embedding, str(delta), k)
-            print("\nLoading features from %s..." % feature_filename)
-            features_by_attr_type = timeit(pickle.load)(open(feature_filename, 'rb'))
-            self.joint_embedding_matrix = np.zeros((len(self.attributed_nodes), k * len(other_attr_types)), dtype = float)
-            for (j, at) in enumerate(other_attr_types):
-                print("\n%s" % at)
-                feature_mat = features_by_attr_type[at]
-                if sphere:
-                    print("\nNormalizing feature vectors...")
-                    timeit(normalize_mat_rows)(feature_mat)
-                self.load_pairwise_freq_analyzer(at)
-                pfa = self.pairwise_freq_analyzers[at]
-                (attr_indices, attr_vocab) = get_attr_indices(pfa, self.attributed_nodes)
-                assert (len(attr_indices) == feature_mat.shape[0])  # confirm the features match
-                index_by_vocab = dict((v, i) for (i, v) in enumerate(attr_vocab))  # matrix indices for each attribute
-                mat = np.zeros((len(self.attributed_nodes), k), dtype = float)
-                attrs_by_node = self.attrs_by_node_by_type[at]
-                print("\nConstructing node vectors...")
-                ctr = 0
-                for i in range(self.num_vertices):
-                    attrs = attrs_by_node[i]
-                    if (len(attrs) > 0):
-                        row = np.zeros(k, dtype = float)  # compute average feature vector
-                        for attr in attrs:
-                            row += feature_mat[index_by_vocab[attr]]
-                        row /= len(attrs)
-                    else:
-                        try:
-                            row = feature_mat[index_by_vocab['*???*_%d' % i]]
-                        except KeyError:
-                            continue
-                    # if sphere:  # should we normalize here, or after stacking?
-                    #     row /= np.linalg.norm(row)  # normalize to sphere
-                    mat[ctr] = row
-                    ctr += 1
-                self.joint_embedding_matrix[:, j * k : (j + 1) * k] = mat
-            if sphere:
-                print("\nNormalizing joint embedding...")
-                timeit(normalize_mat_rows)(self.joint_embedding_matrix)
-        self.excluded_attr_type = excluded_attr_type
-        if (save and (not did_load)):
-            timeit(save_object)(self.joint_embedding_matrix, self.folder, obj_name, 'pickle')
+    def make_joint_attr_embedding_matrix(self, excluded_attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = 2):
+        """Loads joint attribute PMI embedding matrix from a file, then normalizes appropriately. Rows are nodes, columns are features. sphere is a two-bit digit indicating whether to normalize before & after stacking the attribute types. (E.g. 2 is normalize before, not after)."""
+        feature_filename = self.folder + '/PMI/joint/%s_%s_%s_delta%s_k%d_joint_features.pickle' % (excluded_attr_type, sim, embedding, str(delta), k)
+        other_attr_types = [at for at in self.attr_types if (at != excluded_attr_type)]
+        num_attr_types = len(other_attr_types)
+        print_flush("\nLoading features from %s..." % feature_filename)
+        self.joint_embedding_matrix = timeit(pickle.load)(open(feature_filename, 'rb'))
+        if (sphere & 2):
+            print_flush("\nNormalizing features by attribute type...")
+            for i in range(num_attr_types):
+                timeit(normalize_mat_rows)(self.joint_embedding_matrix[:, i * k : (i + 1) * k])
+        if (sphere & 1):
+            print_flush("\nNormalizing joint features...")
+            timeit(normalize_mat_rows)(self.joint_embedding_matrix)
     def get_attribute_sample(self, attr, attr_type, n):
         """Selects a random n nodes with the given attribute, and a random n nodes without it. Returns a triple of index lists: first the n with the attribute, then the n without it, then the remaining unselected nodes whose attribute status is known."""
         ind = self.get_attribute_indicator(attr, attr_type)

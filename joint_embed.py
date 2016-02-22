@@ -13,32 +13,6 @@ from gplus import *
 attr_types = ['employer', 'major', 'places_lived', 'school']
 
 
-def make_diag_block(attr_analyzer, attr_type, sim = 'NPMI1s', delta = 0.0):
-    """Given an AttributeAnalyzer and an attribute type, returns the SparseLinearOperator for the diagonal block of the joint embedding. This is the "uncollapsed" PMI operator, where node rows are replicates of their corresponding attribute rows in the attribute PMI matrix."""
-    n = attr_analyzer.num_vertices
-    pfa = attr_analyzer.pairwise_freq_analyzers[attr_type]
-    m = pfa.num_vocab
-    attrs_by_node = attr_analyzer.attrs_by_node_by_type[attr_type]
-    print("\nMaking PMI operator...")
-    attr_block = pfa.to_sparse_PMI_operator(sim, delta)
-    mapping = []
-    for i in range(n):
-        if i in attrs_by_node:
-            mapping.append({pfa.vocab_indices[v] for v in attrs_by_node[i]})
-        else:
-            mapping.append({pfa.vocab_indices['*???*_%d' % i]})
-    collapser = CollapseOperator(np.array(mapping), m)
-    return SymmetricSparseLinearOperator(collapser.transpose() * attr_block * collapser)
-
-def make_joint_embedding_operator(attr_analyzer, included_attr_types, sim = 'NPMI1s', delta = 0.0):
-    """Makes the joint embedding operator for three of the four attribute types. This has three diagonal blocks, which are the uncollapsed PMI operators for each attribute type, and off-diagonal blocks corresponding to the means of these operators."""
-    diag_blocks = []
-    for attr_type in included_attr_types:
-        print_flush("\nMaking %s block..." % attr_type)
-        diag_blocks.append(make_diag_block(attr_analyzer, attr_type, sim, delta))
-    return JointSymmetricBlockOperator(diag_blocks)
-
-
 def main():
     p = optparse.OptionParser()
     p.add_option('--attr_type', '-a', type = str, help = 'attribute type to exclude')
@@ -79,7 +53,7 @@ def main():
         n = sum([a.pairwise_freq_analyzers[at].num_vocab for at in other_attr_types])
         tol = (1.0 / n) if (tol is None) else tol  # use 1/n instead of machine precision as default tolerance
         print_flush("\nComputing joint similarity operator (%s)..." % sim)
-        joint_op = make_joint_embedding_operator(a, other_attr_types, sim = sim, delta = delta)
+        joint_op = a.make_joint_embedding_operator(other_attr_types, sim = sim, delta = delta, load = True, save = True)
         matrix_type = 'adjacency' if (embedding == 'adj') else ('normalized Laplacian' if (embedding == 'normlap') else 'regularized normalized Laplacian')
         print_flush("\nComputing eigenvectors of %s matrix (k = %d)..." % (matrix_type, k))
         if (embedding == 'adj'):

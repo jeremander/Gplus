@@ -471,9 +471,9 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                 self.complete_feature_matrix = timeit(load_object)(self.folder, obj_name, 'pickle')
                 did_load = True
             except:
-                print("Could not load %s from file.\n" % obj_name)
+                print_flush("Could not load %s from file.\n" % obj_name)
         if (not did_load):
-            print("Constructing from scratch...")
+            print_flush("Constructing from scratch...")
             # ensure we have count vectorizers of the right dimensions
             if ((not hasattr(self, 'word_cvs')) or (self.word_cvs['employer'].max_features != max_count_features)):
                 self.make_count_vectorizers(max_count_features)
@@ -481,7 +481,49 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                 self.complete_feature_matrix = self.get_features_for_nodes(range(self.num_vertices), self.attr_types).tocsr()
             timeit(make_mat)()
         if (save and (not did_load)):
+            print_flush("Saving...")
             timeit(save_object)(self.complete_feature_matrix, self.folder, obj_name, 'pickle')
+    def make_uncollapsed_operator(self, attr_type, sim = 'NPMI1s', delta = 0.0, load = True, save = False):
+        """Given an attribute type, returns the SparseLinearOperator for the diagonal block of the joint embedding. This is the "uncollapsed" PMI operator, where node rows are replicates of their corresponding attribute rows in the attribute PMI matrix."""
+        filename = self.folder + '/PMI/%s_%s_delta%s_uncollapsed.pickle' % (attr_type, sim, str(delta))
+        if (not hasattr(self, 'diag_blocks')):
+            self.diag_blocks = dict()
+        did_load = False
+        if load:
+            try:
+                print_flush("Loading %s block from file..." % attr_type)
+                self.diag_blocks[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
+                did_load = True
+            except:
+                print_flush("Could not load %s block from file.\n" % attr_type)
+        if (not did_load):
+            print_flush("Constructing from scratch...")
+            pfa = self.pairwise_freq_analyzers[attr_type]
+            m = pfa.num_vocab
+            attrs_by_node = self.attrs_by_node_by_type[attr_type]
+            print_flush("\nMaking PMI operator...")
+            attr_block = pfa.to_sparse_PMI_operator(sim, delta)
+            mapping = []
+            for i in range(self.num_vertices):
+                if i in attrs_by_node:
+                    mapping.append({pfa.vocab_indices[v] for v in attrs_by_node[i]})
+                else:
+                    mapping.append({pfa.vocab_indices['*???*_%d' % i]})
+            collapser = CollapseOperator(np.array(mapping), m)
+            self.diag_blocks[attr_type] = SymmetricSparseLinearOperator(ProductLinearOperator(collapser.transpose(), ProductLinearOperator(attr_block, collapser)))
+        if (save and (not did_load)):
+            print_flush("Saving...")
+            timeit(pickle.dump)(self.diag_blocks[attr_type], open(filename, 'wb'))
+    def make_joint_embedding_operator(self, included_attr_types, sim = 'NPMI1s', delta = 0.0, load = True, save = False):
+        """Makes the joint embedding operator for three of the four attribute types. This has three diagonal blocks, which are the uncollapsed PMI operators for each attribute type, and off-diagonal blocks corresponding to the means of these operators."""
+        if (not hasattr(self, 'diag_blocks')):
+            self.diag_blocks = dict()
+        for attr_type in included_attr_types:
+            if (attr_type not in self.diag_blocks):
+                print_flush("\nMaking %s block..." % attr_type)
+                self.make_uncollapsed_operator(attr_type, sim, delta, load, save)
+        diag_blocks = [self.diag_blocks[attr_type] for attr_type in included_attr_types]
+        return JointSymmetricBlockOperator(diag_blocks)
     def make_attr_embedding_matrix(self, attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = True, load = True, save = False):
         """Makes matrix of feature embeddings for a given attribute type based on PMI similarities (saved off as matrix files). Rows are nodes, columns are features. Rows correspond to only the nodes that have at least one attribute."""
         obj_name = '%s_%s_%s_delta%s_k%d%s_complete_embedding_matrix' % (attr_type, sim, embedding, str(delta), k, '_normalized' if sphere else '')

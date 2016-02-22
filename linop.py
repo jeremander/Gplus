@@ -1,8 +1,15 @@
 import numpy as np
 from scipy.sparse.linalg import LinearOperator
+from scipy.sparse.linalg.interface import _ProductLinearOperator
 from scipy.sparse import csr_matrix, lil_matrix
 from functools import reduce
 
+class ProductLinearOperator(_ProductLinearOperator):
+    """Subclass of scipy's ProductLinearOperator that can suppport pickling."""
+    def __init__(self, A, B):
+        super().__init__(A, B)
+    def __getnewargs__(self):
+        return self.args
 
 class SparseLinearOperator(LinearOperator):
     """Subclass of LinearOperator for handling a sparse matrix."""
@@ -47,6 +54,19 @@ class DiagonalLinearOperator(SymmetricSparseLinearOperator):
         LinearOperator.__init__(self, dtype = float, shape = (len(D), len(D)))
     def _matvec(self, x):
         return self.D * x
+    def __getnewargs__(self):
+        return (self.D,)
+
+class ConstantDiagonalLinearOperator(DiagonalLinearOperator):
+    """Linear operator representing a constant diagonal matrix."""
+    def __init__(self, n, c):
+        """n is dimension, c is a constant to be multiplied by the identity matrix."""
+        self.c = c
+        LinearOperator.__init__(self, dtype = float, shape = (n, n))
+    def _matvec(self, x):
+        return self.c * x
+    def __getnewargs__(self):
+        return (self.c,)
 
 class PMILinearOperator(SymmetricSparseLinearOperator):
     """Subclass of LinearOperator for handling the sparse + low-rank PMI matrix. In particular, it represents the matrix F + Delta * 1 * 1^T - u * 1^T - 1 * u^T."""
@@ -130,6 +150,8 @@ class CollapseOperator(SparseLinearOperator):
     """Given a mapping from [0 ... (n - 1)] to Pow([0 ... (m - 1)]), with m <= n, represents the m x n linear operator that sums together vector entries belonging to the same equivalence class under this mapping."""
     def __init__(self, mapping, m):
         """mapping is an n-long array of sets of integers in [0 ... (m - 1)]."""
+        self.mapping = mapping
+        self.m = m
         n = len(mapping)
         assert (m <= n)
         assert (m > max((reduce(max, s, -1) for s in mapping)))
@@ -139,18 +161,28 @@ class CollapseOperator(SparseLinearOperator):
             for j in img:
                 mat[j, i] = 1.0 / len(img)
         SparseLinearOperator.__init__(self, mat.tocsr())
+    def __getnewargs__(self):  # for pickling
+        return (self.mapping, self.m)
 
 class JointSymmetricBlockOperator(SymmetricSparseLinearOperator):
     """Given a list of SymmetricSparseLinearOperators of the same dimension, constructs a joint operator where the diagonal blocks are the input operators, and the off-diagonal blocks are the means of these operators."""
-    def __init__(self, diag_blocks):
+    def __init__(self, diag_blocks, tau = None):
+        self.diag_blocks = diag_blocks
+        self.tau = tau
         self.num_blocks = len(diag_blocks)
         assert (isinstance(diag_blocks, list) and len(diag_blocks) > 0)
         assert all([isinstance(block, SymmetricSparseLinearOperator) for block in diag_blocks]), "Blocks must be symmetric."
         assert all([block.shape == diag_blocks[0].shape for block in diag_blocks]), "Blocks must have the same shape."
         self.n = diag_blocks[0].shape[0]
-        diag_block_mean = (1.0 / self.num_blocks) * np.array(diag_blocks).sum()
-        joint_block_operator = BlockSparseLinearOperator([[(diag_blocks[i] if (i == j) else diag_block_mean) for j in range(self.num_blocks)] for i in range(self.num_blocks)])
+        if (tau is None):
+            joint_block_operator = BlockSparseLinearOperator([[diag_blocks[i] if (i == j) else (0.5 * np.sum([diag_blocks[i], diag_blocks[j]])) for j in range(self.num_blocks)] for i in range(self.num_blocks)])
+        else:
+            scaled_identity = ConstantDiagonalLinearOperator(diag_blocks[0].shape[0], tau)
+            joint_block_operator = BlockSparseLinearOperator([[diag_blocks[i] if (i == j) else (0.5 * np.sum([diag_blocks[i], diag_blocks[j]]) + scaled_identity) for j in range(self.num_blocks)] for i in range(self.num_blocks)])
         SymmetricSparseLinearOperator.__init__(self, joint_block_operator)
+        def __getnewargs__(self):
+            return (self.diag_blocks, self.tau)
+
 
 
 
@@ -158,8 +190,8 @@ class JointSymmetricBlockOperator(SymmetricSparseLinearOperator):
 # test2 = SparseLinearOperator(csr_matrix(np.array([[1.,0,0,0],[0,1,0,0]])))
 # zeros = SymmetricSparseLinearOperator(csr_matrix(np.zeros((4, 4), dtype = float)))
 # test3 = BlockSparseLinearOperator([[test1, test2], [test2.transpose(), zeros]])
-mapping1 = np.array([{0}, {1}, {1}, {2}, {2}, {2}])
-mapping2 = np.array([{0}, {0, 1}, {1}, {1, 2}, {2}, {2}])
-x = np.array([-5., 3., 2., 1., 1., 5.])
-A = SymmetricSparseLinearOperator(csr_matrix(np.array([[1.0, 0.3, 0.7], [0.3, 1.0, 0.1], [0.7, 0.1, 1.0]])))
+# mapping1 = np.array([{0}, {1}, {1}, {2}, {2}, {2}])
+# mapping2 = np.array([{0}, {0, 1}, {1}, {1, 2}, {2}, {2}])
+# x = np.array([-5., 3., 2., 1., 1., 5.])
+# A = SymmetricSparseLinearOperator(csr_matrix(np.array([[1.0, 0.3, 0.7], [0.3, 1.0, 0.1], [0.7, 0.1, 1.0]])))
 

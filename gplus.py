@@ -519,8 +519,9 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         did_load = False
         if load:
             try:
-                print_flush("Loading %s uncollapsed operator from file..." % attr_type)
-                self.uncollapsed_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
+                if (attr_type not in self.uncollapsed_operators):
+                    print_flush("Loading %s uncollapsed operator from file..." % attr_type)
+                    self.uncollapsed_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
                 did_load = True
             except:
                 print_flush("Could not load %s uncollapsed operator from file.\n" % attr_type)
@@ -555,8 +556,9 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         did_load = False
         if load:
             try:
-                print_flush("Loading %s random walk operator from file..." % attr_type)
-                self.random_walk_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
+                if (attr_type not in self.random_walk_operators):
+                    print_flush("Loading %s random walk operator from file..." % attr_type)
+                    self.random_walk_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
                 did_load = True
             except:
                 print_flush("Could not load %s random walk from file.\n" % attr_type)

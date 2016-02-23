@@ -62,10 +62,10 @@ Depending on the application, using one of these may be preferable to using the 
 \section{Empirical PMI}
 The formula for PMI treats the attributes on the graph vertices as random variables, but we wish to estimate the PMI from an actual graph whose attributes are known.  To do so, we use the sample frequencies of attribute pairs in the edge set.  Let
 $$ f_{a,b} = | \{ \{u, v\} \in E \st \{a, b\} = \{\phi(u), \phi(v)\} \} |, \quad f_a = | \{ \{u, v\} \in E \st a \in \{\phi(u), \phi(v)\} \} |. $$
-Then we estimate $P(a, b)$ by $\hat{P}(a, b) = \frac{f_{a,b}}{|E|}$, and $P(a)$ by $\hat{P}(a) = \frac{f_a}{|E|}$.  We can then use $\hat{P}$ in place of $P$ to compute the estimated PMI.  Note that by definition, $\sum_{a,b} f_{a,b} = |E|$, and $\sum_b f_{a,b} = f_a$ for all $a$, meaning that $\hat{P}$ is a properly normalized probability.
+Then we estimate $P(a, b)$ by $\hat{P}(a, b) = \frac{f_{a,b}}{|E|}$, and $P(a)$ by $\hat{P}(a) = \frac{f_a}{\sum_b f_b}$. We can then use $\hat{P}$ in place of $P$ to compute the estimated PMI.  Note that by definition, $\sum_{a,b} f_{a,b} = |E|$, meaning that $\hat{P}$ is a properly normalized probability.
 
 As is often the case with real data, $G$ will be sparse, and $A$ may be a large set, many of whose elements may only be represented by just a few edges in $E$.  In such cases, $f_{a,b} = 0$ for a vast majority of $a, b$ pairs, but assigning these pairs an empirical probability of 0 will drastically underrepresent them.  To give them positive probability, we smooth the counts by adding a constant $\delta > 0$ to each $f_{a,b}$.  This gives the following smoothed versions of the empirical probabilities:
-$$ \hat{P}(a, b) = \frac{f_{a,b} + \delta}{|E| + \delta \binom{|A| + 1}{2}}, \quad \hat{P}(a) = \frac{f_a + \delta |A|}{|E| + \delta \binom{|A| + 1}{2}}. $$
+$$ \hat{P}(a, b) = \frac{f_{a,b} + \delta}{|E| + \delta \binom{|A| + 1}{2}}, \quad \hat{P}(a) = \frac{f_a + \delta |A|}{\sum_b f_b + \delta |A|^2}. $$
 We see that $\hat{P}(a, b)$ has the appropriate normalization because the set of attribute pairs is of size $\binom{|A| + 1}{2}$, since there are $\binom{|A|}{2}$ pairs of distinct attributes and $|A|$ pairs of identical attributes.  Having $\delta > 0$ guarantees that all probabilities are positive, and increasing $\delta$ distorts the distribution closer to the uniform distribution on attribute pairs.
 
 \section{Sparse representation of Empirical PMI}

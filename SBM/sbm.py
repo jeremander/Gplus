@@ -88,5 +88,5 @@ class SBMGraph(nx.Graph):
         return np.vectorize(safe_div)(nums, denoms)
 
 class SBMModel():
-    pass
+    
 

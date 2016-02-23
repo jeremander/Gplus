@@ -171,6 +171,7 @@ class PairwiseFreqAnalyzer(object):
         """Once all pairs are added, performs some computations and converts the sparse matrix from dok to csr format."""
         self.total_edges = sum(self.freq_mat.values())
         self.freq_mat = self.freq_mat.tocsr()
+        self.total_counts = self.freq_mat.sum()
         sym_freq_mat = self.freq_mat + self.freq_mat.transpose().tocsr() - diags(self.freq_mat.diagonal(), offsets = 0).tocsr()  # symmetrize the matrix
         for (i, v) in enumerate(self.vocab):
             self.vocab_freqs[v] = sym_freq_mat[i,:].data.sum()
@@ -186,11 +187,15 @@ class PairwiseFreqAnalyzer(object):
         freq = self.freq_mat[i, j]
         return (freq + delta)
     def empirical_prob(self, *items, delta = 0):
-        """Returns empirical probability of item. If two arguments are given, this is the smoothed number of occurrences of the pair divided by the smoothed number of edges, under add-delta smoothing. If one argument is given, this is the smoothed number of occurrences of the item in any pair divided by the smoothed number of edges."""
-        denominator = self.total_edges + delta * self.num_possible_pairs
+        """Returns empirical probability of item. If two arguments are given, this is the smoothed number of occurrences of the pair divided by the smoothed number of edges, under add-delta smoothing. If one argument is given, this is the smoothed ratio of occurrences of the item in any pair ."""
+        assert(len(items) in [1, 2])
+        if (len(items) == 1):
+            denominator = self.total_counts + delta * self.num_vocab ** 2
+        else:
+            denominator = self.total_edges + delta * self.num_possible_pairs
         return self.empirical_freq(*items, delta = delta) / denominator
     def conditional_prob(self, item1, item2, delta = 0):
-        return safe_divide(self.empirical_freq(item1, item2, delta = delta), self.empirical_freq(item2, delta = delta))
+        return safe_divide(self.empirical_prob(item1, item2, delta = delta), self.empirical_prob(item2, delta = delta))
     def PMIs(self, item1, item2, delta = 0):
         """Pointwise mutual information of two items. Ranges from -inf to -log p(x,y) at most, with 0 for independence"""
         return np.log(self.empirical_prob(item1, item2, delta = delta)) - np.log(self.empirical_prob(item1, delta = delta)) - np.log(self.empirical_prob(item2, delta = delta))
@@ -216,15 +221,17 @@ class PairwiseFreqAnalyzer(object):
         sim_func = self.__class__.__dict__[sim]
         log_single_freqs = np.log(np.array([self.empirical_freq(self.vocab[i]) for i in range(self.num_vocab)]))
         log_total_edges = np.log(self.total_edges)
+        log_total_counts = np.log(self.total_counts)
+        shift = -log_total_edges + 2 * log_total_counts
         data = np.zeros(n, dtype = float)
         coo = self.freq_mat.tocoo()  # convert to coo_matrix
         coo.data = np.log(coo.data)  # store the log-frequencies
         # efficiently compute the score
         for (k, (i, j, log_freq)) in enumerate(zip(coo.row, coo.col, coo.data)):
             if (sim == 'PMIs'):
-                data[k] = log_freq - log_single_freqs[i] - log_single_freqs[j] + log_total_edges
+                data[k] = log_freq - log_single_freqs[i] - log_single_freqs[j] + shift
             elif (sim == 'NPMI1s'):
-                data[k] = (log_single_freqs[i] + log_single_freqs[j] - 2 * log_total_edges) / (2 * (log_freq - log_total_edges))
+                data[k] = (log_single_freqs[i] + log_single_freqs[j] - 2 * log_total_counts) / (2 * (log_freq - log_total_edges))
             else:
                 data[k] = sim_func(self, self.vocab[i], self.vocab[j])
         mat = coo_matrix((data, (coo.row, coo.col)), shape = (self.num_vocab, self.num_vocab)).tocsr()
@@ -259,6 +266,29 @@ class PairwiseFreqAnalyzer(object):
             g = ig.Graph.Read_Edgelist(f, directed = False)
         g.es['weight'] = mat.data
         return g
+    @timeit
+    def to_joint_prob_operator(self, delta = 0.05):
+        """Returns joint probability matrix of the attribute graph. This is equal to (1 - delta) * P + delta * ((2 * b * b^T) - diag(b)) . P is empirical joint probability matrix; b is empirical 1D probability vector; delta is smoothing parameter. The resulting matrix is a probability distribution (when viewed as upper/lower triangular)."""
+        assert (0.0 <= delta <= 1.0)
+        n = len(self.freq_mat.data)
+        F = csr_matrix(self.freq_mat, dtype = float)
+        P = F + F.transpose().tocsr() - diags(F.diagonal(), offsets = 0).tocsr()
+        P = (1.0 / self.total_counts) * SymmetricSparseLinearOperator(P)
+        b = np.array([self.vocab_freqs[self.vocab[i]] for i in range(self.num_vocab)], dtype = float)
+        b /= b.sum()  # normalize frequencies to probabilities
+        B = 2.0 * RankOneLinearOperator(b, b) - DiagonalLinearOperator(b * b)
+        A = (1 - delta) * P + delta * B
+        return A
+    @classmethod
+    def from_pfa(cls, pfa):
+        """Initializes from another PairwiseFreqAnalyzer."""
+        res = cls(pfa.vocab)
+        res.total_edges = pfa.total_edges
+        res.freq_mat = pfa.freq_mat
+        res.vocab_freqs = pfa.vocab_freqs
+        res.total_counts = res.freq_mat.sum()
+        return res
+
 
 def get_attr_indices(pfa, attributed_nodes = None):
     """Given a PairwiseFreqAnalyzer, returns list of vocab indices that are not unknown, as well as the vocab items themselves. If attributed_nodes is not None, retains the unknown attributes corresponding to the given nodes that have attributes (in other attribute types)."""
@@ -274,7 +304,7 @@ def get_attr_indices(pfa, attributed_nodes = None):
 
 class AttributeAnalyzer(ObjectWithReadwriteProperties):
     """Class for analyzing node attributes from each of the four types (school, major, employer, places_lived)."""
-    readwrite_properties = {'pairwise_freq_analyzers' : 'pickle', 'attrs_by_node_by_type' : 'pickle'}
+    readwrite_properties = {'attrs_by_node_by_type' : 'pickle'}
     @timeit
     def __init__(self, dataset = 'gplus0_lcc', load_data = True):
         folder = dataset + '/data'
@@ -337,12 +367,11 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
     @timeit
     def load_pairwise_freq_analyzer(self, attr_type):
         """Loads a PairwiseFreqAnalyzer if not already owned by the object."""
-        if (not hasattr(self, '_pairwise_freq_analyzers')):
-            self._pairwise_freq_analyzers = dict()
-        if (attr_type not in self._pairwise_freq_analyzers):
-            self._pairwise_freq_analyzers[attr_type] = load_object(self.folder, 'pairwise_freq_analyzer_%s' % attr_type, 'pickle')
-    @autoreadwrite(['pairwise_freq_analyzers'], ['pickle'])
-    def load_all_pairwise_freq_analyzers(self):
+        if (not hasattr(self, 'pairwise_freq_analyzers')):
+            self.pairwise_freq_analyzers = dict()
+        if (attr_type not in self.pairwise_freq_analyzers):
+            self.pairwise_freq_analyzers[attr_type] = load_object(self.folder, 'pairwise_freq_analyzer_%s' % attr_type, 'pickle')
+    def load_pairwise_freq_analyzers(self):
         """Loads all PairwiseFreqAnalyzers."""
         for attr_type in self.attr_types:
             self.load_pairwise_freq_analyzer(attr_type)
@@ -351,7 +380,6 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         self._attrs_by_node_by_type = dict((attr_type, defaultdict(set)) for attr_type in self.attr_types)
         for (i, node, attr_type, attr_val) in self.attr_df.itertuples():
                 self._attrs_by_node_by_type[attr_type][node].add(attr_val)
-    @autoreadwrite(['pairwise_freq_analyzers'], ['pickle'])
     def make_pairwise_freq_analyzers(self, load = True, save = False, unknown_style = 2):
         """Makes PairwiseFreqAnalyzer objects for each attribute type. These objects can be used to perform statistics on pairwise attribute counts and to compute pairwise similarity matrices between attributes. unknown_style is an integer indicating one of three ways of handling unknown attributes:
             0: Unknown attributes will not be considered (nor will attributes paired with them).
@@ -361,7 +389,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         if (not hasattr(self, '_attrs_by_node_by_type')):
             self.make_attrs_by_node_by_type()
         self.unknown_style = unknown_style
-        self._pairwise_freq_analyzers = dict()
+        self.pairwise_freq_analyzers = dict()
         for attr_type in self.attr_types:
             attrs_by_node = self._attrs_by_node_by_type[attr_type]
             vocab = set()
@@ -373,7 +401,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
             if (self.unknown_style == 1):  # include a single unknown token to cover all unattributed nodes
                 vocab.add('*???*')
             vocab = sorted(list(vocab)) # sort alphabetically
-            self._pairwise_freq_analyzers[attr_type] = PairwiseFreqAnalyzer(vocab)
+            self.pairwise_freq_analyzers[attr_type] = PairwiseFreqAnalyzer(vocab)
         with open(self.folder + '/undirected_edges.dat', 'r') as f:
             for (i, line) in enumerate(f):
                 if (i % 100000 == 0):
@@ -385,18 +413,18 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                         if (v2 in attrs_by_node):
                             for val1 in attrs_by_node[v1]:
                                 for val2 in attrs_by_node[v2]:
-                                    self._pairwise_freq_analyzers[attr_type].add_pair((val1, val2))
+                                    self.pairwise_freq_analyzers[attr_type].add_pair((val1, val2))
                         else:
                             for val1 in attrs_by_node[v1]:
-                                self._pairwise_freq_analyzers[attr_type].add_pair((val1, ('*???*_%d' % v2) if (self.unknown_style == 2) else '*???*'))
+                                self.pairwise_freq_analyzers[attr_type].add_pair((val1, ('*???*_%d' % v2) if (self.unknown_style == 2) else '*???*'))
                     else:
                         if (v2 in attrs_by_node):
                             for val2 in attrs_by_node[v2]:
-                                self._pairwise_freq_analyzers[attr_type].add_pair((('*???*_%d' % v1) if (self.unknown_style == 2) else '*???*', val2))
+                                self.pairwise_freq_analyzers[attr_type].add_pair((('*???*_%d' % v1) if (self.unknown_style == 2) else '*???*', val2))
                         else:
-                            self._pairwise_freq_analyzers[attr_type].add_pair((('*???*_%d' % v1) if (self.unknown_style == 2) else '*???*', ('*???*_%d' % v2) if (self.unknown_style == 2) else '*???*'))
+                            self.pairwise_freq_analyzers[attr_type].add_pair((('*???*_%d' % v1) if (self.unknown_style == 2) else '*???*', ('*???*_%d' % v2) if (self.unknown_style == 2) else '*???*'))
         for attr_type in self.attr_types:
-           self._pairwise_freq_analyzers[attr_type].finalize_construction()
+           self.pairwise_freq_analyzers[attr_type].finalize_construction()
     @timeit
     def make_count_vectorizers(self, max_count_features = 500, load = True, save = False):
         """Makes CountVectorizer objects for each of the attribute types. These can be used to give sparse vector representations of each attribute. Makes two separate CountVectorizers for each type, one for words and one for characters. max_features is the maximum number of features to include for each CountVectorizer."""
@@ -484,25 +512,30 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
             print_flush("Saving...")
             timeit(save_object)(self.complete_feature_matrix, self.folder, obj_name, 'pickle')
     def make_uncollapsed_operator(self, attr_type, sim = 'NPMI1s', delta = 0.0, load = True, save = False):
-        """Given an attribute type, returns the SparseLinearOperator for the diagonal block of the joint embedding. This is the "uncollapsed" PMI operator, where node rows are replicates of their corresponding attribute rows in the attribute PMI matrix."""
+        """Given an attribute type, creates the uncollapsed SparseLinearOperator for the attribute similarity operator. In this operator, node rows are replicates of their corresponding attribute rows in the attribute PMI matrix. sim can be 'PMIs', 'NPMIs', or 'prob'."""
         filename = self.folder + '/PMI/%s_%s_delta%s_uncollapsed.pickle' % (attr_type, sim, str(delta))
-        if (not hasattr(self, 'diag_blocks')):
-            self.diag_blocks = dict()
+        if (not hasattr(self, 'uncollapsed_operators')):
+            self.uncollapsed_operators = dict()
         did_load = False
         if load:
             try:
-                print_flush("Loading %s block from file..." % attr_type)
-                self.diag_blocks[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
+                print_flush("Loading %s uncollapsed operator from file..." % attr_type)
+                self.uncollapsed_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
                 did_load = True
             except:
-                print_flush("Could not load %s block from file.\n" % attr_type)
+                print_flush("Could not load %s uncollapsed operator from file.\n" % attr_type)
         if (not did_load):
             print_flush("Constructing from scratch...")
+            if ((not hasattr(self, 'pairwise_freq_analyzers')) or (attr_type not in self.pairwise_freq_analyzers)):
+                self.load_pairwise_freq_analyzer(attr_type)
             pfa = self.pairwise_freq_analyzers[attr_type]
             m = pfa.num_vocab
             attrs_by_node = self.attrs_by_node_by_type[attr_type]
-            print_flush("\nMaking PMI operator...")
-            attr_block = pfa.to_sparse_PMI_operator(sim, delta)
+            print_flush("\nMaking uncollapsed operator...")
+            if (sim == 'prob'):
+                attr_block = pfa.to_joint_prob_operator(delta)
+            else:
+                attr_block = pfa.to_sparse_PMI_operator(sim, delta)
             mapping = []
             for i in range(self.num_vertices):
                 if i in attrs_by_node:
@@ -510,20 +543,39 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                 else:
                     mapping.append({pfa.vocab_indices['*???*_%d' % i]})
             collapser = CollapseOperator(np.array(mapping), m)
-            self.diag_blocks[attr_type] = SymmetricSparseLinearOperator(ProductLinearOperator(collapser.transpose(), ProductLinearOperator(attr_block, collapser)))
+            self.uncollapsed_operators[attr_type] = SymmetricSparseLinearOperator(collapser.transpose() * (attr_block * collapser))
         if (save and (not did_load)):
             print_flush("Saving...")
-            timeit(pickle.dump)(self.diag_blocks[attr_type], open(filename, 'wb'))
+            timeit(pickle.dump)(self.uncollapsed_operators[attr_type], open(filename, 'wb'))
+    def make_random_walk_operator(self, attr_type, sim = 'NPMI1s', delta = 0.0, load = True, save = False):
+        """Given an attribute type, creates column-stochastic SparseLinearOperator for the attribute random walk matrix. This is the "uncollapsed" pairwise similarity operator. Options for sim are 'PMIs', 'NPMI1s', and 'prob'."""
+        filename = self.folder + '/PMI/%s_%s_delta%s_random_walk.pickle' % (attr_type, sim, str(delta))
+        if (not hasattr(self, 'random_walk_operators')):
+            self.random_walk_operators = dict()
+        did_load = False
+        if load:
+            try:
+                print_flush("Loading %s random walk operator from file..." % attr_type)
+                self.random_walk_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
+                did_load = True
+            except:
+                print_flush("Could not load %s random walk from file.\n" % attr_type)
+        if (not did_load):
+            self.make_uncollapsed_operator(attr_type, sim = sim, delta = delta, load = load, save = False)
+            self.random_walk_operators[attr_type] = self.uncollapsed_operators[attr_type].to_column_stochastic()
+        if (save and (not did_load)):
+            print_flush("Saving...")
+            timeit(pickle.dump)(self.random_walk_operators[attr_type], open(filename, 'wb'))
     def make_joint_embedding_operator(self, included_attr_types, sim = 'NPMI1s', delta = 0.0, load = True, save = False):
         """Makes the joint embedding operator for three of the four attribute types. This has three diagonal blocks, which are the uncollapsed PMI operators for each attribute type, and off-diagonal blocks corresponding to the means of these operators."""
-        if (not hasattr(self, 'diag_blocks')):
-            self.diag_blocks = dict()
+        if (not hasattr(self, 'uncollapsed_operators')):
+            self.uncollapsed_operators = dict()
         for attr_type in included_attr_types:
-            if (attr_type not in self.diag_blocks):
+            if (attr_type not in self.uncollapsed_operators):
                 print_flush("\nMaking %s block..." % attr_type)
                 self.make_uncollapsed_operator(attr_type, sim, delta, load, save)
-        diag_blocks = [self.diag_blocks[attr_type] for attr_type in included_attr_types]
-        return JointSymmetricBlockOperator(diag_blocks)
+        uncollapsed_operators = [self.uncollapsed_operators[attr_type] for attr_type in included_attr_types]
+        return JointSymmetricBlockOperator(uncollapsed_operators)
     def make_attr_embedding_matrix(self, attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = True, load = True, save = False):
         """Makes matrix of feature embeddings for a given attribute type based on PMI similarities (saved off as matrix files). Rows are nodes, columns are features. Rows correspond to only the nodes that have at least one attribute."""
         obj_name = '%s_%s_%s_delta%s_k%d%s_complete_embedding_matrix' % (attr_type, sim, embedding, str(delta), k, '_normalized' if sphere else '')

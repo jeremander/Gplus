@@ -7,7 +7,7 @@ selected_attrs = pd.read_csv('selected_attrs.csv')
 n_vals = [50, 100, 200, 400, 800, 1600]
 m_vals = [1000]
 embedding_vals = ['adj']
-k_vals = [100]
+k_vals = [50, 100]
 sphere_vals = [True]
 N = 500
 

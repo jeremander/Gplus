@@ -1,23 +1,10 @@
 import numpy as np
 from scipy.sparse.linalg import LinearOperator
-from scipy.sparse.linalg.interface import _ProductLinearOperator
+from scipy.sparse.linalg.interface import _ScaledLinearOperator, _SumLinearOperator, _ProductLinearOperator
 from scipy.sparse import csr_matrix, lil_matrix
 from functools import reduce
 
-class ProductLinearOperator(_ProductLinearOperator):
-    """Subclass of scipy's ProductLinearOperator that can suppport pickling."""
-    def __init__(self, A, B):
-        super().__init__(A, B)
-    def __getnewargs__(self):
-        return self.args
-
-class SparseLinearOperator(LinearOperator):
-    """Subclass of LinearOperator for handling a sparse matrix."""
-    def __init__(self, F):
-        """Input must be a sparse matrix or SparseLinearOperator."""
-        self.F = F
-        #super().__init__(matvec = lambda x : SparseLinearOperator._matvec(self, x), dtype = float, shape = F.shape)
-        super().__init__(dtype = float, shape = F.shape)
+class BaseSparseLinearOperator(LinearOperator):
     def get(self, i, j):
         """Gets element i,j from the matrix representation of the SparseLinearOperator."""
         vi, vj = np.zeros(self.shape[0], dtype = int), np.zeros(self.shape[1], dtype = int)
@@ -32,12 +19,76 @@ class SparseLinearOperator(LinearOperator):
             v[j] = 1.0
             result[:, j] = self._matvec(v)
         return result
+    def to_column_stochastic(self):
+        """Returns a column-normalized version of the operator."""
+        Dinv = DiagonalLinearOperator(1.0 / (self.transpose() * np.ones(self.shape[0], dtype = float)))
+        return (self * Dinv)
+    def to_row_stochastic(self):
+        """Returns a row-normalized version of the operator."""
+        Dinv = DiagonalLinearOperator(1.0 / (self * np.ones(self.shape[1], dtype = float)))
+        return (Dinv * self)
+    def __add__(self, other):
+        if isinstance(other, BaseSparseLinearOperator):
+            return SumLinearOperator(self, other)
+        return SumLinearOperator(self, other * RankOneLinearOperator(np.ones(self.shape[0]), np.ones(self.shape[1])))
+    def __radd__(self, other):
+        if isinstance(other, BaseSparseLinearOperator):
+            return SumLinearOperator(other, self)
+        return SumLinearOperator(other * RankOneLinearOperator(np.ones(self.shape[0]), np.ones(self.shape[1])), self)
+    def __mul__(self, other):
+        if isinstance(other, BaseSparseLinearOperator):
+            return ProductLinearOperator(self, other)
+        elif isinstance(other, np.ndarray):
+            return self._matvec(other)
+        return ScaledLinearOperator(self, other)
+    def __rmul__(self, other):
+        if isinstance(other, BaseSparseLinearOperator):
+            return ProductLinearOperator(other, self)
+        elif isinstance(other, np.ndarray):
+            return self.transpose()._matvec(other)
+        return ScaledLinearOperator(self, other)
+    def __sub__(self, other):
+        return self.__add__(-other)
+    def __rsub__(self, other):
+        return (-self).__radd__(other)
+    def __neg__(self):
+        return self * -1.0
+    def __repr__(self):
+        s = super().__repr__()
+        if (self.shape[0] * self.shape[1] <= 10000):
+            s += '\n' + str(self.todense())
+        return s
+
+class SparseLinearOperator(BaseSparseLinearOperator):
+    """Subclass of LinearOperator for handling a sparse matrix."""
+    def __init__(self, F):
+        """Input must be a sparse matrix or SparseLinearOperator."""
+        self.F = F
+        super().__init__(dtype = float, shape = F.shape)
     def _matvec(self, x):
         return self.F * x
     def _transpose(self):
         return SparseLinearOperator(self.F.transpose())
     def __getnewargs__(self):  # for pickling
         return (self.F,)
+
+class ScaledLinearOperator(_ScaledLinearOperator, BaseSparseLinearOperator):
+    def _transpose(self):
+        return ScaledLinearOperator(self.args[0].transpose(), self.args[1])
+    def __getnewargs__(self):
+        return self.args
+
+class SumLinearOperator(_SumLinearOperator, BaseSparseLinearOperator):
+    def _transpose(self):
+        return SumLinearOperator(self.args[0].transpose(), self.args[1].transpose())
+    def __getnewargs__(self):
+        return self.args
+
+class ProductLinearOperator(_ProductLinearOperator, BaseSparseLinearOperator):
+    def _transpose(self):
+        return ProductLinearOperator(self.args[1].transpose(), self.args[0].transpose())
+    def __getnewargs__(self):
+        return self.args
 
 class SymmetricSparseLinearOperator(SparseLinearOperator):
     """Linear operator whose adjoint operator is the same, due to symmetry."""
@@ -67,6 +118,43 @@ class ConstantDiagonalLinearOperator(DiagonalLinearOperator):
         return self.c * x
     def __getnewargs__(self):
         return (self.c,)
+
+class RankOneLinearOperator(SparseLinearOperator):
+    """Subclass of LinearOperator for handling a rank-one matrix. Represents the matrix u * v^T, where u and v are vectors."""
+    def __init__(self, u, v):
+        assert (len(u) == len(v))
+        self.u, self.v = u, v
+        LinearOperator.__init__(self, dtype = float, shape = (len(u), len(v)))
+    def _transpose(self):
+        return RankOneLinearOperator(self.v, self.u)
+    def _matvec(self, x):
+        return self.u * np.dot(self.v, x)
+    def __getnewargs__(self):
+        return (self.u, self.v)
+
+class ReplicatedColumnLinearOperator(RankOneLinearOperator):
+    """Subclass of RankOneLinearOperator for handling the case u * 1^T, i.e. the matrix whose columns are all u."""
+    def __init__(self, u):
+        self.u = u
+        LinearOperator.__init__(self, dtype = float, shape = (len(u), len(u)))
+    def _transpose(self):
+        return ReplicatedRowLinearOperator(self.u)
+    def _matvec(self, x):
+        return self.u * np.sum(x)
+    def __getnewargs__(self):
+        return (self.u,)
+
+class ReplicatedRowLinearOperator(RankOneLinearOperator):
+    """Subclass of RankOneLinearOperator for handling the case 1 * u^T, i.e. the matrix whose rows are all u."""
+    def __init__(self, u):
+        self.u = u
+        LinearOperator.__init__(self, dtype = float, shape = (len(u), len(u)))
+    def _transpose(self):
+        return ReplicatedColumnLinearOperator(self.u)
+    def _matvec(self, x):
+        return np.ones(len(self.u), dtype = float) * (np.dot(self.u, x))
+    def __getnewargs__(self):
+        return (self.u,)
 
 class PMILinearOperator(SymmetricSparseLinearOperator):
     """Subclass of LinearOperator for handling the sparse + low-rank PMI matrix. In particular, it represents the matrix F + Delta * 1 * 1^T - u * 1^T - 1 * u^T."""
@@ -182,8 +270,6 @@ class JointSymmetricBlockOperator(SymmetricSparseLinearOperator):
         SymmetricSparseLinearOperator.__init__(self, joint_block_operator)
         def __getnewargs__(self):
             return (self.diag_blocks, self.tau)
-
-
 
 
 # test1 = SymmetricSparseLinearOperator(csr_matrix(np.array([[1.,2.],[2.,3.]])))

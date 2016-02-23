@@ -13,7 +13,7 @@ all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+con
 all_linestyles = ['solid', 'solid', 'solid', 'dashed', 'solid', 'solid', 'solid']
 all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5']
 
-baseline_indices = [0, 1, 2, 3, 4, 5]
+baseline_indices = [0, 1, 2, 3, 4, 5, 6]
 colors = [all_colors[i] for i in baseline_indices]
 keys = [all_keys[i] for i in baseline_indices]
 linestyles = [all_linestyles[i] for i in baseline_indices]

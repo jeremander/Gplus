@@ -12,14 +12,14 @@ political science                                         0.012600
 mathematics                                               0.012133
 mba                                                       0.010000
 graphic design                                            0.009533
-civil engineering                                         0.008800
 history                                                   0.008800
+civil engineering                                         0.008800
 biology                                                   0.008567
 finance                                                   0.007133
 accounting                                                0.007133
 software engineering                                      0.007000
-journalism                                                0.007000
 chemical engineering                                      0.007000
+journalism                                                0.007000
 philosophy                                                0.006600
 chemistry                                                 0.006533
 marketing                                                 0.006300
@@ -31,8 +31,8 @@ law                                                       0.005400
 sociology                                                 0.005267
 medicine                                                  0.005000
 business administration                                   0.004800
-aerospace engineering                                     0.004600
 biomedical engineering                                    0.004600
+aerospace engineering                                     0.004600
 information technology                                    0.004200
 biochemistry                                              0.003933
 mis                                                       0.003900
@@ -41,12 +41,12 @@ communications                                            0.003733
 music education                                           0.003533
 management                                                0.003467
 communication                                             0.003333
-information systems                                       0.003000
 computer information systems                              0.003000
+information systems                                       0.003000
 industrial engineering                                    0.002800
 public policy                                             0.002800
-neuroscience                                              0.002733
 it                                                        0.002733
+neuroscience                                              0.002733
 music                                                     0.002600
 general studies                                           0.002533
 electrical and computer engineering                       0.002533
@@ -56,1417 +56,1417 @@ public relations                                          0.002400
 linguistics                                               0.002233
 ee                                                        0.002200
 communication studies                                     0.002000
-nursing                                                   0.002000
-liberal arts                                              0.002000
 management information systems                            0.002000
-english literature                                        0.001933
+liberal arts                                              0.002000
+nursing                                                   0.002000
 science                                                   0.001933
+english literature                                        0.001933
 statistics                                                0.001900
 math                                                      0.001867
 astrophysics                                              0.001800
 applied mathematics                                       0.001800
 film                                                      0.001733
 mit                                                       0.001680
-sport management                                          0.001600
-photography                                               0.001600
-criminal justice                                          0.001600
-pharmacy                                                  0.001600
-japanese                                                  0.001600
-spanish                                                   0.001600
-international relations                                   0.001600
 electrical engineering and computer science               0.001600
+photography                                               0.001600
+spanish                                                   0.001600
+pharmacy                                                  0.001600
+criminal justice                                          0.001600
+sport management                                          0.001600
+international relations                                   0.001600
+japanese                                                  0.001600
 geography                                                 0.001533
-international studies                                     0.001400
-creative writing                                          0.001400
-art history                                               0.001400
-bilgisayar mühendisliği                                   0.001400
 bs, computer science                                      0.001400
+international studies                                     0.001400
 interior design                                           0.001400
+creative writing                                          0.001400
 jd                                                        0.001400
-art                                                       0.001333
+bilgisayar mühendisliği                                   0.001400
+art history                                               0.001400
 bioengineering                                            0.001333
+art                                                       0.001333
 computer sciences                                         0.001300
-studio art                                                0.001267
 general education                                         0.001267
-eecs                                                      0.001200
-zoology                                                   0.001200
+studio art                                                0.001267
+public administration                                     0.001200
+electronics                                               0.001200
+computer science and mathematics                          0.001200
 information science                                       0.001200
-special education                                         0.001200
-cosmetology                                               0.001200
-general ed                                                0.001200
-advertising                                               0.001200
 classics                                                  0.001200
+industrial design                                         0.001200
+advertising                                               0.001200
+library science                                           0.001200
+cosmetology                                               0.001200
+eecs                                                      0.001200
+theatre                                                   0.001200
 materials science and engineering                         0.001200
 social work                                               0.001200
-library science                                           0.001200
-general                                                   0.001200
-public administration                                     0.001200
-computer science and mathematics                          0.001200
-industrial design                                         0.001200
-industrial & operations engineering                       0.001200
 elementary education                                      0.001200
-electronics                                               0.001200
+special education                                         0.001200
+industrial & operations engineering                       0.001200
 actuarial science                                         0.001200
 radio-television-film                                     0.001200
-theatre                                                   0.001200
+zoology                                                   0.001200
+general                                                   0.001200
+general ed                                                0.001200
 theology                                                  0.001133
 french                                                    0.001133
 physical therapy                                          0.001100
-mathematics, computer science                             0.001000
-mathematics and computer science                          0.001000
-undeclared                                                0.001000
-commerce                                                  0.001000
-biomedical sciences                                       0.001000
-petroleum engineering                                     0.001000
 computer and information technology                       0.001000
-playwriting                                               0.001000
-politics                                                  0.001000
-clinical psychology                                       0.001000
-microbiology                                              0.001000
-econ                                                      0.001000
-informatik                                                0.001000
-game design                                               0.001000
-visual arts                                               0.001000
 geology                                                   0.001000
+mathematics, computer science                             0.001000
+microbiology                                              0.001000
+informatik                                                0.001000
 biological sciences                                       0.001000
+politics                                                  0.001000
+mathematics and computer science                          0.001000
+petroleum engineering                                     0.001000
+commerce                                                  0.001000
+clinical psychology                                       0.001000
+game design                                               0.001000
+undeclared                                                0.001000
+visual arts                                               0.001000
+playwriting                                               0.001000
 international business                                    0.001000
+biomedical sciences                                       0.001000
+econ                                                      0.001000
 engineering management                                    0.000933
 math education                                            0.000933
 life                                                      0.000880
-broadcasting                                              0.000800
-drama                                                     0.000800
-pharmacology                                              0.000800
-information security                                      0.000800
-japanese studies                                          0.000800
-асоиу                                                     0.000800
-computer science and math                                 0.000800
-toxicology                                                0.000800
-visual communications                                     0.000800
-computer science, linguistics                             0.000800
-juris doctorate                                           0.000800
-bachelor of commerce                                      0.000800
-political science and history                             0.000800
-computing                                                 0.000800
-communication arts                                        0.000800
-biology/chemistry                                         0.000800
 maschinenbau                                              0.000800
-social sciences                                           0.000800
-informatyka                                               0.000800
-pre-health                                                0.000800
-engineering physics                                       0.000800
-illustration                                              0.000800
-cis                                                       0.000800
-electronic and telecommunication engineering              0.000800
-инженер                                                   0.000800
-human development                                         0.000800
-総合政策学部                                                    0.000800
-policy management                                         0.000800
-computer science and engineering                          0.000800
+işletme                                                   0.000800
+pharmacology                                              0.000800
 design                                                    0.000800
-materials engineering                                     0.000800
-english, history                                          0.000800
-fine arts                                                 0.000800
-information science and technology                        0.000800
-computer science & math                                   0.000800
-rhetoric                                                  0.000800
 computing science                                         0.000800
+information technolgy                                     0.000800
+総合政策学部                                                    0.000800
+international baccalaureate                               0.000800
+illustration                                              0.000800
+pre-health                                                0.000800
+communication arts                                        0.000800
+engineering physics                                       0.000800
+materials engineering                                     0.000800
+human development                                         0.000800
+асоиу                                                     0.000800
+english, history                                          0.000800
 game art and design                                       0.000800
 finance & economics                                       0.000800
-менеджмент организаций                                    0.000800
-international baccalaureate                               0.000800
-işletme                                                   0.000800
-integrative biology                                       0.000800
+political science and history                             0.000800
 course 6                                                  0.000800
-information technolgy                                     0.000800
+инженер                                                   0.000800
+cis                                                       0.000800
+visual communications                                     0.000800
+policy management                                         0.000800
+japanese studies                                          0.000800
+fine arts                                                 0.000800
+менеджмент организаций                                    0.000800
+toxicology                                                0.000800
+information science and technology                        0.000800
 religion                                                  0.000800
+computer science & math                                   0.000800
+computer science, linguistics                             0.000800
+informatyka                                               0.000800
+integrative biology                                       0.000800
+biology/chemistry                                         0.000800
+rhetoric                                                  0.000800
+social sciences                                           0.000800
+computing                                                 0.000800
+juris doctorate                                           0.000800
+bachelor of commerce                                      0.000800
+computer science and math                                 0.000800
+computer science and engineering                          0.000800
+drama                                                     0.000800
+electronic and telecommunication engineering              0.000800
+broadcasting                                              0.000800
+information security                                      0.000800
 普通科                                                       0.000733
-education                                                 0.000733
 geophysics                                                0.000733
 molecular biology                                         0.000733
-web design                                                0.000733
+education                                                 0.000733
 md                                                        0.000733
+web design                                                0.000733
 school                                                    0.000633
-nuclear engineering                                       0.000600
-visual communication design                               0.000600
-b.s. computer science                                     0.000600
-cognitive science                                         0.000600
-public affairs                                            0.000600
-film production                                           0.000600
-ingegneria informatica                                    0.000600
-german                                                    0.000600
-m.s. electrical engineering                               0.000600
-telecommunications                                        0.000600
-economics, philosophy                                     0.000600
-high school diploma                                       0.000600
-english language & literature                             0.000600
-human resource management                                 0.000600
-management science                                        0.000600
-phd in computer science                                   0.000600
-bs computer science                                       0.000600
-educational psychology                                    0.000600
-mathematics / computer science                            0.000600
-multimedia                                                0.000600
-web development                                           0.000600
-associate of arts                                         0.000600
-art & design                                              0.000600
-electronics engineering                                   0.000600
-bachelor of computer science                              0.000600
 art education                                             0.000600
-wirtschaftsinformatik                                     0.000600
-manufacturing engineering                                 0.000600
-digital media                                             0.000600
+associate of arts                                         0.000600
 computer science, economics                               0.000600
-m.a., communication                                       0.000600
-college prep                                              0.000600
-physics and mathematics                                   0.000600
-ba                                                        0.000600
-informatics                                               0.000600
-electrical & computer engineering                         0.000600
-american studies                                          0.000600
+phd in computer science                                   0.000600
+human resource management                                 0.000600
 television production                                     0.000600
+visual communication design                               0.000600
+ingegneria informatica                                    0.000600
+educational psychology                                    0.000600
+nuclear engineering                                       0.000600
+mathematics / computer science                            0.000600
+electronics engineering                                   0.000600
+english language & literature                             0.000600
+b.s. computer science                                     0.000600
+digital media                                             0.000600
+management science                                        0.000600
+ba                                                        0.000600
+high school diploma                                       0.000600
+bachelor of computer science                              0.000600
+physics and mathematics                                   0.000600
+german                                                    0.000600
+film production                                           0.000600
+public affairs                                            0.000600
+m.s. electrical engineering                               0.000600
+cognitive science                                         0.000600
+college prep                                              0.000600
+telecommunications                                        0.000600
+social science                                            0.000600
+american studies                                          0.000600
+bs computer science                                       0.000600
+multimedia                                                0.000600
+wirtschaftsinformatik                                     0.000600
+web development                                           0.000600
+m.a., communication                                       0.000600
 humanities                                                0.000600
 phd student                                               0.000600
-social science                                            0.000600
-english education                                         0.000533
+informatics                                               0.000600
+economics, philosophy                                     0.000600
+electrical & computer engineering                         0.000600
+manufacturing engineering                                 0.000600
+art & design                                              0.000600
+juris doctor                                              0.000533
+biostatistics                                             0.000533
 computer application                                      0.000533
 media studies                                             0.000533
-biostatistics                                             0.000533
-computer science and technology                           0.000533
-psychobiology                                             0.000533
+english education                                         0.000533
 j.d.                                                      0.000533
-juris doctor                                              0.000533
+psychobiology                                             0.000533
 computer programming                                      0.000533
+computer science and technology                           0.000533
 college                                                   0.000500
-컴퓨터공학부                                                    0.000400
-hustling                                                  0.000400
-computer science and information science                  0.000400
-information management                                    0.000400
-外国語学部英米語学科                                                0.000400
-english, philosophy                                       0.000400
-security studies                                          0.000400
-molecular cell biology                                    0.000400
-criminology                                               0.000400
-bs ( telecommunication engineering )                      0.000400
-computer  engineer                                        0.000400
-engineering science & french                              0.000400
-piano performance                                         0.000400
-public health policy                                      0.000400
-automotive                                                0.000400
-security and risk analysis                                0.000400
-production management                                     0.000400
-digital technology and culture                            0.000400
-systems of contol and automatics                          0.000400
-philosophy, economics                                     0.000400
-bba management, bs urban policy studies                   0.000400
-m.sc. computer science                                    0.000400
-linguistics & near eastern civilizations                  0.000400
-psychology and criminal justice                           0.000400
-automated design systems                                  0.000400
-comparative literature                                    0.000400
-bioengineering & material science engineering             0.000400
-music theatre                                             0.000400
-evolution and ecology                                     0.000400
-nuclear science and engineering                           0.000400
-art/entrepreneurship                                      0.000400
-film / video                                              0.000400
-entrepreneurship                                          0.000400
-business/cs                                               0.000400
-biochem                                                   0.000400
-менеджмент                                                0.000400
-leeting                                                   0.000400
-fashion merchandising management                          0.000400
-法学部法学科                                                    0.000400
-software institude                                        0.000400
-systems design engineering                                0.000400
-bict                                                      0.000400
-факультет систем і засобів масової комунікації            0.000400
-ba political science                                      0.000400
-biology and computer sience                               0.000400
-mba, marketing                                            0.000400
-theater                                                   0.000400
-applied math                                              0.000400
-ピアノ                                                       0.000400
-pdpp education                                            0.000400
-cand.mag in informatics                                   0.000400
-architecture & visual arts                                0.000400
-nothing                                                   0.000400
-b.a. sociology                                            0.000400
-electronic and telecommunication                          0.000400
-biochemistry/neuroscience                                 0.000400
-bachelor of health sciences                               0.000400
-electronic media and film                                 0.000400
-computer networking                                       0.000400
-communication science and disorders                       0.000400
-сапр                                                      0.000400
-interactive media and game development                    0.000400
-fundamentals                                              0.000400
-biological sciences & bioengineering                      0.000400
-computer science/ mathematics                             0.000400
-english lit                                               0.000400
-computer studies                                          0.000400
-business - mis                                            0.000400
-environmental science                                     0.000400
-кибернетика                                               0.000400
-sociology; global peace & security                        0.000400
-science and business                                      0.000400
-designer                                                  0.000400
-programmer analyst business                               0.000400
-radiation therapy                                         0.000400
-cotrol engineering                                        0.000400
-b.s. in education                                         0.000400
-media management / recording arts                         0.000400
-master of software engineering                            0.000400
-msci computing science (artificial intelligence)          0.000400
-doctor of pharmacy                                        0.000400
-multimedia design and production                          0.000400
-mlis                                                      0.000400
-it systemkaufmann                                         0.000400
-dept. of information sciences                             0.000400
-french and history                                        0.000400
-ma international development                              0.000400
-network computing                                         0.000400
-bsme mechanical engineering                               0.000400
-人工知能科                                                     0.000400
-web & digital media development                           0.000400
-philosophy and studio art                                 0.000400
-etf                                                       0.000400
-פוליטיקה וממשל                                            0.000400
-international communications                              0.000400
-mathetmatics                                              0.000400
-cfa fine art                                              0.000400
-tehniška gimnazija                                        0.000400
-molecular medicine                                        0.000400
-animal science                                            0.000400
-physiology and neuroscience                               0.000400
-comupter science +business                                0.000400
-מכונות תעופה                                              0.000400
-secondary                                                 0.000400
-среднее образование                                       0.000400
-brain and cognitive science                               0.000400
-international politics                                    0.000400
-international politics & history                          0.000400
-acting                                                    0.000400
-isit                                                      0.000400
-nutritional sciences                                      0.000400
-politics (ba hons)                                        0.000400
-english and creative writing                              0.000400
 behavioral neuroscience                                   0.000400
-english/anthropology                                      0.000400
-creative product design                                   0.000400
-conflict resolution                                       0.000400
-film and television production                            0.000400
-metals & jewelry                                          0.000400
-manufacturing technician                                  0.000400
-common law                                                0.000400
-経済学部                                                      0.000400
-major                                                     0.000400
-audio arts and acoustics                                  0.000400
-interactive arts and media                                0.000400
-商学部                                                       0.000400
-human development and psychology                          0.000400
-computer science; psychology                              0.000400
-retreating                                                0.000400
-phd food science                                          0.000400
-bsba - information services management                    0.000400
-imaging science, computer science                         0.000400
-random                                                    0.000400
-rhetoric & media studies                                  0.000400
-physics, political science                                0.000400
-production animation                                      0.000400
-maler                                                     0.000400
-im. tadeusza kościuszki                                   0.000400
-industrial product design                                 0.000400
-real-time interactive simulation                          0.000400
-english and french                                        0.000400
-mass media - film production                              0.000400
-biology education                                         0.000400
-spaceship development                                     0.000400
-economics and biology                                     0.000400
-english, theater, german, gender studies                  0.000400
-science, technology, and culture                          0.000400
-computer                                                  0.000400
-graphic design & photography                              0.000400
-chemistry, astrophysics                                   0.000400
-human-computer interaction                                0.000400
-political science and anthropology                        0.000400
-bsn rn                                                    0.000400
-computer science (artificial intelligence)                0.000400
-デザイン工学部　情報デザイン学科                                          0.000400
-bs biology                                                0.000400
-psychology, french                                        0.000400
-журналистика                                              0.000400
-environmental economics                                   0.000400
-computer science in engineering                           0.000400
-management information system                             0.000400
-english & spanish                                         0.000400
-business and marketing                                    0.000400
-masters of physician assistant                            0.000400
-bachelor of mechatronics / computer science               0.000400
-bs of computer science                                    0.000400
-faculty of fine arts                                      0.000400
-virology                                                  0.000400
-business management economics                             0.000400
-curriculum and instruction                                0.000400
-bachillerato en ciencias y letras                         0.000400
-education administration                                  0.000400
-mechanical engineergin                                    0.000400
-christian ministry - pre-seminart                         0.000400
-theater studies/humanities                                0.000400
-instrumentation & control engineering                     0.000400
-courses 18 and 6-3                                        0.000400
-corpuscular language mutagens                             0.000400
-integrated marketing communication                        0.000400
-maths                                                     0.000400
-экономический                                             0.000400
-multmedia technology                                      0.000400
-gen. ed                                                   0.000400
-game art and animation                                    0.000400
-licence sciences criminelles mention journalisme          0.000400
-international and european studies                        0.000400
-secondary education - social studies                      0.000400
-screenwriting                                             0.000400
-it engineering                                            0.000400
-marketing communications                                  0.000400
-operations research                                       0.000400
-basic specialist                                          0.000400
-fel                                                       0.000400
-elektromehanicar za masine i opremu                       0.000400
-机电工程学院                                                    0.000400
-biotechnology                                             0.000400
-film and media studies                                    0.000400
-business information systems                              0.000400
-ocean engineering                                         0.000400
-fine art                                                  0.000400
-литературная работа                                       0.000400
 political science, international relations                0.000400
-precision machining                                       0.000400
-programtervező inf                                        0.000400
-veri tabanı programcılığı                                 0.000400
-computer scince                                           0.000400
-asian american studies                                    0.000400
-mba, private equity and venture capital                   0.000400
+designer                                                  0.000400
+turystyka i rekreacja                                     0.000400
+bmc                                                       0.000400
+film and television production                            0.000400
 maths and science rubbish                                 0.000400
-communication & culture                                   0.000400
-materials science & engineering                           0.000400
+business management/marketing & business finance          0.000400
+פוליטיקה וממשל                                            0.000400
+english/creative writing                                  0.000400
+physiological sciences                                    0.000400
+it engineering                                            0.000400
+electronic and telecommunication                          0.000400
+computer networking systems administration                0.000400
+percussion performance                                    0.000400
+political sciene                                          0.000400
+среднее образование                                       0.000400
+cad drafter                                               0.000400
+operations research                                       0.000400
+藥學系                                                       0.000400
+computer science and molecular biology                    0.000400
+hästhållning                                              0.000400
+applied health science                                    0.000400
+architectural technology                                  0.000400
+finance and economics                                     0.000400
+computer games technology                                 0.000400
+law studies                                               0.000400
+mathematical statistics                                   0.000400
+history and literature                                    0.000400
+computer science, english, banking and finance,...        0.000400
+computer science and information systems                  0.000400
+elektromehanicar za masine i opremu                       0.000400
+corpuscular language mutagens                             0.000400
+electricity - telecommunications                          0.000400
+m.sc. computer science                                    0.000400
+bre                                                       0.000400
+interactive arts and media                                0.000400
+biology, physical anthropology, pre-med                   0.000400
+2d and 3d animation                                       0.000400
+doctor of pharmacy                                        0.000400
+mlis                                                      0.000400
+political science & legal studies                         0.000400
+デザイン工学部　情報デザイン学科                                          0.000400
+random                                                    0.000400
+физика                                                    0.000400
+bioengineering & material science engineering             0.000400
+communication science and disorders                       0.000400
+virology                                                  0.000400
+music performance                                         0.000400
+m.i.s.                                                    0.000400
 uluslararası ilişkiler                                    0.000400
+international politics & history                          0.000400
+physical science                                          0.000400
+economics & management science                            0.000400
+korean                                                    0.000400
+physics/engineering                                       0.000400
+graphic teknoliogi & design                               0.000400
+computer science/applied mathematics                      0.000400
+gen. ed                                                   0.000400
+information techonlogy                                    0.000400
+electrical power systems                                  0.000400
+видавнича справа та редагування                           0.000400
+cognitive science, music                                  0.000400
+fundamentals                                              0.000400
+security studies                                          0.000400
+computer science/information systems                      0.000400
+urban policy, planning and economic development           0.000400
+educational leadership                                    0.000400
+mathematics with computer science                         0.000400
+生物技术                                                      0.000400
+art/entrepreneurship                                      0.000400
+e+cs                                                      0.000400
+audiovisuelle medien                                      0.000400
+native american studies                                   0.000400
+science, technology and society (chemistry conc...        0.000400
+chemical & biological engineering                         0.000400
+linguistics & near eastern civilizations                  0.000400
+biotehnologija                                            0.000400
+design and craft                                          0.000400
+veri tabanı programcılığı                                 0.000400
+professional pilot                                        0.000400
+metallurgy & material science                             0.000400
+it-networking                                             0.000400
+communication/psychology                                  0.000400
+ba english literature                                     0.000400
+b.e (hons) computer science                               0.000400
+business information management                           0.000400
+cand.mag in informatics                                   0.000400
+economics and biology                                     0.000400
+bsc (hons) artificial intelligence and computer...        0.000400
+theater                                                   0.000400
+public health policy                                      0.000400
+multimedia studies (cand. it.)                            0.000400
+psychology/business                                       0.000400
+mathematcs                                                0.000400
+applied and computational mathematics                     0.000400
+λύκειο                                                    0.000400
+education and english                                     0.000400
+theater & psychology                                      0.000400
+physical thearpy                                          0.000400
+major                                                     0.000400
+computer science, mathematics                             0.000400
+business admin                                            0.000400
+ca                                                        0.000400
+counseling                                                0.000400
+computer science, business administration                 0.000400
+асу                                                       0.000400
+environmental engineer and science                        0.000400
+gen                                                       0.000400
+poultry science                                           0.000400
+business marketing                                        0.000400
+business informatics                                      0.000400
+english, theater, german, gender studies                  0.000400
+theatre and dance                                         0.000400
+scienze mm.ff.nn. - informatica                           0.000400
+biochemistry and molecular biology                        0.000400
+архитектор                                                0.000400
+ms computer science                                       0.000400
+mass media - film production                              0.000400
+metals & jewelry                                          0.000400
+economics / marketing                                     0.000400
+web programming                                           0.000400
+games technology bsc                                      0.000400
+tehniška gimnazija                                        0.000400
+b.s. zoology                                              0.000400
+mathematics and chemistry                                 0.000400
+ict niveau 4                                              0.000400
+m.eng computer science                                    0.000400
+computere science                                         0.000400
+aerospace technology                                      0.000400
+web and digital media development                         0.000400
+matematyka/informatyka                                    0.000400
+electrical engineering/computer & systems engin...        0.000400
+mechatronic                                               0.000400
+fachinformatik - anwendungsentwicklung                    0.000400
+production management                                     0.000400
+environmental science                                     0.000400
+earth science/ physics                                    0.000400
+physics + math                                            0.000400
+computer network security                                 0.000400
+ethics, politics, and economics; mathematics              0.000400
+literature-government                                     0.000400
+computer science + psychology                             0.000400
+fire ins and outs.                                        0.000400
+history education                                         0.000400
+masters of divinity                                       0.000400
+isit                                                      0.000400
+chemical/bio-molecular engineering                        0.000400
+religious studies                                         0.000400
+show production                                           0.000400
+美術学部                                                      0.000400
+how to be a boss                                          0.000400
+beauty specialist                                         0.000400
+geology-biology                                           0.000400
+datateknik                                                0.000400
+piano performance                                         0.000400
+international affairs                                     0.000400
+computer hardware                                         0.000400
+web & digital media development                           0.000400
+сапр                                                      0.000400
+economics, sales & marketing                              0.000400
+math / science                                            0.000400
+political science/history                                 0.000400
+computer                                                  0.000400
+psychology, french                                        0.000400
+economics, computer science & music                       0.000400
+surveying                                                 0.000400
+motion design                                             0.000400
+electronic media and film                                 0.000400
+english and journalism                                    0.000400
+математический факультет                                  0.000400
+theoretical chemistry                                     0.000400
+datalog!                                                  0.000400
+комплексная защита объектов информатизации                0.000400
+applied math                                              0.000400
+m.s. electrical and computer engineering                  0.000400
+politics (ba hons)                                        0.000400
+molecular cell biology                                    0.000400
+english, philosophy                                       0.000400
+human biology                                             0.000400
+soft eng                                                  0.000400
+materials science & engineering                           0.000400
+computer science&engineering                              0.000400
+sculpture                                                 0.000400
+master of business administration                         0.000400
+ph.d., theoretical physics                                0.000400
+business information technology                           0.000400
+школьник                                                  0.000400
+international affairs with minor in computer sc...        0.000400
+advertising and chinese                                   0.000400
+music industry studies                                    0.000400
+graphic design & photography                              0.000400
+bfa                                                       0.000400
+electrical engineering - communication systems            0.000400
+secondary                                                 0.000400
+electronics and telecommunication engineering             0.000400
+b.s. in education                                         0.000400
+philosophy, economics                                     0.000400
+机电工程学院                                                    0.000400
+culinary arts                                             0.000400
+chemical & process engineering                            0.000400
+m.d.                                                      0.000400
+political science/philosophy                              0.000400
+biology education                                         0.000400
+philosophy and studio art                                 0.000400
+информатика                                               0.000400
+pharm.d                                                   0.000400
+history major, art minor                                  0.000400
+courses 18 and 6-3                                        0.000400
+web and new media                                         0.000400
+applied mathematics & control processes                   0.000400
+elektrik mühendisliği                                     0.000400
+j.d., law                                                 0.000400
+ксс                                                       0.000400
+master of software engineering                            0.000400
+programtervező informatikus                               0.000400
+mortuary sciences                                         0.000400
+telecommunication                                         0.000400
+mechatronics engineering                                  0.000400
+political science and communications                      0.000400
+computer science; psychology                              0.000400
+bachelor's in english                                     0.000400
+communications and media studies                          0.000400
+linguistics and computer science                          0.000400
+bba - accounting                                          0.000400
+bs of computer science                                    0.000400
+психолог информатик                                       0.000400
+automated design systems                                  0.000400
+general management                                        0.000400
+journalism & psychology                                   0.000400
+bba management, bs urban policy studies                   0.000400
+psychology and criminal justice                           0.000400
+science and business                                      0.000400
+bs                                                        0.000400
+engineering mechanics                                     0.000400
+управление культуры                                       0.000400
+mba, private equity and venture capital                   0.000400
+anthropology & music                                      0.000400
+regional studies - east asia                              0.000400
+human resource development                                0.000400
+法律与經濟貿易市場營銷                                               0.000400
+ma, anthropology                                          0.000400
+bwl                                                       0.000400
+外国語学部英米語学科                                                0.000400
+food science and technology                               0.000400
+political science and art history                         0.000400
+masters of library science                                0.000400
+journalism, cit                                           0.000400
+symbolic systems                                          0.000400
+math & science                                            0.000400
+технолог                                                  0.000400
+earth and environmental engineering                       0.000400
+маркетолог                                                0.000400
+ba business administration                                0.000400
+aerospace engineering & japanese                          0.000400
+evolution and ecology                                     0.000400
+statistics and finance                                    0.000400
+mathematics, economics                                    0.000400
+cotrol engineering                                        0.000400
+multimedia journalism                                     0.000400
+ba political science                                      0.000400
+software engineering/computer science                     0.000400
+computer science & engineering                            0.000400
+bsee                                                      0.000400
+physiology and neuroscience                               0.000400
+astronomy                                                 0.000400
+computers                                                 0.000400
+english, history, theatre                                 0.000400
+hnd in quantity surveying                                 0.000400
+dept. of information sciences                             0.000400
+business and marketing                                    0.000400
+biology and biochemistry                                  0.000400
+business leadership                                       0.000400
+automotive                                                0.000400
+urban planing                                             0.000400
+course 6 - computer science                               0.000400
+cfa fine art                                              0.000400
+applied behavioral sciences                               0.000400
+itmb                                                      0.000400
+information system engineering                            0.000400
+cinema-television production                              0.000400
+digital media production                                  0.000400
+writing                                                   0.000400
+wildlife biology                                          0.000400
+systems design engineering                                0.000400
+psychology and french                                     0.000400
+veřejná správa a regionální rozvoj                        0.000400
+mba, marketing                                            0.000400
+türkçe - matematik                                        0.000400
+multimedia & web design                                   0.000400
+business management economics                             0.000400
+cognitive science (computational modeling), com...        0.000400
+acting                                                    0.000400
+ba linguistics                                            0.000400
+germanic studies                                          0.000400
+transportation design                                     0.000400
+english and french                                        0.000400
+industrial engineer                                       0.000400
+literature, writing                                       0.000400
+bs biology                                                0.000400
+business/cs                                               0.000400
+media management / recording arts                         0.000400
+real time interactive simulation                          0.000400
+matematika i informatika                                  0.000400
+biological sciences & bioengineering                      0.000400
+systems of contol and automatics                          0.000400
+b.a.                                                      0.000400
+graphic design and multimedia                             0.000400
+fashion merchandising management                          0.000400
+interactive media and game development                    0.000400
+ece/elem. education                                       0.000400
+computer scince                                           0.000400
+production animation                                      0.000400
+asian american studies                                    0.000400
+bachelor of accounting                                    0.000400
+physics, political science                                0.000400
+outdoor leadership ministries                             0.000400
+computer software                                         0.000400
+физика твердого тела                                      0.000400
+bachelor of mechatronics / computer science               0.000400
+ocean engineering                                         0.000400
+business economics                                        0.000400
+communication theory                                      0.000400
+undecided                                                 0.000400
+chemical and process engineering                          0.000400
+music theatre                                             0.000400
+masters in business administration                        0.000400
+phd computer science                                      0.000400
+computing systems                                         0.000400
+african american studies                                  0.000400
+computer science, comparative history of ideas            0.000400
+getting things done                                       0.000400
+information systems security                              0.000400
+economics/history                                         0.000400
+mortuary science                                          0.000400
+btec music technology                                     0.000400
+creative product design                                   0.000400
+music engineering                                         0.000400
+electrical and computer engineering, computer s...        0.000400
+computer science (artificial intelligence)                0.000400
+литературная работа                                       0.000400
+drawing & painting                                        0.000400
+spells and hexes                                          0.000400
+accounting and financial management                       0.000400
+marketing communications                                  0.000400
+gcse                                                      0.000400
+computer science engineering                              0.000400
+interpersonal/organizational communication                0.000400
+game art & design                                         0.000400
+east asian studies                                        0.000400
+electrical enginering                                     0.000400
+theater studies/humanities                                0.000400
+communication design                                      0.000400
+b.a. in sociology                                         0.000400
+etf                                                       0.000400
+bachillerato en ciencias y letras                         0.000400
+студент (бакалавр)                                        0.000400
+computer science, b.s.                                    0.000400
+german & sociology                                        0.000400
+fine art                                                  0.000400
+music composition, computer science                       0.000400
+masters of physician assistant                            0.000400
+business mgmt                                             0.000400
+bsme mechanical engineering                               0.000400
+healthcare                                                0.000400
+人工知能科                                                     0.000400
+information systems & finance                             0.000400
+business school dropout                                   0.000400
+se                                                        0.000400
+managment information systems                             0.000400
+מדעי המחשב                                                0.000400
+energieffektiva system                                    0.000400
+learning and organizational change                        0.000400
+film/television                                           0.000400
+computer  engineer                                        0.000400
+la                                                        0.000400
+spaceship development                                     0.000400
+academic diploma                                          0.000400
+sociology; global peace & security                        0.000400
+imaging science, computer science                         0.000400
+radio and television arts                                 0.000400
+bfa lighting design                                       0.000400
+international and european studies                        0.000400
+b.s                                                       0.000400
+physics & cs                                              0.000400
+broadcast communication                                   0.000400
+manufacturing technician                                  0.000400
+political science and anthropology                        0.000400
+computer science/ mathematics                             0.000400
+computer science in engineering                           0.000400
+computational media                                       0.000400
+mathetmatics                                              0.000400
+computer science, physics                                 0.000400
+electrical engineering - bs                               0.000400
+b.a. sociology                                            0.000400
+bachelor of science degree                                0.000400
+multimedia design and production                          0.000400
+interactive media                                         0.000400
+hustling                                                  0.000400
+im. tadeusza kościuszki                                   0.000400
+bsn rn                                                    0.000400
+business information systems                              0.000400
+electrical                                                0.000400
+math-computer science                                     0.000400
+rhetoric & media studies                                  0.000400
+nutritional sciences                                      0.000400
+english lit                                               0.000400
+endüstri mühendisliği                                     0.000400
+english writing                                           0.000400
+strategic marketing management                            0.000400
+b.tech in it                                              0.000400
+bahons, philosophy                                        0.000400
+кибернетика                                               0.000400
+תיכון                                                     0.000400
+broadcast journalism                                      0.000400
+sayısal                                                   0.000400
+设计学院广告学031                                                0.000400
+film and media arts                                       0.000400
+nothing                                                   0.000400
+multmedia technology                                      0.000400
+法学部法学科                                                    0.000400
+comupter science +business                                0.000400
+liceo scientifico                                         0.000400
+ma international development                              0.000400
+film / video                                              0.000400
+music history                                             0.000400
+mechanical                                                0.000400
+philosophy and religion                                   0.000400
+phd, civil engineering                                    0.000400
+chemistry, astrophysics                                   0.000400
+computer science and interactive media                    0.000400
+criminology                                               0.000400
+business administration, eecs, economics                  0.000400
+biological engineering                                    0.000400
+cinematic arts - production & interactive media           0.000400
+information management                                    0.000400
+biology/secondary education                               0.000400
+environmental economics                                   0.000400
+maler                                                     0.000400
+comp sci                                                  0.000400
+bsc (hons) computing for industry 2:1                     0.000400
+early childhood ed.                                       0.000400
+systemy informatyczne i bazy danych                       0.000400
+hardware                                                  0.000400
+library & information science                             0.000400
+health studies                                            0.000400
+ピアノ                                                       0.000400
+physics phd.                                              0.000400
+socjologia                                                0.000400
+hilton school of hotel & restaurant management            0.000400
+comm. art                                                 0.000400
+bs business administration                                0.000400
+cse                                                       0.000400
+political science & spanish                               0.000400
+medical informatics                                       0.000400
+computer science / philosophy                             0.000400
+human-computer interaction                                0.000400
+art--jewelry and metals                                   0.000400
+teknisk fysik                                             0.000400
+labor studies & employment relations                      0.000400
+pdpp education                                            0.000400
+management information system                             0.000400
+human geography                                           0.000400
+scienze dell'informazione                                 0.000400
+horticulture                                              0.000400
+msci computing science (artificial intelligence)          0.000400
+rn-bsn                                                    0.000400
+programtervező inf                                        0.000400
+fel                                                       0.000400
+exchange program                                          0.000400
+med                                                       0.000400
+instrumentation & control engineering                     0.000400
+leeting                                                   0.000400
+molecular medicine                                        0.000400
+факультет систем і засобів масової комунікації            0.000400
+computer animation                                        0.000400
+christian ministry - pre-seminart                         0.000400
+entrepreneurship                                          0.000400
+журналистика                                              0.000400
+engineering geology                                       0.000400
+商学部                                                       0.000400
+systems biology                                           0.000400
+kinesiology                                               0.000400
+game & simulation programming                             0.000400
+tmdt                                                      0.000400
+b.s. systems engineering                                  0.000400
+middle school education                                   0.000400
+digital technology and culture                            0.000400
+everything                                                0.000400
+studiespesialiserende                                     0.000400
+ece & cs                                                  0.000400
+stuff                                                     0.000400
+mse biomedical engineering                                0.000400
+informatyka / technologie internetowe                     0.000400
+professional aeronautics                                  0.000400
+materials and metallurgical engineering                   0.000400
+biomedical science                                        0.000400
+biotechnology                                             0.000400
+licence sciences criminelles mention journalisme          0.000400
+trolling                                                  0.000400
+architecture & visual arts                                0.000400
 3d animation                                              0.000400
 软件工程                                                      0.000400
-physics + math                                            0.000400
-exchange program                                          0.000400
-rn-bsn                                                    0.000400
-computer science, business administration                 0.000400
-multimedia journalism                                     0.000400
-food science and technology                               0.000400
-вычислительные машины системы комплексы и сети            0.000400
-phd computer science                                      0.000400
-veřejná správa a regionální rozvoj                        0.000400
-east asian studies                                        0.000400
-electrical and electronics engineer                       0.000400
-2d and 3d animation                                       0.000400
-bba - accounting                                          0.000400
-bsc (hons) computer science                               0.000400
-b.s                                                       0.000400
-international affairs with minor in computer sc...        0.000400
-applied mathematics & control processes                   0.000400
-computing systems                                         0.000400
-経営学部経営学科                                                  0.000400
-math / science                                            0.000400
-math & science                                            0.000400
-how to be a boss                                          0.000400
-fire ins and outs.                                        0.000400
-business economics                                        0.000400
-biotehnologija                                            0.000400
-music engineering                                         0.000400
-matematika i informatika                                  0.000400
-ecology                                                   0.000400
-middle school education                                   0.000400
-materials and metallurgical engineering                   0.000400
-ma, anthropology                                          0.000400
-computer science, cognitive & brain sciences              0.000400
-professional pilot                                        0.000400
-bs business administration                                0.000400
-digital media production                                  0.000400
-m.i.s.                                                    0.000400
-computer science, comparative history of ideas            0.000400
-english, computer science                                 0.000400
-microbial biology                                         0.000400
-computer science and molecular biology                    0.000400
-political science & legal studies                         0.000400
-department of problems of physics and power eng...        0.000400
-systems biology                                           0.000400
-interpersonal/organizational communication                0.000400
-computer science and software engineering                 0.000400
-economics & management science                            0.000400
-business marketing                                        0.000400
-business management/marketing & business finance          0.000400
-masters in business administration                        0.000400
-science, technology and society (chemistry conc...        0.000400
-business leadership                                       0.000400
-health studies                                            0.000400
-managment information systems                             0.000400
-trolling                                                  0.000400
-phd, civil engineering                                    0.000400
-wildlife biology                                          0.000400
-drawing & painting                                        0.000400
-bsee                                                      0.000400
-socjologia                                                0.000400
-psychology/business                                       0.000400
-music technology                                          0.000400
-web and digital media development                         0.000400
-med                                                       0.000400
-physical thearpy                                          0.000400
-computer science, b.s.                                    0.000400
-film/television                                           0.000400
-computere science                                         0.000400
-music industry studies                                    0.000400
-masters of divinity                                       0.000400
-bsc (hons) computing for industry 2:1                     0.000400
-international and comparative law                         0.000400
-earth science/ physics                                    0.000400
-computer games technology                                 0.000400
-pharm.d                                                   0.000400
-studiespesialiserende                                     0.000400
-information system engineering                            0.000400
-political science & spanish                               0.000400
-electrical enginering                                     0.000400
-engineering geology                                       0.000400
-matematyka/informatyka                                    0.000400
-computer science, physics                                 0.000400
-labor studies & employment relations                      0.000400
-physical science                                          0.000400
-master of business administration                         0.000400
-interactive media                                         0.000400
-datalog!                                                  0.000400
-cinematic arts - production & interactive media           0.000400
-מדעי המחשב                                                0.000400
-工学部情報ネットワーク工学科                                            0.000400
-mechanical                                                0.000400
-information systems & finance                             0.000400
-political science and art history                         0.000400
-se                                                        0.000400
-early childhood ed.                                       0.000400
-bachelor of commerce - honours                            0.000400
-political science & computer science                      0.000400
-film and media arts                                       0.000400
-bachelor of accounting                                    0.000400
-инженер-математик                                         0.000400
-mechatronic                                               0.000400
-computer science/applied mathematics                      0.000400
-politikwissenschaften                                     0.000400
-applied and computational mathematics                     0.000400
-philosophy/economics                                      0.000400
-computer science, maths                                   0.000400
-transportation design                                     0.000400
-психолог информатик                                       0.000400
-culinary arts                                             0.000400
-hästhållning                                              0.000400
-game & simulation programming                             0.000400
-art--jewelry and metals                                   0.000400
-electrical power systems                                  0.000400
-economics/history                                         0.000400
-видавнича справа та редагування                           0.000400
-history education                                         0.000400
-economics & finance                                       0.000400
-information systems security                              0.000400
-beauty specialist                                         0.000400
-cinema-television production                              0.000400
-symbolic systems                                          0.000400
-writing                                                   0.000400
-kognitionsvetenskap                                       0.000400
-urban planing                                             0.000400
-teknisk fysik                                             0.000400
-biomedical science                                        0.000400
-english, history, theatre                                 0.000400
-it-networking                                             0.000400
-turystyka i rekreacja                                     0.000400
-kinesiology                                               0.000400
-business admin                                            0.000400
-computer science, mathematics                             0.000400
-literature                                                0.000400
-sociology and anthropology                                0.000400
-philosophy and religion                                   0.000400
-audiovisuelle medien                                      0.000400
-space engineering                                         0.000400
-comm. art                                                 0.000400
-geospatial info science                                   0.000400
-game art & design                                         0.000400
-anthropology, cognitive science                           0.000400
-engineering & drafting                                    0.000400
-theoretical chemistry                                     0.000400
-ethics, politics, and economics; mathematics              0.000400
-history and literature                                    0.000400
-human geography                                           0.000400
-информационные технологии                                 0.000400
-poultry science                                           0.000400
-bsc astrophysics                                          0.000400
-english and journalism                                    0.000400
-music performance                                         0.000400
-b.s. zoology                                              0.000400
-electrical engineering - communication systems            0.000400
-real time interactive simulation                          0.000400
-computer hardware                                         0.000400
-математический факультет                                  0.000400
-ms computer science                                       0.000400
-business information management                           0.000400
-electronics and telecommunication engineering             0.000400
-telecommunication                                         0.000400
-bwl                                                       0.000400
-aviation management                                       0.000400
-msc software engineering                                  0.000400
-journalism, cit                                           0.000400
-library & information science                             0.000400
-computer animation                                        0.000400
-λύκειο                                                    0.000400
-fachinformatik - anwendungsentwicklung                    0.000400
-communication/psychology                                  0.000400
-law studies                                               0.000400
-mathematics and chemistry                                 0.000400
-astronomy                                                 0.000400
-metallurgy & material science                             0.000400
-ist                                                       0.000400
-cse                                                       0.000400
-bfa -film studies                                         0.000400
-strategic marketing management                            0.000400
-computers                                                 0.000400
-computational media                                       0.000400
-технолог                                                  0.000400
-школьник                                                  0.000400
-engineering mechanics                                     0.000400
-архитектор                                                0.000400
-physics & cs                                              0.000400
-менеджмент организации (экономический факультет)          0.000400
-computer science engineering                              0.000400
-biology and biochemistry                                  0.000400
-datateknik                                                0.000400
-комплексная защита объектов информатизации                0.000400
-computer/electrical engineering                           0.000400
-interactive media production                              0.000400
-communications and media studies                          0.000400
-ipa                                                       0.000400
-ba english literature                                     0.000400
-soft eng                                                  0.000400
-music history                                             0.000400
-masters in curriculum and instruction                     0.000400
-broadcast communication                                   0.000400
-ece & cs                                                  0.000400
-motion design                                             0.000400
-meteorology                                               0.000400
-生物技术                                                      0.000400
-маркетолог                                                0.000400
-business administration, eecs, economics                  0.000400
-cognitive science, music                                  0.000400
-design and craft                                          0.000400
-spells and hexes                                          0.000400
-journalism & psychology                                   0.000400
-computer science / philosophy                             0.000400
-informatyka / technologie internetowe                     0.000400
-international economic relations                          0.000400
-business informatics                                      0.000400
-information systems management                            0.000400
-web and new media                                         0.000400
-mse biomedical engineering                                0.000400
-public health                                             0.000400
-b.a. in sociology                                         0.000400
-cad drafter                                               0.000400
-computing and security technology                         0.000400
-scienze dell'informazione                                 0.000400
-earth and environmental engineering                       0.000400
-educational leadership                                    0.000400
-radio and television arts                                 0.000400
-m.d.                                                      0.000400
-urban policy, planning and economic development           0.000400
-bmc                                                       0.000400
-electrical                                                0.000400
-bachelor of science degree                                0.000400
-psychology and french                                     0.000400
-gcse                                                      0.000400
-cognitive science (computational modeling), com...        0.000400
-finance and economics                                     0.000400
-mortuary sciences                                         0.000400
-broadcast journalism                                      0.000400
-linguistics and computer science                          0.000400
-computer science and information systems                  0.000400
-multimedia studies (cand. it.)                            0.000400
-btec music technology                                     0.000400
-applied health science                                    0.000400
-percussion performance                                    0.000400
-biology, physical anthropology, pre-med                   0.000400
-music composition, computer science                       0.000400
-chemical/bio-molecular engineering                        0.000400
-nsa                                                       0.000400
-přírodovědný                                              0.000400
-business mgmt                                             0.000400
-bs in computer science                                    0.000400
-professional writing                                      0.000400
-computer science & engineering                            0.000400
-havo                                                      0.000400
-english writing                                           0.000400
-hardware                                                  0.000400
-физика                                                    0.000400
-computer science/information systems                      0.000400
-sep                                                       0.000400
-multimedia & web design                                   0.000400
-bachelor's in english                                     0.000400
-comp sci                                                  0.000400
-medie og kommunikasjon                                    0.000400
-statistics and finance                                    0.000400
-mortuary science                                          0.000400
-information techonlogy                                    0.000400
-world economy                                             0.000400
-biology/secondary education                               0.000400
-games technology bsc                                      0.000400
-law school                                                0.000400
-charms                                                    0.000400
-communication design                                      0.000400
-computer engineering / computer science                   0.000400
-sculpture                                                 0.000400
-computer software                                         0.000400
-biochemistry and molecular biology                        0.000400
-computer science, english, banking and finance,...        0.000400
-advertising and chinese                                   0.000400
-accounting and financial management                       0.000400
-teaching                                                  0.000400
-regional studies - east asia                              0.000400
-bfa lighting design                                       0.000400
-sayısal                                                   0.000400
-endüstri mühendisliği                                     0.000400
-mechatronics engineering                                  0.000400
-history major, art minor                                  0.000400
-emt - basic                                               0.000400
-irrigation                                                0.000400
-bahons, philosophy                                        0.000400
-general management                                        0.000400
-architectural technology                                  0.000400
-computer science and interactive media                    0.000400
-bre                                                       0.000400
-electricity - telecommunications                          0.000400
-computer science&engineering                              0.000400
-literature-government                                     0.000400
-human biology                                             0.000400
-horticulture                                              0.000400
-programtervező informatikus                               0.000400
-hilton school of hotel & restaurant management            0.000400
-economics, computer science & music                       0.000400
-systemy informatyczne i bazy danych                       0.000400
-theatre and dance                                         0.000400
-управление культуры                                       0.000400
-türkçe - matematik                                        0.000400
-computer science + practice of art                        0.000400
-mathematics with computer science                         0.000400
-mathematics, economics                                    0.000400
-learning and organizational change                        0.000400
-strojírenstvi                                             0.000400
-physiological sciences                                    0.000400
-ece/elem. education                                       0.000400
-b.e (hons) computer science                               0.000400
-mathematical statistics                                   0.000400
-literature, writing                                       0.000400
-academic diploma                                          0.000400
-math-computer science                                     0.000400
-tbd                                                       0.000400
-m.eng computer science                                    0.000400
-sustainable development, hispanic studies                 0.000400
-stuff                                                     0.000400
-студент (бакалавр)                                        0.000400
-maters in learning technologies                           0.000400
-masters of library science                                0.000400
-international affairs                                     0.000400
-graphic teknoliogi & design                               0.000400
-computer science + psychology                             0.000400
-b.s., engineering mathematics and statistics              0.000400
-la                                                        0.000400
-hotel & tourism management                                0.000400
-physics, music                                            0.000400
-j.d., law                                                 0.000400
-physics phd.                                              0.000400
-e+cs                                                      0.000400
-economics / marketing                                     0.000400
-b.tech in it                                              0.000400
-applied behavioral sciences                               0.000400
-political science and communications                      0.000400
-асу                                                       0.000400
-chemical & biological engineering                         0.000400
-tmdt                                                      0.000400
-electrical engieering                                     0.000400
-counseling                                                0.000400
-设计学院广告学031                                                0.000400
-bs                                                        0.000400
-plant protection                                          0.000400
-germanic studies                                          0.000400
-political science/philosophy                              0.000400
-religious studies                                         0.000400
-土木工程系                                                     0.000400
-computer network security                                 0.000400
-hardware engineering                                      0.000400
-german & sociology                                        0.000400
-computer networking systems administration                0.000400
-itmb                                                      0.000400
-ict niveau 4                                              0.000400
-english/creative writing                                  0.000400
-electronics engineer                                      0.000400
-藥學系                                                       0.000400
-communication, international relations                    0.000400
-outdoor leadership ministries                             0.000400
-ba business administration                                0.000400
-sinh học                                                  0.000400
-社会福祉学科                                                    0.000400
-industrial engineer                                       0.000400
-美術学部                                                      0.000400
-biological engineering                                    0.000400
-aerospace engineering & japanese                          0.000400
-informatics and computer technology                       0.000400
-electrcial engineering                                    0.000400
-bfa                                                       0.000400
-информатика                                               0.000400
-healthcare                                                0.000400
-ксс                                                       0.000400
-physics/engineering                                       0.000400
-undecided                                                 0.000400
-chemical & process engineering                            0.000400
-economics, sales & marketing                              0.000400
-computer systems technology                               0.000400
-cyber & digital security                                  0.000400
-新聞系                                                       0.000400
-professional aeronautics                                  0.000400
-geology-biology                                           0.000400
-b.s. systems engineering                                  0.000400
-mathematcs                                                0.000400
-korean                                                    0.000400
-hnd in quantity surveying                                 0.000400
-human resource development                                0.000400
-show production                                           0.000400
-elektrik mühendisliği                                     0.000400
-физика твердого тела                                      0.000400
-geochemistry, english                                     0.000400
-ba linguistics                                            0.000400
-m.s. electrical and computer engineering                  0.000400
-ph.d., theoretical physics                                0.000400
-aerospace technology                                      0.000400
-electrical engineering/computer & systems engin...        0.000400
-mathematical physics                                      0.000400
-course 6 - computer science                               0.000400
-computing and electronics                                 0.000400
-chemical and process engineering                          0.000400
-physics/philosophy                                        0.000400
-communication theory                                      0.000400
-education and english                                     0.000400
-surveying                                                 0.000400
-web programming                                           0.000400
-gen                                                       0.000400
-african american studies                                  0.000400
-everything                                                0.000400
-software engineering/computer science                     0.000400
-csse                                                      0.000400
-תיכון                                                     0.000400
-electrical engineering - bs                               0.000400
-electrical and computer engineering, computer s...        0.000400
-business school dropout                                   0.000400
-bsc (hons) artificial intelligence and computer...        0.000400
-liceo scientifico                                         0.000400
-environmental engineer and science                        0.000400
-法律与經濟貿易市場營銷                                               0.000400
-anthropology & music                                      0.000400
-energieffektiva system                                    0.000400
-ca                                                        0.000400
-english language                                          0.000400
-nanotechnology engineering                                0.000400
 recreation                                                0.000400
-graphic design and multimedia                             0.000400
-native american studies                                   0.000400
-medical informatics                                       0.000400
-hcde/communications                                       0.000400
-political science/history                                 0.000400
-mpa - international development                           0.000400
-教育技术学                                                     0.000400
-getting things done                                       0.000400
-political sciene                                          0.000400
-scienze mm.ff.nn. - informatica                           0.000400
-animation                                                 0.000400
-business information technology                           0.000400
-b.a.                                                      0.000400
+masters in curriculum and instruction                     0.000400
+phd food science                                          0.000400
+computer science, maths                                   0.000400
+nuclear science and engineering                           0.000400
+менеджмент                                                0.000400
+politikwissenschaften                                     0.000400
+english/anthropology                                      0.000400
+precision machining                                       0.000400
+international politics                                    0.000400
+english and creative writing                              0.000400
+информационные технологии                                 0.000400
+science, technology, and culture                          0.000400
+ipa                                                       0.000400
+havo                                                      0.000400
+political science & computer science                      0.000400
+screenwriting                                             0.000400
+curriculum and instruction                                0.000400
+security and risk analysis                                0.000400
+土木工程系                                                     0.000400
+bfa -film studies                                         0.000400
+bachelor of health sciences                               0.000400
+инженер-математик                                         0.000400
+physics, music                                            0.000400
+sep                                                       0.000400
+bachelor of commerce - honours                            0.000400
+computer engineering / computer science                   0.000400
+professional writing                                      0.000400
+game art and animation                                    0.000400
+maters in learning technologies                           0.000400
+conflict resolution                                       0.000400
+hotel & tourism management                                0.000400
 многоканальные телекоммуникационные системы               0.000400
-theater & psychology                                      0.000400
-neurobiology                                              0.000333
-film studies                                              0.000333
-n/a                                                       0.000333
-cs                                                        0.000333
-+2                                                        0.000333
-b.a. political science                                    0.000333
+bict                                                      0.000400
+education administration                                  0.000400
+computer/electrical engineering                           0.000400
+nanotechnology engineering                                0.000400
+computer systems technology                               0.000400
+industrial product design                                 0.000400
+computer networking                                       0.000400
+english, computer science                                 0.000400
+electrcial engineering                                    0.000400
+bsba - information services management                    0.000400
+animation                                                 0.000400
+engineering & drafting                                    0.000400
+human development and psychology                          0.000400
+medie og kommunikasjon                                    0.000400
+教育技术学                                                     0.000400
+sustainable development, hispanic studies                 0.000400
+computer science + practice of art                        0.000400
+bsc (hons) computer science                               0.000400
+music technology                                          0.000400
+information systems management                            0.000400
+менеджмент организации (экономический факультет)          0.000400
+geospatial info science                                   0.000400
+international communications                              0.000400
+irrigation                                                0.000400
+space engineering                                         0.000400
+新聞系                                                       0.000400
+biochem                                                   0.000400
+engineering science & french                              0.000400
+מכונות תעופה                                              0.000400
+audio arts and acoustics                                  0.000400
+electrical and electronics engineer                       0.000400
+ist                                                       0.000400
+public health                                             0.000400
+tbd                                                       0.000400
+컴퓨터공학부                                                    0.000400
+law school                                                0.000400
+world economy                                             0.000400
+animal science                                            0.000400
+sinh học                                                  0.000400
+international and comparative law                         0.000400
+economics & finance                                       0.000400
+вычислительные машины системы комплексы и сети            0.000400
+b.s., engineering mathematics and statistics              0.000400
+bs ( telecommunication engineering )                      0.000400
+english & spanish                                         0.000400
+informatics and computer technology                       0.000400
+mechanical engineergin                                    0.000400
+common law                                                0.000400
+maths                                                     0.000400
+экономический                                             0.000400
+electrical engieering                                     0.000400
+anthropology, cognitive science                           0.000400
+radiation therapy                                         0.000400
+network computing                                         0.000400
+経済学部                                                      0.000400
+business - mis                                            0.000400
+computer science, cognitive & brain sciences              0.000400
+kognitionsvetenskap                                       0.000400
+bsc astrophysics                                          0.000400
+geochemistry, english                                     0.000400
+software institude                                        0.000400
+communication & culture                                   0.000400
+computing and security technology                         0.000400
+csse                                                      0.000400
+it systemkaufmann                                         0.000400
+nsa                                                       0.000400
+brain and cognitive science                               0.000400
+basic specialist                                          0.000400
+secondary education - social studies                      0.000400
+programmer analyst business                               0.000400
+international economic relations                          0.000400
+computer science and software engineering                 0.000400
+mathematical physics                                      0.000400
+strojírenstvi                                             0.000400
+社会福祉学科                                                    0.000400
+meteorology                                               0.000400
+integrated marketing communication                        0.000400
+msc software engineering                                  0.000400
+cyber & digital security                                  0.000400
+electronics engineer                                      0.000400
+computer science and information science                  0.000400
+computing and electronics                                 0.000400
+french and history                                        0.000400
+physics/philosophy                                        0.000400
+teaching                                                  0.000400
+biology and computer sience                               0.000400
+retreating                                                0.000400
+emt - basic                                               0.000400
+経営学部経営学科                                                  0.000400
+literature                                                0.000400
+přírodovědný                                              0.000400
+mpa - international development                           0.000400
+工学部情報ネットワーク工学科                                            0.000400
+communication, international relations                    0.000400
+hcde/communications                                       0.000400
+ecology                                                   0.000400
+sociology and anthropology                                0.000400
+aviation management                                       0.000400
+computer studies                                          0.000400
+plant protection                                          0.000400
+real-time interactive simulation                          0.000400
+department of problems of physics and power eng...        0.000400
+comparative literature                                    0.000400
+philosophy/economics                                      0.000400
+interactive media production                              0.000400
+biochemistry/neuroscience                                 0.000400
+english language                                          0.000400
+bs in computer science                                    0.000400
+microbial biology                                         0.000400
+charms                                                    0.000400
+faculty of fine arts                                      0.000400
+hardware engineering                                      0.000400
+film and media studies                                    0.000400
 llb                                                       0.000333
-christian education                                       0.000333
-biophysics                                                0.000333
 vocal performance                                         0.000333
+christian education                                       0.000333
+b.a. political science                                    0.000333
+film studies                                              0.000333
+neurobiology                                              0.000333
+biophysics                                                0.000333
+n/a                                                       0.000333
++2                                                        0.000333
+cs                                                        0.000333
 elementary school                                         0.000280
-pre-engineering                                           0.000233
 primary                                                   0.000233
-ms engineering management                                 0.000200
-food science                                              0.000200
-computer games development                                0.000200
-visual communication                                      0.000200
-bachelor of medicine, bachelor of surgery                 0.000200
-phd                                                       0.000200
-year abroad                                               0.000200
-computer vision                                           0.000200
-materials science engineering                             0.000200
-interpersonal communications                              0.000200
-digital media design                                      0.000200
-art and visual technology - graphic design                0.000200
-hotel administration                                      0.000200
-hci                                                       0.000200
-computer science - artificial intelligence                0.000200
-art therapy                                               0.000200
-dae-electronics                                           0.000200
-lithography                                               0.000200
-publizistik                                               0.000200
-phd complexity sciences                                   0.000200
-dentistry                                                 0.000200
-mm                                                        0.000200
-english, art history                                      0.000200
-interactive telecommunications program                    0.000200
-political science, ba                                     0.000200
-networking and multimedia                                 0.000200
-information system and technology                         0.000200
-bioethics & global health                                 0.000200
-mc, mathematical logic                                    0.000200
-ha almen                                                  0.000200
-leaving cert                                              0.000200
-christian ed.                                             0.000200
-ba, psychology                                            0.000200
-ba, anthropology                                          0.000200
-intermediate                                              0.000200
-ab history                                                0.000200
-bscit                                                     0.000200
-contemporary art                                          0.000200
-daydreaming                                               0.000200
-materials engineering, bsc                                0.000200
-information systems science                               0.000200
-bachelor of information technology (hon)                  0.000200
-ma, international studies                                 0.000200
-วิทยาการคอมพิวเตอร์                                       0.000200
-math & physic                                             0.000200
-primary school                                            0.000200
-ma integrated marketing communication                     0.000200
-s.b. eecs                                                 0.000200
-astronomy-physics, physics, mathematics                   0.000200
-m.ed., leadership                                         0.000200
-russian literature                                        0.000200
-bilgisayar teknolojileri ve programlama                   0.000200
-computer science/engineering                              0.000200
-integrated science and technology                         0.000200
-linguistics ma/phd                                        0.000200
-master of journalism                                      0.000200
-flute performance                                         0.000200
-právo                                                     0.000200
-b.a. geography                                            0.000200
-english and history                                       0.000200
-intensive business chinese                                0.000200
-mathematics & computer science                            0.000200
-bm                                                        0.000200
-social psychology                                         0.000200
-computer science & technology                             0.000200
-sociomedical sciences                                     0.000200
-文/理 ?                                                     0.000200
-physics (atomic, molecular, optical)                      0.000200
-ゲーム課                                                      0.000200
-學生                                                        0.000200
-master of educational technology                          0.000200
-computer science and information technology               0.000200
-wildlife science                                          0.000200
-bba                                                       0.000200
-health sector management                                  0.000200
-aerial silks                                              0.000200
-msc in information systems and security                   0.000200
-computer technology                                       0.000200
-ms, computer science                                      0.000200
-bicycle jousting                                          0.000200
-molecular & cellular biology                              0.000200
-the laws                                                  0.000200
-mist                                                      0.000200
-physics and astrophysics                                  0.000200
-philosophy, politics, economics                           0.000200
-finance, math, computer science                           0.000200
-ba (hons) illustration                                    0.000200
-юриспруденция                                             0.000200
-masters of public administration                          0.000200
-liberal arts and sciences                                 0.000200
-social anthropology                                       0.000200
-photography, sculpture                                    0.000200
-master of computer science                                0.000200
-bcomp. ssp cognitive science                              0.000200
-историја                                                  0.000200
-ba psychology                                             0.000200
-management and leadership                                 0.000200
-computer science, digital arts                            0.000200
-bs cs                                                     0.000200
-latin, computer science                                   0.000200
-igcse                                                     0.000200
-graphic design department                                 0.000200
-leaving certificate                                       0.000200
-m.s. structural engineering                               0.000200
-women's studies                                           0.000200
-political management                                      0.000200
-history/philosophy                                        0.000200
-emba                                                      0.000200
-film and video                                            0.000200
-arts applications in film studies                         0.000200
-forestry & political science                              0.000200
-english and business                                      0.000200
-informatics engineering                                   0.000200
-phd design                                                0.000200
-icme                                                      0.000200
-mathematics, physics                                      0.000200
-computer engineering, bs                                  0.000200
-march                                                     0.000200
-m.s. in computer science                                  0.000200
-ms chemistry                                              0.000200
-masters in public administration                          0.000200
-mpa                                                       0.000200
-chemistry, music, mathematics                             0.000200
-marketing communication: advertising & public r...        0.000200
-ms (cs)                                                   0.000200
-bs statistics                                             0.000200
-cand. merc. økonomistyring                                0.000200
-life science                                              0.000200
-medical anthropology                                      0.000200
-aeronautical science                                      0.000200
-biomedical engineering institute                          0.000200
-chinese                                                   0.000200
-mestrado em gestão                                        0.000200
-media arts & animation                                    0.000200
-mathematics and philosophy                                0.000200
-italian                                                   0.000200
-archaeology                                               0.000200
-college scholars                                          0.000200
-sports management                                         0.000200
-программист-техник                                        0.000200
-social studies                                            0.000200
-правоведение                                              0.000200
-ba (hons) computer and video games                        0.000200
-mathematics, bs                                           0.000200
-tourism management                                        0.000200
-physics, math                                             0.000200
-mba - marketing                                           0.000200
-finance & accounting                                      0.000200
-m.s., ph.d. computer science                              0.000200
-physics with computing                                    0.000200
-licenciatura em economia                                  0.000200
-mechanics and machine constructions                       0.000200
-health policy                                             0.000200
-ba - history                                              0.000200
-information systems engineering                           0.000200
-a.b.                                                      0.000200
-multidisciplinary studies                                 0.000200
-material science engineering                              0.000200
-matematyczno - fizyczny                                   0.000200
-environmental engineering                                 0.000200
-english & theatre                                         0.000200
-physical chemistry                                        0.000200
-apple certified final cut pro 5                           0.000200
-riyazi                                                    0.000200
-doctorate of dental surgery, dds                          0.000200
-(high school)                                             0.000200
-computer science / history and philosophy of sc...        0.000200
-b.a. psychology                                           0.000200
-computational physics                                     0.000200
-masters it -information security and privacy              0.000200
-history & literature                                      0.000200
-computer information science                              0.000200
-environmental design                                      0.000200
-latin                                                     0.000200
-sport science                                             0.000200
-quality management                                        0.000200
-copywriting                                               0.000200
-russian language                                          0.000200
-pinnacle                                                  0.000200
-bs graphic arts and imaging technology                    0.000200
-mfa in playwriting                                        0.000200
-organismic and evoluationary biology                      0.000200
-environment and natural resources                         0.000200
-political science/german                                  0.000200
-ma, international relations                               0.000200
-nuclear engineering and engineering physics               0.000200
-medical technology                                        0.000200
-pgce business education                                   0.000200
-cell biology & neuroscience                               0.000200
-pti                                                       0.000200
-business administration and sociology                     0.000200
-badassery                                                 0.000200
-b.bus.sci (is) hons                                       0.000200
-m.s. meteorology                                          0.000200
-chinese language                                          0.000200
-criminal law                                              0.000200
-computer mathematics                                      0.000200
-systems engineering                                       0.000200
-applied design (communication)                            0.000200
-japanese ba / computer sciences cert.                     0.000200
-chemistry and mathematics                                 0.000200
-graphical technics                                        0.000200
-msce                                                      0.000200
-pathology                                                 0.000200
-study abroad                                              0.000200
-public relations and advertising                          0.000200
-gce ol                                                    0.000200
-finance, management                                       0.000200
-medical student                                           0.000200
-medical doctor                                            0.000200
-recording arts                                            0.000200
-b.s. math                                                 0.000200
-aeronautics and astronautics                              0.000200
-molecular & cell biology                                  0.000200
-finance, opim, statistics, anthropology                   0.000200
-communications in conflict                                0.000200
-physics phd                                               0.000200
-geological sciences                                       0.000200
-secondary school                                          0.000200
-tax                                                       0.000200
-друштвено-језички смер                                    0.000200
-mechanical engineer                                       0.000200
-history ma                                                0.000200
-anthropology - archaeology                                0.000200
-astronomy and astrophysics                                0.000200
-associate of science                                      0.000200
-political science, minor in history                       0.000200
-bsc(hons.) in information technology (computer ...        0.000200
-language, writing, & rhetoric                             0.000200
-mcb                                                       0.000200
-b.sc. internet computing (hons.)                          0.000200
-human resources                                           0.000200
-computer art                                              0.000200
-general study                                             0.000200
-土木工程                                                      0.000200
-finance, international business                           0.000200
-pure and applied science                                  0.000200
-athletic training                                         0.000200
-радиотехника                                              0.000200
-master of architecture                                    0.000200
-m.eng eecs                                                0.000200
-obecné                                                    0.000200
-computer science & artificial intelligence                0.000200
-secondary ed/theatre                                      0.000200
-webbutveckling                                            0.000200
-baking and pastry arts                                    0.000200
-phd cs                                                    0.000200
-mfa fiction                                               0.000200
-b.s. meteorology                                          0.000200
-management & organizational behavior                      0.000200
-magistrale in sostenibilità                               0.000200
-m.tech - networking                                       0.000200
-eet                                                       0.000200
-international health                                      0.000200
-biopsychology                                             0.000200
-quantitative methods in economics and informati...        0.000200
-ba, mathematics                                           0.000200
-propulsion                                                0.000200
-as                                                        0.000200
-радіотехніка і компютеризовані системи                    0.000200
-pre-pharmacy                                              0.000200
-ma - military history                                     0.000200
+pre-engineering                                           0.000233
 software development engineering                          0.000200
-mathematics/physics                                       0.000200
-mphil/phd                                                 0.000200
-msc and phd in ai                                         0.000200
-mfa visual communications                                 0.000200
-public policy and administration                          0.000200
-bs, engineering                                           0.000200
-建筑学                                                       0.000200
-marriage & family counseling                              0.000200
-informatic engeneering                                    0.000200
-musicology                                                0.000200
+physics bsc                                               0.000200
+finance, math, computer science                           0.000200
+graphic design department                                 0.000200
+forestry & political science                              0.000200
+dae-electronics                                           0.000200
+information systems science                               0.000200
+geology, crop and soil science                            0.000200
+medical school                                            0.000200
+materials engineering, msc                                0.000200
+design & technology                                       0.000200
+business administration and sociology                     0.000200
+webbutveckling                                            0.000200
+athletic training                                         0.000200
+year abroad                                               0.000200
+b.s. civil engineering                                    0.000200
+vision science                                            0.000200
+právo                                                     0.000200
+tourism management                                        0.000200
+tax                                                       0.000200
+management & organizational behavior                      0.000200
+gce ol                                                    0.000200
+engineering and applied science                           0.000200
+medical doctor                                            0.000200
+bs mechanical engineering                                 0.000200
+socrates-erasmus semester                                 0.000200
+civil,ec                                                  0.000200
+system development                                        0.000200
+linguistics ma/phd                                        0.000200
+phd design                                                0.000200
+igcse                                                     0.000200
+public communications                                     0.000200
+lithography                                               0.000200
+international health                                      0.000200
+b.s. math                                                 0.000200
+finance, management                                       0.000200
 information sciences and technology                       0.000200
-philosophy / general studies                              0.000200
-pgce secondary science (with specialism in phys...        0.000200
-peace, war & defense                                      0.000200
-secondary education, mathematics                          0.000200
-masters in information management                         0.000200
-b.tech                                                    0.000200
-bs-ee                                                     0.000200
-studio arts                                               0.000200
+theater arts                                              0.000200
+photography, sculpture                                    0.000200
+chinese                                                   0.000200
+экономист-информатик                                      0.000200
+bcomp. ssp cognitive science                              0.000200
+master of educational technology                          0.000200
+bicycle jousting                                          0.000200
+anthropology - archaeology                                0.000200
+mphil/phd                                                 0.000200
+health policy                                             0.000200
+sports management                                         0.000200
+aeronautical and astronautical engineering                0.000200
+software engineerig                                       0.000200
+biomedical engineering institute                          0.000200
 landscape architecture, conservation biology              0.000200
+integrated science and technology                         0.000200
+anatomy & human biology                                   0.000200
+pgce secondary science (with specialism in phys...        0.000200
+secondary school                                          0.000200
+licenciatura em economia                                  0.000200
+emet                                                      0.000200
+latin, computer science                                   0.000200
+друштвено-језички смер                                    0.000200
+biology, physics                                          0.000200
+social studies                                            0.000200
+bscit                                                     0.000200
+politikwissenschaft                                       0.000200
+m.div.                                                    0.000200
+computer science and information technology               0.000200
+icme                                                      0.000200
+bsc(hons.) in information technology (computer ...        0.000200
+the laws                                                  0.000200
+emba                                                      0.000200
+management and leadership                                 0.000200
+mathematics & physics                                     0.000200
+s.b. eecs                                                 0.000200
+general ed.                                               0.000200
+ms (cs)                                                   0.000200
+nuclear engineering and engineering physics               0.000200
+economics and computer science                            0.000200
+history ma                                                0.000200
+materials science engineering                             0.000200
+daydreaming                                               0.000200
+march                                                     0.000200
+flute performance                                         0.000200
+masters in information management                         0.000200
+physics with computing                                    0.000200
+visual communication                                      0.000200
+aerial silks                                              0.000200
+computer science - artificial intelligence                0.000200
+ba in philosophy                                          0.000200
+master of architecture                                    0.000200
+political science, minor in history                       0.000200
+masters it -information security and privacy              0.000200
+russian literature                                        0.000200
+criminal law                                              0.000200
+文/理 ?                                                     0.000200
+masters of public administration                          0.000200
+aeronautics and astronautics                              0.000200
 cybersecurity and mba                                     0.000200
-natural sciences (physics)                                0.000200
-a-levels                                                  0.000200
-automated information processing systems                  0.000200
-maths, further maths, computing                           0.000200
+mechanics and machine constructions                       0.000200
+speech language and hearing sciences                      0.000200
+critical care fellowship                                  0.000200
+chinese language                                          0.000200
+medical technology                                        0.000200
+informatic engeneering                                    0.000200
+art therapy                                               0.000200
+m.s., ph.d. computer science                              0.000200
+bs, engineering                                           0.000200
+pre-pharmacy                                              0.000200
+chemistry and mathematics                                 0.000200
+informatics engineering                                   0.000200
+a.b.                                                      0.000200
+marketing communication: advertising & public r...        0.000200
 physical sciences                                         0.000200
 computer science & operations research (phd)              0.000200
-management of information system                          0.000200
-computer engineering, ma                                  0.000200
-mathematics & physics                                     0.000200
-physics/math                                              0.000200
-mass communications: creative advertising                 0.000200
-automotive design                                         0.000200
-speech language pathology                                 0.000200
-b.s. civil engineering                                    0.000200
-mathematics-economics                                     0.000200
-theater arts                                              0.000200
-applied statistics                                        0.000200
-biology, physics                                          0.000200
-msc. human computer interaction                           0.000200
-экономист-информатик                                      0.000200
-gcse, a levels                                            0.000200
-ph.d., communication                                      0.000200
-civil,ec                                                  0.000200
-วิทย์-คณิต                                                0.000200
-innovation management and entrepreneurship                0.000200
-ma in russian studies                                     0.000200
-system development                                        0.000200
-population biology                                        0.000200
-machine learning department                               0.000200
-information/reklam                                        0.000200
-bs (cs)                                                   0.000200
-earth and space sciences                                  0.000200
-theatre production                                        0.000200
-general ed.                                               0.000200
-medical school                                            0.000200
-media (moving image)                                      0.000200
-b sc. (hons) (adv) in computer science                    0.000200
-politikwissenschaft                                       0.000200
-public relations & advertising                            0.000200
-english & comp lit                                        0.000200
-ph.d. computer science                                    0.000200
-ms mechanical engineering                                 0.000200
-maths-science                                             0.000200
-anatomy & human biology                                   0.000200
-m.div.                                                    0.000200
-emet                                                      0.000200
-polymer & fiber engineering, chinese                      0.000200
-geology, crop and soil science                            0.000200
-普通                                                        0.000200
-printmaking                                               0.000200
-materials engineering, msc                                0.000200
-power electrical                                          0.000200
-masters of business administration                        0.000200
-cio                                                       0.000200
-math and scinece                                          0.000200
-m.s. computer science                                     0.000200
-masters of criminal justice                               0.000200
-nuclear engineering and radiological sciences             0.000200
-engineering and applied science                           0.000200
-fashion merchandising                                     0.000200
-bachelor of computer engineering                          0.000200
-speech language and hearing sciences                      0.000200
-pure chemistry                                            0.000200
-b.s. information and computer science                     0.000200
-public communications                                     0.000200
-middle school                                             0.000200
-physics bsc                                               0.000200
-stuff i don't need anymore                                0.000200
-ba in architecture                                        0.000200
-aeronautical and astronautical engineering                0.000200
-business administration and economics                     0.000200
-excercise physiology                                      0.000200
-ph. d. (left)                                             0.000200
-computer technologies                                     0.000200
-liceo classico                                            0.000200
-environmental science and management                      0.000200
-design & technology                                       0.000200
-management with marketing                                 0.000200
-books                                                     0.000200
-critical care fellowship                                  0.000200
-business admin - information systems                      0.000200
-aas                                                       0.000200
-triennale in scienze dell'architettura                    0.000200
-maritime studies                                          0.000200
-mfa new media                                             0.000200
-グラフィックデザイン専攻                                              0.000200
-media arts and sciences                                   0.000200
-inženjer zaštite radne i životne sredine                  0.000200
-бизнес-информатика                                        0.000200
-computational linguistics                                 0.000200
-masc electrical and computer engineering                  0.000200
-industrial engineering (msc)                              0.000200
-b.s. in computer science                                  0.000200
-earth systems science                                     0.000200
-mis, finance                                              0.000200
-exercise science                                          0.000200
-scandinavian languages and literature                     0.000200
-mathematical sciences                                     0.000200
-financial planning                                        0.000200
-matematički smer                                          0.000200
-software engineerig                                       0.000200
-fashion marketing                                         0.000200
+m.eng eecs                                                0.000200
+information system and technology                         0.000200
+copywriting                                               0.000200
 economics & computer science                              0.000200
+pinnacle                                                  0.000200
+pure chemistry                                            0.000200
+power electrical                                          0.000200
+industrial engineering (msc)                              0.000200
+ha almen                                                  0.000200
+mathematics, bs                                           0.000200
+nuclear engineering and radiological sciences             0.000200
+riyazi                                                    0.000200
+intensive business chinese                                0.000200
+computer science, digital arts                            0.000200
+arts applications in film studies                         0.000200
+college scholars                                          0.000200
+m.s. computer science                                     0.000200
+speech language pathology                                 0.000200
 film and psychology                                       0.000200
-bs mechanical engineering                                 0.000200
-economic policy                                           0.000200
-socrates-erasmus semester                                 0.000200
-economics and computer science                            0.000200
-physics, maths, geography, business studies               0.000200
-computer science, finance                                 0.000200
-ba in philosophy                                          0.000200
-cmis                                                      0.000200
-vision science                                            0.000200
+fashion merchandising                                     0.000200
+archaeology                                               0.000200
+machine learning department                               0.000200
+computer science & artificial intelligence                0.000200
+юриспруденция                                             0.000200
+exercise science                                          0.000200
+masc electrical and computer engineering                  0.000200
+earth and space sciences                                  0.000200
+english and business                                      0.000200
+secondary education, mathematics                          0.000200
+ph.d., communication                                      0.000200
+msc and phd in ai                                         0.000200
+ba (hons) computer and video games                        0.000200
+aas                                                       0.000200
+mfa fiction                                               0.000200
+mathematics/physics                                       0.000200
+graphical technics                                        0.000200
+mpa                                                       0.000200
+msc. human computer interaction                           0.000200
+mis, finance                                              0.000200
+masters in public administration                          0.000200
+mestrado em gestão                                        0.000200
+physics (atomic, molecular, optical)                      0.000200
+multidisciplinary studies                                 0.000200
+ba, anthropology                                          0.000200
+b.bus.sci (is) hons                                       0.000200
+interpersonal communications                              0.000200
+computer vision                                           0.000200
+phd cs                                                    0.000200
+ph. d. (left)                                             0.000200
+computer science & technology                             0.000200
+bachelor of medicine, bachelor of surgery                 0.000200
+quality management                                        0.000200
+intermediate                                              0.000200
+environmental science and management                      0.000200
+msc in information systems and security                   0.000200
+b.s. meteorology                                          0.000200
+學生                                                        0.000200
+bs-ee                                                     0.000200
+material science engineering                              0.000200
+phd                                                       0.000200
+ba psychology                                             0.000200
+theatre production                                        0.000200
+masters of criminal justice                               0.000200
+bs cs                                                     0.000200
+english & comp lit                                        0.000200
+maritime studies                                          0.000200
+bba                                                       0.000200
+media arts & animation                                    0.000200
+wildlife science                                          0.000200
+m.ed., leadership                                         0.000200
+printmaking                                               0.000200
+msce                                                      0.000200
+b.s. in computer science                                  0.000200
+public relations & advertising                            0.000200
+建筑学                                                       0.000200
+apple certified final cut pro 5                           0.000200
+public relations and advertising                          0.000200
+recording arts                                            0.000200
 sound                                                     0.000200
+ma, international relations                               0.000200
 applied social psychology                                 0.000200
+วิทย์-คณิต                                                0.000200
+business admin - information systems                      0.000200
+радіотехніка і компютеризовані системи                    0.000200
+information/reklam                                        0.000200
+историја                                                  0.000200
+pti                                                       0.000200
+philosophy, politics, economics                           0.000200
+finance & accounting                                      0.000200
+правоведение                                              0.000200
+publizistik                                               0.000200
+economic policy                                           0.000200
+ms chemistry                                              0.000200
+mfa visual communications                                 0.000200
+วิทยาการคอมพิวเตอร์                                       0.000200
+finance, international business                           0.000200
+matematyczno - fizyczny                                   0.000200
+mba - marketing                                           0.000200
+automotive design                                         0.000200
+mass communications: creative advertising                 0.000200
+бизнес-информатика                                        0.000200
+applied design (communication)                            0.000200
+masters of business administration                        0.000200
+ma integrated marketing communication                     0.000200
+environmental engineering                                 0.000200
+радиотехника                                              0.000200
+fashion marketing                                         0.000200
+maths, further maths, computing                           0.000200
+environmental design                                      0.000200
+peace, war & defense                                      0.000200
+bilgisayar teknolojileri ve programlama                   0.000200
+health sector management                                  0.000200
+m.s. structural engineering                               0.000200
+film and video                                            0.000200
+associate of science                                      0.000200
+pure and applied science                                  0.000200
+ms, computer science                                      0.000200
+women's studies                                           0.000200
+computer information science                              0.000200
+computer science/engineering                              0.000200
+ms engineering management                                 0.000200
+matematički smer                                          0.000200
+dentistry                                                 0.000200
+ma, international studies                                 0.000200
+italian                                                   0.000200
+b.sc. internet computing (hons.)                          0.000200
+propulsion                                                0.000200
+土木工程                                                      0.000200
+molecular & cell biology                                  0.000200
+b.a. psychology                                           0.000200
+bs statistics                                             0.000200
+financial planning                                        0.000200
+computer science / history and philosophy of sc...        0.000200
+ゲーム課                                                      0.000200
+m.tech - networking                                       0.000200
+gcse, a levels                                            0.000200
+polymer & fiber engineering, chinese                      0.000200
+networking and multimedia                                 0.000200
+maths-science                                             0.000200
+mfa new media                                             0.000200
+b sc. (hons) (adv) in computer science                    0.000200
+computer technologies                                     0.000200
+middle school                                             0.000200
+art and visual technology - graphic design                0.000200
+social psychology                                         0.000200
+(high school)                                             0.000200
+mc, mathematical logic                                    0.000200
+musicology                                                0.000200
+magistrale in sostenibilità                               0.000200
+ba (hons) illustration                                    0.000200
+communications in conflict                                0.000200
+master of journalism                                      0.000200
+triennale in scienze dell'architettura                    0.000200
+russian language                                          0.000200
+m.s. meteorology                                          0.000200
+ph.d. computer science                                    0.000200
+study abroad                                              0.000200
+math and scinece                                          0.000200
+cand. merc. økonomistyring                                0.000200
+computational physics                                     0.000200
+materials engineering, bsc                                0.000200
+information systems engineering                           0.000200
+baking and pastry arts                                    0.000200
+badassery                                                 0.000200
+a-levels                                                  0.000200
+mathematics and philosophy                                0.000200
+books                                                     0.000200
+leaving certificate                                       0.000200
+molecular & cellular biology                              0.000200
+master of computer science                                0.000200
+cell biology & neuroscience                               0.000200
+history & literature                                      0.000200
+studio arts                                               0.000200
+environment and natural resources                         0.000200
+mechanical engineer                                       0.000200
+innovation management and entrepreneurship                0.000200
+marriage & family counseling                              0.000200
+phd complexity sciences                                   0.000200
+ab history                                                0.000200
+hci                                                       0.000200
+english, art history                                      0.000200
+physics/math                                              0.000200
+contemporary art                                          0.000200
+general study                                             0.000200
+as                                                        0.000200
+astronomy and astrophysics                                0.000200
+mcb                                                       0.000200
+japanese ba / computer sciences cert.                     0.000200
+b.s. information and computer science                     0.000200
+social anthropology                                       0.000200
+bm                                                        0.000200
+inženjer zaštite radne i životne sredine                  0.000200
+automated information processing systems                  0.000200
+history/philosophy                                        0.000200
+geological sciences                                       0.000200
+medical student                                           0.000200
+computer engineering, ma                                  0.000200
+computer games development                                0.000200
+population biology                                        0.000200
+グラフィックデザイン専攻                                              0.000200
+liceo classico                                            0.000200
+philosophy / general studies                              0.000200
+ba - history                                              0.000200
+biopsychology                                             0.000200
+applied statistics                                        0.000200
+organismic and evoluationary biology                      0.000200
+mathematics & computer science                            0.000200
+ba, mathematics                                           0.000200
+ma in russian studies                                     0.000200
+b.tech                                                    0.000200
+computer technology                                       0.000200
+digital media design                                      0.000200
+systems engineering                                       0.000200
+mathematics, physics                                      0.000200
+obecné                                                    0.000200
+political science/german                                  0.000200
+ba, psychology                                            0.000200
+language, writing, & rhetoric                             0.000200
 mechanical and nuclear engineering with an engi...        0.000200
-global mba                                                0.000133
-optoelectronics                                           0.000133
-computer science and artificial intelligence              0.000133
-schooling                                                 0.000133
-media arts and science                                    0.000133
-preschool-kindergarten                                    0.000133
-ba, interdisciplinary field studies                       0.000133
-chp                                                       0.000133
-motion graphics                                           0.000133
-ms in cs                                                  0.000133
-plus two                                                  0.000133
-radio astronomy (m.sc.)                                   0.000133
-sslc                                                      0.000133
-plus two - science                                        0.000133
-btech                                                     0.000133
-graphic design (bfa)                                      0.000133
-ⅱ類人文科                                                     0.000133
-自動車整備科                                                    0.000133
-physics (b.sc.), math (b.a.)                              0.000133
-astronomy (ph.d., m.sc.)                                  0.000133
-classical civilisation                                    0.000133
-preparatory                                               0.000133
-engineering science                                       0.000133
-masters, instructional technology                         0.000133
-instructional systems technology                          0.000133
-honours in mathematics of computer science                0.000133
-leadership                                                0.000133
-mechanical information technology                         0.000133
-management science and engineering                        0.000133
-情報学研究科　通信情報システム専攻                                         0.000133
-tiểu học                                                  0.000133
-government and law                                        0.000133
-航空機操縦科                                                    0.000133
-molecular biology & genetics                              0.000133
-massage                                                   0.000133
-east asian                                                0.000133
-advanced with honors                                      0.000133
-associate in arts                                         0.000133
-mechanical and electrical engineering                     0.000133
-bs in cs                                                  0.000133
-social computing                                          0.000133
-junior college, science                                   0.000133
-mphil, public health                                      0.000133
-masters in international business                         0.000133
-economics and philosophy                                  0.000133
-ms cs                                                     0.000133
-information                                               0.000133
-scots law                                                 0.000133
-learning, design, technology                              0.000133
-b.e. electrical engineering                               0.000133
-bioinformatics                                            0.000133
-chemistry, biochemistry                                   0.000133
-i wish to study in there                                  0.000133
-french and spanish                                        0.000133
-7th grade                                                 0.000133
-bs economics                                              0.000133
-l.l.m. - military law                                     0.000133
-ba, neuroscience and women's studies                      0.000133
-m.ed. in educational leadership                           0.000133
-cmpe phd                                                  0.000133
-political science, economics                              0.000133
-graduated                                                 0.000133
-elementary education teaching credential                  0.000133
-finance and banking                                       0.000133
-internet marketting                                       0.000133
-cmpe bs                                                   0.000133
-college prep diploma                                      0.000133
-mobile marketting                                         0.000133
-ba in economics                                           0.000133
-bse - aerospace engineering                               0.000133
-a-level, gcse, junior                                     0.000133
-social engineering                                        0.000133
-grade school                                              0.000133
-computer science/math                                     0.000133
-cmpe ms                                                   0.000133
-master's in business administration                       0.000133
-ethiopian kickboxing                                      0.000133
-ms in electrical engineering                              0.000133
-b.a. in comparative area studies                          0.000133
-commercial aviation                                       0.000133
-architecture & design                                     0.000133
-ec                                                        0.000133
-h.s. diploma                                              0.000133
-o/l                                                       0.000133
-m.e. biomedical engineering                               0.000133
+earth systems science                                     0.000200
+human resources                                           0.000200
+doctorate of dental surgery, dds                          0.000200
+ba in architecture                                        0.000200
+программист-техник                                        0.000200
+primary school                                            0.000200
+pgce business education                                   0.000200
+stuff i don't need anymore                                0.000200
+mm                                                        0.000200
+life science                                              0.000200
+mathematics-economics                                     0.000200
+political science, ba                                     0.000200
+medical anthropology                                      0.000200
+aeronautical science                                      0.000200
+pathology                                                 0.000200
+english and history                                       0.000200
+cio                                                       0.000200
+physical chemistry                                        0.000200
+bioethics & global health                                 0.000200
+liberal arts and sciences                                 0.000200
+m.s. in computer science                                  0.000200
+hotel administration                                      0.000200
+physics, math                                             0.000200
+public policy and administration                          0.000200
+business administration and economics                     0.000200
+physics, maths, geography, business studies               0.000200
+english & theatre                                         0.000200
+mfa in playwriting                                        0.000200
+mathematical sciences                                     0.000200
+scandinavian languages and literature                     0.000200
+mist                                                      0.000200
+computer art                                              0.000200
+sport science                                             0.000200
+chemistry, music, mathematics                             0.000200
+natural sciences (physics)                                0.000200
+secondary ed/theatre                                      0.000200
+computer mathematics                                      0.000200
+latin                                                     0.000200
+computational linguistics                                 0.000200
+media arts and sciences                                   0.000200
+excercise physiology                                      0.000200
+christian ed.                                             0.000200
+bs (cs)                                                   0.000200
+food science                                              0.000200
+sociomedical sciences                                     0.000200
+political management                                      0.000200
+bachelor of computer engineering                          0.000200
+bachelor of information technology (hon)                  0.000200
+cmis                                                      0.000200
+quantitative methods in economics and informati...        0.000200
+media (moving image)                                      0.000200
+普通                                                        0.000200
+management of information system                          0.000200
+interactive telecommunications program                    0.000200
+ma - military history                                     0.000200
+leaving cert                                              0.000200
+management with marketing                                 0.000200
+eet                                                       0.000200
+physics phd                                               0.000200
+bs graphic arts and imaging technology                    0.000200
+b.a. geography                                            0.000200
+finance, opim, statistics, anthropology                   0.000200
+computer science, finance                                 0.000200
+computer engineering, bs                                  0.000200
+ms mechanical engineering                                 0.000200
+math & physic                                             0.000200
+physics and astrophysics                                  0.000200
+astronomy-physics, physics, mathematics                   0.000200
 5th - 6th grade                                           0.000133
-master in management                                      0.000133
-classical piano performance                               0.000133
-m.b.a.                                                    0.000133
-phổ thông                                                 0.000133
-library and information science                           0.000133
-emergency medical technologies                            0.000133
-bsc in mathematics and computer science                   0.000133
-bsc biology                                               0.000133
-1st-8th grade                                             0.000133
-cinema studies                                            0.000133
-llm                                                       0.000133
-pastoral counseling                                       0.000133
-master of managemnt                                       0.000133
-instructional design and development                      0.000133
-legal studies                                             0.000133
-nano, info, bio                                           0.000133
-4th - 6th grade                                           0.000133
-east asian / russian lit                                  0.000133
-phd molecular and cellular biology                        0.000133
-psychology (ba)                                           0.000133
-health & safety                                           0.000133
-mse - aerospace engineering                               0.000133
+be, computer engineering                                  0.000133
+learning, design, technology                              0.000133
+h.s. diploma                                              0.000133
+ec                                                        0.000133
+masters, instructional technology                         0.000133
+情報学研究科　通信情報システム専攻                                         0.000133
+social engineering                                        0.000133
+航空機操縦科                                                    0.000133
+preschool-kindergarten                                    0.000133
 high school diploma, with honors                          0.000133
 power engineering                                         0.000133
-ab, chemistry                                             0.000133
-mres molecular and cellular biology                       0.000133
-particle physics                                          0.000133
-be, computer engineering                                  0.000133
-1st - 4th grade                                           0.000133
-工芸科学部　電子システム工学課程                                          0.000133
-b.s. in music, p-12                                       0.000133
-master of law                                             0.000133
-a/l                                                       0.000133
-bachelor of law                                           0.000133
-communication (ma)                                        0.000133
+engineering science                                       0.000133
+french and spanish                                        0.000133
+phổ thông                                                 0.000133
+master of managemnt                                       0.000133
+classical piano performance                               0.000133
+health & safety                                           0.000133
 msc computer science                                      0.000133
-human resource mgmt                                       0.000133
+psychology (ba)                                           0.000133
+a-level, gcse, junior                                     0.000133
+mechanical and electrical engineering                     0.000133
+chemistry, biochemistry                                   0.000133
+honours in mathematics of computer science                0.000133
 bs in electrical engineering                              0.000133
-mechanical information technology master                  0.000133
+architecture & design                                     0.000133
+自動車整備科                                                    0.000133
+masters in international business                         0.000133
+b.s. in music, p-12                                       0.000133
+1st-8th grade                                             0.000133
+computer science/math                                     0.000133
+mphil, public health                                      0.000133
+ms in cs                                                  0.000133
+ethiopian kickboxing                                      0.000133
+bioinformatics                                            0.000133
+btech                                                     0.000133
+global mba                                                0.000133
+physics (b.sc.), math (b.a.)                              0.000133
+ms in electrical engineering                              0.000133
+finance and banking                                       0.000133
+ba in economics                                           0.000133
+ba, interdisciplinary field studies                       0.000133
+instructional systems technology                          0.000133
+cmpe ms                                                   0.000133
+communication (ma)                                        0.000133
+ab, chemistry                                             0.000133
+ms cs                                                     0.000133
+social computing                                          0.000133
+ba, neuroscience and women's studies                      0.000133
+astronomy (ph.d., m.sc.)                                  0.000133
+b.a. in comparative area studies                          0.000133
+bsc in mathematics and computer science                   0.000133
+o/l                                                       0.000133
+ⅱ類人文科                                                     0.000133
+optoelectronics                                           0.000133
+7th grade                                                 0.000133
+phd molecular and cellular biology                        0.000133
+cmpe bs                                                   0.000133
+mse - aerospace engineering                               0.000133
+internet marketting                                       0.000133
+political science, economics                              0.000133
+mobile marketting                                         0.000133
+cmpe phd                                                  0.000133
+mres molecular and cellular biology                       0.000133
+graphic design (bfa)                                      0.000133
+east asian / russian lit                                  0.000133
+emergency medical technologies                            0.000133
+llm                                                       0.000133
+m.e. biomedical engineering                               0.000133
+elementary education teaching credential                  0.000133
+plus two - science                                        0.000133
+bsc biology                                               0.000133
+molecular biology & genetics                              0.000133
+master's in business administration                       0.000133
+master of law                                             0.000133
+instructional design and development                      0.000133
+schooling                                                 0.000133
+commercial aviation                                       0.000133
+scots law                                                 0.000133
+bachelor of law                                           0.000133
+m.ed. in educational leadership                           0.000133
+grade school                                              0.000133
 m.e. electrical engineering                               0.000133
-radiography                                               0.000100
-6-8                                                       0.000100
-certificate iv                                            0.000100
-f.sc. ( pre- medical)                                     0.000100
-computer science - networking                             0.000100
-cert mktg.                                                0.000100
-information and library science                           0.000100
-junior high general education                             0.000100
-9-10                                                      0.000100
+nano, info, bio                                           0.000133
+computer science and artificial intelligence              0.000133
+classical civilisation                                    0.000133
+media arts and science                                    0.000133
+1st - 4th grade                                           0.000133
+bs economics                                              0.000133
+advanced with honors                                      0.000133
+government and law                                        0.000133
+mechanical information technology master                  0.000133
+leadership                                                0.000133
+l.l.m. - military law                                     0.000133
+master in management                                      0.000133
+i wish to study in there                                  0.000133
+management science and engineering                        0.000133
+library and information science                           0.000133
+information                                               0.000133
+graduated                                                 0.000133
+preparatory                                               0.000133
+sslc                                                      0.000133
+massage                                                   0.000133
+associate in arts                                         0.000133
+m.b.a.                                                    0.000133
+human resource mgmt                                       0.000133
+pastoral counseling                                       0.000133
+motion graphics                                           0.000133
+college prep diploma                                      0.000133
+tiểu học                                                  0.000133
+radio astronomy (m.sc.)                                   0.000133
+b.e. electrical engineering                               0.000133
+east asian                                                0.000133
+economics and philosophy                                  0.000133
+工芸科学部　電子システム工学課程                                          0.000133
+junior college, science                                   0.000133
+bse - aerospace engineering                               0.000133
+bs in cs                                                  0.000133
+4th - 6th grade                                           0.000133
+legal studies                                             0.000133
+particle physics                                          0.000133
+plus two                                                  0.000133
+chp                                                       0.000133
+a/l                                                       0.000133
+mechanical information technology                         0.000133
+cinema studies                                            0.000133
 arts administration                                       0.000100
-international mba                                         0.000100
-bachelor of arts                                          0.000100
-association of charted certified accountants              0.000100
-matric                                                    0.000100
-masters science                                           0.000100
-classical studies                                         0.000100
-mba finance                                               0.000100
-botany                                                    0.000100
-high sec                                                  0.000100
-mbbs                                                      0.000100
-premed                                                    0.000100
-acca                                                      0.000100
-project management                                        0.000100
 doctorate                                                 0.000100
-economics, math                                           0.000100
+certificate iv                                            0.000100
+matric                                                    0.000100
 residency                                                 0.000100
-international business and economics                      0.000100
+international mba                                         0.000100
+mba finance                                               0.000100
+acca                                                      0.000100
 rehabilitation science                                    0.000100
+premed                                                    0.000100
+mbbs                                                      0.000100
+economics, math                                           0.000100
+cert mktg.                                                0.000100
+computer science - networking                             0.000100
+information and library science                           0.000100
+classical studies                                         0.000100
+6-8                                                       0.000100
+radiography                                               0.000100
+high sec                                                  0.000100
+project management                                        0.000100
+association of charted certified accountants              0.000100
+masters science                                           0.000100
+9-10                                                      0.000100
+international business and economics                      0.000100
+botany                                                    0.000100
 1-3                                                       0.000100
+junior high general education                             0.000100
 senior high general education                             0.000100
-دبستان                                                    0.000080
-post graduate diploma visual arts                         0.000080
-ms mgmt information technology                            0.000080
-guidance school                                           0.000080
-دبستان ـ راهنمایی                                         0.000080
-ba visual arts                                            0.000080
-hsc                                                       0.000080
-intesive english                                          0.000080
-bs organizational leadership                              0.000080
-risk mgmt & strategic decision making                     0.000080
-art direction                                             0.000080
-هنرستان سینما                                             0.000080
-journalist                                                0.000080
-undergraduate university                                  0.000080
+bachelor of arts                                          0.000100
+f.sc. ( pre- medical)                                     0.000100
 copy writing                                              0.000080
+دبستان ـ راهنمایی                                         0.000080
+undergraduate university                                  0.000080
+journalist                                                0.000080
+هنرستان سینما                                             0.000080
+bs organizational leadership                              0.000080
+art direction                                             0.000080
+guidance school                                           0.000080
+post graduate diploma visual arts                         0.000080
+دبستان                                                    0.000080
+hsc                                                       0.000080
+ba visual arts                                            0.000080
+ms mgmt information technology                            0.000080
+intesive english                                          0.000080
+risk mgmt & strategic decision making                     0.000080

@@ -28,6 +28,7 @@ num_boost_trees = 100  # number of trees in AdaBoost
 
 sim = 'NPMI1s'  # use NPMI as attribute similarity measure
 delta = 0.0
+tau = 1.0  # try adding identity to off-diagonal blocks
 
 def main():
     p = optparse.OptionParser()
@@ -41,7 +42,6 @@ def main():
     p.add_option('-v', action = 'store_true', default = False, help = 'save plot')
     p.add_option('--jobs', '-j', type = int, default = -1, help = 'number of jobs')
     opts, args = p.parse_args()
-
 
     attr, attr_type, num_train_each, embedding, k, sphere, num_samples, save_plot, jobs = opts.attr, opts.attr_type, opts.num_train_each, opts.embedding, opts.k, opts.sphere, opts.num_samples, opts.v, opts.jobs
 
@@ -71,7 +71,7 @@ def main():
     except OSError:
         print("\nLoading attribute data...")
         timeit(a.load_data)()
-        a.make_joint_attr_embedding_matrix(attr_type, sim = sim, embedding = embedding, delta = delta, k = k, sphere = 2 if sphere else 0)
+        a.make_joint_attr_embedding_matrix(attr_type, sim = sim, embedding = embedding, delta = delta, tau = tau, k = k, sphere = 2 if sphere else 0)
 
         # get attribute indicator for all the nodes
         attr_indicator = a.get_attribute_indicator(attr, attr_type)

@@ -520,11 +520,11 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         if load:
             try:
                 if (attr_type not in self.uncollapsed_operators):
-                    print_flush("Loading %s uncollapsed operator from file..." % attr_type)
+                    print_flush("\nLoading %s uncollapsed operator from file..." % attr_type)
                     self.uncollapsed_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
                 did_load = True
             except:
-                print_flush("Could not load %s uncollapsed operator from file.\n" % attr_type)
+                print_flush("Could not load %s uncollapsed operator from file." % attr_type)
         if (not did_load):
             print_flush("Constructing from scratch...")
             if ((not hasattr(self, 'pairwise_freq_analyzers')) or (attr_type not in self.pairwise_freq_analyzers)):
@@ -532,7 +532,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
             pfa = self.pairwise_freq_analyzers[attr_type]
             m = pfa.num_vocab
             attrs_by_node = self.attrs_by_node_by_type[attr_type]
-            print_flush("\nMaking uncollapsed operator...")
+            print_flush("\nMaking uncollapsed %s operator..." % sim)
             if (sim == 'prob'):
                 attr_block = pfa.to_joint_prob_operator(delta)
             else:
@@ -557,18 +557,19 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         if load:
             try:
                 if (attr_type not in self.random_walk_operators):
-                    print_flush("Loading %s random walk operator from file..." % attr_type)
+                    print_flush("\nLoading %s random walk operator from file..." % attr_type)
                     self.random_walk_operators[attr_type] = timeit(pickle.load)(open(filename, 'rb'))
                 did_load = True
             except:
-                print_flush("Could not load %s random walk from file.\n" % attr_type)
+                print_flush("Could not load %s random walk from file." % attr_type)
         if (not did_load):
             self.make_uncollapsed_operator(attr_type, sim = sim, delta = delta, load = load, save = False)
-            self.random_walk_operators[attr_type] = self.uncollapsed_operators[attr_type].to_column_stochastic()
+            print_flush("Converting to stochastic matrix...")
+            self.random_walk_operators[attr_type] = timeit(self.uncollapsed_operators[attr_type].to_column_stochastic)()
         if (save and (not did_load)):
             print_flush("Saving...")
             timeit(pickle.dump)(self.random_walk_operators[attr_type], open(filename, 'wb'))
-    def make_joint_embedding_operator(self, included_attr_types, sim = 'NPMI1s', delta = 0.0, load = True, save = False):
+    def make_joint_embedding_operator(self, included_attr_types, sim = 'NPMI1s', delta = 0.0, tau = 0.0, load = True, save = False):
         """Makes the joint embedding operator for three of the four attribute types. This has three diagonal blocks, which are the uncollapsed PMI operators for each attribute type, and off-diagonal blocks corresponding to the means of these operators."""
         if (not hasattr(self, 'uncollapsed_operators')):
             self.uncollapsed_operators = dict()
@@ -577,7 +578,7 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
                 print_flush("\nMaking %s block..." % attr_type)
                 self.make_uncollapsed_operator(attr_type, sim, delta, load, save)
         uncollapsed_operators = [self.uncollapsed_operators[attr_type] for attr_type in included_attr_types]
-        return JointSymmetricBlockOperator(uncollapsed_operators)
+        return JointSymmetricBlockOperator(uncollapsed_operators, tau = None if (tau == 0.0) else tau)
     def make_attr_embedding_matrix(self, attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = True, load = True, save = False):
         """Makes matrix of feature embeddings for a given attribute type based on PMI similarities (saved off as matrix files). Rows are nodes, columns are features. Rows correspond to only the nodes that have at least one attribute."""
         obj_name = '%s_%s_%s_delta%s_k%d%s_complete_embedding_matrix' % (attr_type, sim, embedding, str(delta), k, '_normalized' if sphere else '')
@@ -628,9 +629,9 @@ class AttributeAnalyzer(ObjectWithReadwriteProperties):
         """Makes matrices of feature embeddings for all attribute types. Rows correspond to only the nodes that have at least one attribute."""
         for attr_type in self.attr_types:
             self.make_attr_embedding_matrix(attr_type, sim, embedding, delta, k, sphere, load, save)
-    def make_joint_attr_embedding_matrix(self, excluded_attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, k = 50, sphere = 2):
+    def make_joint_attr_embedding_matrix(self, excluded_attr_type, sim = 'NPMI1s', embedding = 'adj', delta = 0.0, tau = 0.0, k = 50, sphere = 2):
         """Loads joint attribute PMI embedding matrix from a file, then normalizes appropriately. Rows are nodes, columns are features. sphere is a two-bit digit indicating whether to normalize before & after stacking the attribute types. (E.g. 2 is normalize before, not after)."""
-        feature_filename = self.folder + '/PMI/joint/%s_%s_%s_delta%s_k%d_joint_features.pickle' % (excluded_attr_type, sim, embedding, str(delta), k)
+        feature_filename = self.folder + '/PMI/joint/%s_%s_%s_delta%s_tau%s_k%d_joint_features.pickle' % (excluded_attr_type, sim, embedding, str(delta), str(tau), k)
         other_attr_types = [at for at in self.attr_types if (at != excluded_attr_type)]
         num_attr_types = len(other_attr_types)
         print_flush("\nLoading features from %s..." % feature_filename)

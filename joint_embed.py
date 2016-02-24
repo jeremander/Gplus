@@ -19,6 +19,7 @@ def main():
     p.add_option('-p', type = str, default = 'NPMI1s', help = 'PMI type (PMIs, NPMI1s, or NPMI2s)')
     p.add_option('-e', type = str, default = 'adj', help = 'embedding (adj, normlap, regnormlap)')
     p.add_option('-d', type = float, default = 0.0, help = 'smoothing parameter')
+    p.add_option('--tau', type = float, default = 0.0, help = 'off-diagonal regularization parameter')
     p.add_option('-k', type = int, default = 200, help = 'number of eigenvalues')
     p.add_option('-t', type = float, default = None, help = 'tolerance for eigsh')
     p.add_option('-v', action = 'store_true', default = False, help = 'save scree plot')
@@ -30,6 +31,7 @@ def main():
     embedding = opts.e
     assert (embedding in ['adj', 'normlap', 'regnormlap'])
     delta = opts.d
+    tau = opts.tau
     k = opts.k
     tol = opts.t
     save_plot = opts.v
@@ -38,7 +40,7 @@ def main():
 
     data_folder = 'gplus0_lcc/data/PMI/joint/'
     plot_folder = 'gplus0_lcc/plots/PMI/joint/'
-    file_prefix1 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d' % k)
+    file_prefix1 = '%s_%s_%s_delta%s_tau%s_k%d' % (attr_type, sim, embedding, str(delta), str(tau), k)
 
     try:
         print_flush("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
@@ -53,7 +55,7 @@ def main():
         n = sum([a.pairwise_freq_analyzers[at].num_vocab for at in other_attr_types])
         tol = (1.0 / n) if (tol is None) else tol  # use 1/n instead of machine precision as default tolerance
         print_flush("\nComputing joint similarity operator (%s)..." % sim)
-        joint_op = a.make_joint_embedding_operator(other_attr_types, sim = sim, delta = delta, load = True, save = True)
+        joint_op = a.make_joint_embedding_operator(other_attr_types, sim = sim, delta = delta, tau = tau, load = True, save = True)
         matrix_type = 'adjacency' if (embedding == 'adj') else ('normalized Laplacian' if (embedding == 'normlap') else 'regularized normalized Laplacian')
         print_flush("\nComputing eigenvectors of %s matrix (k = %d)..." % (matrix_type, k))
         if (embedding == 'adj'):

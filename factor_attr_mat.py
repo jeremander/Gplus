@@ -93,7 +93,7 @@ def main():
     file_prefix1 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d' % k)
     file_prefix2 = ('%s_%s_%s_delta' % (attr_type, sim, embedding)) + str(delta) + ('_k%d%s_c%d' % (k, '_normalized' if sphere else '', nclusts))
 
-    print("\nLoading AttributeAnalyzer...")
+    print_flush("\nLoading AttributeAnalyzer...")
     a = AttributeAnalyzer()
     a.load_pairwise_freq_analyzer(attr_type)
     a.make_attrs_by_node_by_type()
@@ -104,30 +104,30 @@ def main():
     attr_indices, attr_vocab = get_attr_indices(pfa, a.attributed_nodes)
 
     try:  
-        print("\nLoading labels from '%s%s_labels.csv'..." % (data_folder, file_prefix2))
+        print_flush("\nLoading labels from '%s%s_labels.csv'..." % (data_folder, file_prefix2))
         labels = np.loadtxt('%s%s_labels.csv' % (data_folder, file_prefix2), dtype = int)
-        print("\nLoading cluster centers from '%s%s_cluster_centers.csv'..." % (data_folder, file_prefix2))
+        print_flush("\nLoading cluster centers from '%s%s_cluster_centers.csv'..." % (data_folder, file_prefix2))
         cluster_centers = np.loadtxt('%s%s_cluster_centers.csv' % (data_folder, file_prefix2), delimiter = ',')
-        print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
+        print_flush("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
         eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
-        print("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
+        print_flush("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
         features = pickle.load(open('%s%s_features.pickle' % (data_folder, file_prefix1), 'rb'))
         if sphere:
             for i in range(len(attr_indices)):  
                 features[i] = normalize(features[i])
     except FileNotFoundError:
-        print("Failed to load.")
+        print_flush("Failed to load.")
         try:
-            print("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
+            print_flush("\nLoading eigenvalues from '%s%s_eigvals.csv'..." % (data_folder, file_prefix1))
             eigvals = np.loadtxt('%s%s_eigvals.csv' % (data_folder, file_prefix1), delimiter = ',')
-            print("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
+            print_flush("\nLoading embedded features from '%s%s_features.pickle'..." % (data_folder, file_prefix1))
             features = pickle.load(open('%s%s_features.pickle' % (data_folder, file_prefix1), 'rb'))
         except FileNotFoundError:
-            print("Failed to load.")
-            print("\nComputing similarity matrix (%s)..." % sim)
+            print_flush("Failed to load.")
+            print_flush("\nComputing similarity matrix (%s)..." % sim)
             sim_op = pfa.to_sparse_PMI_operator(sim, delta)
             matrix_type = 'adjacency' if (embedding == 'adj') else ('normalized Laplacian' if (embedding == 'normlap') else 'regularized normalized Laplacian')
-            print("\nComputing eigenvectors of %s matrix (k = %d)..." % (matrix_type, k))
+            print_flush("\nComputing eigenvectors of %s matrix (k = %d)..." % (matrix_type, k))
             if (embedding == 'adj'):
                 (eigvals, features) = timeit(eigsh)(sim_op, k = k, tol = tol)
                 features = np.sqrt(np.abs(eigvals)) * features  # scale the feature columns by the sqrt of the eigenvalues
@@ -144,7 +144,7 @@ def main():
             for i in range(len(attr_indices)):  
                 features[i] = normalize(features[i])
         km = KMeans(nclusts)
-        print("\nClustering attribute feature vectors into %d clusters using kMeans..." % nclusts)
+        print_flush("\nClustering attribute feature vectors into %d clusters using kMeans..." % nclusts)
         labels = timeit(km.fit_predict)(features)
         # save the cluster labels
         np.savetxt('%s%s_labels.csv' % (data_folder, file_prefix2), np.array(labels, dtype = int), delimiter = ',', fmt = '%d')
@@ -156,10 +156,10 @@ def main():
             f.write(generate_cluster_report(a, attr_type, labels, topN))
 
     if save_plot:
-        print("\nSaving scree plot to '%s%s_screeplot.png'..." % (plot_folder, file_prefix1))
+        print_flush("\nSaving scree plot to '%s%s_screeplot.png'..." % (plot_folder, file_prefix1))
         scree_plot(eigvals, show = False, filename = '%s%s_screeplot.png' % (plot_folder, file_prefix1))
 
-    print("\nAssigning cluster labels to each node...")
+    print_flush("\nAssigning cluster labels to each node...")
     indices_by_vocab = dict((v, i) for (i, v) in enumerate(attr_vocab))
     centers = [normalize(center) for center in cluster_centers] if sphere else cluster_centers
     def assign_cluster(node):
@@ -190,7 +190,7 @@ def main():
     # save file with the list of cluster labels for each node
     clusters_by_node = [assign_cluster(i) for i in range(a.num_vertices)]
     np.savetxt('%s%s_node_labels.csv' % (data_folder, file_prefix2), np.array(clusters_by_node, dtype = int), delimiter = ',', fmt = '%d')
-    print("\nDone!")
+    print_flush("\nDone!")
 
 
 if __name__ == "__main__":

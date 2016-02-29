@@ -5,7 +5,7 @@ import pandas as pd
 selected_attrs = pd.read_csv('selected_attrs.csv')
 
 n_vals = [50, 100, 200, 400, 800, 1600]
-sim_vals = ['NPMI1s', 'prob']
+sim_vals = ['NPMI1s']
 delta_vals = [0.0]
 
 num_samples = 50

@@ -22,17 +22,14 @@ topN_plot = 500     # number of precisions to plot
 topN_nominees = 50  # number of nominees to include for top attribute analysis
 
 attr_types = ['employer', 'major', 'places_lived', 'school']
-#sim = 'NPMI1s'  # use NPMI as attribute similarity measure
-#max_steps = 32
-#steps_to_display = [1, 2, 4, 8, 16, 32]
+max_steps = 16
+steps_to_display = [1, 2, 4, 8, 16]
 
 def main():
     p = optparse.OptionParser()
     p.add_option('--attr', '-a', type = str, help = 'attribute')
     p.add_option('--attr_type', '-t', type = str, help = 'attribute type')
     p.add_option('--num_train_each', '-n', type = int, help = 'number of training samples of True and False for the attribute (for total of 2n training samples)')
-    #p.add_option('--mean', '-m', type = str, default = 'arith', help = 'type of mean for averaging probabilities (arith, geom)')
-    #p.add_option('--use_graph', '-g', action = 'store_true', default = False, help = 'use the social graph')
     p.add_option('--sim', '-s', type = str, default = 'NPMI1s', help = 'similarity operation (PMIs, NPMI1s, prob)')
     p.add_option('--delta', '-d', type = float, default = 0.0, help = 'smoothing parameter')
     p.add_option('--num_samples', '-S', type = int, default = 50, help = 'number of Monte Carlo samples')
@@ -41,15 +38,16 @@ def main():
 
     attr, attr_type, num_train_each, sim, delta, num_samples, save_plot = opts.attr, opts.attr_type, opts.num_train_each, opts.sim, opts.delta, opts.num_samples, opts.v
 
-    #means = ['arith', 'geom']
-    means = ['arith']  # arith seems better
-    steps = ['one', 'inf']
-    flags = [1, 2, 3]  # 1 content, 2 context, 3 both
-    colors = ['red', 'green', 'orange', 'blue']
+    steps = list(range(1, max_steps + 1))
+    cmap = plt.cm.gist_ncar
+    colors = {step : cmap(int((i + 1) * cmap.N / (max_steps + 1.0))) for (i, step) in enumerate(steps_to_display)}
+    flags = ['content', 'context', 'both']
     linestyles = ['dotted', 'dashed', 'solid']
 
     folder = 'gplus0_lcc/baseline6/'
+    euc_dist_filename = folder + '%s_%s_n%d_%s_delta%s_eucdist.csv' % (attr_type, attr, num_train_each, sim, str(delta))
     agg_precision_filename = folder + '%s_%s_n%d_%s_delta%s_precision.csv' % (attr_type, attr, num_train_each, sim, str(delta))
+    euc_plot_filename = folder + '%s_%s_n%d_%s_delta%s_eucdist.png' % (attr_type, attr, num_train_each, sim, str(delta))
     plot_filename = folder + '%s_%s_n%d_%s_delta%s_precision.png' % (attr_type, attr, num_train_each, sim, str(delta))
 
     print_flush("\nNominating nodes with whose '%s' attribute is '%s' (%d pos/neg seeds)..." % (attr_type, attr, num_train_each))
@@ -60,6 +58,7 @@ def main():
     sqrt_samples = np.sqrt(num_samples)
 
     try:
+        mean_euc_dist_df = pd.read_csv(euc_dist_filename)
         agg_precision_df = pd.read_csv(agg_precision_filename)
         print_flush("\nLoaded data from '%s'." % agg_precision_filename)
         selected_attrs = pd.read_csv('selected_attrs.csv')
@@ -74,7 +73,6 @@ def main():
 
     except OSError:
         print_flush("\nLoading similarity operators...")
-        included_attr_types = [at for at in attr_types if (at != attr_type)]
         random_walk_ops = []
         for at in attr_types:
             if (at != attr_type):
@@ -83,12 +81,12 @@ def main():
         g = Gplus()
         g.load_sparse_adjacency_operator()
         random_walk_ops.append((ConstantDiagonalLinearOperator(a.num_vertices, 1.0) + g.sparse_adjacency_operator).to_column_stochastic())
-        solve_ops = [ConstantDiagonalLinearOperator(a.num_vertices, 1.0) - 0.5 * rw_op for rw_op in random_walk_ops]
 
         # get attribute indicator for all the nodes
         attr_indicator = a.get_attribute_indicator(attr, attr_type)
 
-        precision_dfs = {(mean, step, flag) : pd.DataFrame(columns = range(num_samples)) for (mean, step, flag) in itertools.product(means, steps, flags) if ((mean == 'arith') or (flag & 1))}
+        precision_dfs = {(step, flag) : pd.DataFrame(columns = range(num_samples)) for (step, flag) in itertools.product(steps, flags)}
+        euc_dist_dfs = {sim_name : pd.DataFrame(columns = range(num_samples)) for sim_name in sim_names}
 
         for s in range(num_samples):
             print_flush("\nSEED = %d" % s)
@@ -97,46 +95,41 @@ def main():
             test_df = pd.DataFrame(columns = ['test'] + list(itertools.product(steps, sim_names)))
             test_out = attr_indicator[test]
             test_df['test'] = test_out
-            x0_plus, x0_minus = np.zeros(a.num_vertices), np.zeros(a.num_vertices)
-            p = 1.0 / num_train_each
-            for (i, j) in zip(training_true, training_false):  # initial states in the Markov chain
-                x0_plus[i] = p
-                x0_minus[j] = p
-            for (rw, op, sim_name) in zip(random_walk_ops, solve_ops, sim_names):
-                print_flush("Solving for step nomination probabilities (%s)..." % sim_name)
-                x1_plus = normalize(rw * x0_plus)
-                x1_minus = normalize(rw * x0_minus)
-                probs = x1_plus / (x1_plus + x1_minus)  # normalize probabilities
-                #probs = x1_plus - x1_minus
-                test_df[('one', sim_name)] = [probs[i] for i in test]
-                sol_plus = normalize(timeit(bicg)(op, x0_plus)[0])
-                sol_minus = normalize(timeit(bicg)(op, x0_minus)[0])
-                probs = sol_plus / (sol_plus + sol_minus)  # normalize probabilities
-                #probs = sol_plus - sol_minus
-                test_df[('inf', sim_name)] = [probs[i] for i in test]
-            
-            for (mean, step, flag) in itertools.product(means, steps, flags):
-                cols = [] + (other_attr_types if (flag & 1) else []) + (['social_graph'] if (flag & 2) else [])
+            for (rw, sim_name) in zip(random_walk_ops, sim_names):
+                x_plus, x_minus = np.zeros((a.num_vertices, max_steps + 1)), np.zeros((a.num_vertices, max_steps + 1))
+                p = 1.0 / num_train_each
+                for (i, j) in zip(training_true, training_false):  # initial states in the Markov chain
+                    x_plus[i, 0] = p
+                    x_minus[j, 0] = p
+                print_flush("Stepping random walk (%s)..." % sim_name)
+                for t in range(max_steps):
+                    x_plus[:, t + 1] = normalize(rw * x_plus[:, t])
+                    x_minus[:, t + 1] = normalize(rw * x_minus[:, t])
+                scores = x_plus - x_minus  # scores for each step
+                euc_dist_dfs[sim_name][s] = [np.linalg.norm(scores[:, t + 1] - scores[:, t]) for t in range(max_steps)]  # Euclidean distances of successive score vectors
+                # turn score vectors into cumulative averages
+                for t in range(1, max_steps + 1):
+                    test_df[(t, sim_name)] = scores[test, 1 : t + 1].mean(axis = 1)
+            for (step, flag) in itertools.product(steps, flags):
+                cols = [] + (other_attr_types if (flag != 'context') else []) + (['social_graph'] if (flag != 'content') else [])
                 cols = [(step, sim_name) for sim_name in cols]
-                if (mean == 'arith'):
-                    test_df[(mean, step, flag)] = test_df[cols].sum(axis = 1)
-                else:
-                    if (flags == 2):
-                        continue
-                    test_df[(mean, step, flag)] = np.log(test_df[cols]).sum(axis = 1)
-
+                test_df[(step, flag)] = test_df[cols].sum(axis = 1)
             # do vertex nomination
-            for (mean, step, flag) in itertools.product(means, steps, flags):
-                if ((mean == 'arith') or (flag & 1)):
-                    test_df = test_df.sort_values(by = (mean, step, flag), ascending = False)
-                    precision_dfs[(mean, step, flag)][s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test) + 1.0)
+            for (step, flag) in itertools.product(steps, flags):
+                test_df = test_df.sort_values(by = (step, flag), ascending = False)
+                precision_dfs[(step, flag)][s] = np.asarray(test_df['test']).cumsum() / np.arange(1.0, len(test) + 1.0)
 
         # compute means and standard errors over all the samples
-        agg_precision_df = pd.DataFrame(columns = list(itertools.product(['mean', 'stderr'], means, steps, flags)))
-        for (mean, step, flag) in itertools.product(means, steps, flags):
-            if ((mean == 'arith') or (flag & 1)):
-                agg_precision_df[('mean', mean, step, flag)] = precision_dfs[(mean, step, flag)].mean(axis = 1)
-                agg_precision_df[('stderr', mean, step, flag)] = precision_dfs[(mean, step, flag)].std(axis = 1) / sqrt_samples
+        agg_precision_df = pd.DataFrame(columns = list(itertools.product(['mean', 'stderr'], steps, flags)))
+        for (step, flag) in itertools.product(steps, flags):
+            agg_precision_df[('mean', step, flag)] = precision_dfs[(step, flag)].mean(axis = 1)
+            agg_precision_df[('stderr', step, flag)] = precision_dfs[(step, flag)].std(axis = 1) / sqrt_samples
+
+        # compute mean Euclidean distances of successive score vectors
+        mean_euc_dist_df = pd.DataFrame(columns = sim_names)
+        for sim_name in sim_names:
+            mean_euc_dist_df[sim_name] = euc_dist_dfs[sim_name].mean(axis = 1)
+        mean_euc_dist_df.to_csv(euc_dist_filename, index = False)
 
         # save the aggregate data frames
         N_save = min(len(test_out), topN_save)
@@ -148,18 +141,20 @@ def main():
         num_test = len(test_out)
 
 
-    # plot the nomination precision 
     if save_plot:
+        # plot the nomination precision 
+        plt.clf()
         N_plot = min(len(agg_precision_df), topN_plot)
         plots = []
 
-        for (i, (mean, step)) in enumerate(itertools.product(means, steps)):
-            for flag in flags:
-                if ((mean == 'arith') or (flag & 1)):
-                    plt.fill_between(agg_precision_df.index, agg_precision_df[str(('mean', mean, step, flag))] - 2 * agg_precision_df[str(('stderr', mean, step, flag))], agg_precision_df[str(('mean', mean, step, flag))] + 2 * agg_precision_df[str(('stderr', mean, step, flag))], color = colors[i], alpha = 0.1)
-                    plot, = plt.plot(agg_precision_df.index, agg_precision_df[str(('mean', mean, step, flag))], color = colors[i], linewidth = 2, linestyle = linestyles[flag - 1], label = ','.join([mean, step, str(flag)]))
-                    plots.append(plot)
+        agg_precision_df.columns = [str(col) for col in agg_precision_df.columns]
 
+        for step in steps_to_display:
+            for (j, flag) in enumerate(flags):
+                plt.fill_between(agg_precision_df.index, agg_precision_df[str(('mean', step, flag))] - 2 * agg_precision_df[str(('stderr', step, flag))], agg_precision_df[str(('mean', step, flag))] + 2 * agg_precision_df[str(('stderr', step, flag))], color = colors[step], alpha = 0.1)
+                plot, = plt.plot(agg_precision_df.index, agg_precision_df[str(('mean', step, flag))], color = colors[step], linewidth = 2, linestyle = linestyles[j], label = ','.join([str(step), flag]))
+                if ((step == 1) or (j == 2)):
+                    plots.append(plot)
 
         guess_rate = num_true_in_test / num_test
         guess, = plt.plot([guess_rate for i in range(N_plot)], linestyle = 'dashed', linewidth = 2, color = 'black', label = 'Guess')
@@ -170,6 +165,21 @@ def main():
         plt.title('Vertex Nomination Precision')
         plt.legend(handles = plots + [guess])
         plt.savefig(plot_filename)
+
+        # plot successive Euclidean distances for each random walk state
+        plt.clf()
+        plots = []
+        sim_name_colors = {'employer' : 'blue', 'major' : 'red', 'places_lived' : 'orange', 'school' : 'purple', 'social_graph' : 'green'}
+        for sim_name in sim_names:
+            plot, = plt.plot(mean_euc_dist_df.index + 1, mean_euc_dist_df[sim_name], color = sim_name_colors[sim_name], linewidth = 2, label = sim_name)
+            plots.append(plot)
+        plt.xlabel('steps')
+        plt.ylabel('score change (Euclidean)')
+        plt.xlim((1, max_steps))
+        plt.title('Convergence of Random Walks')
+        plt.legend(handles = plots)
+        plt.savefig(euc_plot_filename)
+
 
     print("\nDone!")
 

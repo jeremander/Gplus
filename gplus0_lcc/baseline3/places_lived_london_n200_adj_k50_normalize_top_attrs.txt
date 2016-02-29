@@ -1,0 +1,2932 @@
+                                                    voteProportion
+attribute                                                         
+tehran                                                    0.038748
+bangkok                                                   0.037276
+istanbul                                                  0.027344
+stockholm                                                 0.017206
+hà nội                                                    0.010367
+ankara                                                    0.010330
+hanoi                                                     0.009133
+izmir                                                     0.007973
+paris                                                     0.007546
+iran                                                      0.007273
+tokyo                                                     0.007138
+roma                                                      0.006646
+москва                                                    0.006000
+london                                                    0.005976
+göteborg                                                  0.005783
+milano                                                    0.004973
+tel aviv                                                  0.004773
+kuala lumpur                                              0.004147
+mashhad                                                   0.003990
+تهران                                                     0.003733
+oslo                                                      0.003694
+malmö                                                     0.003576
+uppsala                                                   0.003547
+shiraz                                                    0.003533
+bologna                                                   0.003513
+thailand                                                  0.003473
+ho chi minh city                                          0.003467
+new york                                                  0.003326
+ha noi                                                    0.003267
+singapore                                                 0.003247
+stockholm, sweden                                         0.003233
+sydney                                                    0.003078
+ho chi minh                                               0.003000
+東京                                                        0.002867
+moscow                                                    0.002733
+bangkok, thailand                                         0.002600
+pisa                                                      0.002560
+napoli                                                    0.002469
+torino                                                    0.002462
+chiang mai                                                0.002390
+tabriz                                                    0.002333
+nonthaburi                                                0.002300
+hong kong                                                 0.002276
+dublin                                                    0.002244
+linköping                                                 0.002127
+bursa                                                     0.002050
+isfahan                                                   0.002048
+umeå                                                      0.002033
+karaj                                                     0.002000
+tehran, iran                                              0.001933
+antalya                                                   0.001880
+กรุงเทพ                                                   0.001867
+tokyo, japan                                              0.001850
+perth                                                     0.001800
+cagliari                                                  0.001800
+hồ chí minh                                               0.001800
+berlin                                                    0.001774
+เชียงใหม่                                                 0.001767
+catania                                                   0.001747
+東京都                                                       0.001692
+mumbai                                                    0.001682
+eskişehir                                                 0.001633
+hyderabad                                                 0.001593
+borlänge                                                  0.001590
+bari                                                      0.001556
+los angeles                                               0.001536
+treviso                                                   0.001533
+denizli                                                   0.001500
+esfahan                                                   0.001500
+hamburg                                                   0.001487
+melbourne                                                 0.001444
+yazd                                                      0.001433
+vienna                                                    0.001433
+strasbourg                                                0.001424
+lund                                                      0.001406
+bkk                                                       0.001400
+barcelona                                                 0.001370
+gävle                                                     0.001367
+lyon                                                      0.001347
+rome, italy                                               0.001333
+vietnam                                                   0.001333
+padova                                                    0.001267
+trondheim                                                 0.001267
+санкт-петербург                                           0.001250
+luleå                                                     0.001247
+israel                                                    0.001219
+france                                                    0.001219
+ראשון לציון                                               0.001200
+ایران                                                     0.001200
+vicenza                                                   0.001200
+bangalore                                                 0.001200
+da nang                                                   0.001200
+palermo                                                   0.001200
+sivas                                                     0.001200
+london, uk                                                0.001180
+osaka                                                     0.001158
+oslo, norway                                              0.001133
+copenhagen, denmark                                       0.001133
+genova                                                    0.001133
+firenze                                                   0.001130
+sundsvall                                                 0.001120
+กรุงเทพมหานคร                                             0.001100
+ravenna                                                   0.001067
+konya                                                     0.001067
+bollnäs                                                   0.001067
+östersund                                                 0.001060
+norrköping                                                0.001033
+shanghai                                                  0.001033
+lille                                                     0.001033
+italia                                                    0.001013
+jakarta                                                   0.001011
+đà nẵng                                                   0.001000
+perugia                                                   0.001000
+gothenburg, sweden                                        0.001000
+cape town                                                 0.001000
+ho chi minh city, vietnam                                 0.001000
+hcm                                                       0.001000
+hochiminh city                                            0.001000
+qom                                                       0.001000
+北京                                                        0.001000
+san francisco                                             0.000970
+rome                                                      0.000960
+yokohama                                                  0.000957
+amsterdam                                                 0.000935
+urmia                                                     0.000933
+bochum                                                    0.000933
+ขอนแก่น                                                   0.000933
+samsun                                                    0.000933
+glasgow                                                   0.000933
+västerås                                                  0.000913
+seoul                                                     0.000907
+trollhättan                                               0.000905
+reggio calabria                                           0.000900
+rennes                                                    0.000900
+vancouver                                                 0.000900
+hanoi, vietnam                                            0.000900
+halmstad                                                  0.000900
+jönköping                                                 0.000897
+dhaka                                                     0.000857
+tønsberg                                                  0.000840
+london, united kingdom                                    0.000833
+turkey                                                    0.000833
+wien                                                      0.000833
+iran tehran                                               0.000800
+ma                                                        0.000800
+sortland                                                  0.000800
+tomsk                                                     0.000800
+katrineholm                                               0.000800
+samutprakarn                                              0.000800
+lahijan                                                   0.000800
+самара                                                    0.000800
+dortmund                                                  0.000800
+常州                                                        0.000800
+lorient                                                   0.000800
+spånga, stockholm, sweden                                 0.000800
+novosibirsk                                               0.000800
+default city                                              0.000800
+ratchaburi                                                0.000800
+gorgan, iran                                              0.000800
+สมุทรปราการ                                               0.000800
+iran-tehran                                               0.000800
+bursa keles                                               0.000800
+alsancak, izmir                                           0.000800
+kolmården                                                 0.000800
+ижевск                                                    0.000800
+iran.karaj                                                0.000800
+อ่อนนุช                                                   0.000800
+یزد                                                       0.000800
+rasht                                                     0.000800
+padova, italy                                             0.000800
+münster                                                   0.000800
+udine                                                     0.000800
+hcm city                                                  0.000800
+khonkaen                                                  0.000800
+skellefteå                                                0.000793
+khon kaen                                                 0.000767
+phuket                                                    0.000767
+borås                                                     0.000767
+karlstad                                                  0.000760
+köln                                                      0.000750
+beijing                                                   0.000747
+việt nam                                                  0.000733
+静岡県                                                       0.000733
+minsk                                                     0.000733
+kathmandu                                                 0.000733
+solna                                                     0.000733
+phitsanulok                                               0.000733
+sydney, australia                                         0.000733
+hat yai                                                   0.000733
+brisbane                                                  0.000720
+düsseldorf                                                0.000700
+riyadh                                                    0.000700
+visby                                                     0.000693
+kocaeli                                                   0.000691
+dubai                                                     0.000684
+ferrara                                                   0.000680
+houston, tx                                               0.000680
+falun                                                     0.000678
+bergen                                                    0.000670
+مشهد                                                      0.000667
+södertälje                                                0.000667
+essen                                                     0.000657
+karlskrona                                                0.000657
+kalmar                                                    0.000647
+münchen                                                   0.000637
+munich                                                    0.000637
+auckland                                                  0.000636
+piteå                                                     0.000633
+תל אביב                                                   0.000633
+siena                                                     0.000627
+hannover                                                  0.000613
+武汉                                                        0.000600
+哈尔滨                                                       0.000600
+turin                                                     0.000600
+gia lai                                                   0.000600
+челябинск                                                 0.000600
+นนทบุรี                                                   0.000600
+västra frölunda                                           0.000600
+тамбов                                                    0.000600
+california                                                0.000600
+riccione                                                  0.000600
+behbahan                                                  0.000600
+nässjö                                                    0.000600
+bình thuận                                                0.000600
+vũng tàu                                                  0.000600
+пенза                                                     0.000600
+hồ chí minh city                                          0.000600
+timisoara, romania                                        0.000600
+besançon                                                  0.000600
+phú nhuận                                                 0.000600
+atlanta, ga                                               0.000600
+bat-yam                                                   0.000600
+krabi                                                     0.000600
+bradford                                                  0.000600
+ישראל                                                     0.000600
+casablanca                                                0.000600
+hải dương                                                 0.000600
+warsaw                                                    0.000600
+广州                                                        0.000600
+trabzon                                                   0.000600
+ramat hasharon, israel                                    0.000600
+kungälv                                                   0.000600
+puerto rico                                               0.000600
+kermanshah                                                0.000600
+melbourne, australia                                      0.000600
+thành phố hồ chí minh                                     0.000600
+大阪                                                        0.000590
+verona                                                    0.000583
+new york, ny                                              0.000577
+paris, france                                             0.000567
+toronto                                                   0.000567
+budapest                                                  0.000567
+santiago                                                  0.000550
+moss                                                      0.000540
+hải phòng                                                 0.000533
+ljungby                                                   0.000533
+liège                                                     0.000533
+ferentino                                                 0.000533
+bucuresti                                                 0.000533
+バンコク                                                      0.000533
+yazd, iran                                                0.000533
+aalen                                                     0.000533
+gorgan                                                    0.000533
+göteborg, sweden                                          0.000533
+adana                                                     0.000533
+zurich                                                    0.000533
+tourcoing                                                 0.000533
+l'aquila                                                  0.000533
+la spezia                                                 0.000533
+salerno                                                   0.000533
+nottingham                                                0.000533
+חיפה                                                      0.000533
+usa                                                       0.000520
+taipei                                                    0.000504
+helsingborg                                               0.000504
+sweden                                                    0.000500
+boston                                                    0.000500
+antibes, france                                           0.000500
+karachi                                                   0.000500
+chonburi                                                  0.000500
+tphcm                                                     0.000500
+paderborn                                                 0.000500
+ho chi minh, vietnam                                      0.000500
+kungsbacka                                                0.000486
+edirne                                                    0.000480
+maine                                                     0.000480
+londra                                                    0.000480
+bursa, turkey                                             0.000480
+milan                                                     0.000480
+eskilstuna                                                0.000480
+nagoya                                                    0.000480
+istanbul, turkey                                          0.000480
+saint-petersburg, russia                                  0.000480
+bolzano                                                   0.000480
+saint-petersburg                                          0.000480
+auckland, new zealand                                     0.000480
+villeurbanne                                              0.000480
+ramat gan                                                 0.000480
+dallas                                                    0.000470
+milano, italy                                             0.000467
+desio                                                     0.000467
+brescia                                                   0.000467
+carate brianza                                            0.000467
+sankt augustin                                            0.000467
+helsinki                                                  0.000467
+千葉                                                        0.000467
+abbiategrasso                                             0.000467
+nice                                                      0.000457
+dresden                                                   0.000457
+東京都板橋区                                                    0.000450
+changchun                                                 0.000450
+landskrona                                                0.000444
+valencia                                                  0.000436
+türkiye                                                   0.000433
+strängnäs                                                 0.000433
+stockholm, sverige                                        0.000431
+hiroshima                                                 0.000425
+tokushima                                                 0.000425
+大阪府                                                       0.000425
+岡山県                                                       0.000425
+izmit                                                     0.000413
+europe                                                    0.000400
+angers                                                    0.000400
+lakewood colorado                                         0.000400
+temara                                                    0.000400
+อยู่ที่ phra phutthabat, saraburi, thailand               0.000400
+sankt veit an der glan                                    0.000400
+iran makoo                                                0.000400
+rimini, italy                                             0.000400
+kanchanaburi                                              0.000400
+rome,italy                                                0.000400
+rossano                                                   0.000400
+biella                                                    0.000400
+saint leu la foret                                        0.000400
+sriracha, chonburi                                        0.000400
+toruń                                                     0.000400
+mashhad-iran                                              0.000400
+41 hà tôn quyền, phường 15, quận 5, thành phố h...        0.000400
+vigevano                                                  0.000400
+fujisawa                                                  0.000400
+nairobi, kenya                                            0.000400
+perm                                                      0.000400
+villanova mondovì                                         0.000400
+naharia, israel                                           0.000400
+hattert                                                   0.000400
+albi                                                      0.000400
+iran, yazd                                                0.000400
+sollentuna                                                0.000400
+samut prakan                                              0.000400
+orumiyeh                                                  0.000400
+parma, italy                                              0.000400
+lisboa                                                    0.000400
+sofia                                                     0.000400
+shizuoka                                                  0.000400
+drammen, trondheim, oslo, lier                            0.000400
+akademgorodok                                             0.000400
+castel san niccolò, ar                                    0.000400
+ospitaletto, italia                                       0.000400
+neverland                                                 0.000400
+agnone bagni                                              0.000400
+gerash                                                    0.000400
+gabrovo                                                   0.000400
+castro                                                    0.000400
+fresno, california                                        0.000400
+oregon                                                    0.000400
+como                                                      0.000400
+windsor                                                   0.000400
+doha, qatar                                               0.000400
+鹿児島                                                       0.000400
+ninh binh                                                 0.000400
+kefar yona                                                0.000400
+saarbrücken                                               0.000400
+bến lức                                                   0.000400
+московская область, железнодорожный                       0.000400
+shibuya-ku, tokyo, japan                                  0.000400
+kangan (کنگان)                                            0.000400
+boulder, colorado                                         0.000400
+dardilly                                                  0.000400
+cava de' tirreni                                          0.000400
+украина, севастополь                                      0.000400
+新宿                                                        0.000400
+luhans'k                                                  0.000400
+اهواز                                                     0.000400
+nontaburi                                                 0.000400
+haninge                                                   0.000400
+октябрьский                                               0.000400
+47179 duisburg                                            0.000400
+уфа                                                       0.000400
+บางเสร่                                                   0.000400
+birmingham, uk                                            0.000400
+colzate                                                   0.000400
+porto, portugal                                           0.000400
+メトロポリタン美術館                                                0.000400
+bangkok ,thailand                                         0.000400
+херсон                                                    0.000400
+colchester                                                0.000400
+kamp-lintfort                                             0.000400
+suidobashi                                                0.000400
+são paulo                                                 0.000400
+лобня                                                     0.000400
+varese                                                    0.000400
+pernik                                                    0.000400
+việt trì, phú thọ, việt nam                               0.000400
+russia, saint-petersburg                                  0.000400
+heredia                                                   0.000400
+alessandria                                               0.000400
+strandbaden                                               0.000400
+had yai, songkhla                                         0.000400
+bảo lộc - lâm đồng                                        0.000400
+گرگان                                                     0.000400
+too many to list                                          0.000400
+hägersten                                                 0.000400
+chehov                                                    0.000400
+hauterive                                                 0.000400
+mira (ve), italy                                          0.000400
+добрич                                                    0.000400
+kashan                                                    0.000400
+collegno                                                  0.000400
+ekaterinburg                                              0.000400
+harsewinkel                                               0.000400
+sevrerodvinsk                                             0.000400
+asiago                                                    0.000400
+воронеж                                                   0.000400
+ottaviano                                                 0.000400
+ramat gan, israel                                         0.000400
+г.чердынь                                                 0.000400
+hue, viet nam                                             0.000400
+orlando, fl                                               0.000400
+佐賀県佐賀市                                                    0.000400
+marostica                                                 0.000400
+ystad                                                     0.000400
+b612 star                                                 0.000400
+neu-ulm                                                   0.000400
+arak                                                      0.000400
+riga, latvia                                              0.000400
+ачинск                                                    0.000400
+montefiascone                                             0.000400
+sheerness, kent                                           0.000400
+jerup                                                     0.000400
+gålsjö, askersund                                         0.000400
+chiang mai thailand                                       0.000400
+constanta                                                 0.000400
+beijing, china                                            0.000400
+алматы                                                    0.000400
+cizre                                                     0.000400
+tezze di arzignano                                        0.000400
+nan                                                       0.000400
+comiso                                                    0.000400
+trani                                                     0.000400
+russian federation                                        0.000400
+thailand, bangkok                                         0.000400
+พิษณุโลก                                                  0.000400
+rayong                                                    0.000400
+naeen                                                     0.000400
+borlänge, sweden                                          0.000400
+cinisello balsamo                                         0.000400
+istanbul,kocaeli,nevşehir                                 0.000400
+sunshine coast                                            0.000400
+vasastan                                                  0.000400
+hradec králové                                            0.000400
+ульяновск                                                 0.000400
+thepha                                                    0.000400
+hod hasharon                                              0.000400
+兵庫県尼崎市                                                    0.000400
+ceresara, mantova                                         0.000400
+nan, thailand                                             0.000400
+ags                                                       0.000400
+ý yên - nam định                                          0.000400
+日本                                                        0.000400
+mi                                                        0.000400
+秋田                                                        0.000400
+montebelluna                                              0.000400
+har adar                                                  0.000400
+เพชรบูรณ์                                                 0.000400
+höör, sweden                                              0.000400
+tranås                                                    0.000400
+wabern, bern                                              0.000400
+tychy                                                     0.000400
+itami                                                     0.000400
+aurich                                                    0.000400
+staten island, ny                                         0.000400
+västervik, sweden                                         0.000400
+asti                                                      0.000400
+広島県広島市                                                    0.000400
+埼玉県所沢市                                                    0.000400
+darvaze tehran                                            0.000400
+bulgaria, pleven                                          0.000400
+ленинград                                                 0.000400
+belarus, minsk                                            0.000400
+bandar e ganaveh                                          0.000400
+ahvaz                                                     0.000400
+兵庫                                                        0.000400
+sevierville                                               0.000400
+rat burana                                                0.000400
+thái bình                                                 0.000400
+abidjan                                                   0.000400
+iran, mashhad                                             0.000400
+sari                                                      0.000400
+hàm tử ho chi minh                                        0.000400
+ariana                                                    0.000400
+kent, oh                                                  0.000400
+rhens                                                     0.000400
+bengbu                                                    0.000400
+villiers sur marne                                        0.000400
+nakhonpathom thailand                                     0.000400
+sundsvall, sverige                                        0.000400
+dezfoul                                                   0.000400
+nuernberg                                                 0.000400
+brigdemouth                                               0.000400
+oaxaca                                                    0.000400
+bangkok, ladgrabang                                       0.000400
+mashhad, iran                                             0.000400
+staranzano                                                0.000400
+harbin,china                                              0.000400
+мухосранск                                                0.000400
+matino                                                    0.000400
+بندرعباس                                                  0.000400
+upplands väsby                                            0.000400
+parand                                                    0.000400
+rome and rovere                                           0.000400
+hok, sweden                                               0.000400
+mariehamn, åland                                          0.000400
+aktobe                                                    0.000400
+điện biên                                                 0.000400
+itu                                                       0.000400
+halmstad, sweden                                          0.000400
+belfast                                                   0.000400
+lucera                                                    0.000400
+laichau                                                   0.000400
+lognes                                                    0.000400
+alzenau                                                   0.000400
+guilan                                                    0.000400
+hillsboro, oregon                                         0.000400
+najafabad                                                 0.000400
+uralsk                                                    0.000400
+bantwal                                                   0.000400
+castiglione d'adda                                        0.000400
+камышин, самара, москва, екатеринбург                     0.000400
+essex, england                                            0.000400
+зеленоград                                                0.000400
+unye                                                      0.000400
+bilaspur                                                  0.000400
+lausanne                                                  0.000400
+thousand oaks                                             0.000400
+อ.เมือง จ.สระบุรี                                         0.000400
+batangas, philippines                                     0.000400
+gravesano                                                 0.000400
+marlborough / newbury                                     0.000400
+bafra                                                     0.000400
+meguro                                                    0.000400
+pforzheim                                                 0.000400
+nola, it                                                  0.000400
+東京都北区田端                                                   0.000400
+truro, cornwall                                           0.000400
+愛知県                                                       0.000400
+tehran/toronto                                            0.000400
+(nordkapp                                                 0.000400
+woking, surrey                                            0.000400
+thanyaburi                                                0.000400
+oviedo, asturias.                                         0.000400
+pajala                                                    0.000400
+иркутск                                                   0.000400
+çengelköy                                                 0.000400
+bamberg                                                   0.000400
+оренбург                                                  0.000400
+ดาวนาเม็ก                                                 0.000400
+soul                                                      0.000400
+ิbangkok                                                  0.000400
+беларусь                                                  0.000400
+varanasi                                                  0.000400
+trieste, italy                                            0.000400
+псков                                                     0.000400
+faro - portugal                                           0.000400
+south africa                                              0.000400
+kiryat bialik                                             0.000400
+monza brianza                                             0.000400
+pattani                                                   0.000400
+scampia                                                   0.000400
+hadyai songkhla                                           0.000400
+milazzo                                                   0.000400
+edirne izmir                                              0.000400
+colleverde,roma                                           0.000400
+alessandria, italy                                        0.000400
+томск                                                     0.000400
+hatyai, songkhla                                          0.000400
+williamsburg, va                                          0.000400
+ussr                                                      0.000400
+южноукраинск                                              0.000400
+clovis, ca                                                0.000400
+hokkaido                                                  0.000400
+กทม                                                       0.000400
+nam đàn, nghệ an                                          0.000400
+chişinău                                                  0.000400
+massa carrara                                             0.000400
+st tropez                                                 0.000400
+moline, il                                                0.000400
+rocca di papa (roma)                                      0.000400
+украина, луганск                                          0.000400
+maidstone                                                 0.000400
+san marino                                                0.000400
+渋谷                                                        0.000400
+syracuse,shiraz                                           0.000400
+praha                                                     0.000400
+högsbo, göteborg, västra götaland,sweden                  0.000400
+月島                                                        0.000400
+ลาดพร้าว                                                  0.000400
+volda, sogndal,lærdal, sykkylven, inverness, ål...        0.000400
+wałbrzych                                                 0.000400
+اراک                                                      0.000400
+iran, qom                                                 0.000400
+หนองบัวลำภู                                               0.000400
+dalby, sweden                                             0.000400
+bridgend                                                  0.000400
+kiev                                                      0.000400
+mestrino (pd)                                             0.000400
+gotland, sweden                                           0.000400
+chikodi, india                                            0.000400
+tehran - iran                                             0.000400
+lucca                                                     0.000400
+bandar abbas,malayer                                      0.000400
+dublino                                                   0.000400
+тольятти                                                  0.000400
+reggello fi                                               0.000400
+veles                                                     0.000400
+ногинск                                                   0.000400
+ankara, turkey                                            0.000400
+lonato del garda                                          0.000400
+biên hòa                                                  0.000400
+gerenzano                                                 0.000400
+planet lovetron                                           0.000400
+doha                                                      0.000400
+jessheim                                                  0.000400
+acireale                                                  0.000400
+fasa                                                      0.000400
+ho chi minh - viet nam                                    0.000400
+pennsylvania                                              0.000400
+đống đa, hà nội                                           0.000400
+chiang mai, thailand                                      0.000400
+香港                                                        0.000400
+shenzhen                                                  0.000400
+севастополь                                               0.000400
+malang                                                    0.000400
+stuttgart-vaihingen                                       0.000400
+piazza teresa corioni 5, soprazocco di gavardo            0.000400
+basaluzzo                                                 0.000400
+istanbul  sarıyer                                         0.000400
+phetchaburi                                               0.000400
+אילת                                                      0.000400
+miami, fl                                                 0.000400
+tp.hcm                                                    0.000400
+gurgaon sector 48 haryana                                 0.000400
+פתח תקווה                                                 0.000400
+tangamandapio                                             0.000400
+örnsköldsvik                                              0.000400
+donetsk                                                   0.000400
+haifa , israel                                            0.000400
+henderson                                                 0.000400
+熊本                                                        0.000400
+french polinesia                                          0.000400
+mitaka,tokyo                                              0.000400
+malatya                                                   0.000400
+kraków                                                    0.000400
+portomaggiore                                             0.000400
+beijing, sydney                                           0.000400
+visaginas, lithuania                                      0.000400
+thailand bangkok                                          0.000400
+phutho city                                               0.000400
+بنها                                                      0.000400
+kuching, sarawak                                          0.000400
+thai binh                                                 0.000400
+osaka city                                                0.000400
+kfar saba                                                 0.000400
+atasehir, istanbul                                        0.000400
+абакан                                                    0.000400
+ประจวบคีรีขันธ์                                           0.000400
+galatina                                                  0.000400
+meda                                                      0.000400
+perth, australia                                          0.000400
+prague                                                    0.000400
+しぞーか                                                      0.000400
+ardabil , meshkin shahr                                   0.000400
+piemonte                                                  0.000400
+sestu                                                     0.000400
+רמת גן                                                    0.000400
+ånge                                                      0.000400
+manisa                                                    0.000400
+correggio                                                 0.000400
+nakhon ratchasima                                         0.000400
+ιωάννινα                                                  0.000400
+екатеринбург                                              0.000400
+львів                                                     0.000400
+rissne, sundbyberg                                        0.000400
+бутурлиновка                                              0.000400
+gouvy                                                     0.000400
+thai nguyen viet nam                                      0.000400
+hammarbyhöjden                                            0.000400
+vercelli                                                  0.000400
+kariya-shi                                                0.000400
+fairy                                                     0.000400
+karamürsel                                                0.000400
+amhult                                                    0.000400
+ennis                                                     0.000400
+steinsel                                                  0.000400
+sathorn, bangkok                                          0.000400
+shibuya, tokyo                                            0.000400
+sarajevo                                                  0.000400
+spjutaretorp                                              0.000400
+cehennem                                                  0.000400
+近畿                                                        0.000400
+livorno                                                   0.000400
+พะเยา                                                     0.000400
+cardiff                                                   0.000400
+cobb, ca                                                  0.000400
+islamabad                                                 0.000400
+東京都三鷹市                                                    0.000400
+debrecen, hungary                                         0.000400
+пловдив                                                   0.000400
+mantena                                                   0.000400
+chisinau                                                  0.000400
+минск, беларусь                                           0.000400
+viareggio                                                 0.000400
+生駒                                                        0.000400
+majorna göteborg                                          0.000400
+herning                                                   0.000400
+prizren                                                   0.000400
+bình dương                                                0.000400
+ahmedabad,india                                           0.000400
+osaka, japan                                              0.000400
+granby, quebec                                            0.000400
+phường 1, quận 3, hồ chí minh                             0.000400
+hồ chí minh                                             0.000400
+medjez el-bab                                             0.000400
+ở tp thanh hóa                                            0.000400
+sarzana                                                   0.000400
+can tho                                                   0.000400
+manchester                                                0.000400
+birjand                                                   0.000400
+ataşehir, istanbul                                        0.000400
+arese                                                     0.000400
+เมืองเอก                                                  0.000400
+darbhanga,patna,kodaikanal,kota,udaipur                   0.000400
+vientiane                                                 0.000400
+yamanashi                                                 0.000400
+chieti                                                    0.000400
+hyogo, japan                                              0.000400
+milan, italy                                              0.000400
+nan,thailand                                              0.000400
+pondok bambu                                              0.000400
+crema                                                     0.000400
+binh thanh, ho chi minh                                   0.000400
+viettri, vietnam                                          0.000400
+长沙                                                        0.000400
+valescure, france                                         0.000400
+beer-sheaba                                               0.000400
+quartu sant'elena                                         0.000400
+teh                                                       0.000400
+tân châu - an giang                                       0.000400
+uk                                                        0.000400
+lausanne, switzerland                                     0.000400
+kolkata                                                   0.000400
+tp hcm                                                    0.000400
+crotone                                                   0.000400
+iran , tehran                                             0.000400
+ankara, gaziantep                                         0.000400
+bandhagen                                                 0.000400
+san giovanni al natisone                                  0.000400
+neyshabur                                                 0.000400
+blesssano                                                 0.000400
+cluj napoca                                               0.000400
+tiraspol, moldova                                         0.000400
+kuala lumpur(malaysia)                                    0.000400
+moncuq                                                    0.000400
+หมู่บ้านอารียา                                            0.000400
+paris, strasbourg, reims, lyon, noyon                     0.000400
+ha noi, viet nam                                          0.000400
+愛知                                                        0.000400
+nakhon pathom                                             0.000400
+นครนายก                                                   0.000400
+hưng yên                                                  0.000400
+гродно                                                    0.000400
+rio de janeiro                                            0.000400
+ober-mörlen                                               0.000400
+samutprakan                                               0.000400
+杭州                                                        0.000400
+gwangju, south korea                                      0.000400
+ukraine ,zaporiz'ka region, polohy                        0.000400
+белгород                                                  0.000400
+marzocca                                                  0.000400
+пермь                                                     0.000400
+beautiful esfahan                                         0.000400
+russia, moscow                                            0.000400
+ansdell, quito, four marks, sydney                        0.000400
+pasdaran,tehran,iran                                      0.000400
+chorrillos lima                                           0.000400
+ivano-frankivsk, ukraine                                  0.000400
+волгоград                                                 0.000400
+มิตรภาพ ซ.4                                               0.000400
+vienna, europe                                            0.000400
+cannes                                                    0.000400
+ottawa, ontario canada                                    0.000400
+szigetszentmiklós                                         0.000400
+ayvalık, aydın, ankara, antalya                           0.000400
+королев                                                   0.000400
+zagreb                                                    0.000400
+ischia                                                    0.000400
+安城市                                                       0.000400
+viet nam                                                  0.000400
+san luis potosi                                           0.000400
+kingston upon thames, united kingdom                      0.000400
+schloß holte stukenbrock                                  0.000400
+طهران                                                     0.000400
+lünen                                                     0.000400
+bad salzuflen, lockhausen                                 0.000400
+saint sébastien sur loire, france                         0.000400
+世田谷区                                                      0.000400
+oleggio                                                   0.000400
+orlová                                                    0.000400
+samuthprakarn                                             0.000400
+durham, nc                                                0.000400
+choroszcz                                                 0.000400
+trondheim, norway                                         0.000400
+کرج                                                       0.000400
+thailand bkk                                              0.000400
+sundsvall, sweden                                         0.000400
+farsta                                                    0.000400
+道場                                                        0.000400
+ลำพูน                                                     0.000400
+grenchen, solothurn, fribourg, basel                      0.000400
+kalasin                                                   0.000400
+นครปฐม                                                    0.000400
+new york city                                             0.000394
+montreal                                                  0.000393
+jerusalem                                                 0.000393
+nürnberg                                                  0.000390
+montpellier                                               0.000385
+san diego, ca                                             0.000383
+karlshamn                                                 0.000373
+chicago                                                   0.000367
+canberra                                                  0.000367
+goa                                                       0.000352
+frankfurt                                                 0.000348
+venezia                                                   0.000333
+söderhamn                                                 0.000333
+kerman                                                    0.000333
+埼玉                                                        0.000333
+çanakkale                                                 0.000333
+cascina                                                   0.000333
+ålesund                                                   0.000333
+zürich                                                    0.000333
+tjörn                                                     0.000333
+southampton                                               0.000333
+davis, ca                                                 0.000333
+los angeles, ca                                           0.000333
+philadelphia                                              0.000333
+wilhelmshaven                                             0.000333
+wuhan                                                     0.000333
+tours                                                     0.000333
+mölndal                                                   0.000333
+kramfors                                                  0.000333
+nancy                                                     0.000333
+magadan                                                   0.000333
+athens                                                    0.000333
+nicosia                                                   0.000333
+長野                                                        0.000333
+guildford                                                 0.000333
+london, england                                           0.000331
+dijon                                                     0.000330
+toulouse                                                  0.000330
+ronneby                                                   0.000327
+australia                                                 0.000319
+stuttgart                                                 0.000307
+poitiers                                                  0.000300
+warsaw, poland                                            0.000300
+chiangmai                                                 0.000300
+bruxelles                                                 0.000300
+仙台                                                        0.000300
+tunbridge wells                                           0.000300
+amiens                                                    0.000300
+noumea                                                    0.000300
+nantes                                                    0.000300
+mälarhöjden, stockholm, sweden                            0.000300
+växjö                                                     0.000300
+fredrikstad                                               0.000300
+bergen, norway                                            0.000300
+harstad                                                   0.000300
+tromsø                                                    0.000300
+madrid                                                    0.000297
+skövde                                                    0.000293
+molde                                                     0.000293
+kristiansund                                              0.000280
+madrid, spain                                             0.000280
+ordu                                                      0.000280
+washington                                                0.000280
+ny                                                        0.000280
+pescara                                                   0.000280
+mainz                                                     0.000280
+halden                                                    0.000273
+sirjan                                                    0.000267
+kristiansand                                              0.000267
+libya                                                     0.000267
+tübingen                                                  0.000267
+lesjaskog                                                 0.000267
+lampang                                                   0.000267
+lubbock, tx                                               0.000267
+vinstra                                                   0.000267
+burdur                                                    0.000267
+krasnodar                                                 0.000267
+den haag                                                  0.000267
+maikop                                                    0.000267
+宮城県仙台市                                                    0.000267
+blekinge                                                  0.000267
+bergamo                                                   0.000267
+東京都練馬区                                                    0.000267
+ראש העין                                                  0.000267
+הרצליה                                                    0.000267
+bandırma                                                  0.000267
+charlotte, nc                                             0.000267
+urbino                                                    0.000267
+mersin                                                    0.000263
+drammen                                                   0.000257
+bushehr                                                   0.000257
+berlin, germany                                           0.000257
+fabriano                                                  0.000250
+marseille                                                 0.000250
+alanya                                                    0.000250
+bournemouth                                               0.000247
+bandung                                                   0.000244
+orlando                                                   0.000244
+liverpool                                                 0.000240
+bengtsfprs                                                0.000240
+bengtsfors                                                0.000240
+säffle                                                    0.000240
+bonn                                                      0.000236
+new york, usa                                             0.000233
+new jersey                                                0.000233
+uppsala, sweden                                           0.000233
+skjeberg                                                  0.000233
+栃木                                                        0.000233
+krasnoyarsk                                               0.000233
+port macquarie                                            0.000233
+brooklyn                                                  0.000227
+barcellona                                                0.000222
+piombino                                                  0.000222
+england                                                   0.000219
+東京都杉並区                                                    0.000213
+budapest, hungary                                         0.000213
+londres                                                   0.000213
+boston, ma                                                0.000213
+åkersberga                                                0.000213
+milwaukee                                                 0.000213
+vilnius                                                   0.000213
+delhi                                                     0.000213
+germany                                                   0.000210
+umeå, sweden                                              0.000200
+drancy                                                    0.000200
+kütahya                                                   0.000200
+nicosia, kyrenia, ankara, london, nottingham              0.000200
+erzurum                                                   0.000200
+נס ציונה                                                  0.000200
+anenii noi                                                0.000200
+plovdiv, bulgaria                                         0.000200
+thailang                                                  0.000200
+debrecen                                                  0.000200
+houilles                                                  0.000200
+saveh                                                     0.000200
+amsterdam, the netherlands                                0.000200
+千葉県                                                       0.000200
+đà lạt                                                    0.000200
+bensheim                                                  0.000200
+แกลง                                                      0.000200
+adliswil                                                  0.000200
+bet-alfa, israel                                          0.000200
+slagslunde, denmark                                       0.000200
+senigallia                                                0.000200
+pesaro                                                    0.000200
+iran, tehran                                              0.000200
+hà đông - hà nội                                          0.000200
+ludhiana                                                  0.000200
+montpellier, grau-du-roi, dijon, gensac-la-pall...        0.000200
+lanluang                                                  0.000200
+ст. еланский, тюмень, орск, ульяновск, москва             0.000200
+hachinohe, aomori, japan                                  0.000200
+ashdod                                                    0.000200
+兵庫県川西市                                                    0.000200
+nykvarn                                                   0.000200
+辽宁盘锦                                                      0.000200
+pohnpei                                                   0.000200
+bangalore, india                                          0.000200
+åre                                                       0.000200
+ohrid                                                     0.000200
+ho chinh minh city                                        0.000200
+vĩnh phúc                                                 0.000200
+creeting st mary                                          0.000200
+hakodate                                                  0.000200
+arlington, tx                                             0.000200
+chambly, qc                                               0.000200
+port-au-prince                                            0.000200
+chaing mai                                                0.000200
+mỹ tho                                                    0.000200
+west milford, nj                                          0.000200
+dong nai province                                         0.000200
+chilly-mazarin, rouen, avon, fontainebleau                0.000200
+台灣                                                        0.000200
+vagnhärad                                                 0.000200
+rize                                                      0.000200
+sweden (hometown: varberg)                                0.000200
+тюмень                                                    0.000200
+newyork                                                   0.000200
+yala                                                      0.000200
+boltiere                                                  0.000200
+beirut                                                    0.000200
+cẩm phả - quảng ninh                                      0.000200
+chiangrai                                                 0.000200
+teran                                                     0.000200
+revò                                                      0.000200
+cipressa                                                  0.000200
+ashland, ne                                               0.000200
+takestan                                                  0.000200
+eden prairie                                              0.000200
+amesbury, ma                                              0.000200
+rossendale lancs. holmfirth yorks.                        0.000200
+edinburgh                                                 0.000200
+bath                                                      0.000200
+киев                                                      0.000200
+magenta                                                   0.000200
+state college, pa                                         0.000200
+ithaca,ny                                                 0.000200
+baku                                                      0.000200
+trenzano                                                  0.000200
+http://tinylink.ir/7pj                                    0.000200
+rimouski (quebec)                                         0.000200
+tam đảo vính phúc                                         0.000200
+grums                                                     0.000200
+רחובות                                                    0.000200
+isle sur sorgue, saint raphaël, bruxelles, mont...        0.000200
+esfahan-farsan-tehran                                     0.000200
+aomori, japan                                             0.000200
+san antonio, tenerife                                     0.000200
+新宿区                                                       0.000200
+dovercourt                                                0.000200
+saraburi                                                  0.000200
+uzbekistan, tashkent                                      0.000200
+lübeck                                                    0.000200
+järfälla, stockholm                                       0.000200
+nakhonratchasima                                          0.000200
+regno unito                                               0.000200
+ashtian , markazi , iran                                  0.000200
+grenoble                                                  0.000200
+lier, norge                                               0.000200
+feltre                                                    0.000200
+rosh haayin                                               0.000200
+chilly-mazarin                                            0.000200
+gazimağosa                                                0.000200
+prachinburi                                               0.000200
+traun, österreich                                         0.000200
+adis abeba                                                0.000200
+сердобск                                                  0.000200
+tregnago (verona)                                         0.000200
+saratov, russia                                           0.000200
+visaginas lt-300, lietuva                                 0.000200
+ulm                                                       0.000200
+berkeley, ca                                              0.000200
+plainville, ma                                            0.000200
+aachen, germany                                           0.000200
+isle sur sorgue                                           0.000200
+yazd,iran                                                 0.000200
+barrow in furness                                         0.000200
+gorizia                                                   0.000200
+дубай                                                     0.000200
+taufkirchen                                               0.000200
+akhisar                                                   0.000200
+shijiazhuang                                              0.000200
+clydebank                                                 0.000200
+colombo, sri lanka                                        0.000200
+qazvin                                                    0.000200
+kesan                                                     0.000200
+vänersborg, sweden                                        0.000200
+広島県福山市                                                    0.000200
+aarau                                                     0.000200
+bayrampaşa                                                0.000200
+vagnhärad, borlänge, järna, uppsala                       0.000200
+stavanger, kleppe                                         0.000200
+djurås                                                    0.000200
+dulovo, bulgaria                                          0.000200
+tehran , azarbijan street. between khosh and ro...        0.000200
+rotondella                                                0.000200
+all over                                                  0.000200
+haifa, israel                                             0.000200
+luco dei marsi                                            0.000200
+rafsanjan                                                 0.000200
+hadera                                                    0.000200
+hà tĩnh                                                   0.000200
+edmonton                                                  0.000200
+bentre, vietnam                                           0.000200
+larnaca, cyprus                                           0.000200
+colombo                                                   0.000200
+munich, stuttgart                                         0.000200
+lidköping                                                 0.000200
+petaling jaya, malaysia                                   0.000200
+fasa-fars-iran                                            0.000200
+flagstaff, arizona                                        0.000200
+sanpatong                                                 0.000200
+parainen                                                  0.000200
+tiên lãng, hải phòng                                      0.000200
+waldorf                                                   0.000200
+aarhus                                                    0.000200
+lvov                                                      0.000200
+brisbane, australia                                       0.000200
+antwerp, belgium                                          0.000200
+smørum, denmark                                           0.000200
+kobe                                                      0.000200
+bình định                                                 0.000200
+morioka, iwate, japan                                     0.000200
+đăk đoa                                                   0.000200
+bagarmossen, stockholm, sweden                            0.000200
+oldenburg                                                 0.000200
+songkla                                                   0.000200
+sagamihara                                                0.000200
+long thành                                               0.000200
+сухарево                                                  0.000200
+tel aviv, israel                                          0.000200
+malacca, malaysia                                         0.000200
+lier, norway                                              0.000200
+gent                                                      0.000200
+förslöv                                                   0.000200
+weybridge, england                                        0.000200
+färgelanda                                                0.000200
+千葉市                                                       0.000200
+thụy khuê                                                 0.000200
+aprilia, roma                                             0.000200
+hagenberg, österreich                                     0.000200
+klonghok                                                  0.000200
+little rock, ar                                           0.000200
+st. louis, mo                                             0.000200
+84-31 62drive midde willage new york 11379 apr v65        0.000200
+norrköping, linköping och göteborg                        0.000200
+zonguldak                                                 0.000200
+plainfield, in                                            0.000200
+chiang rai                                                0.000200
+arifiye, sakarya                                          0.000200
+södermalm, stockholm                                      0.000200
+leppävaara                                                0.000200
+mukandpur                                                 0.000200
+凤凰                                                        0.000200
+jokkmokk, sweden                                          0.000200
+fasa, tehran                                              0.000200
+houat                                                     0.000200
+vinh - nghe an                                            0.000200
+montpellier, grau-du-roi, dijon, gensac-la-pall...        0.000200
+lamerd                                                    0.000200
+belfast, northern ireland                                 0.000200
+hội an                                                    0.000200
+netanya                                                   0.000200
+guang zhou                                                0.000200
+arya shahr                                                0.000200
+ロンドン                                                      0.000200
+grottaferrata                                             0.000200
+shkoder                                                   0.000200
+астана                                                    0.000200
+huong khe - ha tinh                                       0.000200
+frösön                                                    0.000200
+roi-et                                                    0.000200
+nacka                                                     0.000200
+asnières                                                  0.000200
+bucarest                                                  0.000200
+душа каждого человека                                     0.000200
+украина                                                   0.000200
+leer                                                      0.000200
+hochiminh, vietnam                                        0.000200
+porsanger                                                 0.000200
+ba14 8lj                                                  0.000200
+buon ma thuot, viet nam                                   0.000200
+fjärås                                                    0.000200
+palmerston north                                          0.000200
+ул. рекордная, 19, одесса, украина                        0.000200
+palamaner,renigunta                                       0.000200
+alcamo                                                    0.000200
+krakow, polad                                             0.000200
+jelgava                                                   0.000200
+deutschland                                               0.000200
+constanța                                                 0.000200
+manavgat                                                  0.000200
+san giovanni rotondo                                      0.000200
+宮崎                                                        0.000200
+埼玉県川口市                                                    0.000200
+segeltorp, huddinge                                       0.000200
+phan thiet                                                0.000200
+moss, norway                                              0.000200
+ระยอง                                                     0.000200
+gölhisar                                                  0.000200
+โพธิ์พระยา                                                0.000200
+paisley                                                   0.000200
+dungun                                                    0.000200
+lagonegro, italy                                          0.000200
+verolavecchia                                             0.000200
+turku,atlanta                                             0.000200
+astara                                                    0.000200
+aomori, hirosaki, sapporo, tokyo                          0.000200
+schwäbisch gmünd                                          0.000200
+denmark, brazil                                           0.000200
+พัฒนาการ                                                  0.000200
+steiermark/vienna, austria                                0.000200
+bergama                                                   0.000200
+palamaner                                                 0.000200
+chieri                                                    0.000200
+chiba                                                     0.000200
+herndon,va                                                0.000200
+gaziantep                                                 0.000200
+terengganu                                                0.000200
+mosjøen                                                   0.000200
+west hills, ca                                            0.000200
+peachtree city                                            0.000200
+佐賀県鳥栖市                                                    0.000200
+port glasgow, newcastle, blackburn, rome,  slag...        0.000200
+beirut, lebanon                                           0.000200
+specchia                                                  0.000200
+semnan                                                    0.000200
+lorsch                                                    0.000200
+福岡県                                                       0.000200
+grand forks                                               0.000200
+pardis , tehran , iran                                    0.000200
+sare ghabre to!!!                                         0.000200
+张家界                                                       0.000200
+福岡                                                        0.000200
+novoli                                                    0.000200
+鹿足郡吉賀町                                                    0.000200
+ankara, istanbul                                          0.000200
+israel,jerusalem                                          0.000200
+sandhurst                                                 0.000200
+uttaradit                                                 0.000200
+älvsbyn                                                   0.000200
+köping                                                    0.000200
+มหาวิทยาลัยมหาสารคาม                                      0.000200
+maracaibo, venezuela                                      0.000200
+chermahal va bakhtiyari-farsan                            0.000200
+avane                                                     0.000200
+nha trang,viet nam                                        0.000200
+salt lake city                                            0.000200
+sandefjord, norge                                         0.000200
+save , shiraz , tehran                                    0.000200
+สุพรรณบุรี                                                0.000200
+valeggio sul mincio                                       0.000200
+tehran, tabriz, rasht                                     0.000200
+vinh                                                      0.000200
+прага                                                     0.000200
+tel-aviv, israel                                          0.000200
+岩国市                                                       0.000200
+japan,tokyo, ota                                          0.000200
+haselünne                                                 0.000200
+casoria                                                   0.000200
+balıkesir - turkey                                        0.000200
+bankstown                                                 0.000200
+kerman, kerman, iran                                      0.000200
+waterfoot, rossendale                                     0.000200
+poonak                                                    0.000200
+ålesund, norway                                           0.000200
+grängesberg                                               0.000200
+bouremouth                                                0.000200
+niedernhausen                                             0.000200
+valderøy, norway                                          0.000200
+chișinău                                                  0.000200
+千代田区                                                      0.000200
+زیر گنبد کبود                                             0.000200
+changsha                                                  0.000200
+cheltenham                                                0.000200
+nannestad                                                 0.000200
+fort dodge, ia                                            0.000200
+da nang, vietnam                                          0.000200
+andheri, vasai, london                                    0.000200
+north attleboro, ma                                       0.000200
+sariyer                                                   0.000200
+valenciennes                                              0.000200
+neuilly plaisance                                         0.000200
+müllheim, thurgau                                         0.000200
+erzincan                                                  0.000200
+champs sur marne                                          0.000200
+tunsie                                                    0.000200
+botevgrad                                                 0.000200
+san francisco, ca                                         0.000200
+abhar                                                     0.000200
+famagusta                                                 0.000200
+tehran,iran                                               0.000200
+romania                                                   0.000200
+vetralla                                                  0.000200
+samara                                                    0.000200
+amol, mazandaran, iran                                    0.000200
+århus v                                                   0.000200
+辽宁辽阳                                                      0.000200
+vigo                                                      0.000200
+台北                                                        0.000200
+bangkok, th                                               0.000200
+maruggio                                                  0.000200
+актобе                                                    0.000200
+павлодар                                                  0.000200
+sweden (stockholm, gothenburg, varberg)                   0.000200
+frei                                                      0.000200
+nürnberg, germany                                         0.000200
+bielstein                                                 0.000200
+köttkulla                                                 0.000200
+chandigarh                                                0.000200
+bebington                                                 0.000200
+จ.มหาสารคาม                                               0.000200
+vizzolo predabissi                                        0.000200
+kusadasi                                                  0.000200
+øvre årdal                                                0.000200
+united kingdom                                            0.000200
+บางใหญ่                                                   0.000200
+la jolla, ca                                              0.000200
+jembrana                                                  0.000200
+helsjön                                                   0.000200
+vittene, vårgårda                                         0.000200
+pasdaran                                                  0.000200
+yamaguchi,japan                                           0.000200
+eskişehir,ankara                                          0.000200
+genova sestri ponente                                     0.000200
+ghedi                                                     0.000200
+beernem                                                   0.000200
+isfahan, tabriz, tehran                                   0.000200
+wakayama                                                  0.000200
+şişli, istanbul                                           0.000200
+dusseldorf                                                0.000200
+ukraine                                                   0.000200
+limay                                                     0.000200
+maesot                                                    0.000200
+jerusalem, moskow, kiev                                   0.000200
+alassio                                                   0.000200
+alicetown                                                 0.000200
+愛知県名古屋市                                                   0.000200
+galliate, italy                                           0.000200
+elbasan                                                   0.000200
+bilbao                                                    0.000200
+ruffano                                                   0.000200
+johannesburg                                              0.000200
+erlinsbach                                                0.000200
+kiskőrös                                                  0.000200
+braga                                                     0.000200
+lund, malmö, landskrona, växjö, stockholm, oslo           0.000200
+rena, norway                                              0.000200
+iran, rasht                                               0.000200
+magnet                                                    0.000200
+razgrad                                                   0.000200
+neverhood                                                 0.000200
+sosnovy bor, russian federation, leningradskaya...        0.000200
+veberöd                                                   0.000200
+trujillo                                                  0.000200
+bucurești                                                 0.000200
+voronezh                                                  0.000200
+sofia, bulgaria                                           0.000200
+москва/зябликово                                          0.000200
+trevi                                                     0.000200
+chaingrai                                                 0.000200
+hagenberg im mühlkreis                                    0.000200
+dolbeau-mistassini, qc                                    0.000200
+lagi                                                      0.000200
+da lat                                                    0.000200
+bourgoin-jallieu                                          0.000200
+bangkhae                                                  0.000200
+уварово                                                   0.000200
+siebenbäumen                                              0.000200
+varamin                                                   0.000200
+bat yam                                                   0.000200
+japan,saitama                                             0.000200
+florence                                                  0.000200
+stotfold                                                  0.000200
+trento                                                    0.000200
+ankara,zonguldak,antalya                                  0.000200
+montreal (quebec)                                         0.000200
+ledvinova 16                                              0.000200
+phú thọ                                                   0.000200
+san giovanni gemini                                       0.000200
+eschborn                                                  0.000200
+sylt-ost                                                  0.000200
+winterthur                                                0.000200
+саранск/светотехстрой                                     0.000200
+ตราด                                                      0.000200
+quãng ngãi                                              0.000200
+donnery                                                   0.000200
+surrey                                                    0.000200
+новосибирск                                               0.000200
+bergamo italy                                             0.000200
+vaasa                                                     0.000200
+flädie                                                    0.000200
+kungsör                                                   0.000200
+sæby, espe, dronninglund, københavn, pécs, gree...        0.000200
+vasai                                                     0.000200
+amsterdam, nederland                                      0.000200
+boden                                                     0.000200
+waltham, ma                                               0.000200
+san vincenzo                                              0.000200
+williamstown new jersey                                   0.000200
+monastir                                                  0.000200
+viterbo                                                   0.000200
+iran, united kingdom, canada                              0.000200
+berlin, new york, london                                  0.000200
+tirana                                                    0.000200
+uthai tani                                                0.000200
+kárášjohka                                                0.000200
+princeton, nj                                             0.000200
+cuneo                                                     0.000200
+nizhny novgorod, russia                                   0.000200
+минск                                                     0.000200
+kiev ukrain                                               0.000200
+phrae                                                     0.000200
+trapani                                                   0.000200
+bucharest                                                 0.000200
+北海道札幌市,秋田県大仙市                                             0.000200
+källunge, visby                                           0.000200
+seljord, norway                                           0.000200
+ekerö                                                     0.000200
+熊本県熊本市                                                    0.000200
+laguna niguel, california                                 0.000200
+praha 4                                                   0.000200
+amstelveen, nederland                                     0.000200
+kalamış                                                   0.000200
+横浜                                                        0.000200
+reggio emilia                                             0.000200
+saraphi                                                   0.000200
+buffalo, ny                                               0.000200
+århus                                                     0.000200
+danmark                                                   0.000200
+cittanova                                                 0.000200
+zeil                                                      0.000200
+norge                                                     0.000200
+wehingen                                                  0.000200
+zonguldak - turkey                                        0.000200
+targovishte, bulgaria                                     0.000200
+cologno monzese                                           0.000200
+tricase                                                   0.000200
+salamanca                                                 0.000200
+çorlu                                                     0.000200
+lund, sverige                                             0.000200
+tel-aviv                                                  0.000200
+phathumtani                                               0.000200
+arad, romania                                             0.000200
+risør                                                     0.000200
+genova sampierdarena                                      0.000200
+huế                                                       0.000200
+jishou                                                    0.000200
+mahabad                                                   0.000200
+trøgstad, norge                                           0.000200
+udonthani                                                 0.000200
+örsundsbro                                                0.000200
+florence, italy                                           0.000200
+frankfurt am main                                         0.000200
+villard de lans                                           0.000200
+cantoira                                                  0.000200
+lørenskog, norge                                          0.000200
+pouzauges                                                 0.000200
+sriracha chonburi                                         0.000200
+wollongong                                                0.000200
+donnalucata                                               0.000200
+sapporo                                                   0.000200
+keflavik                                                  0.000200
+stockholm/bromma - sweden                                 0.000200
+stavanger                                                 0.000187
+taichung                                                  0.000183
+perpignan                                                 0.000183
+örebro                                                    0.000180
+bremen                                                    0.000180
+seattle                                                   0.000180
+dublin, ireland                                           0.000180
+gislaved                                                  0.000180
+italy                                                     0.000179
+bordeaux                                                  0.000178
+atlanta                                                   0.000178
+alingsås                                                  0.000174
+portland, or                                              0.000173
+grenaa                                                    0.000170
+erlangen                                                  0.000170
+千葉県柏市                                                     0.000167
+trosa                                                     0.000167
+adelaide                                                  0.000167
+kiel                                                      0.000167
+annecy                                                    0.000167
+aix-en-provence                                           0.000160
+東京都新宿区                                                    0.000160
+神奈川県相模原市                                                  0.000160
+melbourne, fl                                             0.000160
+茨城県鹿島市                                                    0.000160
+burträsk                                                  0.000160
+svartsjö, ekerö                                           0.000160
+torvalla                                                  0.000160
+skopje                                                    0.000160
+vetlanda                                                  0.000160
+aspa, nyköping                                            0.000160
+fagersjö                                                  0.000160
+神奈川県愛甲郡                                                   0.000160
+東京都八王子市                                                   0.000160
+nyköping                                                  0.000160
+svenstavik                                                0.000160
+bromstensplan                                             0.000160
+京都府                                                       0.000158
+jever                                                     0.000157
+lüneburg                                                  0.000157
+fürth                                                     0.000157
+taranto                                                   0.000156
+irvine, ca                                                0.000153
+dunkerque                                                 0.000150
+macerata                                                  0.000150
+enskede                                                   0.000147
+stenungsund                                               0.000147
+austin, tx                                                0.000147
+portland                                                  0.000144
+darmstadt, germany                                        0.000144
+cherbourg                                                 0.000144
+minneapolis, mn                                           0.000140
+ahmedabad                                                 0.000137
+bagdad                                                    0.000137
+gurgaon                                                   0.000137
+long beach, ca                                            0.000136
+odense                                                    0.000136
+nantong                                                   0.000133
+son la                                                    0.000133
+somers, ny                                                0.000133
+trần khát chân                                            0.000133
+graz                                                      0.000133
+maptaphut                                                 0.000133
+nybro                                                     0.000133
+nord-lenangen                                             0.000133
+fondi                                                     0.000133
+iran - abadan                                             0.000133
+zhangjiagang                                              0.000133
+owensville, in                                            0.000133
+kungsholmen, stockholm                                    0.000133
+via scalette 5, cervia                                    0.000133
+la puente                                                 0.000133
+pembroke pines, fl                                        0.000133
+bucharest, romania                                        0.000133
+acerra                                                    0.000133
+sala                                                      0.000133
+phang-nga                                                 0.000133
+banda abbas                                               0.000133
+olympia, washington, usa                                  0.000133
+dijon, france                                             0.000133
+bonn, germany                                             0.000133
+mars hill, north carolina                                 0.000133
+riva del garda                                            0.000133
+nha trang                                                 0.000133
+värnamo                                                   0.000133
+montgat                                                   0.000133
+manila                                                    0.000133
+福島県郡山市                                                    0.000133
+isfahan, iran                                             0.000133
+straubing                                                 0.000133
+san cipriano d'aversa                                     0.000133
+cancun                                                    0.000133
+hyogo                                                     0.000133
+viña                                                      0.000133
+tiana                                                     0.000133
+栃木県                                                       0.000133
+bovalino                                                  0.000133
+hai duong                                                 0.000133
+cartagena colombia                                        0.000133
+sacramento, ca                                            0.000133
+قم                                                        0.000133
+نجف (وطنم)                                                0.000133
+san francisco, california                                 0.000133
+andernach                                                 0.000133
+olbia, italy                                              0.000133
+bromma, sweden                                            0.000133
+norrmalm                                                  0.000133
+toledo, wa                                                0.000133
+tampere                                                   0.000133
+vico del gargano                                          0.000133
+bologna (bo) italy                                        0.000133
+mons                                                      0.000133
+abadan                                                    0.000133
+horsens                                                   0.000133
+whitefield, nh                                            0.000133
+meknès                                                    0.000133
+cát bà                                                    0.000133
+cabo san lucas                                            0.000133
+guanajuato, guanajuato                                    0.000133
+lincoln, ca                                               0.000133
+vancouver, ca                                             0.000133
+eskilstuna, västerås och göteborg                         0.000133
+nakhonsawan                                               0.000133
+guéret                                                    0.000133
+hanvoille                                                 0.000133
+carpentersville, il                                       0.000133
+torri del benaco, vr                                      0.000133
+cinfães, portugal                                         0.000133
+aprilia                                                   0.000133
+vreta kloster, sweden                                     0.000133
+vecchiano                                                 0.000133
+shippensburg                                              0.000133
+atlanta, georgia                                          0.000133
+leeds                                                     0.000133
+erbaa                                                     0.000133
+latyao                                                    0.000133
+lat phrao                                                 0.000133
+palma de mallorca                                         0.000133
+fagersta                                                  0.000133
+aalborg, denmark                                          0.000133
+埼玉県                                                       0.000133
+大阪市淀川区                                                    0.000133
+山形県山形市                                                    0.000133
+noto                                                      0.000133
+chengdu                                                   0.000133
+kristinehamn                                              0.000133
+hisings backa                                             0.000133
+deptford, nj                                              0.000133
+fjellhamar                                                0.000133
+portoscuso                                                0.000133
+宮城県白石市                                                    0.000133
+älvängen                                                  0.000133
+bad vilbel                                                0.000133
+west virginia                                             0.000133
+montigny-les-cormeilles                                   0.000133
+群馬                                                        0.000133
+aquileia                                                  0.000133
+稚内                                                        0.000133
+yazd,tehran,esfahan,dubai                                 0.000133
+wattrelos                                                 0.000133
+pune , india                                              0.000133
+grottaglie                                                0.000133
+la frette-montigny                                        0.000133
+namur                                                     0.000133
+topsfield, ma                                             0.000133
+galway                                                    0.000133
+monntreal, quebec                                         0.000133
+名古屋市                                                      0.000133
+ljusdal                                                   0.000133
+defaultcity                                               0.000133
+seattle, wa                                               0.000133
+guadalajara                                               0.000133
+rowland heights                                           0.000133
+albenga                                                   0.000133
+vörå, finland                                             0.000133
+richmond, london, england                                 0.000133
+minburi                                                   0.000133
+cremona                                                   0.000133
+東京都稲城市                                                    0.000133
+bournemoth                                                0.000133
+vác, hungary                                              0.000133
+bhagalpur                                                 0.000133
+兵庫県加古川市                                                   0.000133
+palatine, il                                              0.000133
+kuwait                                                    0.000133
+meran                                                     0.000133
+winnetka                                                  0.000133
+alvito, italy                                             0.000133
+北習志野                                                      0.000133
+roma, italy                                               0.000133
+nakhon si thammarat                                       0.000133
+vennesla                                                  0.000133
+rotebro                                                   0.000133
+maejo                                                     0.000133
+méxico                                                    0.000133
+sermide (mn) italy                                        0.000133
+kawasaki                                                  0.000133
+西新小岩                                                      0.000133
+שוהם                                                      0.000133
+bottrop                                                   0.000133
+mandal                                                    0.000133
+uster                                                     0.000133
+nøtterøy                                                  0.000133
+cape town, south africa                                   0.000133
+横浜市青葉区                                                    0.000133
+berlino                                                   0.000133
+oxelösund                                                 0.000133
+south yorkshire                                           0.000133
+yamagata                                                  0.000133
+quetta, pakistan                                          0.000133
+warminster                                                0.000133
+부산광역시                                                     0.000133
+fairbanks                                                 0.000133
+cintalapa, chiapas                                        0.000133
+fermo, ap                                                 0.000133
+louisville, kentucky                                      0.000133
+cupertino, ca                                             0.000133
+lahore, pakistan                                          0.000133
+salt lake city, utah, us                                  0.000133
+pearl city                                                0.000133
+karlskrona, sweden                                        0.000133
+khâm thiên                                                0.000133
+renton                                                    0.000133
+niro havaee                                               0.000133
+samut sakhon                                              0.000133
+lancaster, nh                                             0.000133
+otranto                                                   0.000133
+skärhamn                                                  0.000133
+svärdsjö                                                  0.000133
+shiga                                                     0.000133
+宮城県登米市                                                    0.000133
+dietikon                                                  0.000133
+san cristóbal de las casas, chiapas                       0.000133
+alta                                                      0.000133
+cambridge, ma                                             0.000133
+untersteinach                                             0.000133
+montrouge                                                 0.000133
+fullerton , california                                    0.000133
+בני ברק                                                   0.000133
+neustadt an der aisch                                     0.000133
+bulgaria, sofia                                           0.000133
+京都                                                        0.000133
+קרית חיים                                                 0.000133
+raisio                                                    0.000133
+喜多方市                                                      0.000133
+banting                                                   0.000133
+mumbai , india                                            0.000133
+montreal, qc, canada                                      0.000133
+halsey, or                                                0.000133
+lindesberg, sweden                                        0.000133
+nan, chiang-mai                                           0.000133
+kingston up-on thames                                     0.000133
+vikebukt                                                  0.000133
+vitry sur seine                                           0.000133
+يزد                                                       0.000133
+burlington, wi                                            0.000133
+koln, germany                                             0.000133
+springfield, il                                           0.000133
+lebach                                                    0.000133
+örebro, sweden                                            0.000133
+宮城県名取市                                                    0.000133
+rom                                                       0.000133
+söderköping                                               0.000133
+西新宿                                                       0.000133
+schaumburg, il                                            0.000133
+brentwood, ny                                             0.000133
+öckerö                                                    0.000133
+lahnstein                                                 0.000133
+神奈川県大和市                                                   0.000133
+saalfeld saale                                            0.000133
+agas, romania                                             0.000133
+nakhonpathom                                              0.000133
+messina                                                   0.000133
+ålesund kommune                                           0.000133
+carapicuiba                                               0.000133
+kursk, russia                                             0.000133
+tenafly                                                   0.000133
+milano (mi) italy                                         0.000133
+paova                                                     0.000133
+foshan,china                                              0.000133
+st. nikolai im sausal                                     0.000133
+milpitas                                                  0.000133
+東京都府中市                                                    0.000133
+サンパウロ                                                     0.000133
+岐阜県可児市                                                    0.000133
+ingleside, tx                                             0.000133
+stenstorp                                                 0.000133
+nijmegen                                                  0.000133
+täby                                                      0.000133
+vileyka                                                   0.000133
+ulstein kommune                                           0.000133
+toulouse, fr                                              0.000133
+madison, wi                                               0.000133
+sergiev posad                                             0.000133
+floda                                                     0.000133
+群馬県                                                       0.000133
+minneapolis,mn                                            0.000133
+福島市                                                       0.000133
+périgueux                                                 0.000133
+ulaanbaatar                                               0.000133
+baikonur, kazakstan                                       0.000133
+plaidt                                                    0.000133
+quang ninh                                                0.000133
+serbia, belgrade                                          0.000133
+dahab                                                     0.000133
+sary                                                      0.000133
+le cannet des maures                                      0.000133
+wissembourg                                               0.000133
+蘇州                                                        0.000133
+kalanki                                                   0.000133
+khalkhal                                                  0.000133
+ladik                                                     0.000133
+torino, italy                                             0.000133
+jianhu                                                    0.000133
+kashiwa                                                   0.000133
+nepal                                                     0.000133
+愛媛県松山市                                                    0.000133
+いわき市                                                      0.000133
+札幌                                                        0.000133
+canada                                                    0.000133
+cornedo vicentino                                         0.000133
+ceva                                                      0.000133
+brasov                                                    0.000133
+roslavl                                                   0.000133
+klang                                                     0.000133
+nienburg an der weser                                     0.000133
+bangplee                                                  0.000133
+福井県                                                       0.000133
+traiguen                                                  0.000133
+千葉県船橋市                                                    0.000133
+würzburg, germany                                         0.000133
+turku                                                     0.000133
+saint génis des fontaines                                 0.000133
+riposto                                                   0.000133
+สกลนคร                                                    0.000133
+valley stream, ny                                         0.000133
+baumholder                                                0.000133
+edmonton, alberta, canada                                 0.000133
+kuopio                                                    0.000133
+wattenscheid                                              0.000133
+gotland                                                   0.000133
+lumberton, nc                                             0.000133
+belmont, ma                                               0.000133
+cyberjaya                                                 0.000133
+regniowez                                                 0.000133
+toulouse, france                                          0.000133
+nordnes                                                   0.000133
+goldthorpe                                                0.000133
+san jose, ca                                              0.000133
+inverell                                                  0.000133
+breisach am rhein                                         0.000133
+verona, vr                                                0.000133
+mashad                                                    0.000133
+grodno                                                    0.000133
+islington, london                                         0.000133
+granada hills (u.s.a.)                                    0.000133
+italy, rome                                               0.000133
+altamonte springs, fl                                     0.000133
+esfahan-iran                                              0.000133
+randers                                                   0.000133
+lukang                                                    0.000133
+bohus-björkö                                              0.000133
+denver, co                                                0.000133
+manilva, spain                                            0.000133
+modiin                                                    0.000133
+madonna dell'acqua                                        0.000133
+alpharetta, georgia                                       0.000133
+castel d'azzano, vr                                       0.000133
+นครราชสีมา                                                0.000133
+guangzhou,china                                           0.000133
+temuco                                                    0.000133
+gien                                                      0.000133
+bacau, romania                                            0.000133
+porto fuori                                               0.000133
+sakon nakhon                                              0.000133
+midholm close barnet, london                              0.000133
+千葉県千葉市                                                    0.000133
+sant'andrea apostolo dello jonio                          0.000133
+bayreuth                                                  0.000133
+富山県富山市                                                    0.000133
+cherokee, ga                                              0.000133
+firenze, italy                                            0.000133
+barcarès                                                  0.000133
+st. donats castle, united kingdom                         0.000133
+belgorod, russia                                          0.000133
+gothenburg,sweden                                         0.000133
+s. nicandro garganico                                     0.000133
+mora sweden                                               0.000133
+ฉะเชิงเทรา                                                0.000133
+panama city, panama                                       0.000133
+広島                                                        0.000133
+lerum                                                     0.000133
+茨城                                                        0.000133
+moscow, russia                                            0.000133
+gambolò                                                   0.000133
+fort wayne, in                                            0.000133
+almunge, sweden                                           0.000133
+oskarström                                                0.000133
+midsund kommune                                           0.000133
+wako                                                      0.000133
+san paolo                                                 0.000133
+ljublana                                                  0.000133
+plano, texas                                              0.000133
+bicknell, in                                              0.000133
+braga, portugal                                           0.000133
+tallåsen                                                  0.000133
+briatico                                                  0.000133
+nanjing                                                   0.000133
+tsukuba                                                   0.000133
+jönköping, sweden                                         0.000133
+愛知県豊川市                                                    0.000133
+herne-röhlinghausen                                       0.000133
+sinzig                                                    0.000133
+suadiye                                                   0.000133
+京都市西京区                                                    0.000133
+日進市                                                       0.000133
+saint christol lez alès                                   0.000133
+holmbrook dr barnet, london                               0.000133
+degerfors                                                 0.000133
+sinsheim                                                  0.000133
+via del colle 96 , san lazzaro di savena                  0.000133
+hofors                                                    0.000133
+南京                                                        0.000133
+honolulu                                                  0.000133
+koreatown, ca                                             0.000133
+kuala lumpur, malaysia                                    0.000131
+fermo                                                     0.000130
+東京都世田谷区                                                   0.000130
+cairo                                                     0.000124
+trieste                                                   0.000122
+india                                                     0.000116
+tuscaloosa                                                0.000114
+abu dhabi, uae                                            0.000111
+brindisi                                                  0.000102
+brussels                                                  0.000102
+vallset                                                   0.000100
+bogota                                                    0.000100
+surat thani                                               0.000100
+rosmalen                                                  0.000100
+hasuda, saitama                                           0.000100
+senanikom                                                 0.000100
+kırıkkale                                                 0.000100
+villalvernia                                              0.000100
+shinjyuku, tokyo                                          0.000100
+雲南市                                                       0.000100
+kiryat shmuel, haifa, israe                               0.000100
+campitello                                                0.000100
+ithaca, ny                                                0.000100
+paris (france)                                            0.000100
+samut prakarn                                             0.000100
+chisinau, moldova                                         0.000100
+dalby, lund, sweden                                       0.000100
+saint-paul, réunion                                       0.000100
+千葉県松戸市                                                    0.000100
+dundee, angus, scotland                                   0.000100
+montgomery, al                                            0.000100
+caracas, venezuela                                        0.000100
+gonesse                                                   0.000100
+herlev                                                    0.000100
+abu dhabi                                                 0.000100
+haifa                                                     0.000100
+kangar                                                    0.000100
+kiruna                                                    0.000100
+quendon, essex                                            0.000100
+kastamonu                                                 0.000100
+port of spain                                             0.000100
+torbat jaam                                               0.000100
+dargaz                                                    0.000100
+elmwood park, nj                                          0.000100
+reading, uk                                               0.000100
+ft benning, ga                                            0.000100
+vannes, france                                            0.000100
+lützenkirchen                                             0.000100
+telefonplan, stockholm, sweden                            0.000100
+haag                                                      0.000100
+新丸子                                                       0.000100
+holbrook, suffolk, england                                0.000100
+łódź, poland                                              0.000100
+sauvian                                                   0.000100
+duluth, mn                                                0.000100
+brooklyn, new york                                        0.000100
+bowling green, ohio                                       0.000100
+linz                                                      0.000100
+鷺宮                                                        0.000100
+domodossola, italy                                        0.000100
+ørlandet                                                  0.000100
+erzenhausen                                               0.000100
+gravelines                                                0.000100
+keşan                                                     0.000100
+mount vernon texas                                        0.000100
+cergy pontoise                                            0.000100
+grythyttan                                                0.000100
+vardø                                                     0.000100
+noisy-le-grand                                            0.000100
+vils                                                      0.000100
+nonthaburi, thailand                                      0.000100
+waterloo                                                  0.000100
+stansted mountfitchet, essex                              0.000100
+baton rouge, la                                           0.000100
+delft                                                     0.000100
+ilmenau                                                   0.000100
+mumbai, india                                             0.000100
+nynäshamn                                                 0.000100
+budel-schoot                                              0.000100
+klagenfurt                                                0.000100
+plano                                                     0.000100
+besancon 25000                                            0.000100
+pullman, wa                                               0.000100
+glassford, south lanarkshire, scotland                    0.000100
+saint afrique                                             0.000100
+geilenkirchen                                             0.000100
+dohnavur, tirunelveli, tamil nadu                         0.000100
+香川                                                        0.000100
+mimasaka                                                  0.000100
+福岡県北九州市小倉北区中井                                             0.000100
+treviglio                                                 0.000100
+visättra, huddinge, sweden                                0.000100
+gnesta, sweden                                            0.000100
+åstorp                                                    0.000100
+agrigento                                                 0.000100
+skovlunde                                                 0.000100
+fort lauderdale                                           0.000100
+thedinghausen                                             0.000100
+new zealand                                               0.000100
+laval 53000                                               0.000100
+caserta                                                   0.000100
+sablé sur sarthe                                          0.000100
+taichung, taiwan                                          0.000100
+båtsfjord                                                 0.000100
+foggia, italia                                            0.000100
+terralba                                                  0.000100
+kemer                                                     0.000100
+forsmark                                                  0.000100
+houma, la                                                 0.000100
+cholet                                                    0.000100
+stjørdal                                                  0.000100
+sharm el sheikh                                           0.000100
+chittenango, ny                                           0.000100
+giresun                                                   0.000100
+kaohsiung                                                 0.000100
+karasjok                                                  0.000100
+destin, fl                                                0.000100
+valencia, españa                                          0.000100
+edmonds wa                                                0.000100
+atsugi, kanagawa                                          0.000100
+uğur mumcu mahallesi                                      0.000100
+trento, italia                                            0.000100
+manisa, turkey                                            0.000100
+eskisehir                                                 0.000100
+samusarkorn, thailand                                     0.000100
+örkelljunga                                               0.000100
+kartal                                                    0.000100
+saint martin d'etampes                                    0.000100
+hollywood, fl                                             0.000100
+神奈川県横浜市緑区青葉台                                              0.000100
+sofiemyr                                                  0.000100
+tilburg                                                   0.000100
+scottsdale                                                0.000100
+caiolo (sondrio)                                          0.000100
+athens, greece                                            0.000100
+hasselt, belgium                                          0.000100
+camerino                                                  0.000100
+winchester, ky                                            0.000100
+capelle aan den ijssel                                    0.000100
+千葉県野田市                                                    0.000100
+dongguan                                                  0.000100
+sierra vista, az                                          0.000100
+farnham                                                   0.000100
+reutte                                                    0.000100
+nottuln                                                   0.000100
+alexander city, al                                        0.000100
+kissimmee                                                 0.000100
+hyderabad, andhra pradesh                                 0.000100
+saint-etienne                                             0.000100
+ירושלים                                                   0.000100
+damansara utama                                           0.000100
+eindhoven                                                 0.000100
+ogre, latvija                                             0.000100
+espoo, finland                                            0.000100
+haugesund, hordaland                                      0.000100
+สมุทรสาคร                                                 0.000100
+montbéliard 25200                                         0.000100
+clintwood, va                                             0.000100
+sunnyvale, california                                     0.000100
+bodrum                                                    0.000100
+falköping                                                 0.000100
+unterschiedlich                                           0.000100
+halifax, ns                                               0.000100
+vleuten                                                   0.000100
+satory                                                    0.000100
+chapel hill, north carolina                               0.000100
+baton rouge                                               0.000100
+saudi arabia                                              0.000100
+woking                                                    0.000100
+oristano                                                  0.000100
+rennes, france                                            0.000100
+duluth                                                    0.000100
+quincy-voisins                                            0.000100
+san diego                                                 0.000100
+koraput, orissa                                           0.000100
+meguro, tokyo                                             0.000100
+taverny                                                   0.000100
+אלון הגליל                                                0.000100
+røros                                                     0.000100
+findlay, ohio                                             0.000100
+troy, alabama                                             0.000100
+achim                                                     0.000100
+danville, in                                              0.000100
+damascus, syria                                           0.000100
+revning                                                   0.000100
+astoria, new york                                         0.000100
+snogeröd (sweden)                                         0.000100
+pokok sena                                                0.000100
+palo alto, ca                                             0.000100
+snekkersten                                               0.000100
+stockholm, uppsala, lindesberg, halifax ns                0.000100
+lintorf                                                   0.000100
+benevento                                                 0.000100
+松江市                                                       0.000100
+østerbro                                                  0.000100
+springfield, ohio                                         0.000100
+zahedan                                                   0.000100
+jatujak                                                   0.000100
+surfers parfadise                                         0.000100
+uxbridge, london                                          0.000100
+羽曳野市                                                      0.000100
+töcksfors                                                 0.000100
+nancy 54000                                               0.000100
+wien, österreich                                          0.000100
+ås, akershus                                              0.000100
+leverkusen                                                0.000100
+wadhurst                                                  0.000100
+cireggio, italy                                           0.000100
+cheshire, ct                                              0.000100
+sölden                                                    0.000100
+raleigh, nc                                               0.000100
+holbaek                                                   0.000100
+bremerhaven                                               0.000100
+villiers-sur-marne                                        0.000100
+chantaburi                                                0.000100
+vikhammer                                                 0.000100
+albstadt                                                  0.000100
+stubbington, hampshire, england                           0.000100
+częstochowa, poland                                       0.000100
+sharjah                                                   0.000100
+frosta                                                    0.000100
+kerteminde                                                0.000100
+plovdiv                                                   0.000100
+århus, denmark                                            0.000100
+denizli, turkey                                           0.000100
+copenhagen                                                0.000100
+säter                                                     0.000100
+阿佐ヶ谷                                                      0.000100
+dry ridge, ky                                             0.000100
+utrecht                                                   0.000100
+hedemora                                                  0.000100
+中野                                                        0.000100
+wörgl                                                     0.000100
+valdemarsvik                                              0.000100
+באר שבע                                                   0.000100
+chickasha                                                 0.000100
+lyngdal, vest-agder                                       0.000100
+tamworth                                                  0.000100
+chatham, kent                                             0.000100
+wheaton, il                                               0.000100
+mt. sterling, ky                                          0.000100
+mandal, vest-agder                                        0.000100
+la saline, réunion                                        0.000100
+øverbygd                                                  0.000100
+vizag, andhra pradesh                                     0.000100
+milano, marina di pisa, ischia                            0.000100
+arona, italy                                              0.000100
+canterbury, kent                                          0.000100
+the netherlands                                           0.000100
+宮城                                                        0.000100
+helsingør                                                 0.000100
+อุตรดิตถ์                                                 0.000100
+lund (sweden)                                             0.000100
+cuxhaven                                                  0.000100
+lalahan                                                   0.000100
+gorgonzola                                                0.000100
+essentially south east england.                           0.000100
+soissons                                                  0.000100
+lyndhurst, new jersey                                     0.000100
+norrköping (sweden)                                       0.000100
+福岡県福岡市中央区警固                                               0.000100
+nieuwegein                                                0.000100
+yakacık                                                   0.000100
+florence, al                                              0.000100
+lahr / meißenheim                                         0.000100
+athens, ohio                                              0.000100
+khonkean                                                  0.000100
+ennismore, ontario                                        0.000100
+ft jackson, sc                                            0.000100
+new york city, ny                                         0.000100
+mosca                                                     0.000100
+riga, latvija                                             0.000100
+東京都渋谷区鶯谷町                                                 0.000100
+new delhi                                                 0.000100
+lampeter, uk                                              0.000100
+adazi, latvija                                            0.000100
+ely, mn                                                   0.000100
+belfort 90000                                             0.000100
+東京都葛飾区                                                    0.000100
+mountain view, california                                 0.000100
+cassina de' pecchi                                        0.000100
+nordmaling                                                0.000100
+富士見台                                                      0.000100
+plouarzel                                                 0.000100
+oxford, uk                                                0.000100
+lungro                                                    0.000100
+kortgene                                                  0.000100
+barcelona, spain                                          0.000100
+unna                                                      0.000100
+cernusco sul naviglio                                     0.000100
+burton-on-trent                                           0.000100
+kyoto                                                     0.000092
+washington, dc                                            0.000088
+solarolo                                                  0.000080
+fairmont, wv                                              0.000080
+tassos                                                    0.000080
+bacoli                                                    0.000080
+ternopil                                                  0.000080
+aviano                                                    0.000080
+lucknow                                                   0.000080
+sturkö, sverige                                           0.000080
+dhaka bangladesh                                          0.000080
+imola                                                     0.000080
+giresun-sinop                                             0.000080
+sinop-ayancık                                             0.000080
+pasadena                                                  0.000080
+virginia beach, va                                        0.000080
+yuzhno-sakhalinsk                                         0.000080
+college station                                           0.000080
+charleston, wv                                            0.000080
+eibenweg 5, göttingen                                     0.000080
+or haner                                                  0.000080
+auxerre                                                   0.000080
+tabiano terme                                             0.000080
+tarbes                                                    0.000080
+norway                                                    0.000080
+町田市木曽町                                                    0.000080
+sefad                                                     0.000080
+nakameguro                                                0.000080
+volkersbrunn                                              0.000080
+orlando, florida                                          0.000080
+lüleburgaz                                                0.000080
+motosumiyoshi                                             0.000080
+mussoorie                                                 0.000080
+mildestieg 26, hamburg                                    0.000080
+gold coast, australia                                     0.000080
+new port richey, fl                                       0.000080
+bapatla                                                   0.000080
+cork                                                      0.000080
+okha                                                      0.000080
+東京都豊島区                                                    0.000080
+町田市大蔵町                                                    0.000080
+frosinone                                                 0.000080
+sevilla                                                   0.000080
+norwich                                                   0.000080
+vijayawada                                                0.000080
+hongkong islands, hong kong                               0.000080
+istanbul turkey                                           0.000080
+makati city                                               0.000080
+heimbuchenthal                                            0.000080
+ehime                                                     0.000080
+philadelphia, pa                                          0.000080
+aurora                                                    0.000080
+八王子市高尾町                                                   0.000080
+tula, russia                                              0.000080
+chicago, usa                                              0.000080
+ängelholm                                                 0.000080
+oyama, japan                                              0.000080
+derby, uk                                                 0.000080
+lewis, england                                            0.000080
+zonguldak-çaycuma                                         0.000080
+st.gallen, switzerland                                    0.000080
+villefontaine                                             0.000080
+staten island                                             0.000080
+kota                                                      0.000080
+hallstahammar                                             0.000080
+miami, florida                                            0.000080
+les mureaux                                               0.000080
+spånga                                                    0.000080
+youghal                                                   0.000080
+mogreina                                                  0.000080
+samui                                                     0.000080
+giresun-şebinkarahisar                                    0.000080
+chatonnay                                                 0.000080
+simmern                                                   0.000080
+rüthen                                                    0.000080
+worcester, massachusetts, usa                             0.000080
+二風谷                                                       0.000080
+berkeley                                                  0.000080
+ramat hasharon                                            0.000080
+sweeden                                                   0.000080
+bali                                                      0.000080
+pinole, california                                        0.000080
+calgary, canada                                           0.000080
+nutley, nj                                                0.000080
+ancona                                                    0.000080
+saint cloud                                               0.000080
+ketchikan                                                 0.000080
+gaziantep, turkey                                         0.000080
+beaverton                                                 0.000080
+langenberg                                                0.000080
+skinnskatteberg                                           0.000080
+marcianise                                                0.000080
+san francisco, usa                                        0.000080
+gander, newfoundland                                      0.000080
+cento                                                     0.000080
+東京都 中央区 日本橋本町                                             0.000080
+stonewood, wv                                             0.000080
+大分県竹田市                                                    0.000080
+högsby                                                    0.000080
+new city, ny                                              0.000080
+javea                                                     0.000080
+bhopal                                                    0.000080
+miyazakidai                                               0.000080
+batam, indonesia                                          0.000080
+東京都大田区蒲田                                                  0.000080
+神奈川県相模原市橋本                                                0.000080
+luchon                                                    0.000080
+zaragoza, spain                                           0.000080
+bareilly                                                  0.000080
+tia juana, venezuela                                      0.000080
+briram                                                    0.000080
+arezzo                                                    0.000080
+fonni                                                     0.000080
+arendal                                                   0.000080
+tainan                                                    0.000080
+perth western australia                                   0.000080
+ragusa                                                    0.000080
+akşehir                                                   0.000080
+あきる野市                                                     0.000080
+dreamland beach, bali                                     0.000080
+limburg                                                   0.000080
+cork, ireland                                             0.000080
+malabon city                                              0.000080
+mito, ibaraki                                             0.000080
+fredericton, new brunswick                                0.000080
+knightdale, nc                                            0.000080
+東京都 八王子市 横川町                                              0.000080
+st.petersburg, russia                                     0.000080
+lenzing                                                   0.000080
+khabarovsk                                                0.000080
+timmins, ontario                                          0.000080
+dehradun                                                  0.000080
+greater noida                                             0.000080
+schillerstraße 4, wolfenbüttel                            0.000080
+petach tikva                                              0.000080
+bedok, singapore                                          0.000080
+hamburger straße 285, braunschweig                        0.000080
+takasaki, gunma                                           0.000080
+georgia                                                   0.000080
+大阪府大阪市北区                                                  0.000080
+playa grande scicli rg                                    0.000080
+nandigama                                                 0.000080
+chennai                                                   0.000080
+sant carles de la rapita, spain                           0.000080
+denmark                                                   0.000080
+florida                                                   0.000080
+東温市                                                       0.000080
+tramore, ireland                                          0.000080
+markham, ontario                                          0.000080
+higashi-tenma, osaka                                      0.000080
+kırşehir                                                  0.000080
+versailles                                                0.000080
+愛知県名古屋市北区                                                 0.000080
+new hampshire                                             0.000080
+sakuragicho                                               0.000080
+ottawa, on                                                0.000080
+parma                                                     0.000080
+愛知県田原市                                                    0.000080
+東京都 武蔵野市 本町                                               0.000080
+graham, nc                                                0.000080
+nandy                                                     0.000080
+rietberg                                                  0.000080
+arlington heights, il                                     0.000080
+gravina in puglia                                         0.000080
+toronto, ontario                                          0.000080
+nakano, tokyo                                             0.000080
+bodø                                                      0.000080
+genève                                                    0.000080
+siracusa                                                  0.000080
+福岡県福岡市中央区                                                 0.000080
+伊予市                                                       0.000080
+paisley, scotland                                         0.000080
+ivrea                                                     0.000080
+vancouver, canada                                         0.000080
+växjö, sweden                                             0.000080
+morgantown, wv                                            0.000080
+valley alabama                                            0.000080
+kävlinge                                                  0.000080
+south pole                                                0.000080
+piancastagnaio                                            0.000080
+bourgoin jallieu                                          0.000080
+vogler's cove, nova scotia, canada                        0.000080
+nashik                                                    0.000080
+asnières-les-djion                                        0.000080
+京都市                                                       0.000080
+kahraman maraş                                            0.000080
+kluckstraße 9, berlin                                     0.000080
+torshälla                                                 0.000080
+belgium                                                   0.000076
+salt lake city, ut                                        0.000073
+ljungskile, sverige                                       0.000067
+balakovo                                                  0.000067
+vilshofen                                                 0.000067
+toulouse,  fr                                             0.000067
+tekirdağ                                                  0.000067
+vaxholm, sweden                                           0.000067
+enschede, holland                                         0.000067
+orthez, aquitaine                                         0.000067
+mountain view, ca                                         0.000067
+lecce                                                     0.000067
+andover, nj                                               0.000067
+loughborough                                              0.000067
+kıbrıs                                                    0.000067
+和歌山県海南市                                                   0.000067
+rättvik                                                   0.000067
+muggiò                                                    0.000067
+fukuoka, japan                                            0.000067
+loughborough, uk                                          0.000067
+東京都小平市                                                    0.000067
+washington dc                                             0.000067
+fitzroy north, vic, australia                             0.000067
+yerevan                                                   0.000067
+wuhan, hubei, china                                       0.000067
+karaj, iran                                               0.000067
+saratov                                                   0.000067
+edinbrurgh, scotland                                      0.000067
+putrajaya                                                 0.000067
+port washington, ny                                       0.000067
+york, england                                             0.000067
+falun, sweden                                             0.000067
+tucumcari, nm                                             0.000067
+morton, wa                                                0.000067
+apricena                                                  0.000067
+sapporo, hokkaido, japan                                  0.000067
+eggebek                                                   0.000067
+karis                                                     0.000067
+hatfield, u.k.                                            0.000067
+vayres, aquitaine                                         0.000067
+trångsund                                                 0.000067
+salento                                                   0.000067
+torsby                                                    0.000067
+tokat / erbaa                                             0.000067
+香川県三豊市                                                    0.000067
+tacoma, wa                                                0.000067
+saint-laurent, quebec                                     0.000067
+gyumri                                                    0.000067
+åsa, kungsbacka                                           0.000067
+benalmadena, spanien                                      0.000067
+singburi                                                  0.000067
+sollefteå                                                 0.000067
+le havre, normandie                                       0.000067
+oklahoma city, ok                                         0.000067
+st quentin en yvelines                                    0.000067
+canet en roussillon, fr                                   0.000067
+hackettstown                                              0.000067
+estoril, portugal                                         0.000067
+balıkesir                                                 0.000067
+grovedale, vic, australia                                 0.000067
+courbevoie, fr                                            0.000067
+colmar                                                    0.000067
+höör                                                      0.000067
+kinna, sverige                                            0.000067
+tehran (iran), and saskatoon (canada)                     0.000067
+huddinge                                                  0.000067
+huntington beach, ca                                      0.000067
+wichita. ks                                               0.000067
+baden baden                                               0.000067
+passau                                                    0.000067
+yalova                                                    0.000067
+åsa, kungsbacka, sweden                                   0.000067
+montréal, ca                                              0.000067
+osterwittbekfeld                                          0.000067
+daytona                                                   0.000067
+san giovanni in persiceto                                 0.000067
+oeversee                                                  0.000067
+bailey, co                                                0.000067
+erbstorf                                                  0.000067
+yozgat                                                    0.000067
+grycksbo, falun, sweden                                   0.000067
+s. domingos de rana, portugal                             0.000067
+trivandrum                                                0.000067
+seregno                                                   0.000067
+chambery                                                  0.000067
+al jubail                                                 0.000067
+darmstadt                                                 0.000067
+kocaeli (izmit)                                           0.000067
+bentleigh, vic, australia                                 0.000067
+hoboken, nj                                               0.000067
+farmington, nm                                            0.000067
+paris, fr                                                 0.000067
+clovis, nm                                                0.000067
+shiraz, iran                                              0.000067
+dar es-salaam                                             0.000067
+mont-saint-aignan, normandie                              0.000067
+cheltenham, vic, australia                                0.000067
+brunswick, vic, australia                                 0.000067
+saint petersburg                                          0.000067
+semiluki                                                  0.000067
+nevşehir                                                  0.000067
+åkersberga, sweden                                        0.000067
+huddinge, sweden                                          0.000067
+torrance, ca                                              0.000067
+sundbyberg                                                0.000067
+高知県土佐市                                                    0.000067
+pathumthani                                               0.000067
+hude nordsee                                              0.000067
+toronto, canada                                           0.000067
+örby, sverige                                             0.000067
+pittsburg, ca                                             0.000067
+huskvarna                                                 0.000067
+collingwood, vic, austrlia                                0.000067
+kowloon, hong kong                                        0.000067
+ubon rajathanee                                           0.000067
+trenthorst                                                0.000067
+amsterdam, netherlands                                    0.000067
+sätila, sverige                                           0.000067
+ağrı                                                      0.000067
+wuppertal                                                 0.000067
+helsingfors                                               0.000067
+york                                                      0.000067
+roswell, nm                                               0.000067
+skene sverige                                             0.000067
+koh samui                                                 0.000067
+bourg argental, france                                    0.000067
+wien, austria                                             0.000067
+mulhouse                                                  0.000067
+mauvezin, fr                                              0.000067
+evreux, normandie                                         0.000067
+ile-perrot, quebec                                        0.000067
+swansea, uk                                               0.000067
+beijing, chn                                              0.000067
+kanazawa                                                  0.000067
+niederkleveez                                             0.000067
+saskatoon, canada                                         0.000067
+los angeles, usa                                          0.000067
+monza                                                     0.000067
+lake orion, mi                                            0.000067
+canterbury, england                                       0.000067
+paris, ile-de-france                                      0.000067
+pointe-claire, quebec                                     0.000067
+caen                                                      0.000067
+banaras                                                   0.000067
+beijing, swansea, irvine ca                               0.000067
+kunming, yunnan, china                                    0.000067
+chang rai                                                 0.000067
+westerland/ sylt                                          0.000057
+tagsdorf                                                  0.000057
+sylacauga, al                                             0.000057
+saint-louis 68300                                         0.000057
+geneva                                                    0.000057
+stockholm,                                                0.000057
+hampton, va, usa                                          0.000057
+mosul                                                     0.000057
+grenada, ms                                               0.000057
+lagos                                                     0.000057
+veenendaal                                                0.000057
+olathe, ks                                                0.000057
+ede                                                       0.000057
+lillehammer                                               0.000057
+ärla, eskilstuna, sweden                                  0.000057
+allersberg                                                0.000057
+voss, norway                                              0.000057
+samnanger                                                 0.000057
+finland                                                   0.000057
+new london, ct                                            0.000057
+hunnebostrand                                             0.000057
+pakistan                                                  0.000057
+landsberg                                                 0.000057
+paris,                                                    0.000057
+birmingham, al                                            0.000057
+teheran                                                   0.000057
+元住吉                                                       0.000057
+burnaby, bc                                               0.000057
+jersey city                                               0.000057
+bremerton, wa                                             0.000057
+ft. myers, fl                                             0.000057
+mechelen                                                  0.000057
+waterloo, on                                              0.000057
+bangladesh                                                0.000057
+rome, ga                                                  0.000057
+bjärnum                                                   0.000057
+sandwich, ma                                              0.000057
+ooty                                                      0.000057
+guilford, ct                                              0.000057
+storvreta, uppsala, sweden                                0.000057
+tehran now                                                0.000057
+seattle, wa, usa                                          0.000057
+stavanger, norway                                         0.000057
+chicago, il                                               0.000057
+livingston                                                0.000057
+guelph, on                                                0.000057
+uttenreuth                                                0.000057
+spain, usa, germany, iran                                 0.000057
+boca raton, fl                                            0.000057
+brantford, on                                             0.000057
+nampa, id                                                 0.000057
+long island                                               0.000057
+日吉                                                        0.000057
+london, on                                                0.000057
+halsnøy                                                   0.000057
+gräfenberg                                                0.000057
+leuven, belgium                                           0.000057
+westerville, oh                                           0.000057
+coimbatore                                                0.000057
+braunschweig                                              0.000057
+ahwaz                                                     0.000057
+haugesund                                                 0.000057
+marrum                                                    0.000057
+bro, upplands-bro municipality, sweden                    0.000057
+maputo                                                    0.000057
+westborough, ma                                           0.000057
+kungshamn                                                 0.000057
+karlstad, sweden                                          0.000057
+hallum                                                    0.000057
+roth                                                      0.000057
+alamogordo                                                0.000057
+china                                                     0.000057
+kungsholmen, stockholm, sweden                            0.000057
+chuadanga                                                 0.000057
+overberg                                                  0.000057
+hell :p                                                   0.000057
+vasastan, stockholm, sweden                               0.000057
+kitchener, on                                             0.000057
+columbus, oh                                              0.000057
+römerberg                                                 0.000057
+notodden                                                  0.000057
+trincomale                                                0.000057
+bollmora, tyresö municipality, sweden                     0.000057
+helfrantzkirch                                            0.000057
+oxford, oh                                                0.000057
+kharg island                                              0.000057
+meerbusch                                                 0.000057
+purmerend                                                 0.000057
+ann arbor                                                 0.000057
+speyer                                                    0.000057
+mission viejo, ca                                         0.000057
+köln, germany                                             0.000057
+harvard, il                                               0.000057
+brake                                                     0.000057
+兵庫県西宮市                                                    0.000057
+tuddal / telemark                                         0.000057
+hongkong                                                  0.000057
+lynchburg, va                                             0.000057
+stenhamra, sweden                                         0.000057
+nesbru                                                    0.000057
+dunnville, on                                             0.000057
+södermalm, stockholm, sverige                             0.000057
+longmont, co                                              0.000057
+johnson city, tn                                          0.000057
+芦屋                                                        0.000057
+starkville, ms                                            0.000057
+all over the us                                           0.000057
+fl                                                        0.000057
+traveling across the eu                                   0.000057
+altkirch                                                  0.000057
+damaskus                                                  0.000057
+arnhem                                                    0.000057
+hjorthagen, stockholm, sverige                            0.000057
+beja                                                      0.000057
+bächingen                                                 0.000057
+ingolstadt                                                0.000057
+alicante                                                  0.000057
+omidieh                                                   0.000057
+中目黒                                                       0.000057
+weinheim                                                  0.000057
+西宮                                                        0.000057
+faßberg                                                   0.000057
+traneberg, bromma, sweden                                 0.000057
+wittersdorf                                               0.000057
+shahroud                                                  0.000057
+tromsö, norway                                            0.000057
+somerville, ma                                            0.000057
+hillerød                                                  0.000057
+ulvik                                                     0.000057
+kungsängen, upplands-bro municipality, sweden             0.000057
+moskva                                                    0.000057
+all over the place                                        0.000050
+linköping, sweden                                         0.000050
+volda                                                     0.000050
+derwood, md                                               0.000050
+chambéry                                                  0.000050
+東京都西東京市                                                   0.000050
+gerlingen                                                 0.000050
+altenburg                                                 0.000050
+alexandria, va                                            0.000050
+ardahan                                                   0.000050
+füssen                                                    0.000050
+gräfsnäs                                                  0.000050
+lisle, il                                                 0.000050
+gothenburg                                                0.000050
+douai                                                     0.000050
+ростов-на-дону                                            0.000050
+san antonio, tx                                           0.000050
+gdansk                                                    0.000050
+kobe, japan                                               0.000050
+санья                                                     0.000050
+東京都大田区                                                    0.000050
+tonstad                                                   0.000050
+leipzig                                                   0.000050
+нью-йорк                                                  0.000050
+fuengirola                                                0.000050
+sandnes                                                   0.000050
+eksjö                                                     0.000050
+bolu                                                      0.000050
+corowa, australia                                         0.000050
+bilecik                                                   0.000050
+villanova, pa                                             0.000050
+åtvidaberg, sweden                                        0.000050
+vänersborg                                                0.000050
+愛知県名古屋市天白区                                                0.000050
+чикаго                                                    0.000050
+вирджиния бич                                             0.000050
+munich, germany                                           0.000050
+mantova                                                   0.000050
+arlington, va                                             0.000050
+岩手県盛岡市                                                    0.000050
+aachen                                                    0.000050
+verdalen                                                  0.000050
+böblingen                                                 0.000050
+ditzingen                                                 0.000050
+tijuana                                                   0.000050
+東京都中野区                                                    0.000050
+神奈川県川崎市中原区                                                0.000050
+asarum, sweden                                            0.000050
+mittenwald                                                0.000050
+актау                                                     0.000050
+notre dame, in                                            0.000050
+matelica                                                  0.000050
+sinnes                                                    0.000050
+fresno                                                    0.000050
+partille                                                  0.000050
+reutlingen                                                0.000050
+jauja                                                     0.000050
+новошахтинск                                              0.000050
+dragør                                                    0.000044
+savannah, ga                                              0.000044
+søborg                                                    0.000044
+six fours les plages                                      0.000044
+frederiksberg                                             0.000044
+bagsværd                                                  0.000044
+detriot                                                   0.000044
+saint palais                                              0.000044
+orléans                                                   0.000044
+glumslöv                                                  0.000044
+vesterbro                                                 0.000044
+livorno, italy                                            0.000044
+helsinge                                                  0.000044
+lourdes                                                   0.000044
+zaragoza                                                  0.000044
+denver                                                    0.000044
+axelvold                                                  0.000044
+oxford, ms                                                0.000044
+kayseri                                                   0.000044
+tifton, ga                                                0.000044
+zweibruken, germany                                       0.000044
+salbris                                                   0.000044
+moultrie, ga                                              0.000044
+logansport, in                                            0.000044
+new orleans                                               0.000044
+fort knox, ky                                             0.000044
+arlee                                                     0.000044
+malung                                                    0.000044
+eugene, or                                                0.000040
+teie                                                      0.000040
+gimhae, south korea                                       0.000040
+wilmington, il                                            0.000040
+astoria, ny                                               0.000040
+tajikistan                                                0.000040
+fichtenberg, germany                                      0.000040
+st. paul, mn                                              0.000040
+red wing, mn                                              0.000040
+afghanistan                                               0.000040
+new haven, ct                                             0.000040
+skoppum                                                   0.000040
+howard beach, ny                                          0.000040
+middletown, ct                                            0.000040
+long island city, ny                                      0.000040
+eik (tønsberg)                                            0.000040
+azerbaijan                                                0.000040
+spokane, wa                                               0.000040
+jacksonville, fl                                          0.000040
+augusta, ga                                               0.000040
+uae                                                       0.000040
+skiptvet                                                  0.000040
+tuscaloosa, al                                            0.000040
+horten                                                    0.000040
+iraq                                                      0.000040
+omaha, ne                                                 0.000040
+caldera, chile                                            0.000040
+jordan                                                    0.000040
+svinndal                                                  0.000040
+sønderborg                                                0.000036
+kearney, nj                                               0.000036
+costa mesa, ca                                            0.000036
+redwood city, ca                                          0.000036
+glide, or                                                 0.000036
+pearl city hi                                             0.000036
+chapel hill nc                                            0.000036
+hackenbroich                                              0.000036
+valby                                                     0.000036
+gram                                                      0.000036
+garzweiler                                                0.000036
+rotterdam                                                 0.000036
+newport beach, ca                                         0.000036
+trenton, nj                                               0.000036
+remlingen ufr.                                            0.000036
+støvring                                                  0.000036
+naha, okinawa                                             0.000036
+san leandro, ca                                           0.000036
+faaborg                                                   0.000036
+schidam                                                   0.000036
+newark, nj                                                0.000036
+netherlands                                               0.000036
+merkendorf                                                0.000036
+leutershausen                                             0.000036
+nederländerna                                             0.000036
+stafford virginia                                         0.000036
+san carlos, ca                                            0.000036
+orange, ca                                                0.000036
+pensacola                                                 0.000036
+destin fl                                                 0.000036
+københavn c,                                              0.000036
+bad schussenried                                          0.000036
+amagaer                                                   0.000036
+santa cruz,ca                                             0.000036
+miami fl                                                  0.000036
+new bern nc                                               0.000036
+wiesbaden                                                 0.000036
+oxen hill md                                              0.000036
+hörby                                                     0.000036
+oakland, ca                                               0.000036
+biel/bienne                                               0.000036
+åsa                                                       0.000036
+store heddinge                                            0.000036
+south san francisco, ca                                   0.000036
+honolulu hi                                               0.000036
+flemington, nj                                            0.000036
+gottskär                                                  0.000036
+east palo alto, ca                                        0.000036
+grevenbroich                                              0.000036
+kungsbacka, onsala, skövde                                0.000036
+härryda                                                   0.000036
+west new york, nj                                         0.000036
+gjerrild                                                  0.000036
+borken westfalen                                          0.000036
+gochsheim ufr.                                            0.000036
+jersey city, nj                                           0.000036
+silsand, norge                                            0.000031
+ankenesstrand, norge                                      0.000031
+tromsø, norge                                             0.000031
+derwood, maryland                                         0.000031
+potomac, maryland                                         0.000031
+senja, norge                                              0.000031
+lennoxville, canada                                       0.000031
+narvik, norge                                             0.000031
+knivsta, sverige                                          0.000031
+uppsala, sverige                                          0.000031
+eskilstuna, sverige                                       0.000031
+söderhamn, sverige                                        0.000031
+twinbrook, maryland                                       0.000031
+washington, dc, usa                                       0.000031
+torrevieja, spanien                                       0.000031
+maryland, usa                                             0.000031
+brussels, belgium                                         0.000031
+ballangen, norge                                          0.000031
+chennai, india                                            0.000031
+quebec, canada                                            0.000031
+sjøvegan, norge                                           0.000031
+okayama                                                   0.000025
+kochi                                                     0.000025
+高知県                                                       0.000025
+徳島県                                                       0.000025
+神奈川県                                                      0.000025
+kanagawa                                                  0.000025
+広島県                                                       0.000025
+osoppo                                                    0.000022
+teramo (notaresco)                                        0.000022
+kuala lampur                                              0.000022
+terni                                                     0.000022
+milano (cornaredo)                                        0.000022
+genova (cogoleto)                                         0.000022
+jesenice                                                  0.000022
+esfahan (mobarakeh)                                       0.000022
+monnaco                                                   0.000019
+khatmandu                                                 0.000019
+vinh city, vietnam                                        0.000019
+austria                                                   0.000019
+quy nhon city, vietnam                                    0.000019
+phu my town, vietnam                                      0.000019
+buon ho town, vietnam                                     0.000019
+luxemburg                                                 0.000019
+phu my district, vietnam                                  0.000019
+di an district, vietnam                                   0.000019
+da nang city, vietnam                                     0.000019
+long khanh district, vietnam                              0.000019
+thuong tin district, vietnam                              0.000019
+pattaya                                                   0.000019
+nam dan town, vietnam                                     0.000019
+phu cat district, vietnam                                 0.000019
+hue city, vietnam                                         0.000019
+gia vien town, vietnam                                    0.000019
+bien hoa city, vietnam                                    0.000019
+long khanh town, vietnam                                  0.000019
+buon ho town, quy nhon city, da nang city, hue ...        0.000019
+gia vien district, vietnam                                0.000019
+phu cat town, vietnam                                     0.000019
+buon ma thuat city, vietnam                               0.000019
+nam dan district, vietnam                                 0.000019
+ha noi capital, vietnam                                   0.000019
+spain                                                     0.000019
+america                                                   0.000019
+holland                                                   0.000019
+贵州省贵阳市                                                    0.000007
+云南省楚雄市                                                    0.000007
+四川省彭州市                                                    0.000007
+安徽省宿州市                                                    0.000007
+江西省九江市                                                    0.000007
+重庆市南岸区                                                    0.000007
+云南省泸水县                                                    0.000007
+云南省蒙自县                                                    0.000007
+四川省汶川县                                                    0.000007
+山东省龙口市                                                    0.000007
+江西省南昌市                                                    0.000007
+山西省平遥县                                                    0.000007
+四川省成都市                                                    0.000007
+四川省马尔康县                                                   0.000007
+安徽省蚌埠市                                                    0.000007
+四川省广元市                                                    0.000007
+云南省大理市                                                    0.000007
+四川省什邡市                                                    0.000007
+云南省临沧市                                                    0.000007
+安徽省淮南市                                                    0.000007
+云南省宜良县                                                    0.000007
+重庆市璧山县                                                    0.000007
+江西省景德镇市                                                   0.000007
+湖南省怀化市                                                    0.000007
+广东省珠海市                                                    0.000007
+四川省金川县                                                    0.000007
+湖南省醴陵市                                                    0.000007
+江西省上饶市                                                    0.000007
+云南省昆明市                                                    0.000007
+云南省嵩明县                                                    0.000007
+安徽省霍山县                                                    0.000007
+山西省浑源县                                                    0.000007
+陕西省西安市                                                    0.000007
+云南省昭通市                                                    0.000007
+山西省介休市                                                    0.000007
+重庆市北碚区                                                    0.000007
+安徽省金寨县                                                    0.000007
+四川省德阳市                                                    0.000007
+云南省弥勒县                                                    0.000007
+云南省云县                                                     0.000007
+江西省抚州市                                                    0.000007
+四川省攀枝花市                                                   0.000007
+四川省雅安市                                                    0.000007
+湖南省洞口县                                                    0.000007
+云南省丽江市                                                    0.000007
+山西省吕梁市                                                    0.000007
+湖南省长沙市                                                    0.000007
+福建省福州市                                                    0.000007
+广东省广州市                                                    0.000007
+云南省保山市                                                    0.000007
+四川省黑水县                                                    0.000007
+云南省寻甸县                                                    0.000007
+四川省都江堰市                                                   0.000007
+山西省太原市                                                    0.000007
+云南省宁蒗县                                                    0.000007
+安徽省安庆市                                                    0.000007
+江西省吉安市                                                    0.000007
+湖北省武汉市                                                    0.000007

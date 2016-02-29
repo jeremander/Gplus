@@ -1,0 +1,1382 @@
+                                                    voteProportion
+attribute                                                         
+university of california, berkeley                        0.067100
+university of california, los angeles                     0.038700
+stanford university                                       0.037757
+university of california, san diego                       0.023133
+massachusetts institute of technology                     0.022800
+university of california, irvine                          0.018247
+university of southern california                         0.017467
+carnegie mellon university                                0.011813
+university of pennsylvania                                0.011500
+columbia university                                       0.011327
+brown university                                          0.011000
+university of california, santa cruz                      0.010800
+san francisco state university                            0.009967
+university of california, santa barbara                   0.009913
+yale university                                           0.009833
+university of washington                                  0.009500
+california polytechnic state university                   0.009380
+cornell university                                        0.009200
+university of illinois at urbana-champaign                0.009000
+princeton university                                      0.008867
+san josé state university                                 0.008633
+new york university                                       0.008227
+university of michigan                                    0.008167
+university of texas at austin                             0.008167
+uc berkeley                                               0.007967
+dartmouth college                                         0.007200
+duke university                                           0.006200
+santa clara university                                    0.006000
+university of chicago                                     0.005647
+university of maryland, college park                      0.005433
+northwestern university                                   0.005333
+washington university in st. louis                        0.005200
+ucla                                                      0.005107
+johns hopkins university                                  0.005067
+university of california, riverside                       0.004967
+brigham young university                                  0.004900
+california institute of technology                        0.004833
+stanford                                                  0.004767
+university of oregon                                      0.004413
+uc davis                                                  0.004180
+california state university, east bay                     0.004133
+rice university                                           0.004067
+georgetown university                                     0.003824
+rutgers university                                        0.003800
+boston university                                         0.003400
+university of colorado at boulder                         0.003333
+george washington university                              0.003280
+san diego state university                                0.003200
+georgia institute of technology                           0.003080
+university of california berkeley                         0.002867
+university of cambridge                                   0.002867
+university of the pacific                                 0.002600
+university of virginia                                    0.002533
+university of wisconsin-madison                           0.002467
+university of arizona                                     0.002467
+university of toronto                                     0.002433
+california state university, sacramento                   0.002433
+wellesley college                                         0.002400
+new york university school of law                         0.002400
+pennsylvania state university                             0.002400
+harvard college                                           0.002333
+university of pittsburgh                                  0.002300
+wharton school of the university of pennsylvania          0.002233
+virginia polytechnic institute and state univer...        0.002200
+california state university, fullerton                    0.002200
+middlebury college                                        0.002200
+villanova university                                      0.002000
+haverford college                                         0.002000
+occidental college                                        0.002000
+tufts university                                          0.002000
+boston college                                            0.002000
+de anza college                                           0.001990
+university of california, merced                          0.001933
+ucsd                                                      0.001933
+stanford university school of medicine                    0.001933
+george mason university                                   0.001824
+michigan state university                                 0.001813
+new york university stern school of business              0.001800
+california state university, long beach                   0.001700
+university of miami                                       0.001600
+university of california, san francisco                   0.001600
+university of san francisco                               0.001600
+university of nevada, reno                                0.001600
+haas school of business                                   0.001600
+columbia law school                                       0.001600
+grinnell college                                          0.001600
+james madison university                                  0.001600
+pomona college                                            0.001600
+university of montana - missoula                          0.001600
+brandeis university                                       0.001533
+american university                                       0.001500
+temple university                                         0.001480
+swarthmore college                                        0.001400
+uc santa cruz                                             0.001400
+texas a&m university                                      0.001400
+oberlin college                                           0.001400
+santa rosa junior college                                 0.001400
+barnard college                                           0.001400
+syracuse university                                       0.001400
+university of maryland                                    0.001367
+university at buffalo, the state university of ...        0.001333
+towson university                                         0.001333
+stanford graduate school of business                      0.001333
+northeastern university                                   0.001324
+ohio state university                                     0.001300
+rochester institute of technology                         0.001300
+university of north carolina at chapel hill               0.001267
+colorado state university                                 0.001267
+harvard                                                   0.001233
+portland state university                                 0.001200
+ucsc                                                      0.001200
+pepperdine university                                     0.001200
+washington state university                               0.001200
+full sail university                                      0.001200
+university of texas at arlington                          0.001200
+california state university, san marcos                   0.001200
+carleton university                                       0.001200
+california state university, northridge                   0.001200
+williams college                                          0.001200
+university of texas at dallas                             0.001200
+claremont mckenna college                                 0.001200
+california state university, los angeles                  0.001200
+sjsu                                                      0.001200
+oregon state university                                   0.001200
+ohio university                                           0.001200
+california state university, fresno                       0.001167
+university of illinois at chicago                         0.001133
+wesleyan university                                       0.001133
+ucla anderson                                             0.001133
+london school of economics                                0.001133
+baylor university                                         0.001133
+carleton college                                          0.001100
+simon fraser university                                   0.001100
+university of georgia                                     0.001093
+indiana university bloomington                            0.001067
+florida state university                                  0.001033
+uc berkeley college of engineering                        0.001000
+academy of art university                                 0.001000
+carnegie mellon                                           0.001000
+uc san diego                                              0.001000
+columbia                                                  0.001000
+university of alberta                                     0.001000
+juilliard school                                          0.000933
+georgia state university                                  0.000933
+university of utah                                        0.000933
+sonoma state university                                   0.000933
+diablo valley college                                     0.000933
+university of glasgow                                     0.000933
+city college of san francisco                             0.000900
+university of phoenix                                     0.000833
+rutgers – new brunswick                                   0.000800
+colgate university                                        0.000800
+university of michigan law school                         0.000800
+california state university, san bernardino               0.000800
+louisiana state university                                0.000800
+boalt hall                                                0.000800
+shanghai jiao tong university                             0.000800
+stony brook university                                    0.000800
+cal poly pomona college of environmental design           0.000800
+georgia tech                                              0.000800
+emory university                                          0.000800
+azusa pacific university                                  0.000800
+bowdoin college                                           0.000800
+rhode island school of design                             0.000800
+saddleback college                                        0.000800
+denison university                                        0.000800
+princeton                                                 0.000800
+albion college                                            0.000800
+lynbrook high school                                      0.000800
+sfsu                                                      0.000800
+willamette university                                     0.000800
+wentworth institute of technology                         0.000800
+new york institute of technology                          0.000800
+western michigan university                               0.000800
+harvard business school                                   0.000800
+mission college                                           0.000800
+ucsb                                                      0.000800
+university of kansas                                      0.000800
+st. john's university                                     0.000800
+georgia southwestern state university                     0.000800
+manhattan college                                         0.000800
+irvine valley college                                     0.000800
+dickinson college                                         0.000800
+marquette university                                      0.000800
+university of ca, santa cruz                              0.000800
+columbia business school                                  0.000800
+reed college                                              0.000733
+university high school                                    0.000733
+holmdel high school                                       0.000733
+north carolina state university                           0.000733
+holy names university                                     0.000733
+national taiwan university                                0.000733
+indiana university                                        0.000733
+california lutheran university                            0.000733
+university of minnesota                                   0.000733
+university of houston                                     0.000733
+harvard law school                                        0.000733
+case western reserve university                           0.000700
+university of kentucky                                    0.000700
+american river college                                    0.000700
+seoul national university                                 0.000700
+california college of the arts                            0.000700
+cogswell college                                          0.000680
+california state polytechnic university, pomona           0.000680
+depaul university                                         0.000667
+ucla school of law                                        0.000640
+pioneer high school                                       0.000633
+university of vermont                                     0.000633
+st. lawrence university                                   0.000600
+central catholic high school                              0.000600
+kellogg school of management                              0.000600
+university of nebraska–lincoln                            0.000600
+nanjing university                                        0.000600
+hampshire college                                         0.000600
+st. george's university                                   0.000600
+southern california institute of architecture             0.000600
+university of connecticut                                 0.000600
+colby college                                             0.000600
+tufts university school of medicine                       0.000600
+colorado college                                          0.000600
+california polytechnic state university san lui...        0.000600
+none                                                      0.000600
+radford university                                        0.000600
+union college                                             0.000600
+simmons college                                           0.000600
+university of tennessee at chattanooga                    0.000600
+u.c. berkeley                                             0.000600
+university of new south wales                             0.000600
+colorado school of mines                                  0.000600
+independence high school                                  0.000600
+university of texas school of law                         0.000600
+morehouse college                                         0.000600
+university of california irvine                           0.000600
+yale school of management                                 0.000600
+bucknell university                                       0.000600
+mcgill university                                         0.000600
+el camino high school                                     0.000600
+golden gate university                                    0.000600
+stevens institute of technology                           0.000600
+golden gate university school of law                      0.000600
+chapman university                                        0.000600
+uc davis graduate school of management                    0.000600
+loyola law school                                         0.000600
+university of virginia school of law                      0.000600
+university of pennsylvania school of medicine             0.000600
+university of california, hastings college of t...        0.000600
+mountain view high school                                 0.000600
+parsons the new school for design                         0.000600
+santa monica college                                      0.000573
+emerson college                                           0.000560
+uc irvine                                                 0.000547
+whitman college                                           0.000533
+monta vista high school                                   0.000533
+binghamton university                                     0.000533
+biola university                                          0.000533
+university of arkansas                                    0.000533
+worcester polytechnic institute                           0.000533
+the art institute of seattle                              0.000533
+university of missouri–columbia                           0.000533
+arcadia high school                                       0.000533
+sam houston state university                              0.000533
+university of nottingham                                  0.000533
+university of texas southwestern medical center...        0.000533
+university of science and technology of china             0.000533
+homestead high school                                     0.000513
+university of south carolina                              0.000500
+western washington university                             0.000500
+university of maryland baltimore county                   0.000500
+duke university school of law                             0.000500
+boston university school of law                           0.000500
+united states naval academy                               0.000500
+ball state university                                     0.000500
+the evergreen state college                               0.000500
+santa clara university school of law                      0.000500
+university of oxford                                      0.000500
+leland high                                               0.000480
+university of new mexico                                  0.000480
+university of san diego school of law                     0.000480
+suffolk university law school                             0.000467
+lewis & clark law school                                  0.000467
+harvard medical school                                    0.000433
+stuyvesant high school                                    0.000433
+fordham university                                        0.000413
+mt. carmel high school                                    0.000400
+university of strathclyde                                 0.000400
+csu hayward                                               0.000400
+australian national university                            0.000400
+brooks institute of photography                           0.000400
+usc gould school of law                                   0.000400
+itp @ nyu                                                 0.000400
+utah state university                                     0.000400
+cricklade college                                         0.000400
+city tech                                                 0.000400
+florida a&m university                                    0.000400
+skool of hard knocks                                      0.000400
+university at albany, the state university of n...        0.000400
+los angeles harbor college                                0.000400
+plymouth state university                                 0.000400
+st margaret's college                                     0.000400
+csu sacramento                                            0.000400
+rose-hulman institute of technology                       0.000400
+university of evansville                                  0.000400
+southern polytechnic state university                     0.000400
+gutterpunk high                                           0.000400
+south plantation high school                              0.000400
+monterrey institute of technology and higher ed...        0.000400
+lake washington technical college                         0.000400
+otis college of art and design                            0.000400
+connecticut college                                       0.000400
+georgetown                                                0.000400
+new york law school                                       0.000400
+insead                                                    0.000400
+cupertino high school                                     0.000400
+somerville                                                0.000400
+uci                                                       0.000400
+schiller international university                         0.000400
+dominican university of california                        0.000400
+mit, harvard, columbia                                    0.000400
+mendocino college                                         0.000400
+university of medicine and dentistry of new jersey        0.000400
+gonzaga university                                        0.000400
+grand canyon university                                   0.000400
+eastern nazarene college                                  0.000400
+university of pennsylvania law school                     0.000400
+*thinks*                                                  0.000400
+bryn mawr college                                         0.000400
+southern alberta institute of technology                  0.000400
+muskingum college                                         0.000400
+saint john's university, collegevile, mn                  0.000400
+mission jc                                                0.000400
+middle tennessee state university                         0.000400
+harvard technical university (costa rica)                 0.000400
+art institute of los angeles                              0.000400
+edinboro university of pennsylvania                       0.000400
+uniwersytet łódzki                                        0.000400
+piedmont hills high school                                0.000400
+davidson college                                          0.000400
+louisiana tech university                                 0.000400
+marine academy of science and technology                  0.000400
+illinois college of optometry                             0.000400
+york college of pennsylvania                              0.000400
+keystone college                                          0.000400
+melbourne university                                      0.000400
+shaker high school                                        0.000400
+state university of new york at cobleskill                0.000400
+itt technical institute                                   0.000400
+university of virginia college of arts and scie...        0.000400
+rmit university                                           0.000400
+university of otago                                       0.000400
+george brown college                                      0.000400
+new mexico institute of mining and technology             0.000400
+prince sultan university                                  0.000400
+unversity of maryland at college park                     0.000400
+christopher newport university                            0.000400
+purdue university calumet                                 0.000400
+newton country day school                                 0.000400
+moorpark college                                          0.000400
+guilford college                                          0.000400
+anderson university                                       0.000400
+ryukoku university                                        0.000400
+northwest christian college                               0.000400
+university of western australia                           0.000400
+james logan high & sjsu                                   0.000400
+university of minnesota - twin cities                     0.000400
+cal poly                                                  0.000400
+university of wisconsin-oshkosh                           0.000400
+skool                                                     0.000400
+levin college of law                                      0.000400
+the school of slightly less than soft knocks              0.000400
+palo alto high school                                     0.000400
+college of the canyons - valencia, ca                     0.000400
+lafayette high school                                     0.000400
+theodore high school                                      0.000400
+rec, allahabad                                            0.000400
+stanford!                                                 0.000400
+santa clara university, university of southern ...        0.000400
+université de strasbourg                                  0.000400
+university of turku                                       0.000400
+cal state university of fullerton                         0.000400
+university of wollongong                                  0.000400
+university of cincinnati daap                             0.000400
+cistercian preparatory school                             0.000400
+tamkang university                                        0.000400
+swinburne university of technology                        0.000400
+phillips exeter academy                                   0.000400
+agnes scott college                                       0.000400
+shenendehowa high school                                  0.000400
+byu                                                       0.000400
+new technology high school                                0.000400
+university of victoria                                    0.000400
+loyola marymount university                               0.000400
+university of california at berkeley                      0.000400
+university of massachusetts amherst                       0.000400
+vista del lago high school                                0.000400
+mcmaster university                                       0.000400
+california polytechnic state university - san l...        0.000400
+st. edward's university                                   0.000400
+hansraj morarji public school andheri, mumbai. ...        0.000400
+university of redlands                                    0.000400
+ecal                                                      0.000400
+durham university                                         0.000400
+uga                                                       0.000400
+university of washington business school                  0.000400
+university of british columbia                            0.000400
+university of rhode island                                0.000400
+bangladesh university of engineering and techno...        0.000400
+ritsumeikan university                                    0.000400
+manhattan college, instituto de empresa                   0.000400
+mirasierra                                                0.000400
+thomas jefferson high school for science and te...        0.000400
+kennesaw state university                                 0.000400
+lake forest college                                       0.000400
+columbia college of missouri                              0.000400
+clarkson university                                       0.000400
+tjhsst                                                    0.000400
+tullahoma high school                                     0.000400
+ex'pression college for digital arts                      0.000400
+university of texas                                       0.000400
+glendora high school                                      0.000400
+bauman college                                            0.000400
+sligo institute of technology                             0.000400
+university of new brunswick                               0.000400
+berkeley city college                                     0.000400
+university of saskatchewan                                0.000400
+uop sf state delta college wisr sf city laney             0.000400
+lynchburg college, lynchburg, va                          0.000400
+springville high, springville utah                        0.000400
+central washington university                             0.000400
+university of sussex                                      0.000400
+iowa state university                                     0.000400
+tisch school of the arts                                  0.000400
+university of new hampshire                               0.000400
+mount st. mary's college                                  0.000400
+university of chicago law school                          0.000400
+st. mary's college of california                          0.000400
+hart high school                                          0.000400
+international academic school                             0.000400
+ecole centrale paris                                      0.000400
+champlain valley union high school                        0.000400
+letourneau university                                     0.000400
+amherst college                                           0.000400
+miami university                                          0.000400
+pratt institute                                           0.000400
+new college                                               0.000400
+california state university, bakersfield                  0.000400
+monsignor farrell                                         0.000400
+aib college of business                                   0.000400
+college of the canyons                                    0.000400
+illinois state university                                 0.000400
+sarah lawrence college                                    0.000400
+singapore management university                           0.000400
+korea university                                          0.000400
+willibald gluck gymnasium                                 0.000400
+mit sloan school of management                            0.000400
+samuel merritt university                                 0.000400
+coast union high school                                   0.000400
+belarusian state university                               0.000400
+helsinki school of economics                              0.000400
+cornell university school of hotel administration         0.000400
+school of visual arts                                     0.000400
+university of california riverside                        0.000400
+university of illinois                                    0.000400
+the art institute of california - orange county           0.000400
+csub                                                      0.000400
+scott community college                                   0.000400
+dartmouth college,                                        0.000400
+university of westminster                                 0.000400
+college of william and mary                               0.000400
+university of texas–pan american                          0.000400
+shiraz university                                         0.000400
+westlake high school                                      0.000400
+london school of hygiene and tropical medicine            0.000400
+parsons new school for design                             0.000400
+diamond bar high school                                   0.000400
+washington university in saint louis                      0.000400
+new hope-solebury high school                             0.000400
+california polytechnic state univeristy (calpol...        0.000400
+st vincents                                               0.000400
+caltech                                                   0.000400
+wheaton college, il                                       0.000400
+manhattanville college                                    0.000400
+notre dame high school                                    0.000400
+im educatin                                               0.000400
+university of management and technology                   0.000400
+hwa chong institution                                     0.000400
+cardiff university                                        0.000400
+cornell college                                           0.000400
+university of leicester                                   0.000400
+yale law school                                           0.000400
+university of florida college of medicine                 0.000400
+chapman university school of law                          0.000400
+bronx high school of science                              0.000400
+auburn university                                         0.000400
+university of osnabrück                                   0.000400
+california institute of the arts                          0.000400
+warner pacific college                                    0.000400
+fuqua school of business                                  0.000400
+greenwich country day school                              0.000400
+university of notre dame                                  0.000400
+edmund a. walsh school of foreign service                 0.000400
+yale college                                              0.000400
+tuck school of business at dartmouth                      0.000400
+the art institute or california - los angeles             0.000400
+sampad                                                    0.000400
+stanford university school of medicine, brown u...        0.000400
+cincinnati state technical and community college          0.000400
+smith college                                             0.000400
+university of hard knocks                                 0.000400
+unc-chapel hill                                           0.000400
+georgetown university law center                          0.000400
+mt. san antonio college                                   0.000400
+borough of manhattan community college                    0.000400
+olivet nazarene university                                0.000400
+ecda                                                      0.000400
+university of alabama                                     0.000400
+università studi torino                                   0.000400
+university of fun                                         0.000400
+στο μετσοβειο, η καλυτερη περιοδος της ζωης μου.          0.000400
+krec                                                      0.000400
+ex'pression college                                       0.000400
+school of environmental and biological sciences           0.000400
+wharton school, university of pennsylvania                0.000400
+uc davis, miramonte, ois, del rey                         0.000400
+texas tech university                                     0.000400
+university of central oklahoma                            0.000400
+luther college                                            0.000400
+απθ                                                       0.000400
+new college, sarasota, florida                            0.000400
+aloha high school                                         0.000400
+univeristy of denver                                      0.000400
+chicago–kent college of law                               0.000400
+uc davis,                                                 0.000400
+oregon health & science university                        0.000400
+california state university, monterey bay                 0.000400
+pennsylvania college of optometry                         0.000400
+merrimac state high school                                0.000400
+antioch college                                           0.000400
+berkeley college                                          0.000400
+james hubert blake high school                            0.000400
+el dorado high school                                     0.000400
+indiana university south bend                             0.000400
+rutgers school of law-newark                              0.000400
+tufts university school of dental medicine                0.000400
+cheverus high school                                      0.000400
+devry university                                          0.000400
+tuck school of business                                   0.000400
+hku                                                       0.000400
+covina high school                                        0.000400
+vintage high, uc davis                                    0.000400
+columbia southern university                              0.000400
+moraine valley community college                          0.000400
+umsl                                                      0.000400
+nc state university                                       0.000400
+university of massachusetts lowell                        0.000400
+mathematical high school                                  0.000400
+csumb                                                     0.000400
+depauw university                                         0.000400
+the university of texas at austin                         0.000400
+salem state college                                       0.000400
+seattle university school of law                          0.000400
+university of tennessee                                   0.000400
+blinn college                                             0.000400
+galway-mayo institute of technology                       0.000400
+embry-riddle aeronautical university                      0.000400
+cornell unviersity                                        0.000400
+tiffin boys                                               0.000400
+california polytechnic state university, san lu...        0.000400
+national technical university of athens                   0.000400
+vakalo school of art and design                           0.000400
+idaho state university                                    0.000400
+guilderland high school                                   0.000400
+the art institute of california - san francisco           0.000400
+university of science & culture                           0.000400
+quartz hill high school                                   0.000400
+oakland university                                        0.000400
+tsinghua university                                       0.000380
+merced college                                            0.000367
+california state university, chico                        0.000367
+wheaton college                                           0.000333
+u.c. davis                                                0.000333
+university of north florida                               0.000333
+skidmore college                                          0.000333
+lakeside school                                           0.000333
+temple university beasley school of law                   0.000333
+lowell high school                                        0.000333
+harvard graduate school of design                         0.000333
+columbia college                                          0.000333
+mcgeorge school of law                                    0.000333
+loyola university chicago                                 0.000333
+georgia southern university                               0.000333
+usc                                                       0.000333
+santa teresa high school                                  0.000333
+newton north high school                                  0.000324
+university of colorado                                    0.000313
+hunter college high school                                0.000300
+pitzer college                                            0.000300
+jesuit high school                                        0.000300
+berkeley high school                                      0.000300
+the harker school                                         0.000300
+national university                                       0.000300
+taipei american school                                    0.000300
+fudan university                                          0.000293
+university of massachusetts boston                        0.000280
+foothill college                                          0.000280
+commonwealth school                                       0.000267
+leland high school                                        0.000267
+saint mary's college of california                        0.000267
+ucla anderson school of management                        0.000267
+london business school                                    0.000267
+st. john's school                                         0.000267
+university college london                                 0.000267
+yonsei university                                         0.000267
+los altos high school                                     0.000267
+choate rosemary hall                                      0.000267
+berlin university of the arts                             0.000267
+st. olaf college                                          0.000267
+sacramento city college                                   0.000233
+csu chico                                                 0.000233
+wabash college                                            0.000233
+raffles junior college                                    0.000233
+uc santa barbara                                          0.000213
+bishop o'dowd high school                                 0.000200
+san jose state university, ca                             0.000200
+sicas                                                     0.000200
+parkway north high school                                 0.000200
+university california irvine                              0.000200
+iit bombay                                                0.000200
+old dominion university                                   0.000200
+istituto italiano di cultura di atene                     0.000200
+san diego miramar college                                 0.000200
+uc san diego (bs)                                         0.000200
+paul merage school of business                            0.000200
+academia                                                  0.000200
+clayton college of natural health                         0.000200
+la quinta high school                                     0.000200
+aberystwyth university                                    0.000200
+university of santo tomas                                 0.000200
+azusa high school                                         0.000200
+elwood - john glenn high school                           0.000200
+duke                                                      0.000200
+northern illinois university                              0.000200
+laney college                                             0.000200
+alexander hamilton humanities magnet                      0.000200
+universitatea politehnica bucharest, romania              0.000200
+baylor college of medicine                                0.000200
+roosevelt university                                      0.000200
+westford academy                                          0.000200
+technical university of munich                            0.000200
+university of bristol                                     0.000200
+university of cincinnati                                  0.000200
+university of manchester                                  0.000200
+san joaquin delta college                                 0.000200
+valhalla high school                                      0.000200
+ruprecht karl university of heidelberg                    0.000200
+sheridan college                                          0.000200
+vcu brandcenter                                           0.000200
+winchester high school                                    0.000200
+washburn university                                       0.000200
+iolani school                                             0.000200
+hart high                                                 0.000200
+adolfo camarillo highschool                               0.000200
+abington senior high school                               0.000200
+queen's university                                        0.000200
+university of colorado, boulder                           0.000200
+loma linda university                                     0.000200
+macalester college                                        0.000200
+eastern connecticut state university                      0.000200
+grand valley state university                             0.000200
+southern adventist university                             0.000200
+university of maryland college park,                      0.000200
+j. sargeant reynolds community college                    0.000200
+state university of new york at potsdam                   0.000200
+suny albany                                               0.000200
+glenbrook south high school                               0.000200
+punahou school '02                                        0.000200
+laguna hills high school                                  0.000200
+atlantic college                                          0.000200
+university of north dakota                                0.000200
+stanford university (ba, 1996)                            0.000200
+california baptist university                             0.000200
+ballyfermot college of further education                  0.000200
+university of waterloo,                                   0.000200
+boston university school of public health                 0.000200
+amity regional high school                                0.000200
+leigh high school                                         0.000200
+valley stream central high school                         0.000200
+thomas jefferson school of law                            0.000200
+ivy tech community college of indiana                     0.000200
+umiami                                                    0.000200
+thomas stone high school                                  0.000200
+university of central arkansas                            0.000200
+wake forest university school of medicine                 0.000200
+punjab technical university                               0.000200
+university of massachusetts dartmouth                     0.000200
+clark university                                          0.000200
+saint louis university                                    0.000200
+union springs academy                                     0.000200
+william h. bowen school of law                            0.000200
+elizabethtown college                                     0.000200
+longfellow middle school                                  0.000200
+volunteer high school                                     0.000200
+kyoto center for japanese studies                         0.000200
+florida community college at jacksonville                 0.000200
+highschool                                                0.000200
+bishop wordsworth's school, salisbury                     0.000200
+burch high school                                         0.000200
+复旦大学                                                      0.000200
+mission college preparatory catholic high school          0.000200
+cornell university,                                       0.000200
+herbert hoover high school, glendale, ca                  0.000200
+illinois central college                                  0.000200
+western university of health sciences                     0.000200
+seton hall preparatory school                             0.000200
+westport high school                                      0.000200
+christian brothers academy                                0.000200
+university of chicago harris school of public p...        0.000200
+institute of development studies                          0.000200
+uc davis school of law                                    0.000200
+tiffin girls' school, kingston-upon-thames                0.000200
+stephen f. austin state university                        0.000200
+cept university                                           0.000200
+lowell high school, san francisco                         0.000200
+curtis institute of music                                 0.000200
+the university of hong kong                               0.000200
+fuller theological seminary                               0.000200
+haycock elementary school                                 0.000200
+art institute of californa                                0.000200
+stanford university (ma, 1997)                            0.000200
+california institute of integral studies                  0.000200
+baldwin-wallace college                                   0.000200
+indian institute of technology kanpur                     0.000200
+delft university of technology                            0.000200
+nyit                                                      0.000200
+willamette university college of law                      0.000200
+dalhousie university                                      0.000200
+university of pittsburgh school of medicine               0.000200
+maxwell school of citizenship and public affairs          0.000200
+broward community college                                 0.000200
+eastman school of music                                   0.000200
+depaul university college of law                          0.000200
+tejas vidyalaya                                           0.000200
+citrus college                                            0.000200
+rutherford high school                                    0.000200
+university of pittsburgh school of law                    0.000200
+kennedy school of government, harvard university          0.000200
+university of phoenix-san diego campus                    0.000200
+phoenix seminary                                          0.000200
+white station high school                                 0.000200
+cleveland state university                                0.000200
+rutgers school of law - camden                            0.000200
+california state university long beach                    0.000200
+murrieta valley high school                               0.000200
+revere high school                                        0.000200
+mount union college                                       0.000200
+eastlake north high                                       0.000200
+nicholas school of the environment                        0.000200
+west valley college                                       0.000200
+csudh                                                     0.000200
+stanford university, uc berkeley                          0.000200
+monterey institute of international studies               0.000200
+university of calgary                                     0.000200
+mineral point high school                                 0.000200
+randolph high school                                      0.000200
+syracuse university college of law                        0.000200
+samford university                                        0.000200
+landon school                                             0.000200
+yale divinity school                                      0.000200
+kent state university                                     0.000200
+solano community college                                  0.000200
+the gunnery                                               0.000200
+various - nowhere hugely prestigious                      0.000200
+university of mississippi                                 0.000200
+ephrata high school                                       0.000200
+hopewell valley central high school                       0.000200
+computer education institute (cei)                        0.000200
+national and kapodistrian university of athens            0.000200
+vvp engg. college                                         0.000200
+brent international school, manila                        0.000200
+palo verde high school                                    0.000200
+independence community college                            0.000200
+scripps college                                           0.000200
+columbia river high school                                0.000200
+hinsdale south high school                                0.000200
+marshall university                                       0.000200
+university of portland                                    0.000200
+southeastern university of the assemblies of god          0.000200
+bennington college                                        0.000200
+wharton school                                            0.000200
+brandman university                                       0.000200
+federal way high school                                   0.000200
+john f kennedy university                                 0.000200
+harvard kennedy school                                    0.000200
+umdnj rwjms                                               0.000200
+seneca college                                            0.000200
+carroll college                                           0.000200
+university of tokyo                                       0.000200
+wuhan university                                          0.000200
+aragon high school                                        0.000200
+sophia university                                         0.000200
+pacific conservatory of the performing arts               0.000200
+lynnfield high school                                     0.000200
+beijing university of technology                          0.000200
+wilbur l. cross high school                               0.000200
+columbia university (cc '06)                              0.000200
+university of california, los angeles (ucla)              0.000200
+hong kong polytechnic university                          0.000200
+university of mannheim                                    0.000200
+queens college, city university of new york               0.000200
+siatech                                                   0.000200
+usc marshall                                              0.000200
+the creative circus                                       0.000200
+dominican academy                                         0.000200
+smithton r-vi                                             0.000200
+becker college                                            0.000200
+bellevue high school                                      0.000200
+platon school                                             0.000200
+john muir high school                                     0.000200
+hong kong baptist university                              0.000200
+lahore school of economics                                0.000200
+montgomery county community college                       0.000200
+wellesley                                                 0.000200
+mission san jose high school                              0.000200
+governor livingston hs                                    0.000200
+monte vista high school                                   0.000200
+howard community college                                  0.000200
+open university of israel                                 0.000200
+bowling green senior high school                          0.000200
+medical college of georgia                                0.000200
+edmonds woodway high school                               0.000200
+acton-boxborough regional high school.                    0.000200
+united states military academy                            0.000200
+richland high school                                      0.000200
+san francisco school of massage                           0.000200
+millersville university of pennsylvania                   0.000200
+phillips academy andover                                  0.000200
+princeton high school                                     0.000200
+chadwick school                                           0.000200
+istanbul technical university                             0.000200
+southwestern university school of law                     0.000200
+college of the sequoias                                   0.000200
+st. mary's of medford                                     0.000200
+vanguard university of southern california                0.000200
+westminster college                                       0.000200
+wheelock college                                          0.000200
+north hollywood highly gifted magnet                      0.000200
+framingham high school                                    0.000200
+cambridge university                                      0.000200
+rice                                                      0.000200
+charles evan hughes jr. high school                       0.000200
+rosalind franklin university of medicine and sc...        0.000200
+john f. kennedy university                                0.000200
+icam                                                      0.000200
+lakeland community college                                0.000200
+east longmeadow high school ('02)                         0.000200
+north quincy high school                                  0.000200
+uc san diego (ms)                                         0.000200
+el camino real high school                                0.000200
+university of virginia,                                   0.000200
+university of judaism                                     0.000200
+cornell                                                   0.000200
+cal poly san luis obispo                                  0.000200
+boston university school of education                     0.000200
+biblical theological seminary                             0.000200
+bowling green state university                            0.000200
+cal poly state university, san luis obispo                0.000200
+the university of california                              0.000200
+asian institute of management                             0.000200
+moreau catholic high school                               0.000200
+animation mentor                                          0.000200
+farmingdale high school                                   0.000200
+bellarmine college preparatory                            0.000200
+rensselaer                                                0.000200
+torrey pines high school                                  0.000200
+apple                                                     0.000200
+st. john's high school                                    0.000200
+ridley high school                                        0.000200
+university of alabama in huntsville                       0.000200
+university of north carolina at greensboro                0.000200
+university of wisconson                                   0.000200
+roedean senior school for girls (south africa)            0.000200
+la canada high school                                     0.000200
+universita ca' foscari di venezia                         0.000200
+simon's rock college                                      0.000200
+king henry viii, coventry                                 0.000200
+pepperdine university school of law                       0.000200
+keene state college                                       0.000200
+bellarmine college prep                                   0.000200
+mount sinai school of medicine                            0.000200
+univeristy of wisconsin - whitewater                      0.000200
+cornell university college of engineering                 0.000200
+blacksburg high school                                    0.000200
+b.m.c. durfee                                             0.000200
+santa margarita catholic high school                      0.000200
+wayzata high school                                       0.000200
+washington college of law at american university          0.000200
+university of tulsa                                       0.000200
+lsu                                                       0.000200
+de la salle university-manila                             0.000200
+lincoln law school                                        0.000200
+university of michigan-dearborn                           0.000200
+bergen county academies                                   0.000200
+brooklyn tech                                             0.000200
+van nuys high                                             0.000200
+vincennes university                                      0.000200
+woodside high school                                      0.000200
+united world college of south east asia                   0.000200
+s. g. dholakiya                                           0.000200
+universite de toulouse- le mirail ii                      0.000200
+washington international school                           0.000200
+jchs                                                      0.000200
+hobart and william smith colleges                         0.000200
+riverdale country school                                  0.000200
+university of michigan, ann arbor                         0.000200
+cooper union                                              0.000200
+california state university east bay, ca                  0.000200
+vacaville high school                                     0.000200
+cma ontario                                               0.000200
+long beach polytechinc                                    0.000200
+fitchburg state college                                   0.000200
+loara high school                                         0.000200
+walla walla college                                       0.000200
+oneonta high school                                       0.000200
+new england college of optometry                          0.000200
+texas wesleyan university                                 0.000200
+jefferson high school                                     0.000200
+school of audio engineering                               0.000200
+eastmoor high school                                      0.000200
+fairfield university                                      0.000200
+queen mary, university of london                          0.000200
+inter deceplinary center                                  0.000200
+asbury college                                            0.000200
+schurr high school                                        0.000200
+university of louisiana at lafayette                      0.000200
+albert ludwigs university of freiburg                     0.000200
+the graduate school at northwestern                       0.000200
+humboldt state university                                 0.000200
+university of maryland university college                 0.000200
+university college dublin - national university...        0.000200
+alfred university                                         0.000200
+mira costa high school                                    0.000200
+new york medical college                                  0.000200
+bloomsburg university of pennsylvania                     0.000200
+university of california los angeles,                     0.000200
+graham jr college                                         0.000200
+illinois institute of technology                          0.000200
+university of california los angeles                      0.000200
+troy high school                                          0.000200
+san diego jewish academy                                  0.000200
+yale school of medicine                                   0.000200
+folsom high school                                        0.000200
+myers park                                                0.000200
+university of piraeus                                     0.000200
+university of st thomas                                   0.000200
+leehurst swan secondary, salisbury                        0.000200
+wesleyan, unc-chapel hill                                 0.000200
+trinity evangelical divinity school                       0.000200
+california school of professional psychology              0.000200
+harriton high school                                      0.000200
+shrewsbury high school                                    0.000200
+tulane university                                         0.000200
+seattle university                                        0.000200
+southmoreland senior high school                          0.000200
+san dimas high school                                     0.000200
+the university of toledo-health science campus            0.000200
+university of alberta - grad school                       0.000200
+university of pune                                        0.000200
+university of ulster                                      0.000200
+clark college                                             0.000200
+dvc                                                       0.000200
+northern michigan university                              0.000200
+univerisity of california, berkeley                       0.000200
+los angeles valley college                                0.000200
+columbia college chicago                                  0.000200
+silliman university                                       0.000200
+academy of art                                            0.000200
+lewis & clark college                                     0.000200
+los gatos high school                                     0.000200
+cranbrook kingswood                                       0.000200
+los medanos college                                       0.000200
+stanford universtiy                                       0.000200
+the american school in london                             0.000200
+unversity of melbourne                                    0.000200
+north hollywood high school                               0.000200
+costa mesa high school                                    0.000200
+notre dame academy                                        0.000200
+washington and jefferson college                          0.000200
+harvard college '07                                       0.000200
+chaffey college                                           0.000200
+columbia university college of physicians and s...        0.000200
+brookfield central high school                            0.000200
+fred c. beyer high                                        0.000200
+foothill high school                                      0.000200
+rio hondo college                                         0.000200
+new providence high school                                0.000200
+hofstra university                                        0.000200
+the cranbrook kingswood school                            0.000200
+boston latin school                                       0.000200
+school of the museum of fine arts, boston                 0.000200
+simsbury high school                                      0.000200
+washington high school                                    0.000200
+tesoro high school                                        0.000200
+milpitas high school                                      0.000200
+tulane university law school                              0.000200
+gonzaga university school of law                          0.000200
+university of missouri - columbia                         0.000200
+fordham university school of law                          0.000200
+franklin w. olin college of engineering                   0.000200
+smic private high school                                  0.000200
+mercer university                                         0.000200
+umass                                                     0.000200
+sacred heart prep                                         0.000200
+the fletcher school of law and diplomacy                  0.000200
+truman state university                                   0.000200
+franklin school                                           0.000160
+clemons crossing elementary school                        0.000160
+atholton high school                                      0.000160
+wilde lake middle school                                  0.000160
+clarksville middle school                                 0.000160
+marina high school                                        0.000133
+usc medical school                                        0.000133
+university of washington school of law                    0.000133
+hun school of prineton                                    0.000133
+mit sloan                                                 0.000133
+davis senior high school                                  0.000133
+university of california, berkeley (walter a. h...        0.000133
+middle georgia college                                    0.000133
+palm harbor university high school                        0.000133
+school of journalism, fudan university                    0.000133
+portage central high school                               0.000133
+university of california san diego                        0.000133
+notre dame regional school                                0.000133
+mount horeb high school                                   0.000133
+corvinus university of budapest                           0.000133
+wadham college, oxford                                    0.000133
+florida atlantic university                               0.000133
+castleton state college                                   0.000133
+vjti                                                      0.000133
+napa valley college                                       0.000133
+new westminster secondary                                 0.000133
+ben gurion university of the negev                        0.000133
+umdnj-njms                                                0.000133
+metropolitan state college of denver                      0.000133
+st. ignatius elementary school                            0.000133
+kenyon college                                            0.000133
+king's college london                                     0.000133
+new york university-university college of arts ...        0.000133
+seattle central community college                         0.000133
+monta vista high school, cupertino, ca                    0.000133
+pacific bible college                                     0.000133
+central high school, philadelphia pa                      0.000133
+campbellsville university                                 0.000133
+metairie park country day school                          0.000133
+indiana university of pennsylvania                        0.000133
+fore                                                      0.000133
+lane tech high school                                     0.000133
+university of california                                  0.000133
+bates college                                             0.000133
+chico state university                                    0.000133
+poznan university of medicine                             0.000133
+windward high school                                      0.000133
+weber state university                                    0.000133
+university of paris x: nanterre                           0.000133
+college of law                                            0.000133
+johns hopkins bloomberg school of public health           0.000133
+presidio middle school                                    0.000133
+photographic center northwest                             0.000133
+uc hastings                                               0.000133
+catholic university of leuven                             0.000133
+university of minho                                       0.000133
+capella university                                        0.000133
+phoenixville area high school                             0.000133
+benjamin n. cardozo school of law                         0.000133
+north carolina                                            0.000133
+american university in cairo                              0.000133
+universitat autònoma de barcelona                         0.000133
+international school of düsseldorf                        0.000133
+universidade federal do rio de janeiro                    0.000133
+atwater high school, merced jc, csu fresno                0.000133
+ocad university                                           0.000133
+bursnview jr. secondary                                   0.000133
+university of oklahoma                                    0.000133
+kentridge high school                                     0.000133
+ironwood ridge                                            0.000133
+culinary                                                  0.000133
+teachers college columbia university                      0.000133
+virginia commonwealth university                          0.000133
+sahmyook health univ                                      0.000133
+loomis chaffee school                                     0.000133
+ryerson university                                        0.000133
+medical college of wisconsin                              0.000133
+indian institute of technology, madras india              0.000133
+westmoreland county community college                     0.000133
+central european university                               0.000133
+mount san antonio college                                 0.000133
+washington university                                     0.000133
+harvard-westlake                                          0.000133
+university of virginia darden school                      0.000133
+george w. truett theological seminary                     0.000133
+vanderbilt                                                0.000133
+university of toledo college of medicine                  0.000133
+boston university school of medicine                      0.000133
+lasalle academy                                           0.000133
+william allen white school of journalism and ma...        0.000133
+wku                                                       0.000133
+boston university school of theology                      0.000133
+hidden valley high-school                                 0.000133
+regis university                                          0.000133
+elte radnóti miklós school                                0.000133
+university of colorado school of law of law               0.000133
+touro university nevada                                   0.000133
+northfield mt. hermon                                     0.000133
+high tech high international                              0.000133
+toronto french school                                     0.000133
+st. patrick-st. vincent h.s. c/o 2005                     0.000133
+california polytechnic state university pomona            0.000133
+kwantlen polytechnic university                           0.000133
+cornell law school                                        0.000133
+university of arkansas at little rock                     0.000133
+the indian high school, dubai                             0.000133
+illinois math & science academy                           0.000133
+lowell hs                                                 0.000133
+rancho cucamonga high school                              0.000133
+bountiful high school                                     0.000133
+yo san university                                         0.000133
+ewha womans university                                    0.000133
+seton hill university                                     0.000133
+perryville high school                                    0.000133
+kwansei gakuin university                                 0.000133
+university of virginia, charlottesville va                0.000133
+south hopkins high school                                 0.000133
+appalachian state university                              0.000133
+universitaet mannheim                                     0.000133
+babc                                                      0.000133
+wpunj                                                     0.000133
+university of pittsburgh at greensburg                    0.000133
+waseda university                                         0.000133
+korea national open university                            0.000133
+chengdu no. 7 high school                                 0.000133
+pima community college                                    0.000133
+cecil college                                             0.000133
+saint leo university                                      0.000133
+university of illinois - urbana champaign                 0.000133
+columbia college of columbia university in the ...        0.000133
+new college (oxford)                                      0.000133
+solano college                                            0.000133
+state university of new york at plattsburgh               0.000133
+st. ignatius college prep                                 0.000133
+visual studies workshop                                   0.000133
+universidad carlos iii                                    0.000133
+san diego city college                                    0.000133
+university of north texas                                 0.000133
+mary carroll high school                                  0.000133
+matc                                                      0.000133
+del mar community college                                 0.000133
+san francisco art institute                               0.000133
+morton east high school                                   0.000133
+peking university                                         0.000133
+国際基督教大学                                                   0.000133
+webster university                                        0.000133
+mirman                                                    0.000133
+tigard high school                                        0.000133
+harvard graduate school of education                      0.000133
+skyline college                                           0.000133
+john a. rowland high school                               0.000133
+st. martin's episcopal school                             0.000133
+butler university                                         0.000133
+nortonville middle school                                 0.000133
+pacific lutheran theological seminary                     0.000133
+university of nagpur                                      0.000133
+embry-riddle aeronautical university, daytona b...        0.000133
+university of philosophical research                      0.000133
+pace university                                           0.000133
+loudoun county academy of science                         0.000133
+kansas state university                                   0.000133
+department of media communication, city univers...        0.000133
+livonia churchill high school                             0.000133
+archbishop mitty high school                              0.000133
+naval postgraduate school                                 0.000133
+st. francis high school                                   0.000133
+carlmont high school                                      0.000133
+imperial college london                                   0.000133
+loudoun valley high school                                0.000133
+antioch school                                            0.000133
+university of denver                                      0.000133
+beijing university of aeronautics and astronautics        0.000133
+rogue community college                                   0.000133
+university of bordeaux iv                                 0.000133
+plano west senior high school                             0.000133
+steele canyon high school                                 0.000133
+de anza community college                                 0.000133
+school of the osage                                       0.000133
+enterprise high school                                    0.000133
+oak grove high school                                     0.000133
+mimosa elementary school                                  0.000100
+bellevue university                                       0.000100
+atwood-tapley                                             0.000100
+itt tech                                                  0.000100
+bogaskola                                                 0.000100
+university of calgary (bsc)                               0.000100
+univeristy of houston law center                          0.000100
+kennewick high school                                     0.000100
+antelope valley college                                   0.000100
+fuzhou no.1 middle school                                 0.000100
+moscow state university                                   0.000100
+booksin elementary                                        0.000100
+university of queensland                                  0.000100
+university of south carolina school of law                0.000100
+elgin community college                                   0.000100
+acs egham                                                 0.000100
+university of arizona james e. rogers college o...        0.000100
+university of maine, orono                                0.000100
+santa fe institute                                        0.000100
+southern baptist theological seminary                     0.000100
+collegiate school                                         0.000100
+crabapple middle school                                   0.000100
+washington elementary school                              0.000100
+mark keppel elementary school                             0.000100
+front range                                               0.000100
+hatboro-horsham senior high school                        0.000100
+st. mary's school                                         0.000100
+college of charleston                                     0.000100
+manipal institute of technology                           0.000100
+california college of arts & crafts                       0.000100
+redeemer lutheran school                                  0.000100
+saint joseph's school                                     0.000100
+evergreen state college                                   0.000100
+eleanor j toll junior high school                         0.000100
+mica                                                      0.000100
+university of calgary (phd)                               0.000100
+nyu school of law                                         0.000100
+drexel university                                         0.000100
+west orange stark high school                             0.000100
+norwich university                                        0.000100
+roswell high school                                       0.000100
+williams juinor high school                               0.000100
+conservatory of recording arts & sciences                 0.000100
+holy cross high school                                    0.000100
+armand hammer united world college                        0.000100
+cal poly, san luis obispo                                 0.000100
+virginia tech                                             0.000100
+esade business school                                     0.000100
+indiana university school of law - indianapolis           0.000100
+ralph gracie jiu jitsu                                    0.000100
+missouri baptist university                               0.000100
+calvert high school                                       0.000100
+santa clara university business school                    0.000100
+antelope valley high school                               0.000100
+clemson university                                        0.000100
+rio americano high school                                 0.000100
+nestle university                                         0.000100
+los cerritos elementary school                            0.000100
+carmel high school                                        0.000100
+huntingtown high school                                   0.000100
+messalonskee high school                                  0.000100
+icat                                                      0.000100
+burlington-edison high school                             0.000100
+korea science academy                                     0.000100
+bishop amat memorial high school                          0.000100
+gretchen whitney high school                              0.000100
+claymont elementary                                       0.000100
+charles evan hughes middle school                         0.000100
+garden spot jr. high school                               0.000100
+hosler middle school                                      0.000100
+st. michael's college                                     0.000100
+lynwood high school                                       0.000100
+chicago theological seminary                              0.000100
+iris ministries harvest school                            0.000100
+founders institute                                        0.000100
+university of trinity college                             0.000100
+university of southern mississippi                        0.000100
+parkway west high school                                  0.000100
+national taiwan normal university                         0.000100
+jones county junior college                               0.000100
+thomas jefferson high school                              0.000100
+baltimore lutheran high school                            0.000100
+lab school                                                0.000100
+herbert hoover high school                                0.000100
+melbourne business school                                 0.000100
+keith valley middle school                                0.000100
+university of maine                                       0.000100
+immanuel lutheran school                                  0.000100
+north yarmouth academy                                    0.000100
+loyola university maryland                                0.000100
+hofstra university school of law                          0.000100
+tulane university school of medicine                      0.000100
+katholieke universiteit leuven                            0.000100
+ricardo palma university                                  0.000100
+st. columba's school                                      0.000100
+mt. san jacinto junior college                            0.000100
+san leandro high school                                   0.000100
+meadville/lombard theological school                      0.000100
+p.s. 183                                                  0.000100
+nyu stern school of business                              0.000100
+william s. hart high school, newhall ca                   0.000100
+eastern high school                                       0.000100
+westfield state college                                   0.000100
+raffles institution                                       0.000100
+rēp                                                       0.000100
+china europe international business school                0.000100
+p.s. 116                                                  0.000100
+claremont graduate university                             0.000100
+csu chico, san jose state university                      0.000100
+blue ball elementary                                      0.000100
+bishop carroll high school                                0.000100
+thousand oaks high school                                 0.000100
+imd, switzerland                                          0.000100
+brebeuf jesuit preparatory school                         0.000100
+louisiana school for math, science, and the arts          0.000100
+russian academy of sciences, institute of state...        0.000100
+castillero middle school                                  0.000100
+virginia theological seminary                             0.000080
+university of delaware                                    0.000080
+åbo akademi university                                    0.000080
+tierra bonita elementary school                           0.000080
+american school in japan                                  0.000080
+poway high school                                         0.000080
+cornell elementary                                        0.000080
+downers grove north high school                           0.000080
+palma high school                                         0.000080
+twin peaks middle school                                  0.000080
+centennial middle school                                  0.000080
+university of international business and economics        0.000080
+san benancio middle school                                0.000080
+albany middle school                                      0.000080
+cupertino middle school                                   0.000080
+bryn mawr elementary                                      0.000080
+deanza college                                            0.000080
+uni hill elementary school                                0.000080
+liberal high school                                       0.000080
+serrano high school, phelan                               0.000080
+devry institute of technolgoy                             0.000080
+sanger high school                                        0.000080
+reid middle school                                        0.000080
+eagle ranch elementary, victorville                       0.000080
+new horizons cooperative preeschool                       0.000080
+hong kong university of science and technology            0.000080
+tui                                                       0.000080
+toro park elementary                                      0.000080
+new vista high school                                     0.000080
+herrick middle school                                     0.000080
+west virginia university                                  0.000080
+washington middle school                                  0.000080
+west virginia wesleyan college                            0.000080
+calpoly                                                   0.000080
+hyde junior high                                          0.000080
+university of wisconsin - madison                         0.000080
+running                                                   0.000080
+mesa linda middle school, victorville                     0.000080
+south pasadena high school                                0.000080
+belle aire elementary school                              0.000080
+uc los angeles (ucla)                                     0.000080
+vancouver film school                                     0.000067
+franklin elementary school                                0.000067
+diablo valley montessori school                           0.000067
+marin waldorf school                                      0.000067
+miller creek middle school                                0.000067
+groton school                                             0.000067
+terra linda high school                                   0.000067
+rancho romero elementary school                           0.000067
+stone valley middle school                                0.000067
+henderson elementary school                               0.000067
+johns hopkins school of nursing                           0.000067
+dixie elementary                                          0.000067
+bret harte middle school                                  0.000067
+simonds elementary school                                 0.000067
+must 明新工專                                                 0.000057
+mason rice elementary                                     0.000057
+earlham college                                           0.000057
+uc santa cruz extension                                   0.000057
+pacific school of religion                                0.000057
+day jr. high                                              0.000057
+sojourn nepal                                             0.000057
+graduate theological union                                0.000057
+palisades charter high school                             0.000040
+brentwood science magnet elementary school                0.000040
+st. thomas pre-school                                     0.000040
+walter reed middle school                                 0.000040
+the objectivist academic center                           0.000040
+temple israel                                             0.000040
+logic                                                     0.000040

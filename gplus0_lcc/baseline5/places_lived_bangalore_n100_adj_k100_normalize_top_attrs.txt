@@ -1,0 +1,2445 @@
+                                                    voteProportion
+attribute                                                         
+bangalore                                                 0.061332
+hyderabad                                                 0.047467
+chennai                                                   0.046281
+mumbai                                                    0.038756
+new delhi                                                 0.025230
+delhi                                                     0.020696
+pune                                                      0.018897
+kolkata                                                   0.016851
+coimbatore                                                0.010332
+india                                                     0.008804
+jaipur                                                    0.008726
+lucknow                                                   0.008599
+ahmedabad                                                 0.008146
+mysore                                                    0.007933
+chandigarh                                                0.007919
+kanpur                                                    0.007687
+ranchi                                                    0.006712
+visakhapatnam                                             0.005480
+cochin                                                    0.005135
+noida                                                     0.005092
+bhubaneswar                                               0.004758
+gurgaon                                                   0.004558
+trivandrum                                                0.004529
+mangalore                                                 0.004391
+madurai                                                   0.004380
+bengaluru                                                 0.004287
+indore                                                    0.004224
+vellore                                                   0.004207
+kota                                                      0.004177
+kerala                                                    0.004004
+patna                                                     0.003920
+vijayawada                                                0.003870
+singapore                                                 0.003834
+trichy                                                    0.003733
+varanasi                                                  0.003707
+calicut                                                   0.003609
+bhopal                                                    0.003408
+vadodara                                                  0.003162
+london                                                    0.003089
+nagpur                                                    0.003065
+new york                                                  0.003048
+mumbai, india                                             0.003040
+surat                                                     0.003038
+chennai, india                                            0.002821
+hyderabad, india                                          0.002649
+nellore                                                   0.002583
+ghaziabad                                                 0.002485
+manipal                                                   0.002413
+pune, india                                               0.002367
+guntur                                                    0.002275
+thrissur                                                  0.002267
+ernakulam                                                 0.002245
+bhilai                                                    0.002234
+kochi                                                     0.002230
+goa                                                       0.002220
+bangalore, india                                          0.002198
+allahabad                                                 0.002082
+kottayam                                                  0.002030
+dubai                                                     0.002028
+thane                                                     0.002002
+bangalore, karnataka                                      0.001954
+guwahati                                                  0.001952
+pilani                                                    0.001941
+jodhpur                                                   0.001909
+jamshedpur                                                0.001882
+secunderabad                                              0.001845
+dhanbad                                                   0.001844
+udupi                                                     0.001824
+buenos aires                                              0.001800
+jabalpur                                                  0.001772
+dehradun                                                  0.001765
+erode                                                     0.001760
+tirupathi                                                 0.001720
+vizag                                                     0.001684
+agra                                                      0.001670
+faridabad                                                 0.001628
+kharagpur                                                 0.001564
+bhilwara                                                  0.001560
+new delhi, india                                          0.001502
+gwalior                                                   0.001500
+palakkad                                                  0.001476
+pondicherry                                               0.001440
+tumkur                                                    0.001433
+surathkal                                                 0.001400
+warangal                                                  0.001380
+delhi, india                                              0.001363
+san diego                                                 0.001344
+meerut                                                    0.001342
+calcutta                                                  0.001333
+sydney                                                    0.001317
+kakinada                                                  0.001310
+roorkee                                                   0.001265
+kannur                                                    0.001230
+jammu                                                     0.001150
+kollam                                                    0.001120
+los angeles                                               0.001103
+hyderabad,india                                           0.001100
+salem                                                     0.001100
+raipur                                                    0.001097
+bilaspur                                                  0.001087
+ooty                                                      0.001074
+sonipat                                                   0.001067
+nashik                                                    0.001040
+panipat                                                   0.001037
+navi mumbai                                               0.001033
+cuttack                                                   0.001011
+banglore                                                  0.001002
+kathmandu                                                 0.001000
+udumalpet                                                 0.001000
+hamirpur                                                  0.001000
+montevideo                                                0.001000
+ludhiana                                                  0.000973
+berhampur                                                 0.000960
+bhavnagar                                                 0.000950
+bangalore, karnataka, india                               0.000947
+melbourne                                                 0.000947
+shimla                                                    0.000940
+atlanta                                                   0.000937
+hassan                                                    0.000933
+pollachi                                                  0.000933
+rajkot                                                    0.000924
+rajasthan                                                 0.000917
+udaipur                                                   0.000913
+muscat                                                    0.000903
+alwar                                                     0.000894
+moradabad                                                 0.000893
+amsterdam                                                 0.000884
+ajmer                                                     0.000883
+hong kong                                                 0.000883
+paris                                                     0.000875
+home                                                      0.000867
+rohtak                                                    0.000867
+virudhunagar                                              0.000857
+san francisco                                             0.000849
+rourkela                                                  0.000847
+kolkata, india                                            0.000828
+bangkok                                                   0.000816
+prague                                                    0.000806
+nizamabad                                                 0.000800
+bhubaneswar, orissa                                       0.000800
+rourkela,baripada                                         0.000800
+swansea                                                   0.000800
+poozhikunnu                                               0.000800
+kalyan                                                    0.000800
+hinjewadi                                                 0.000800
+bankura                                                   0.000800
+nagercoil                                                 0.000800
+guntur,jaipur,bhilai,kolkata                              0.000800
+newyork                                                   0.000800
+mevaseret zion                                            0.000800
+bahadurgarh,hry                                           0.000800
+boston                                                    0.000786
+tirupati                                                  0.000778
+srinagar                                                  0.000774
+bangalore,india                                           0.000773
+hubli                                                     0.000773
+santiago                                                  0.000770
+kolhapur                                                  0.000757
+amritsar                                                  0.000757
+shillong                                                  0.000750
+tampa, fl                                                 0.000733
+ahmedabad, gujarat, india                                 0.000733
+bareilly                                                  0.000723
+mumbai, maharashtra                                       0.000717
+bhubaneshwar                                              0.000711
+bikaner                                                   0.000700
+thiruvananthapuram                                        0.000700
+kurukshetra                                               0.000690
+gorakhpur                                                 0.000686
+darbhanga                                                 0.000675
+new york city                                             0.000670
+mysore, india                                             0.000668
+kota, rajasthan                                           0.000667
+bihar                                                     0.000667
+berlin                                                    0.000660
+thanjavur                                                 0.000660
+san jose                                                  0.000658
+california                                                0.000656
+satna                                                     0.000648
+brisbane                                                  0.000647
+bahrain                                                   0.000640
+durgapur                                                  0.000637
+kurnool                                                   0.000636
+kothamangalam                                             0.000633
+mumbai,india                                              0.000633
+pune, maharashtra, india                                  0.000620
+moscow                                                    0.000616
+baroda                                                    0.000614
+tamilnadu                                                 0.000613
+seattle                                                   0.000613
+bharuch                                                   0.000613
+bombay                                                    0.000610
+gandhinagar                                               0.000607
+st.john's                                                 0.000600
+munger                                                    0.000600
+manaus                                                    0.000600
+nagpur, india                                             0.000600
+riyadh                                                    0.000600
+kasaragod                                                 0.000600
+doha qatar                                                0.000600
+sawantwadi                                                0.000600
+delhi, gujarat, london                                    0.000600
+madrid                                                    0.000587
+kozhikode                                                 0.000585
+hyderabad, andhra pradesh, india                          0.000580
+karaikudi                                                 0.000563
+malappuram                                                0.000562
+balasore                                                  0.000557
+sharjah                                                   0.000550
+chicago                                                   0.000545
+bhagalpur                                                 0.000533
+ipswich                                                   0.000533
+saudi arabia                                              0.000533
+charlotte                                                 0.000533
+mananthavady, wayanad                                     0.000533
+ratlam                                                    0.000533
+maryland                                                  0.000533
+haripad                                                   0.000533
+nasik                                                     0.000533
+udhampur                                                  0.000530
+greater noida                                             0.000530
+munich                                                    0.000517
+tirunelveli                                               0.000517
+karimnagar                                                0.000511
+cochin, kerala                                            0.000507
+bhimavaram                                                0.000504
+birmingham                                                0.000500
+amravati                                                  0.000500
+indianapolis                                              0.000500
+austin, texas                                             0.000500
+trichur                                                   0.000500
+pune, maharashtra                                         0.000500
+vishakapatnam                                             0.000483
+muscat,oman                                               0.000480
+gulbarga                                                  0.000480
+aligarh                                                   0.000480
+jodhpur, rajasthan                                        0.000480
+chidambaram                                               0.000480
+tirupur                                                   0.000480
+shimoga                                                   0.000480
+kopargaon                                                 0.000480
+kumbakonam                                                0.000480
+jakarta                                                   0.000478
+karnal                                                    0.000467
+dindigul                                                  0.000467
+vienna, austria                                           0.000467
+chennai, tamil nadu, india                                0.000467
+namakkal                                                  0.000467
+usa                                                       0.000459
+calgary                                                   0.000457
+canberra                                                  0.000457
+gurgoan                                                   0.000457
+pathanamthitta                                            0.000457
+siliguri                                                  0.000455
+mumbai, maharashtra, india                                0.000453
+montpellier                                               0.000450
+miami                                                     0.000449
+silchar                                                   0.000447
+ahmedabad, india                                          0.000444
+bengaluru, india                                          0.000444
+köln                                                      0.000440
+bhopal, m.p.                                              0.000436
+assam                                                     0.000436
+dhaka                                                     0.000433
+san antonio, tx                                           0.000431
+taipei                                                    0.000429
+jalandhar                                                 0.000427
+karachi                                                   0.000425
+lahore                                                    0.000425
+houston                                                   0.000424
+istanbul                                                  0.000424
+abu dhabi                                                 0.000417
+madurai, india                                            0.000413
+coonoor                                                   0.000413
+paris, france                                             0.000411
+solan                                                     0.000410
+boston, ma                                                0.000404
+daiict, gandhinagar                                       0.000400
+al-khobar                                                 0.000400
+in delhi                                                  0.000400
+bokaro steel city                                         0.000400
+dupnica                                                   0.000400
+india, new delhi                                          0.000400
+lincolnshire, il                                          0.000400
+talwara, punjab                                           0.000400
+mundra,gujurat                                            0.000400
+mananthavady wayanad                                      0.000400
+viseu                                                     0.000400
+trivandrum/vellore                                        0.000400
+bahadurgarh , haryana , india                             0.000400
+seattle, washington                                       0.000400
+dausa                                                     0.000400
+kroatien / österreich                                     0.000400
+irving                                                    0.000400
+san jose, california                                      0.000400
+vasant kunj                                               0.000400
+omaha                                                     0.000400
+rocky mount, va                                           0.000400
+ambattur                                                  0.000400
+piliyandala                                               0.000400
+ramos mejia                                               0.000400
+noida sector 62                                           0.000400
+bahraich                                                  0.000400
+dehradun, bangalore,bhubaneshwar                          0.000400
+guatemala                                                 0.000400
+t                                                         0.000400
+hà nội                                                    0.000400
+มหาชัย                                                    0.000400
+be'er sheva                                               0.000400
+calicut, india                                            0.000400
+peritalmanna                                              0.000400
+great lakes                                               0.000400
+kolbad,thane(w)                                           0.000400
+lahore cantt                                              0.000400
+bengaluru, andhra pradesh, india                          0.000400
+chennai,tamilnadu,india                                   0.000400
+findlay ohio                                              0.000400
+patna, kalyani, hyderabad                                 0.000400
+timmins, ontario                                          0.000400
+wyra                                                      0.000400
+woodbridge,new jersey                                     0.000400
+junnar                                                    0.000400
+bangalore, allahabad, baroda, new delhi                   0.000400
+thiruvottiyur, chennai                                    0.000400
+zaragoza                                                  0.000400
+bbsr                                                      0.000400
+banjara hills, hyderabad, india                           0.000400
+runcorn                                                   0.000400
+tunisia                                                   0.000400
+churriana, malaga                                         0.000400
+seychelles                                                0.000400
+breuberg                                                  0.000400
+wichita, ks                                               0.000400
+kurnool,vizag,goa,banglore,chennainai                     0.000400
+lubbock, tx                                               0.000400
+orissa, vizag, rdm, hyd                                   0.000400
+silver hills                                              0.000400
+ernakulam, kerala                                         0.000400
+worli,mumbai                                              0.000400
+monterrey, mexico                                         0.000400
+port coquitlam                                            0.000400
+houston, tx                                               0.000400
+bangaluru                                                 0.000400
+vancouver canada                                          0.000400
+pitesti                                                   0.000400
+nanjangud, mysore                                         0.000400
+doncaster                                                 0.000400
+kraków                                                    0.000400
+kushtia,dhaka,bangladesh                                  0.000400
+newcastle                                                 0.000400
+rec calicut                                               0.000400
+chennai,india.                                            0.000400
+caracas venezuela                                         0.000400
+fontana                                                   0.000400
+salinas, ca                                               0.000400
+skellefteå                                                0.000400
+ciudad juarez, chih.                                      0.000400
+gray, ga                                                  0.000400
+rotherham                                                 0.000400
+eau claire, wi                                            0.000400
+baran, rajasthan, india                                   0.000400
+u.p.                                                      0.000400
+deland, florida, usa                                      0.000400
+silvassa                                                  0.000400
+sirsa                                                     0.000400
+novi sad                                                  0.000400
+tehran                                                    0.000400
+bratislava                                                0.000400
+gadwal                                                    0.000400
+plovdiv                                                   0.000400
+besant nagar                                              0.000400
+puri, vishakapatnam, zuarinagar (goa)                     0.000400
+bobbili                                                   0.000400
+delhi, chennai, kerala, bangalore                         0.000400
+montreuil                                                 0.000400
+hyderabad-deccan, andhra pradesh, india                   0.000400
+bargarh                                                   0.000400
+guwahati, calicut                                         0.000400
+singapore,malaysia, us,ceylon                             0.000400
+kothagudem, guntur, nellore                               0.000400
+malakkara                                                 0.000400
+dilsukhnagar                                              0.000400
+kl                                                        0.000400
+pala,kottayam                                             0.000400
+hoffman estates                                           0.000400
+woudenberg                                                0.000400
+pattamadai(tirunelveli)                                   0.000400
+dhamtari                                                  0.000400
+thrissur,kerala                                           0.000400
+swords, dublin, ireland                                   0.000400
+kiev                                                      0.000400
+skanderborg                                               0.000400
+chesapeake                                                0.000400
+attingal                                                  0.000400
+neduvannoor                                               0.000400
+mandi, himachal pradesh                                   0.000400
+cairo egypt                                               0.000400
+columbus,ohio                                             0.000400
+jakarta, indonesia                                        0.000400
+gajuwaka                                                  0.000400
+ettumanoor,kottayam                                       0.000400
+union city, nj                                            0.000400
+buffalo, usa                                              0.000400
+taian, shandong province, china                           0.000400
+lima                                                      0.000400
+laxmangarh                                                0.000400
+adyar, chennai                                            0.000400
+abu-dhabi                                                 0.000400
+bamnipal                                                  0.000400
+桃園                                                        0.000400
+farrukhabad , uttar pradesh                               0.000400
+chilamkur                                                 0.000400
+banswara                                                  0.000400
+madurai & chennai, tn, india                              0.000400
+高雄                                                        0.000400
+kovan, singapore                                          0.000400
+mumbai, calcutta, patna, chennai                          0.000400
+vijayawada, india                                         0.000400
+warszawa                                                  0.000400
+bhadrakali, hooghly                                       0.000400
+hochiminh city, vietnam                                   0.000400
+nj                                                        0.000400
+malkapur (m.h), india                                     0.000400
+puducherry                                                0.000400
+houston,tx                                                0.000400
+trivandrum, kerela                                        0.000400
+lucknow, india.                                           0.000400
+bombay,agartala,karaikal,kodaikanal,ahmedabad,d...        0.000400
+nicosia                                                   0.000400
+yadagirigutta                                             0.000400
+netanya, israel                                           0.000400
+kanjirapally                                              0.000400
+kolkata, howrah                                           0.000400
+every where...!!                                          0.000400
+eluru                                                     0.000400
+cyberjaya, malaysia                                       0.000400
+umbergaon                                                 0.000400
+hangzhou                                                  0.000400
+goshen, in                                                0.000400
+gurgaon,haryana, india                                    0.000400
+radhanagar                                                0.000400
+sandilla                                                  0.000400
+sriharikota                                               0.000400
+suryapet                                                  0.000400
+23.735690, 90.422995                                      0.000400
+kallooppara,kerala                                        0.000400
+taiwan                                                    0.000400
+south boston massachusetts                                0.000400
+jalpaiguri                                                0.000400
+mendoza, argentina                                        0.000400
+vizag,chennai,mumbai,pune                                 0.000400
+balikpapan                                                0.000400
+ranchi, jharkhand                                         0.000400
+chittorgarh                                               0.000400
+இந்தியா                                                   0.000400
+mahesana                                                  0.000400
+along                                                     0.000400
+botucatu                                                  0.000400
+udaipur, rajasthan, india                                 0.000400
+chandausi                                                 0.000400
+tiruchengode                                              0.000400
+gudiyattam, vellore                                       0.000400
+phetchaburi                                               0.000400
+porland,or                                                0.000400
+confused land                                             0.000400
+treviglio                                                 0.000400
+常州                                                        0.000400
+princes town                                              0.000400
+gtfo stalkers                                             0.000400
+brooklyn, new york                                        0.000400
+mehadipatnam                                              0.000400
+constanta                                                 0.000400
+hilversum, the netherlands                                0.000400
+lisboa                                                    0.000400
+guntur, andhra pradesh, india                             0.000400
+bagalkot                                                  0.000400
+jhenaidah                                                 0.000400
+вінниця                                                   0.000400
+vinnytsia                                                 0.000400
+rasal ganj,aligarh                                        0.000400
+phagwara                                                  0.000400
+haldwani                                                  0.000400
+gangtok                                                   0.000400
+karwar                                                    0.000390
+ambala cantt                                              0.000384
+chandigarh, india                                         0.000383
+ongole                                                    0.000380
+machilipatnam                                             0.000380
+theni                                                     0.000380
+trivandrum, kerala                                        0.000377
+aurangabad                                                0.000373
+tanjore                                                   0.000370
+pathankot                                                 0.000367
+patiala, punjab                                           0.000367
+asansol                                                   0.000367
+patiala                                                   0.000367
+ahmedabad, gujarat                                        0.000367
+salem, tamilnadu                                          0.000350
+kollam, kerala                                            0.000347
+sacramento                                                0.000344
+ropar                                                     0.000333
+neyveli                                                   0.000333
+purulia                                                   0.000333
+hyderabad, andhra pradesh                                 0.000333
+dubai, united arab emirates                               0.000333
+abu dhabi, united arab emirates                           0.000333
+chirala                                                   0.000333
+grenoble                                                  0.000333
+denver                                                    0.000333
+karlsruhe                                                 0.000333
+princeton, nj                                             0.000333
+wayanad                                                   0.000333
+shanghai                                                  0.000329
+dallas                                                    0.000329
+sangli                                                    0.000324
+pilani, rajasthan                                         0.000314
+belgaum                                                   0.000314
+edinburgh                                                 0.000313
+greensboro, nc                                            0.000300
+thiruvalla                                                0.000300
+college station                                           0.000300
+los angeles, ca                                           0.000300
+seoul                                                     0.000300
+kurnool, india                                            0.000300
+angul                                                     0.000300
+pittsburgh                                                0.000300
+manchester, uk                                            0.000300
+davangere                                                 0.000300
+bengaluru, karnataka, india                               0.000300
+hazaribag                                                 0.000300
+kolkata, west bengal                                      0.000294
+suwon                                                     0.000293
+sunnyvale                                                 0.000293
+maharashtra                                               0.000290
+san jose, ca                                              0.000290
+rajahmundry                                               0.000284
+madanapalle                                               0.000280
+montreal                                                  0.000280
+porto alegre                                              0.000280
+delhi,india                                               0.000280
+vishakhapatnam                                            0.000280
+palakkad, kerala                                          0.000280
+proddatur                                                 0.000280
+pune, maharastra                                          0.000278
+groningen                                                 0.000273
+denver, co                                                0.000271
+rourkela,orissa                                           0.000267
+aruppukottai                                              0.000267
+rajahmudry                                                0.000267
+bhubaneswar,orissa                                        0.000267
+harihar                                                   0.000267
+trichirappalli, tamil nadu, india                         0.000267
+thirthahalli                                              0.000267
+tarapur                                                   0.000267
+malaysia                                                  0.000267
+milwaukee                                                 0.000267
+panchkula                                                 0.000267
+bapatla                                                   0.000267
+atlanta, ga                                               0.000267
+huntsville, al                                            0.000267
+mandya                                                    0.000267
+berhampur,orissa                                          0.000267
+new york, us                                              0.000267
+shamli                                                    0.000267
+manipal, karnataka                                        0.000267
+chennai india                                             0.000267
+talcher                                                   0.000267
+kadapa                                                    0.000267
+up                                                        0.000267
+ayroor                                                    0.000267
+phoenix                                                   0.000260
+jhansi                                                    0.000258
+chennai,india                                             0.000257
+rajkot, india                                             0.000257
+himachal pradesh                                          0.000257
+sivakasi                                                  0.000257
+zurich                                                    0.000256
+chhattishgarh                                             0.000250
+rampur                                                    0.000250
+raigarh                                                   0.000250
+toronto                                                   0.000249
+coimbatore, tamil nadu                                    0.000248
+haridwar                                                  0.000247
+frankfurt                                                 0.000245
+haldia                                                    0.000244
+valsad                                                    0.000244
+las vegas, nevada                                         0.000240
+adilabad                                                  0.000240
+ranchi, india                                             0.000240
+ratnagiri                                                 0.000237
+las vegas                                                 0.000236
+coventry                                                  0.000236
+sacramento, ca                                            0.000236
+shenzhen                                                  0.000233
+port blair                                                0.000233
+haryana                                                   0.000233
+lansing, mi                                               0.000233
+chennai, tamilnadu                                        0.000233
+nainital                                                  0.000233
+vancouver, bc                                             0.000233
+b deoghar                                                 0.000233
+coral springs, fl                                         0.000233
+rajkot, gujarat, india                                    0.000233
+palghat                                                   0.000233
+san francisco, ca                                         0.000231
+bathinda                                                  0.000230
+amroha                                                    0.000230
+yekaterinburg, russia                                     0.000229
+gurgaon, india                                            0.000228
+copenhagen                                                0.000227
+hyderabad india                                           0.000222
+nanded                                                    0.000218
+kota, rajasthan, india                                    0.000217
+trondheim                                                 0.000213
+rajamundry                                                0.000213
+kochi, kerala                                             0.000213
+tel aviv                                                  0.000213
+tiruchirappalli                                           0.000213
+sullurupeta                                               0.000213
+ankleshwar                                                0.000211
+madhapur                                                  0.000200
+bardoli, ahmedabad                                        0.000200
+westbengal                                                0.000200
+durg india                                                0.000200
+coochbehar                                                0.000200
+kumamoto, japan                                           0.000200
+alappuzha                                                 0.000200
+detroit , mi                                              0.000200
+sangamner                                                 0.000200
+across maharashtra                                        0.000200
+shrigonda,ahmednagar                                      0.000200
+galway                                                    0.000200
+bangalore (india)                                         0.000200
+midnapur                                                  0.000200
+memphis, tn                                               0.000200
+szekesfehervar                                            0.000200
+peravurani                                                0.000200
+koradachery                                               0.000200
+rajapalayam                                               0.000200
+udgir,maharashtra                                         0.000200
+palakkad, bangalore, navi mumbai, mumbai                  0.000200
+sec-55,gurgaon                                            0.000200
+hyderabad, goa, chennai, bangalore, delhi                 0.000200
+raebareli                                                 0.000200
+pune,                                                     0.000200
+magnan                                                    0.000200
+paris,madrid,salamanca,avila                              0.000200
+jadavpur, kolkata                                         0.000200
+islampur,maharashtra                                      0.000200
+thane,pune                                                0.000200
+madanapalli                                               0.000200
+västerås                                                  0.000200
+fort collins                                              0.000200
+abudhabi , hyderabad , trichy                             0.000200
+gulbarga, bijapur                                         0.000200
+palakkad, cochin, bangalore                               0.000200
+vellore,chennai                                           0.000200
+madurai (india)                                           0.000200
+whole india                                               0.000200
+pune, mumbai                                              0.000200
+kolar gold fields                                         0.000200
+odense                                                    0.000200
+ghughus, tadali , gouri , sasti                           0.000200
+mumabi                                                    0.000200
+shivpuri                                                  0.000200
+ithaca, ny                                                0.000200
+gudavalli                                                 0.000200
+nocton                                                    0.000200
+san german, puerto rico                                   0.000200
+calcutta, india                                           0.000200
+kadapa, india                                             0.000200
+agra ,mathura                                             0.000200
+vung tau, vietnam                                         0.000200
+reet                                                      0.000200
+muktsar                                                   0.000200
+indore, ujjain , mysore, chennai                          0.000200
+khatauli, gorakhpur, ghaziabad, noida, new delhi          0.000200
+khagaria                                                  0.000200
+alappuzha, kerala                                         0.000200
+kerala, india                                             0.000200
+macon, ga                                                 0.000200
+delhi, lucknow                                            0.000200
+gangapur                                                  0.000200
+baton rouge                                               0.000200
+bangalore, mysore, tumkur                                 0.000200
+dammam, saudi arabia                                      0.000200
+thorens-glières                                           0.000200
+udumalpet, coimbatore                                     0.000200
+mumbai, dehradun, ahmedabad & delhi                       0.000200
+urapar                                                    0.000200
+vermont, bay area, milwaukee, bombay                      0.000200
+madrid, spain                                             0.000200
+new delhi, chandigarh                                     0.000200
+romsey, hampshire, united kingdom                         0.000200
+dar-es-salaam                                             0.000200
+seremban                                                  0.000200
+midnapur, west bengal                                     0.000200
+guna in m.p.                                              0.000200
+changanacherry                                            0.000200
+baltimore                                                 0.000200
+avila                                                     0.000200
+behind you                                                0.000200
+under the bridge                                          0.000200
+bhopal, delhi, hyderabad, london                          0.000200
+pitampura,new delhi                                       0.000200
+fort collins colorado                                     0.000200
+padma rao nagar                                           0.000200
+kizhakkenchery                                            0.000200
+bokaro,dhanbad                                            0.000200
+bengaluru,trivandrum                                      0.000200
+a.p                                                       0.000200
+kurnnol, ap                                               0.000200
+ankola, karwar, bagalkot, bangalore                       0.000200
+chamba himachal                                           0.000200
+obra, lucknow, noida                                      0.000200
+forest city, nc                                           0.000200
+aluva                                                     0.000200
+manchester, united kingdom                                0.000200
+puerto montt, chile                                       0.000200
+guwhati                                                   0.000200
+bellevue, wa                                              0.000200
+guntur,vijayawada......                                   0.000200
+kanjirapally, kerala, india                               0.000200
+lakhimpur kheri                                           0.000200
+maraimalai nagar                                          0.000200
+kurnool, vellore, chennai, hyderabad                      0.000200
+mica ahmedabad                                            0.000200
+pune, ahmedabad, vadodara, rajkot                         0.000200
+braga, portugal                                           0.000200
+aundh, pune                                               0.000200
+kodad,gudivada,vja,vascodagama                            0.000200
+edmonton                                                  0.000200
+bangalore, dubai                                          0.000200
+kotekar , mangalore                                       0.000200
+nadaun                                                    0.000200
+london, new delhi, tirunelveli, dubai, coonoor            0.000200
+vijayawada,india                                          0.000200
+vellore, india                                            0.000200
+teichy                                                    0.000200
+budhanoor, erode, bangalore, malongo                      0.000200
+near guntur....                                           0.000200
+kovai , chennai                                           0.000200
+fontana, california                                       0.000200
+temora, nsw                                               0.000200
+fredericia                                                0.000200
+a'bad,mumbai                                              0.000200
+angamaly                                                  0.000200
+ichchapuram, vizianagaram, guntur, visakhapatnam          0.000200
+andhra,bangalore,goa                                      0.000200
+rjy                                                       0.000200
+durgapur, calcutta, gurgaon                               0.000200
+shivpuri in m.p                                           0.000200
+pune, jalgaon                                             0.000200
+bhoom                                                     0.000200
+reading, bershire, united kingdom                         0.000200
+aligarh, bangalore, hyderabad, pilani                     0.000200
+sherman oaks, ca                                          0.000200
+houghton, mi                                              0.000200
+goa, delhi, pune                                          0.000200
+new delhi/agra                                            0.000200
+kolkata,chennai                                           0.000200
+ganagapur, jewargi, gulbarga, sindagi                     0.000200
+bandel                                                    0.000200
+puttur                                                    0.000200
+pkd, vizag, bangalore                                     0.000200
+villa devoto                                              0.000200
+una                                                       0.000200
+wayne, nj                                                 0.000200
+modinagar,india                                           0.000200
+richardson, mallur                                        0.000200
+berkeley, ca                                              0.000200
+sunny isles                                               0.000200
+majitar, sikkim                                           0.000200
+tempe                                                     0.000200
+nandyal                                                   0.000200
+melbourne, victoria, australia                            0.000200
+bandel,kolkata                                            0.000200
+hyderabad, andhra pradesh.                                0.000200
+dallas, tx                                                0.000200
+australia                                                 0.000200
+ravulapalem                                               0.000200
+maple grove, mn                                           0.000200
+anthiyur                                                  0.000200
+pandara road, new delhi                                   0.000200
+puttur, pulivendula                                       0.000200
+bhadrapur                                                 0.000200
+camuy                                                     0.000200
+limerick                                                  0.000200
+kolkata, mumbai                                           0.000200
+doberschütz                                               0.000200
+raleigh                                                   0.000200
+salvaterra de magos                                       0.000200
+kudremukh, karnataka, india                               0.000200
+santiago, chile                                           0.000200
+steinbach                                                 0.000200
+chennai, helsinki, seattle, omaha, indore                 0.000200
+hajipur                                                   0.000200
+all over india                                            0.000200
+new delhi, agra , chennai                                 0.000200
+gollala mamidada                                          0.000200
+timisoara                                                 0.000200
+bangalore, bombay,                                        0.000200
+erode,coimbatore,perundurai                               0.000200
+riyadh, saudi arabia                                      0.000200
+vasco-da-gama                                             0.000200
+labpur                                                    0.000200
+coimbatore, rasipuram (near salem), chennai               0.000200
+scordia (ct)                                              0.000200
+hyd,goa...                                                0.000200
+chinsurah, kolkata, chennai                               0.000200
+ny, nj, il, in, uk, india                                 0.000200
+united states of america                                  0.000200
+new delhi, punjab, barnala, ludhiana, jammu, ka...        0.000200
+nashik,maharashtra,india                                  0.000200
+uk                                                        0.000200
+kudremukh, bangalore, shimoga                             0.000200
+bardoli, gujarat, india                                   0.000200
+troy, ny                                                  0.000200
+trichur, trivandrum, new delhi                            0.000200
+federal way                                               0.000200
+bhaktapur                                                 0.000200
+phagwara ludhiana chandigarh                              0.000200
+mylapore, chennai                                         0.000200
+katwa                                                     0.000200
+udumalpet, bangalore, palakkad, chennai, san jo...        0.000200
+pune, delhi, patna, mumbai                                0.000200
+ballarat, victoria, australia                             0.000200
+budhanoor                                                 0.000200
+surathkal,hyderabad,mangalore                             0.000200
+chelode, kozhikode, chennai                               0.000200
+hyderabad, nizamabad, gandhinagar.                        0.000200
+hebbur                                                    0.000200
+hyderabad, pune, gurgaon                                  0.000200
+malayasia                                                 0.000200
+muncie                                                    0.000200
+only chennai                                              0.000200
+erode-coimbatore-bangalore                                0.000200
+pune, nainital, delhi                                     0.000200
+ahemadabad                                                0.000200
+thiruvarur                                                0.000200
+solapur                                                   0.000200
+brest, france                                             0.000200
+vellore,tamil nadu                                        0.000200
+dakar                                                     0.000200
+nawanshahr                                                0.000200
+nagari                                                    0.000200
+savannah, ga                                              0.000200
+koduvally                                                 0.000200
+san ramon, ca                                             0.000200
+kaithal                                                   0.000200
+panvel                                                    0.000200
+gainesville,florida                                       0.000200
+tanuku,hyderabad                                          0.000200
+north york, ontairo                                       0.000200
+thai binh, vietnam                                        0.000200
+nani                                                      0.000200
+pimpri chinchwad                                          0.000200
+kuppam                                                    0.000200
+baku, azerbaijan                                          0.000200
+rohini delhi                                              0.000200
+drobeta-turnu-severin                                     0.000200
+seattle , wa                                              0.000200
+vasco da gama                                             0.000200
+thanjavur, india                                          0.000200
+khatauli                                                  0.000200
+coimbatore, rasipuram, chennai, kottayam                  0.000200
+geneva, switzerland                                       0.000200
+cape town                                                 0.000200
+irvine, ca                                                0.000200
+hyderabad, pilani, buffalo                                0.000200
+mecon colony, ranchi                                      0.000200
+hamburg                                                   0.000200
+agra(u.p), cochin(kerala),                                0.000200
+chinsurah                                                 0.000200
+nagaon, assam                                             0.000200
+bhubaneswar, rourkela, kolkata, gainesville               0.000200
+aurangabad, mumbai, pune                                  0.000200
+nizamabad, ap                                             0.000200
+arlington, texas                                          0.000200
+iiit,hyderabad                                            0.000200
+kanpur, india                                             0.000200
+mohali                                                    0.000200
+aluva, kerala, india                                      0.000200
+chandighar,varanasi                                       0.000200
+anakkallu                                                 0.000200
+belgium                                                   0.000200
+dhanbad, pune, raigarh                                    0.000200
+watrap                                                    0.000200
+stavanger                                                 0.000200
+guntur,vijaywada                                          0.000200
+charlotte,nc                                              0.000200
+mancherial                                                0.000200
+nauni                                                     0.000200
+saligrama, udupi                                          0.000200
+jamaica, ny                                               0.000200
+lucnow                                                    0.000200
+pune,delhi                                                0.000200
+shimla, himachal pradesh, india                           0.000200
+milano                                                    0.000200
+wiesbaden                                                 0.000200
+dhanbad, india                                            0.000200
+planet earth (allegedly)                                  0.000200
+wuppertal                                                 0.000200
+beawar                                                    0.000200
+belgium, luxembourg, america, uk, germany, france         0.000200
+raipur, india                                             0.000200
+cochin, singapore,germany                                 0.000200
+mazgaon                                                   0.000200
+roorkee,lucknow,patiala,gurgaon                           0.000200
+barcelona spain                                           0.000200
+sutihara, darbhanga, delhi                                0.000200
+seattle washington                                        0.000200
+ås, akershus                                              0.000200
+mavelikkara                                               0.000200
+mansa,punjab                                              0.000200
+gold coast                                                0.000200
+sichuan                                                   0.000200
+udupi, bangalore                                          0.000200
+trichy india, nashua nh usa, delhi india, ghazi...        0.000200
+rochester ny us                                           0.000200
+palakkad,bangalore                                        0.000200
+gwalior,bangalore                                         0.000200
+banglore , hyderbad, ooty                                 0.000200
+allahabad, kota, nagpur                                   0.000200
+kanchipuram                                               0.000200
+pianeta terra                                             0.000200
+land of legends "ongole"                                  0.000200
+hell-hole                                                 0.000200
+deoghar                                                   0.000200
+studená 37856                                             0.000200
+airoli, mumbai                                            0.000200
+repalle                                                   0.000200
+bendigo                                                   0.000200
+tucson                                                    0.000200
+shravasti                                                 0.000200
+kodad                                                     0.000200
+agra(u.p.), india                                         0.000200
+praha                                                     0.000200
+mumbai,maharashtra,india                                  0.000200
+doha                                                      0.000200
+vellore,india                                             0.000200
+hydearabad                                                0.000200
+harbin                                                    0.000200
+garhbeta                                                  0.000200
+monroe, la                                                0.000200
+mumbai, hyderabad                                         0.000200
+chennai, utah, cochin, kottayam                           0.000200
+indore, madhya pradesh, india                             0.000200
+crestview, fl                                             0.000200
+colombo, sri lanka                                        0.000200
+edamon                                                    0.000200
+antofagasta                                               0.000200
+moscow, russia                                            0.000200
+tiruchendhur                                              0.000200
+allahabad,lucknow                                         0.000200
+patna, new delhi, mumbai, hyderabad, chennai              0.000200
+bhadrak                                                   0.000200
+tenkasi, india                                            0.000200
+durgapur, calcutta                                        0.000200
+delhi, mumbai, patna, ahmedabad, pondicherry, a...        0.000200
+aartselaar                                                0.000200
+anaimalai                                                 0.000200
+cupertino, ca                                             0.000200
+dharwad                                                   0.000200
+leicester                                                 0.000200
+adb,hyd                                                   0.000200
+andheri, mumbai, maharshtra                               0.000200
+_ _ _ _ _ _                                               0.000200
+hyderabad, rajahmundry, tucson, scottsdale                0.000200
+koppal                                                    0.000200
+kumamoto, fukuoka, sydney                                 0.000200
+krishnagiri                                               0.000200
+ramanathapuram                                            0.000200
+ujire d.k                                                 0.000200
+wakefield, united kingdom                                 0.000200
+proddatur and hyderabad                                   0.000200
+chennai,trichy                                            0.000200
+edlapadu                                                  0.000200
+tenkasi                                                   0.000200
+lusaka,kabul,dhaka,durgapur                               0.000200
+dhar                                                      0.000200
+concord, california                                       0.000200
+patna,guwahati                                            0.000200
+isabela puerto rico                                       0.000200
+some pubs, other houses                                   0.000200
+patna,warangal                                            0.000200
+ilmenau                                                   0.000200
+sohela                                                    0.000200
+of course, nagpur only!!                                  0.000200
+tuscaloosa, al                                            0.000200
+india, uk, ireland                                        0.000200
+rohini                                                    0.000200
+varese                                                    0.000200
+munger bihar                                              0.000200
+ahmednagar                                                0.000200
+banglore,karnataka                                        0.000200
+sanford, mi                                               0.000200
+alleppey                                                  0.000200
+arni                                                      0.000200
+mumbai, bangalore, hyderabad, vellore                     0.000200
+vishakapattnam,tvm                                        0.000200
+oslo, norway                                              0.000200
+kanjirappally                                             0.000200
+mom's home and dad's work area..!!! :d                    0.000200
+newai jaipur rajasthan                                    0.000200
+eskilstuna                                                0.000200
+ramagundam, rihand, vindhyachal                           0.000200
+gangolli                                                  0.000200
+hanuman junction                                          0.000200
+chelode                                                   0.000200
+kaiga                                                     0.000200
+lisbon                                                    0.000200
+kolkat                                                    0.000200
+chamba, una, noida, delhi, gurgaon                        0.000200
+jalgaon                                                   0.000200
+dadar                                                     0.000200
+mettupalayam                                              0.000200
+kolhapur, sangli, pune, mumbai                            0.000200
+reliance greens, jamnagar, gujarat                        0.000200
+home town                                                 0.000200
+pueblo colorado                                           0.000200
+dawson creek                                              0.000200
+boulder, co                                               0.000200
+vizianagaram,andhra pradesh.                              0.000200
+mount abu(abu road)                                       0.000200
+tellichery                                                0.000200
+oxford, united kingdom                                    0.000200
+lucknow,india                                             0.000200
+rajahmundry,ap                                            0.000200
+dharwad, secunderabad, bangalore, mysore, jaipu...        0.000200
+baho                                                      0.000200
+bridgewater, nj, usa                                      0.000200
+estang                                                    0.000200
+darmstadt, germany                                        0.000200
+bangalore, mumbai, austin tx usa                          0.000200
+kannur,kerala,india                                       0.000200
+pefferlaw, ontario                                        0.000200
+coventry, uk                                              0.000200
+sutihara, darbhanga, delhi, jammu & kashmir, ra...        0.000200
+puerto rico                                               0.000200
+shrimadhopur,rajasthan                                    0.000200
+mooresville, nc                                           0.000200
+rewari                                                    0.000200
+gondia                                                    0.000200
+santa cruz                                                0.000200
+thiuvalla, kerala                                         0.000200
+brooklyn park, mn                                         0.000200
+cotonou, dakar, toulouse, madrid, rouen, paris,...        0.000200
+palakkad,kerala                                           0.000200
+台北市                                                       0.000200
+maracaibo                                                 0.000200
+phagwara jaipur                                           0.000200
+kozhikode, kerala                                         0.000200
+gulaothi                                                  0.000200
+kolkata,                                                  0.000200
+malad, mumbai, maharashtra                                0.000200
+como, italy                                               0.000200
+台北縣                                                       0.000200
+south delhi                                               0.000200
+rani bagh                                                 0.000200
+bhimilpatnam,vishakaptnam,hyderabad,manipur,guntur        0.000200
+minato-ku, tokyo                                          0.000200
+ghughus, tadali , gouri , sasti , kota                    0.000200
+bazpur                                                    0.000200
+tunis                                                     0.000200
+wagga wagga, nsw                                          0.000200
+parlakhemundi                                             0.000200
+erode,coimbatore                                          0.000200
+jaipur, kota                                              0.000200
+mangrol                                                   0.000200
+kashmir                                                   0.000200
+panchkula,haryana                                         0.000200
+indore mp                                                 0.000200
+cuttack,bhubneswar,agartala,...                           0.000200
+kolkata,west bengal,india                                 0.000200
+bellandur, bangalore                                      0.000200
+punjab                                                    0.000197
+sibsagar                                                  0.000197
+kharagpur, west bengal                                    0.000191
+ganganagar                                                0.000190
+manchester                                                0.000190
+bangalore india                                           0.000189
+nantes                                                    0.000183
+kanpur, uttar pradesh                                     0.000183
+lyon                                                      0.000183
+orlando, fl                                               0.000183
+jaipur, india                                             0.000183
+lucknow, india                                            0.000180
+salem, india                                              0.000180
+rochester, ny                                             0.000180
+srikakulam                                                0.000180
+kanpur, up                                                0.000180
+chennai,tamil nadu,india                                  0.000180
+roorkee, india                                            0.000178
+pittsburgh, pa                                            0.000173
+vancouver                                                 0.000173
+washington dc                                             0.000167
+kota, india                                               0.000167
+panjim                                                    0.000167
+kanyakumari                                               0.000167
+jorhat                                                    0.000167
+new delhi,india                                           0.000167
+nashville, tn                                             0.000164
+berhampur,orissa,india                                    0.000160
+abu dhabi, uae                                            0.000160
+tamilnadu,india                                           0.000160
+aladipatti                                                0.000160
+sindhanur                                                 0.000160
+st.neots,uk                                               0.000160
+brno,czech republic                                       0.000160
+santa clara                                               0.000160
+brighton                                                  0.000158
+singrauli                                                 0.000157
+new jersey                                                0.000157
+muzaffarpur                                               0.000150
+hardoi                                                    0.000150
+ahemdabad                                                 0.000150
+noida, india                                              0.000150
+phoenix, az                                               0.000150
+jallandhar                                                0.000150
+banglore, karnataka                                       0.000150
+saharanpur                                                0.000147
+jaipur, rajasthan                                         0.000147
+chennai, tamilnadu, india                                 0.000147
+mathura                                                   0.000144
+nalgonda                                                  0.000144
+majhitar                                                  0.000142
+trivandrum, kerala, india                                 0.000140
+kuala lumpur                                              0.000140
+sikkim                                                    0.000140
+meerut, india                                             0.000137
+thrissur, kerala                                          0.000137
+seattle, wa                                               0.000137
+tokyo                                                     0.000137
+kuwait                                                    0.000135
+royersford, pa                                            0.000133
+makati city                                               0.000133
+izmir                                                     0.000133
+tuticorin                                                 0.000133
+warsaw                                                    0.000133
+aguadilla pr                                              0.000133
+kota, rajasthan.                                          0.000133
+calicut,kerala                                            0.000133
+hannover, germany                                         0.000133
+porthcawl                                                 0.000133
+kadakkavur, thiruvananthapuram                            0.000133
+renton                                                    0.000133
+hoshiarpur                                                0.000133
+puttur, karnataka                                         0.000133
+guwahati, assam                                           0.000133
+loni, maharashtra                                         0.000133
+wayne, pa                                                 0.000133
+karkala                                                   0.000133
+karvenagar                                                0.000133
+surat, gujarat, india                                     0.000133
+thane, maharashtra, india                                 0.000133
+enghien-les-bains, france                                 0.000133
+hosur                                                     0.000133
+tiruvallur                                                0.000133
+limeira                                                   0.000133
+vaddeswaram                                               0.000133
+velachery, chennai, tamilnadu                             0.000133
+lake charles, louisiana,usa                               0.000133
+cardiff, uk                                               0.000133
+college station, tx                                       0.000133
+howrah                                                    0.000133
+gauhati, vadodra, barauni                                 0.000133
+yucaipa, ca                                               0.000133
+chennai , india                                           0.000133
+bridgend                                                  0.000133
+sc                                                        0.000133
+sriganganagar                                             0.000133
+godhra                                                    0.000133
+highland park                                             0.000133
+santa branca                                              0.000133
+kharagpur, wb                                             0.000133
+karimganj                                                 0.000133
+paranaque city, philippines                               0.000133
+ludhiana, punjab.                                         0.000133
+kolkatta                                                  0.000133
+nayudupeta                                                0.000133
+salta, argentina                                          0.000133
+chickmagalur                                              0.000133
+bodhgaya                                                  0.000133
+bh-2, nsit, sec 3 dwarka, new delhi                       0.000133
+pittsburgh,usa                                            0.000133
+st. louis, missouri                                       0.000133
+gunupur (orissa)                                          0.000133
+blacksburg, va                                            0.000133
+nelamangala                                               0.000133
+vizianagaram                                              0.000133
+bucharest                                                 0.000133
+vetapalem                                                 0.000133
+erode, india                                              0.000133
+ludhian,punjab                                            0.000133
+badlapur                                                  0.000133
+beer-sheba                                                0.000133
+kaplakkam, india                                          0.000133
+west ryde, nsw                                            0.000133
+st.louis                                                  0.000133
+kharagpur, pune, bangalore                                0.000133
+hyderabad,ap                                              0.000133
+tadepalligudem                                            0.000133
+trivandrum, india                                         0.000133
+burke, va                                                 0.000133
+aachen                                                    0.000133
+satellite beach, fl                                       0.000133
+uruguay, argentina, phoenix                               0.000133
+troy                                                      0.000133
+kollam,kerala                                             0.000133
+kozhikkode                                                0.000133
+moreno valley, ca                                         0.000133
+brazil                                                    0.000133
+clifton park, ny                                          0.000133
+sendhwa, madhya pradesh                                   0.000133
+kolhapur, in                                              0.000133
+whitby                                                    0.000133
+tanuku                                                    0.000133
+joplin, missouri                                          0.000133
+mydukur                                                   0.000133
+petaling jaya                                             0.000133
+greenville, sc, usa                                       0.000133
+nuapada                                                   0.000133
+rewa                                                      0.000133
+edison                                                    0.000133
+ahmedabad, gujarat india                                  0.000133
+bengaluru, karnataka                                      0.000133
+vasant enclave, vasant vihar , new delhi                  0.000133
+raver india                                               0.000133
+kurnool, andhra pradesh                                   0.000133
+baltimore, md                                             0.000133
+ghaziabad , delhi ncr                                     0.000133
+antibes, france                                           0.000133
+philadelphia                                              0.000133
+bhadravati, karnataka                                     0.000133
+gaya (bihar)                                              0.000133
+indiana                                                   0.000133
+vadodara, gujarat, india                                  0.000133
+blacksburg                                                0.000133
+kunming                                                   0.000133
+mumbai, in                                                0.000133
+new jersey, usa                                           0.000133
+kolkata , varanasi , ghazipur , lucknow , ghazi...        0.000133
+eral, tamilnadu                                           0.000133
+bhosari                                                   0.000133
+trichy ,india                                             0.000133
+hosur , india                                             0.000133
+andhra pradesh                                            0.000133
+eastern province                                          0.000133
+san juan pr                                               0.000133
+bhubaneswar (orissa)                                      0.000133
+jalna                                                     0.000133
+los angeles, chile                                        0.000133
+barabanki, uttar pradesh                                  0.000133
+dubai, uae                                                0.000133
+angola, indiana                                           0.000133
+bowmanville                                               0.000133
+mysooru                                                   0.000133
+bremen                                                    0.000133
+bedford, ma                                               0.000133
+sitamarhi                                                 0.000133
+khachrod                                                  0.000133
+redmond, wa                                               0.000133
+bridgeport, connecticut                                   0.000133
+bilaspur,chhattisgarh,india                               0.000133
+philadephia, pa                                           0.000133
+karminagar                                                0.000133
+hyderabad,andhra pradesh                                  0.000133
+kodukulanji, kerala                                       0.000133
+daphne                                                    0.000133
+são paulo                                                 0.000133
+etah                                                      0.000133
+andhrapradesh                                             0.000133
+almora                                                    0.000133
+kalyan, maharashtra                                       0.000133
+chapra                                                    0.000133
+saidapet, chennai, tamilnadu                              0.000133
+miami, fl                                                 0.000133
+haapsalu                                                  0.000133
+manipal india                                             0.000133
+west lafayette                                            0.000133
+sasaram                                                   0.000133
+johannesburg                                              0.000133
+uppsala                                                   0.000133
+imphal                                                    0.000133
+angola                                                    0.000133
+dovre                                                     0.000133
+ahmadabad,india                                           0.000133
+woodstock                                                 0.000133
+baroda, gujarat                                           0.000133
+hicksville                                                0.000133
+agartala, in                                              0.000133
+jefferson city, missouri                                  0.000133
+stuttgart                                                 0.000133
+fremont, ca                                               0.000133
+united kingdom                                            0.000133
+mandsaur                                                  0.000133
+pandillapalli                                             0.000133
+coimbatore, tamilnadu                                     0.000133
+guwahati,india                                            0.000133
+new delhi and noida                                       0.000133
+kitchener, on                                             0.000133
+cavite, philippines                                       0.000133
+muttikulangarra                                           0.000133
+newport                                                   0.000133
+ottapalam                                                 0.000133
+salford                                                   0.000133
+coimbator                                                 0.000133
+bengalooru                                                0.000133
+yol cantt                                                 0.000133
+menstrie                                                  0.000133
+allahabad, uttar pradesh                                  0.000133
+caracas                                                   0.000133
+glasgow                                                   0.000133
+lonere,raigad                                             0.000133
+srikalahasthi                                             0.000133
+coonoor , coimbatore                                      0.000133
+warangal, ap                                              0.000133
+jeddah, saudi arabia                                      0.000133
+tadipatri                                                 0.000133
+dharampura                                                0.000133
+chennai,tamilnadu                                         0.000133
+chiayi                                                    0.000133
+bhagalpur,bihar,india                                     0.000133
+noida, new delhi                                          0.000133
+pune india                                                0.000133
+angeles city, philippines                                 0.000133
+redlands, ca                                              0.000133
+iddukki                                                   0.000133
+vancouver, canada                                         0.000133
+lunéville                                                 0.000133
+doha, qatar                                               0.000133
+ramat gan                                                 0.000133
+antarctica                                                0.000133
+tiruchirappalli, india                                    0.000133
+pakala                                                    0.000133
+y felinheli                                               0.000133
+jackson                                                   0.000133
+bayamon pr                                                0.000133
+patna,bihar,india                                         0.000133
+gdansk                                                    0.000133
+zonguldak                                                 0.000133
+sultanganj,bihar                                          0.000133
+indianapolis, india                                       0.000133
+fort lauderdale, fl                                       0.000133
+lakhimpur                                                 0.000133
+penang, malaysia                                          0.000133
+connecticut                                               0.000133
+stenhousemuir                                             0.000133
+muzaffar nagar, india                                     0.000133
+uttranchal                                                0.000133
+gran canaria                                              0.000133
+visakhapatnam, india                                      0.000133
+jersey city                                               0.000133
+namma bengalooru                                          0.000133
+takli dhokeshwar, ahmednagar                              0.000133
+muncie, indiana                                           0.000133
+thiruvananthapuram, kerala, india                         0.000133
+madrid / gran canaria                                     0.000133
+portugal                                                  0.000133
+ernakulam, kerala, india                                  0.000133
+modinagar                                                 0.000133
+sirsi , karnataka                                         0.000133
+clemson                                                   0.000133
+godavarikhani                                             0.000133
+kollegal                                                  0.000133
+chitradurga                                               0.000133
+trichy-srirangam                                          0.000133
+wales                                                     0.000133
+kavali                                                    0.000133
+nasik, india                                              0.000133
+erode, tamil nadu, india                                  0.000133
+berkeley                                                  0.000133
+manama,bahrain                                            0.000133
+cordoba, argentina                                        0.000133
+london, united kingdom                                    0.000133
+roanoke usa                                               0.000133
+north hollywood, ca                                       0.000133
+attingal, kerala, india                                   0.000133
+tampines, singapore                                       0.000133
+kapurthala, punjab.                                       0.000133
+balangir                                                  0.000133
+parbhani                                                  0.000133
+khammam                                                   0.000133
+palakol                                                   0.000133
+dewas                                                     0.000133
+cincinnati, oh                                            0.000133
+west sacramento, ca                                       0.000133
+indore, india                                             0.000133
+indianapolis, indianan                                    0.000133
+tawang                                                    0.000133
+khammam india                                             0.000133
+brampton                                                  0.000133
+pantnagar                                                 0.000133
+delhi                                                     0.000133
+cardiff                                                   0.000133
+ipswich, uk                                               0.000133
+caransebes                                                0.000133
+reading, pa                                               0.000133
+imphal, arunachal, jaipur, bangaluru                      0.000133
+cherkasy                                                  0.000133
+manila                                                    0.000133
+lagos                                                     0.000133
+gaya                                                      0.000133
+oklahoma                                                  0.000133
+bhenda, ahmednagar                                        0.000133
+auraiya                                                   0.000133
+cairo                                                     0.000133
+summersville, mo                                          0.000133
+thanjavur, tamil nadu, india                              0.000133
+ranni, kerala                                             0.000133
+hell for a couple of weeks                                0.000133
+aachen, germany                                           0.000133
+powai                                                     0.000133
+dibiyapur                                                 0.000133
+vapi                                                      0.000133
+parís                                                     0.000133
+vancover                                                  0.000133
+navi mumbai, maharashtra                                  0.000133
+bedok, singapore                                          0.000133
+moradabaad                                                0.000133
+sharjah, uae                                              0.000130
+bokaro                                                    0.000130
+gujarat                                                   0.000130
+la rochelle                                               0.000130
+dharamshala                                               0.000130
+dehradoon                                                 0.000129
+reading                                                   0.000127
+london, uk                                                0.000124
+anand                                                     0.000124
+belgaum, karnataka                                        0.000124
+jaisalmer                                                 0.000124
+bhubaneswar, india                                        0.000124
+karnataka                                                 0.000122
+umaria                                                    0.000122
+new delhi, delhi                                          0.000117
+bhubhaneshwar                                             0.000116
+cupertino                                                 0.000114
+sidhi                                                     0.000114
+ajman                                                     0.000114
+patna, bihar                                              0.000111
+nottingham                                                0.000111
+texas                                                     0.000107
+mysore, karnataka                                         0.000107
+budapest                                                  0.000107
+ranchi, jharkhand, india                                  0.000107
+patna, india                                              0.000107
+kalimpong                                                 0.000107
+qatar                                                     0.000102
+manama                                                    0.000100
+biswanath chariali                                        0.000100
+na                                                        0.000100
+pollibetta                                                0.000100
+kolkata, wb                                               0.000100
+tucson, arizona                                           0.000100
+amherst                                                   0.000100
+gandhinagar, gujarat                                      0.000100
+bruchsal                                                  0.000100
+barakar                                                   0.000100
+al jubail, saudi arabia                                   0.000100
+bida, nigeria                                             0.000100
+vijayawada, a.p                                           0.000100
+bangalore city, karnataka                                 0.000100
+tiruvannamalai, tamil nadu, india                         0.000100
+chamarajanagar                                            0.000100
+narayanguda                                               0.000100
+tn                                                        0.000100
+ponda                                                     0.000100
+ontario, ny                                               0.000100
+sangrur                                                   0.000100
+davangere, india                                          0.000100
+bhubneshwar                                               0.000100
+toulouse                                                  0.000100
+anantapur                                                 0.000100
+usa ,nepal                                                0.000100
+rehovot                                                   0.000100
+durham new hampshire                                      0.000100
+amritsar,india                                            0.000100
+vence                                                     0.000100
+summit nj                                                 0.000100
+la crosse, wisconsin                                      0.000100
+chico, ca                                                 0.000100
+02474                                                     0.000100
+govindpur, dhanbad, jharkhand                             0.000100
+winston-salem, nc                                         0.000100
+anchorage, alaska                                         0.000100
+chapel hill, nc                                           0.000100
+gudur                                                     0.000100
+bharuch, gujarat, india                                   0.000100
+new orleans, la                                           0.000100
+coimbatore,tamil nadu,india                               0.000100
+argentina                                                 0.000100
+parsippany, nj, usa                                       0.000100
+santa cruz, ca                                            0.000100
+burla                                                     0.000100
+muvattupuzha                                              0.000100
+farmington, ct                                            0.000100
+valsad, india                                             0.000100
+vadodra                                                   0.000100
+galati                                                    0.000100
+fatehgarh                                                 0.000100
+gloucester                                                0.000100
+eielson afb, ak                                           0.000100
+parasia                                                   0.000100
+elgin, il                                                 0.000100
+patra                                                     0.000100
+surendranagar                                             0.000100
+madhepura                                                 0.000100
+bhavnagar, gujarat                                        0.000100
+macedonia                                                 0.000100
+new delhi, inida                                          0.000100
+lucknow india                                             0.000100
+san antonio                                               0.000100
+pohang                                                    0.000100
+golden, co                                                0.000100
+shirkol                                                   0.000100
+citrus heights                                            0.000100
+latur, india                                              0.000100
+walnut creek ca                                           0.000100
+alpharetta                                                0.000100
+jasol, rajasthan                                          0.000100
+serbia                                                    0.000100
+sirhind                                                   0.000100
+kannauj                                                   0.000100
+moga                                                      0.000100
+bellary                                                   0.000100
+bhiwani                                                   0.000100
+uttar pradesh                                             0.000100
+san jose, ca, usa                                         0.000100
+nepalgunj, nepal                                          0.000100
+vágur                                                     0.000100
+southampton                                               0.000100
+blue bell                                                 0.000100
+lotsa names come to mind....                              0.000100
+fair oaks                                                 0.000100
+concord, nh                                               0.000100
+margao                                                    0.000100
+faizabad                                                  0.000100
+bodrum                                                    0.000100
+busan                                                     0.000100
+tehri                                                     0.000100
+shikaripura                                               0.000100
+villingen-schwenningen                                    0.000100
+benghazi, libya                                           0.000100
+belpahar                                                  0.000100
+ambai                                                     0.000100
+austin                                                    0.000100
+gandhinagar, gujarat, india                               0.000100
+brussels                                                  0.000100
+kashipur                                                  0.000100
+watsonville, ca                                           0.000100
+dharmaj                                                   0.000100
+dehra dun                                                 0.000100
+mississauga                                               0.000100
+cambridgeshire, uk                                        0.000100
+ferozepur, punjab, india                                  0.000100
+carcassonne                                               0.000100
+balotra                                                   0.000100
+02140                                                     0.000100
+banpur                                                    0.000100
+sønderborg                                                0.000100
+miraj                                                     0.000100
+hanscom afb, massachusetts                                0.000100
+cuddalore                                                 0.000100
+coonoor, tamil nadu                                       0.000100
+manali                                                    0.000100
+tórshavn                                                  0.000100
+york, sc                                                  0.000100
+85051                                                     0.000100
+stamford                                                  0.000100
+ballarpur                                                 0.000100
+hamden, ct, usa                                           0.000100
+surathkal, karnataka, india                               0.000100
+bareilly, india                                           0.000100
+madhugiri                                                 0.000100
+guna                                                      0.000100
+roma                                                      0.000100
+monterrey, nuevo leon, mexico                             0.000100
+higashimatsuyama                                          0.000100
+coimbatore - peelamedu, saibaba colony                    0.000100
+dharapuram                                                0.000100
+cd. victoria, tamaulipas, mexico                          0.000100
+in three different states                                 0.000100
+andheri(w), mumbai                                        0.000100
+kastamonu                                                 0.000100
+state college                                             0.000100
+st. petersburg                                            0.000100
+bardoli                                                   0.000100
+froðba                                                    0.000100
+tarikere                                                  0.000100
+ajmer, rajasthan, india                                   0.000100
+vyara                                                     0.000100
+udaipur,rajasthan                                         0.000100
+andra pradesh                                             0.000100
+eindhoven                                                 0.000100
+san andres cholula, puebla, mexico                        0.000100
+pataila                                                   0.000100
+coorg ( gonikuppa)                                        0.000100
+noida, gr. noida                                          0.000100
+allahabad, india                                          0.000100
+gubbi                                                     0.000100
+chennai - triplicane, koyambedu                           0.000100
+trichy - srirangam                                        0.000100
+aliso viejo                                               0.000100
+kadiri                                                    0.000100
+shirpur                                                   0.000100
+godavari kani                                             0.000100
+hannover                                                  0.000100
+faridkot                                                  0.000100
+nanchang                                                  0.000100
+aburoad                                                   0.000100
+béziers                                                   0.000100
+washim                                                    0.000100
+la selva beach, ca                                        0.000100
+kaviti                                                    0.000100
+webster, ny                                               0.000100
+vijaypur                                                  0.000100
+queretaro, queretaro, mexico                              0.000100
+jamtara(jharkhand), chittaranjan(w.b.), rupnara...        0.000100
+hapur                                                     0.000100
+adelaide                                                  0.000100
+madison, wisconsin                                        0.000100
+begusarai                                                 0.000100
+birur                                                     0.000100
+banglaore                                                 0.000100
+richmond, bc                                              0.000100
+chennai ; trichy ; coimbatore; bangalore..                0.000100
+hemlock farms, pa                                         0.000100
+payyanur                                                  0.000100
+sambalpur                                                 0.000100
+dekalb, il                                                0.000100
+heidelberg                                                0.000100
+goteborg                                                  0.000100
+jamtara(jharkhand), chittaranjan(w.b.), rupnara...        0.000100
+porbandar                                                 0.000100
+penfield, ny                                              0.000100
+pensacola, florida                                        0.000100
+colorado springs, co                                      0.000100
+shillong, meghalaya                                       0.000100
+atlanta ga                                                0.000100
+swampscott, ma                                            0.000100
+bhopal, indore                                            0.000100
+malviya nagar, new delhi                                  0.000100
+rellivalasa                                               0.000100
+farmagudi                                                 0.000100
+nadiad                                                    0.000100
+chandigarh, punjab, india                                 0.000100
+dhenkanal                                                 0.000100
+dnepropetrovsk ua                                         0.000100
+vindhyanagar                                              0.000100
+panaji                                                    0.000100
+montréal                                                  0.000100
+killari, india                                            0.000100
+samastipur                                                0.000100
+scotts valley, ca                                         0.000100
+madras                                                    0.000100
+peru                                                      0.000100
+modesto, ca                                               0.000100
+como                                                      0.000100
+92037                                                     0.000100
+jacksonville, fl                                          0.000100
+varanasi, up                                              0.000100
+buxar                                                     0.000100
+honolulu, hawaii                                          0.000100
+springfield, nj                                           0.000100
+cebu city                                                 0.000100
+issaquah                                                  0.000100
+schaumburg, il                                            0.000100
+loughborough                                              0.000100
+phillaur, punjab, india                                   0.000100
+hyderbad                                                  0.000100
+castres                                                   0.000100
+bloomington, indiana                                      0.000100
+newjersey                                                 0.000100
+casablanca                                                0.000100
+giridih                                                   0.000100
+san bruno                                                 0.000100
+washington, dc                                            0.000100
+delft                                                     0.000100
+guwahati india                                            0.000100
+mason, oh, usa                                            0.000100
+mussoorie                                                 0.000100
+changanasserry                                            0.000100
+shimla, india                                             0.000100
+arlington                                                 0.000100
+nagpur, maharashtra                                       0.000100
+youngstown                                                0.000100
+turlock, ca                                               0.000100
+elk grove village, il                                     0.000100
+shyamnagar, wb, india                                     0.000100
+toulouse, france                                          0.000100
+hyderabad, a.p                                            0.000100
+cleveland, oh                                             0.000097
+lille                                                     0.000097
+jagdalpur                                                 0.000094
+chicago, il                                               0.000094
+beijing                                                   0.000090
+middletown, ct                                            0.000090
+jersey city, nj                                           0.000089
+bentonville ar                                            0.000089
+faridkot, punjab                                          0.000089
+oman                                                      0.000089
+tirupati india                                            0.000089
+plano tx                                                  0.000089
+nashua nh                                                 0.000089
+winston salem nc                                          0.000089
+perth                                                     0.000089
+leh                                                       0.000089
+ludhiana, india                                           0.000089
+bapatla india                                             0.000089
+cuddapah india                                            0.000089
+merrimack, nh, usa                                        0.000089
+latur                                                     0.000084
+bangkok, thailand                                         0.000084
+kolkatta, india                                           0.000084
+kota (rajasthan)                                          0.000081
+suratgarh                                                 0.000081
+malapparamba, calicut                                     0.000080
+århus                                                     0.000080
+milford, ct, usa                                          0.000080
+batala                                                    0.000080
+rampurhat, calcutta, bangalore, pune                      0.000080
+fukuoka                                                   0.000080
+parvur, kollam                                            0.000080
+douai                                                     0.000080
+new york city, ny                                         0.000080
+jeddah                                                    0.000080
+charlotte, nc                                             0.000080
+dwarka, new delhi                                         0.000080
+jaraguá do sul                                            0.000080
+rath                                                      0.000080
+bruxelles                                                 0.000080
+sitapur                                                   0.000080
+iowa city                                                 0.000080
+kolkata,west bengal, india                                0.000080
+pune, mh, india                                           0.000080
+woking, surrey, uk                                        0.000080
+asker                                                     0.000080
+logan                                                     0.000080
+visnagar                                                  0.000080
+nadakkavu, calicut                                        0.000080
+hanumangarh, rajasthan                                    0.000080
+cotonou                                                   0.000080
+elamakkara, ernakulam                                     0.000080
+nuzvid                                                    0.000080
+arrah                                                     0.000080
+surat, gujarat                                            0.000080
+dubai,uae                                                 0.000080
+bulandsahr                                                0.000080
+karaikudi, tamilnadu, india                               0.000080
+calicut, kerala                                           0.000080
+london ,uk                                                0.000080
+lucknow,uttar pradesh,india                               0.000080
+markapuram                                                0.000080
+kunnathoor                                                0.000080
+king of prussia, philadelphia                             0.000080
+muroor , kumta                                            0.000080
+dhrangadhra                                               0.000080
+ithaca                                                    0.000080
+freiburg, germany                                         0.000080
+puzhakkal, thrissur                                       0.000080
+santa ana                                                 0.000080
+agartala                                                  0.000080
+kattappana, india                                         0.000080
+ebeltoft                                                  0.000080
+cairo, egypt                                              0.000080
+savigny-le-temple                                         0.000080
+ekaaduthangal                                             0.000080
+agra, lucknow                                             0.000080
+agadir                                                    0.000080
+gainesville, fl                                           0.000080
+bellary, karnataka, india                                 0.000080
+atchison                                                  0.000080
+rold                                                      0.000080
+madakasira, ap, india                                     0.000080
+hyderabad,andhra pradesh,india                            0.000080
+erode, tamilnadu                                          0.000080
+jersey city, nj, us                                       0.000080
+jogfalls                                                  0.000080
+vit,vellore                                               0.000080
+new brunswick, new jersey                                 0.000080
+worthing, united kingdom                                  0.000080
+durham                                                    0.000080
+joinville                                                 0.000080
+dilli                                                     0.000080
+wilmington, delaware, usa                                 0.000080
+mineapolis, mn, usa                                       0.000080
+jalandhar, punjab                                         0.000080
+hyderabad/secunderabad                                    0.000080
+pelotas                                                   0.000080
+mauritius                                                 0.000080
+antwerpen, belgium                                        0.000080
+ncr - ghaziabad, gurgaon                                  0.000080
+mountain view                                             0.000080
+charlottesville, virginia, usa                            0.000080
+rabkavi                                                   0.000080
+boca raton, fl                                            0.000080
+sivsagar                                                  0.000080
+plano, texas                                              0.000080
+kanpur,uttar pradesh,india                                0.000080
+korba                                                     0.000080
+voorhees, new jersey                                      0.000080
+varodra                                                   0.000080
+surat,                                                    0.000080
+global citizen                                            0.000080
+erlangen, germany                                         0.000080
+boca raton                                                0.000080
+gannavaram                                                0.000080
+kota rajasthan                                            0.000080
+conway,arkansas                                           0.000080
+lausanne,switzerland                                      0.000080
+kansas city                                               0.000080
+qingdao                                                   0.000080
+zaria                                                     0.000080
+jamshedpur,jharkhand,india                                0.000080
+lancaster, uk                                             0.000080
+shimla,himanchal pradesh,india                            0.000080
+aska                                                      0.000080
+san jose, usa                                             0.000080
+gunupur                                                   0.000080
+khamgaon                                                  0.000080
+etawah                                                    0.000080
+hyderabad,                                                0.000080
+scarborough, north yorkshire                              0.000080
+hamirpur,himachal pradesh                                 0.000080
+gaithersburg, maryland, us                                0.000080
+augsburg, germany                                         0.000080
+gladbeck, germany                                         0.000080
+randers                                                   0.000080
+newdelhi                                                  0.000080
+mysore,karnataka,india                                    0.000080
+vallabh vidyanagar                                        0.000080
+mercer island, wa                                         0.000080
+hartford, ct, usa                                         0.000080
+west lafayette, in                                        0.000080
+poonjar(kottayam)                                         0.000080
+johannesburg, south africa                                0.000080
+jammu & kashmir                                           0.000080
+bhubaneswar, orissa, india                                0.000080
+muthuvara, thrissur                                       0.000080
+ballia                                                    0.000080
+trichy, tn, india                                         0.000080
+ahamedabad                                                0.000080
+pilani,rajasthan                                          0.000080
+riyadh, saudi arabi                                       0.000080
+north jhagrakhand, chhattisgarh                           0.000080
+attili                                                    0.000080
+chiba                                                     0.000080
+bozeman, mt, usa                                          0.000080
+changanaserry                                             0.000080
+godhavari khani                                           0.000080
+mandla                                                    0.000080
+alexandria, egypt                                         0.000080
+parkville                                                 0.000080
+guruvayoor                                                0.000080
+london. united kingdom                                    0.000080
+varanasi, india                                           0.000080
+plymouth, uk                                              0.000080
+fukushima                                                 0.000080
+muzaffarpur, india                                        0.000080
+halle, belgium                                            0.000080
+thiruchendur, tn, india                                   0.000080
+mumabi, india                                             0.000080
+rampurhat                                                 0.000080
+ambal nagar                                               0.000080
+bangalore,karnataka                                       0.000080
+nepal                                                     0.000080
+ibaraki                                                   0.000080
+rahway, nj                                                0.000080
+jhansi,uttar pradesh,india                                0.000080
+marthandam                                                0.000080
+bangaluroo                                                0.000080
+poonamallee                                               0.000080
+bhongir                                                   0.000080
+mumbai,                                                   0.000080
+ise                                                       0.000080
+coimbatore, tn, india                                     0.000080
+srinagar,india                                            0.000080
+sunnyvale , california                                    0.000080
+paravur(kollam)                                           0.000080
+cheltenham, uk                                            0.000080
+west palm beach, florida                                  0.000080
+avadi                                                     0.000080
+bhilai, chhattisgarh                                      0.000080
+pimpri                                                    0.000080
+orai, up                                                  0.000080
+albuquerque, new mexico, usa                              0.000080
+bengaluru, kar, india                                     0.000080
+durgapur,west bengal,india                                0.000080
+mainpuri                                                  0.000080
+savakattupalayam                                          0.000080
+lumding                                                   0.000080
+dumka                                                     0.000080
+gainesville                                               0.000078
+kottaym                                                   0.000067
+albany, ny                                                0.000067
+ludhiana,india                                            0.000067
+mexico-city                                               0.000067
+rydebäck                                                  0.000067
+banka                                                     0.000067
+laramie                                                   0.000067
+mangalore (ka, india)                                     0.000067
+roorkee, uttranchal                                       0.000067
+gudalur                                                   0.000067
+columbus, oh                                              0.000067
+manipal,india                                             0.000067
+rome, ga                                                  0.000067
+anantapur,india                                           0.000067
+nilakottai                                                0.000067
+uttaranchal                                               0.000067
+kaushambi                                                 0.000067
+troy, michigan                                            0.000067
+minneapolis, mn                                           0.000067
+pattambi                                                  0.000067
+lakhimpur kheri,india                                     0.000067
+velivennu                                                 0.000067
+bagalkot, india                                           0.000067
+navsari                                                   0.000067
+pandalam                                                  0.000067
+kharagpur, west bengal, india                             0.000067
+hubli, india                                              0.000067
+göteborg, sweden                                          0.000067
+dammam                                                    0.000067
+irinjalakuda, thrissur, kerala, india                     0.000067
+pittsfield, ma                                            0.000067
+al khobar                                                 0.000067
+curry, al                                                 0.000067
+sultanpur, uttar pradesh, india                           0.000067
+bhandara                                                  0.000067
+pigeon forge, tn                                          0.000067
+kharagpur,india                                           0.000067
+punalur                                                   0.000067
+birmingham, al                                            0.000067
+manchester, me                                            0.000067
+thattayil                                                 0.000067
+tokyo, japan                                              0.000067
+bhilai (cg, india)                                        0.000067
+kurnool,india                                             0.000067
+brisbane, queensland, australia                           0.000067
+chennai (tn, india)                                       0.000067
+sutanpur                                                  0.000067
+hyderabad, andra pradesh                                  0.000067
+agartala, tripura                                         0.000067
+pune, maharashtra,india                                   0.000067
+linköping                                                 0.000067
+parchur                                                   0.000067
+ankleshwar gujarat, pandalam kerala                       0.000067
+farmington, michigan                                      0.000067
+wallington nj                                             0.000067
+allahabad,uttar pradesh, india                            0.000067
+halifax,uk                                                0.000067
+waterloo, canada                                          0.000067
+pondicherry, india                                        0.000067
+karaikal                                                  0.000067
+caldwell nj                                               0.000067
+north india                                               0.000067
+najibabad,bijnor                                          0.000067
+parsippany nj                                             0.000067
+roorkee, uttarakhand                                      0.000067
+adoor                                                     0.000067
+aachen,germany                                            0.000067
+palghar                                                   0.000067
+san francisco,usa                                         0.000067
+bern                                                      0.000067
+linköping, helsingborg                                    0.000067
+kolkata, raipur, mumbai                                   0.000067
+birmingham,uk                                             0.000067
+new york ny                                               0.000067
+bjuv                                                      0.000067
+jamshedpur, jharkhand, india                              0.000067
+chandrapur                                                0.000067
+aylesbury                                                 0.000067
+seoni (mp, india)                                         0.000067
+stockholm, sweden                                         0.000067
+oneonta,  al                                              0.000067
+helsingborg                                               0.000067
+champaign, illinois, usa                                  0.000067
+dibrugarh                                                 0.000067
+riyadh,chennai                                            0.000067
+himachal                                                  0.000067
+ho chi minh                                               0.000067
+nighasan,india                                            0.000067
+akividu                                                   0.000067
+munich, germany                                           0.000067
+mithapur(dwarka)                                          0.000067
+veraval                                                   0.000067
+vasco, goa                                                0.000067
+odanchatram                                               0.000067
+dhanbad, bihar                                            0.000067
+jamtara                                                   0.000067
+poonch                                                    0.000067
+vriddhachalam, tamilnadu, india                           0.000067
+denver, colorado, usa                                     0.000067
+vishkhapatnam                                             0.000067
+edappadi                                                  0.000067
+londen                                                    0.000067
+jamnagar                                                  0.000067
+nashua, nh                                                0.000067
+coimbatore, india                                         0.000067
+noida,india                                               0.000067
+san juan, puerto rico                                     0.000067
+overland park, ks                                         0.000067
+worcester, ma                                             0.000067
+mumbai, maharashtra,india                                 0.000067
+mohania, india                                            0.000067
+ahmedabad,india                                           0.000067
+hungund, india                                            0.000067
+jamnagar, gujarat                                         0.000067
+kawardha (cg, india)                                      0.000067
+gurgaon,india                                             0.000067
+dhuvaran                                                  0.000067
+alameda, ca                                               0.000067
+ghaziabad,uttar pradesh, india                            0.000067
+urbana, illinois, usa                                     0.000067
+sharjah, united arab emirates                             0.000067
+indore, madhya pradesh                                    0.000067
+hyderabad, andrapradesh, india                            0.000067
+tenkasi,tn, india                                         0.000067
+neuss                                                     0.000067
+naini tal,india                                           0.000067
+farhult                                                   0.000067
+davis, ca                                                 0.000067
+ås, norway                                                0.000067
+kota,india                                                0.000067
+sagar                                                     0.000057
+piscataway,nj                                             0.000057
+suri                                                      0.000057
+chalakudy, kerala                                         0.000057
+stillwater                                                0.000057
+helsinki                                                  0.000057
+richmond, va                                              0.000057
+chengannur                                                0.000057
+boston, usa                                               0.000057
+kombai                                                    0.000057
+anakapalle, india                                         0.000057
+valdosta                                                  0.000057
+fujairah                                                  0.000057
+waterville, maine                                         0.000057
+bitburg, germany                                          0.000057
+auburn hills                                              0.000057
+akola                                                     0.000057
+gurgaon,haryana                                           0.000057
+bakreswar                                                 0.000057
+vikaspuri, new delhi                                      0.000057
+mt. abu                                                   0.000057
+amarillo                                                  0.000057
+carnicobar                                                0.000057
+gandhinagar, india                                        0.000057
+kolghat                                                   0.000057
+salt lake city                                            0.000057
+jadavpur,west bengal                                      0.000057
+jammu,jammu & kashmir                                     0.000057
+voorhees, nj                                              0.000057
+lansing,mi                                                0.000057
+atlanta,ga                                                0.000057
+new orleans                                               0.000057
+tuticorin,tn                                              0.000057
+tribandrum                                                0.000057
+himatnagar                                                0.000057
+framington, mi                                            0.000057
+dombivli, maharashtra                                     0.000057
+cochin & kothamangalam                                    0.000057
+arunachal pradesh                                         0.000057
+brij vihar, delhi, india                                  0.000057
+varkala, thiruvananthapuram (my native place)             0.000057
+cosenza, italy                                            0.000057
+palmyra                                                   0.000057
+vashi                                                     0.000057
+bharatpur                                                 0.000057
+mysore,karnataka                                          0.000057
+bolpur                                                    0.000057
+oslo                                                      0.000057
+chennai, tn                                               0.000057
+charlottetown                                             0.000057
+bidar                                                     0.000057
+mavelikara                                                0.000057
+minneapolis,mn                                            0.000057
+chinnamanur                                               0.000057
+hubli, karnataka                                          0.000057
+chittoor,india                                            0.000057
+patna, bihar, india                                       0.000057
+torino, italy                                             0.000057
+rajgangpur, india                                         0.000057
+kadena afb, japan                                         0.000057
+bagalkot, karnataka                                       0.000057
+omaha, nebraska                                           0.000057
+uthamapalayam                                             0.000057
+lompoc, ca                                                0.000057
+mundra, gujarat                                           0.000057
+bridgewater, nj                                           0.000057
+grand forks, nd                                           0.000057
+judhiana,punjab                                           0.000057
+ramstein, germany                                         0.000057
+virginia                                                  0.000057
+sreekrishnapuram, palakkad, kerala                        0.000057
+hyderabad, ap                                             0.000057
+scottsdale                                                0.000057
+monterey                                                  0.000057
+trivandrum, chengannur & cochin                           0.000057
+chennai,tamil nadu                                        0.000057
+abudhabi                                                  0.000057
+birmingam,al                                              0.000057
+berhampore                                                0.000057
+chinsurah,west bengal                                     0.000057
+hosur, tamilnadu                                          0.000057
+new delhi, faridabad                                      0.000057
+purulia, india                                            0.000057
+agra, uttar pradesh                                       0.000050
+jagdishpur                                                0.000050
+barrackpore                                               0.000050
+dallas tx                                                 0.000050
+toledo, oh                                                0.000050
+johrat                                                    0.000050
+kirandul                                                  0.000050
+kaithaparambu                                             0.000050
+angers                                                    0.000050
+colorado                                                  0.000050
+raniganj                                                  0.000050
+hartford                                                  0.000050
+rocky hill, ct                                            0.000050
+fort wayne in                                             0.000050
+santa clara, ca                                           0.000050
+wauseon, oh                                               0.000050
+syracuse ny                                               0.000050
+jamshedpur, india                                         0.000050
+bhuj                                                      0.000050
+gurgaon, hariyana                                         0.000050
+basti, uttar pradesh                                      0.000050
+milan                                                     0.000050
+unnao                                                     0.000050
+sydney, new south wales, australia                        0.000050
+honolulu hi                                               0.000050
+fayetteville ny                                           0.000050
+missouri                                                  0.000050
+manipal, india                                            0.000050
+anupgarh, rajasthan                                       0.000050
+san francisco, united states                              0.000050
+el segundo, california                                    0.000050
+newport news, va                                          0.000050
+bhopal, india                                             0.000050
+cannes                                                    0.000050
+illinois.                                                 0.000050
+los angeles, california                                   0.000050
+dhuri, punjab                                             0.000050
+kumily                                                    0.000050
+evansville, indiana                                       0.000050
+saint raphael                                             0.000050
+cambridge, uk                                             0.000050
+kansas                                                    0.000050
+hartford, ct                                              0.000050
+manluis ny                                                0.000050
+point richmond, california                                0.000050
+wellington, india                                         0.000050
+trichur, kerala, india                                    0.000050
+anupgarh                                                  0.000050
+rishikesh                                                 0.000050
+north wales, pa                                           0.000050
+salt lake city, utah                                      0.000050
+costa volpino                                             0.000050
+muzaffarnagar                                             0.000050
+ghazaiabad                                                0.000050
+defiance, oh                                              0.000050
+salboni                                                   0.000050
+litchfield, mi                                            0.000050
+great mills md                                            0.000050
+thamarassery                                              0.000050
+rajnandgaon                                               0.000050
+saharsa                                                   0.000050
+bishnupur                                                 0.000050
+bombay, india                                             0.000050
+mount pleasant, mi                                        0.000050
+groton ct                                                 0.000050
+sainte maxime                                             0.000050
+newburgh, indiana                                         0.000050
+arkansas                                                  0.000050
+nha trang                                                 0.000050
+vandanmedu                                                0.000050
+sorgues                                                   0.000050
+hermosa beach, california                                 0.000050
+lausanne                                                  0.000050
+dimapur                                                   0.000050
+ottawa                                                    0.000050
+airoli                                                    0.000050
+vichy                                                     0.000050
+jodpur                                                    0.000044
+khodala                                                   0.000044
+sindri                                                    0.000044
+guwahati, india                                           0.000044
+evansville, in                                            0.000044
+kharagpur, india                                          0.000044
+bloomington, in                                           0.000044
+mehsana                                                   0.000044
+boise, idaho, usa                                         0.000044
+portland, or, usa                                         0.000044
+karur, india                                              0.000044
+giddalur                                                  0.000044
+digboi, india                                             0.000044
+atlanta, ga, usa                                          0.000044
+duliajan                                                  0.000044
+jamshepur                                                 0.000044
+plantation                                                0.000044
+panipat, india                                            0.000044
+maastricht, netherlands                                   0.000044
+anumalaveedu                                              0.000044
+hyderabad / pondicherry                                   0.000044
+state college, usa                                        0.000044
+reading, uk                                               0.000044
+peterborough, uk                                          0.000044
+chicago-il                                                0.000044
+nazira                                                    0.000044
+deoria                                                    0.000044
+jamshedpur, jharkhand                                     0.000044
+west bengal                                               0.000044
+noida, up                                                 0.000044
+wada                                                      0.000044
+burlington, vermont, usa                                  0.000044
+pondicherry- ut                                           0.000044
+goleta                                                    0.000044
+wismar, germany                                           0.000044
+hyderabad-ap                                              0.000044
+chennai - tn                                              0.000044
+mcleaodganj                                               0.000044
+bitragunta                                                0.000044
+tanjore - tn                                              0.000044
+darjeeling                                                0.000044
+phoneix                                                   0.000044
+gurgaon, haryana                                          0.000044
+amrutsar                                                  0.000044
+mumbai, maharastra                                        0.000044
+anuppur                                                   0.000042
+hounslow                                                  0.000040
+delhi-delhi-india                                         0.000040
+dehradun-india                                            0.000040
+hakone, japan                                             0.000040
+exeter                                                    0.000040
+kapurthala                                                0.000040
+sagroli                                                   0.000040
+bhagalpur, india                                          0.000040
+khandwa                                                   0.000040
+niggata, japan                                            0.000040
+airoli-navi mumbai-india                                  0.000040
+trombay-mumbai-india                                      0.000040
+k-town, germany                                           0.000040
+limmasol                                                  0.000040
+yokohama, japan                                           0.000040
+puducherry, pondicherry, india                            0.000040
+mussorie-india                                            0.000040
+fayetteville, north carolina                              0.000040
+birnagar                                                  0.000040
+fulda                                                     0.000040
+jalandhar, india                                          0.000040
+jamnagar, gujarat,india                                   0.000040
+medemblik                                                 0.000040
+rochester, ny, usa                                        0.000040
+kolkata, west bengal, india                               0.000040
+hyderabad-andhra pradesh-india                            0.000040
+leverkusen                                                0.000040
+stockholm                                                 0.000040
+frankfurt, germany                                        0.000040
+jalgaon, india                                            0.000040
+little rock, arkansas                                     0.000040
+muzaffarpur-bihar--india                                  0.000040
+new delhi, delhi, india                                   0.000040
+fords, nj, usa                                            0.000040
+hamden, ct                                                0.000040
+muzzafarpur                                               0.000040
+columbia, south carolina                                  0.000040
+jammu, jammu and kashmir, india                           0.000040
+italy                                                     0.000040
+goa, india                                                0.000040
+cochin, kerala, india                                     0.000040
+bokaro, india                                             0.000040
+dublin                                                    0.000040
+kota-rajashthan-india                                     0.000040
+charlotte, north carolina                                 0.000040
+biloli                                                    0.000040
+madhya pradesh                                            0.000040
+alfter                                                    0.000040
+albuquerque, new mexico                                   0.000040
+trombay                                                   0.000040
+cary, north carolina                                      0.000040
+voorburg, netherlands                                     0.000040
+north providence, ri                                      0.000040
+wesseling                                                 0.000040
+shirdi                                                    0.000040
+jammu and kashmir                                         0.000040
+cuddapah                                                  0.000040
+vizag-ap-india                                            0.000040
+dharmsala                                                 0.000040
+slough                                                    0.000040
+philadelphia, pa                                          0.000040
+milwaukee, wi, usa                                        0.000040
+beaverton, or                                             0.000040
+ramanagaram                                               0.000040
+rajula                                                    0.000040
+amsterdam, netherlands                                    0.000040
+amersfoort                                                0.000036
+minneapolis                                               0.000036
+abhi bas itna hi                                          0.000036
+enterprise, al                                            0.000036
+gouda                                                     0.000036
+the netherlands                                           0.000036
+dimapur(nagaland)                                         0.000036
+loveland, co                                              0.000036
+bismarck, nd                                              0.000036
+germany                                                   0.000036
+aiken, sc                                                 0.000036
+kerela                                                    0.000036
+binaguri(bangal)                                          0.000036
+hoorn                                                     0.000036
+rotterdam                                                 0.000036
+spain                                                     0.000036
+ajmer(raj)                                                0.000036
+wetumpka, al                                              0.000036
+thrishur                                                  0.000036
+andijk                                                    0.000036
+chile                                                     0.000036
+katihar(bihar)                                            0.000036
+naarden                                                   0.000036
+chakradharpur                                             0.000036
+wierden                                                   0.000036
+mazitar(sikkim)                                           0.000036
+walla walla, wa                                           0.000036
+utrecht                                                   0.000036
+danapur(bihar)                                            0.000036
+kansas city, mo                                           0.000036
+enschede                                                  0.000036
+munnar                                                    0.000036
+pierre, sd                                                0.000036
+gandhinagar(guj)                                          0.000036
+almere                                                    0.000036
+berrien springs, mi                                       0.000036
+burlelson, tx                                             0.000036
+tata(jharkhand)                                           0.000036
+finsterwolde                                              0.000036
+sambha(jk)                                                0.000036
+san fransisco                                             0.000036
+vienna                                                    0.000033
+marlow                                                    0.000033
+putrajaya                                                 0.000033
+kasauli                                                   0.000033
+ladakh                                                    0.000033
+kokrajhar                                                 0.000033
+pattaya                                                   0.000033
+hong kong disneyland                                      0.000033
+phuket                                                    0.000033
+phi phi island                                            0.000033
+orlando                                                   0.000033
+rihand                                                    0.000033
+ko tapu                                                   0.000033
+aberdeen                                                  0.000033
+key west                                                  0.000033
+bangalore, mumbai, hyderabad, nj                          0.000031
+gwalior (mp)                                              0.000031
+staten island, ny                                         0.000031
+arunachalpradesh                                          0.000031
+udaipur(rajasthan)                                        0.000031
+murfreesboro, tn                                          0.000031
+phoenix,. az                                              0.000031
+jaipur(rajasthan)                                         0.000031
+deoria (up)                                               0.000031
+mysore (karnataka)                                        0.000031
+new jersy                                                 0.000031
+mumbai (maharashtra)                                      0.000031
+patna (bihar)                                             0.000031
+dudley, ga                                                0.000031
+ann arbor, mi                                             0.000031
+detroit, mi                                               0.000031
+chhatarpur(mp)                                            0.000031
+tuba city, az                                             0.000031
+deharadoon                                                0.000031
+bhilwara (rajasthan)                                      0.000031
+ferndale, mi                                              0.000031
+khargaon                                                  0.000031
+ahemadabad (gujarat)                                      0.000031
+pune(maharashtra)                                         0.000031
+bangalore (karnataka)                                     0.000031
+ufa, russia                                               0.000029
+blagoveshensk, russia                                     0.000029
+thanjaur                                                  0.000029
+changenasheri                                             0.000029
+chelyabinsk, russia                                       0.000029
+areacode, malappuram                                      0.000029
+pervouralsk, russia                                       0.000029
+salem, or                                                 0.000029
+colombo                                                   0.000029
+orem, ut                                                  0.000029
+allepy                                                    0.000029
+seoul, south korea                                        0.000029
+springville, ut                                           0.000029
+bend, or                                                  0.000029
+mcminville, or                                            0.000029
+thrisshur                                                 0.000029
+ft. leonard wood, ga                                      0.000029
+ft. huachuca, az                                          0.000029
+provo, ut                                                 0.000029
+ho chi minh city                                          0.000029
+poona                                                     0.000027
+dharampur                                                 0.000027
+hiranagar                                                 0.000027
+tezpur                                                    0.000027
+akhnoor                                                   0.000027
+chandimandir                                              0.000027
+saugor                                                    0.000027
+lund                                                      0.000027
+rawalpindi                                                0.000025
+murree                                                    0.000025
+karlovy vary                                              0.000025
+nice                                                      0.000025
+dusseldorf                                                0.000025
+menton                                                    0.000025
+islamabad                                                 0.000025
+tando adam                                                0.000025
+naasik                                                    0.000024
+hrishikesh                                                0.000024
+shrinagar                                                 0.000024
+bicholim                                                  0.000024
+kedarnath                                                 0.000024
+badrinath                                                 0.000024
+alibaag                                                   0.000024
+umm al quian                                              0.000022
+fujeriah                                                  0.000022
+al ain                                                    0.000022
+ajuman                                                    0.000022
+burami                                                    0.000022
+ras al khaimah                                            0.000022
+uae                                                       0.000022
+florence                                                  0.000017
+venice                                                    0.000017
+interlaken                                                0.000017
+dijon                                                     0.000017
+pisa                                                      0.000017
+rome                                                      0.000017
+cape city                                                 0.000016
+sidney                                                    0.000016
+mexico city                                               0.000016
+waterloo, on                                              0.000016
+asdsad                                                    0.000016
+minsk                                                     0.000016
+asdasd                                                    0.000016
+honolulu                                                  0.000016
+nuuk                                                      0.000016
+rio de janeiro                                            0.000016

@@ -1,0 +1,2929 @@
+                                                    voteProportion
+attribute                                                         
+google                                                    0.043171
+microsoft                                                 0.029639
+ibm                                                       0.021774
+amazon.com                                                0.009300
+facebook                                                  0.006013
+zynga                                                     0.005700
+cisco systems, inc.                                       0.005400
+apple inc.                                                0.005200
+university of waterloo                                    0.005140
+oracle corporation                                        0.004490
+purdue university                                         0.004000
+harvard university                                        0.003800
+best buy                                                  0.003440
+adobe systems                                             0.003280
+yahoo!                                                    0.003100
+hewlett-packard                                           0.003060
+rensselaer polytechnic institute                          0.002960
+vmware                                                    0.002933
+booz allen hamilton                                       0.002880
+bloomberg l.p.                                            0.002800
+university of florida                                     0.002760
+fidelity investments                                      0.002600
+accenture                                                 0.002500
+electronic arts                                           0.002493
+intel corporation                                         0.002293
+ebay                                                      0.002200
+motorola                                                  0.002147
+university of central florida                             0.002133
+harvey mudd college                                       0.002133
+georgia tech research institute                           0.002133
+goldman sachs                                             0.002033
+landmark education                                        0.002000
+tekelec                                                   0.002000
+jpmorgan chase & co.                                      0.002000
+zs associates                                             0.002000
+lockheed martin                                           0.001967
+northrop grumman                                          0.001960
+university of california, davis                           0.001933
+citadel investment group                                  0.001800
+western digital                                           0.001800
+palantir technologies                                     0.001733
+red hat software                                          0.001700
+boeing                                                    0.001667
+twitter                                                   0.001613
+bluebeam                                                  0.001600
+westinghouse electric                                     0.001600
+applied predictive technologies                           0.001600
+factset research systems                                  0.001600
+google inc.                                               0.001600
+the walt disney company                                   0.001533
+oracle                                                    0.001533
+intuit inc.                                               0.001500
+fidessa                                                   0.001467
+science applications international corporation            0.001467
+self                                                      0.001433
+research in motion                                        0.001413
+nasa                                                      0.001400
+capital iq                                                0.001400
+netapp                                                    0.001400
+viasat, inc                                               0.001400
+linkedin                                                  0.001333
+columbia university medical center                        0.001267
+dell                                                      0.001267
+teradata                                                  0.001267
+advanced micro devices                                    0.001267
+dreamworks animation                                      0.001233
+gilt groupe                                               0.001200
+tripadvisor                                               0.001200
+hsbc                                                      0.001200
+united states navy                                        0.001200
+passionfly                                                0.001200
+cray                                                      0.001200
+yeshiva university                                        0.001200
+delta business services                                   0.001200
+woodward                                                  0.001200
+the new york times                                        0.001200
+creativity inc                                            0.001200
+guardian productions                                      0.001200
+cerner                                                    0.001200
+sony computer entertainment                               0.001200
+webmd                                                     0.001200
+stats llc                                                 0.001200
+ntt multimedia communications laboratories, inc.          0.001200
+adknowledge                                               0.001200
+baydin                                                    0.001200
+novacoast                                                 0.001200
+vanderbilt university                                     0.001200
+city of eugene                                            0.001200
+best buy mobile                                           0.001200
+verisk health                                             0.001200
+galois, inc                                               0.001200
+meetup.com                                                0.001200
+verizon wireless                                          0.001133
+self-employed                                             0.001133
+national university of singapore                          0.001100
+salesforce.com                                            0.001080
+thomson reuters                                           0.001067
+freeverse software                                        0.001067
+symantec corporation                                      0.001000
+google, inc.                                              0.001000
+geek squad                                                0.001000
+radiantblue technologies                                  0.001000
+epic systems corporation                                  0.000960
+sun microsystems                                          0.000957
+nokia                                                     0.000947
+caci                                                      0.000933
+hubspot                                                   0.000933
+quest software                                            0.000933
+idf                                                       0.000933
+mitre                                                     0.000933
+yelp                                                      0.000933
+at&t                                                      0.000924
+freelance                                                 0.000914
+self employed                                             0.000900
+kent                                                      0.000900
+emc corporation                                           0.000900
+bard college                                              0.000857
+pixar                                                     0.000813
+logos bible software                                      0.000800
+track.com                                                 0.000800
+nvidia                                                    0.000800
+boxee                                                     0.000800
+antena                                                    0.000800
+kungfuters llc                                            0.000800
+m. scottmorton                                            0.000800
+national instruments                                      0.000800
+penn state applied research lab                           0.000800
+swann communications                                      0.000800
+path                                                      0.000800
+microsoft research silicon valley                         0.000800
+aqueduct development                                      0.000800
+cgi federal                                               0.000800
+lab126                                                    0.000800
+university of arizona computer science department         0.000800
+nomo jeans corporation                                    0.000800
+whitepages                                                0.000800
+eagle systems                                             0.000800
+phpbb                                                     0.000800
+cgi group                                                 0.000800
+shopwithstella.com                                        0.000800
+1800 contacts                                             0.000800
+ami entertainment network                                 0.000800
+xyratex                                                   0.000800
+health grades                                             0.000800
+eficode oy                                                0.000800
+raytheon missile systems                                  0.000800
+meditech                                                  0.000800
+adap.tv                                                   0.000800
+susquehanna international group                           0.000800
+gtri                                                      0.000800
+mars petcare                                              0.000800
+offline labs                                              0.000800
+wolverine trading                                         0.000800
+thought convergence, inc.                                 0.000800
+rackspace managed hosting                                 0.000800
+bisonwitches                                              0.000800
+bs&a software                                             0.000800
+first line technology                                     0.000800
+bump technologies                                         0.000800
+zarra studios                                             0.000800
+executive technologies, inc.                              0.000800
+at&t mobility                                             0.000800
+dovetail internet technologies, llc                       0.000800
+ooyala                                                    0.000800
+l.e.k. consulting                                         0.000800
+threefold studio                                          0.000800
+icarpool                                                  0.000800
+ubiqx consulting, inc.                                    0.000800
+qwest/centurylink                                         0.000800
+vector software                                           0.000800
+sears, roebuck and company                                0.000800
+georgia first                                             0.000800
+union pacific railroad                                    0.000800
+asurion                                                   0.000800
+epic                                                      0.000800
+logica                                                    0.000800
+weizmann institute of science                             0.000800
+lucas enterprises                                         0.000800
+national center for supercomputing applications           0.000800
+multi image group                                         0.000800
+pro quo books                                             0.000800
+zignage, llc                                              0.000800
+kiip inc.                                                 0.000800
+kwall llc                                                 0.000800
+osu valley library                                        0.000800
+chris gladd                                               0.000800
+mcdonald's                                                0.000800
+marklogic                                                 0.000800
+dealer.com                                                0.000800
+successfactors                                            0.000800
+intermec                                                  0.000800
+quixey                                                    0.000800
+pixel liberation front                                    0.000800
+starbucks                                                 0.000800
+mosaic                                                    0.000800
+c.c. stern type foundry                                   0.000800
+working person enterprises                                0.000800
+weddingwire                                               0.000800
+walgreens                                                 0.000800
+toluna inc.                                               0.000800
+grab                                                      0.000800
+us air force                                              0.000800
+expedient                                                 0.000800
+vc3                                                       0.000800
+instinet                                                  0.000800
+tastes bad music                                          0.000800
+procter and gamble                                        0.000800
+visual music systems                                      0.000800
+midokura                                                  0.000800
+hulu                                                      0.000800
+rootmetrics                                               0.000800
+agency oasis                                              0.000800
+clearwell systems                                         0.000800
+state farm insurance                                      0.000800
+art technology group                                      0.000800
+nordic semiconductor                                      0.000800
+trax usa corp                                             0.000800
+next jump                                                 0.000800
+monkey bussiness                                          0.000800
+green hills software                                      0.000733
+t-mobile usa                                              0.000733
+ati technologies                                          0.000733
+morgan stanley                                            0.000700
+the fresh market                                          0.000680
+computer sciences corporation                             0.000680
+bank of america                                           0.000667
+raytheon                                                  0.000667
+csc                                                       0.000667
+youtube                                                   0.000667
+appirio                                                   0.000640
+omniti                                                    0.000640
+u.s. army                                                 0.000613
+johns hopkins university applied physics lab              0.000600
+united states air force                                   0.000600
+samsung electronics                                       0.000600
+dairy queen                                               0.000600
+programmableweb.com                                       0.000600
+smartlogic solutions                                      0.000600
+communityvibe inc.                                        0.000600
+sprint nextel                                             0.000600
+time warner cable                                         0.000600
+meebo                                                     0.000600
+university of north carolina at charlotte                 0.000600
+hp                                                        0.000600
+citigroup                                                 0.000600
+rim                                                       0.000600
+kainos                                                    0.000600
+pariveda solutions                                        0.000600
+us postal service                                         0.000600
+medical graphics corporation                              0.000600
+tower research capital                                    0.000600
+environment canada                                        0.000600
+wal-mart                                                  0.000600
+mckinsey & company                                        0.000600
+dardni                                                    0.000600
+amazon                                                    0.000600
+garmin                                                    0.000600
+llank llc                                                 0.000600
+hi5 networks                                              0.000600
+wipro technologies                                        0.000600
+endeca technologies inc.                                  0.000600
+target corporation                                        0.000600
+ibm research                                              0.000567
+oak ridge national laboratory                             0.000560
+cisco                                                     0.000533
+mfoundry                                                  0.000533
+carefusion corp                                           0.000533
+websense                                                  0.000533
+progress software                                         0.000533
+student                                                   0.000533
+knight capital group                                      0.000533
+wpi                                                       0.000533
+cerner corporation                                        0.000533
+saudi aramco                                              0.000533
+sap ag                                                    0.000533
+digg                                                      0.000507
+bloomberg                                                 0.000500
+spacex                                                    0.000500
+activision blizzard                                       0.000500
+vonage                                                    0.000500
+staples                                                   0.000500
+the vanguard group                                        0.000500
+general mills                                             0.000500
+university of rochester                                   0.000500
+arab high school                                          0.000500
+nist                                                      0.000500
+business solutions group                                  0.000500
+tektronix                                                 0.000500
+microsoft research redmond                                0.000500
+nintendo                                                  0.000500
+siemens ag                                                0.000493
+akamai technologies                                       0.000480
+stanford law school                                       0.000480
+unisys                                                    0.000480
+ups                                                       0.000480
+optaros                                                   0.000480
+sears holdings corporation                                0.000467
+us army                                                   0.000467
+wells fargo                                               0.000457
+jive software                                             0.000457
+ericsson                                                  0.000457
+cisco systems                                             0.000457
+agilent technologies                                      0.000450
+getty images                                              0.000450
+intuit                                                    0.000440
+omniture                                                  0.000433
+arizona state university                                  0.000433
+permabit                                                  0.000427
+upper park designs llc                                    0.000400
+thomson-reuters corporation                               0.000400
+garmin international                                      0.000400
+eljakim information technology bv                         0.000400
+ayasdi                                                    0.000400
+rdo holdings                                              0.000400
+moberg consulting                                         0.000400
+private tutoring                                          0.000400
+general dynamics advanced information systems             0.000400
+gopro                                                     0.000400
+imaginet                                                  0.000400
+various                                                   0.000400
+motorola, sunnyvale                                       0.000400
+reinsurance group of america                              0.000400
+polished geek, llc                                        0.000400
+lynx it                                                   0.000400
+vudu                                                      0.000400
+asda                                                      0.000400
+clalbit                                                   0.000400
+private practice llc                                      0.000400
+rockwell collins                                          0.000400
+vokal interactive                                         0.000400
+zilliant, inc.                                            0.000400
+upillar.com                                               0.000400
+appmosis                                                  0.000400
+microstrain, inc                                          0.000400
+cessna                                                    0.000400
+safeco field (mariners)                                   0.000400
+blue-mountain community college                           0.000400
+werkbot                                                   0.000400
+trackvia                                                  0.000400
+webs, inc.                                                0.000400
+primark                                                   0.000400
+coldfront labs inc.                                       0.000400
+wayward media group                                       0.000400
+racetrac                                                  0.000400
+cognos ibm                                                0.000400
+linnaeus, inc.                                            0.000400
+contapps                                                  0.000400
+kilo wads studios                                         0.000400
+utah valley university                                    0.000400
+color labs                                                0.000400
+drpa                                                      0.000400
+university of minnesota press                             0.000400
+siemens plm                                               0.000400
+yodle                                                     0.000400
+tim hortons                                               0.000400
+glaserbeam                                                0.000400
+cio technologies, inc                                     0.000400
+sqs                                                       0.000400
+auction123                                                0.000400
+mindspark inc.                                            0.000400
+ri interactive / nic                                      0.000400
+kainos software                                           0.000400
+mcdonalds                                                 0.000400
+etherton technologies                                     0.000400
+savingstar                                                0.000400
+kcura                                                     0.000400
+telcordia technologies                                    0.000400
+waters corporation                                        0.000400
+crimson ltd                                               0.000400
+pagodawest games                                          0.000400
+hooopla llc                                               0.000400
+arinc                                                     0.000400
+crenelle                                                  0.000400
+university housing and dining services                    0.000400
+gallivan gallivan & o'melia                               0.000400
+angelo state university                                   0.000400
+city of brea                                              0.000400
+stanford human genome center                              0.000400
+indeed.com                                                0.000400
+new york state department of taxation and finance         0.000400
+iu health physicians                                      0.000400
+catawba county government                                 0.000400
+whodini                                                   0.000400
+mccraw corporation                                        0.000400
+technical expressions                                     0.000400
+lg                                                        0.000400
+snagajob                                                  0.000400
+volition inc                                              0.000400
+ztech associates                                          0.000400
+sintero @ cardiff university                              0.000400
+guidewire software                                        0.000400
+visigraph development team                                0.000400
+mprest systems                                            0.000400
+code:red inc.                                             0.000400
+sunroad enterprises                                       0.000400
+traveling                                                 0.000400
+web portal                                                0.000400
+winderz.com                                               0.000400
+reklamedata a/s                                           0.000400
+distrubuted systems lab- univ. of pennsylvania            0.000400
+posterous                                                 0.000400
+youth asia                                                0.000400
+torus knot software                                       0.000400
+iconz                                                     0.000400
+blackbird technologies                                    0.000400
+nasa langley research center                              0.000400
+national library of medicine                              0.000400
+national discount merchant services                       0.000400
+mary kay, inc                                             0.000400
+brown university cis                                      0.000400
+in the pink                                               0.000400
+tripadvisor, llc.                                         0.000400
+cbeyond                                                   0.000400
+azeus systems philippines ltd.                            0.000400
+sevone                                                    0.000400
+greendizer                                                0.000400
+orca wave llc                                             0.000400
+syncrude                                                  0.000400
+cloudera                                                  0.000400
+portland public school district                           0.000400
+université paris dauphine                                 0.000400
+perennial software                                        0.000400
+patton electronics                                        0.000400
+easton utilities commission                               0.000400
+university of west georgia                                0.000400
+ibcscorp                                                  0.000400
+infusion development                                      0.000400
+michigan state university federal credit union            0.000400
+frog design inc.                                          0.000400
+synopsys                                                  0.000400
+zocdoc                                                    0.000400
+hannon hill                                               0.000400
+gander mountain                                           0.000400
+weatherford international                                 0.000400
+waze                                                      0.000400
+citrix online                                             0.000400
+ussearch                                                  0.000400
+the hut group                                             0.000400
+piazza                                                    0.000400
+codeoasis                                                 0.000400
+eficode                                                   0.000400
+athenium, inc                                             0.000400
+city of tucson parks and recreation                       0.000400
+muzzy lane                                                0.000400
+hmb                                                       0.000400
+mailchimp                                                 0.000400
+ibm india                                                 0.000400
+abraxas corporation                                       0.000400
+global business register                                  0.000400
+zimbio                                                    0.000400
+autonomy corporation                                      0.000400
+mayflower gmbh                                            0.000400
+harris teeter                                             0.000400
+parc                                                      0.000400
+hd vest                                                   0.000400
+sparkbase                                                 0.000400
+casepick systems, llc                                     0.000400
+universität bonn                                          0.000400
+amadeus it group                                          0.000400
+philips                                                   0.000400
+marchex, inc.                                             0.000400
+gobbler                                                   0.000400
+payjunction                                               0.000400
+citysearch                                                0.000400
+qualityhealth                                             0.000400
+provu communications                                      0.000400
+chevron                                                   0.000400
+cork university dental hospital                           0.000400
+rise up llc                                               0.000400
+redfin                                                    0.000400
+floop                                                     0.000400
+sco                                                       0.000400
+university of udine                                       0.000400
+progressive corporation                                   0.000400
+eventbrite                                                0.000400
+genedata inc.                                             0.000400
+chamchuri games 38th                                      0.000400
+ccp hf                                                    0.000400
+computing services network, university of nebraska        0.000400
+nickelodeon                                               0.000400
+spot trading, llc                                         0.000400
+kmart                                                     0.000400
+arris pty ltd                                             0.000400
+argo systems                                              0.000400
+mcginnis sisters                                          0.000400
+premier video                                             0.000400
+ympyra                                                    0.000400
+rightnow technologies                                     0.000400
+spirit of philadelphia                                    0.000400
+millennium technology group                               0.000400
+adtran                                                    0.000400
+localeze                                                  0.000400
+fifth third bank                                          0.000400
+brickman group                                            0.000400
+voltage security inc                                      0.000400
+shanahan's                                                0.000400
+transcanada pipelines, lp                                 0.000400
+university of applied sciences northwestern swi...        0.000400
+spescom datavoice                                         0.000400
+microsoft corp.                                           0.000400
+theredpin.com                                             0.000400
+swink, fiehler & company                                  0.000400
+playdom                                                   0.000400
+emerson radio                                             0.000400
+orbitz                                                    0.000400
+building 2 llc                                            0.000400
+fdm group                                                 0.000400
+bren events center                                        0.000400
+page 44 studios                                           0.000400
+edelman                                                   0.000400
+infinity personals                                        0.000400
+crossmark                                                 0.000400
+office tools professional                                 0.000400
+vernier software & technology                             0.000400
+sigma ukraine                                             0.000400
+selectscience                                             0.000400
+agp llc                                                   0.000400
+force10 networks, inc                                     0.000400
+adept mobile                                              0.000400
+kunz, leigh and associates                                0.000400
+texas tech university library                             0.000400
+meagher moynihan                                          0.000400
+rackspace                                                 0.000400
+computershare                                             0.000400
+octagon research solutions                                0.000400
+excellerx                                                 0.000400
+corporate advanced services inc                           0.000400
+netop                                                     0.000400
+adullact-projet                                           0.000400
+wrek atlanta                                              0.000400
+gcflearnfree.org                                          0.000400
+oliver wyman                                              0.000400
+google inc                                                0.000400
+advance internet                                          0.000400
+corelogis llc                                             0.000400
+igap                                                      0.000400
+backstop solutions group                                  0.000400
+electronics for imaging, inc                              0.000400
+suitmedia                                                 0.000400
+snibbe interactive                                        0.000400
+premier press                                             0.000400
+tharmon inc                                               0.000400
+zther interactive                                         0.000400
+spot trading llc                                          0.000400
+snapbill                                                  0.000400
+argonne national laboratory                               0.000400
+mk&c                                                      0.000400
+global hunter securities, llc                             0.000400
+fedex                                                     0.000400
+blocket                                                   0.000400
+rocscience                                                0.000400
+pizza inn                                                 0.000400
+red hat, inc.                                             0.000400
+objective consulting, inc.                                0.000400
+bearded                                                   0.000400
+duck creek technologies                                   0.000400
+group commerce                                            0.000400
+charles river analytics                                   0.000400
+nordstrom rack                                            0.000400
+falconstor                                                0.000400
+nomovok ltd                                               0.000400
+plum voice                                                0.000400
+optimal satcom                                            0.000400
+deep cognition ltd.                                       0.000400
+ist austria                                               0.000400
+impetus infotech pvt.lmt.                                 0.000400
+universite' libre de bruxelles                            0.000400
+city of port aransas                                      0.000400
+sdn communications                                        0.000400
+universal mind                                            0.000400
+bidcactus                                                 0.000400
+barclays capital                                          0.000400
+valve corporation                                         0.000400
+realpage                                                  0.000400
+augmented dynamics                                        0.000400
+earthlink networks                                        0.000400
+kiss capital                                              0.000400
+omgpop austin                                             0.000400
+black river systems company                               0.000400
+wesco distribution                                        0.000400
+hsbc bank                                                 0.000400
+quorum business solutions                                 0.000400
+google, inc                                               0.000400
+decipher inc.                                             0.000400
+acumen computing services                                 0.000400
+digital jigsaw                                            0.000400
+magnetar capital                                          0.000400
+psu: residential computing                                0.000400
+borderconnect                                             0.000400
+aol                                                       0.000400
+starsystem                                                0.000400
+lowe's                                                    0.000400
+northwestern undergraduate research journal               0.000400
+wawa, inc.                                                0.000400
+chriskavas.com                                            0.000400
+definition 6                                              0.000400
+net enforcers, inc                                        0.000400
+meru capital                                              0.000400
+eccles heath science library                              0.000400
+college of notre dame of md                               0.000400
+zenoss                                                    0.000400
+odesk                                                     0.000400
+university of san diego                                   0.000400
+foss @ rit                                                0.000400
+sikorsky aircraft                                         0.000400
+halfbot.com                                               0.000400
+mobileasl project                                         0.000400
+cloudharmony                                              0.000400
+clairmail                                                 0.000400
+gojee                                                     0.000400
+yodle, inc                                                0.000400
+ucsb housing and residential services                     0.000400
+mit lincoln laboratory                                    0.000400
+ucsd school of medicine                                   0.000400
+cyberlink corp.                                           0.000400
+manhattan associates                                      0.000400
+general atomics                                           0.000400
+discur                                                    0.000400
+davenport development                                     0.000400
+cefriel                                                   0.000400
+navteq                                                    0.000400
+mediaforge                                                0.000400
+wealthfront inc.                                          0.000400
+protrainings                                              0.000400
+yardi systems inc.                                        0.000400
+mokinetworks                                              0.000400
+open mind svenska ab                                      0.000400
+hotels unlimited, inc.                                    0.000400
+knovel corporation                                        0.000400
+volant trading                                            0.000400
+sca packaging                                             0.000400
+thales in-flight entertainment                            0.000400
+baldwin, hackett & meeks, inc.                            0.000400
+azul systems, inc.                                        0.000400
+team one credit union                                     0.000400
+commvault systems                                         0.000400
+rockstar games                                            0.000400
+yandex                                                    0.000400
+summa technologies                                        0.000400
+grid technologies, llc                                    0.000400
+fti consulting                                            0.000400
+united computer sales & service, inc                      0.000400
+kiip                                                      0.000400
+nokia siemens networks                                    0.000400
+sungard                                                   0.000400
+wireless neighborhoods                                    0.000400
+luftwaffe bundeswehr                                      0.000400
+internet systems consortium                               0.000400
+one of the big 4                                          0.000400
+novo nordisk                                              0.000400
+network resource group                                    0.000400
+randomnpc                                                 0.000400
+spark networks                                            0.000400
+watchdox                                                  0.000400
+lime brokerage                                            0.000400
+ksm technology partners                                   0.000400
+webonyx llc                                               0.000400
+procore technologies                                      0.000400
+arpc                                                      0.000400
+riot games                                                0.000400
+louis dreyfus highbridge commodities                      0.000400
+edb                                                       0.000400
+gilford securities                                        0.000400
+grand rapids community college                            0.000400
+smart online                                              0.000400
+g2                                                        0.000400
+hpd software                                              0.000400
+hin's garden chinese                                      0.000400
+universal music canada                                    0.000400
+deep blue                                                 0.000400
+computer laboratory, university of cambridge              0.000400
+chevron corporation                                       0.000400
+boyers best pet products                                  0.000400
+sakae holdings                                            0.000400
+rootmusic                                                 0.000400
+flavorpill                                                0.000400
+omegahern                                                 0.000400
+faculdade de ciências da universidade do porto            0.000400
+bluebeam software                                         0.000400
+expedia, inc.                                             0.000400
+vitrue                                                    0.000400
+arhs developments s.a.                                    0.000400
+bluetech llc                                              0.000400
+quality manufacturing systems, inc.                       0.000400
+templar trading                                           0.000400
+silverbear                                                0.000400
+affinity circles                                          0.000400
+ntt communications corp                                   0.000400
+source interlink companies, inc.                          0.000400
+uw-milwaukee college of letters & science                 0.000400
+several                                                   0.000400
+genome campus, sanger institute                           0.000400
+gai consultants, inc.                                     0.000400
+parametric technology corporation                         0.000400
+aiesec                                                    0.000400
+paraproductions                                           0.000400
+ua com                                                    0.000400
+discover financial services                               0.000400
+trainingfolks                                             0.000400
+tencent holdings                                          0.000400
+jet program                                               0.000400
+pwc                                                       0.000400
+monterey peninsula college                                0.000400
+oncenter software                                         0.000400
+exzac                                                     0.000400
+nationalfield                                             0.000400
+rit new student orientation                               0.000400
+aurion learning                                           0.000400
+athenium                                                  0.000400
+dreamcube                                                 0.000400
+multiphase solutions, inc.                                0.000400
+lucent technologies                                       0.000400
+ucla orl                                                  0.000400
+gideon taylor consulting                                  0.000400
+american red cross                                        0.000400
+mywebgrocer                                               0.000400
+social logic                                              0.000400
+reuters software thailand limite. a thomson reu...        0.000400
+tourbuzz llc                                              0.000400
+pillar data systems                                       0.000400
+demcamp                                                   0.000400
+mercantila, inc.                                          0.000400
+l-3 communications                                        0.000400
+xociety of movie lovers                                   0.000400
+actus software                                            0.000400
+department of navy                                        0.000400
+fpt software                                              0.000400
+credit suisse                                             0.000400
+cmu hcii                                                  0.000400
+lg electronics                                            0.000400
+adverplex                                                 0.000400
+awh co.                                                   0.000400
+rit insight lab                                           0.000400
+philips color kinetics                                    0.000400
+mcafee                                                    0.000400
+srt solutions                                             0.000400
+laureate education, inc.                                  0.000400
+korbitec                                                  0.000400
+arbormoon software, inc                                   0.000400
+360psg                                                    0.000400
+cme offshore                                              0.000400
+mindit                                                    0.000400
+florida association of realtors                           0.000400
+nerdwallet                                                0.000400
+sea girl brewing                                          0.000400
+namco bandai games                                        0.000400
+reality engineering                                       0.000400
+psw group gmbh & co. kg                                   0.000400
+smartosc                                                  0.000400
+nextgen federal systems                                   0.000400
+hosting.com                                               0.000400
+ecommerce roundtable                                      0.000400
+ancient                                                   0.000400
+river city internet group                                 0.000400
+prime source                                              0.000400
+filemaker inc.                                            0.000400
+gaming nexus                                              0.000400
+shopsite inc.                                             0.000400
+siam commercial bank                                      0.000400
+lockard & wechsler                                        0.000400
+pop design works                                          0.000400
+baltimore heritage                                        0.000400
+briteskies llc                                            0.000400
+duke university health system                             0.000400
+perfect equipment inc                                     0.000400
+subway                                                    0.000400
+freehap                                                   0.000400
+bean creative                                             0.000400
+umbc library                                              0.000400
+rooster park consulting                                   0.000400
+residence life                                            0.000400
+reunions unlimited                                        0.000400
+icims                                                     0.000400
+amadeus consulting                                        0.000400
+promo labs                                                0.000400
+billtrust                                                 0.000400
+harris corporation                                        0.000400
+actividentity, inc                                        0.000400
+center'd corp                                             0.000400
+hypack, inc.                                              0.000400
+flickr                                                    0.000400
+cabbage                                                   0.000400
+brightidea inc                                            0.000400
+arison                                                    0.000400
+internmatch                                               0.000400
+mpp global                                                0.000400
+ciber norway as                                           0.000400
+synygy india pvt ltd                                      0.000400
+mcalister's deli                                          0.000400
+bluematrix                                                0.000400
+kamehameha schools                                        0.000400
+staples inc.                                              0.000400
+battlezone games                                          0.000400
+automatic data processing                                 0.000400
+openstudy                                                 0.000400
+buzznet                                                   0.000400
+pco innovation                                            0.000400
+csis at gmu                                               0.000400
+royall & co.                                              0.000400
+rieber terrace                                            0.000400
+paragonex                                                 0.000400
+iteg kassel                                               0.000400
+c security                                                0.000400
+pelican mapping                                           0.000400
+the church of jesus christ of latter-day saints           0.000400
+qualcomm                                                  0.000400
+mxi technologies                                          0.000400
+tuesday studios                                           0.000400
+technisource inc                                          0.000400
+scale computing                                           0.000400
+lacrosse footwear inc.                                    0.000400
+leotech services pte ltd                                  0.000400
+lbi                                                       0.000400
+kinara indonesia                                          0.000400
+veveo                                                     0.000400
+krungthai card                                            0.000400
+tps pakistan (pvt) ltd                                    0.000400
+sendza, inc                                               0.000400
+funzio                                                    0.000400
+evtron incorporated                                       0.000400
+digital bazaar, inc.                                      0.000400
+stealth pokemon trading card company                      0.000400
+sega                                                      0.000400
+dqc                                                       0.000400
+arin                                                      0.000400
+kroger                                                    0.000400
+syndicate nightclub                                       0.000400
+steria                                                    0.000400
+national oilwell varco                                    0.000400
+hewlett                                                   0.000400
+brunswick zone xl                                         0.000400
+rmit                                                      0.000400
+12 spokes                                                 0.000400
+cie studios                                               0.000400
+perceptive software                                       0.000400
+atic                                                      0.000400
+reachlocal                                                0.000400
+lawrence berkeley national lab                            0.000400
+scheduall                                                 0.000400
+giant slayer development                                  0.000400
+viagogo                                                   0.000400
+rose-hulman                                               0.000400
+shoesurfing.com                                           0.000400
+student experts                                           0.000400
+acuitus                                                   0.000400
+tata consultancy services                                 0.000400
+chaione                                                   0.000400
+agb capital                                               0.000400
+lumension                                                 0.000400
+institute for infocomm research, singapore                0.000400
+dezrez                                                    0.000400
+solid cactus                                              0.000400
+usaf                                                      0.000400
+ifds uk - bangkok branch                                  0.000400
+qualtrics labs, inc.                                      0.000400
+dericon                                                   0.000400
+f5 network                                                0.000400
+mountain states networking                                0.000400
+opinionology                                              0.000400
+marcom group                                              0.000400
+econ global services                                      0.000400
+deepmile, inc                                             0.000400
+lynn mcallister appraisal services                        0.000400
+free time studios                                         0.000400
+microsoft research, redmond                               0.000400
+replenish new media                                       0.000400
+dsgi                                                      0.000400
+elpa technologies                                         0.000400
+dr. michael schillaci                                     0.000400
+northstar mutual insurance company                        0.000400
+hva                                                       0.000400
+highpoint consulting                                      0.000400
+university of british columbia press                      0.000400
+brightcove, inc.                                          0.000400
+game camp usa                                             0.000400
+convergys, ceon, dreamsoft, cleardis, ipin, act...        0.000400
+novare technologies                                       0.000400
+pacific capital bancorp                                   0.000400
+affirma consulting                                        0.000400
+smart technologies                                        0.000400
+citrix systems                                            0.000400
+travel gbr                                                0.000400
+miracle                                                   0.000400
+decision health                                           0.000400
+shopbop.com                                               0.000400
+medtronic                                                 0.000400
+siemens enterprise communications                         0.000400
+thomsons online benefits                                  0.000400
+missions solution engineering                             0.000400
+kgb                                                       0.000400
+woot                                                      0.000400
+ovsoftware                                                0.000400
+royal welsh college of music and drama                    0.000400
+trulia                                                    0.000400
+behance llc                                               0.000400
+azie restaurant                                           0.000400
+blueberry genie                                           0.000400
+technology services group                                 0.000400
+xactware                                                  0.000400
+systems alliance, inc.                                    0.000400
+built on logic                                            0.000400
+westtown school                                           0.000400
+eduware                                                   0.000400
+oh digital                                                0.000400
+orient business solutions                                 0.000400
+5d robotics                                               0.000400
+vodafone egypt                                            0.000400
+dealbird                                                  0.000400
+antares                                                   0.000400
+radiant systems                                           0.000400
+fine line pacific                                         0.000400
+amovius llc                                               0.000400
+insolvency service                                        0.000400
+inventrio                                                 0.000400
+provident funding associates l.p.                         0.000400
+comcast interactive media                                 0.000400
+conocophillips                                            0.000400
+trustwave                                                 0.000400
+healthcare productivity automation                        0.000400
+bnp paribas hong kong                                     0.000400
+darlington reboot                                         0.000400
+allied-vms technologies                                   0.000400
+archer daniels midland                                    0.000400
+qad inc                                                   0.000400
+partek                                                    0.000400
+altria group                                              0.000400
+kraft foods                                               0.000400
+freese enterprises                                        0.000400
+nasa langely research center                              0.000400
+stg, inc.                                                 0.000400
+dream cortex                                              0.000400
+j.c. penney                                               0.000400
+a.j. boggs and company                                    0.000400
+bonzi technology                                          0.000400
+upright technologies                                      0.000400
+software process technologies                             0.000400
+entropy multimedia                                        0.000400
+cte teleco                                                0.000400
+gaza municipality                                         0.000400
+dropbox                                                   0.000400
+cycle computing, llc.                                     0.000400
+wolfram research                                          0.000400
+infinidat                                                 0.000400
+schoology                                                 0.000400
+framestore                                                0.000400
+solidfire                                                 0.000400
+press ganey                                               0.000400
+zos communications                                        0.000400
+netactive                                                 0.000400
+massive dynamic                                           0.000400
+jet propulsion laboratory                                 0.000400
+state of california                                       0.000400
+office of student development nyu-poly                    0.000400
+cognizant technology solutions                            0.000400
+cineform                                                  0.000400
+nationwide mutual insurance company                       0.000400
+cloud3.0, silicon valley                                  0.000400
+carmenta ab                                               0.000400
+clear channel communications                              0.000400
+brandthropology                                           0.000400
+interlogic                                                0.000400
+pegasystems                                               0.000400
+midwest custom strings                                    0.000400
+fiesta mart                                               0.000400
+cross country automotive services                         0.000400
+educational testing service                               0.000400
+sampath bank                                              0.000400
+pacific digital signs                                     0.000400
+makin group                                               0.000400
+sony pictures imageworks                                  0.000400
+seevast.com                                               0.000400
+green river community college                             0.000400
+plancast                                                  0.000400
+unemployed                                                0.000400
+sensable                                                  0.000400
+gorilla                                                   0.000400
+chempoint                                                 0.000400
+cajal blue brain                                          0.000400
+university of nebraska press                              0.000400
+electronic arts natc                                      0.000400
+jack astors                                               0.000400
+standard & poor's                                         0.000400
+buzzcity pte ltd                                          0.000400
+frontier communications                                   0.000400
+webwise security inc.                                     0.000400
+integra telecom                                           0.000400
+mediafuel                                                 0.000400
+bath & body works                                         0.000400
+federal census bureau                                     0.000400
+berea college                                             0.000400
+paychex                                                   0.000400
+yardi systems                                             0.000400
+recap attack                                              0.000400
+credativ gmbh                                             0.000400
+mit media lab                                             0.000400
+gibson, dunn & crutcher llp                               0.000400
+lumberton school district                                 0.000400
+itt corporation                                           0.000400
+epam systems                                              0.000400
+university of illinois admissions                         0.000400
+diaz & cooper advertising                                 0.000400
+deloitte touche tohmatsu                                  0.000400
+mission data                                              0.000400
+dfait                                                     0.000400
+amf bowling center                                        0.000400
+nolio                                                     0.000400
+freestylegames ltd, activision                            0.000400
+green computers                                           0.000400
+smartstudy                                                0.000400
+motorola mobility                                         0.000400
+screen scape network                                      0.000400
+sheetz                                                    0.000400
+a large bank                                              0.000400
+habilis ehf.                                              0.000400
+cooliris                                                  0.000400
+sorenson communications                                   0.000400
+oprius software inc                                       0.000400
+x by 2                                                    0.000400
+pyxis mobile                                              0.000400
+yipit                                                     0.000400
+jaguar design studio                                      0.000400
+ea digital illusions ce                                   0.000400
+fnc, inc.                                                 0.000400
+wts paradigm                                              0.000400
+shopify                                                   0.000400
+caterpillar inc.                                          0.000400
+competitive computing                                     0.000400
+enova financial holdings llc                              0.000400
+extended stay hotels                                      0.000400
+larry's giant subs                                        0.000400
+instant software                                          0.000400
+mozes, inc                                                0.000400
+baidu                                                     0.000400
+nestle pakistan ltd.                                      0.000400
+sierra nevada corporation                                 0.000400
+unleashed technologies, llc                               0.000400
+sony brook university                                     0.000400
+arpu+                                                     0.000400
+codeyssus                                                 0.000400
+airvod                                                    0.000400
+chang's bubble tea                                        0.000400
+buckle consulting                                         0.000400
+federal reserve bank of saint louis                       0.000400
+micc                                                      0.000400
+papa john's pizza                                         0.000367
+ita software                                              0.000367
+jpl                                                       0.000367
+foursquare                                                0.000367
+mozilla corporation                                       0.000367
+compusa                                                   0.000347
+quinstreet                                                0.000333
+athenahealth                                              0.000333
+mozy                                                      0.000333
+okcupid                                                   0.000333
+maxis                                                     0.000333
+say media                                                 0.000333
+general dynamics                                          0.000333
+mantech international                                     0.000333
+general electric                                          0.000333
+bae systems                                               0.000333
+sas institute                                             0.000333
+cambridge technology partners                             0.000307
+cygnus solutions                                          0.000300
+igware, inc                                               0.000300
+riverbed technology                                       0.000300
+alcatel-lucent                                            0.000300
+createspace                                               0.000300
+bbn technologies                                          0.000300
+flagship studios                                          0.000300
+red hat                                                   0.000280
+carmike cinemas                                           0.000280
+blizzard entertainment                                    0.000280
+beenverified inc.                                         0.000267
+ordina                                                    0.000267
+innercite                                                 0.000267
+performance hospitality group                             0.000267
+collegeclub                                               0.000267
+uofc cs maclab                                            0.000267
+justin fic                                                0.000267
+the mac store                                             0.000267
+lawrence berkeley national laboratories                   0.000267
+synq solutions                                            0.000267
+neogov                                                    0.000267
+rackspace inc                                             0.000267
+oak ridge national lab                                    0.000267
+beamreach networks                                        0.000267
+transition patient services                               0.000267
+highmark                                                  0.000267
+quinstreet inc.                                           0.000267
+tradelink, llc                                            0.000267
+nec laboratories                                          0.000267
+mustang caterpillar                                       0.000267
+lattice engines                                           0.000267
+good studio                                               0.000267
+petroglyph                                                0.000267
+1over0 tech                                               0.000267
+my awesome startup                                        0.000267
+edgar online                                              0.000267
+myself                                                    0.000267
+lion and the lamb                                         0.000267
+lrs web services                                          0.000267
+vistasource inc.                                          0.000267
+zinc roe design                                           0.000267
+mrm worldwide                                             0.000267
+next big sound                                            0.000267
+amti                                                      0.000267
+o3 internet consulting                                    0.000267
+youth intermedia                                          0.000267
+lipsey logistics                                          0.000267
+sony creative software                                    0.000267
+six sigma                                                 0.000267
+newbury networks                                          0.000267
+wisconsin state senate                                    0.000267
+putnam investments                                        0.000267
+cme group                                                 0.000267
+st. john's hospital                                       0.000267
+ignition technologies                                     0.000267
+f5 networks                                               0.000267
+nec  laboratories                                         0.000267
+bridgewater associates                                    0.000267
+monster                                                   0.000267
+american telecenters                                      0.000267
+nui inc.                                                  0.000267
+softhouse int                                             0.000267
+aster data systems                                        0.000267
+purpleware (self employed)                                0.000267
+microsoft live labs                                       0.000267
+akonix                                                    0.000267
+omada health                                              0.000267
+xebia                                                     0.000267
+fast enterprises                                          0.000267
+fflick                                                    0.000267
+oregon state data center                                  0.000267
+cognos inc.                                               0.000267
+applix inc.                                               0.000267
+ea tiburon                                                0.000267
+schepens eye research institute                           0.000267
+airwatch                                                  0.000267
+utani labs, spain                                         0.000267
+good technology                                           0.000267
+general dynamics c4 systems                               0.000267
+harrisburg area community college                         0.000267
+cadam                                                     0.000267
+structured data system limited                            0.000267
+global ip solutions                                       0.000267
+state street global advisors                              0.000267
+tribune company                                           0.000267
+gooooooooooooooooooooogle                                 0.000267
+connected traveling                                       0.000267
+walmart                                                   0.000267
+optionsxpress                                             0.000267
+fog creek software                                        0.000267
+aardvark                                                  0.000267
+california center for innovative transportation...        0.000267
+kangogift                                                 0.000267
+l3 communications                                         0.000260
+jane street                                               0.000240
+ksplice                                                   0.000240
+employease                                                0.000240
+galois, inc.                                              0.000240
+digitalbenefits                                           0.000240
+benu                                                      0.000240
+qvc                                                       0.000233
+uunet                                                     0.000233
+lds church                                                0.000233
+harland clarke                                            0.000233
+saic                                                      0.000233
+xerox                                                     0.000233
+marchex                                                   0.000233
+blockbuster                                               0.000233
+gamestop                                                  0.000213
+mixpool                                                   0.000200
+olenick & associates                                      0.000200
+goddard space flight center                               0.000200
+vodori                                                    0.000200
+sunbelt rentals                                           0.000200
+hbo                                                       0.000200
+efacec                                                    0.000200
+ipit                                                      0.000200
+outdoor central                                           0.000200
+helsinki institute for information technology             0.000200
+hudson river trading                                      0.000200
+xirrus                                                    0.000200
+paros business partners                                   0.000200
+health market science                                     0.000200
+pelassini information                                     0.000200
+atos origin                                               0.000200
+six apart                                                 0.000200
+new mexico office of the state engineer                   0.000200
+ptt ict                                                   0.000200
+regional it                                               0.000200
+scifi genre                                               0.000200
+ananse productions                                        0.000200
+computers unlimited                                       0.000200
+vicarious visions, inc.                                   0.000200
+paetec holding corp.                                      0.000200
+insanetee.com                                             0.000200
+codeweavers                                               0.000200
+first housing corporation                                 0.000200
+mcgeary consulting group                                  0.000200
+bizzyweb                                                  0.000200
+profitable results marketing                              0.000200
+irobot corporation                                        0.000200
+insomniac development llc                                 0.000200
+state of alaska                                           0.000200
+blu sky labs, inc.                                        0.000200
+the ups store                                             0.000200
+deutsche bank global technology                           0.000200
+noaa                                                      0.000200
+restricted stock systems, princeton, nj                   0.000200
+ubs                                                       0.000200
+tideway systems                                           0.000200
+intrasight                                                0.000200
+vanderbilt university medical center                      0.000200
+big company                                               0.000200
+watchfire signs                                           0.000200
+byu oit                                                   0.000200
+critical mass, inc                                        0.000200
+nimbit                                                    0.000200
+devnaos                                                   0.000200
+virtuallogger, llc                                        0.000200
+ibm t j watson research                                   0.000200
+university of lethbridge library                          0.000200
+northwoods software corporation                           0.000200
+color technology                                          0.000200
+workday inc.                                              0.000200
+federated sports + gaming                                 0.000200
+intermark media                                           0.000200
+remixation                                                0.000200
+r2-solutions inc                                          0.000200
+emeter corp                                               0.000200
+barton malow                                              0.000200
+needly                                                    0.000200
+syniverse technologies, hk                                0.000200
+total immersion software                                  0.000200
+zeus technology                                           0.000200
+cleveland motion controls                                 0.000200
+future us                                                 0.000200
+university of utah hospitals and clinics                  0.000200
+magenic                                                   0.000200
+residential computing, uc berkeley                        0.000200
+depaul - defrag                                           0.000200
+ecolab                                                    0.000200
+alexville.com                                             0.000200
+startx (formerly sse labs)                                0.000200
+levementum                                                0.000200
+karl storz endoskope                                      0.000200
+residential computing                                     0.000200
+softartisans                                              0.000200
+nth group                                                 0.000200
+groove commerce                                           0.000200
+qinetiq north america                                     0.000200
+autodesk                                                  0.000200
+tdc a/s                                                   0.000200
+king                                                      0.000200
+portableapps.com                                          0.000200
+streambase systems                                        0.000200
+assurerx health inc.                                      0.000200
+intelli design & technology                               0.000200
+consulting engineers group, inc                           0.000200
+brookeside, inc                                           0.000200
+wecomm                                                    0.000200
+codelathe                                                 0.000200
+openpeak, inc.                                            0.000200
+avaya inc.                                                0.000200
+qvt financial lp                                          0.000200
+vintage stock                                             0.000200
+vopium a/s                                                0.000200
+behavioral recognition systems, inc.                      0.000200
+ubs o'connor                                              0.000200
+met office                                                0.000200
+philips semiconductors                                    0.000200
+disrupto                                                  0.000200
+simdesk technologies, inc.                                0.000200
+josey skateland                                           0.000200
+market scan                                               0.000200
+kthnoc                                                    0.000200
+tucuxi software                                           0.000200
+medrisk inc                                               0.000200
+qwest                                                     0.000200
+city of dreams                                            0.000200
+bulk-n-bushel                                             0.000200
+allied telesis                                            0.000200
+linnédata ab                                              0.000200
+spring technologies                                       0.000200
+quorum review                                             0.000200
+tendril                                                   0.000200
+ubs ag                                                    0.000200
+yapmo                                                     0.000200
+coatue management                                         0.000200
+busyconf                                                  0.000200
+kyocera                                                   0.000200
+united states marine corps                                0.000200
+jea                                                       0.000200
+serraivew                                                 0.000200
+onyx software                                             0.000200
+navsea philadelphia                                       0.000200
+argentic                                                  0.000200
+nasa jpl                                                  0.000200
+the bigger lights                                         0.000200
+southdata                                                 0.000200
+local wisdom inc.                                         0.000200
+rl canning, inc                                           0.000200
+enablearning                                              0.000200
+itvs                                                      0.000200
+bharat heavy electricals                                  0.000200
+us army (national guard)                                  0.000200
+ixos software                                             0.000200
+clothes horse                                             0.000200
+ibm almaden research center                               0.000200
+u.s. institute of languages                               0.000200
+distance education and learning technology appl...        0.000200
+arxan                                                     0.000200
+recurse creative                                          0.000200
+bridge worldwide                                          0.000200
+travelers co.                                             0.000200
+dutch judiciary                                           0.000200
+nextive solutions                                         0.000200
+kettle moraine school district                            0.000200
+tennessee valley authority                                0.000200
+susquehanna international group, llp                      0.000200
+sandia national laboratories                              0.000200
+u.s. fund for unicef                                      0.000200
+marketo inc                                               0.000200
+comframe                                                  0.000200
+innovation first international, inc.                      0.000200
+eldarion                                                  0.000200
+lycos, inc.                                               0.000200
+uc berkeley school of information                         0.000200
+comdata                                                   0.000200
+stargate group                                            0.000200
+one80one                                                  0.000200
+young scholars institute                                  0.000200
+oasis imaging products                                    0.000200
+globalcom telecomunications                               0.000200
+smart android apps, llc                                   0.000200
+the wonderfactory                                         0.000200
+wall street on demand                                     0.000200
+it strategists                                            0.000200
+thames television                                         0.000200
+doubleclick                                               0.000200
+arch linux arm                                            0.000200
+wayforward technologies                                   0.000200
+crossbeam systems                                         0.000200
+hong kong hospital authority/it people                    0.000200
+alltel                                                    0.000200
+monitor technology                                        0.000200
+github                                                    0.000200
+actenum                                                   0.000200
+base systems                                              0.000200
+isp ras                                                   0.000200
+vertica                                                   0.000200
+analog analytics                                          0.000200
+grabble                                                   0.000200
+reserveamerica                                            0.000200
+pierson education                                         0.000200
+macy's                                                    0.000200
+itresource, inc.                                          0.000200
+microsemi corporation                                     0.000200
+hospital corporation of america                           0.000200
+bloomingdale's                                            0.000200
+extron electronics                                        0.000200
+f3 technology partners                                    0.000200
+semantic dimension                                        0.000200
+etsy                                                      0.000200
+the light brigade                                         0.000200
+gutterth records                                          0.000200
+national federation of property professionals             0.000200
+novell inc., bangalore                                    0.000200
+trendsource                                               0.000200
+underlying inc.                                           0.000200
+totem travel                                              0.000200
+resource data, inc.                                       0.000200
+blue fire capital llc                                     0.000200
+inspirato                                                 0.000200
+candyspotting llc                                         0.000200
+mediacom                                                  0.000200
+tallan                                                    0.000200
+dslextreme                                                0.000200
+sundrop jewelry                                           0.000200
+urpa it                                                   0.000200
+premier, inc.                                             0.000200
+pocketmac                                                 0.000200
+djj                                                       0.000200
+flying fibers                                             0.000200
+charles river associates                                  0.000200
+leading edge design                                       0.000200
+china mobile hong kong ltd                                0.000200
+uop honeywell                                             0.000200
+rbc capital markets                                       0.000200
+delta networks, inc                                       0.000200
+rapid refill                                              0.000200
+qufoto                                                    0.000200
+bzzagent.com                                              0.000200
+skechers                                                  0.000200
+membersfirst                                              0.000200
+intersystems                                              0.000200
+texas a&m department of residents life                    0.000200
+elkhart brass                                             0.000200
+automotive lease guide                                    0.000200
+tufts information security                                0.000200
+synapse games                                             0.000200
+quark, inc.                                               0.000200
+stanford university dining                                0.000200
+infoblox                                                  0.000200
+csts                                                      0.000200
+daniel  h. wagner associates                              0.000200
+trayport                                                  0.000200
+@hand corporation                                         0.000200
+mercedes/berk real estate                                 0.000200
+mu sigma inc                                              0.000200
+jess3                                                     0.000200
+microsoft research                                        0.000200
+affine systems                                            0.000200
+ixxus                                                     0.000200
+it cadre                                                  0.000200
+borland                                                   0.000200
+mediaspan media software                                  0.000200
+rare ideas, llc                                           0.000200
+twitpic                                                   0.000200
+kuehne + nagel, inc.                                      0.000200
+ixia                                                      0.000200
+ibm - websphere swat team                                 0.000200
+redprairie                                                0.000200
+st. francis xavier university                             0.000200
+lab 126                                                   0.000200
+skinux inc                                                0.000200
+pizza time                                                0.000200
+coursekit                                                 0.000200
+business logic                                            0.000200
+vrije university amsterdam                                0.000200
+net health systems, inc.                                  0.000200
+sra international                                         0.000200
+paysimple                                                 0.000200
+sap labs llc                                              0.000200
+marketscale                                               0.000200
+bolster labs                                              0.000200
+bose                                                      0.000200
+leffelmania                                               0.000200
+northrop corporation                                      0.000200
+murex                                                     0.000200
+frappstudio                                               0.000200
+ridgefield playhouse                                      0.000200
+caphyon                                                   0.000200
+tesco                                                     0.000200
+ericsson china                                            0.000200
+schwab performance technologies                           0.000200
+slis                                                      0.000200
+mont ripley                                               0.000200
+university of north carolina                              0.000200
+stonehill college                                         0.000200
+roflcopter                                                0.000200
+vivantech                                                 0.000200
+al-elm information security                               0.000200
+forcex, inc.                                              0.000200
+signostics ltd                                            0.000200
+pmt services                                              0.000200
+fish fish fish                                            0.000200
+nilsson & rosenquist konsulter i malmö ab                 0.000200
+sword ciboodle                                            0.000200
+lawrence berkeley national laboratory                     0.000200
+sircon                                                    0.000200
+phanboi development                                       0.000200
+ism technology                                            0.000200
+detroit labs                                              0.000200
+lasp                                                      0.000200
+axcelis technologies                                      0.000200
+moxa inc.                                                 0.000200
+tudor investment corporation                              0.000200
+venetian macao                                            0.000200
+weill cornell medical school                              0.000200
+emeter corporation                                        0.000200
+me, myself and i                                          0.000200
+adobe                                                     0.000200
+cray, inc.                                                0.000200
+demon internet (thus)                                     0.000200
+vignette                                                  0.000200
+ounce labs                                                0.000200
+the alpaca yarn company                                   0.000200
+inquira                                                   0.000200
+altly                                                     0.000200
+southwestern illinois college                             0.000200
+telvent                                                   0.000200
+metatomix                                                 0.000200
+microsoft corporation                                     0.000200
+net-temps, inc.                                           0.000200
+icontact                                                  0.000200
+ncr corporation                                           0.000200
+tabletop media                                            0.000200
+pegasystems inc.                                          0.000200
+fastrobot                                                 0.000200
+csb/sju fine arts programming - theater tech              0.000200
+sayagle, inc.                                             0.000200
+healthmedx                                                0.000200
+frontier                                                  0.000200
+lehigh university                                         0.000200
+spyglass graphix llc                                      0.000200
+too much media                                            0.000200
+allstate insurance                                        0.000200
+onvia, inc.                                               0.000200
+wvu institute of technology                               0.000200
+nextbridge (pvt) ltd                                      0.000200
+chimes, inc.                                              0.000200
+osu open source lab                                       0.000200
+fry, inc                                                  0.000200
+southwest research institute                              0.000200
+proteus technologies                                      0.000200
+mortgagebot                                               0.000200
+gadgt xs                                                  0.000200
+fendi                                                     0.000200
+attenex corporation                                       0.000200
+mig inc                                                   0.000200
+turboweb limited                                          0.000200
+defywire                                                  0.000200
+mir3                                                      0.000200
+souq.com                                                  0.000200
+chalklabs                                                 0.000200
+ritual entertainment                                      0.000200
+millikin university                                       0.000200
+sopra group                                               0.000200
+nordstrom                                                 0.000200
+pulse (alphonso labs)                                     0.000200
+ntier solution                                            0.000200
+mosby brothers farms, inc.                                0.000200
+geico                                                     0.000200
+bentley systems                                           0.000200
+politehnica university of bucharest                       0.000200
+smartmove                                                 0.000200
+national marrow donor program                             0.000200
+spooky cool labs                                          0.000200
+organic, inc                                              0.000200
+wireless lifestyle                                        0.000200
+fansnap                                                   0.000200
+topanga technologies                                      0.000200
+rezayat                                                   0.000200
+level studios                                             0.000200
+restaurant morelia                                        0.000200
+the boeing company                                        0.000200
+thomas jefferson foundation, inc                          0.000200
+ucla alumni association                                   0.000200
+daemonfstudio.com                                         0.000200
+the cambridge group                                       0.000200
+jackson national life                                     0.000200
+mobitv, inc.                                              0.000200
+lifesize                                                  0.000200
+telus                                                     0.000200
+horse and cart                                            0.000200
+vtech                                                     0.000200
+npc developments                                          0.000200
+platinum protection                                       0.000200
+viewpoints network                                        0.000200
+ascentium                                                 0.000200
+fox sports                                                0.000200
+streambase                                                0.000200
+teletronics technology corporation                        0.000200
+鳳翔科技股份有限公司                                                0.000200
+icontrol                                                  0.000200
+instructure inc.                                          0.000200
+lamppost mobile                                           0.000200
+merrill lynch                                             0.000200
+eugenoprea.com                                            0.000200
+rockwell automation                                       0.000200
+soul aim studios                                          0.000200
+accusoft pegasus                                          0.000200
+frasca international                                      0.000200
+redbird software                                          0.000200
+sony ericsson                                             0.000200
+rogers communications                                     0.000200
+creative artists agency                                   0.000200
+nominum                                                   0.000200
+phillips academy                                          0.000200
+shopatron                                                 0.000200
+yellowbook                                                0.000200
+203 communications, llc                                   0.000200
+chrysler jeep                                             0.000200
+big red design                                            0.000200
+fenix solutions                                           0.000200
+teach for america                                         0.000200
+swank internet business solutions llc                     0.000200
+fry's electronics                                         0.000200
+vast.com                                                  0.000200
+merchantcircle                                            0.000200
+ovia                                                      0.000200
+asidua                                                    0.000200
+verizon                                                   0.000200
+collective labs                                           0.000200
+nodeta oy                                                 0.000200
+insonne computers                                         0.000200
+iunctus geomatics corp.                                   0.000200
+usg insurance services                                    0.000200
+odiago                                                    0.000200
+avineon, inc.                                             0.000200
+intellidyne, llc                                          0.000200
+impact solutions                                          0.000200
+terc                                                      0.000200
+umaine student government                                 0.000200
+fatcow games                                              0.000200
+the honesty                                               0.000200
+us navy                                                   0.000200
+rtms global                                               0.000200
+space and naval warfare systems command                   0.000200
+edo interactive                                           0.000200
+systex, inc.                                              0.000200
+flowdock ltd                                              0.000200
+domino's pizza enterprises                                0.000200
+vmware inc., palo alto                                    0.000200
+cvs|caremark                                              0.000200
+imo.im                                                    0.000200
+itree                                                     0.000200
+cigital, inc.                                             0.000200
+consona corp                                              0.000200
+admeld                                                    0.000200
+crossroads school                                         0.000200
+quora                                                     0.000200
+nokia research center                                     0.000200
+systems professionals                                     0.000200
+uraan software solutions                                  0.000200
+queenline kitchens                                        0.000200
+adzerk                                                    0.000200
+youview                                                   0.000200
+ecole polytechnique                                       0.000200
+quehacer,pr                                               0.000200
+the daily toreador                                        0.000200
+aegean pools                                              0.000200
+ultralingua                                               0.000200
+siteworx, inc                                             0.000200
+microsoft game studios                                    0.000200
+gt                                                        0.000200
+refworks-cos                                              0.000200
+spanning                                                  0.000200
+backlot events                                            0.000200
+family health international                               0.000200
+roark enterprises                                         0.000200
+kentrox                                                   0.000200
+maps indeed                                               0.000200
+universal studios                                         0.000200
+demiurge studios                                          0.000200
+automated license systems                                 0.000200
+good student                                              0.000200
+rockford register star                                    0.000200
+oops ab                                                   0.000200
+wlan slovenia                                             0.000200
+business integration group                                0.000200
+university of maryland computer science department        0.000200
+network video                                             0.000200
+securian financial group                                  0.000200
+hirasoft                                                  0.000200
+at&t interactive                                          0.000200
+stanley works                                             0.000200
+sagem morpho                                              0.000200
+mcdonald's canada                                         0.000200
+northeastern university campus recreation                 0.000200
+avvo                                                      0.000200
+like.com                                                  0.000200
+proquest                                                  0.000200
+o'reilly auto parts                                       0.000200
+temenos group                                             0.000200
+bungie                                                    0.000200
+parentlink                                                0.000200
+leco corporation                                          0.000200
+epigenesys                                                0.000200
+5am solutions                                             0.000200
+bambu                                                     0.000200
+rapid software                                            0.000200
+vectorvest, inc.                                          0.000200
+jonathan byrds cafeteria                                  0.000200
+passion river films                                       0.000200
+comx networks                                             0.000200
+tesla motors                                              0.000200
+hacker group                                              0.000200
+ipower                                                    0.000200
+meijer                                                    0.000200
+catholic university of america                            0.000200
+appstores.com                                             0.000200
+google summer of code                                     0.000200
+qwiki                                                     0.000200
+danga interactive                                         0.000200
+madpilot productions                                      0.000200
+bmc software                                              0.000200
+saab security                                             0.000200
+?                                                         0.000200
+palm, motorola, metrowerks, mozilla                       0.000200
+enphase energy, inc.                                      0.000200
+megatrend                                                 0.000200
+mind studios                                              0.000200
+visible vote                                              0.000200
+unimatrix-one                                             0.000200
+cairns dive centre                                        0.000200
+tj hughes                                                 0.000200
+entrust                                                   0.000200
+delorme                                                   0.000200
+market basket supermarket                                 0.000200
+big huge games                                            0.000200
+transactplus                                              0.000200
+photobucket                                               0.000200
+greystone grill                                           0.000200
+nys office for technology                                 0.000200
+alcoa                                                     0.000200
+key ingredient                                            0.000200
+reunert group                                             0.000200
+music reports, inc                                        0.000200
+mobile active                                             0.000200
+expert acquisition                                        0.000200
+reflections interactive                                   0.000200
+newsgator                                                 0.000200
+terminal reality                                          0.000200
+inovaz                                                    0.000200
+heello                                                    0.000200
+stellent                                                  0.000200
+continental                                               0.000200
+sidereel                                                  0.000200
+realtime associates, inc.                                 0.000200
+mygrant glass co.                                         0.000200
+church of jesus christ of latter-day saints               0.000200
+vicarious visions                                         0.000200
+private company                                           0.000200
+emerson electric company                                  0.000200
+mphasis                                                   0.000200
+veteran entrepreneurial transfer inc.                     0.000200
+bank of america merrill lynch                             0.000200
+cybercore technologies                                    0.000200
+carlson capital, l.p.                                     0.000200
+netguru                                                   0.000200
+red hat inc                                               0.000200
+there, inc.                                               0.000183
+vertafore                                                 0.000183
+reactivity                                                0.000181
+gsi commerce                                              0.000180
+netscape                                                  0.000180
+xuma                                                      0.000167
+novell                                                    0.000167
+engineering animation, inc.                               0.000160
+innovative computing laboratory, university of ...        0.000160
+abbott laboratories                                       0.000160
+cgntv                                                     0.000160
+royal mail                                                0.000160
+vertical technologies                                     0.000160
+rogers media inc.                                         0.000160
+nextair, inc                                              0.000160
+air touch cellular                                        0.000160
+blue fountain media                                       0.000160
+singlewire software                                       0.000160
+commerce one                                              0.000160
+poolexpert inc.                                           0.000160
+sparta social networks                                    0.000160
+avantgo                                                   0.000160
+ugs corp.                                                 0.000160
+berbee                                                    0.000160
+empro                                                     0.000160
+media 4th                                                 0.000160
+neopost                                                   0.000160
+quios                                                     0.000160
+southern electric                                         0.000160
+ovoci-t inc.                                              0.000160
+o’reilly media                                            0.000160
+idni                                                      0.000160
+brøderbund software                                       0.000160
+webfilings                                                0.000160
+blue noodle entertainment                                 0.000160
+développement axial                                       0.000160
+deloitte consulting                                       0.000160
+halfords                                                  0.000160
+corel corporation                                         0.000160
+las vegas retreats                                        0.000160
+cable & wireless                                          0.000160
+locamoda                                                  0.000160
+ciber                                                     0.000157
+monolith energy trading                                   0.000133
+afl-cio                                                   0.000133
+university of arizona press                               0.000133
+ilog                                                      0.000133
+umass amherst                                             0.000133
+aramark                                                   0.000133
+schoolnet                                                 0.000133
+connamara systems                                         0.000133
+merrill lynch & co. inc.                                  0.000133
+university of south alabama                               0.000133
+igt                                                       0.000133
+vivísimo                                                  0.000133
+sage software                                             0.000133
+sag harbor ufsd                                           0.000133
+vektor                                                    0.000133
+experian                                                  0.000133
+unity software systems                                    0.000133
+r. r. donnelley & sons company                            0.000133
+playfirst                                                 0.000133
+kansas state university, civil engg. dept., cisl          0.000133
+proplanner                                                0.000133
+american institute of physics                             0.000133
+pfizer, inc.                                              0.000133
+adaptec                                                   0.000133
+internet creations                                        0.000133
+techsmith corporation                                     0.000133
+backtype inc.                                             0.000133
+redmond inc.                                              0.000133
+matchbox mobile                                           0.000133
+xmg studio                                                0.000133
+stratigent                                                0.000133
+openwave                                                  0.000133
+aedis it, llc.                                            0.000133
+boston university astronomy dept.                         0.000133
+webmynd                                                   0.000133
+semandex networks                                         0.000133
+ford motor company                                        0.000133
+p&g associates                                            0.000133
+pictela / aol                                             0.000133
+infiniedge software                                       0.000133
+combinenet, inc.                                          0.000133
+law office of thomas r nigro                              0.000133
+acuity technology services                                0.000133
+applied materials                                         0.000133
+united advertising publication                            0.000133
+lhtee, auth                                               0.000133
+ambrasoft                                                 0.000133
+merck & co.                                               0.000133
+deloitte                                                  0.000133
+southern methodist university                             0.000133
+utopia net                                                0.000133
+cedar's mediterranean foods                               0.000133
+wsi                                                       0.000133
+charles river development                                 0.000133
+my bedroom                                                0.000133
+harvard student agencies rover mobile developme...        0.000133
+wyler                                                     0.000133
+ibm interactive                                           0.000133
+image metrics                                             0.000133
+brookings institution                                     0.000133
+mass academy iq camp                                      0.000133
+solios asset management                                   0.000133
+viafo                                                     0.000133
+intelliteach                                              0.000133
+oregon state university - university housing an...        0.000133
+raytheon ncs                                              0.000133
+vigyan inc.                                               0.000133
+arista networks, inc.                                     0.000133
+control4                                                  0.000133
+estara                                                    0.000133
+wpi helpdesk                                              0.000133
+united states coast guard                                 0.000133
+associated students of madison                            0.000133
+composite software                                        0.000133
+trilogy, inc                                              0.000133
+rcp                                                       0.000133
+onethousands adventure                                    0.000133
+donorschoose                                              0.000133
+emc                                                       0.000133
+telvista                                                  0.000133
+ncsa                                                      0.000133
+ektron                                                    0.000133
+the oregon clinic                                         0.000133
+quickfeedme                                               0.000133
+ifx online                                                0.000133
+advanced reimbursement management                         0.000133
+northern trust                                            0.000133
+lion line                                                 0.000133
+kutztown university                                       0.000133
+jkj supermarkets, inc.                                    0.000133
+social living productions                                 0.000133
+torch computers                                           0.000133
+west florida historic preservation, inc                   0.000133
+perot systems                                             0.000133
+cloudlock                                                 0.000133
+genuine interactive                                       0.000133
+vocollect, inc.                                           0.000133
+blackbaud                                                 0.000133
+strivectin                                                0.000133
+postx                                                     0.000133
+directv                                                   0.000133
+centers for disease control and prevention                0.000133
+icap                                                      0.000133
+trubeer                                                   0.000133
+digital technology international                          0.000133
+vistage international                                     0.000133
+balard pool                                               0.000133
+elm information security                                  0.000133
+applied innovation                                        0.000133
+transcore                                                 0.000133
+tac                                                       0.000133
+bt group                                                  0.000133
+mohave sun power                                          0.000133
+astrid                                                    0.000133
+nortel                                                    0.000133
+social living spaces                                      0.000133
+pfizer                                                    0.000133
+wipro global r&d                                          0.000133
+infutor                                                   0.000133
+hcl infosystems ltd                                       0.000133
+trading technologies                                      0.000133
+firaxis games                                             0.000133
+blackstone group                                          0.000133
+mit lincoln lab                                           0.000133
+lift media                                                0.000133
+international restaurant supply                           0.000133
+stern software                                            0.000133
+margaret wong & associates                                0.000133
+usmc                                                      0.000133
+nationwide                                                0.000133
+countrywide financial                                     0.000133
+caraustar                                                 0.000133
+syscom technologies                                       0.000133
+tech u                                                    0.000133
+collective intellect                                      0.000133
+arc90                                                     0.000133
+pointnik                                                  0.000133
+expert server group                                       0.000133
+mpower labs, inc.                                         0.000133
+seefile                                                   0.000133
+kaufman financial group/burns & wilcox                    0.000133
+ikayzo                                                    0.000133
+noblis inc.                                               0.000133
+projected games ltd                                       0.000133
+the motley fool                                           0.000133
+bayard rock                                               0.000133
+invertix                                                  0.000133
+cstv                                                      0.000133
+ibm extreme blue                                          0.000133
+info directions                                           0.000133
+sony                                                      0.000133
+argus systems group                                       0.000133
+sorin lab                                                 0.000133
+matrix group international                                0.000133
+ebrary                                                    0.000133
+pavlov media                                              0.000133
+princeton chinese language school                         0.000133
+oozle media                                               0.000133
+utep cs dept. - reu                                       0.000133
+learning.com                                              0.000133
+olympia brewing co                                        0.000133
+nih/nlm/apdb                                              0.000133
+paradise copies                                           0.000133
+excelsior media                                           0.000133
+localytics                                                0.000133
+paramount canada's wonderland                             0.000133
+dealer information systems                                0.000133
+toucharcade.com                                           0.000133
+nicholls state university                                 0.000133
+kollmorgen electic optical                                0.000133
+mapmundi                                                  0.000133
+elemica/rubbernetwork                                     0.000133
+bpoe #1019                                                0.000133
+university of michigan flint                              0.000133
+information technology services,usc                       0.000133
+toys r us                                                 0.000133
+cinemark theatres                                         0.000133
+buddy media                                               0.000133
+oxfam                                                     0.000133
+raymond                                                   0.000133
+quiet logistics                                           0.000133
+computer application solutions                            0.000133
+hobsons                                                   0.000133
+bio-rad laboratories, inc.                                0.000133
+publix super markets                                      0.000133
+national museum of natural history                        0.000133
+e-volutionsoft                                            0.000133
+ebers, smith and douglas associated                       0.000133
+shaw media                                                0.000133
+lastpass                                                  0.000133
+thus plc                                                  0.000133
+certes networks                                           0.000133
+san bernardino valley college                             0.000133
+sir reel                                                  0.000133
+5min                                                      0.000133
+bonefish grill                                            0.000133
+dcs corp                                                  0.000133
+j.crew                                                    0.000133
+servosity                                                 0.000133
+cyberplex                                                 0.000133
+bolyston technology group                                 0.000133
+pink otc                                                  0.000133
+measurement incorporated                                  0.000133
+applied voice technology                                  0.000133
+skylight healthcare                                       0.000133
+factual                                                   0.000133
+osu student affairs it                                    0.000133
+titan - an l-3 communicatons company                      0.000133
+mantis                                                    0.000133
+staples print solutions                                   0.000133
+aston international                                       0.000133
+megagate broadband                                        0.000133
+operitel                                                  0.000133
+buffalo wild wings                                        0.000133
+loomia                                                    0.000133
+big idea lab                                              0.000133
+domaintools.com                                           0.000133
+knowlysis                                                 0.000133
+callware                                                  0.000133
+plex                                                      0.000133
+treyarch                                                  0.000133
+espn                                                      0.000133
+zokem                                                     0.000133
+tellemotion                                               0.000133
+willowbridge associates                                   0.000133
+utep cs dept.                                             0.000133
+systems in motion                                         0.000133
+yellow box                                                0.000133
+nyse                                                      0.000133
+mellanox technologies                                     0.000133
+authorize.net                                             0.000133
+colgate-palmolive                                         0.000133
+burns & wilcox                                            0.000133
+web.com / interland                                       0.000133
+cima energy, ltd                                          0.000133
+ucr                                                       0.000133
+microage                                                  0.000133
+engenuity technologies                                    0.000133
+anime & games central                                     0.000133
+hot topic                                                 0.000133
+infolab                                                   0.000133
+voltaire                                                  0.000133
+cortex creations                                          0.000133
+nucleus electronics                                       0.000133
+raytheon ast                                              0.000133
+pwgsc                                                     0.000133
+efacec advanced control systems                           0.000133
+potestivo & associates                                    0.000133
+lithia motors, inc.                                       0.000133
+michigan tech university                                  0.000133
+darwin's ltd                                              0.000133
+continuing care e-health                                  0.000133
+esoterix inc. (a labcorp company)                         0.000133
+undergraduate student government at stony brook           0.000133
+procom communications                                     0.000133
+ioko                                                      0.000133
+georgia tech archives and record management               0.000133
+zymeta corporation                                        0.000133
+harvard academic technology group                         0.000133
+hitachi data systems                                      0.000133
+raptr                                                     0.000133
+metrô sp                                                  0.000133
+silberstein, awad & miklos, p.c.                          0.000133
+state of utah                                             0.000133
+pinata                                                    0.000133
+quatitative alpha trading                                 0.000133
+govdelivery                                               0.000133
+pizza factory                                             0.000133
+peer1                                                     0.000133
+whirlpool                                                 0.000133
+rapid repair                                              0.000133
+zions first national bank                                 0.000133
+university of washington earth and space scienc...        0.000133
+sir pizza                                                 0.000133
+uwyn, bvba                                                0.000133
+mainstream computers & appliance                          0.000133
+l & t infotech ltd                                        0.000133
+composite engineering, inc.                               0.000133
+metacarta                                                 0.000133
+corporate express                                         0.000133
+teleca                                                    0.000133
+ieee                                                      0.000133
+procuro                                                   0.000133
+chacha search, inc.                                       0.000133
+sobeys                                                    0.000133
+onstar                                                    0.000133
+slalom consulting                                         0.000133
+fake graphics                                             0.000133
+socrata                                                   0.000133
+attachmate                                                0.000133
+the yard fairy, inc.                                      0.000133
+bloomfield surf club                                      0.000133
+double fine productions                                   0.000133
+riptown/fiver                                             0.000133
+mitch's tavern                                            0.000133
+vigill                                                    0.000133
+graham capital management                                 0.000133
+wonderhowto                                               0.000133
+canwest                                                   0.000133
+digeo, inc                                                0.000133
+newbridge networks                                        0.000133
+murry lab                                                 0.000133
+jhu applied physics lab                                   0.000133
+columbia university school of continuing education        0.000133
+easthill music center                                     0.000133
+dot hill systems corp.                                    0.000133
+staples, inc.                                             0.000133
+eds                                                       0.000133
+intercasting, corp.                                       0.000133
+allpoints systems                                         0.000133
+edmunds.com                                               0.000133
+kuali foundation                                          0.000133
+icecube project                                           0.000133
+the ups store/mbe                                         0.000133
+loudcloud                                                 0.000133
+dls                                                       0.000133
+athenahealth, inc.                                        0.000133
+construction, inc.                                        0.000133
+elite inspection & consulting, inc.                       0.000133
+harman international industries                           0.000133
+hillcrest                                                 0.000133
+pacific sunwear                                           0.000133
+xtreme labs                                               0.000133
+fusion marketing partners                                 0.000133
+nbme                                                      0.000133
+center for computation technology @ lsu                   0.000133
+4info                                                     0.000133
+igware                                                    0.000133
+inventory dynamics                                        0.000133
+ultimate fighting championship                            0.000133
+r/greenberg associates                                    0.000133
+gannett fleming inc.                                      0.000133
+pepperdine bschool                                        0.000133
+market united                                             0.000133
+assess systems                                            0.000133
+circuit city                                              0.000133
+netcompany                                                0.000133
+georgia tech school of physics                            0.000133
+mustang technology                                        0.000133
+aintree university hospitals foundation trust             0.000133
+focus design                                              0.000133
+itek services                                             0.000133
+turner studios                                            0.000133
+red bull                                                  0.000133
+transarc                                                  0.000133
+js walker co.                                             0.000133
+noah's bagels                                             0.000133
+gnet s.a.                                                 0.000133
+360i                                                      0.000133
+geospot                                                   0.000133
+ressq technologies inc                                    0.000133
+country music television                                  0.000133
+the method post                                           0.000133
+cornerstone trading group                                 0.000133
+red 5 studios                                             0.000133
+corda technologies                                        0.000133
+ironport                                                  0.000133
+pacific northwest national lab                            0.000133
+etcorp                                                    0.000133
+ictech                                                    0.000133
+emware inc.                                               0.000133
+synapse studios                                           0.000133
+infrasource                                               0.000133
+pure networks                                             0.000133
+jordache                                                  0.000133
+thales group                                              0.000133
+maryland symphony orchestra                               0.000133
+extendmedia                                               0.000133
+library house                                             0.000133
+gridpoint                                                 0.000133
+yale philosophy department                                0.000133
+bearingpoint                                              0.000133
+headspring                                                0.000133
+smartdraw                                                 0.000133
+arris group, inc                                          0.000133
+orange business services                                  0.000133
+applied systems canda                                     0.000133
+tsola                                                     0.000133
+yashio city board of education                            0.000133
+backtype                                                  0.000133
+whitecanyon, inc.                                         0.000133
+ask.com                                                   0.000133
+university of illinois at champaign urbana                0.000133
+expert network and software engineering                   0.000133
+bordener engineered surfaces                              0.000133
+mejh group                                                0.000133
+police central, t-mobile, virtual design group,...        0.000133
+nortak                                                    0.000133
+pistachio hair studio                                     0.000133
+atalasoft                                                 0.000133
+medaptus                                                  0.000133
+readytalk                                                 0.000133
+feynman group                                             0.000133
+comverge                                                  0.000133
+3gear systems                                             0.000133
+rsmart                                                    0.000133
+trc solutions                                             0.000133
+international business machines corporation               0.000133
+benjamin media                                            0.000133
+jk design                                                 0.000133
+sumo group                                                0.000133
+bebarang                                                  0.000133
+decision support sciences                                 0.000133
+interactions, corp.                                       0.000133
+emberex                                                   0.000133
+ozmott, llc                                               0.000133
+northwestern university press                             0.000133
+troubadour mobile                                         0.000133
+gameloft                                                  0.000133
+dellaporta genomics lab                                   0.000133
+modulus video                                             0.000133
+name intelligence, inc.                                   0.000133
+threewill                                                 0.000133
+solium capital inc.                                       0.000133
+iona technologies                                         0.000133
+pricewaterhousecoopers                                    0.000133
+siemens plm software                                      0.000133
+information trust institute - univ. of illinois           0.000133
+k19 treinamentos                                          0.000133
+globalstar                                                0.000133
+microsoft singapore                                       0.000133
+sporting news                                             0.000133
+eci telecom                                               0.000133
+valtech technologies                                      0.000133
+novatech engineering                                      0.000133
+o'melveny & myers llp                                     0.000133
+viewpoint construction software                           0.000133
+brigham young university office of information ...        0.000133
+ccad, llc (comcast / motorola joint venture)              0.000133
+view digital media                                        0.000133
+logitech                                                  0.000133
+objective solutions, inc.                                 0.000133
+critical mass                                             0.000133
+adchemy                                                   0.000133
+tallán                                                    0.000133
+north shore csd                                           0.000133
+republic parking                                          0.000133
+burton                                                    0.000133
+cloudfoundry                                              0.000133
+advanced science and technology institute                 0.000133
+geoworks                                                  0.000133
+apture                                                    0.000133
+saturno design, llc                                       0.000133
+adcore japan                                              0.000133
+microsoft philippines                                     0.000133
+unica                                                     0.000133
+center for distributed learning - csu                     0.000133
+t-systems malaysia sdn bhd                                0.000133
+belmont wheelworks                                        0.000133
+little crow country club                                  0.000133
+arrayent                                                  0.000133
+drivethrurpg                                              0.000133
+hotschedules, inc.                                        0.000133
+hewlett-packard (canada) co                               0.000130
+techaccess fz llc                                         0.000114
+indeed inc.                                               0.000114
+transguard group llc                                      0.000114
+axenttech fz llc                                          0.000114
+coremetrics                                               0.000114
+evolved digital media                                     0.000114
+plugins electronix                                        0.000114
+trilogy software                                          0.000114
+electronic book technologies                              0.000114
+havoc entertainment                                       0.000114
+inso corporation                                          0.000114
+supportsoft                                               0.000100
+navigationarts                                            0.000100
+cigital                                                   0.000100
+vistacomm                                                 0.000100
+national weather service (noaa)                           0.000100
+firmweb                                                   0.000100
+aria medical                                              0.000100
+democratic national committee                             0.000100
+u.s. navy                                                 0.000100
+walla                                                     0.000100
+living scriptures                                         0.000100
+expedia                                                   0.000100
+rit- sol writing center                                   0.000100
+logicware, inc.                                           0.000100
+smule                                                     0.000100
+23andme inc.                                              0.000100
+reporter magazine                                         0.000100
+rocket ninja                                              0.000100
+irobot                                                    0.000100
+capitol hill yoga                                         0.000100
+ejbell systems                                            0.000100
+nullsoft                                                  0.000100
+broadlane                                                 0.000100
+vision radio                                              0.000100
+less annoying crm                                         0.000100
+brookshire grocery company                                0.000100
+namco networks                                            0.000100
+hunter engineering                                        0.000100
+corecomm                                                  0.000100
+smartfield                                                0.000100
+s1 corporation                                            0.000100
+mpath                                                     0.000100
+cablevision                                               0.000100
+rel8tion                                                  0.000100
+america coming together                                   0.000100
+the univesity of arizona                                  0.000100
+m w kellogg                                               0.000100
+danger                                                    0.000100
+志布志市教育委員会                                                 0.000100
+the post                                                  0.000100
+emeta                                                     0.000100
+real capital markets                                      0.000100
+zane benefits                                             0.000100
+symontek                                                  0.000100
+ibm denmark                                               0.000100
+jibe.com                                                  0.000100
+octopi                                                    0.000100
+netomedia                                                 0.000100
+slo county of education                                   0.000100
+ecora software corp.                                      0.000100
+honda                                                     0.000100
+the hedgehog hill group                                   0.000100
+alliance francaise                                        0.000100
+independent                                               0.000100
+infopulse ukraine                                         0.000100
+columbia university residence halls                       0.000100
+mikro værkstedet                                          0.000100
+topix                                                     0.000100
+willetts systems, inc.                                    0.000100
+wego                                                      0.000100
+boundless yoga                                            0.000100
+metaversatility                                           0.000100
+fdny                                                      0.000100
+wiredrive                                                 0.000100
+healthforce partners                                      0.000100
+ambergames                                                0.000100
+touch technology, inc.                                    0.000100
+international business machines                           0.000100
+drakontas, llc                                            0.000100
+signpost                                                  0.000100
+aqr capital management                                    0.000100
+sony network entertainment                                0.000100
+treeno software                                           0.000100
+boulder tech consulting                                   0.000100
+healthways                                                0.000100
+lourdes industries                                        0.000100
+cybersites, inc.                                          0.000100
+homenet automotive                                        0.000100
+kitware                                                   0.000100
+princeton university computer science dept.               0.000100
+washington mutual                                         0.000100
+gumgum                                                    0.000100
+cefiore                                                   0.000100
+wyndemere                                                 0.000100
+sutherland global services                                0.000100
+the atom group                                            0.000100
+mitchell1                                                 0.000100
+voodoovox                                                 0.000100
+united states army                                        0.000100
+blackboard                                                0.000100
+high moon studios                                         0.000100
+acxiom                                                    0.000100
+gnip                                                      0.000100
+american airlines                                         0.000100
+nhumi technologies                                        0.000100
+tom sawyer software                                       0.000100
+medtronic (through rhi)                                   0.000100
+ibm research t.j. watson research center                  0.000100
+rit- center for residence life                            0.000100
+ancea                                                     0.000100
+woodlands church                                          0.000100
+overdrive, inc.                                           0.000100
+pagalguy.com                                              0.000100
+vlingo                                                    0.000100
+wheelchair foundation                                     0.000100
+audiobase                                                 0.000100
+sling media inc.                                          0.000100
+minnehaha conservation district                           0.000100
+iq-labs inc. (www.talent6.com, www.casting360.com)        0.000100
+astrum software                                           0.000100
+uniweb (www.uniweb.eu)                                    0.000100
+pricegrabber                                              0.000100
+netlight consulting                                       0.000100
+johnson controls                                          0.000100
+ezeego1.com                                               0.000100
+vocellies                                                 0.000100
+supermedia                                                0.000100
+tvworks                                                   0.000100
+clemson university - caeff                                0.000100
+raytheon applied signal technology                        0.000100
+cox communications                                        0.000100
+key bank                                                  0.000100
+destroy all software llc                                  0.000100
+synergy systems                                           0.000100
+willow street yoga center                                 0.000100
+york high school                                          0.000100
+bea systems                                               0.000100
+summit semiconductor                                      0.000100
+ambrosia software                                         0.000100
+macrovision                                               0.000100
+fxhome limited                                            0.000100
+pivotal labs                                              0.000100
+princeton university dining services                      0.000100
+cassidian communications, eads na                         0.000100
+hudson medical communications                             0.000100
+warner brothers games                                     0.000100
+blissone media                                            0.000100
+southwest airlines                                        0.000100
+pixelworks                                                0.000100
+compuware                                                 0.000100
+rapp collins                                              0.000100
+mts ukraine                                               0.000100
+associated wholesalers, inc.                              0.000100
+canon                                                     0.000100
+ibm lotus software division                               0.000100
+sliced software                                           0.000100
+delib                                                     0.000100
+teambook2                                                 0.000100
+hamilton sundstrand                                       0.000100
+arrow international                                       0.000100
+onesource information services                            0.000100
+honeywell                                                 0.000100
+shad international                                        0.000100
+amerisourcebergen                                         0.000100
+socratica llc                                             0.000100
+infospace, inc.                                           0.000100
+cloud warmer                                              0.000100
+contagion health                                          0.000100
+applied signal technology                                 0.000100
+group health cooperative                                  0.000100
+u.s. dept. of commerce, census bureau                     0.000100
+blekko                                                    0.000100
+ximian                                                    0.000100
+hireability                                               0.000100
+hyperchip usa                                             0.000100
+illuminate labs                                           0.000100
+fat goose, inc.                                           0.000100
+itt (formerly edo)                                        0.000100
+richrelevance                                             0.000100
+rockstar san diego                                        0.000100
+veracode                                                  0.000100
+simpson investment                                        0.000100
+capital one auto finance                                  0.000100
+mahalo.com                                                0.000100
+jogli                                                     0.000100
+myspace                                                   0.000100
+infosys                                                   0.000100
+be inc.                                                   0.000100
+high voltage ventures                                     0.000100
+network guidance 2.0                                      0.000100
+software partners                                         0.000100
+computer technology solutions                             0.000100
+the post-rapture post                                     0.000100
+ez-tees 123                                               0.000100
+gratis ltd                                                0.000100
+imatest llc                                               0.000100
+bright house networks                                     0.000100
+the hartford planco                                       0.000100
+freelance graphic artist                                  0.000100
+the pokémon company                                       0.000100
+walt disney animation studios                             0.000100
+llnl                                                      0.000100
+walla!                                                    0.000100
+leisurelink                                               0.000100
+majaslapa.lv (www.majaslapa.lv)                           0.000100
+imesh                                                     0.000100
+amplafi inc                                               0.000100
+pyxis engineering                                         0.000100
+hrm direct                                                0.000100
+idle games                                                0.000100
+american residuals & talent                               0.000100
+ebuilt inc                                                0.000100
+avitek                                                    0.000100
+payment solutions                                         0.000100
+lehman brothers                                           0.000100
+the conference exchange                                   0.000100
+immediatefx                                               0.000100
+cdm technologies                                          0.000100
+schmitt industries                                        0.000100
+the hartford financial services group                     0.000100
+software consultant                                       0.000100
+quality manufacturing systems, inc                        0.000100
+i.point                                                   0.000100
+helastel                                                  0.000100
+shopzilla                                                 0.000100
+mitsubishi ufj securities international                   0.000100
+mississippi department of transportation                  0.000100
+idée inc.                                                 0.000100
+ibm microelectronics                                      0.000100
+looksmart                                                 0.000100
+ilike.com                                                 0.000100
+eye associates of northeast louisiana                     0.000100
+new york new york pizza pasta                             0.000100
+xerox parc (intern)                                       0.000100
+aflac                                                     0.000100
+yamaha                                                    0.000100
+howard hughes medical institute                           0.000100
+infinity ward                                             0.000100
+simpledevices, universal electronics                      0.000100
+announce media                                            0.000100
+trilunar entertainment                                    0.000100
+vti instruments                                           0.000100
+smarter travel media                                      0.000100
+asu / nasa co-op internship                               0.000100
+tikshoov                                                  0.000100
+homegoods                                                 0.000100
+hell                                                      0.000100
+three rings design                                        0.000100
+bitbacker inc                                             0.000100
+hyperspace inc.                                           0.000100
+independent consultant                                    0.000100
+hearme                                                    0.000100
+lawrence berkeley labs                                    0.000100
+mit lincoln labs                                          0.000100
+palmsource, inc.                                          0.000100
+new york jets, llc                                        0.000100
+customer relationship metrics                             0.000100
+qdoba mexican grill                                       0.000100
+fxpal inc.                                                0.000100
+heart of america e-commerce                               0.000100
+thoughtworks                                              0.000100
+kss postgraduate deanery                                  0.000100
+american registry                                         0.000100
+center for prostate disease research                      0.000100
+hcl technologies                                          0.000100
+medio systems                                             0.000100
+safeco                                                    0.000100
+siemens corporate research                                0.000100
+luxoft                                                    0.000100
+ibm research (intern)                                     0.000100
+kohl's                                                    0.000100
+mama's pizza                                              0.000100
+bubbletree                                                0.000100
+willow garage                                             0.000100
+limewire                                                  0.000100
+akrf                                                      0.000100
+getfit.com                                                0.000100
+sony computer entertainment america                       0.000100
+modern paper box company                                  0.000089
+volt                                                      0.000089
+pizza dome                                                0.000089
+mailhandlers                                              0.000089
+microknowledge                                            0.000089
+unicom                                                    0.000089
+papa john's                                               0.000089
+penobscot community health care                           0.000089
+pewamo-westphalia                                         0.000080
+wharton alumni affairs                                    0.000080
+woori investment and securities                           0.000080
+spektrix                                                  0.000080
+viewpoint software                                        0.000080
+the guild                                                 0.000080
+onset computer corporation                                0.000080
+clarifi/capitaliq                                         0.000080
+aminus3.com                                               0.000080
+i-site, inc.                                              0.000080
+flecs, inc.                                               0.000080
+express technologies                                      0.000080
+nexj systems                                              0.000080
+campus crusade for christ                                 0.000080
+uw clinical trial center                                  0.000080
+barking lizards                                           0.000080
+escription, inc.                                          0.000080
+flotype                                                   0.000080
+newmedia stars                                            0.000080
+cincinnati children's hospital medical center             0.000080
+aos                                                       0.000080
+embedics                                                  0.000080
+citysoft inc                                              0.000080
+auto-owners insurance                                     0.000080
+9mmedia                                                   0.000080
+cope ips                                                  0.000080
+alticast                                                  0.000080
+scientists and engineers for america                      0.000080
+sevens and sixes                                          0.000080
+community based interventions, inc.                       0.000080
+rwd technologies                                          0.000080
+leica geosystems                                          0.000080
+blue cross and blue shield of north carolina              0.000080
+iteon consulting, llc                                     0.000080
+columbia distributing                                     0.000080
+syllogistic software inc.                                 0.000080
+taptu                                                     0.000080
+sonos                                                     0.000080
+sun life financial                                        0.000080
+clarifi                                                   0.000080
+cssi, inc.                                                0.000080
+wine.com                                                  0.000080
+ts                                                        0.000080
+groxis                                                    0.000080
+safe software                                             0.000080
+spron                                                     0.000080
+xl games                                                  0.000080
+dunnwell, inc.                                            0.000080
+mushibo interactive                                       0.000080
+infosystems                                               0.000080
+university of washington dept of computer scien...        0.000080
+peoples bank of the ozarks                                0.000080
+community                                                 0.000080
+abacus studios, inc.                                      0.000080
+university of florida college of education, off...        0.000080
+covington & burling llp                                   0.000080
+tripod.com                                                0.000080
+postech                                                   0.000080
+grooveshark                                               0.000080
+nerve                                                     0.000080
+onevoyce                                                  0.000080
+aardman animations                                        0.000080
+mega international                                        0.000080
+collarity                                                 0.000080
+ncsoft                                                    0.000080
+northern district of california                           0.000080
+rootsweb.com                                              0.000080
+internet security systems                                 0.000080
+oxford theatre review                                     0.000080
+myfamily.com                                              0.000080
+rnk telecom                                               0.000080
+mx telecom                                                0.000080
+i4i inc.                                                  0.000080
+gamelogic                                                 0.000080
+webmaster agency                                          0.000080
+gearworks                                                 0.000080
+comet systems                                             0.000080
+novantas                                                  0.000080
+red sky interactive                                       0.000080
+fujitsu                                                   0.000080
+californication                                           0.000080
+the legend of neil                                        0.000080
+anywi technologies                                        0.000080
+fizz factor                                               0.000080
+orc software                                              0.000080
+cnetia                                                    0.000080
+cecropia, inc.                                            0.000080
+clarity ventures                                          0.000080
+quiktrak                                                  0.000080
+tvworks inc.                                              0.000080
+camp wesley woods                                         0.000080
+inmotion software                                         0.000080
+emerald city smoothie                                     0.000080
+ubs investment bank                                       0.000080
+hubspot,                                                  0.000080
+global cooling llc                                        0.000080
+embark                                                    0.000080
+loxbridge research                                        0.000080
+handymanonline.com                                        0.000080
+young & rubicam                                           0.000080
+celion networks, inc.                                     0.000080
+cincinnati coworks llc                                    0.000080
+aztec computer outfitters                                 0.000080
+joint research centre                                     0.000080
+element55                                                 0.000080
+ejs                                                       0.000080
+ucsc conference services                                  0.000080
+altarena playhouse                                        0.000080
+scrip-safe security products                              0.000080
+jobulous.com                                              0.000080
+office of the national coordinator                        0.000080
+public knowledge                                          0.000080
+effinfunny                                                0.000080
+crown college, ucsc                                       0.000080
+4x4offroads.com                                           0.000080
+finagilous llc                                            0.000080
+alticast us office                                        0.000080
+the hammers company, inc.                                 0.000080
+sound genetics                                            0.000080
+powersteering software                                    0.000080
+digitalsmiths                                             0.000080
+mobilize                                                  0.000080
+mail.ru                                                   0.000080
+ftp software                                              0.000080
+h-e-b                                                     0.000080
+shoplocal.com                                             0.000080
+chess mates foundation                                    0.000080
+group interactive solutions                               0.000080
+gleim publications                                        0.000080
+flurry                                                    0.000080
+fabrik                                                    0.000080
+seamless entertainment                                    0.000080
+passlogix                                                 0.000080
+nuance communications, inc.                               0.000080
+expert.is                                                 0.000080
+lead link media                                           0.000080
+mci inc.                                                  0.000080
+drugs.com                                                 0.000080
+groupay                                                   0.000080
+qube software                                             0.000080
+dmd internet                                              0.000080
+dazzee integrations                                       0.000080
+free software foundation                                  0.000080
+gaslight software llc                                     0.000080
+icontrol networks, inc.                                   0.000080
+mozilla foundation                                        0.000080
+craw-kan telephone                                        0.000080
+say this, say that                                        0.000080
+axial exchange                                            0.000080
+notamedia                                                 0.000080
+opendns                                                   0.000080
+jackson fish market                                       0.000080
+724 solutions inc.                                        0.000080
+corel                                                     0.000080
+poll everywhere, inc.                                     0.000080
+hitt traffic                                              0.000080
+bioware                                                   0.000080
+tedxoxford                                                0.000080
+bizzy                                                     0.000080
+med-vantage                                               0.000080
+ubc computer science dept                                 0.000080
+laszlo systems                                            0.000080
+university of florida, industrial & systems eng...        0.000080
+avvasi inc.                                               0.000080
+prudential insurance company of america                   0.000080
+athens group                                              0.000080
+youtorial                                                 0.000080
+state of michigan                                         0.000080
+swimtshirts.com                                           0.000067
+patientsafe solutions                                     0.000067
+information alliance                                      0.000067
+cambrooke foods, inc                                      0.000067
+arenafan.com                                              0.000067
+pillar technology group                                   0.000067
+mit eecs department                                       0.000067
+motorola sps                                              0.000067
+carlisle fsp                                              0.000067
+ministry health care                                      0.000067
+celestica                                                 0.000067
+sawatzke consulting                                       0.000067
+uptown java                                               0.000067
+siemens                                                   0.000067
+filoli                                                    0.000067
+xede consulting group                                     0.000067
+the killswitch collective                                 0.000067
+leisure industries                                        0.000067
+boilerplate inc.                                          0.000067
+mitre 10                                                  0.000067
+xango                                                     0.000067
+computers made easy                                       0.000067
+ame systems                                               0.000067
+first step research                                       0.000067
+carl's jr.                                                0.000067
+marketcetera                                              0.000067
+midwest dialysis center                                   0.000067
+ambition design                                           0.000067
+perficient                                                0.000067
+mochi media, inc.                                         0.000067
+symmetri marketing group                                  0.000067
+youthcentral                                              0.000067
+comarch                                                   0.000067
+pilot aseptic technologies                                0.000067
+tarbell, realtors                                         0.000067
+exel logistics                                            0.000067
+artisan cellars                                           0.000067
+tririga                                                   0.000067
+the networks, inc.                                        0.000067
+jet set games, inc.                                       0.000067
+top stop                                                  0.000067
+oneida school district                                    0.000067
+zinc software                                             0.000067
+left right think-tank                                     0.000067
+delmar asset management                                   0.000067
+metromix                                                  0.000067
+quarium, inc.                                             0.000067
+san jose state university                                 0.000067
+varitalk                                                  0.000067
+montavista                                                0.000067
+flash tek                                                 0.000067
+deutsche bank                                             0.000067
+anatec                                                    0.000067
+sipphone                                                  0.000067
+garment valet                                             0.000067
+progeny systems                                           0.000067
+caridianbct                                               0.000067
+optimizely                                                0.000067
+nu skin                                                   0.000067
+euro-pro                                                  0.000067
+ally financial                                            0.000067
+namemedia                                                 0.000067
+bigpoint, inc.                                            0.000067
+electronic data systems                                   0.000067
+medweb                                                    0.000067
+pacific simulation                                        0.000067
+the white house                                           0.000067
+3plex, inc.                                               0.000067
+w.r. grace                                                0.000067
+pelco/integral                                            0.000067
+interactive intelligence, inc.                            0.000067
+centerrun                                                 0.000067
+arcadia entertainment                                     0.000067
+global grounds café                                       0.000067
+verticalsuite                                             0.000067
+groupon                                                   0.000067
+shape up the nation                                       0.000067
+tstd                                                      0.000067
+syngenta seeds                                            0.000067
+solutionsiq                                               0.000067
+sodexo                                                    0.000067
+radical age                                               0.000067
+horseshoe gaming                                          0.000067
+autonomy cardiff                                          0.000067
+baker hill                                                0.000067
+lfrt                                                      0.000067
+gambro bct                                                0.000067
+mike's custom spraying                                    0.000067
+idealab                                                   0.000067
+convore inc                                               0.000067
+spider island software                                    0.000067
+marin software                                            0.000067
+cogito health                                             0.000067
+transportation solutions group                            0.000067
+obama campaign                                            0.000067
+wind river systems                                        0.000067
+rnd group                                                 0.000067
+bluedog                                                   0.000067
+powerway                                                  0.000067
+presidential transition                                   0.000067
+eyespot                                                   0.000067
+colorado division of wildlife                             0.000067
+allume systems                                            0.000067
+thomson west                                              0.000067
+caesars entertainment inc                                 0.000067
+onforce                                                   0.000067
+integrion                                                 0.000067
+lexisnexis                                                0.000067
+carrotsticks                                              0.000067
+ars scientifica                                           0.000067
+wheaton franciscan services inc                           0.000067
+software artistry                                         0.000067
+bausch & lomb                                             0.000057
+deutsche banc alex brown                                  0.000057
+cooper design                                             0.000057
+medix school                                              0.000057
+kfc                                                       0.000057
+digitarart entertainment                                  0.000057
+neustar                                                   0.000057
+entriq, inc                                               0.000057
+siemens business services gmbh & co. ohg                  0.000057
+state of wisconsin                                        0.000057
+panasian group                                            0.000057
+sony pictures digital entertainment                       0.000057
+ibm data services                                         0.000057
+elsewares                                                 0.000057
+movielink, llc                                            0.000057
+ibm corporation                                           0.000057
+swedish medical center                                    0.000057
+maysoft                                                   0.000057
+undercurrent                                              0.000057
+u2vl mindshock                                            0.000057
+gehl                                                      0.000057
+browsermob                                                0.000057
+thermopylae sciences and technology                       0.000057
+gemconnect.com                                            0.000057
+taumobility                                               0.000057
+ogilvy & mather                                           0.000057
+kohler                                                    0.000057
+ea seoul studio                                           0.000057
+cadre technologies                                        0.000057
+timken                                                    0.000057
+scimedmedia                                               0.000057
+lizard interactive                                        0.000057
+scantron                                                  0.000057
+amberpoint                                                0.000057
+forte software                                            0.000057
+sybase                                                    0.000057
+wolters kluwer                                            0.000057
+spoke software                                            0.000057
+akqa                                                      0.000057
+roundy's                                                  0.000057
+evolving media network                                    0.000057
+hostedqa                                                  0.000057
+cj internet                                               0.000057
+carlson wagonlit travel                                   0.000057
+lpl financial                                             0.000057
+tad data services                                         0.000057
+john deere                                                0.000057
+medipix                                                   0.000057
+gomez                                                     0.000057
+mirrsoft                                                  0.000057
+yei                                                       0.000057
+object partners, inc                                      0.000057
+digital equipment corporation                             0.000050
+hewlett packard, agilent,  apollo, digital                0.000050
+remedy corp                                               0.000050
+lcf enterprises                                           0.000050
+university of new orleans                                 0.000050
+sputnik, inc                                              0.000050
+tarpon bay explorer                                       0.000050
+backuppr                                                  0.000050
+dexterra                                                  0.000050
+cal poly housing computing office                         0.000050
+data general corporation                                  0.000050
+honeywell, geometry supercomputer project                 0.000050
+cal poly computer engineering department                  0.000050
+department of veterans affairs                            0.000050
+mitsubishi electric corp                                  0.000050
+stillwater gazette                                        0.000050
+sifry consulting                                          0.000050
+technorati                                                0.000050
+disney wdi r&d vr studio                                  0.000050
+sap                                                       0.000050
+sony, hyper entertainment                                 0.000050
+serials solutions                                         0.000050
+offbeat guides                                            0.000050
+linuxcare, inc                                            0.000050
+sharebuilder                                              0.000050
+cray research, inc                                        0.000050
+captaris                                                  0.000050
+padus                                                     0.000050
+securemote, inc                                           0.000050
+forterra systems, inc.                                    0.000050
+apollo computer                                           0.000050
+purestorage                                               0.000050
+technorati, inc                                           0.000050
+castelle                                                  0.000050
+transunion interactive                                    0.000050
+collaborative agent design research center                0.000050
+gelson's market                                           0.000050
+disney feature animation                                  0.000050
+conejo valley karate academy                              0.000050
+open text corporation                                     0.000050
+northeast security                                        0.000040
+kace networks                                             0.000040
+ikon                                                      0.000040
+toobla.com                                                0.000040
+ssi                                                       0.000040
+stanford new student orientation                          0.000040
+securamerica                                              0.000040
+avanade                                                   0.000040
+stanford medical school                                   0.000040
+stanford economics department                             0.000040
+raytheon company                                          0.000040
+tixitbox.com                                              0.000040
+triangle couriers                                         0.000040
+stanford alumni association                               0.000040
+universal business machines                               0.000040
+alliedbarton security                                     0.000040
+centric consulting                                        0.000040
+shapeup.com                                               0.000040
+eastern security                                          0.000040
+stanford math department                                  0.000040
+webuildstartups.com                                       0.000040
+aeropoint security enterprises                            0.000040
+homestead technologies                                    0.000040
+nsb group                                                 0.000040
+american citadel guard                                    0.000040
+strawbridge & clothier                                    0.000040
+bigpoint                                                  0.000036
+mindshare media                                           0.000036
+ashton-tate                                               0.000036
+wavo                                                      0.000036
+sorceron                                                  0.000036
+nüko games                                                0.000036
+wazap                                                     0.000036
+context digital media                                     0.000036
+yahoo                                                     0.000036
+atari, inc.                                               0.000036
+blue state digital                                        0.000027
+left bank operation                                       0.000027
+jesse gordon for city council                             0.000027
+kendall square research                                   0.000027
+john bonifaz for secretary                                0.000027
+cohesive                                                  0.000027
+heyletsgo                                                 0.000027
+google (ita)                                              0.000027
+going.com                                                 0.000027
+exodus                                                    0.000027
+massfordean                                               0.000027

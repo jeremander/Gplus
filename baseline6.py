@@ -156,8 +156,8 @@ def main():
         for (i, (mean, step)) in enumerate(itertools.product(means, steps)):
             for flag in flags:
                 if ((mean == 'arith') or (flag & 1)):
-                    plt.fill_between(agg_precision_df.index, agg_precision_df[('mean', mean, step, flag)] - 2 * agg_precision_df[('stderr', mean, step, flag)], agg_precision_df[('mean', mean, step, flag)] + 2 * agg_precision_df[('stderr', mean, step, flag)], color = colors[i], alpha = 0.1)
-                    plot, = plt.plot(agg_precision_df.index, agg_precision_df[('mean', mean, step, flag)], color = colors[i], linewidth = 2, linestyle = linestyles[flag - 1], label = ','.join([mean, step, str(flag)]))
+                    plt.fill_between(agg_precision_df.index, agg_precision_df[str(('mean', mean, step, flag))] - 2 * agg_precision_df[str(('stderr', mean, step, flag))], agg_precision_df[str(('mean', mean, step, flag))] + 2 * agg_precision_df[str(('stderr', mean, step, flag))], color = colors[i], alpha = 0.1)
+                    plot, = plt.plot(agg_precision_df.index, agg_precision_df[str(('mean', mean, step, flag))], color = colors[i], linewidth = 2, linestyle = linestyles[flag - 1], label = ','.join([mean, step, str(flag)]))
                     plots.append(plot)
 
 

@@ -34,7 +34,7 @@ for delta in delta_vals:
                         if grid:
                             safe_attr = '_'.join(attr.split())
                             subcmd = "python3 baseline6.py -a '%s' -t '%s' -n %d -s %s -d %s -S %d" % (attr, attr_type, n, sim, str(delta), num_samples)
-                            cmd = 'qsub -q all.q -l num_proc=%d,mem_free=%dG,h_rt=24:00:00 -b Y -V -cwd -j yes -o . -N baseline3_%s_%s_n%d_%s_delta%s "%s"' % (jobs, memory, safe_attr, attr_type, n, embedding, sim, str(delta), subcmd)
+                            cmd = 'qsub -q all.q -l num_proc=%d,mem_free=%dG,h_rt=24:00:00 -b Y -V -cwd -j yes -o . -N baseline6_%s_%s_n%d_%s_delta%s "%s"' % (jobs, memory, safe_attr, attr_type, n, sim, str(delta), subcmd)
                             print(cmd)
                             subprocess.Popen(cmd, shell = True, stdout = subprocess.PIPE)
                         else:

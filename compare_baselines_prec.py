@@ -8,12 +8,12 @@ from rstyle import *
 from ggplot import *
 
 
-all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 'purple']
-all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI']
-all_linestyles = ['solid', 'solid', 'solid', 'dashed', 'solid', 'solid', 'solid']
-all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5']
+all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 'purple', 'pink']
+all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI', 'random walk']
+all_linestyles = ['solid', 'solid', 'solid', 'dashed', 'solid', 'solid', 'solid', 'solid']
+all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5', '6']
 
-baseline_indices = [0, 1, 2, 3, 4, 5, 6]
+baseline_indices = [0, 1, 2, 3, 4, 5, 6, 7]
 colors = [all_colors[i] for i in baseline_indices]
 keys = [all_keys[i] for i in baseline_indices]
 linestyles = [all_linestyles[i] for i in baseline_indices]
@@ -28,6 +28,8 @@ def main():
     p.add_option('--num_train_each', '-n', type = int, help = 'number of training samples of True and False for the attribute (for total of 2n training samples)')
     p.add_option('--max_count_features', '-m', type = int, default = 1000, help = 'max number of count features for baseline1')
     p.add_option('--embedding', '-e', type = str, default = 'adj', help = 'embedding (adj, adj+diag, normlap, regnormlap)')
+    p.add_option('--sim', type = str, default = 'NPMI1s', help = 'similarity operation (PMIs, NPMI1s, prob)')
+    p.add_option('--delta', '-d', type = float, default = 0.0, help = 'smoothing parameter')
     p.add_option('-k', type = int, default = 200, help = 'number of eigenvalues')
     p.add_option('--sphere', '-s', action = 'store_true', default = False, help = 'normalize in sphere')
     p.add_option('-v', action = 'store_true', default = False, help = 'save results')
@@ -35,7 +37,7 @@ def main():
 
     opts, args = p.parse_args()
 
-    attr, attr_type, num_train_each, max_count_features, embedding, k, sphere, save, N = opts.attr, opts.attr_type, opts.num_train_each, opts.max_count_features, opts.embedding, opts.k, opts.sphere, opts.v, opts.N
+    attr, attr_type, num_train_each, max_count_features, embedding, sim, delta, k, sphere, save, N = opts.attr, opts.attr_type, opts.num_train_each, opts.max_count_features, opts.embedding, opts.sim, opts.delta, opts.k, opts.sphere, opts.v, opts.N
 
     max_mean_prec_df = pd.DataFrame(columns = ['rank'] + [('baseline%s' % b) for b in baselines])
 
@@ -44,6 +46,13 @@ def main():
             df = pd.read_csv('gplus0_lcc/baseline1/%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, num_train_each, max_count_features))
         elif (b[:2] == '12'):
             df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_m%d_precision.csv' % (b, attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else '', max_count_features))
+        elif (b == '6'):
+            df = pd.read_csv('gplus0_lcc/baseline6/%s_%s_n%d_%s_delta%s_precision.csv' % (attr_type, attr, num_train_each, sim, delta))
+            filename = 'gplus0_lcc/baseline6/%s_%s_n%d_%s_delta%s_precision.csv' % (attr_type, attr, num_train_each, sim, delta)
+            if ('max_mean_prec' not in df.columns):
+                cols = [col for col in df.columns if 'mean' in col]
+                df['max_mean_prec'] = df[cols].max(axis = 1)
+                df.to_csv(filename, index = False)
         else:
             df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_precision.csv' % (b, attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else ''))
             filename = 'gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_precision.csv' % (b, attr_type, attr, num_train_each, embedding, k, '_normalize' if sphere else '')
@@ -80,7 +89,7 @@ def main():
     for a in axes:
         rstyle(a)
 
-    filename = 'gplus0_lcc/compare/prec/%s_%s_n%d_m%d_%s_k%d%s_max_mean_prec.png' % (attr, attr_type, num_train_each, max_count_features, embedding, k, '_normalize' if sphere else '')
+    filename = 'gplus0_lcc/compare/prec/%s_%s_n%d_m%d_%s_%s_delta%s_k%d%s_max_mean_prec.png' % (attr, attr_type, num_train_each, max_count_features, embedding, sim, str(delta), k, '_normalize' if sphere else '')
 
     if save:
         plt.savefig(filename)

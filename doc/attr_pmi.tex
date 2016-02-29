@@ -21,6 +21,7 @@
 \newcommand{\given}{\; | \;}
 \newcommand{\st}{\, : \,}
 \newcommand{\reals}{\mathbb{R}}
+\newcommand{\powerset}{\mathcal{P}}
 \renewcommand{\arraystretch}{1.5}
 
 \lhead{Jeremy Silver}
@@ -38,8 +39,8 @@ Following \cite{nameLocClustering}, we use \textit{pointwise mutual information}
 $$ \text{PMI}(a, b) = \log \frac{P(a, b)}{P(a) P(b)}. $$
 This measures the relative co-occurrence likelihood of $a$ and $b$ with respect to the assumption of independence.  If $a$ and $b$ occur independently of each other, then the PMI will be 0.  The PMI will be positive (negative) if $a$ and $b$ occur more (less) frequently together than if they had been chosen independently.
 
-$P(a, b)$ is defined as the probability that an edge in $E$ will have attributes $\{a, b\}$.  In the graph context, it is tempting to think of $P(a)$ as the probability that a vertex in $V$ has attribute $a$, but this is incorrect.  $P(a)$ is in fact the marginal probability that $a$ occurs as one of the attributes of an edge $(u, v) \in E$:
-$$ P(a) = P \displaystyle \left ( \bigcup_{b \in A} (\phi(u), \phi(v)) = (a, b) \right ) = \sum_{b \in A} P(a, b). $$
+$P(a, b)$ is defined as the probability that an edge in $E$ will have attributes $\{a, b\}$.  In the graph context, it is tempting to think of $P(a)$ as the probability that a vertex in $V$ has attribute $a$, but this is incorrect.  $P(a)$ is in fact the marginal probability that $a$ occurs as one of the attributes of an edge $\{u, v\} \in E$:
+$$ P(a) = P \displaystyle \left ( \bigcup_{b \in A} \{\phi(u), \phi(v)\}= \{a, b\} \right ) = \sum_{b \in A} P(a, b). $$
 
 \section{Normalization of PMI}
 Assuming that $P(a) > 0$ for all $a \in A$, the range of values for PMI$(a, b)$ is
@@ -79,6 +80,41 @@ where $\mathbf{1}$ is the vector of all 1's.  So $M$ can be represented as a sum
 
 The sparse sum representation of the empirical PMI is licensed by the linearity of PMI with respect to the log-probabilities.  Such linearity does not exist for the normalized versions of PMI, so a different kind of smoothing would be required in which normalized PMIs are computed for all nonzero-frequency attribute pairs, and then a small constant is added to all the values \textit{after} normalization.
 
+\section{Attribute-induced Kernels}
+At this point we have a sparse representation of a similarity kernel on $A$.  This may be the matrix of empirical joint probabilities, or alternatively one of the empirical PMI variants described above.  To perform inference on $G$, e.g.\ by a weighted graph embedding, we may need a similarity kernel on $V$ rather than $A$.  
+
+Suppose $n \geq m$, $V = \{1, \, 2, \, \ldots, \, n\}$, $A = \{1, \, 2, \, \ldots, \, m\}$, and $\phi : V \rightarrow A$ maps vertices to attributes.  Then we define an \textbf{collapse operator} $S$ as the $m \times n$ matrix where
+$$ S_{ij} = I \{\phi(j) = i\}. $$
+Let $K$ be an $m \times m$ (symmetric) similarity kernel on $A$.  Then we say $K' = S^T K S$ is the \textbf{attribute-induced kernel} on $V$.  This kernel has the property
+\begin{align*}
+K'_{ij} & = \sum_{a=1}^m S_{ai} \sum_{b=1}^m K_{ab} S_{bj} \\
+& = \sum_{a=1}^m I\{\phi(i) = a\} \sum_{b=1}^m K_{ab} \, I\{\phi(j) = b\} \\
+& = \sum_{a=1}^m I\{\phi(i) = a\} K_{a \phi(j)} \\
+& = K_{\phi(i) \phi(j)}.
+\end{align*}
+The similarity between two vertices is just the similarity between their attributes.  
+
+\section{Generalization to Arbitrary Number of Attributes}
+We have thus far assumed that one attribute is observed for each vertex in $G$, but now we relax that assumption and allow vertices to have an arbitrary number of attributes.  Define $\psi : V \rightarrow \powerset(A)$ to be this mapping from vertices to attribute sets.  Then to estimate the sample probabilities of attribute pairs, we may use
+$$ f_{a,b} = \displaystyle \sum_{\{u, v\} \in E} I\{(a, b) \in \psi(u) \times \psi(v) \text{ or } (a, b) \in \psi(v) \times \psi(u)\}, $$
+or alternatively,
+$$ f_{a,b} = \displaystyle \sum_{\{u, v\} \in E} \frac{I\{(a, b) \in \psi(u) \times \psi(v) \text{ or } (a, b) \in \psi(v) \times \psi(u)\}}{|\psi(u)| \cdot |\psi(v)|}. $$
+The former method weighs observations of attribute pairs equally, while the latter method weighs edges in the graph equally.  Note that either case is problematic when $|\psi(u)| = 0$ for some vertex $u$: in the first case, edges will simply be ignored whenever one or both of the linked vertices has no attribute, which therefore under-utilizes the information in the graph; in the second case, an even more grievous zero division will occur.
+
+To remedy this, we simply force $\psi$ to map only to non-empty sets of attributes by introducing ``dummy attributes'' as necessary; that is, we augment the set $A$ with one unique attribute $a_u$ for each node $u$ such that $\psi(u) = \emptyset$, and we let 
+$$ \psi'(u) = \begin{cases} \{a_u\}, \quad \text{if } \psi(u) = \emptyset \\ \psi(u), \quad \text{otherwise.} \end{cases} $$
+Making this adjustment will allow all vertices and edges to be represented in the pairwise counts.  Afterwards we can normalize the $f_{a,b}$ appropriately to turn them into a joint probability distribution, then apply smoothing and/or convert to PMIs as desired.
+
+We can also redefine the collapse operator in the following way.  Assuming $\psi : V \rightarrow \powerset(A)$ only maps vertices to non-empty sets, let $S$ be the $m \times n$ matrix where 
+$$S_{ij} = \frac{I\{i \in \psi(j)\}}{|\psi(j)|}.$$
+Then for some similarity kernel $K$ on $A$, the attribute-induced kernel $K' = S^T K S$ has the property
+\begin{align*}
+K'_{ij} & = \sum_{a=1}^m S_{ai} \sum_{b=1}^m K_{ab} S_{bj} \\
+& = \sum_{a=1}^m \frac{I\{a \in \psi(i)\}}{|\psi(i)|} \sum_{b=1}^m K_{ab} \, \frac{I\{b \in \psi(j)\}}{|\psi(j)|} \\
+& = \frac{1}{|\psi(i)| \cdot |\psi(j)|} \sum_{a=1}^m I\{a \in \psi(i)\} \sum_{b=1}^m K_{ab} \, I\{b \in \psi(j)\} \\
+& = \frac{1}{|\psi(i)| \cdot |\psi(j)|} \sum_{a \in \psi(i)} \sum_{b \in \psi(j)} K_{ab}.
+\end{align*}
+The similarity between two vertices is the mean of the similarities of all corresponding pairs of attributes.
 
 \begin{thebibliography}{1}
 \bibitem{nameLocClustering} 

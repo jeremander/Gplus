@@ -13,11 +13,11 @@ embedding = 'adj'
 attr_types = ['employer', 'major', 'places_lived', 'school']
 ranks = [25, 50, 100, 200, 400, 800]
 
-all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 'purple']
-all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI']
-all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5']
+all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 'purple', 'pink']
+all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI', 'random walk']
+all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5', '6']
 
-baseline_indices = [0, 1, 2, 3, 4, 5, 6]
+baseline_indices = [0, 1, 3, 4, 5, 7]
 colors = [all_colors[i] for i in baseline_indices]
 keys = [all_keys[i] for i in baseline_indices]
 baselines = [all_baselines[i] for i in baseline_indices]
@@ -28,6 +28,8 @@ assert (baselines[0] == '1')
 def main():
     p = optparse.OptionParser()
     p.add_option('--max_count_features', '-m', type = int, default = 1000, help = 'max number of count features for baseline1')
+    p.add_option('--sim', type = str, default = 'NPMI1s', help = 'similarity operation (PMIs, NPMI1s, prob)')
+    p.add_option('--delta', '-d', type = float, default = 0.0, help = 'smoothing parameter')
     p.add_option('-k', type = int, default = 200, help = 'number of eigenvalues')
     p.add_option('--sphere', '-s', action = 'store_true', default = False, help = 'normalize in sphere')
     p.add_option('--thresh', '-t', type = float, default = -1.0, help = 'significance threshold')
@@ -35,7 +37,7 @@ def main():
 
     opts, args = p.parse_args()
 
-    max_count_features, k, sphere, thresh, save = opts.max_count_features, opts.k, opts.sphere, opts.thresh, opts.save
+    max_count_features, sim, delta, k, sphere, thresh, save = opts.max_count_features, opts.sim, opts.delta, opts.k, opts.sphere, opts.thresh, opts.save
 
     selected_attrs = pd.read_csv('selected_attrs.csv')
 
@@ -61,6 +63,8 @@ def main():
                             df = pd.read_csv('gplus0_lcc/baseline1/%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, n, max_count_features))
                         elif (b[:2] == '12'):
                             df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_m%d_precision.csv' % (b, attr_type, attr, n, embedding, k, '_normalize' if sphere else '', max_count_features))
+                        elif (b == '6'):
+                            df = pd.read_csv('gplus0_lcc/baseline6/%s_%s_n%d_%s_delta%s_precision.csv' % (attr_type, attr, n, sim, delta))
                         else:
                             df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_precision.csv' % (b, attr_type, attr, n, embedding, k, '_normalize' if sphere else ''))
                         max_mean_prec_df['baseline%s' % b] = df['max_mean_prec']

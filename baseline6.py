@@ -40,7 +40,7 @@ def main():
 
     steps = list(range(1, max_steps + 1))
     cmap = plt.cm.gist_ncar
-    colors = {step : cmap(int((i + 1) * cmap.N / (max_steps + 1.0))) for (i, step) in enumerate(steps_to_display)}
+    colors = {step : cmap(int((i + 1) * cmap.N / (len(steps_to_display) + 1.0))) for (i, step) in enumerate(steps_to_display)}
     flags = ['content', 'context', 'both']
     linestyles = ['dotted', 'dashed', 'solid']
 

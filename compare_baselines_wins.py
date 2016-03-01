@@ -15,9 +15,9 @@ ranks = [25, 50, 100, 200, 400, 800]
 
 all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 'purple', 'pink']
 all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI', 'random walk']
-all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5', '6']
+all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5', '6', '7']
 
-baseline_indices = [0, 1, 3, 4, 5, 7]
+baseline_indices = [0, 1, 3, 4, 5, 6, 7]
 colors = [all_colors[i] for i in baseline_indices]
 keys = [all_keys[i] for i in baseline_indices]
 baselines = [all_baselines[i] for i in baseline_indices]
@@ -32,12 +32,13 @@ def main():
     p.add_option('--delta', '-d', type = float, default = 0.0, help = 'smoothing parameter')
     p.add_option('-k', type = int, default = 200, help = 'number of eigenvalues')
     p.add_option('--sphere', '-s', action = 'store_true', default = False, help = 'normalize in sphere')
-    p.add_option('--thresh', '-t', type = float, default = -1.0, help = 'significance threshold')
+    p.add_option('--steps', type = int, default = 1, help = 'number of random walk steps')
+    p.add_option('--rwcontext', action = 'store_true', default = False, help = 'use context only in random walk')
     p.add_option('--save', '-v', action = 'store_true', default = False, help = 'save plot')
 
     opts, args = p.parse_args()
 
-    max_count_features, sim, delta, k, sphere, thresh, save = opts.max_count_features, opts.sim, opts.delta, opts.k, opts.sphere, opts.thresh, opts.save
+    max_count_features, sim, delta, k, sphere, steps, rwcontext, save = opts.max_count_features, opts.sim, opts.delta, opts.k, opts.sphere, opts.steps, opts.rwcontext, opts.save
 
     selected_attrs = pd.read_csv('selected_attrs.csv')
 
@@ -61,18 +62,21 @@ def main():
                     for b in baselines:
                         if (b == '1'):
                             df = pd.read_csv('gplus0_lcc/baseline1/%s_%s_n%d_m%d_precision.csv' % (attr_type, attr, n, max_count_features))
+                            max_mean_prec_df['baseline1'] = df['mean_logreg_prec']  # logistic regression only
                         elif (b[:2] == '12'):
                             df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_m%d_precision.csv' % (b, attr_type, attr, n, embedding, k, '_normalize' if sphere else '', max_count_features))
+                            max_mean_prec_df['baseline%s' % b] = df['mean_logreg_prec']  # logistic regression only
                         elif (b == '6'):
                             df = pd.read_csv('gplus0_lcc/baseline6/%s_%s_n%d_%s_delta%s_precision.csv' % (attr_type, attr, n, sim, delta))
+                            max_mean_prec_df['baseline6'] = df[str(('mean', steps, 'context' if rwcontext else 'both'))]
                         else:
                             df = pd.read_csv('gplus0_lcc/baseline%s/%s_%s_n%d_%s_k%d%s_precision.csv' % (b, attr_type, attr, n, embedding, k, '_normalize' if sphere else ''))
-                        max_mean_prec_df['baseline%s' % b] = df['max_mean_prec']
+                            max_mean_prec_df['baseline%s' % b] = df['mean_logreg_prec']  # logistic regression only
+                        #max_mean_prec_df['baseline%s' % b] = df['max_mean_prec']
 
                     for rank in ranks:
                         (best_index, best_prec) = max(enumerate(max_mean_prec_df.loc[rank - 1]), key = lambda pair : pair[1])
-                        if (best_prec >= thresh):
-                            results_df.ix[len(baselines) * i + best_index, rank] += 1
+                        results_df.ix[len(baselines) * i + best_index, rank] += 1
 
         results_agg_df = results_df.drop(['n'], axis = 1).groupby('baseline').sum()
 
@@ -101,7 +105,7 @@ def main():
         rstyle(ax)
 
     if save:
-        filename = 'gplus0_lcc/compare/wins/m%d_%s_k%d_thresh%.3f%s_baseline%s_wins.png' % (max_count_features, embedding, k, thresh, '_normalize' if sphere else '', '_'.join(baselines))
+        filename = 'gplus0_lcc/compare/wins/m%d_%s_k%d%s_steps%d%s_baseline%s_wins.png' % (max_count_features, embedding, k,  '_normalize' if sphere else '', steps, '_rwcontext' if rwcontext else '', '_'.join(baselines))
         plt.savefig(filename)
     else:
         plt.show()

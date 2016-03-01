@@ -4,8 +4,11 @@ import matplotlib.pyplot as plt
 import pymc
 import fractions
 import warnings
+import scipy.stats
 from collections import defaultdict
+from vngraph import *
 #from importlib import reload
+
 
 class Fraction(fractions.Fraction):
     def __repr__(self):
@@ -46,23 +49,36 @@ class SBM(object):
                     g.add_edge(i, j)
         return g
 
-class SBMGraph(nx.Graph):
+class SBMGraph(VNGraph):
     """An instantiation of a Stochastic Block Model."""
     def __init__(self, m, blocks_by_node, *args, **kwargs):
         super(SBMGraph, self).__init__(*args, **kwargs)
         self.m = m
         self.N = len(blocks_by_node)
         self.blocks_by_node = blocks_by_node
-        self.block_counts = np.bincount(self.blocks_by_node, minlength = self.m)
+        self.block_counts = np.bincount([block for block in self.blocks_by_node if (block >= 0)], minlength = self.m)
         if (min(self.block_counts) < 2):
             warnings.warn("Block exists with low membership (less than 2).")
         for i in range(self.N):
             self.add_node(i, block = self.blocks_by_node[i])
+    def mcar_occlude(self, occlusion_prob = 0.75, num_to_occlude = None):
+        """Occludes nodes in an i.i.d. Bernoulli fashion. Either the probability of occlusion is supplied or the number to occlude is supplied."""
+        if (num_to_occlude is None):
+            occlusion_flags = (np.random.rand(self.N) <= occlusion_prob)
+        else:
+            assert (num_to_occlude <= self.N)
+            occlusion_flags = np.random.permutation(([True] * num_to_occlude) + ([False] * (self.N - num_to_occlude)))
+        blocks_by_node = [-1 if occlusion_flags[i] else block for (i, block) in enumerate(self.blocks_by_node)]
+        g = SBMGraph(self.m, blocks_by_node)
+        for (i, j) in self.edges_iter():
+            g.add_edge(i, j)
+        return g
     def draw(self):
         """Assumes the nodes have been assigned blocks and colors them appropriately."""
         plt.clf()
         cmap = plt.cm.gist_ncar
         cdict = {i : cmap(int((i + 1) * cmap.N / (self.m + 1.0))) for i in range(self.m)}
+        cdict[-1] = (0.0, 0.0, 0.0, 1.0)
         nx.draw_networkx(self, node_color = [cdict[self.blocks_by_node[i]] for i in range(self.N)], with_labels = False, node_size = 100) 
         plt.axes().get_xaxis().set_ticks([])
         plt.axes().get_yaxis().set_ticks([])
@@ -139,7 +155,34 @@ class SBM_MRF_Params(object):
         else:
             self.set_blocks_by_node({node : block for (node, block) in enumerate(blocks_by_node)}, observed = observed)
 
-class SBM_MRF(pymc.Model):
+class MCMC(pymc.MCMC):
+    def plot(self, name, true_dist = None):
+        """Presents a trace plot, autocorrelation plot, and sample frequency histogram (normalized) for a given variable name to aid in visual inspection of MCMC convergence. If true_dist is supplied, plots this pdf on top of the histogram."""
+        samps = self.trace(name)[:]
+        if (len(samps.shape) == 2):
+            samps = samps.reshape(samps.shape[0])
+        fig = plt.figure()
+        ax1 = fig.add_subplot(311)
+        ax1.plot(samps)
+        ax1.set_title('Trace plot of %s' % name)
+        ax1.set_xlabel('sample #')
+        ax2 = fig.add_subplot(312)
+        ax2.acorr(samps - samps.mean(), maxlags = 100)
+        ax2.set_title('Autocorrelations')
+        ax2.set_xlabel('lag')
+        ax2.set_ylabel('corr')
+        ax2.set_xlim((0, 100))
+        ax3 = fig.add_subplot(313)
+        ax3.hist(samps, bins = 100, normed = True, color = 'blue')
+        if (true_dist is not None):
+            xs = np.linspace(samps.min(), samps.max(), 1000)
+            ax3.plot(xs, true_dist.pdf(xs), color = 'red', linewidth = 2)
+        ax3.set_title('Empirical PDF')
+        plt.tight_layout()
+        plt.show(block = False)
+
+
+class SBM_MRF(MCMC):
     def __init__(self, sbm_mrf_params):
         """PyMC model of an SBM. Initializes from an SBM_MRF_Params object."""
         for attr in ['N', 'm', 'edge_probs', '_block_probs', 'block_probs', 'blocks_by_node']:
@@ -160,39 +203,49 @@ class SBM_MRF(pymc.Model):
         """Returns vector of observed block counts. Only counts observations if observed = True."""
         block_memberships = self.block_memberships(observed = observed)
         return np.bincount([block for block in block_memberships if (block >= 0)], minlength = self.m)
-    def posterior_block_probs(self):
-        """Based on the observed block memberships, returns the Dirichlet random variable for the posterior distribution of block probabilities as well as the completion of this random variable."""
-        _posterior_block_probs = pymc.Dirichlet('_posterior_block_probs', theta = self._block_probs.parents['theta'] + self.observed_block_memberships())
-        return (_posterior_block_probs, pymc.CompletedDirichlet('posterior_block_probs', _posterior_block_probs))
-    def posterior_edge_probs(self):
-        """Based on the edges or lack thereof between nodes with observed block memberships, returns the matrix of independent beta distributions for the posterior edge probabilities."""
+    def MAP_block_probs(self):
+        """Returns MAP estimate of block probabilities (these are the empirical proportions)."""
+        return self.graph.empirical_block_probs(dtype = float)
+    def posterior_block_probs(self, observed = True):
+        """Based on the observed block memberships, returns the Dirichlet random variable for the posterior distribution of block probabilities as well as the completion of this random variable. Only counts observations if observed = True."""
+        theta = self._block_probs.parents['theta'] + self.block_counts(observed = observed)
+        if (self.m == 2):
+            return scipy.stats.beta(theta[0], theta[1])
+        return scipy.stats.dirichlet(theta)
+    def MAP_edge_probs(self):
+        """Returns MAP estimate of edge probabilities (these are the empirical proportions)."""
+        return self.graph.empirical_edge_probs(dtype = float)
+    def posterior_edge_probs(self, observed = True):
+        """Based on the edges or lack thereof between nodes with observed block memberships, returns the matrix of independent beta distributions for the posterior edge probabilities. Only counts observations if observed = True"""
         assert hasattr(self, 'graph')
-        if (not hasattr(self, 'observed_subgraph')):
-            observed_nodes = [i for i in range(self.N) if self.get_node('b%d' % i) in self.observed_stochastics]
-            self.observed_subgraph = nx.Graph(self.graph).subgraph(observed_nodes)
-        block_memberships = self.observed_block_memberships()
-        pair_counts = defaultdict(int)
-        for (i, j) in self.observed_subgraph.edges_iter():
-            pair_counts
-
-
-        nums = np.zeros((self.m, self.m), dtype = int)
-        denoms = np.zeros((self.m, self.m), dtype = int)
+        observation_set = self.observed_stochastics
+        if (not observed):
+            observation_set |= self.stochastics
+        observed_nodes = [i for i in range(self.N) if self.get_node('b%d' % i) in observation_set]
+        observed_subgraph = nx.Graph(self.graph).subgraph(observed_nodes)
+        block_memberships = self.block_memberships(observed = observed)
+        block_counts = self.block_counts(observed = observed)
+        pos = np.zeros((self.m, self.m), dtype = int)
+        neg = np.zeros((self.m, self.m), dtype = int)
         for i in range(self.m):
             for j in range(i, self.m):
                 if (i == j):
-                    denoms[i, i] = self.block_counts[i] * (self.block_counts[i] - 1) // 2
+                    neg[i, i] = block_counts[i] * (block_counts[i] - 1) // 2
                 else:
-                    denoms[i, j] = denoms[j, i] = self.block_counts[i] * self.block_counts[j]
-        for (v1, v2) in self.edges_iter():
-            (i, j) = (self.blocks_by_node[v1], self.blocks_by_node[v2])
-            nums[i, j] += 1
+                    neg[i, j] = neg[j, i] = block_counts[i] * block_counts[j]
+        for (v1, v2) in observed_subgraph.edges_iter():
+            (i, j) = (block_memberships[v1], block_memberships[v2])
+            pos[i, j] += 1
             if (i != j):
-                nums[j, i] += 1
-        safe_div = lambda x, y : (Fraction(x, y) if (dtype == Fraction) else (float(x) / y)) if (y != 0) else np.nan
-        return np.vectorize(safe_div)(nums, denoms)
-
-
+                pos[j, i] += 1
+        neg -= pos
+        posterior_edge_probs = np.empty((self.m, self.m), dtype = object)
+        for i in range(self.m):
+            for j in range(i, self.m):
+                alpha = self.edge_probs[i, j].parents['alpha'] + pos[i, j]
+                beta = self.edge_probs[i, j].parents['beta'] + neg[i, j]
+                posterior_edge_probs[i, j] = posterior_edge_probs[j, i] = scipy.stats.beta(alpha, beta)
+        return posterior_edge_probs
     @classmethod
     def from_sbm_graph(cls, graph):
         """Initializes MRF with SBMGraph. Sets the node block observations based on the graph's 'blocks_by_node' attribute."""
@@ -224,12 +277,21 @@ class SBM_MRF(pymc.Model):
         return mrf
 
 
-    
-
 edge_probs = np.array([[0.1, 0.05], [0.05, 0.2]])
 block_probs = np.array([0.7, 0.3])
 s = SBM(edge_probs, block_probs)
 g = s.sample(30)
 mrf = SBM_MRF.from_sbm_graph(g)
 
+def main():
+    g = s.sample(100)
+    mrf = SBM_MRF.from_sbm_graph(g)
+    mrf.sample(11000, burn = 1000)  # do MCMC
+
+
+
+
+
+if __name__ == "__main__":
+    main()
 

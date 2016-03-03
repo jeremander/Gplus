@@ -20,7 +20,6 @@ linestyles = [all_linestyles[i] for i in baseline_indices]
 baselines = [all_baselines[i] for i in baseline_indices]
 
 
-
 def main():
     p = optparse.OptionParser()
     p.add_option('--attr', '-a', type = str, help = 'attribute')

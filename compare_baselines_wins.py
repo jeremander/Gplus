@@ -17,7 +17,7 @@ all_colors = ['#e41a1c', '#eecd2e', '#e75522', '#ea9028', '#4daf4a', '#377eb8', 
 all_keys = ['content', 'context', 'max fusion', 'mean fusion', 'NPMI', 'NPMI+context', 'joint NPMI', 'random walk']
 all_baselines = ['1', '2', '12_max', '12_mean', '3', '4', '5', '6', '7']
 
-baseline_indices = [0, 1, 3, 4, 5, 6, 7]
+baseline_indices = [0, 1, 3, 4, 5, 7]
 colors = [all_colors[i] for i in baseline_indices]
 keys = [all_keys[i] for i in baseline_indices]
 baselines = [all_baselines[i] for i in baseline_indices]

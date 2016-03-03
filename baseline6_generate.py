@@ -13,10 +13,10 @@ jobs = 1
 memory = 32  # number of GB
 folder = 'gplus0_lcc/baseline6/'
 
-plot = True        # convert csv to png (but only if csv exists)
+plot = False        # convert csv to png (but only if csv exists)
 write = True        # write csv's that do not exist
 overwrite = False   # rewrite csv's that already exist
-grid = False         # issue the generation commands in parallel on the grid
+grid = True         # issue the generation commands in parallel on the grid
 
 assert (not (overwrite and (not write)))
 assert (not (plot and grid))

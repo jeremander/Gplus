@@ -11,7 +11,7 @@ k_vals = [100]
 sphere_vals = [True]
 sims = ['NPMI1s']
 deltas = [0.0]
-steps = [1, 16]
+steps = [1, 8]
 rwcontexts = [True, False]
 
 N = 500
